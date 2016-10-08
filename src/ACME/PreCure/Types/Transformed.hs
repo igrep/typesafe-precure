@@ -5,7 +5,7 @@ module ACME.PreCure.Types.Transformed
 
 class Transformed t where
   cureName :: t -> String
-  transformtionSpeech :: t -> String
+  transformationSpeech :: t -> String
   -- attackSpeech :: t -> String
   variation :: t -> String
   variation _ = ""

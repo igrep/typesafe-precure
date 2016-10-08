@@ -46,8 +46,8 @@ cureName :: Cure -> String
 cureName (Cure p) = T.cureName p
 
 
-transformtionSpeech :: Cure -> String
-transformtionSpeech (Cure p) = T.transformtionSpeech p
+transformationSpeech :: Cure -> String
+transformationSpeech (Cure p) = T.transformationSpeech p
 
 
 {-attackSpeech :: Cure -> String-}
@@ -61,5 +61,5 @@ with =
 -}
 
 {-
-transformtionSpeech $ (Mirai, Riko) `with` (Mofurun, LinkleStoneDia))
+transformationSpeech $ (Mirai, Riko) `with` (Mofurun, LinkleStoneDia))
 -}

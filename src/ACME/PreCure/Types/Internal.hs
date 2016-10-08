@@ -7,6 +7,6 @@ data Profile =
   Profile
     { humanName           :: String
     , cureName            :: String
-    , transformtionSpeech :: String
+    , transformationSpeech :: String
     , attackSpeech        :: String
     }
