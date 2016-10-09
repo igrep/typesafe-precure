@@ -35,7 +35,12 @@ data Cure =
 
 instance Show Cure where
   show (Cure p) =
-    (cureName p) ++ " (" ++ (variation p) ++ ")"
+    let v =
+          if null $ variation p
+            then ""
+            else " (" ++ variation p ++ ")"
+    in
+      (cureName p) ++ v
 
 
 instance Eq Cure where
