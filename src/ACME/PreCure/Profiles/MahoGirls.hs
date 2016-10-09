@@ -19,7 +19,6 @@ import           Data.List
 
 
 import           ACME.PreCure.Types
-import qualified ACME.PreCure.Types.Transformed as T
 
 
 data Mirai          = Mirai deriving (Eq, Show)
@@ -37,12 +36,12 @@ data Miracle = Miracle deriving (Eq, Show)
 data Magical = Magical deriving (Eq, Show)
 
 
-instance T.Transformed Miracle where
+instance Transformed Miracle where
   cureName _ = "キュアミラクル"
   transformationSpeech _ = "ふたりの奇跡！キュアミラクル！"
 
 
-instance T.Transformed Magical where
+instance Transformed Magical where
   cureName _ = "キュアマジカル"
   transformationSpeech _ = "ふたりの魔法！キュアマジカル！"
 
@@ -52,14 +51,14 @@ instance Transformation (Mirai, Riko) (Mofurun LinkleStoneDia) where
   transform _ _ = (Miracle, Magical)
 
 
-instance T.Transformed (Miracle, Magical) where
+instance Transformed (Miracle, Magical) where
   cureName _ = "魔法つかいプリキュア"
   transformationSpeech _ =
     intercalate "\n"
       [ "キュアップ・ラパパ！　ダイヤ！"
       , "ミラクル・マジカル・ジュエリーレ！"
-      , T.transformationSpeech Miracle
-      , T.transformationSpeech Magical
+      , transformationSpeech Miracle
+      , transformationSpeech Magical
       , "魔法つかいプリキュア！！"
       ]
 

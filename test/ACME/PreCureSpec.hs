@@ -7,7 +7,6 @@ module ACME.PreCureSpec
 import           Test.Hspec
 
 import           ACME.PreCure
-import qualified ACME.PreCure.Types.Transformed as T
 
 
 main :: IO ()
@@ -22,4 +21,4 @@ spec = do
 
   describe "transformationSpeech" $ do
     it "returns group transformation speech of the pair" $ do
-      (T.transformationSpeech $ transform (Mirai, Riko) (Mofurun LinkleStoneDia)) `shouldBe` "キュアップ・ラパパ！　ダイヤ！\nミラクル・マジカル・ジュエリーレ！\nふたりの奇跡！キュアミラクル！\nふたりの魔法！キュアマジカル！\n魔法つかいプリキュア！！"
+      (transformationSpeech $ transform (Mirai, Riko) (Mofurun LinkleStoneDia)) `shouldBe` "キュアップ・ラパパ！　ダイヤ！\nミラクル・マジカル・ジュエリーレ！\nふたりの奇跡！キュアミラクル！\nふたりの魔法！キュアマジカル！\n魔法つかいプリキュア！！"

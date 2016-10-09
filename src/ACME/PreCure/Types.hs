@@ -8,14 +8,19 @@ module ACME.PreCure.Types where
   {-) where-}
 
 
-import qualified ACME.PreCure.Types.Transformed as T
-
-
 -- g': A girl or a group of girls
 -- i: A special item or a group of special items
 class Transformation g' i' where
   type Style g' i'
   transform :: g' -> i' -> Style g' i'
+
+
+class Transformed t where
+  cureName :: t -> String
+  transformationSpeech :: t -> String
+  -- attackSpeech :: t -> String
+  variation :: t -> String
+  variation _ = ""
 
 
 -- g: A girl
@@ -24,17 +29,23 @@ class Girl g where
 
 
 data Cure =
-  forall p. (T.Transformed p) => Cure p
+  forall p. (Transformed p) => Cure p
 
 
 instance Show Cure where
   show (Cure p) =
-    (T.cureName p) ++ " (" ++ (T.variation p) ++ ")"
+    (cureName p) ++ " (" ++ (variation p) ++ ")"
 
 
 instance Eq Cure where
   (Cure p) == (Cure q) =
-    (T.cureName p) == (T.cureName q) && (T.variation p) == (T.variation q)
+    (cureName p) == (cureName q) && (variation p) == (variation q)
+
+
+instance Transformed Cure where
+  cureName (Cure p) = cureName p
+  transformationSpeech (Cure p) = transformationSpeech p
+  variation (Cure p) = variation p
 
 
 {-
@@ -42,23 +53,13 @@ data TransformationStyle =
   forall g' i'. (Transformation g' i') => TransformationStyle g' i'
 -}
 
-cureName :: Cure -> String
-cureName (Cure p) = T.cureName p
-
-
-transformationSpeech :: Cure -> String
-transformationSpeech (Cure p) = T.transformationSpeech p
-
-
-{-attackSpeech :: Cure -> String-}
-{-attackSpeech (Cure p) = T.attackSpeech p-}
-
 
 {-
 with :: (Transformation g' i') => g' -> i' -> TransformationStyle
 with =
   TransformationStyle
 -}
+
 
 {-
 transformationSpeech $ (Mirai, Riko) `with` (Mofurun, LinkleStoneDia))
