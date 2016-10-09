@@ -13,11 +13,12 @@ module ACME.PreCure.Types where
 class Transformation g' i' where
   type Style g' i'
   transform :: g' -> i' -> Style g' i'
+  transformationSpeech :: g' -> i' -> String
 
 
 class Transformed t where
   cureName :: t -> String
-  transformationSpeech :: t -> String
+  introducesHerselfAs :: t -> String
   -- attackSpeech :: t -> String
   variation :: t -> String
   variation _ = ""
@@ -44,7 +45,7 @@ instance Eq Cure where
 
 instance Transformed Cure where
   cureName (Cure p) = cureName p
-  transformationSpeech (Cure p) = transformationSpeech p
+  introducesHerselfAs (Cure p) = introducesHerselfAs p
   variation (Cure p) = variation p
 
 

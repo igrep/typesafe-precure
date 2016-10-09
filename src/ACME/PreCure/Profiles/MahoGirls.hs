@@ -38,27 +38,23 @@ data Magical = Magical deriving (Eq, Show)
 
 instance Transformed Miracle where
   cureName _ = "キュアミラクル"
-  transformationSpeech _ = "ふたりの奇跡！キュアミラクル！"
+  introducesHerselfAs _ = "ふたりの奇跡！キュアミラクル！"
 
 
 instance Transformed Magical where
   cureName _ = "キュアマジカル"
-  transformationSpeech _ = "ふたりの魔法！キュアマジカル！"
+  introducesHerselfAs _ = "ふたりの魔法！キュアマジカル！"
 
 
 instance Transformation (Mirai, Riko) (Mofurun LinkleStoneDia) where
   type Style (Mirai, Riko) (Mofurun LinkleStoneDia) = (Miracle, Magical)
   transform _ _ = (Miracle, Magical)
-
-
-instance Transformed (Miracle, Magical) where
-  cureName _ = "魔法つかいプリキュア"
-  transformationSpeech _ =
+  transformationSpeech _ _ =
     intercalate "\n"
       [ "キュアップ・ラパパ！　ダイヤ！"
       , "ミラクル・マジカル・ジュエリーレ！"
-      , transformationSpeech Miracle
-      , transformationSpeech Magical
+      , introducesHerselfAs Miracle
+      , introducesHerselfAs Magical
       , "魔法つかいプリキュア！！"
       ]
 
