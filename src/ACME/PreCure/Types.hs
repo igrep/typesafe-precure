@@ -19,9 +19,13 @@ class Transformation g' i' where
 class Transformed t where
   cureName :: t -> String
   introducesHerselfAs :: t -> String
-  -- attackSpeech :: t -> String
   variation :: t -> String
   variation _ = ""
+
+
+-- p': A (transformed) precure or a group of precures
+class Purification p' i' where
+  purificationSpeech :: p' -> i' -> String
 
 
 -- g: A girl

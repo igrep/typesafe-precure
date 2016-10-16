@@ -8,5 +8,5 @@ data Profile =
     { humanName           :: String
     , cureName            :: String
     , transformationSpeech :: String
-    , attackSpeech        :: String
+    , purificationSpeech        :: String
     }
