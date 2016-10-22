@@ -1,5 +1,6 @@
 {-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE TypeFamilies #-}
 
 module ACME.PreCure.Profiles.MahoGirls
@@ -20,11 +21,8 @@ module ACME.PreCure.Profiles.MahoGirls
   , LinkleStick(..)
   ) where
 
-import           Data.List
-                   ( intercalate
-                   )
-
-import           ACME.PreCure.Types
+import           ACME.PreCure.Textbook.MahoGirls
+import           ACME.PreCure.Types.TH
 
 
 data Mirai = Mirai deriving (Eq, Show)
@@ -32,12 +30,8 @@ data Mirai = Mirai deriving (Eq, Show)
 data Riko  = Riko deriving (Eq, Show)
 
 
-instance Girl Mirai where
-  humanName _ = "朝日奈みらい"
-
-
-instance Girl Riko where
-  humanName _ = "十六夜リコ"
+$(girlInstance [t| Mirai |] girlName_Mirai)
+$(girlInstance [t| Riko  |] girlName_Riko)
 
 
 data Miracle          = Miracle deriving (Eq, Show)
@@ -52,80 +46,6 @@ data Magical_Topaz    = Magical_Topaz deriving (Eq, Show)
 
 data Mofurun ls = Mofurun ls deriving (Eq, Show)
 
-
-instance Transformed Miracle where
-  cureName _ = "キュアミラクル"
-  introducesHerselfAs _ = "ふたりの奇跡！キュアミラクル！"
-  variation _ = "ダイヤスタイル"
-
-
-instance Transformed Miracle_Ruby where
-  cureName _ = cureName Miracle
-  introducesHerselfAs _ = introducesHerselfAs Miracle
-  variation _ = "ルビースタイル"
-
-
-instance Transformed Miracle_Sapphire where
-  cureName _ = cureName Miracle
-  introducesHerselfAs _ = introducesHerselfAs Miracle
-  variation _ = "サファイアスタイル"
-
-
-instance Transformed Miracle_Topaz where
-  cureName _ = cureName Miracle
-  introducesHerselfAs _ = introducesHerselfAs Miracle
-  variation _ = "トパーズスタイル"
-
-
-instance Transformed Magical where
-  cureName _ = "キュアマジカル"
-  introducesHerselfAs _ = "ふたりの魔法！キュアマジカル！"
-  variation _ = "ダイヤスタイル"
-
-
-instance Transformed Magical_Ruby where
-  cureName _ = cureName Magical
-  introducesHerselfAs _ = introducesHerselfAs Magical
-  variation _ = "ルビースタイル"
-
-
-instance Transformed Magical_Sapphire where
-  cureName _ = cureName Magical
-  introducesHerselfAs _ = introducesHerselfAs Magical
-  variation _ = "サファイアスタイル"
-
-
-instance Transformed Magical_Topaz where
-  cureName _ = cureName Magical
-  introducesHerselfAs _ = introducesHerselfAs Magical
-  variation _ = "トパーズスタイル"
-
-
-instance Transformation (Mirai, Riko) (Mofurun LinkleStoneDia) where
-  type Style (Mirai, Riko) (Mofurun LinkleStoneDia) = (Miracle, Magical)
-  transform _ _ = (Miracle, Magical)
-  transformationSpeech _ _ =
-    transformationSpeechWith $ linkleStoneName LinkleStoneDia
-
-instance Transformation (Mirai, Riko) (Mofurun LinkleStoneRuby) where
-  type Style (Mirai, Riko) (Mofurun LinkleStoneRuby) = (Miracle_Ruby, Magical_Ruby)
-  transform _ _ = (Miracle_Ruby, Magical_Ruby)
-  transformationSpeech _ _ =
-    transformationSpeechWith $ linkleStoneName LinkleStoneRuby
-
-instance Transformation (Mirai, Riko) (Mofurun LinkleStoneSapphire) where
-  type Style (Mirai, Riko) (Mofurun LinkleStoneSapphire) = (Miracle_Sapphire, Magical_Sapphire)
-  transform _ _ = (Miracle_Sapphire, Magical_Sapphire)
-  transformationSpeech _ _ =
-    transformationSpeechWith $ linkleStoneName LinkleStoneSapphire
-
-instance Transformation (Mirai, Riko) (Mofurun LinkleStoneTopaz) where
-  type Style (Mirai, Riko) (Mofurun LinkleStoneTopaz) = (Miracle_Topaz, Magical_Topaz)
-  transform _ _ = (Miracle_Topaz, Magical_Topaz)
-  transformationSpeech _ _ =
-    transformationSpeechWith $ linkleStoneName LinkleStoneTopaz
-
-
 class LinkleStone ls where
   linkleStoneName :: ls -> String
 
@@ -135,72 +55,76 @@ data LinkleStoneRuby     = LinkleStoneRuby deriving (Show, Eq)
 data LinkleStoneSapphire = LinkleStoneSapphire deriving (Show, Eq)
 data LinkleStoneTopaz    = LinkleStoneTopaz deriving (Show, Eq)
 
-
 instance LinkleStone LinkleStoneDia where
-  linkleStoneName _ = "ダイヤ"
+  linkleStoneName _ = linkleStoneName_Dia
 
 instance LinkleStone LinkleStoneRuby where
-  linkleStoneName _ = "ルビー"
+  linkleStoneName _ = linkleStoneName_Ruby
 
 instance LinkleStone LinkleStoneSapphire where
-  linkleStoneName _ = "サファイヤ"
+  linkleStoneName _ = linkleStoneName_Sapphire
 
 instance LinkleStone LinkleStoneTopaz where
-  linkleStoneName _ = "トパーズ"
-
-
-transformationSpeechWith :: String -> String
-transformationSpeechWith lsn =
-  intercalate "\n"
-    [ "キュアップ・ラパパ！　" ++ lsn ++ "！"
-    , "ミラクル・マジカル・ジュエリーレ！"
-    , introducesHerselfAs Miracle
-    , introducesHerselfAs Magical
-    , "魔法つかいプリキュア！！"
-    ]
+  linkleStoneName _ = linkleStoneName_Topaz
 
 
 data LinkleStick ls = LinkleStick ls deriving (Eq, Show)
 
+transformedInstance [t| Miracle          |] cureName_Miracle introducesHerselfAs_Miracle variation_Dia
+transformedInstance [t| Miracle_Ruby     |] cureName_Miracle introducesHerselfAs_Miracle variation_Ruby
+transformedInstance [t| Miracle_Sapphire |] cureName_Miracle introducesHerselfAs_Miracle variation_Sapphire
+transformedInstance [t| Miracle_Topaz    |] cureName_Miracle introducesHerselfAs_Miracle variation_Topaz
 
--- https://www.youtube.com/watch?v=QBQfnFOyRS4
-instance Purification (Miracle, Magical) (Mofurun LinkleStoneDia, LinkleStick LinkleStoneDia) where
-  purificationSpeech _ _ =
-    intercalate "\n"
-      [ "ダイヤ！永遠の輝きを私達の手に！"
-      , "フルフルリンクル！"
-      , "プリキュア・ダイヤモンド・エターナル！"
-      ]
+transformedInstance [t| Magical          |] cureName_Magical introducesHerselfAs_Magical variation_Dia
+transformedInstance [t| Magical_Ruby     |] cureName_Magical introducesHerselfAs_Magical variation_Ruby
+transformedInstance [t| Magical_Sapphire |] cureName_Magical introducesHerselfAs_Magical variation_Sapphire
+transformedInstance [t| Magical_Topaz    |] cureName_Magical introducesHerselfAs_Magical variation_Topaz
 
--- https://www.youtube.com/watch?v=sM7VC9-hCU8
-instance Purification (Miracle_Ruby, Magical_Ruby) (Mofurun LinkleStoneRuby, LinkleStick LinkleStoneRuby) where
-  purificationSpeech _ _ =
-    intercalate "\n"
-        [ "リンクルステッキ！"
-      , "(モッフー！)"
-        , "ルビー！紅の情熱よ私達の手に！"
-        , "フルフルリンクル！"
-        , "プリキュア・ルビー・パッショナーレ！"
-        ]
+transformationInstance
+  [t| (Mirai, Riko) |]
+  [t| (Mofurun LinkleStoneDia) |]
+  [t| (Miracle, Magical) |]
+  [| (Miracle, Magical) |]
+  transformationSpeech_Miracle_Magical
 
--- https://www.youtube.com/watch?v=lNUa2Sfa894
-instance Purification (Miracle_Sapphire, Magical_Sapphire) (Mofurun LinkleStoneSapphire, LinkleStick LinkleStoneSapphire) where
-  purificationSpeech _ _ =
-    intercalate "\n"
-      [ "リンクルステッキ！"
-      , "(モッフー！)"
-      , "サファイア！青き知性よ私達の手に！"
-      , "フルフルリンクル！"
-      , "プリキュア・サファイア・スマーティッシュ！"
-      ]
+transformationInstance
+  [t| (Mirai, Riko) |]
+  [t| (Mofurun LinkleStoneRuby) |]
+  [t| (Miracle_Ruby, Magical_Ruby) |]
+  [| (Miracle_Ruby, Magical_Ruby) |]
+  transformationSpeech_Miracle_Magical_Ruby
 
--- https://www.youtube.com/watch?v=uu7V5Fxw8NQ
-instance Purification (Miracle_Topaz, Magical_Topaz) (Mofurun LinkleStoneTopaz, LinkleStick LinkleStoneTopaz) where
-  purificationSpeech _ _ =
-    intercalate "\n"
-      [ "リンクルステッキ！"
-      , "(モォッフー！モッフッ！)"
-      , "トパーズ！金色の希望よ私達の手に！"
-      , "フルフルリンクル！"
-      , "プリキュア・トパーズ・エスペランサ！"
-      ]
+transformationInstance
+  [t| (Mirai, Riko) |]
+  [t| (Mofurun LinkleStoneSapphire) |]
+  [t| (Miracle_Sapphire, Magical_Sapphire) |]
+  [| (Miracle_Sapphire, Magical_Sapphire) |]
+  transformationSpeech_Miracle_Magical_Sapphire
+
+transformationInstance
+  [t| (Mirai, Riko) |]
+  [t| (Mofurun LinkleStoneTopaz) |]
+  [t| (Miracle_Topaz, Magical_Topaz) |]
+  [| (Miracle_Topaz, Magical_Topaz) |]
+  transformationSpeech_Miracle_Magical_Topaz
+
+
+purificationInstance
+  [t| (Miracle, Magical) |]
+  [t| (Mofurun LinkleStoneDia, LinkleStick LinkleStoneDia) |]
+  purificationSpeech_Miracle_Magical
+
+purificationInstance
+  [t| (Miracle_Ruby, Magical_Ruby) |]
+  [t| (Mofurun LinkleStoneRuby, LinkleStick LinkleStoneRuby) |]
+  purificationSpeech_Miracle_Magical_Ruby
+
+purificationInstance
+  [t| (Miracle_Sapphire, Magical_Sapphire) |]
+  [t| (Mofurun LinkleStoneSapphire, LinkleStick LinkleStoneSapphire) |]
+  purificationSpeech_Miracle_Magical_Sapphire
+
+purificationInstance
+  [t| (Miracle_Topaz, Magical_Topaz) |]
+  [t| (Mofurun LinkleStoneTopaz, LinkleStick LinkleStoneTopaz) |]
+  purificationSpeech_Miracle_Magical_Topaz

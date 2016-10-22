@@ -19,9 +19,11 @@ library
   exposed-modules:     ACME.PreCure
                      , ACME.PreCure.Profiles
                      , ACME.PreCure.Profiles.MahoGirls
+                     , ACME.PreCure.Textbook
+                     , ACME.PreCure.Textbook.MahoGirls
                      , ACME.PreCure.Types
-                     , ACME.PreCure.Types.Internal
   build-depends:       base >= 4.7 && < 5
+                     , template-haskell
   default-language:    Haskell2010
 
 test-suite typesafe-precure-test
