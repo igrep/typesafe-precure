@@ -7,14 +7,17 @@ import           Data.List
                    )
 
 
-girlName_Mirai = "朝日奈みらい"
-girlName_Riko  = "十六夜リコ"
+girlName_Mirai  = "朝日奈みらい"
+girlName_Riko   = "十六夜リコ"
+girlName_Kotoha = "花海ことは"
 
 cureName_Miracle = "キュアミラクル"
 cureName_Magical = "キュアマジカル"
+cureName_Felice  = "キュアフェリーチェ"
 
 introducesHerselfAs_Miracle = "ふたりの奇跡！キュアミラクル！" 
 introducesHerselfAs_Magical = "ふたりの魔法！キュアマジカル！" 
+introducesHerselfAs_Felice  = "あまねく生命に祝福を！キュアフェリーチェ！" 
 
 variation_Dia = "ダイヤスタイル"
 variation_Ruby = "ルビースタイル"
@@ -25,6 +28,7 @@ linkleStoneName_Dia = "ダイヤ"
 linkleStoneName_Ruby = "ルビー"
 linkleStoneName_Sapphire = "サファイヤ"
 linkleStoneName_Topaz = "トパーズ"
+linkleStoneName_Emerald = "エメラルド"
 
 
 transformationSpeechWith_Miracle_Magical :: String -> String
@@ -45,6 +49,13 @@ transformationSpeech_Miracle_Magical_Sapphire =
   transformationSpeechWith_Miracle_Magical linkleStoneName_Sapphire
 transformationSpeech_Miracle_Magical_Topaz =
   transformationSpeechWith_Miracle_Magical linkleStoneName_Topaz
+
+transformationSpeech_Felice =
+  intercalate "\n"
+    [ "キュアップ・ラパパ！　エメラルド！"
+    , "フェリーチェ・ファンファン・フラワーレ！"
+    , "あまねく生命に祝福を！キュアフェリーチェ！"
+    ]
 
 
 -- https://www.youtube.com/watch?v=QBQfnFOyRS4
@@ -83,4 +94,14 @@ purificationSpeech_Miracle_Magical_Topaz =
     , "トパーズ！金色の希望よ私達の手に！"
     , "フルフルリンクル！"
     , "プリキュア・トパーズ・エスペランサ！"
+    ]
+
+-- https://www.youtube.com/watch?v=vEWAnGM0-Os
+purificationSpeech_Felice =
+  intercalate "\n"
+    [ "フラワーエコーワンド！"
+    , "エメラルド！"
+    , "キュアー・アップ！"
+    , "（キュアー・アップ！キュアー・アップ！キュアー・アップ！）"
+    , "プリキュア！エメラルド・リンカネーション！"
     ]

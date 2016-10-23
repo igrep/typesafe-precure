@@ -25,13 +25,14 @@ import           ACME.PreCure.Textbook.MahoGirls
 import           ACME.PreCure.Types.TH
 
 
-data Mirai = Mirai deriving (Eq, Show)
+data Mirai  = Mirai deriving (Eq, Show)
+data Riko   = Riko deriving (Eq, Show)
+data Kotoha = Kotoha deriving (Eq, Show)
 
-data Riko  = Riko deriving (Eq, Show)
 
-
-$(girlInstance [t| Mirai |] girlName_Mirai)
-$(girlInstance [t| Riko  |] girlName_Riko)
+$(girlInstance [t| Mirai  |] girlName_Mirai)
+$(girlInstance [t| Riko   |] girlName_Riko)
+$(girlInstance [t| Kotoha |] girlName_Kotoha)
 
 
 data Miracle          = Miracle deriving (Eq, Show)
@@ -44,7 +45,12 @@ data Magical_Ruby     = Magical_Ruby deriving (Eq, Show)
 data Magical_Sapphire = Magical_Sapphire deriving (Eq, Show)
 data Magical_Topaz    = Magical_Topaz deriving (Eq, Show)
 
+data Felice = Felice deriving (Eq, Show)
+
 data Mofurun ls = Mofurun ls deriving (Eq, Show)
+
+data LinkleSmarthon ls = LinkleSmarthon ls deriving (Eq, Show)
+
 
 class LinkleStone ls where
   linkleStoneName :: ls -> String
@@ -54,21 +60,17 @@ data LinkleStoneDia      = LinkleStoneDia deriving (Show, Eq)
 data LinkleStoneRuby     = LinkleStoneRuby deriving (Show, Eq)
 data LinkleStoneSapphire = LinkleStoneSapphire deriving (Show, Eq)
 data LinkleStoneTopaz    = LinkleStoneTopaz deriving (Show, Eq)
+data LinkleStoneEmerald  = LinkleStoneEmerald deriving (Show, Eq)
 
-instance LinkleStone LinkleStoneDia where
-  linkleStoneName _ = linkleStoneName_Dia
-
-instance LinkleStone LinkleStoneRuby where
-  linkleStoneName _ = linkleStoneName_Ruby
-
-instance LinkleStone LinkleStoneSapphire where
-  linkleStoneName _ = linkleStoneName_Sapphire
-
-instance LinkleStone LinkleStoneTopaz where
-  linkleStoneName _ = linkleStoneName_Topaz
+instance LinkleStone LinkleStoneDia      where linkleStoneName _ = linkleStoneName_Dia
+instance LinkleStone LinkleStoneRuby     where linkleStoneName _ = linkleStoneName_Ruby
+instance LinkleStone LinkleStoneSapphire where linkleStoneName _ = linkleStoneName_Sapphire
+instance LinkleStone LinkleStoneTopaz    where linkleStoneName _ = linkleStoneName_Topaz
+instance LinkleStone LinkleStoneEmerald  where linkleStoneName _ = linkleStoneName_Emerald
 
 
 data LinkleStick ls = LinkleStick ls deriving (Eq, Show)
+data FlowerEchoWand ls = FlowerEchoWand ls deriving (Eq, Show)
 
 transformedInstance [t| Miracle          |] cureName_Miracle introducesHerselfAs_Miracle variation_Dia
 transformedInstance [t| Miracle_Ruby     |] cureName_Miracle introducesHerselfAs_Miracle variation_Ruby
@@ -79,6 +81,8 @@ transformedInstance [t| Magical          |] cureName_Magical introducesHerselfAs
 transformedInstance [t| Magical_Ruby     |] cureName_Magical introducesHerselfAs_Magical variation_Ruby
 transformedInstance [t| Magical_Sapphire |] cureName_Magical introducesHerselfAs_Magical variation_Sapphire
 transformedInstance [t| Magical_Topaz    |] cureName_Magical introducesHerselfAs_Magical variation_Topaz
+
+transformedInstanceDefault [t| Felice |] cureName_Felice introducesHerselfAs_Felice
 
 transformationInstance
   [t| (Mirai, Riko) |]
@@ -108,6 +112,13 @@ transformationInstance
   [| (Miracle_Topaz, Magical_Topaz) |]
   transformationSpeech_Miracle_Magical_Topaz
 
+transformationInstance
+  [t| Kotoha |]
+  [t| (LinkleSmarthon LinkleStoneEmerald) |]
+  [t| Felice |]
+  [| Felice |]
+  transformationSpeech_Felice
+
 
 purificationInstance
   [t| (Miracle, Magical) |]
@@ -128,3 +139,8 @@ purificationInstance
   [t| (Miracle_Topaz, Magical_Topaz) |]
   [t| (Mofurun LinkleStoneTopaz, LinkleStick LinkleStoneTopaz) |]
   purificationSpeech_Miracle_Magical_Topaz
+
+purificationInstance
+  [t| Felice |]
+  [t| FlowerEchoWand LinkleStoneEmerald |]
+  purificationSpeech_Felice
