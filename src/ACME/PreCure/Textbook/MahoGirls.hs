@@ -41,6 +41,21 @@ transformationSpeechWith_Miracle_Magical lsn =
     , "魔法つかいプリキュア！！"
     ]
 
+
+-- https://www.youtube.com/watch?v=YUd5IkDjEds
+transformationSpeechWith_MahoGirls :: String -> String
+transformationSpeechWith_MahoGirls lsn =
+  intercalate "\n"
+    [ "キュアップ・ラパパ！　" ++ lsn ++ "！"
+    , "ミラクル・マジカル・ジュエリーレ！"
+    , "エメラルド！"
+    , "フェリーチェ・ファンファン・フラワーレ！"
+    , introducesHerselfAs_Miracle
+    , introducesHerselfAs_Magical
+    , introducesHerselfAs_Felice
+    , "魔法つかいプリキュア！！"
+    ]
+
 transformationSpeech_Miracle_Magical =
   transformationSpeechWith_Miracle_Magical linkleStoneName_Dia
 transformationSpeech_Miracle_Magical_Ruby =
@@ -50,11 +65,20 @@ transformationSpeech_Miracle_Magical_Sapphire =
 transformationSpeech_Miracle_Magical_Topaz =
   transformationSpeechWith_Miracle_Magical linkleStoneName_Topaz
 
+transformationSpeech_MahoGirls =
+  transformationSpeechWith_MahoGirls linkleStoneName_Dia
+transformationSpeech_MahoGirls_Ruby =
+  transformationSpeechWith_MahoGirls linkleStoneName_Ruby
+transformationSpeech_MahoGirls_Sapphire =
+  transformationSpeechWith_MahoGirls linkleStoneName_Sapphire
+transformationSpeech_MahoGirls_Topaz =
+  transformationSpeechWith_MahoGirls linkleStoneName_Topaz
+
 transformationSpeech_Felice =
   intercalate "\n"
     [ "キュアップ・ラパパ！　エメラルド！"
     , "フェリーチェ・ファンファン・フラワーレ！"
-    , "あまねく生命に祝福を！キュアフェリーチェ！"
+    , introducesHerselfAs_Felice
     ]
 
 

@@ -119,6 +119,34 @@ transformationInstance
   [| Felice |]
   transformationSpeech_Felice
 
+transformationInstance
+  [t| (Mirai, Riko, Kotoha) |]
+  [t| (Mofurun LinkleStoneDia, LinkleSmarthon LinkleStoneEmerald) |]
+  [t| (Miracle, Magical, Felice) |]
+  [| (Miracle, Magical, Felice) |]
+  transformationSpeech_MahoGirls
+
+transformationInstance
+  [t| (Mirai, Riko, Kotoha) |]
+  [t| (Mofurun LinkleStoneRuby, LinkleSmarthon LinkleStoneEmerald) |]
+  [t| (Miracle_Ruby, Magical_Ruby, Felice) |]
+  [| (Miracle_Ruby, Magical_Ruby, Felice) |]
+  transformationSpeech_MahoGirls_Ruby
+
+transformationInstance
+  [t| (Mirai, Riko, Kotoha) |]
+  [t| (Mofurun LinkleStoneSapphire, LinkleSmarthon LinkleStoneEmerald) |]
+  [t| (Miracle_Sapphire, Magical_Sapphire, Felice) |]
+  [| (Miracle_Sapphire, Magical_Sapphire, Felice) |]
+  transformationSpeech_MahoGirls_Sapphire
+
+transformationInstance
+  [t| (Mirai, Riko, Kotoha) |]
+  [t| (Mofurun LinkleStoneTopaz, LinkleSmarthon LinkleStoneEmerald) |]
+  [t| (Miracle_Topaz, Magical_Topaz, Felice) |]
+  [| (Miracle_Topaz, Magical_Topaz, Felice) |]
+  transformationSpeech_MahoGirls_Topaz
+
 
 purificationInstance
   [t| (Miracle, Magical) |]
