@@ -22,6 +22,7 @@ library
                      , ACME.PreCure.Textbook
                      , ACME.PreCure.Textbook.MahoGirls
                      , ACME.PreCure.Types
+  other-modules:       ACME.PreCure.Types.TH
   build-depends:       base >= 4.7 && < 5
                      , template-haskell
   default-language:    Haskell2010
@@ -31,6 +32,7 @@ test-suite typesafe-precure-test
   hs-source-dirs:      test
   ghc-options:         -Wall
   main-is:             Spec.hs
+  other-modules:       ACME.PreCureSpec
   build-depends:       base
                      , typesafe-precure
                      , hspec
