@@ -3,9 +3,6 @@
 {-# LANGUAGE TypeFamilies #-}
 
 module ACME.PreCure.Types where
-  {-( Cure(..)-}
-  {-, PreCure-}
-  {-) where-}
 
 
 -- g': A girl or a group of girls
@@ -56,21 +53,3 @@ instance Transformed Cure where
   cureName (Cure p) = cureName p
   introducesHerselfAs (Cure p) = introducesHerselfAs p
   variation (Cure p) = variation p
-
-
-{-
-data TransformationStyle =
-  forall g' i'. (Transformation g' i') => TransformationStyle g' i'
--}
-
-
-{-
-with :: (Transformation g' i') => g' -> i' -> TransformationStyle
-with =
-  TransformationStyle
--}
-
-
-{-
-transformationSpeech $ (Mirai, Riko) `with` (Mofurun, LinkleStoneDia))
--}
