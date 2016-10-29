@@ -7,6 +7,9 @@ import           Data.List
                    )
 
 
+groupName_MahoGirls = "魔法つかいプリキュア！"
+
+
 girlName_Mirai  = "朝日奈みらい"
 girlName_Riko   = "十六夜リコ"
 girlName_Kotoha = "花海ことは"
@@ -23,12 +26,14 @@ variation_Dia = "ダイヤスタイル"
 variation_Ruby = "ルビースタイル"
 variation_Sapphire = "サファイアスタイル"
 variation_Topaz = "トパーズスタイル"
+variation_OverTheRainbow = "オーバー・ザ・レインボー"
 
 linkleStoneName_Dia = "ダイヤ"
 linkleStoneName_Ruby = "ルビー"
 linkleStoneName_Sapphire = "サファイヤ"
 linkleStoneName_Topaz = "トパーズ"
 linkleStoneName_Emerald = "エメラルド"
+linkleStoneName_Alexandrite = "アレキサンドライト"
 
 
 transformationSpeechWith_Miracle_Magical :: String -> String
@@ -79,6 +84,13 @@ transformationSpeech_Felice =
     [ "キュアップ・ラパパ！　エメラルド！"
     , "フェリーチェ・ファンファン・フラワーレ！"
     , introducesHerselfAs_Felice
+    ]
+
+-- https://www.youtube.com/watch?v=BSseiA_pBYI
+transformationSpeech_MahoGirls_OverTheRainbow =
+  intercalate "\n"
+    [ "キュアップ・ラパパ！　アレキサンドライト！"
+    , "魔法つかいプリキュア！　オーバー・ザ・レインボー！"
     ]
 
 
