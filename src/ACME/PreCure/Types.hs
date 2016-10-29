@@ -20,6 +20,13 @@ class Transformed t where
   variation _ = ""
 
 
+class TransformedGroup ts where
+  groupMembers :: ts
+  groupName :: ts -> String
+  groupVariation :: ts -> String
+  groupVariation _ = ""
+
+
 -- p': A (transformed) precure or a group of precures
 class Purification p' i' where
   purificationSpeech :: p' -> i' -> String

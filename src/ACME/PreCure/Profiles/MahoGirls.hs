@@ -73,6 +73,60 @@ transformedInstance [t| Magical_Topaz    |] cureName_Magical introducesHerselfAs
 
 transformedInstanceDefault [t| Felice |] cureName_Felice introducesHerselfAs_Felice
 
+transformedGroupInstance
+  [t| (Miracle, Magical) |]
+  [| (Miracle, Magical) |]
+  groupName_MahoGirls
+  variation_Dia
+
+transformedGroupInstance
+  [t| (Miracle_Ruby, Magical_Ruby) |]
+  [| (Miracle_Ruby, Magical_Ruby) |]
+  groupName_MahoGirls
+  variation_Ruby
+
+transformedGroupInstance
+  [t| (Miracle_Sapphire, Magical_Sapphire) |]
+  [| (Miracle_Sapphire, Magical_Sapphire) |]
+  groupName_MahoGirls
+  variation_Sapphire
+
+transformedGroupInstance
+  [t| (Miracle_Topaz, Magical_Topaz) |]
+  [| (Miracle_Topaz, Magical_Topaz) |]
+  groupName_MahoGirls
+  variation_Topaz
+
+transformedGroupInstance
+  [t| (Miracle, Magical, Felice) |]
+  [| (Miracle, Magical, Felice) |]
+  groupName_MahoGirls
+  variation_Dia
+
+transformedGroupInstance
+  [t| (Miracle_Ruby, Magical_Ruby, Felice) |]
+  [| (Miracle_Ruby, Magical_Ruby, Felice) |]
+  groupName_MahoGirls
+  variation_Ruby
+
+transformedGroupInstance
+  [t| (Miracle_Sapphire, Magical_Sapphire, Felice) |]
+  [| (Miracle_Sapphire, Magical_Sapphire, Felice) |]
+  groupName_MahoGirls
+  variation_Sapphire
+
+transformedGroupInstance
+  [t| (Miracle_Topaz, Magical_Topaz, Felice) |]
+  [| (Miracle_Topaz, Magical_Topaz, Felice) |]
+  groupName_MahoGirls
+  variation_Topaz
+
+transformedGroupInstance
+  [t| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
+  [| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
+  groupName_MahoGirls
+  variation_OverTheRainbow
+
 transformationInstance
   [t| (Mirai, Riko) |]
   [t| (Mofurun LinkleStoneDia) |]

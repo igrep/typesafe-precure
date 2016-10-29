@@ -31,12 +31,31 @@ transformedInstance typeq cureN intro vari =
   |]
 
 
+transformedGroupInstance :: TypeQ -> ExpQ -> String -> String -> DecsQ
+transformedGroupInstance typeq memberE groupN vari =
+  [d|
+    instance TransformedGroup $(typeq) where
+      groupMembers = $(memberE)
+      groupName _ = $(stringE groupN)
+      groupVariation _ = $(stringE vari)
+  |]
+
+
 transformedInstanceDefault :: TypeQ -> String -> String -> DecsQ
 transformedInstanceDefault typeq cureN intro =
   [d|
     instance Transformed $(typeq) where
       cureName _ = $(stringE cureN)
       introducesHerselfAs _ = $(stringE intro)
+  |]
+
+
+transformedGroupInstanceDefault :: TypeQ -> ExpQ -> String -> DecsQ
+transformedGroupInstanceDefault typeq memberE groupN =
+  [d|
+    instance TransformedGroup $(typeq) where
+      groupMembers _ = $(memberE)
+      groupName = $(stringE groupN)
   |]
 
 
