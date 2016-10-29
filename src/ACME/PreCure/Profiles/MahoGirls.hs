@@ -3,23 +3,7 @@
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE TypeFamilies #-}
 
-module ACME.PreCure.Profiles.MahoGirls
-  ( Mirai(..)
-  , Miracle(..)
-
-  , Riko(..)
-  , Magical(..)
-
-  , Mofurun(..)
-
-  , LinkleStone(..)
-  , LinkleStoneDia(..)
-  , LinkleStoneRuby(..)
-  , LinkleStoneSapphire(..)
-  , LinkleStoneTopaz(..)
-
-  , LinkleStick(..)
-  ) where
+module ACME.PreCure.Profiles.MahoGirls where
 
 import           ACME.PreCure.Textbook.MahoGirls
 import           ACME.PreCure.Types.TH
@@ -35,17 +19,20 @@ $(girlInstance [t| Riko   |] girlName_Riko)
 $(girlInstance [t| Kotoha |] girlName_Kotoha)
 
 
-data Miracle          = Miracle deriving (Eq, Show)
-data Miracle_Ruby     = Miracle_Ruby deriving (Eq, Show)
-data Miracle_Sapphire = Miracle_Sapphire deriving (Eq, Show)
-data Miracle_Topaz    = Miracle_Topaz deriving (Eq, Show)
+data Miracle                = Miracle deriving (Eq, Show)
+data Miracle_Ruby           = Miracle_Ruby deriving (Eq, Show)
+data Miracle_Sapphire       = Miracle_Sapphire deriving (Eq, Show)
+data Miracle_Topaz          = Miracle_Topaz deriving (Eq, Show)
+data Miracle_OverTheRainbow = Miracle_OverTheRainbow deriving (Eq, Show)
 
-data Magical          = Magical deriving (Eq, Show)
-data Magical_Ruby     = Magical_Ruby deriving (Eq, Show)
-data Magical_Sapphire = Magical_Sapphire deriving (Eq, Show)
-data Magical_Topaz    = Magical_Topaz deriving (Eq, Show)
+data Magical                = Magical deriving (Eq, Show)
+data Magical_Ruby           = Magical_Ruby deriving (Eq, Show)
+data Magical_Sapphire       = Magical_Sapphire deriving (Eq, Show)
+data Magical_Topaz          = Magical_Topaz deriving (Eq, Show)
+data Magical_OverTheRainbow = Magical_OverTheRainbow deriving (Eq, Show)
 
-data Felice = Felice deriving (Eq, Show)
+data Felice                = Felice deriving (Eq, Show)
+data Felice_OverTheRainbow = Felice_OverTheRainbow deriving (Eq, Show)
 
 data Mofurun ls = Mofurun ls deriving (Eq, Show)
 
@@ -56,17 +43,19 @@ class LinkleStone ls where
   linkleStoneName :: ls -> String
 
 
-data LinkleStoneDia      = LinkleStoneDia deriving (Show, Eq)
-data LinkleStoneRuby     = LinkleStoneRuby deriving (Show, Eq)
-data LinkleStoneSapphire = LinkleStoneSapphire deriving (Show, Eq)
-data LinkleStoneTopaz    = LinkleStoneTopaz deriving (Show, Eq)
-data LinkleStoneEmerald  = LinkleStoneEmerald deriving (Show, Eq)
+data LinkleStoneDia         = LinkleStoneDia deriving (Show, Eq)
+data LinkleStoneRuby        = LinkleStoneRuby deriving (Show, Eq)
+data LinkleStoneSapphire    = LinkleStoneSapphire deriving (Show, Eq)
+data LinkleStoneTopaz       = LinkleStoneTopaz deriving (Show, Eq)
+data LinkleStoneEmerald     = LinkleStoneEmerald deriving (Show, Eq)
+data LinkleStoneAlexandrite = LinkleStoneAlexandrite deriving (Show, Eq)
 
-instance LinkleStone LinkleStoneDia      where linkleStoneName _ = linkleStoneName_Dia
-instance LinkleStone LinkleStoneRuby     where linkleStoneName _ = linkleStoneName_Ruby
-instance LinkleStone LinkleStoneSapphire where linkleStoneName _ = linkleStoneName_Sapphire
-instance LinkleStone LinkleStoneTopaz    where linkleStoneName _ = linkleStoneName_Topaz
-instance LinkleStone LinkleStoneEmerald  where linkleStoneName _ = linkleStoneName_Emerald
+instance LinkleStone LinkleStoneDia          where linkleStoneName _ = linkleStoneName_Dia
+instance LinkleStone LinkleStoneRuby         where linkleStoneName _ = linkleStoneName_Ruby
+instance LinkleStone LinkleStoneSapphire     where linkleStoneName _ = linkleStoneName_Sapphire
+instance LinkleStone LinkleStoneTopaz        where linkleStoneName _ = linkleStoneName_Topaz
+instance LinkleStone LinkleStoneEmerald      where linkleStoneName _ = linkleStoneName_Emerald
+instance LinkleStone LinkleStoneAlexandrite  where linkleStoneName _ = linkleStoneName_Alexandrite
 
 
 data LinkleStick ls = LinkleStick ls deriving (Eq, Show)
@@ -146,6 +135,35 @@ transformationInstance
   [t| (Miracle_Topaz, Magical_Topaz, Felice) |]
   [| (Miracle_Topaz, Magical_Topaz, Felice) |]
   transformationSpeech_MahoGirls_Topaz
+
+
+transformationInstance
+  [t| (Miracle, Magical, Felice) |]
+  [t| (Mofurun LinkleStoneAlexandrite, LinkleSmarthon LinkleStoneAlexandrite) |]
+  [t| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
+  [| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
+  transformationSpeech_MahoGirls_OverTheRainbow
+
+transformationInstance
+  [t| (Miracle_Ruby, Magical_Ruby, Felice) |]
+  [t| (Mofurun LinkleStoneAlexandrite, LinkleSmarthon LinkleStoneAlexandrite) |]
+  [t| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
+  [| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
+  transformationSpeech_MahoGirls_OverTheRainbow
+
+transformationInstance
+  [t| (Miracle_Sapphire, Magical_Sapphire, Felice) |]
+  [t| (Mofurun LinkleStoneAlexandrite, LinkleSmarthon LinkleStoneAlexandrite) |]
+  [t| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
+  [| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
+  transformationSpeech_MahoGirls_OverTheRainbow
+
+transformationInstance
+  [t| (Miracle_Topaz, Magical_Topaz, Felice) |]
+  [t| (Mofurun LinkleStoneAlexandrite, LinkleSmarthon LinkleStoneAlexandrite) |]
+  [t| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
+  [| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
+  transformationSpeech_MahoGirls_OverTheRainbow
 
 
 purificationInstance
