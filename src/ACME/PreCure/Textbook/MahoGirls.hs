@@ -154,4 +154,5 @@ purificationSpeech_MahoGirls_extreme_rainbow =
     , "プレシャスブレス！"
     , "フル・フル・フルフルリンクル！"
     , "プリキュア！エクストリーム・レインボー！"
+    , "キュアップ・ラパパ！　虹の彼方に！"
     ]
