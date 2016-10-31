@@ -99,7 +99,7 @@ purificationSpeech_Miracle_Magical =
   intercalate "\n"
     [ "ダイヤ！永遠の輝きを私達の手に！"
     , "フルフルリンクル！"
-    , "プリキュア・ダイヤモンド・エターナル！"
+    , "プリキュア！ダイヤモンド・エターナル！"
     ]
 
 -- https://www.youtube.com/watch?v=sM7VC9-hCU8
@@ -109,7 +109,7 @@ purificationSpeech_Miracle_Magical_Ruby =
     , "(モッフー！)"
     , "ルビー！紅の情熱よ私達の手に！"
     , "フルフルリンクル！"
-    , "プリキュア・ルビー・パッショナーレ！"
+    , "プリキュア！ルビー・パッショナーレ！"
     ]
 
 -- https://www.youtube.com/watch?v=lNUa2Sfa894
@@ -119,7 +119,7 @@ purificationSpeech_Miracle_Magical_Sapphire =
     , "(モッフー！)"
     , "サファイア！青き知性よ私達の手に！"
     , "フルフルリンクル！"
-    , "プリキュア・サファイア・スマーティッシュ！"
+    , "プリキュア！サファイア・スマーティッシュ！"
     ]
 
 -- https://www.youtube.com/watch?v=uu7V5Fxw8NQ
@@ -129,7 +129,7 @@ purificationSpeech_Miracle_Magical_Topaz =
     , "(モォッフー！モッフッ！)"
     , "トパーズ！金色の希望よ私達の手に！"
     , "フルフルリンクル！"
-    , "プリキュア・トパーズ・エスペランサ！"
+    , "プリキュア！トパーズ・エスペランサ！"
     ]
 
 -- https://www.youtube.com/watch?v=vEWAnGM0-Os

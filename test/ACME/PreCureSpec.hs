@@ -33,7 +33,7 @@ spec = do
 
   describe "purificationSpeech" $ do
     it "returns purification speech" $ do
-      (purificationSpeech (Miracle, Magical) (Mofurun LinkleStoneDia, LinkleStick LinkleStoneDia)) `shouldBe` "ダイヤ！永遠の輝きを私達の手に！\nフルフルリンクル！\nプリキュア・ダイヤモンド・エターナル！"
+      (purificationSpeech (Miracle, Magical) (Mofurun LinkleStoneDia, LinkleStick LinkleStoneDia)) `shouldBe` "ダイヤ！永遠の輝きを私達の手に！\nフルフルリンクル！\nプリキュア！ダイヤモンド・エターナル！"
 
   describe "TransformedGroup" $ do
     describe "Magical, Miracle, and Felice" $ do
