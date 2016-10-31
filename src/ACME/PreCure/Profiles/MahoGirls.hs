@@ -38,6 +38,9 @@ data Mofurun ls = Mofurun ls deriving (Eq, Show)
 
 data LinkleSmarthon ls = LinkleSmarthon ls deriving (Eq, Show)
 
+data RainbowCarriage ls mof = RainbowCarriage ls mof deriving (Eq, Show)
+
+data PreciousBrace = PreciousBrace deriving (Eq, Show)
 
 class LinkleStone ls where
   linkleStoneName :: ls -> String
@@ -244,3 +247,8 @@ purificationInstance
   [t| Felice |]
   [t| FlowerEchoWand LinkleStoneEmerald |]
   purificationSpeech_Felice
+
+purificationInstance
+  [t| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
+  [t| (RainbowCarriage LinkleStoneAlexandrite (Mofurun LinkleStoneAlexandrite), PreciousBrace) |]
+  purificationSpeech_MahoGirls_extreme_rainbow

@@ -141,3 +141,17 @@ purificationSpeech_Felice =
     , "（キュアー・アップ！キュアー・アップ！キュアー・アップ！）"
     , "プリキュア！エメラルド・リンカネーション！"
     ]
+
+-- https://www.youtube.com/watch?v=dGaiygaMDUM
+purificationSpeech_MahoGirls_extreme_rainbow =
+  intercalate "\n"
+    [ "（レインボー・キャリッジリターン！ モフッ！）"
+    , "(モォッフー！！)"
+    , "巡り会う奇跡よ！"
+    , "繋がる魔法よ！" 
+    , "育まれし幸福（しあわせ）よ！" 
+    , "今私たちの手に！"
+    , "プレシャスブレス！"
+    , "フル・フル・フルフルリンクル！"
+    , "プリキュア！エクストリーム・レインボー！"
+    ]
