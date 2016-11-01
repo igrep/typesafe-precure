@@ -17,16 +17,19 @@ girlName_Kotoha = "花海ことは"
 cureName_Miracle = "キュアミラクル"
 cureName_Magical = "キュアマジカル"
 cureName_Felice  = "キュアフェリーチェ"
+cureName_Mofurun = "キュアモフルン"
 
 introducesHerselfAs_Miracle = "ふたりの奇跡！キュアミラクル！" 
 introducesHerselfAs_Magical = "ふたりの魔法！キュアマジカル！" 
 introducesHerselfAs_Felice  = "あまねく生命に祝福を！キュアフェリーチェ！" 
+introducesHerselfAs_Mofurun = "モフモフモフルン！キュアモフルン！" 
 
 variation_Dia = "ダイヤスタイル"
 variation_Ruby = "ルビースタイル"
 variation_Sapphire = "サファイアスタイル"
 variation_Topaz = "トパーズスタイル"
 variation_OverTheRainbow = "オーバー・ザ・レインボー"
+variation_Heartful = "ハートフルスタイル"
 
 linkleStoneName_Dia = "ダイヤ"
 linkleStoneName_Ruby = "ルビー"
@@ -34,6 +37,8 @@ linkleStoneName_Sapphire = "サファイヤ"
 linkleStoneName_Topaz = "トパーズ"
 linkleStoneName_Emerald = "エメラルド"
 linkleStoneName_Alexandrite = "アレキサンドライト"
+linkleStoneName_OfHope = "願いの石"
+linkleStoneName_Heartful = "ハートフルリンクルストーン"
 
 
 transformationSpeechWith_Miracle_Magical :: String -> String
@@ -85,6 +90,9 @@ transformationSpeech_Felice =
     , "フェリーチェ・ファンファン・フラワーレ！"
     , introducesHerselfAs_Felice
     ]
+
+-- TODO: Check the movie again
+transformationSpeech_Mofurun = introducesHerselfAs_Mofurun
 
 -- https://www.youtube.com/watch?v=BSseiA_pBYI
 transformationSpeech_MahoGirls_OverTheRainbow =
