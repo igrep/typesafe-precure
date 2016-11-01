@@ -3,9 +3,9 @@
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE TypeFamilies #-}
 
-module ACME.PreCure.Profiles.MahoGirls where
+module ACME.PreCure.Textbook.MahoGirls.Types where
 
-import           ACME.PreCure.Textbook.MahoGirls
+import           ACME.PreCure.Textbook.MahoGirls.Words
 import           ACME.PreCure.Types.TH
 
 

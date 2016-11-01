@@ -4,4 +4,4 @@ module ACME.PreCure
 
 
 import           ACME.PreCure.Types as P
-import           ACME.PreCure.Profiles as P
+import           ACME.PreCure.Textbook as P
