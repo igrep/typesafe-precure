@@ -2,16 +2,14 @@
 
 module ACME.PreCure.Textbook.MahoGirls.Words where
 
-import           Data.List
-                   ( intercalate
-                   )
+import           Data.List (intercalate)
 
 
 groupName_MahoGirls = "魔法つかいプリキュア！"
 
 
 girlName_Mirai  = "朝日奈みらい"
-girlName_Riko   = "十六夜リコ"
+girlName_Liko   = "十六夜リコ"
 girlName_Kotoha = "花海ことは"
 
 cureName_Miracle = "キュアミラクル"

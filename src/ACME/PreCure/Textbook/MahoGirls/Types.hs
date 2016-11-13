@@ -10,12 +10,13 @@ import           ACME.PreCure.Types.TH
 
 
 data Mirai  = Mirai deriving (Eq, Show)
-data Riko   = Riko deriving (Eq, Show)
+-- According to the Ep. 40, Liko spells "Liko" instead of "Riko"
+data Liko   = Liko deriving (Eq, Show)
 data Kotoha = Kotoha deriving (Eq, Show)
 
 
 $(girlInstance [t| Mirai  |] girlName_Mirai)
-$(girlInstance [t| Riko   |] girlName_Riko)
+$(girlInstance [t| Liko   |] girlName_Liko)
 $(girlInstance [t| Kotoha |] girlName_Kotoha)
 
 
@@ -197,28 +198,28 @@ transformedGroupInstance
   variation_Heartful
 
 transformationInstance
-  [t| (Mirai, Riko) |]
+  [t| (Mirai, Liko) |]
   [t| (Mofurun LinkleStoneDia) |]
   [t| (Miracle, Magical) |]
   [| (Miracle, Magical) |]
   transformationSpeech_Miracle_Magical
 
 transformationInstance
-  [t| (Mirai, Riko) |]
+  [t| (Mirai, Liko) |]
   [t| (Mofurun LinkleStoneRuby) |]
   [t| (Miracle_Ruby, Magical_Ruby) |]
   [| (Miracle_Ruby, Magical_Ruby) |]
   transformationSpeech_Miracle_Magical_Ruby
 
 transformationInstance
-  [t| (Mirai, Riko) |]
+  [t| (Mirai, Liko) |]
   [t| (Mofurun LinkleStoneSapphire) |]
   [t| (Miracle_Sapphire, Magical_Sapphire) |]
   [| (Miracle_Sapphire, Magical_Sapphire) |]
   transformationSpeech_Miracle_Magical_Sapphire
 
 transformationInstance
-  [t| (Mirai, Riko) |]
+  [t| (Mirai, Liko) |]
   [t| (Mofurun LinkleStoneTopaz) |]
   [t| (Miracle_Topaz, Magical_Topaz) |]
   [| (Miracle_Topaz, Magical_Topaz) |]
@@ -232,28 +233,28 @@ transformationInstance
   transformationSpeech_Felice
 
 transformationInstance
-  [t| (Mirai, Riko, Kotoha) |]
+  [t| (Mirai, Liko, Kotoha) |]
   [t| (Mofurun LinkleStoneDia, LinkleSmarthon LinkleStoneEmerald) |]
   [t| (Miracle, Magical, Felice) |]
   [| (Miracle, Magical, Felice) |]
   transformationSpeech_MahoGirls
 
 transformationInstance
-  [t| (Mirai, Riko, Kotoha) |]
+  [t| (Mirai, Liko, Kotoha) |]
   [t| (Mofurun LinkleStoneRuby, LinkleSmarthon LinkleStoneEmerald) |]
   [t| (Miracle_Ruby, Magical_Ruby, Felice) |]
   [| (Miracle_Ruby, Magical_Ruby, Felice) |]
   transformationSpeech_MahoGirls_Ruby
 
 transformationInstance
-  [t| (Mirai, Riko, Kotoha) |]
+  [t| (Mirai, Liko, Kotoha) |]
   [t| (Mofurun LinkleStoneSapphire, LinkleSmarthon LinkleStoneEmerald) |]
   [t| (Miracle_Sapphire, Magical_Sapphire, Felice) |]
   [| (Miracle_Sapphire, Magical_Sapphire, Felice) |]
   transformationSpeech_MahoGirls_Sapphire
 
 transformationInstance
-  [t| (Mirai, Riko, Kotoha) |]
+  [t| (Mirai, Liko, Kotoha) |]
   [t| (Mofurun LinkleStoneTopaz, LinkleSmarthon LinkleStoneEmerald) |]
   [t| (Miracle_Topaz, Magical_Topaz, Felice) |]
   [| (Miracle_Topaz, Magical_Topaz, Felice) |]

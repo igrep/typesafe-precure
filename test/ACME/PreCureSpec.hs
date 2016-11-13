@@ -19,14 +19,14 @@ spec = do
 
   describe "transform" $ do
     it "returns transformed precure" $ do
-      (transform (Mirai, Riko) (Mofurun LinkleStoneDia)) `shouldBe` (Miracle, Magical)
+      (transform (Mirai, Liko) (Mofurun LinkleStoneDia)) `shouldBe` (Miracle, Magical)
 
     it "some precures can transform into special form" $ do
       (transform (Miracle, Magical, Felice) (Mofurun LinkleStoneAlexandrite, LinkleSmarthon LinkleStoneAlexandrite)) `shouldBe` specialForm
 
   describe "transformationSpeech" $ do
     it "returns group transformation speech of the pair" $ do
-      (transformationSpeech (Mirai, Riko) (Mofurun LinkleStoneDia)) `shouldBe` "キュアップ・ラパパ！　ダイヤ！\nミラクル・マジカル・ジュエリーレ！\nふたりの奇跡！キュアミラクル！\nふたりの魔法！キュアマジカル！\n魔法つかいプリキュア！！"
+      (transformationSpeech (Mirai, Liko) (Mofurun LinkleStoneDia)) `shouldBe` "キュアップ・ラパパ！　ダイヤ！\nミラクル・マジカル・ジュエリーレ！\nふたりの奇跡！キュアミラクル！\nふたりの魔法！キュアマジカル！\n魔法つかいプリキュア！！"
 
     it "returns group transformation speech with alexandrite" $ do
       (transformationSpeech (Miracle, Magical, Felice) (Mofurun LinkleStoneAlexandrite, LinkleSmarthon LinkleStoneAlexandrite)) `shouldBe` "キュアップ・ラパパ！　アレキサンドライト！\n魔法つかいプリキュア！　オーバー・ザ・レインボー！"
