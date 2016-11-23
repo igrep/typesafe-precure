@@ -1,4 +1,3 @@
-{-# LANGUAGE ExistentialQuantification #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE TypeFamilies #-}
 
@@ -34,28 +33,3 @@ class Purification p' i' where
 -- g: A girl
 class Girl g where
   humanName :: g -> String
-
-
-data Cure =
-  forall p. (Transformed p) => Cure p
-
-
-instance Show Cure where
-  show (Cure p) =
-    let v =
-          if null $ variation p
-            then ""
-            else " (" ++ variation p ++ ")"
-    in
-      (cureName p) ++ v
-
-
-instance Eq Cure where
-  (Cure p) == (Cure q) =
-    (cureName p) == (cureName q) && (variation p) == (variation q)
-
-
-instance Transformed Cure where
-  cureName (Cure p) = cureName p
-  introducesHerselfAs (Cure p) = introducesHerselfAs p
-  variation (Cure p) = variation p

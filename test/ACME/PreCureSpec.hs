@@ -15,35 +15,35 @@ main = hspec spec
 
 spec :: Spec
 spec = do
-  let specialForm = (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow)
+  let specialForm = (CureMiracle_OverTheRainbow, CureMagical_OverTheRainbow, CureFelice_OverTheRainbow)
 
   describe "transform" $ do
     it "returns transformed precure" $ do
-      (transform (Mirai, Liko) (Mofurun LinkleStoneDia)) `shouldBe` (Miracle, Magical)
+      (transform (Mirai, Liko) (Mofurun LinkleStoneDia)) `shouldBe` (CureMiracle, CureMagical)
 
     it "some precures can transform into special form" $ do
-      (transform (Miracle, Magical, Felice) (Mofurun LinkleStoneAlexandrite, LinkleSmarthon LinkleStoneAlexandrite)) `shouldBe` specialForm
+      (transform (CureMiracle, CureMagical, CureFelice) (Mofurun LinkleStoneAlexandrite, LinkleSmarthon LinkleStoneAlexandrite)) `shouldBe` specialForm
 
   describe "transformationSpeech" $ do
     it "returns group transformation speech of the pair" $ do
       (transformationSpeech (Mirai, Liko) (Mofurun LinkleStoneDia)) `shouldBe` "キュアップ・ラパパ！　ダイヤ！\nミラクル・マジカル・ジュエリーレ！\nふたりの奇跡！キュアミラクル！\nふたりの魔法！キュアマジカル！\n魔法つかいプリキュア！！"
 
     it "returns group transformation speech with alexandrite" $ do
-      (transformationSpeech (Miracle, Magical, Felice) (Mofurun LinkleStoneAlexandrite, LinkleSmarthon LinkleStoneAlexandrite)) `shouldBe` "キュアップ・ラパパ！　アレキサンドライト！\n魔法つかいプリキュア！　オーバー・ザ・レインボー！"
+      (transformationSpeech (CureMiracle, CureMagical, CureFelice) (Mofurun LinkleStoneAlexandrite, LinkleSmarthon LinkleStoneAlexandrite)) `shouldBe` "キュアップ・ラパパ！　アレキサンドライト！\n魔法つかいプリキュア！　オーバー・ザ・レインボー！"
 
   describe "purificationSpeech" $ do
     it "returns purification speech" $ do
-      (purificationSpeech (Miracle, Magical) (Mofurun LinkleStoneDia, LinkleStick LinkleStoneDia)) `shouldBe` "ダイヤ！永遠の輝きを私達の手に！\nフルフルリンクル！\nプリキュア！ダイヤモンド・エターナル！"
+      (purificationSpeech (CureMiracle, CureMagical) (Mofurun LinkleStoneDia, LinkleStick LinkleStoneDia)) `shouldBe` "ダイヤ！永遠の輝きを私達の手に！\nフルフルリンクル！\nプリキュア！ダイヤモンド・エターナル！"
 
   describe "TransformedGroup" $ do
-    describe "Magical, Miracle, and Felice" $ do
+    describe "CureMagical, CureMiracle, and CureFelice" $ do
       it "are Maho Girls PreCure" $ do
-        groupName (Miracle, Magical, Felice) `shouldBe` "魔法つかいプリキュア！"
+        groupName (CureMiracle, CureMagical, CureFelice) `shouldBe` "魔法つかいプリキュア！"
 
       it "Their variation is dia style" $ do
-        groupVariation (Miracle, Magical, Felice) `shouldBe` "ダイヤスタイル"
+        groupVariation (CureMiracle, CureMagical, CureFelice) `shouldBe` "ダイヤスタイル"
 
-    describe "Magical, Miracle, and Felice (special form)" $ do
+    describe "CureMagical, CureMiracle, and CureFelice (special form)" $ do
       it "are Maho Girls PreCure" $ do
         groupName specialForm `shouldBe` "魔法つかいプリキュア！"
 
