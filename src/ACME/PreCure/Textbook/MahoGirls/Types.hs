@@ -80,13 +80,19 @@ transformedInstance [t| Miracle          |] cureName_Miracle introducesHerselfAs
 transformedInstance [t| Miracle_Ruby     |] cureName_Miracle introducesHerselfAs_Miracle variation_Ruby
 transformedInstance [t| Miracle_Sapphire |] cureName_Miracle introducesHerselfAs_Miracle variation_Sapphire
 transformedInstance [t| Miracle_Topaz    |] cureName_Miracle introducesHerselfAs_Miracle variation_Topaz
+transformedInstance [t| Miracle_OverTheRainbow |] cureName_Miracle introducesHerselfAs_Miracle variation_OverTheRainbow
+transformedInstance [t| Miracle_Heartful       |] cureName_Miracle introducesHerselfAs_Miracle variation_Heartful
 
 transformedInstance [t| Magical          |] cureName_Magical introducesHerselfAs_Magical variation_Dia
 transformedInstance [t| Magical_Ruby     |] cureName_Magical introducesHerselfAs_Magical variation_Ruby
 transformedInstance [t| Magical_Sapphire |] cureName_Magical introducesHerselfAs_Magical variation_Sapphire
 transformedInstance [t| Magical_Topaz    |] cureName_Magical introducesHerselfAs_Magical variation_Topaz
+transformedInstance [t| Magical_OverTheRainbow |] cureName_Magical introducesHerselfAs_Magical variation_OverTheRainbow
+transformedInstance [t| Magical_Heartful       |] cureName_Magical introducesHerselfAs_Magical variation_Heartful
 
 transformedInstanceDefault [t| Felice |] cureName_Felice introducesHerselfAs_Felice
+transformedInstance [t| Felice_OverTheRainbow |] cureName_Felice introducesHerselfAs_Felice variation_OverTheRainbow
+transformedInstance [t| Felice_Heartful       |] cureName_Felice introducesHerselfAs_Felice variation_Heartful
 
 transformedInstance
   [t| Mofurun LinkleStoneOfHope |]
