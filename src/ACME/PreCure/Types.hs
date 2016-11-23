@@ -21,7 +21,6 @@ class Transformed t where
 
 
 class TransformedGroup ts where
-  groupMembers :: ts
   groupName :: ts -> String
   groupVariation :: ts -> String
   groupVariation _ = ""

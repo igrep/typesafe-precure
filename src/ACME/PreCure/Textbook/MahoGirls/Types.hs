@@ -76,17 +76,17 @@ instance LinkleStone HeartfulLinkleStone where linkleStoneName _ = linkleStoneNa
 data LinkleStick ls = LinkleStick ls deriving (Eq, Show)
 data FlowerEchoWand ls = FlowerEchoWand ls deriving (Eq, Show)
 
-transformedInstance [t| Miracle          |] cureName_Miracle introducesHerselfAs_Miracle variation_Dia
-transformedInstance [t| Miracle_Ruby     |] cureName_Miracle introducesHerselfAs_Miracle variation_Ruby
-transformedInstance [t| Miracle_Sapphire |] cureName_Miracle introducesHerselfAs_Miracle variation_Sapphire
-transformedInstance [t| Miracle_Topaz    |] cureName_Miracle introducesHerselfAs_Miracle variation_Topaz
+transformedInstance [t| Miracle                |] cureName_Miracle introducesHerselfAs_Miracle variation_Dia
+transformedInstance [t| Miracle_Ruby           |] cureName_Miracle introducesHerselfAs_Miracle variation_Ruby
+transformedInstance [t| Miracle_Sapphire       |] cureName_Miracle introducesHerselfAs_Miracle variation_Sapphire
+transformedInstance [t| Miracle_Topaz          |] cureName_Miracle introducesHerselfAs_Miracle variation_Topaz
 transformedInstance [t| Miracle_OverTheRainbow |] cureName_Miracle introducesHerselfAs_Miracle variation_OverTheRainbow
 transformedInstance [t| Miracle_Heartful       |] cureName_Miracle introducesHerselfAs_Miracle variation_Heartful
 
-transformedInstance [t| Magical          |] cureName_Magical introducesHerselfAs_Magical variation_Dia
-transformedInstance [t| Magical_Ruby     |] cureName_Magical introducesHerselfAs_Magical variation_Ruby
-transformedInstance [t| Magical_Sapphire |] cureName_Magical introducesHerselfAs_Magical variation_Sapphire
-transformedInstance [t| Magical_Topaz    |] cureName_Magical introducesHerselfAs_Magical variation_Topaz
+transformedInstance [t| Magical                |] cureName_Magical introducesHerselfAs_Magical variation_Dia
+transformedInstance [t| Magical_Ruby           |] cureName_Magical introducesHerselfAs_Magical variation_Ruby
+transformedInstance [t| Magical_Sapphire       |] cureName_Magical introducesHerselfAs_Magical variation_Sapphire
+transformedInstance [t| Magical_Topaz          |] cureName_Magical introducesHerselfAs_Magical variation_Topaz
 transformedInstance [t| Magical_OverTheRainbow |] cureName_Magical introducesHerselfAs_Magical variation_OverTheRainbow
 transformedInstance [t| Magical_Heartful       |] cureName_Magical introducesHerselfAs_Magical variation_Heartful
 
@@ -120,86 +120,72 @@ transformedInstance
 
 transformedGroupInstance
   [t| (Miracle, Magical) |]
-  [| (Miracle, Magical) |]
   groupName_MahoGirls
   variation_Dia
 
 transformedGroupInstance
   [t| (Miracle_Ruby, Magical_Ruby) |]
-  [| (Miracle_Ruby, Magical_Ruby) |]
   groupName_MahoGirls
   variation_Ruby
 
 transformedGroupInstance
   [t| (Miracle_Sapphire, Magical_Sapphire) |]
-  [| (Miracle_Sapphire, Magical_Sapphire) |]
   groupName_MahoGirls
   variation_Sapphire
 
 transformedGroupInstance
   [t| (Miracle_Topaz, Magical_Topaz) |]
-  [| (Miracle_Topaz, Magical_Topaz) |]
   groupName_MahoGirls
   variation_Topaz
 
 transformedGroupInstance
   [t| (Miracle, Magical, Felice) |]
-  [| (Miracle, Magical, Felice) |]
   groupName_MahoGirls
   variation_Dia
 
 transformedGroupInstance
   [t| (Miracle_Ruby, Magical_Ruby, Felice) |]
-  [| (Miracle_Ruby, Magical_Ruby, Felice) |]
   groupName_MahoGirls
   variation_Ruby
 
 transformedGroupInstance
   [t| (Miracle_Sapphire, Magical_Sapphire, Felice) |]
-  [| (Miracle_Sapphire, Magical_Sapphire, Felice) |]
   groupName_MahoGirls
   variation_Sapphire
 
 transformedGroupInstance
   [t| (Miracle_Topaz, Magical_Topaz, Felice) |]
-  [| (Miracle_Topaz, Magical_Topaz, Felice) |]
   groupName_MahoGirls
   variation_Topaz
 
 transformedGroupInstance
   [t| (Miracle, Magical, Felice, Mofurun LinkleStoneOfHope) |]
-  [| (Miracle, Magical, Felice, Mofurun LinkleStoneOfHope) |]
   groupName_MahoGirls
   variation_Dia
 
 transformedGroupInstance
   [t| (Miracle_Ruby, Magical_Ruby, Felice, Mofurun (LinkleStoneOfHope, LinkleStoneRuby)) |]
-  [| (Miracle_Ruby, Magical_Ruby, Felice, Mofurun (LinkleStoneOfHope, LinkleStoneRuby)) |]
   groupName_MahoGirls
   variation_Ruby
 
 transformedGroupInstance
   [t| (Miracle_Sapphire, Magical_Sapphire, Felice, Mofurun (LinkleStoneOfHope, LinkleStoneSapphire)) |]
-  [| (Miracle_Sapphire, Magical_Sapphire, Felice, Mofurun (LinkleStoneOfHope, LinkleStoneSapphire)) |]
   groupName_MahoGirls
   variation_Sapphire
 
 transformedGroupInstance
   [t| (Miracle_Topaz, Magical_Topaz, Felice, Mofurun (LinkleStoneOfHope, LinkleStoneTopaz)) |]
-  [| (Miracle_Topaz, Magical_Topaz, Felice, Mofurun (LinkleStoneOfHope, LinkleStoneTopaz)) |]
   groupName_MahoGirls
   variation_Topaz
 
 transformedGroupInstance
   [t| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
-  [| (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow) |]
   groupName_MahoGirls
   variation_OverTheRainbow
 
 -- TODO: Add purification instance after watching the movie again
 transformedGroupInstance
   [t| (Miracle_Heartful, Magical_Heartful, Felice_Heartful, Mofurun HeartfulLinkleStone) |]
-  [| (Miracle_Heartful, Magical_Heartful, Felice_Heartful, Mofurun HeartfulLinkleStone) |]
   groupName_MahoGirls
   variation_Heartful
 
