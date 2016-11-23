@@ -37,9 +37,6 @@ spec = do
 
   describe "TransformedGroup" $ do
     describe "Magical, Miracle, and Felice" $ do
-      it "are PreCure" $ do
-        (groupMembers :: (Miracle, Magical, Felice)) `shouldBe` (Miracle, Magical, Felice)
-
       it "are Maho Girls PreCure" $ do
         groupName (Miracle, Magical, Felice) `shouldBe` "魔法つかいプリキュア！"
 
@@ -47,9 +44,6 @@ spec = do
         groupVariation (Miracle, Magical, Felice) `shouldBe` "ダイヤスタイル"
 
     describe "Magical, Miracle, and Felice (special form)" $ do
-      it "are PreCure" $ do
-        (groupMembers :: (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow)) `shouldBe` specialForm
-
       it "are Maho Girls PreCure" $ do
         groupName specialForm `shouldBe` "魔法つかいプリキュア！"
 
