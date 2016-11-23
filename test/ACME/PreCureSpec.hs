@@ -16,6 +16,7 @@ main = hspec spec
 spec :: Spec
 spec = do
   let specialForm = (Miracle_OverTheRainbow, Magical_OverTheRainbow, Felice_OverTheRainbow)
+      cureSpecialForm = (Cure Miracle_OverTheRainbow, Cure Magical_OverTheRainbow, Cure Felice_OverTheRainbow)
 
   describe "transform" $ do
     it "returns transformed precure" $ do
@@ -55,3 +56,17 @@ spec = do
 
       it "Their variation is over the raibow style" $ do
         groupVariation specialForm `shouldBe` "オーバー・ザ・レインボー"
+
+    describe "Cure Magical, Cure Miracle, and Cure Felice" $ do
+      it "are Maho Girls PreCure" $ do
+        groupName (Cure Miracle, Cure Magical, Cure Felice) `shouldBe` "魔法つかいプリキュア！"
+
+      it "Their variation is dia style" $ do
+        groupVariation (Cure Miracle, Cure Magical, Cure Felice) `shouldBe` "ダイヤスタイル"
+
+    describe "Cure Magical, Cure Miracle, and Cure Felice (special form)" $ do
+      it "are Maho Girls PreCure" $ do
+        groupName cureSpecialForm `shouldBe` "魔法つかいプリキュア！"
+
+      it "Their variation is over the raibow style" $ do
+        groupVariation cureSpecialForm `shouldBe` "オーバー・ザ・レインボー"

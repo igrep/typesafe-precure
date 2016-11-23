@@ -1,4 +1,5 @@
 {-# LANGUAGE ExistentialQuantification #-}
+{-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE TypeFamilies #-}
 
@@ -36,11 +37,11 @@ class Girl g where
   humanName :: g -> String
 
 
-data Cure =
+data PreCure =
   forall p. (Transformed p) => Cure p
 
 
-instance Show Cure where
+instance Show PreCure where
   show (Cure p) =
     let v =
           if null $ variation p
@@ -50,12 +51,30 @@ instance Show Cure where
       (cureName p) ++ v
 
 
-instance Eq Cure where
+instance Eq PreCure where
   (Cure p) == (Cure q) =
     (cureName p) == (cureName q) && (variation p) == (variation q)
 
 
-instance Transformed Cure where
+instance Transformed PreCure where
   cureName (Cure p) = cureName p
   introducesHerselfAs (Cure p) = introducesHerselfAs p
   variation (Cure p) = variation p
+
+
+instance {-# OVERLAPPABLE #-} TransformedGroup (t1, t2) where
+  groupName _ = "プリキュア"
+
+
+instance {-# OVERLAPPABLE #-} TransformedGroup (t1, t2, t3) where
+  groupName _ = "プリキュア"
+
+
+instance {-# OVERLAPPABLE #-} TransformedGroup (PreCure, PreCure) where
+  groupName (Cure p1, Cure p2) = groupName (p1, p2)
+
+
+instance {-# OVERLAPPABLE #-} TransformedGroup (PreCure, PreCure, PreCure) where
+  groupName (Cure p1, Cure p2, Cure p3) = groupName (p1, p2, p3)
+
+-- TODO: Enumerate all stars. Use HList?
