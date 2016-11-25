@@ -38,6 +38,12 @@ data CureFelice                = CureFelice deriving (Eq, Show)
 data CureFelice_OverTheRainbow = CureFelice_OverTheRainbow deriving (Eq, Show)
 data CureFelice_Heartful       = CureFelice_Heartful deriving (Eq, Show)
 
+data CureMofurun               = CureMofurun deriving (Eq, Show)
+data CureMofurun_Ruby          = CureMofurun_Ruby deriving (Eq, Show)
+data CureMofurun_Sapphire      = CureMofurun_Sapphire deriving (Eq, Show)
+data CureMofurun_Topaz         = CureMofurun_Topaz deriving (Eq, Show)
+data CureMofurun_Heartful      = CureMofurun_Heartful deriving (Eq, Show)
+
 data Mofurun ls = Mofurun ls deriving (Eq, Show)
 
 data LinkleSmarthon ls = LinkleSmarthon ls deriving (Eq, Show)
@@ -80,29 +86,13 @@ transformedInstanceDefault [t| CureFelice |] cureName_Felice introducesHerselfAs
 transformedInstance [t| CureFelice_OverTheRainbow |] cureName_Felice introducesHerselfAs_Felice variation_OverTheRainbow
 transformedInstance [t| CureFelice_Heartful       |] cureName_Felice introducesHerselfAs_Felice variation_Heartful
 
-transformedInstance
-  [t| Mofurun LinkleStoneOfHope |]
-  cureName_Mofurun
-  introducesHerselfAs_Mofurun
-  variation_Dia
+transformedInstance [t| CureMofurun |] cureName_Mofurun introducesHerselfAs_Mofurun variation_Dia
 
-transformedInstance
-  [t| Mofurun (LinkleStoneOfHope, LinkleStoneRuby) |]
-  cureName_Mofurun
-  introducesHerselfAs_Mofurun
-  variation_Ruby
+transformedInstance [t| CureMofurun_Ruby |] cureName_Mofurun introducesHerselfAs_Mofurun variation_Ruby
 
-transformedInstance
-  [t| Mofurun (LinkleStoneOfHope, LinkleStoneSapphire) |]
-  cureName_Mofurun
-  introducesHerselfAs_Mofurun
-  variation_Sapphire
+transformedInstance [t| CureMofurun_Sapphire |] cureName_Mofurun introducesHerselfAs_Mofurun variation_Sapphire
 
-transformedInstance
-  [t| Mofurun (LinkleStoneOfHope, LinkleStoneTopaz) |]
-  cureName_Mofurun
-  introducesHerselfAs_Mofurun
-  variation_Topaz
+transformedInstance [t| CureMofurun_Topaz |] cureName_Mofurun introducesHerselfAs_Mofurun variation_Topaz
 
 transformedGroupInstance
   [t| (CureMiracle, CureMagical) |]
@@ -145,22 +135,22 @@ transformedGroupInstance
   variation_Topaz
 
 transformedGroupInstance
-  [t| (CureMiracle, CureMagical, CureFelice, Mofurun LinkleStoneOfHope) |]
+  [t| (CureMiracle, CureMagical, CureFelice, CureMofurun) |]
   groupName_MahoGirls
   variation_Dia
 
 transformedGroupInstance
-  [t| (CureMiracle_Ruby, CureMagical_Ruby, CureFelice, Mofurun (LinkleStoneOfHope, LinkleStoneRuby)) |]
+  [t| (CureMiracle_Ruby, CureMagical_Ruby, CureFelice, CureMofurun_Ruby) |]
   groupName_MahoGirls
   variation_Ruby
 
 transformedGroupInstance
-  [t| (CureMiracle_Sapphire, CureMagical_Sapphire, CureFelice, Mofurun (LinkleStoneOfHope, LinkleStoneSapphire)) |]
+  [t| (CureMiracle_Sapphire, CureMagical_Sapphire, CureFelice, CureMofurun_Sapphire) |]
   groupName_MahoGirls
   variation_Sapphire
 
 transformedGroupInstance
-  [t| (CureMiracle_Topaz, CureMagical_Topaz, CureFelice, Mofurun (LinkleStoneOfHope, LinkleStoneTopaz)) |]
+  [t| (CureMiracle_Topaz, CureMagical_Topaz, CureFelice, CureMofurun_Topaz) |]
   groupName_MahoGirls
   variation_Topaz
 
@@ -171,7 +161,7 @@ transformedGroupInstance
 
 -- TODO: Add purification instance after watching the movie again
 transformedGroupInstance
-  [t| (CureMiracle_Heartful, CureMagical_Heartful, CureFelice_Heartful, Mofurun HeartfulLinkleStone) |]
+  [t| (CureMiracle_Heartful, CureMagical_Heartful, CureFelice_Heartful, CureMofurun_Heartful) |]
   groupName_MahoGirls
   variation_Heartful
 
@@ -267,12 +257,11 @@ transformationInstance
   [| (CureMiracle_OverTheRainbow, CureMagical_OverTheRainbow, CureFelice_OverTheRainbow) |]
   transformationSpeech_MahoGirls_OverTheRainbow
 
--- TODO: Use Cure Mofurun value instead of raw Mofurun?
 transformationInstance
   [t| Mofurun LinkleStoneOfHope |]
   [t| MiracleMofurunLight |]
-  [t| Mofurun LinkleStoneOfHope |]
-  [| Mofurun LinkleStoneOfHope |]
+  [t| CureMofurun |]
+  [| CureMofurun |]
   transformationSpeech_Mofurun
 
 
