@@ -48,9 +48,6 @@ data PreciousBrace = PreciousBrace deriving (Eq, Show)
 
 data MiracleMofurunLight = MiracleMofurunLight deriving (Eq, Show)
 
-class LinkleStone ls where
-  linkleStoneName :: ls -> String
-
 
 data LinkleStoneDia         = LinkleStoneDia deriving (Show, Eq)
 data LinkleStoneRuby        = LinkleStoneRuby deriving (Show, Eq)
@@ -61,17 +58,6 @@ data LinkleStoneAlexandrite = LinkleStoneAlexandrite deriving (Show, Eq)
 
 data LinkleStoneOfHope   = LinkleStoneOfHope deriving (Show, Eq)
 data HeartfulLinkleStone = HeartfulLinkleStone deriving (Show, Eq)
-
-instance LinkleStone LinkleStoneDia          where linkleStoneName _ = linkleStoneName_Dia
-instance LinkleStone LinkleStoneRuby         where linkleStoneName _ = linkleStoneName_Ruby
-instance LinkleStone LinkleStoneSapphire     where linkleStoneName _ = linkleStoneName_Sapphire
-instance LinkleStone LinkleStoneTopaz        where linkleStoneName _ = linkleStoneName_Topaz
-instance LinkleStone LinkleStoneEmerald      where linkleStoneName _ = linkleStoneName_Emerald
-instance LinkleStone LinkleStoneAlexandrite  where linkleStoneName _ = linkleStoneName_Alexandrite
-
-instance LinkleStone LinkleStoneOfHope   where linkleStoneName _ = linkleStoneName_OfHope
-instance LinkleStone HeartfulLinkleStone where linkleStoneName _ = linkleStoneName_Heartful
-
 
 data LinkleStick ls = LinkleStick ls deriving (Eq, Show)
 data FlowerEchoWand ls = FlowerEchoWand ls deriving (Eq, Show)
