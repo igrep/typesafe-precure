@@ -53,7 +53,7 @@ transformedGroupInstanceDefault :: TypeQ -> String -> DecsQ
 transformedGroupInstanceDefault typeq groupN =
   [d|
     instance TransformedGroup $(typeq) where
-      groupName = $(stringE groupN)
+      groupName _ = $(stringE groupN)
   |]
 
 
