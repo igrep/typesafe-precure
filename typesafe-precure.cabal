@@ -31,6 +31,14 @@ library
                      , ACME.PreCure.Textbook.SplashStar.Words
                      , ACME.PreCure.Textbook.SplashStar.Types
 
+                     , ACME.PreCure.Textbook.Yes5
+                     , ACME.PreCure.Textbook.Yes5.Words
+                     , ACME.PreCure.Textbook.Yes5.Types
+
+                     , ACME.PreCure.Textbook.Yes5GoGo
+                     , ACME.PreCure.Textbook.Yes5GoGo.Words
+                     , ACME.PreCure.Textbook.Yes5GoGo.Types
+
                      , ACME.PreCure.Textbook.MahoGirls
                      , ACME.PreCure.Textbook.MahoGirls.Types
                      , ACME.PreCure.Textbook.MahoGirls.Words
