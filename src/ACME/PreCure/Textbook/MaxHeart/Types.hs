@@ -15,7 +15,7 @@ data Hikari = Hikari deriving (Eq, Show)
 data CureBlack_Max = CureBlack_Max deriving (Eq, Show)
 data CureWhite_Max = CureWhite_Max deriving (Eq, Show)
 
-$(girlInstance [t| Hikari  |] girlName_Hikari)
+$(girlInstance [t| Hikari |] girlName_Hikari)
 
 data ShinyLuminous = ShinyLuminous deriving (Eq, Show)
 

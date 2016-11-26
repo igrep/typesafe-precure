@@ -27,6 +27,10 @@ library
                      , ACME.PreCure.Textbook.MaxHeart.Words
                      , ACME.PreCure.Textbook.MaxHeart.Types
 
+                     , ACME.PreCure.Textbook.SplashStar
+                     , ACME.PreCure.Textbook.SplashStar.Words
+                     , ACME.PreCure.Textbook.SplashStar.Types
+
                      , ACME.PreCure.Textbook.MahoGirls
                      , ACME.PreCure.Textbook.MahoGirls.Types
                      , ACME.PreCure.Textbook.MahoGirls.Words
