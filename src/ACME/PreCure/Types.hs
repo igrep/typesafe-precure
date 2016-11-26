@@ -30,6 +30,10 @@ class Purification p' i' where
   purificationSpeech :: p' -> i' -> String
 
 
+class NonItemPurification p' where
+  nonItemPurificationSpeech :: p' -> String
+
+
 -- g: A girl
 class Girl g where
   humanName :: g -> String

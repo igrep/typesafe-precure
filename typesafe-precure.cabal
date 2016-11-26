@@ -18,9 +18,19 @@ library
   ghc-options:         -Wall
   exposed-modules:     ACME.PreCure
                      , ACME.PreCure.Textbook
+
+                     , ACME.PreCure.Textbook.First
+                     , ACME.PreCure.Textbook.First.Words
+                     , ACME.PreCure.Textbook.First.Types
+
+                     , ACME.PreCure.Textbook.MaxHeart
+                     , ACME.PreCure.Textbook.MaxHeart.Words
+                     , ACME.PreCure.Textbook.MaxHeart.Types
+
                      , ACME.PreCure.Textbook.MahoGirls
                      , ACME.PreCure.Textbook.MahoGirls.Types
                      , ACME.PreCure.Textbook.MahoGirls.Words
+
                      , ACME.PreCure.Types
   other-modules:       ACME.PreCure.Types.TH
   build-depends:       base >= 4.7 && < 5

@@ -73,3 +73,11 @@ purificationInstance p' i' speech =
     instance Purification $(p') $(i') where
       purificationSpeech _ _ = $(stringE speech)
   |]
+
+
+nonItemPurificationInstance :: TypeQ -> String -> DecsQ
+nonItemPurificationInstance p' speech =
+  [d|
+    instance NonItemPurification $(p') where
+      nonItemPurificationSpeech _ = $(stringE speech)
+  |]
