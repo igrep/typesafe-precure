@@ -39,6 +39,10 @@ library
                      , ACME.PreCure.Textbook.Yes5GoGo.Words
                      , ACME.PreCure.Textbook.Yes5GoGo.Types
 
+                     , ACME.PreCure.Textbook.Fresh
+                     , ACME.PreCure.Textbook.Fresh.Words
+                     , ACME.PreCure.Textbook.Fresh.Types
+
                      , ACME.PreCure.Textbook.MahoGirls
                      , ACME.PreCure.Textbook.MahoGirls.Types
                      , ACME.PreCure.Textbook.MahoGirls.Words
