@@ -92,4 +92,4 @@ purificationInstance [t| CureMoonlight |] [t| MoonTakt |] purificationSpeech_Moo
 purificationInstance
   [t| (CureBlossom, CureMarine, CureSunshine, CureMoonlight) |]
   [t| HeartCatchMirage SuperPreCureSeed |]
-  transformationSpeech_HeartCatch_SuperSilhouette
+  purificationSpeech_HeartCatch_SuperSilhouette
