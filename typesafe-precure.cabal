@@ -43,6 +43,10 @@ library
                      , ACME.PreCure.Textbook.Fresh.Words
                      , ACME.PreCure.Textbook.Fresh.Types
 
+                     , ACME.PreCure.Textbook.HeartCatch
+                     , ACME.PreCure.Textbook.HeartCatch.Words
+                     , ACME.PreCure.Textbook.HeartCatch.Types
+
                      , ACME.PreCure.Textbook.MahoGirls
                      , ACME.PreCure.Textbook.MahoGirls.Types
                      , ACME.PreCure.Textbook.MahoGirls.Words
