@@ -51,6 +51,10 @@ library
                      , ACME.PreCure.Textbook.Suite.Words
                      , ACME.PreCure.Textbook.Suite.Types
 
+                     , ACME.PreCure.Textbook.Smile
+                     , ACME.PreCure.Textbook.Smile.Words
+                     , ACME.PreCure.Textbook.Smile.Types
+
                      , ACME.PreCure.Textbook.MahoGirls
                      , ACME.PreCure.Textbook.MahoGirls.Types
                      , ACME.PreCure.Textbook.MahoGirls.Words
