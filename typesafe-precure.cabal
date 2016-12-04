@@ -55,6 +55,10 @@ library
                      , ACME.PreCure.Textbook.Smile.Words
                      , ACME.PreCure.Textbook.Smile.Types
 
+                     , ACME.PreCure.Textbook.Dokidoki
+                     , ACME.PreCure.Textbook.Dokidoki.Words
+                     , ACME.PreCure.Textbook.Dokidoki.Types
+
                      , ACME.PreCure.Textbook.MahoGirls
                      , ACME.PreCure.Textbook.MahoGirls.Types
                      , ACME.PreCure.Textbook.MahoGirls.Words
