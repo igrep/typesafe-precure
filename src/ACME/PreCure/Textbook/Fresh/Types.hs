@@ -5,6 +5,10 @@
 
 module ACME.PreCure.Textbook.Fresh.Types where
 
+import           Data.List
+                   ( intercalate
+                   )
+
 
 import           ACME.PreCure.Textbook.Fresh.Words
 import           ACME.PreCure.Types.TH
@@ -34,10 +38,10 @@ data PassionHarp = PassionHarp deriving (Eq, Show)
 
 data CloverBox = CloverBox deriving (Eq, Show)
 
-transformedInstanceDefault [t| CurePeach |] cureName_Peach introducesHerselfAs_Peach
-transformedInstanceDefault [t| CureBerry |] cureName_Berry introducesHerselfAs_Berry
-transformedInstanceDefault [t| CurePine |] cureName_Pine introducesHerselfAs_Pine
-transformedInstanceDefault [t| CurePassion |] cureName_Passion introducesHerselfAs_Passion
+transformedInstanceDefault [t| CurePeach |] cureName_Peach $ intercalate "\n" introducesHerselfAs_Peach
+transformedInstanceDefault [t| CureBerry |] cureName_Berry $ intercalate "\n" introducesHerselfAs_Berry
+transformedInstanceDefault [t| CurePine |] cureName_Pine $ intercalate "\n" introducesHerselfAs_Pine
+transformedInstanceDefault [t| CurePassion |] cureName_Passion $ intercalate "\n" introducesHerselfAs_Passion
 
 transformedGroupInstanceDefault
   [t| (CurePeach, CureBerry, CurePine, CurePassion) |]

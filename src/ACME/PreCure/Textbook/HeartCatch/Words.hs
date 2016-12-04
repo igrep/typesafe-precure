@@ -2,9 +2,6 @@
 
 module ACME.PreCure.Textbook.HeartCatch.Words where
 
-import           Data.List (intercalate)
-
-
 groupName_HeartCatch = "ハートキャッチプリキュア！"
 
 girlName_Tsubomi = "花咲つぼみ"
@@ -33,13 +30,12 @@ introducesHerselfAs_Moonlight = "月光に冴える一輪の花！ キュアム�
 preCureSeed = "(プリキュアの種、いくですぅ！)"
 openMyHeart = "プリキュア！オープンマイハート！"
 
-transformationSpeech_Blossom   = preCureSeed ++ "\n" ++ openMyHeart ++ "\n" ++ introducesHerselfAs_Blossom
-transformationSpeech_Marine    = preCureSeed ++ "\n" ++ openMyHeart ++ "\n" ++ introducesHerselfAs_Marine
-transformationSpeech_Sunshine  = preCureSeed ++ "\n" ++ openMyHeart ++ "\n" ++ introducesHerselfAs_Sunshine
-transformationSpeech_Moonlight = openMyHeart ++ "\n" ++ introducesHerselfAs_Moonlight
+transformationSpeech_Blossom   = [preCureSeed, openMyHeart, introducesHerselfAs_Blossom]
+transformationSpeech_Marine    = [preCureSeed, openMyHeart, introducesHerselfAs_Marine]
+transformationSpeech_Sunshine  = [preCureSeed, openMyHeart, introducesHerselfAs_Sunshine]
+transformationSpeech_Moonlight = [openMyHeart, introducesHerselfAs_Moonlight]
 
 transformationSpeech_HeartCatch =
-  intercalate "\n"
     [ preCureSeed
     , openMyHeart
     , introducesHerselfAs_Blossom
@@ -51,7 +47,6 @@ transformationSpeech_HeartCatch =
 
 -- https://www.youtube.com/watch?v=zpfoddTKS6U
 transformationSpeech_HeartCatch_SuperSilhouette =
-  intercalate "\n"
     [ "鏡よ鏡、プリキュアに力を！"
     , "世界に輝く一面の花！ ハートキャッチプリキュア！ スーパーシルエット！"
     ]
@@ -59,7 +54,6 @@ transformationSpeech_HeartCatch_SuperSilhouette =
 
 -- https://www.youtube.com/watch?v=zpfoddTKS6U
 purificationSpeech_Blossom =
-  intercalate "\n"
     [ "集まれ、花のパワー！"
     , "ブロッサム・タクト！"
     , "花よ輝け！"
@@ -68,7 +62,6 @@ purificationSpeech_Blossom =
 
 -- https://www.youtube.com/watch?v=-kWxDb4kkpY
 purificationSpeech_Marine =
-  intercalate "\n"
     [ "集まれ、花のパワー！"
     , "マリン・タクト！"
     , "花よ煌めけ！"
@@ -77,7 +70,6 @@ purificationSpeech_Marine =
 
 -- https://www.youtube.com/watch?v=BOXWBXhj4K4
 purificationSpeech_Sunshine =
-  intercalate "\n"
     [ "集まれ、花のパワー！"
     , "シャイニー・タンバリン！"
     , "花よ、舞い踊れ！"
@@ -86,7 +78,6 @@ purificationSpeech_Sunshine =
 
 -- https://www.youtube.com/watch?v=bprklJEuUBk
 purificationSpeech_Moonlight =
-  intercalate "\n"
     [ "集まれ、花のパワー！"
     , "ムーン・タクト！"
     , "花よ輝け！"
@@ -95,7 +86,6 @@ purificationSpeech_Moonlight =
 
 -- https://www.youtube.com/watch?v=s3Epi7ArY5A
 purificationSpeech_HeartCatch_SuperSilhouette =
-  intercalate "\n"
     [ "花よ、咲き誇れ！"
     , "プリキュア！ハートキャッチ・オーケストラ！！"
     ]

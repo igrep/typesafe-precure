@@ -9,6 +9,7 @@ import           Language.Haskell.TH.Lib
                    ( DecsQ
                    , ExpQ
                    , TypeQ
+                   , listE
                    , stringE
                    )
 
@@ -57,27 +58,27 @@ transformedGroupInstanceDefault typeq groupN =
   |]
 
 
-transformationInstance :: TypeQ -> TypeQ -> TypeQ -> ExpQ -> String -> DecsQ
+transformationInstance :: TypeQ -> TypeQ -> TypeQ -> ExpQ -> [String] -> DecsQ
 transformationInstance g' i' p' pvalue' speech =
   [d|
     instance Transformation $(g') $(i') where
       type Style $(g') $(i') = $(p')
-      transform _ _ = $(pvalue')
-      transformationSpeech _ _ = $(stringE speech)
+      transformedStyle _ _ = $(pvalue')
+      transformationSpeech _ _ = $(listE $ map stringE speech)
   |]
 
 
-purificationInstance :: TypeQ -> TypeQ -> String -> DecsQ
+purificationInstance :: TypeQ -> TypeQ -> [String] -> DecsQ
 purificationInstance p' i' speech =
   [d|
     instance Purification $(p') $(i') where
-      purificationSpeech _ _ = $(stringE speech)
+      purificationSpeech _ _ = $(listE $ map stringE speech)
   |]
 
 
-nonItemPurificationInstance :: TypeQ -> String -> DecsQ
+nonItemPurificationInstance :: TypeQ -> [String] -> DecsQ
 nonItemPurificationInstance p' speech =
   [d|
     instance NonItemPurification $(p') where
-      nonItemPurificationSpeech _ = $(stringE speech)
+      nonItemPurificationSpeech _ = $(listE $ map stringE speech)
   |]

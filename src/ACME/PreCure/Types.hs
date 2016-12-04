@@ -8,8 +8,8 @@ module ACME.PreCure.Types where
 -- i: A special item or a group of special items
 class Transformation g' i' where
   type Style g' i'
-  transform :: g' -> i' -> Style g' i'
-  transformationSpeech :: g' -> i' -> String
+  transformedStyle :: g' -> i' -> Style g' i'
+  transformationSpeech :: g' -> i' -> [String]
 
 
 class Transformed t where
@@ -27,11 +27,11 @@ class TransformedGroup ts where
 
 -- p': A (transformed) precure or a group of precures
 class Purification p' i' where
-  purificationSpeech :: p' -> i' -> String
+  purificationSpeech :: p' -> i' -> [String]
 
 
 class NonItemPurification p' where
-  nonItemPurificationSpeech :: p' -> String
+  nonItemPurificationSpeech :: p' -> [String]
 
 
 -- g: A girl

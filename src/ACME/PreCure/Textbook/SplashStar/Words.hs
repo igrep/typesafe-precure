@@ -2,8 +2,6 @@
 
 module ACME.PreCure.Textbook.SplashStar.Words where
 
-import           Data.List (intercalate)
-
 
 groupName_SplashStar = "ふたりはプリキュア Splash Star"
 
@@ -26,7 +24,6 @@ introducesHerselfAs_Windy  = "大地に薫る風！ キュアウィンディ！"
 
 -- https://www.youtube.com/watch?v=BNfpwV-sPJU
 transformationSpeech_Bloom_Egret =
-  intercalate "\n"
     [ "デュアル・スピリチュアル・パワー！"
     , "花開け大地に！"
     , "羽ばたけ空に！"
@@ -40,7 +37,6 @@ transformationSpeech_Bloom_Egret =
 
 -- https://www.youtube.com/watch?v=5RMeQZzksuQ
 transformationSpeech_Bright_Windy =
-  intercalate "\n"
     [ "デュアル・スピリチュアル・パワー！"
     , "未来を照らし!"
     , "勇気を運べ!"
@@ -52,7 +48,6 @@ transformationSpeech_Bright_Windy =
     ]
 
 purificationSpeech_Bloom_Egret =
-  intercalate "\n"
     [ "大地の精霊よ"
     , "大空の精霊よ"
     , "今、プリキュアと共に！"

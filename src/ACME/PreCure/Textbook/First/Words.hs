@@ -2,8 +2,6 @@
 
 module ACME.PreCure.Textbook.First.Words where
 
-import           Data.List (intercalate)
-
 
 groupName_First = "ふたりはプリキュア"
 
@@ -18,7 +16,6 @@ introducesHerselfAs_White = "光の使者、キュアホワイト！"
 
 
 transformationSpeech_Black_White =
-  intercalate "\n"
     [ "デュアル・オーロラ・ウェイブ！！"
     , introducesHerselfAs_Black
     , introducesHerselfAs_White
@@ -29,7 +26,6 @@ transformationSpeech_Black_White =
 
 
 purificationSpeech_Black_White =
-  intercalate "\n"
     [ "ブラックサンダー！"
     , "ホワイトサンダー！"
     , "プリキュアの美しき魂が！"
@@ -39,7 +35,6 @@ purificationSpeech_Black_White =
 
 -- https://www.youtube.com/watch?v=jTaon2204i4
 purificationSpeech_Black_White_RainbowStorm =
-  intercalate "\n"
     [ "希望の力よ！光の意思よ！"
     , "未来に向かって、突き進め！"
     , "プリキュア・レインボー・ストーム！！"
