@@ -17,7 +17,7 @@ spec :: Spec
 spec = do
   let specialForm = (CureMiracle_OverTheRainbow, CureMagical_OverTheRainbow, CureFelice_OverTheRainbow)
 
-  describe "transform" $ do
+  describe "transformedStyle" $ do
     it "returns transformed precure" $ do
       (transformedStyle (Mirai, Liko) (Mofurun LinkleStoneDia)) `shouldBe` (CureMiracle, CureMagical)
 
@@ -49,3 +49,21 @@ spec = do
 
       it "Their variation is over the raibow style" $ do
         groupVariation specialForm `shouldBe` "オーバー・ザ・レインボー"
+
+  let action = do
+        transform (Nagisa, Honoka) (CardCommune_Mepple, CardCommune_Mipple) $ \(CureBlack, CureWhite) -> do
+          purifyWithoutItem (CureBlack, CureWhite)
+          purify (CureBlack, CureWhite) RainbowBrace
+
+  describe "composeEpisode" $ do
+    it "returns accumulated lines" $ do
+      let actual = composeEpisode action
+          expected =
+              transformationSpeech_Black_White
+                ++ purificationSpeech_Black_White
+                ++ purificationSpeech_Black_White_RainbowStorm
+      actual `shouldBe` expected
+
+  describe "printEpisodeWith" $ do
+    it "prints lines by line" $ do
+      printEpisodeWith (defaultEpisodeConfig { lineIntervalMicroSec = 300 * 1000 }) action

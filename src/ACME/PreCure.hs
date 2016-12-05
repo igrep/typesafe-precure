@@ -3,5 +3,6 @@ module ACME.PreCure
   ) where
 
 
+import           ACME.PreCure.Monad as P
 import           ACME.PreCure.Types as P
 import           ACME.PreCure.Textbook as P
