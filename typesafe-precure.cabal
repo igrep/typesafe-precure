@@ -63,6 +63,10 @@ library
                      , ACME.PreCure.Textbook.MahoGirls.Types
                      , ACME.PreCure.Textbook.MahoGirls.Words
 
+                     , ACME.PreCure.Textbook.HappinessCharge
+                     , ACME.PreCure.Textbook.HappinessCharge.Words
+                     , ACME.PreCure.Textbook.HappinessCharge.Types
+
                      , ACME.PreCure.Types
                      , ACME.PreCure.Monad
   other-modules:       ACME.PreCure.Types.TH
