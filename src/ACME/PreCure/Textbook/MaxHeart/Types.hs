@@ -5,7 +5,8 @@
 
 module ACME.PreCure.Textbook.MaxHeart.Types where
 
-import           ACME.PreCure.Textbook.First
+import           ACME.PreCure.Textbook.First.Words
+import           ACME.PreCure.Textbook.First.Types
 import           ACME.PreCure.Textbook.MaxHeart.Words
 import           ACME.PreCure.Types.TH
 

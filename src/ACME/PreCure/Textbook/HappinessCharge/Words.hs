@@ -14,11 +14,6 @@ cureName_Princess = "キュアプリンセス"
 cureName_Honey    = "キュアハニー"
 cureName_Fortune  = "キュアフォーチュン"
 
-variation_SuperLovely   = "スーパーキュアラブリー"
-variation_SuperPrincess = "スーパーキュアプリンセス"
-variation_SuperHoney    = "スーパーキュアハニー"
-variation_SuperFortune  = "スーパーキュアフォーチュン"
-
 -- TODO Add more forms of HappinessCharge PreCure
 variation_InnocentForm = "イノセントフォーム"
 

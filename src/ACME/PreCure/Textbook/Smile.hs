@@ -3,5 +3,4 @@ module ACME.PreCure.Textbook.Smile
   ) where
 
 
-import           ACME.PreCure.Textbook.Smile.Words as S
 import           ACME.PreCure.Textbook.Smile.Types as S

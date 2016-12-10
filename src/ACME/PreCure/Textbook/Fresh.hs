@@ -3,5 +3,4 @@ module ACME.PreCure.Textbook.Fresh
   ) where
 
 
-import           ACME.PreCure.Textbook.Fresh.Words as F
 import           ACME.PreCure.Textbook.Fresh.Types as F

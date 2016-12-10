@@ -8,8 +8,9 @@
 module ACME.PreCure.Textbook.Yes5GoGo.Types where
 
 
+import           ACME.PreCure.Textbook.Yes5.Words
+import           ACME.PreCure.Textbook.Yes5.Types
 import           ACME.PreCure.Textbook.Yes5GoGo.Words
-import           ACME.PreCure.Textbook.Yes5
 import           ACME.PreCure.Types.TH
 
 data Kurumi = Kurumi deriving (Eq, Show)

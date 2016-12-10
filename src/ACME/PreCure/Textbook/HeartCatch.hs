@@ -3,5 +3,4 @@ module ACME.PreCure.Textbook.HeartCatch
   ) where
 
 
-import           ACME.PreCure.Textbook.HeartCatch.Words as H
 import           ACME.PreCure.Textbook.HeartCatch.Types as H

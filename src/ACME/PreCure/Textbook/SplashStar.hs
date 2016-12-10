@@ -3,5 +3,4 @@ module ACME.PreCure.Textbook.SplashStar
   ) where
 
 
-import           ACME.PreCure.Textbook.SplashStar.Words as S
 import           ACME.PreCure.Textbook.SplashStar.Types as S
