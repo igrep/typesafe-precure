@@ -14,4 +14,5 @@ import           ACME.PreCure.Textbook.Suite as T
 import           ACME.PreCure.Textbook.Smile as T
 import           ACME.PreCure.Textbook.Dokidoki as T
 import           ACME.PreCure.Textbook.HappinessCharge as T
+import           ACME.PreCure.Textbook.GoPrincess as T
 import           ACME.PreCure.Textbook.MahoGirls as T

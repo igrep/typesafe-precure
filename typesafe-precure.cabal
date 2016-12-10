@@ -67,6 +67,10 @@ library
                      , ACME.PreCure.Textbook.HappinessCharge.Words
                      , ACME.PreCure.Textbook.HappinessCharge.Types
 
+                     , ACME.PreCure.Textbook.GoPrincess
+                     , ACME.PreCure.Textbook.GoPrincess.Words
+                     , ACME.PreCure.Textbook.GoPrincess.Types
+
                      , ACME.PreCure.Types
                      , ACME.PreCure.Monad
   other-modules:       ACME.PreCure.Types.TH
