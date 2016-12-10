@@ -1,6 +1,6 @@
 module ACME.PreCure.Textbook.GoPrincess
-  ( module H
+  ( module G
   ) where
 
 
-import           ACME.PreCure.Textbook.GoPrincess.Types as H
+import           ACME.PreCure.Textbook.GoPrincess.Types as G
