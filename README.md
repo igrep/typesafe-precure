@@ -8,7 +8,7 @@ Written in Haskell.
 ## Features
 
 - Collection of Japanese battle heroines "PreCure"  and their transformation and purification phrases.
-    - Supports from the first season to "Maho Girls"!
+    - Currently, supports from the first season to "Maho Girls", including Cure Echo!
 - Monadic actions to play the speech of their transformations and purifications.
 
 ## Characteristics
