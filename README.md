@@ -11,13 +11,11 @@ Written in Haskell.
 
 ## Characteristics
 
-Each girl/PreCure/PreCure's variation/special item has her/its own type.  
+**Each girl/PreCure/PreCure's variation/special item has her/its own type**.  
 So only correct combinations of girls/PreCures and items can transform and purify.  
 Compared with other PreCure implementations such as rubicure, clocure, etc., this makes it harder to use, but it reproduces the settings more correctly.
 
 ## Installation
-
-TODO
 
 ```sh
 # unicode-show is optional. But recommended.
