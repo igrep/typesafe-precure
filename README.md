@@ -1,5 +1,7 @@
 # TypeSafe PreCure!!
 
+[![Hackage](https://img.shields.io/hackage/v/typesafe-precure.svg)](http://hackage.haskell.org/package/typesafe-precure)
+
 Type-safe transformations and purifications of PreCures (Japanese Battle Heroine).  
 Written in Haskell.
 
@@ -13,20 +15,23 @@ Written in Haskell.
 
 **Each girl/PreCure/PreCure's variation/special item has her/its own type**.  
 So only correct combinations of girls/PreCures and items can transform and purify.  
-Compared with other PreCure implementations such as rubicure, clocure, etc., this makes it harder to use, but it reproduces the settings more correctly.
+Compared with other PreCure implementations such as rubicure, clocure, etc., this makes it *much harder* to use, but it reproduces the settings more correctly.  
+*Correctness* is more important for this library.
 
 ## Installation
 
 ```sh
-# unicode-show is optional. But recommended.
+# unicode-show is optional. But recommended if you try it on GHCi.
 $ stack install typesafe-precure unicode-show
+## ... OR
+$ cabal install typesafe-precure unicode-show
 ```
 
 ## Example Usage
 
 **Note**:
-- To see Japanese characters in GHCi, use [unicode-show](https://github.com/nushio3/unicode-show)
-- Output of GHCi is prettified by hand.
+- To `show` Japanese characters in GHCi, use [unicode-show](https://github.com/nushio3/unicode-show)
+- Output of GHCi below is prettified by hand.
 
 ### Get transformed PreCure, etc.
 
@@ -85,7 +90,7 @@ ghci> composeEpisode scene
 
 #### Transform and Purify as an IO Action
 
-The phrases are printed by line.
+The phrases are printed by line. Inspired by the similar feature of rubicure.
 
 ```haskell
 ghci> printEpisode scene
