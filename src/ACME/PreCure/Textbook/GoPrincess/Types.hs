@@ -96,7 +96,7 @@ transformationInstance [t| Towa |] [t| PrincessPerfume DressUpKey_Scarlet |] [t|
 transformationInstance [t| CureFlora |] [t| PrincessPerfume DressUpKey_Flora |] [t| CureFlora_ModeElegant |] [| CureFlora_ModeElegant |] transformationSpeech_GoPrincess_ModeElegant
 transformationInstance [t| CureMermaid |] [t| PrincessPerfume DressUpKey_Mermaid |] [t| CureMermaid_ModeElegant |] [| CureMermaid_ModeElegant |] transformationSpeech_GoPrincess_ModeElegant
 transformationInstance [t| CureTwinkle |] [t| PrincessPerfume DressUpKey_Twinkle |] [t| CureTwinkle_ModeElegant |] [| CureTwinkle_ModeElegant |] transformationSpeech_GoPrincess_ModeElegant
-transformationInstance [t| CureScarlet |] [t| PrincessPerfume DressUpKey_Scarlet |] [t| CureScarlet_ModeElegant |] [| CureScarlet_ModeElegant |] transformationSpeech_GoPrincess_ModeElegant
+transformationInstance [t| CureScarlet |] [t| PrincessPerfume DressUpKey_Phoenix |] [t| CureScarlet_ModeElegant |] [| CureScarlet_ModeElegant |] transformationSpeech_GoPrincess_ModeElegant
 
 transformationInstance
   [t| (Haruka, Minami, Kirara) |]
@@ -134,7 +134,7 @@ purificationInstance [t| CureTwinkle |] [t| CrystalPrincessRod DressUpKey_Luna |
 purificationInstance [t| CureTwinkle |] [t| CrystalPrincessRod DressUpKey_ShootingStar |] purificationSpeech_Twinkle_ShootingStar
 purificationInstance [t| CureTwinkle |] [t| MusicPrincessPalace DressUpKey_Ginga |] purificationSpeech_Twinkle_Ginga
 
-purificationInstance [t| CureScarlet |] [t| ScarletViolin DressUpKey_Phoenix |] purificationSpeech_Scarlet_Phoenix
+purificationInstance [t| CureScarlet_ModeElegant |] [t| ScarletViolin DressUpKey_Phoenix |] purificationSpeech_Scarlet_Phoenix
 purificationInstance [t| CureScarlet |] [t| ScarletViolin DressUpKey_Scarlet |] purificationSpeech_Scarlet
 purificationInstance [t| CureScarlet |] [t| ScarletViolin DressUpKey_Hanabi |] purificationSpeech_Scarlet_Hanabi
 purificationInstance [t| CureScarlet |] [t| MusicPrincessPalace DressUpKey_Sun |] purificationSpeech_Scarlet_Sun
