@@ -4,6 +4,7 @@
 ## When reporting about the data of PreCures
 
 未実装の必殺技・浄化技・特殊フォームや、台詞の誤字脱字を報告する場合、この節をお読みください。
+
 Read this section when reporting unimplemented purification or special forms, typos and so on.
 
 ### 実装する対象範囲
@@ -41,4 +42,5 @@ I put impotance on correctness. But sometimes I can't implement to express as yo
 ## For others
 
 一般的なバグレポートのお作法に従い、バグを再現させる手順、使用しているOSなどの環境、どういう予期しない現象が起こったか、どういう現象であってほしいのかを、できるだけ詳細に書いてください。
+
 As general manner of bug reports, specify steps to reproduce, your environment, expected result, and actual result in details.
