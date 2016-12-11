@@ -1,6 +1,7 @@
 # TypeSafe PreCure!!
 
 [![Hackage](https://img.shields.io/hackage/v/typesafe-precure.svg)](http://hackage.haskell.org/package/typesafe-precure)
+[![CircleCI](https://circleci.com/gh/igrep/typesafe-precure.svg?style=svg)](https://circleci.com/gh/igrep/typesafe-precure)
 
 Type-safe transformations and purifications of PreCures (Japanese Battle Heroine).  
 Written in Haskell.
