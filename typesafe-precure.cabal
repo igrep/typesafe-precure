@@ -1,7 +1,7 @@
 name:                typesafe-precure
 version:             0.1.0.0
 synopsis:            Type-safe transformations and purifications of PreCures (Japanese Battle Heroine)
-description:         Type-safe transformations and purifications of PreCures (Japanese Battle Heroine)
+description:         See README.md for details.
 homepage:            https://github.com/igrep/typesafe-precure#readme
 license:             BSD3
 license-file:        LICENSE
@@ -59,10 +59,6 @@ library
                      , ACME.PreCure.Textbook.Dokidoki.Words
                      , ACME.PreCure.Textbook.Dokidoki.Types
 
-                     , ACME.PreCure.Textbook.MahoGirls
-                     , ACME.PreCure.Textbook.MahoGirls.Types
-                     , ACME.PreCure.Textbook.MahoGirls.Words
-
                      , ACME.PreCure.Textbook.HappinessCharge
                      , ACME.PreCure.Textbook.HappinessCharge.Words
                      , ACME.PreCure.Textbook.HappinessCharge.Types
@@ -70,6 +66,14 @@ library
                      , ACME.PreCure.Textbook.GoPrincess
                      , ACME.PreCure.Textbook.GoPrincess.Words
                      , ACME.PreCure.Textbook.GoPrincess.Types
+
+                     , ACME.PreCure.Textbook.Movie
+                     , ACME.PreCure.Textbook.Movie.Words
+                     , ACME.PreCure.Textbook.Movie.Types
+
+                     , ACME.PreCure.Textbook.MahoGirls
+                     , ACME.PreCure.Textbook.MahoGirls.Types
+                     , ACME.PreCure.Textbook.MahoGirls.Words
 
                      , ACME.PreCure.Types
                      , ACME.PreCure.Monad
