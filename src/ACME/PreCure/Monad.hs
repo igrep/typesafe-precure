@@ -6,6 +6,7 @@ module ACME.PreCure.Monad
   , EpisodeConfig(lineIntervalMicroSec)
   , defaultEpisodeConfig
   , speak
+  , say
   , runPreCureMonad
   , composeEpisode
   , printEpisode
@@ -54,6 +55,11 @@ defaultEpisodeConfig =
 speak :: [String] -> PreCureMonad ()
 speak =
   bone . Speak
+
+
+say :: String -> PreCureMonad ()
+say =
+  speak . (:[])
 
 
 composeEpisode :: PreCureMonad a -> [String]
