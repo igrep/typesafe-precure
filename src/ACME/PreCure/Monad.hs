@@ -67,7 +67,6 @@ composeEpisode =
   snd . runPreCureMonad
 
 
--- TODO: Write test
 runPreCureMonad :: PreCureMonad a -> (a, [String])
 runPreCureMonad =
     Arrow.second DList.toList . runPreCureMonadD
@@ -107,12 +106,10 @@ hPrintEpisodeWith h cfg a = do
     Concurrent.threadDelay interval
 
 
-transform
-  :: (Transformation g' i')
-  => g' -> i' -> (Style g' i' -> PreCureMonad x) -> PreCureMonad x
-transform g i a = do
+transform :: (Transformation g' i') => g' -> i' -> PreCureMonad (Style g' i')
+transform g i = do
   speak $ transformationSpeech g i
-  a $ transformedStyle g i
+  return $ transformedStyle g i
 
 
 purify
