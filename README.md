@@ -64,12 +64,14 @@ ghci> purificationSpeech (CureMiracle_Ruby, CureMagical_Ruby) (LinkleStick Linkl
 ghci> :{
 ghci> let scene = do
 ....>       say "この罪を抱いたまま、もう一度、グランプリンセスを目指す！"
-....>       transform Towa (PrincessPerfume DressUpKey_Scarlet) $ \scarlet -> do
-....>         transform scarlet (PrincessPerfume DressUpKey_Phoenix) $ \scarletModeElegant -> do
-                purify scarletModeElegant (ScarletViolin DressUpKey_Phoenix)
+....>       scarlet <- transform Towa (PrincessPerfume DressUpKey_Scarlet)
+....>       scarletModeElegant <- transform scarlet (PrincessPerfume DressUpKey_Phoenix)
+....>       purify scarletModeElegant (ScarletViolin DressUpKey_Phoenix)
 ghci> :}
 ghci> :t scene
-scene :: ACME.PreCure.Monad.PreCureMonad ()
+scene
+  :: Control.Monad.Skeleton.Skeleton
+       ACME.PreCure.Monad.PreCureMonadBase ()
 ```
 
 #### Transform and Purify as a Pure Function

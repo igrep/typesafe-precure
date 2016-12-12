@@ -52,9 +52,9 @@ spec = do
         groupVariation specialForm `shouldBe` "オーバー・ザ・レインボー"
 
   let action = do
-        transform (Nagisa, Honoka) (CardCommune_Mepple, CardCommune_Mipple) $ \(CureBlack, CureWhite) -> do
-          purifyWithoutItem (CureBlack, CureWhite)
-          purify (CureBlack, CureWhite) RainbowBrace
+        (CureBlack, CureWhite) <- transform (Nagisa, Honoka) (CardCommune_Mepple, CardCommune_Mipple)
+        purifyWithoutItem (CureBlack, CureWhite)
+        purify (CureBlack, CureWhite) RainbowBrace
 
   describe "composeEpisode" $ do
     it "returns accumulated lines" $ do
