@@ -1,4 +1,4 @@
-# 0.2.0.0 (2016/12/11)
+# 0.2.0.0 (2016/12/12)
 
 - Breaking Change: Change the signature of `transform`.
     - Before: `transform :: (Transformation g' i') => g' -> i' -> (Style g' i' -> PreCureMonad x) -> PreCureMonad x`
