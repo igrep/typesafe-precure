@@ -5,13 +5,27 @@ module ACME.PreCure.Types.TH where
 
 import           ACME.PreCure.Types
 
+import           Language.Haskell.TH
+                   ( mkName
+                   )
+import           Language.Haskell.TH.Compat.Data
+                   ( dataD'
+                   )
 import           Language.Haskell.TH.Lib
                    ( DecsQ
                    , ExpQ
                    , TypeQ
+                   , cxt
                    , listE
+                   , normalC
                    , stringE
                    )
+
+
+define :: String -> DecsQ
+define string = do
+  let name = mkName string
+  (:[]) <$> dataD' (cxt []) name [] [normalC name []] [''Show, ''Eq]
 
 
 girlInstance :: TypeQ -> String -> DecsQ

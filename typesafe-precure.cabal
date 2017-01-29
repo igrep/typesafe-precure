@@ -83,6 +83,7 @@ library
                      , monad-skeleton
                      , dlist
                      , template-haskell
+                     , th-data-compat
   default-language:    Haskell2010
 
 test-suite typesafe-precure-test
