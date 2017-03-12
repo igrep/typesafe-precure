@@ -82,7 +82,7 @@ library
   other-modules:       ACME.PreCure.Types.TH
                      , ACME.PreCure.Textbook.KirakiraALaMode.Instances
                      , ACME.PreCure.Textbook.KirakiraALaMode.Types
-                     -- , ACME.PreCure.Textbook.KirakiraALaMode.Words
+                     , ACME.PreCure.Textbook.KirakiraALaMode.Words
   build-depends:       base >= 4.7 && < 5
                      -- TODO: specify version
                      , autoexporter
