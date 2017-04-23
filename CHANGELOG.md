@@ -1,3 +1,7 @@
+# 0.3.0.0 (2017/04/23)
+
+- Add: Transformations and a purification of Kirakira :star: PreCure A La Mode.
+
 # 0.2.0.0 (2016/12/12)
 
 - Breaking Change: Change the signature of `transform`.
