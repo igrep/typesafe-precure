@@ -75,14 +75,21 @@ library
                      , ACME.PreCure.Textbook.MahoGirls.Types
                      , ACME.PreCure.Textbook.MahoGirls.Words
 
+                     , ACME.PreCure.Textbook.KirakiraALaMode
+
                      , ACME.PreCure.Types
                      , ACME.PreCure.Monad
   other-modules:       ACME.PreCure.Types.TH
+                     , ACME.PreCure.Textbook.KirakiraALaMode.Instances
+                     , ACME.PreCure.Textbook.KirakiraALaMode.Types
+                     , ACME.PreCure.Textbook.KirakiraALaMode.Words
   build-depends:       base >= 4.7 && < 5
                      -- TODO: specify version
+                     , autoexporter
                      , monad-skeleton
                      , dlist
                      , template-haskell
+                     , th-data-compat
   default-language:    Haskell2010
 
 test-suite typesafe-precure-test

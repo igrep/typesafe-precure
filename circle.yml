@@ -1,0 +1,9 @@
+dependencies:
+  cache_directories:
+    - "~/.stack"
+  override:
+    - stack setup
+    - stack build --pedantic
+test:
+  override:
+    - stack test --pedantic

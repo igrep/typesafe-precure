@@ -1,17 +1,71 @@
 {-# LANGUAGE TemplateHaskell #-}
 
-module ACME.PreCure.Types.TH where
+module ACME.PreCure.Types.TH
+        ( define
+        , defineGirl
+        , defineTransformed
+        , defineTransformedDefault
+
+        , girlInstance
+        , transformedInstance
+        , transformedInstanceDefault
+        , transformedGroupInstance
+        , transformedGroupInstanceDefault
+        , transformationInstance
+
+        , purificationInstance
+        , nonItemPurificationInstance
+        ) where
 
 
 import           ACME.PreCure.Types
 
+import           Language.Haskell.TH
+                   ( Name
+                   , conT
+                   , mkName
+                   )
+import           Language.Haskell.TH.Compat.Data
+                   ( dataD'
+                   )
 import           Language.Haskell.TH.Lib
                    ( DecsQ
+                   , DecQ
                    , ExpQ
                    , TypeQ
+                   , cxt
                    , listE
+                   , normalC
                    , stringE
                    )
+
+singletonDataD :: Name -> DecQ
+singletonDataD name =
+  dataD' (cxt []) name [] [normalC name []] [''Show, ''Eq]
+
+
+define :: String -> DecsQ
+define string = (:[]) <$> singletonDataD (mkName string)
+
+
+defineWith :: Name -> DecsQ -> DecsQ
+defineWith name decsq = (:) <$> singletonDataD name <*> decsq
+
+
+defineGirl :: String -> String -> DecsQ
+defineGirl string humanN = do
+  let name = mkName string
+  defineWith name $ girlInstance (conT name) humanN
+
+
+defineTransformed :: String -> String -> String -> String -> DecsQ
+defineTransformed string cureN intro vari = do
+  let name = mkName string
+  defineWith name $ transformedInstance (conT name) cureN intro vari
+
+
+defineTransformedDefault :: String -> String -> String -> DecsQ
+defineTransformedDefault string cureN intro = defineTransformed string cureN intro ""
 
 
 girlInstance :: TypeQ -> String -> DecsQ
