@@ -21,8 +21,10 @@ defineTransformedDefault "CureChocolat" "キュアショコラ" $ concat introdu
 
 data SweetsPact s = SweetsPact s
 
-define "UsagiShortcake"
-define "RisuPudding"
+define "RabbitShortcake"
+define "SquirrelPudding"
 define "LionIce"
-define "NekoMacaron"
-define "InuChocolate"
+define "CatMacaron"
+define "DogChocolate"
+
+define "CandyRod"
