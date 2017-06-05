@@ -24,22 +24,42 @@ transformationInstance
   [t| (SweetsPact RabbitShortcake, SweetsPact SquirrelPudding, SweetsPact LionIce, SweetsPact CatMacaron, SweetsPact DogChocolate) |]
   [t| (CureWhip, CureCustard, CureGelato, CureMacaron, CureChocolat) |]
   [| (CureWhip, CureCustard, CureGelato, CureMacaron, CureChocolat) |]
-  ( kirakiraALaModeTransformationSpeech
-      [ introducesHerselfAs_CureWhip
-      , introducesHerselfAs_CureCustard
-      , introducesHerselfAs_CureGelato
-      , introducesHerselfAs_CureMacaron
-      , introducesHerselfAs_CureChocolat
-      ]
-    ++ [groupName_KirakiraALaMode ++ "！"]
-  )
+  (kirakiraALaModeTransformationSpeechFeaturing introducesHerselfAs_CureWhip)
+
+transformationInstance
+  [t| (Himari, Ichika, Aoi, Yukari, Akira) |]
+  [t| (SweetsPact SquirrelPudding, SweetsPact RabbitShortcake, SweetsPact LionIce, SweetsPact CatMacaron, SweetsPact DogChocolate) |]
+  [t| (CureCustard, CureWhip, CureGelato, CureMacaron, CureChocolat) |]
+  [| (CureCustard, CureWhip, CureGelato, CureMacaron, CureChocolat) |]
+  (kirakiraALaModeTransformationSpeechFeaturing introducesHerselfAs_CureCustard)
+
+transformationInstance
+  [t| (Aoi, Ichika, Himari, Yukari, Akira) |]
+  [t| (SweetsPact LionIce, SweetsPact RabbitShortcake, SweetsPact SquirrelPudding, SweetsPact CatMacaron, SweetsPact DogChocolate) |]
+  [t| (CureGelato, CureWhip, CureCustard, CureMacaron, CureChocolat) |]
+  [| (CureGelato, CureWhip, CureCustard, CureMacaron, CureChocolat) |]
+  (kirakiraALaModeTransformationSpeechFeaturing introducesHerselfAs_CureGelato)
+
+transformationInstance
+  [t| (Yukari, Ichika, Himari, Aoi, Akira) |]
+  [t| (SweetsPact CatMacaron, SweetsPact RabbitShortcake, SweetsPact SquirrelPudding, SweetsPact LionIce, SweetsPact DogChocolate) |]
+  [t| (CureMacaron, CureWhip, CureCustard, CureGelato, CureChocolat) |]
+  [| (CureMacaron, CureWhip, CureCustard, CureGelato, CureChocolat) |]
+  (kirakiraALaModeTransformationSpeechFeaturing introducesHerselfAs_CureMacaron)
+
+transformationInstance
+  [t| (Akira, Ichika, Himari, Aoi, Yukari) |]
+  [t| (SweetsPact DogChocolate, SweetsPact RabbitShortcake, SweetsPact SquirrelPudding, SweetsPact LionIce, SweetsPact CatMacaron) |]
+  [t| (CureChocolat, CureWhip, CureCustard, CureGelato, CureMacaron) |]
+  [| (CureChocolat, CureWhip, CureCustard, CureGelato, CureMacaron) |]
+  (kirakiraALaModeTransformationSpeechFeaturing introducesHerselfAs_CureChocolat)
 
 transformationInstance
   [t| (Ichika, Himari, Aoi) |]
   [t| (SweetsPact RabbitShortcake, SweetsPact SquirrelPudding, SweetsPact LionIce) |]
   [t| (CureWhip, CureCustard, CureGelato) |]
   [| (CureWhip, CureCustard, CureGelato) |]
-  ( kirakiraALaModeTransformationSpeech
+  ( kirakiraALaModeTransformationSpeechOf
       [ introducesHerselfAs_CureWhip
       , introducesHerselfAs_CureCustard
       , introducesHerselfAs_CureGelato
@@ -51,7 +71,7 @@ transformationInstance
   [t| (SweetsPact RabbitShortcake, SweetsPact SquirrelPudding, SweetsPact LionIce, SweetsPact CatMacaron) |]
   [t| (CureWhip, CureCustard, CureGelato, CureMacaron) |]
   [| (CureWhip, CureCustard, CureGelato, CureMacaron) |]
-  ( kirakiraALaModeTransformationSpeech
+  ( kirakiraALaModeTransformationSpeechOf
       [ introducesHerselfAs_CureWhip
       , introducesHerselfAs_CureCustard
       , introducesHerselfAs_CureGelato
@@ -64,12 +84,17 @@ transformationInstance
   [t| (SweetsPact CatMacaron, SweetsPact DogChocolate) |]
   [t| (CureMacaron, CureChocolat) |]
   [| (CureMacaron, CureChocolat) |]
-  ( kirakiraALaModeTransformationSpeech
+  ( kirakiraALaModeTransformationSpeechOf
       [ introducesHerselfAs_CureMacaron
       , introducesHerselfAs_CureChocolat
       ]
   )
 
+purificationInstance [t| CureWhip |]     [t| CandyRod |] ["キラキラキラルン！", "ホイップ・デコレーション！"]
+purificationInstance [t| CureCustard |]  [t| CandyRod |] ["キラキラキラルン！", "カスタード・イリュージョン！"]
+purificationInstance [t| CureGelato |]   [t| CandyRod |] ["キラキラキラルン！", "ジェラート・シェイク！"]
+purificationInstance [t| CureMacaron |]  [t| CandyRod |] ["キラキラキラルン！", "マカロン・ジュリエンヌ！", "にゃーお♥"]
+purificationInstance [t| CureChocolat |] [t| CandyRod |] ["キラキラキラルン！", "ショコラ・アロマーゼ！"]
 
 purificationInstance
   [t| (CureWhip, CureCustard, CureGelato, CureMacaron, CureChocolat) |]
