@@ -1,3 +1,10 @@
+# 0.3.1.1 (2017/06/05)
+
+- Improve documentation :memo: : Add README and CHANGELOG to extra-source-files, to make README readable on hackage.org.
+- Correct README:
+    - As of 0.3.0.0 this package actually supports Kirakira :star: A La Mode!
+    - Since the initial release, this package actually supports Cure Mofurun!
+
 # 0.3.1.0 (2017/06/05)
 
 - Add: More transformations and purifications of Kirakira :star: PreCure A La Mode.
