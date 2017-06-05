@@ -1,3 +1,7 @@
+# 0.3.1.0 (2017/06/05)
+
+- Add: More transformations and purifications of Kirakira :star: PreCure A La Mode.
+
 # 0.3.0.0 (2017/04/23)
 
 - Add: Transformations and a purification of Kirakira :star: PreCure A La Mode.
