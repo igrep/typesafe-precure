@@ -6,6 +6,8 @@ module ACME.PreCure.Types.TH
         , defineTransformed
         , defineTransformedDefault
 
+        , declareGirlsOf
+
         , girlInstance
         , transformedInstance
         , transformedInstanceDefault
@@ -15,6 +17,9 @@ module ACME.PreCure.Types.TH
 
         , purificationInstance
         , nonItemPurificationInstance
+
+        -- * Re-export of TH functions which should be used with the other functions in this module
+        , thisModule
         ) where
 
 
@@ -22,22 +27,46 @@ import           ACME.PreCure.Types
 
 import           Language.Haskell.TH
                    ( Name
+                   , Dec(SigD)
+                   , DecQ
+                   , DecsQ
+                   , ExpQ
+                   , TypeQ
                    , conT
+                   , cxt
+                   , listE
                    , mkName
+                   , normalB
+                   , normalC
+                   , stringE
+                   , thisModule
+                   , valD
+                   , varP
                    )
 import           Language.Haskell.TH.Compat.Data
                    ( dataD'
                    )
-import           Language.Haskell.TH.Lib
-                   ( DecsQ
-                   , DecQ
-                   , ExpQ
-                   , TypeQ
-                   , cxt
-                   , listE
-                   , normalC
-                   , stringE
+import           Language.Haskell.TH.Syntax
+                   ( ModName(..)
+                   , Module(..)
                    )
+
+import           Language.Haskell.TH.Lift
+                   ( lift
+                   )
+import           Instances.TH.Lift ()
+
+import           Data.Char
+                   ( toLower
+                   )
+import           Data.List.Split
+                   ( splitOn
+                   )
+import           Data.Map
+                   ( Map
+                   )
+import qualified Data.Map as Map
+
 
 singletonDataD :: Name -> DecQ
 singletonDataD name =
@@ -56,6 +85,26 @@ defineGirl :: String -> String -> DecsQ
 defineGirl string humanN = do
   let name = mkName string
   defineWith name $ girlInstance (conT name) humanN
+
+
+-- | Declare data types with their Girl instances from the type names and
+-- girl names,
+-- Then save the given girl names in the toplevel variable named as
+-- "<shortModuleName>_girlNames" to reuse in CureIndex.
+declareGirlsOf
+  :: [(String, String)] -- ^ Pairs of the Girl data type name and its humanName
+  -> Module -- ^ Target module. This should always given from thisModule
+  -> DecsQ
+declareGirlsOf typeNameAndGirlNames (Module _pkgName (ModName name)) = do
+  let varName = mkName $ toVarName name ++ "_girlNames"
+  memoSigD <- SigD varName <$> [t| Map String String |]
+  memoD <-
+    valD
+      (varP varName)
+      (normalB [| $(lift $ Map.fromList typeNameAndGirlNames) |])
+      []
+  dataAndInstanceD <- concat <$> mapM (uncurry defineGirl) typeNameAndGirlNames
+  return $ memoSigD : memoD : dataAndInstanceD
 
 
 defineTransformed :: String -> String -> String -> String -> DecsQ
@@ -136,3 +185,25 @@ nonItemPurificationInstance p' speech =
     instance NonItemPurification $(p') where
       nonItemPurificationSpeech _ = $(listE $ map stringE speech)
   |]
+
+
+toVarName :: String -> String
+toVarName modFullName =
+  case removeCommonModuleNameParts modFullName of
+      (hd : tl) -> toLower hd : tl
+      [] -> error "toVarName: Assertion failed: empty variable name."
+
+
+removeCommonModuleNameParts :: String -> String
+removeCommonModuleNameParts modFullName =
+  let filteredParts =
+        filter (not . (`elem` commonModuleNameParts)) $ splitOn "." modFullName
+      commonModuleNameParts =
+        ["ACME", "PreCure", "Textbook", "Types", "Words", "Instances"]
+  in
+    case filteredParts of
+        [n] -> n
+        other ->
+          error
+            $ "removeCommonModuleNameParts: Assertion failed: the filteredParts must have only one element. But actually:"
+              ++ show other

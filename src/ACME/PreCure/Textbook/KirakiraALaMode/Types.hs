@@ -7,11 +7,14 @@ import           ACME.PreCure.Types.TH
 import           ACME.PreCure.Textbook.KirakiraALaMode.Words
 
 
-defineGirl "Ichika" "宇佐美 いちか"
-defineGirl "Himari" "有栖川 ひまり"
-defineGirl "Aoi" "立神 あおい"
-defineGirl "Yukari" "琴爪 ゆかり"
-defineGirl "Akira" "剣城 あきら"
+$(declareGirlsOf
+    [ ("Ichika", "宇佐美 いちか")
+    , ("Himari", "有栖川 ひまり")
+    , ("Aoi", "立神 あおい")
+    , ("Yukari", "琴爪 ゆかり")
+    , ("Akira", "剣城 あきら")
+    ] =<< thisModule
+  )
 
 defineTransformedDefault "CureWhip" "キュアホイップ" $ concat introducesHerselfAs_CureWhip
 defineTransformedDefault "CureCustard" "キュアカスタード" $ concat introducesHerselfAs_CureCustard
