@@ -1,6 +1,20 @@
 {-# OPTIONS_GHC -fno-warn-missing-signatures #-}
 
-module ACME.PreCure.Textbook.KirakiraALaMode.Words where
+module ACME.PreCure.Textbook.KirakiraALaMode.Profiles where
+
+
+import           ACME.PreCure.Index.Types
+
+
+girls :: [Girl]
+girls =
+  [ Girl "Ichika" "宇佐美 いちか"
+  , Girl "Himari" "有栖川 ひまり"
+  , Girl "Aoi" "立神 あおい"
+  , Girl "Yukari" "琴爪 ゆかり"
+  , Girl "Akira" "剣城 あきら"
+  ]
+
 
 groupName_KirakiraALaMode = "キラキラ☆プリキュアアラモード"
 

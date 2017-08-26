@@ -10,7 +10,7 @@ module ACME.PreCure.Textbook.KirakiraALaMode.Instances where
 import           ACME.PreCure.Types.TH
 
 import           ACME.PreCure.Textbook.KirakiraALaMode.Types
-import           ACME.PreCure.Textbook.KirakiraALaMode.Words
+import           ACME.PreCure.Textbook.KirakiraALaMode.Profiles
 
 
 transformationInstance [t| Ichika |] [t| SweetsPact RabbitShortcake |] [t| CureWhip |] [| CureWhip |] (cureALaModeDecoration : introducesHerselfAs_CureWhip)

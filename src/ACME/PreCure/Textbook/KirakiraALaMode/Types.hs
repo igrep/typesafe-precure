@@ -4,17 +4,10 @@ module ACME.PreCure.Textbook.KirakiraALaMode.Types where
 
 import           ACME.PreCure.Types.TH
 
-import           ACME.PreCure.Textbook.KirakiraALaMode.Words
+import           ACME.PreCure.Textbook.KirakiraALaMode.Profiles
 
-
-$(declareGirlsOf
-    [ ("Ichika", "宇佐美 いちか")
-    , ("Himari", "有栖川 ひまり")
-    , ("Aoi", "立神 あおい")
-    , ("Yukari", "琴爪 ゆかり")
-    , ("Akira", "剣城 あきら")
-    ] =<< thisModule
-  )
+{-# ANN module girls #-}
+$(declareGirlsOf girls)
 
 defineTransformedDefault "CureWhip" "キュアホイップ" $ concat introducesHerselfAs_CureWhip
 defineTransformedDefault "CureCustard" "キュアカスタード" $ concat introducesHerselfAs_CureCustard
