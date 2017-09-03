@@ -10,6 +10,9 @@ import           Control.Monad
 import           Data.Aeson
                    ( encode
                    )
+import           Data.Data
+                   ( Data
+                   )
 import           Data.Text
                    ( Text
                    )
@@ -50,7 +53,13 @@ cureIndexJson =
             fmap (filter isTextbookMod . concat) $ mapM loadImportedModules modsImportedByRoot :: Q [Module]
           -- ^ ACME.PreCure.Textbook.*
 
-        gs <- fmap concat $ forM textbookMods $ \eachSeriesMod {- ACME.PreCure.Textbook.*.* -} ->
-          concat <$> loadAnnotations eachSeriesMod
-        lift $ decodeUtf8 $ toStrict $ encode $ (gs :: [Girl])
+        let collectAnnotationsFromEachSeriesModules :: Data a => Q [a]
+            collectAnnotationsFromEachSeriesModules =
+              fmap concat $ forM textbookMods $ \eachSeriesMod {- ACME.PreCure.Textbook.*.* -} ->
+                concat <$> loadAnnotations eachSeriesMod
+
+        gs <- collectAnnotationsFromEachSeriesModules
+        ts <- collectAnnotationsFromEachSeriesModules
+
+        lift $ decodeUtf8 $ toStrict $ encode $ Index gs ts
     )

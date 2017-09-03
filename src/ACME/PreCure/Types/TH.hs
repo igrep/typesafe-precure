@@ -2,10 +2,9 @@
 
 module ACME.PreCure.Types.TH
         ( define
-        , defineTransformed
-        , defineTransformedDefault
 
         , declareGirlsOf
+        , declareTransformedsOf
 
         , girlInstance
         , transformedInstance
@@ -57,19 +56,17 @@ defineWith name decsq = (:) <$> singletonDataD name <*> decsq
 declareGirlsOf :: [Index.Girl] -> DecsQ
 declareGirlsOf = fmap concat . mapM d
   where
-    d (Index.Girl i n) = do
-      let name = mkName $ head $ words i
-      defineWith name $ girlInstance (conT name) n
+    d (Index.Girl e j) = do
+      let name = mkName $ head $ words e
+      defineWith name $ girlInstance (conT name) j
 
 
-defineTransformed :: String -> String -> String -> String -> DecsQ
-defineTransformed string cureN intro vari = do
-  let name = mkName string
-  defineWith name $ transformedInstance (conT name) cureN intro vari
-
-
-defineTransformedDefault :: String -> String -> String -> DecsQ
-defineTransformedDefault string cureN intro = defineTransformed string cureN intro ""
+declareTransformedsOf :: [Index.Transformed] -> DecsQ
+declareTransformedsOf = fmap concat . mapM d
+  where
+    d (Index.Transformed e j intro vari) = do
+      let name = mkName $ concat $ words e
+      defineWith name $ transformedInstance (conT name) j intro vari
 
 
 girlInstance :: TypeQ -> String -> DecsQ

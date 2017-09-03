@@ -16,6 +16,16 @@ girls =
   ]
 
 
+transformeds :: [Transformed]
+transformeds =
+  [ Transformed "Cure Whip" "キュアホイップ" (concat introducesHerselfAs_CureWhip) ""
+  , Transformed "Cure Custard" "キュアカスタード" (concat introducesHerselfAs_CureCustard) ""
+  , Transformed "Cure Gelato" "キュアジェラート" (concat introducesHerselfAs_CureGelato) ""
+  , Transformed "Cure Macaron" "キュアマカロン" (concat introducesHerselfAs_CureMacaron) ""
+  , Transformed "Cure Chocolat" "キュアショコラ" (concat introducesHerselfAs_CureChocolat) ""
+  ]
+
+
 groupName_KirakiraALaMode = "キラキラ☆プリキュアアラモード"
 
 cureALaModeDecoration = "キュアラモード・デコレーション！"
