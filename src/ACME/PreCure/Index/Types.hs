@@ -12,7 +12,7 @@ import           ACME.PreCure.Index.Lib
 
 -- | Pair of the Girl data type name and their name
 data Girl =
-  Girl { girlId :: String, girlName :: String }
+  Girl { girlNameEn :: String, girlNameJa :: String }
     deriving (Eq, Show, Data)
 
 deriveToJsonWithoutTypeNamePrefix ''Girl

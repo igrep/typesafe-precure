@@ -58,7 +58,7 @@ declareGirlsOf :: [Index.Girl] -> DecsQ
 declareGirlsOf = fmap concat . mapM d
   where
     d (Index.Girl i n) = do
-      let name = mkName i
+      let name = mkName $ head $ words i
       defineWith name $ girlInstance (conT name) n
 
 

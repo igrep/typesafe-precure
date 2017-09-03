@@ -8,11 +8,11 @@ import           ACME.PreCure.Index.Types
 
 girls :: [Girl]
 girls =
-  [ Girl "Ichika" "宇佐美 いちか"
-  , Girl "Himari" "有栖川 ひまり"
-  , Girl "Aoi" "立神 あおい"
-  , Girl "Yukari" "琴爪 ゆかり"
-  , Girl "Akira" "剣城 あきら"
+  [ Girl "Ichika Usami" "宇佐美 いちか"
+  , Girl "Himari Arisugawa" "有栖川 ひまり"
+  , Girl "Aoi Tategami" "立神 あおい"
+  , Girl "Yukari Kotozume" "琴爪 ゆかり"
+  , Girl "Akira Kenjo" "剣城 あきら"
   ]
 
 
