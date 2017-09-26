@@ -60,6 +60,7 @@ cureIndexJson =
 
         gs <- collectAnnotationsFromEachSeriesModules
         ts <- collectAnnotationsFromEachSeriesModules
+        is <- collectAnnotationsFromEachSeriesModules
 
-        lift $ decodeUtf8 $ toStrict $ encode $ Index gs ts
+        lift $ decodeUtf8 $ toStrict $ encode $ Index gs ts is
     )

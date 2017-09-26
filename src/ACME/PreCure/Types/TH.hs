@@ -5,6 +5,7 @@ module ACME.PreCure.Types.TH
 
         , declareGirlsOf
         , declareTransformedsOf
+        , declareSpecialItemsOf
 
         , girlInstance
         , transformedInstance
@@ -21,12 +22,16 @@ module ACME.PreCure.Types.TH
 import           ACME.PreCure.Types
 import qualified ACME.PreCure.Index.Types as Index
 
+import           Data.Char
+                   ( toLower
+                   )
 import           Language.Haskell.TH
                    ( Name
                    , DecQ
                    , DecsQ
                    , ExpQ
                    , TypeQ
+                   , Type(VarT)
                    , conT
                    , cxt
                    , listE
@@ -34,24 +39,42 @@ import           Language.Haskell.TH
                    , normalC
                    , stringE
                    )
+import           Language.Haskell.TH.Lib
+                   ( StrictTypeQ
+                   , plainTV
+                   )
 import           Language.Haskell.TH.Compat.Data
                    ( dataD'
                    )
+import           Language.Haskell.TH.Compat.Strict
+                   ( isStrict
+                   )
 
 
-singletonDataD :: Name -> DecQ
-singletonDataD name =
-  dataD' (cxt []) name [] [normalC name []] [''Show, ''Eq]
+-- Add type argument names
+singletonDataD :: Name -> [Name] -> DecQ
+singletonDataD name tyVarNames =
+  dataD' (cxt []) name (map plainTV tyVarNames) [normalC name $ map toTypeVar tyVarNames] [''Show, ''Eq]
 
 
 define :: String -> DecsQ
-define string = (:[]) <$> singletonDataD (mkName string)
+define string = defineWithTypeVars string []
+
+
+defineWithTypeVars :: String -> [String] -> DecsQ
+defineWithTypeVars string strings =
+  (: []) <$> singletonDataD (mkName string) (map mkName strings)
+
+
+toTypeVar :: Name -> StrictTypeQ
+toTypeVar name = return (isStrict, VarT name)
 
 
 defineWith :: Name -> DecsQ -> DecsQ
-defineWith name decsq = (:) <$> singletonDataD name <*> decsq
+defineWith name decsq = (:) <$> singletonDataD name [] <*> decsq
 
 
+-- TODO: delete 'Of'
 -- | Declare data types with their Girl instances from the type names and girl names.
 declareGirlsOf :: [Index.Girl] -> DecsQ
 declareGirlsOf = fmap concat . mapM d
@@ -67,6 +90,15 @@ declareTransformedsOf = fmap concat . mapM d
     d (Index.Transformed e j intro vari) = do
       let name = mkName $ concat $ words e
       defineWith name $ transformedInstance (conT name) j intro vari
+
+
+declareSpecialItemsOf :: [Index.SpecialItem] -> DecsQ
+declareSpecialItemsOf = fmap concat . mapM d
+  where
+    d (Index.SpecialItem e _j as) = do
+      let name = concat $ words e
+          aNames = map (firstLower . concat . words) as
+      defineWithTypeVars name aNames -- TODO: create SpecialItem type class
 
 
 girlInstance :: TypeQ -> String -> DecsQ
@@ -137,3 +169,8 @@ nonItemPurificationInstance p' speech =
     instance NonItemPurification $(p') where
       nonItemPurificationSpeech _ = $(listE $ map stringE speech)
   |]
+
+
+firstLower :: String -> String
+firstLower (x:xs) = toLower x : xs
+firstLower _ = error "firstLower: Assertion failed: empty string"

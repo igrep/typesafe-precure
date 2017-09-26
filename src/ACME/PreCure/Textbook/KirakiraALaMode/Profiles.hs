@@ -26,6 +26,19 @@ transformeds =
   ]
 
 
+specialItems :: [SpecialItem]
+specialItems =
+  [ SpecialItem "Sweets Pact"      "スイーツパクト"       ["Animal Sweets"]
+  , SpecialItem "Rabbit Shortcake" "うさぎショートケーキ" []
+  , SpecialItem "Squirrel Pudding" "りすプリン"           []
+  , SpecialItem "Lion Ice"         "らいおんアイス"       []
+  , SpecialItem "Cat Macaron"      "ねこマカロン"         []
+  , SpecialItem "Dog Chocolate"    "いぬチョコレート"     []
+  , SpecialItem "Candy Rod"        "キャンディロッド"     []
+  ]
+
+
+
 groupName_KirakiraALaMode = "キラキラ☆プリキュアアラモード"
 
 cureALaModeDecoration = "キュアラモード・デコレーション！"

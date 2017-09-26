@@ -12,12 +12,5 @@ $(declareGirlsOf girls)
 {-# ANN module transformeds #-}
 $(declareTransformedsOf transformeds)
 
-data SweetsPact s = SweetsPact s
-
-define "RabbitShortcake"
-define "SquirrelPudding"
-define "LionIce"
-define "CatMacaron"
-define "DogChocolate"
-
-define "CandyRod"
+{-# ANN module specialItems #-}
+$(declareSpecialItemsOf specialItems)

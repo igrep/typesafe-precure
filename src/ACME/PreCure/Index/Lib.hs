@@ -65,6 +65,7 @@ deriveToJsonWithoutTypeNamePrefix :: Name -> Q [Dec]
 deriveToJsonWithoutTypeNamePrefix name =
   deriveToJSON Json.defaultOptions { fieldLabelModifier = firstLower . drop (length $ nameBase name) } name
 
+
 firstLower :: String -> String
 firstLower (x:xs) = toLower x : xs
 firstLower _ = error "firstLower: Assertion failed: empty string"

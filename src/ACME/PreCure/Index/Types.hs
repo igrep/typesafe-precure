@@ -29,10 +29,21 @@ data Transformed =
 $(deriveToJsonWithoutTypeNamePrefix ''Transformed)
 
 
+data SpecialItem =
+  SpecialItem
+    { specialItemNameEn :: String
+    , specialItemNameJa :: String
+    , specialItemAttachments :: [String]
+    } deriving (Eq, Show, Data)
+
+$(deriveToJsonWithoutTypeNamePrefix ''SpecialItem)
+
+
 data Index =
   Index
     { indexGirls :: [Girl]
     , indexTransformeds :: [Transformed]
+    , indexSpecialItems :: [SpecialItem]
     } deriving (Eq, Show)
 
 $(deriveToJsonWithoutTypeNamePrefix ''Index)
