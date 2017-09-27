@@ -3,9 +3,9 @@
 module ACME.PreCure.Types.TH
         ( define
 
-        , declareGirlsOf
-        , declareTransformedsOf
-        , declareSpecialItemsOf
+        , declareGirls
+        , declareTransformeds
+        , declareSpecialItems
 
         , girlInstance
         , transformedInstance
@@ -74,26 +74,25 @@ defineWith :: Name -> DecsQ -> DecsQ
 defineWith name decsq = (:) <$> singletonDataD name [] <*> decsq
 
 
--- TODO: delete 'Of'
 -- | Declare data types with their Girl instances from the type names and girl names.
-declareGirlsOf :: [Index.Girl] -> DecsQ
-declareGirlsOf = fmap concat . mapM d
+declareGirls :: [Index.Girl] -> DecsQ
+declareGirls = fmap concat . mapM d
   where
     d (Index.Girl e j) = do
       let name = mkName $ head $ words e
       defineWith name $ girlInstance (conT name) j
 
 
-declareTransformedsOf :: [Index.Transformed] -> DecsQ
-declareTransformedsOf = fmap concat . mapM d
+declareTransformeds :: [Index.Transformed] -> DecsQ
+declareTransformeds = fmap concat . mapM d
   where
     d (Index.Transformed e j intro vari) = do
       let name = mkName $ concat $ words e
       defineWith name $ transformedInstance (conT name) j intro vari
 
 
-declareSpecialItemsOf :: [Index.SpecialItem] -> DecsQ
-declareSpecialItemsOf = fmap concat . mapM d
+declareSpecialItems :: [Index.SpecialItem] -> DecsQ
+declareSpecialItems = fmap concat . mapM d
   where
     d (Index.SpecialItem e _j as) = do
       let name = concat $ words e

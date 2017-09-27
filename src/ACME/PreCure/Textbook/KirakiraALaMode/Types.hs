@@ -7,10 +7,10 @@ import           ACME.PreCure.Types.TH
 import           ACME.PreCure.Textbook.KirakiraALaMode.Profiles
 
 {-# ANN module girls #-}
-$(declareGirlsOf girls)
+$(declareGirls girls)
 
 {-# ANN module transformeds #-}
-$(declareTransformedsOf transformeds)
+$(declareTransformeds transformeds)
 
 {-# ANN module specialItems #-}
-$(declareSpecialItemsOf specialItems)
+$(declareSpecialItems specialItems)
