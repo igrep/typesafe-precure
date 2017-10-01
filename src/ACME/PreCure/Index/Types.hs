@@ -5,13 +5,13 @@
 
 module ACME.PreCure.Index.Types
   ( Girl(Girl)
-  , Transformed(Transformed)
+  , Transformee(Transformee)
   , SpecialItem(SpecialItem)
   , IdAttachments(IdAttachments)
   , Transformation(Transformation)
   , Index
   , mkGirl
-  , mkTransformed
+  , mkTransformee
   , mkSpecialItem
   , mkIA
   , mkTransformation
@@ -46,9 +46,8 @@ mkGirl :: String -> String -> Girl
 mkGirl ne = Girl (head $ words ne) ne
 
 
--- TODO: rename into Transformees
-data Transformed =
-  Transformed
+data Transformee =
+  Transformee
     { transformedId :: String
     , transformedNameEn :: String
     , transformedNameJa :: String
@@ -56,10 +55,10 @@ data Transformed =
     , transformedVariation :: String
     } deriving (Eq, Show, Data)
 
-$(deriveToJsonWithoutTypeNamePrefix ''Transformed)
+$(deriveToJsonWithoutTypeNamePrefix ''Transformee)
 
-mkTransformed :: String -> String -> String -> String -> Transformed
-mkTransformed ne = Transformed (concat $ words ne) ne
+mkTransformee :: String -> String -> String -> String -> Transformee
+mkTransformee ne = Transformee (concat $ words ne) ne
 
 
 data SpecialItem =
@@ -99,7 +98,7 @@ data Transformation =
   Transformation
     { transformationTransformers :: [IdAttachments]
     , transformationSpecialItems :: [IdAttachments]
-    , transformationTransformeds :: [String]
+    , transformationTransformees :: [String]
     , transformationTransformationSpeech :: [String]
     } deriving (Eq, Show, Data)
 
@@ -112,12 +111,12 @@ mkTransformation = Transformation
 data Index =
   Index
     { indexGirls :: [Girl]
-    , indexTransformeds :: [Transformed]
+    , indexTransformees :: [Transformee]
     , indexSpecialItems :: [SpecialItem]
     , indexTransformations :: [Transformation]
     } deriving (Eq, Show)
 
 $(deriveToJsonWithoutTypeNamePrefix ''Index)
 
-mkIndex :: [Girl] -> [Transformed] -> [SpecialItem] -> [Transformation] -> Index
+mkIndex :: [Girl] -> [Transformee] -> [SpecialItem] -> [Transformation] -> Index
 mkIndex = Index

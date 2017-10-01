@@ -16,13 +16,13 @@ girls =
   ]
 
 
-transformeds :: [Transformed]
-transformeds =
-  [ mkTransformed "Cure Whip" "キュアホイップ" (concat introducesHerselfAs_CureWhip) ""
-  , mkTransformed "Cure Custard" "キュアカスタード" (concat introducesHerselfAs_CureCustard) ""
-  , mkTransformed "Cure Gelato" "キュアジェラート" (concat introducesHerselfAs_CureGelato) ""
-  , mkTransformed "Cure Macaron" "キュアマカロン" (concat introducesHerselfAs_CureMacaron) ""
-  , mkTransformed "Cure Chocolat" "キュアショコラ" (concat introducesHerselfAs_CureChocolat) ""
+transformees :: [Transformee]
+transformees =
+  [ mkTransformee "Cure Whip" "キュアホイップ" (concat introducesHerselfAs_CureWhip) ""
+  , mkTransformee "Cure Custard" "キュアカスタード" (concat introducesHerselfAs_CureCustard) ""
+  , mkTransformee "Cure Gelato" "キュアジェラート" (concat introducesHerselfAs_CureGelato) ""
+  , mkTransformee "Cure Macaron" "キュアマカロン" (concat introducesHerselfAs_CureMacaron) ""
+  , mkTransformee "Cure Chocolat" "キュアショコラ" (concat introducesHerselfAs_CureChocolat) ""
   ]
 
 

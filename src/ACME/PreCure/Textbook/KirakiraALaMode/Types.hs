@@ -13,8 +13,8 @@ import           ACME.PreCure.Textbook.KirakiraALaMode.Profiles
 {-# ANN module girls #-}
 $(declareGirls girls)
 
-{-# ANN module transformeds #-}
-$(declareTransformeds transformeds)
+{-# ANN module transformees #-}
+$(declareTransformees transformees)
 
 {-# ANN module specialItems #-}
 $(declareSpecialItems specialItems)
