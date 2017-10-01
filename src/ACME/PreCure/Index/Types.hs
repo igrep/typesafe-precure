@@ -99,7 +99,7 @@ data Transformation =
     { transformationTransformers :: [IdAttachments]
     , transformationSpecialItems :: [IdAttachments]
     , transformationTransformees :: [String]
-    , transformationTransformationSpeech :: [String]
+    , transformationSpeech :: [String]
     } deriving (Eq, Show, Data)
 
 $(deriveToJsonWithoutTypeNamePrefix ''Transformation)
