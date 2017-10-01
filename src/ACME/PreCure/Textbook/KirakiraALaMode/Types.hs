@@ -1,4 +1,8 @@
+{-# LANGUAGE FlexibleInstances #-}
+{-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE TemplateHaskell #-}
+{-# OPTIONS_GHC -fno-warn-orphans #-}
 
 module ACME.PreCure.Textbook.KirakiraALaMode.Types where
 
@@ -14,3 +18,6 @@ $(declareTransformeds transformeds)
 
 {-# ANN module specialItems #-}
 $(declareSpecialItems specialItems)
+
+{-# ANN module transformations #-}
+$(declareTransformations transformations)

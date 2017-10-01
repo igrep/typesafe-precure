@@ -1,42 +1,106 @@
 {-# OPTIONS_GHC -fno-warn-missing-signatures #-}
+{-# LANGUAGE OverloadedStrings #-}
 
 module ACME.PreCure.Textbook.KirakiraALaMode.Profiles where
-
 
 import           ACME.PreCure.Index.Types
 
 
 girls :: [Girl]
 girls =
-  [ Girl "Ichika Usami" "宇佐美 いちか"
-  , Girl "Himari Arisugawa" "有栖川 ひまり"
-  , Girl "Aoi Tategami" "立神 あおい"
-  , Girl "Yukari Kotozume" "琴爪 ゆかり"
-  , Girl "Akira Kenjo" "剣城 あきら"
+  [ mkGirl "Ichika Usami" "宇佐美 いちか"
+  , mkGirl "Himari Arisugawa" "有栖川 ひまり"
+  , mkGirl "Aoi Tategami" "立神 あおい"
+  , mkGirl "Yukari Kotozume" "琴爪 ゆかり"
+  , mkGirl "Akira Kenjo" "剣城 あきら"
   ]
 
 
 transformeds :: [Transformed]
 transformeds =
-  [ Transformed "Cure Whip" "キュアホイップ" (concat introducesHerselfAs_CureWhip) ""
-  , Transformed "Cure Custard" "キュアカスタード" (concat introducesHerselfAs_CureCustard) ""
-  , Transformed "Cure Gelato" "キュアジェラート" (concat introducesHerselfAs_CureGelato) ""
-  , Transformed "Cure Macaron" "キュアマカロン" (concat introducesHerselfAs_CureMacaron) ""
-  , Transformed "Cure Chocolat" "キュアショコラ" (concat introducesHerselfAs_CureChocolat) ""
+  [ mkTransformed "Cure Whip" "キュアホイップ" (concat introducesHerselfAs_CureWhip) ""
+  , mkTransformed "Cure Custard" "キュアカスタード" (concat introducesHerselfAs_CureCustard) ""
+  , mkTransformed "Cure Gelato" "キュアジェラート" (concat introducesHerselfAs_CureGelato) ""
+  , mkTransformed "Cure Macaron" "キュアマカロン" (concat introducesHerselfAs_CureMacaron) ""
+  , mkTransformed "Cure Chocolat" "キュアショコラ" (concat introducesHerselfAs_CureChocolat) ""
   ]
 
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ SpecialItem "Sweets Pact"      "スイーツパクト"       ["Animal Sweets"]
-  , SpecialItem "Rabbit Shortcake" "うさぎショートケーキ" []
-  , SpecialItem "Squirrel Pudding" "りすプリン"           []
-  , SpecialItem "Lion Ice"         "らいおんアイス"       []
-  , SpecialItem "Cat Macaron"      "ねこマカロン"         []
-  , SpecialItem "Dog Chocolate"    "いぬチョコレート"     []
-  , SpecialItem "Candy Rod"        "キャンディロッド"     []
+  [ mkSpecialItem "Sweets Pact"      "スイーツパクト"       ["Animal Sweets"]
+  , mkSpecialItem "Rabbit Shortcake" "うさぎショートケーキ" []
+  , mkSpecialItem "Squirrel Pudding" "りすプリン"           []
+  , mkSpecialItem "Lion Ice"         "らいおんアイス"       []
+  , mkSpecialItem "Cat Macaron"      "ねこマカロン"         []
+  , mkSpecialItem "Dog Chocolate"    "いぬチョコレート"     []
+  , mkSpecialItem "Candy Rod"        "キャンディロッド"     []
   ]
 
+
+transformations :: [Transformation]
+transformations =
+      [ mkTransformation ["Ichika"] [mkIA "SweetsPact" ["RabbitShortcake"]] ["CureWhip"]     (cureALaModeDecoration : introducesHerselfAs_CureWhip)
+      , mkTransformation ["Himari"] [mkIA "SweetsPact" ["SquirrelPudding"]] ["CureCustard"]  (cureALaModeDecoration : introducesHerselfAs_CureCustard)
+      , mkTransformation ["Aoi"]    [mkIA "SweetsPact" ["LionIce"]]         ["CureGelato"]   (cureALaModeDecoration : introducesHerselfAs_CureGelato)
+      , mkTransformation ["Yukari"] [mkIA "SweetsPact" ["CatMacaron"]]      ["CureMacaron"]  (cureALaModeDecoration : introducesHerselfAs_CureMacaron)
+      , mkTransformation ["Akira"]  [mkIA "SweetsPact" ["DogChocolate"]]    ["CureChocolat"] (cureALaModeDecoration : introducesHerselfAs_CureChocolat)
+      , mkTransformation
+          ["Ichika", "Himari", "Aoi", "Yukari", "Akira"]
+          [mkIA "SweetsPact" ["RabbitShortcake"], mkIA "SweetsPact" ["SquirrelPudding"], mkIA "SweetsPact" ["LionIce"], mkIA "SweetsPact" ["CatMacaron"], mkIA "SweetsPact" ["DogChocolate"]]
+          ["CureWhip", "CureCustard", "CureGelato", "CureMacaron", "CureChocolat"]
+          (kirakiraALaModeTransformationSpeechFeaturing introducesHerselfAs_CureWhip)
+      , mkTransformation
+          ["Himari", "Ichika", "Aoi", "Yukari", "Akira"]
+          [mkIA "SweetsPact" ["SquirrelPudding"], mkIA "SweetsPact" ["RabbitShortcake"], mkIA "SweetsPact" ["LionIce"], mkIA "SweetsPact" ["CatMacaron"], mkIA "SweetsPact" ["DogChocolate"]]
+          ["CureCustard", "CureWhip", "CureGelato", "CureMacaron", "CureChocolat"]
+          (kirakiraALaModeTransformationSpeechFeaturing introducesHerselfAs_CureCustard)
+      , mkTransformation
+          ["Aoi", "Ichika", "Himari", "Yukari", "Akira"]
+          [mkIA "SweetsPact" ["LionIce"], mkIA "SweetsPact" ["RabbitShortcake"], mkIA "SweetsPact" ["SquirrelPudding"], mkIA "SweetsPact" ["CatMacaron"], mkIA "SweetsPact" ["DogChocolate"]]
+          ["CureGelato", "CureWhip", "CureCustard", "CureMacaron", "CureChocolat"]
+          (kirakiraALaModeTransformationSpeechFeaturing introducesHerselfAs_CureGelato)
+      , mkTransformation
+          ["Yukari", "Ichika", "Himari", "Aoi", "Akira"]
+          [mkIA "SweetsPact" ["CatMacaron"], mkIA "SweetsPact" ["RabbitShortcake"], mkIA "SweetsPact" ["SquirrelPudding"], mkIA "SweetsPact" ["LionIce"], mkIA "SweetsPact" ["DogChocolate"]]
+          ["CureMacaron", "CureWhip", "CureCustard", "CureGelato", "CureChocolat"]
+          (kirakiraALaModeTransformationSpeechFeaturing introducesHerselfAs_CureMacaron)
+      , mkTransformation
+          ["Akira", "Ichika", "Himari", "Aoi", "Yukari"]
+          [mkIA "SweetsPact" ["DogChocolate"], mkIA "SweetsPact" ["RabbitShortcake"], mkIA "SweetsPact" ["SquirrelPudding"], mkIA "SweetsPact" ["LionIce"], mkIA "SweetsPact" ["CatMacaron"]]
+          ["CureChocolat", "CureWhip", "CureCustard", "CureGelato", "CureMacaron"]
+          (kirakiraALaModeTransformationSpeechFeaturing introducesHerselfAs_CureChocolat)
+      , mkTransformation
+          ["Ichika", "Himari", "Aoi"]
+          [mkIA "SweetsPact" ["RabbitShortcake"], mkIA "SweetsPact" ["SquirrelPudding"], mkIA "SweetsPact" ["LionIce"]]
+          ["CureWhip", "CureCustard", "CureGelato"]
+          ( kirakiraALaModeTransformationSpeechOf
+              [ introducesHerselfAs_CureWhip
+              , introducesHerselfAs_CureCustard
+              , introducesHerselfAs_CureGelato
+              ]
+          )
+      , mkTransformation
+          ["Ichika", "Himari", "Aoi", "Yukari"]
+          [mkIA "SweetsPact" ["RabbitShortcake"], mkIA "SweetsPact" ["SquirrelPudding"], mkIA "SweetsPact" ["LionIce"], mkIA "SweetsPact" ["CatMacaron"]]
+          ["CureWhip", "CureCustard", "CureGelato", "CureMacaron"]
+          ( kirakiraALaModeTransformationSpeechOf
+              [ introducesHerselfAs_CureWhip
+              , introducesHerselfAs_CureCustard
+              , introducesHerselfAs_CureGelato
+              , introducesHerselfAs_CureMacaron
+              ]
+          )
+      , mkTransformation
+          ["Yukari", "Akira"]
+          [mkIA "SweetsPact" ["CatMacaron"], mkIA "SweetsPact" ["DogChocolate"]]
+          ["CureMacaron", "CureChocolat"]
+          ( kirakiraALaModeTransformationSpeechOf
+              [ introducesHerselfAs_CureMacaron
+              , introducesHerselfAs_CureChocolat
+              ]
+          )
+      ]
 
 
 groupName_KirakiraALaMode = "キラキラ☆プリキュアアラモード"
