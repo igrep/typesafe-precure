@@ -62,6 +62,7 @@ cureIndexJson =
         ts <- collectAnnotationsFromEachSeriesModules
         is <- collectAnnotationsFromEachSeriesModules
         trs <- collectAnnotationsFromEachSeriesModules
+        prs <- collectAnnotationsFromEachSeriesModules
 
-        lift $ decodeUtf8 $ toStrict $ encode $ mkIndex gs ts is trs
+        lift $ decodeUtf8 $ toStrict $ encode $ mkIndex gs ts is trs prs
     )

@@ -21,3 +21,6 @@ $(declareSpecialItems specialItems)
 
 {-# ANN module transformations #-}
 $(declareTransformations transformations)
+
+{-# ANN module purifications #-}
+$(declarePurifications purifications)

@@ -103,6 +103,20 @@ transformations =
       ]
 
 
+purifications :: [Purification]
+purifications =
+  [ mkPurification ["CureWhip"]     ["CandyRod"] ["キラキラキラルン！", "ホイップ・デコレーション！"]
+  , mkPurification ["CureCustard"]  ["CandyRod"] ["キラキラキラルン！", "カスタード・イリュージョン！"]
+  , mkPurification ["CureGelato"]   ["CandyRod"] ["キラキラキラルン！", "ジェラート・シェイク！"]
+  , mkPurification ["CureMacaron"]  ["CandyRod"] ["キラキラキラルン！", "マカロン・ジュリエンヌ！", "にゃーお♥"]
+  , mkPurification ["CureChocolat"] ["CandyRod"] ["キラキラキラルン！", "ショコラ・アロマーゼ！"]
+  , mkPurification
+      ["CureWhip", "CureCustard", "CureGelato", "CureMacaron", "CureChocolat"]
+      ["CandyRod"]
+      ["キャンディーロッド！", "キラキラキラル・フルチャージ！", "スイー・ツー・ワンダフル・アラモード！"]
+  ]
+
+
 groupName_KirakiraALaMode = "キラキラ☆プリキュアアラモード"
 
 cureALaModeDecoration = "キュアラモード・デコレーション！"

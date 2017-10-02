@@ -9,12 +9,14 @@ module ACME.PreCure.Index.Types
   , SpecialItem(SpecialItem)
   , IdAttachments(IdAttachments)
   , Transformation(Transformation)
+  , Purification(Purification)
   , Index
   , mkGirl
   , mkTransformee
   , mkSpecialItem
   , mkIA
   , mkTransformation
+  , mkPurification
   , mkIndex
   ) where
 
@@ -108,15 +110,35 @@ mkTransformation :: [IdAttachments] -> [IdAttachments] -> [String] -> [String] -
 mkTransformation = Transformation
 
 
+data Purification =
+  Purification
+    { purificationPurifier :: [IdAttachments]
+    , purificationSpecialItems :: [IdAttachments]
+    , purificationSpeech :: [String]
+    } deriving (Eq, Show, Data)
+
+$(deriveToJsonWithoutTypeNamePrefix ''Purification)
+
+mkPurification :: [IdAttachments] -> [IdAttachments] -> [String] -> Purification
+mkPurification = Purification
+
+
 data Index =
   Index
     { indexGirls :: [Girl]
     , indexTransformees :: [Transformee]
     , indexSpecialItems :: [SpecialItem]
     , indexTransformations :: [Transformation]
+    , indexPurifications :: [Purification]
     } deriving (Eq, Show)
 
 $(deriveToJsonWithoutTypeNamePrefix ''Index)
 
-mkIndex :: [Girl] -> [Transformee] -> [SpecialItem] -> [Transformation] -> Index
+mkIndex
+  :: [Girl]
+  -> [Transformee]
+  -> [SpecialItem]
+  -> [Transformation]
+  -> [Purification]
+  -> Index
 mkIndex = Index

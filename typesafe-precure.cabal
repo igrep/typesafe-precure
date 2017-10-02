@@ -84,7 +84,6 @@ library
                      , ACME.PreCure.Monad
   other-modules:       ACME.PreCure.Types.TH
                      , ACME.PreCure.Index.Lib
-                     , ACME.PreCure.Textbook.KirakiraALaMode.Instances
                      , ACME.PreCure.Textbook.KirakiraALaMode.Types
                      , ACME.PreCure.Textbook.KirakiraALaMode.Profiles
   build-depends:       base >= 4.7 && < 5
