@@ -1,9 +1,7 @@
 {-# LANGUAGE TemplateHaskell #-}
 
 module ACME.PreCure.Types.TH
-        ( define
-
-        , declareGirls
+        ( declareGirls
         , declareTransformees
         , declareSpecialItems
         , declareTransformations
@@ -62,10 +60,6 @@ import           TH.Utilities
 singletonDataD :: Name -> [Name] -> DecQ
 singletonDataD name tyVarNames =
   dataD' (cxt []) name (map plainTV tyVarNames) [normalC name $ map toTypeVar tyVarNames] [''Show, ''Eq]
-
-
-define :: String -> DecsQ
-define string = defineWithTypeVars string []
 
 
 defineWithTypeVars :: String -> [String] -> DecsQ

@@ -1,8 +1,6 @@
 module ACME.PreCure.Index.Lib
   ( loadImportedModules
   , isTextbookMod
-  , getModName
-  , getImportedModules
   , loadAnnotations
   , deriveToJsonWithoutTypeNamePrefix
   )
