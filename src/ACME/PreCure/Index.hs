@@ -16,10 +16,6 @@ import           Data.Aeson.Encode.Pretty
 import           Data.Data
                    ( Data
                    )
-{-import           Data.Text.Lazy.Encoding-}
-                   {-( decodeUtf8-}
-                   {-)-}
--- import qualified Data.Text.Lazy.IO as Text
 import qualified Data.ByteString.Lazy as ByteString
 import           Language.Haskell.TH
                    ( Q

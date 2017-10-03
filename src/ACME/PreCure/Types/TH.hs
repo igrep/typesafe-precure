@@ -1,9 +1,7 @@
 {-# LANGUAGE TemplateHaskell #-}
 
 module ACME.PreCure.Types.TH
-        ( define
-
-        , declareGirls
+        ( declareGirls
         , declareTransformees
         , declareSpecialItems
         , declareTransformations

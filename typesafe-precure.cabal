@@ -12,8 +12,7 @@ category:             ACME
 build-type:           Simple
 extra-source-files:   README.md
                       CHANGELOG.md
-                      cure-index.json
-                      pretty-cure-index.json
+                      gen/*.json
 cabal-version:        >=1.10
 
 library
@@ -94,11 +93,9 @@ library
                      , aeson
                      , aeson-pretty
                      , autoexporter
-                     , containers
                      , bytestring
                      , monad-skeleton
                      , dlist
-                     , split
                      , template-haskell
                      , text
                      , th-data-compat
