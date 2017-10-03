@@ -64,10 +64,6 @@ singletonDataD name tyVarNames =
   dataD' (cxt []) name (map plainTV tyVarNames) [normalC name $ map toTypeVar tyVarNames] [''Show, ''Eq]
 
 
-define :: String -> DecsQ
-define string = defineWithTypeVars string []
-
-
 defineWithTypeVars :: String -> [String] -> DecsQ
 defineWithTypeVars string strings =
   (: []) <$> singletonDataD (mkName string) (map mkName strings)
