@@ -1,3 +1,9 @@
+# 0.4.0.0 (2017/10/07)
+
+- Add: More transformations and purifications of Kirakira :star: PreCure A La Mode, including Cure Parfait's and Kirakiraru Creamer's.
+- Add: Experimental feature: [cure-index.json](https://github.com/igrep/typesafe-precure/blob/master/gen/cure-index.json) and [pretty-cure-index.json](https://github.com/igrep/typesafe-precure/blob/master/gen/pretty-cure-index.json) are generated at build-time by Template Haskell.
+    - Currently, only data of Kirakira :star: A La Mode is collected.
+
 # 0.3.1.1 (2017/06/05)
 
 - Improve documentation :memo: : Add README and CHANGELOG to extra-source-files, to make README readable on hackage.org.
