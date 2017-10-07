@@ -39,10 +39,66 @@
             "id": "DogChocolate"
         },
         {
+            "nameEn": "Pegasus Parfait",
+            "attachments": [],
+            "nameJa": "ペガサスパフェ",
+            "id": "PegasusParfait"
+        },
+        {
             "nameEn": "Candy Rod",
             "attachments": [],
             "nameJa": "キャンディロッド",
             "id": "CandyRod"
+        },
+        {
+            "nameEn": "Rainbow Ribbon",
+            "attachments": [],
+            "nameJa": "レインボーリボン",
+            "id": "RainbowRibbon"
+        },
+        {
+            "nameEn": "Kirakiraru Creamer",
+            "attachments": [
+                "Crystal Animal"
+            ],
+            "nameJa": "キラキラルクリーマー",
+            "id": "KirakiraruCreamer"
+        },
+        {
+            "nameEn": "Crystal Animal Rabbit",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルうさぎ",
+            "id": "CrystalAnimalRabbit"
+        },
+        {
+            "nameEn": "Crystal Animal Squirrel",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルりす",
+            "id": "CrystalAnimalSquirrel"
+        },
+        {
+            "nameEn": "Crystal Animal Lion",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルらいおん",
+            "id": "CrystalAnimalLion"
+        },
+        {
+            "nameEn": "Crystal Animal Cat",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルねこ",
+            "id": "CrystalAnimalCat"
+        },
+        {
+            "nameEn": "Crystal Animal Dog",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルいぬ",
+            "id": "CrystalAnimalDog"
+        },
+        {
+            "nameEn": "Crystal Animal Pegasus",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルペガサス",
+            "id": "CrystalAnimalPegasus"
         }
     ],
     "transformees": [
@@ -80,6 +136,13 @@
             "id": "CureChocolat",
             "introducesHerselfAs": "チョコレート！強さと愛を！レッツ・ラ・まぜまぜ！キュアショコラ！できあがり！",
             "variation": ""
+        },
+        {
+            "nameEn": "Cure Parfait",
+            "nameJa": "キュアパルフェ",
+            "id": "CureParfait",
+            "introducesHerselfAs": "パフェ！夢と希望を！レッツ・ラ・まぜまぜ！キュアパルフェ！できあがり！",
+            "variation": ""
         }
     ],
     "girls": [
@@ -107,6 +170,11 @@
             "nameEn": "Akira Kenjo",
             "nameJa": "剣城 あきら",
             "id": "Akira"
+        },
+        {
+            "nameEn": "Ciel Kirahoshi",
+            "nameJa": "キラ星 シエル",
+            "id": "Ciel"
         }
     ],
     "purifications": [
@@ -173,6 +241,20 @@
         },
         {
             "specialItems": [
+                "RainbowRibbon"
+            ],
+            "speech": [
+                "レインボーリボン！",
+                "行くよ！アン・ドゥ・トレビアン！",
+                "キラクル・レインボー！",
+                "ボナペティ！"
+            ],
+            "purifier": [
+                "CureParfait"
+            ]
+        },
+        {
+            "specialItems": [
                 "CandyRod"
             ],
             "speech": [
@@ -186,6 +268,65 @@
                 "CureGelato",
                 "CureMacaron",
                 "CureChocolat"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CrystalAnimalRabbit"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalSquirrel"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalLion"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalCat"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalDog"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalPegasus"
+                    ],
+                    "i": "KirakiraruCreamer"
+                }
+            ],
+            "speech": [
+                "キラキラルクリーマー！",
+                "キラッと輝け！クリスタルアニマル！",
+                "ぴょーん！",
+                "くるるっ！",
+                "がぁおー！",
+                "にゃーお！",
+                "わん！",
+                "ぱたた！",
+                "プリキュア・アニマルゴーランド！"
+            ],
+            "purifier": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat",
+                "CureParfait"
             ]
         }
     ],
@@ -309,6 +450,29 @@
             "specialItems": [
                 {
                     "a": [
+                        "PegasusParfait"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureParfait"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "パフェ！",
+                "夢と希望を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアパルフェ！できあがり！"
+            ],
+            "transformers": [
+                "Ciel"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
                         "RabbitShortcake"
                     ],
                     "i": "SweetsPact"
@@ -363,6 +527,75 @@
                 "Aoi",
                 "Yukari",
                 "Akira"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "DogChocolate"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "PegasusParfait"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat",
+                "CureParfait"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "ショートケーキ！",
+                "元気と笑顔を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！",
+                "キュアカスタード！できあがり！",
+                "キュアジェラート！できあがり！",
+                "キュアマカロン！できあがり！",
+                "キュアショコラ！できあがり！",
+                "キュアパルフェ！できあがり！",
+                "キラキラ☆プリキュアアラモード！"
+            ],
+            "transformers": [
+                "Ichika",
+                "Himari",
+                "Aoi",
+                "Yukari",
+                "Akira",
+                "Ciel"
             ]
         },
         {
@@ -603,6 +836,75 @@
                 "Himari",
                 "Aoi",
                 "Yukari"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PegasusParfait"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "DogChocolate"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureParfait",
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "パフェ！",
+                "夢と希望を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！",
+                "キュアカスタード！できあがり！",
+                "キュアジェラート！できあがり！",
+                "キュアマカロン！できあがり！",
+                "キュアショコラ！できあがり！",
+                "キュアパルフェ！できあがり！",
+                "キラキラ☆プリキュアアラモード！"
+            ],
+            "transformers": [
+                "Ciel",
+                "Ichika",
+                "Himari",
+                "Aoi",
+                "Yukari",
+                "Akira"
             ]
         },
         {
