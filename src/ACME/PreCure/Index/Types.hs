@@ -6,6 +6,7 @@
 module ACME.PreCure.Index.Types
   ( Girl(Girl)
   , Transformee(Transformee)
+  , TransformedGroup(TransformedGroup)
   , SpecialItem(SpecialItem)
   , IdAttachments(IdAttachments)
   , Transformation(Transformation)
@@ -13,6 +14,7 @@ module ACME.PreCure.Index.Types
   , Index
   , mkGirl
   , mkTransformee
+  , mkTransformedGroup
   , mkSpecialItem
   , mkIA
   , mkTransformation
@@ -61,6 +63,20 @@ $(deriveToJsonWithoutTypeNamePrefix ''Transformee)
 
 mkTransformee :: String -> String -> String -> String -> Transformee
 mkTransformee ne = Transformee (concat $ words ne) ne
+
+
+data TransformedGroup =
+  TransformedGroup
+    { transformedGroupId :: String
+    , transformedGroupNameEn :: String
+    , transformedGroupNameJa :: String
+    , transformedGroupVariation :: String
+    } deriving (Eq, Show, Data)
+
+$(deriveToJsonWithoutTypeNamePrefix ''TransformedGroup)
+
+mkTransformedGroup :: String -> String -> String -> TransformedGroup
+mkTransformedGroup ne = TransformedGroup (concat $ words ne) ne
 
 
 data SpecialItem =
@@ -127,6 +143,7 @@ data Index =
   Index
     { indexGirls :: [Girl]
     , indexTransformees :: [Transformee]
+    , indexTransformedGroups :: [TransformedGroup]
     , indexSpecialItems :: [SpecialItem]
     , indexTransformations :: [Transformation]
     , indexPurifications :: [Purification]
@@ -137,6 +154,7 @@ $(deriveToJsonWithoutTypeNamePrefix ''Index)
 mkIndex
   :: [Girl]
   -> [Transformee]
+  -> [TransformedGroup]
   -> [SpecialItem]
   -> [Transformation]
   -> [Purification]

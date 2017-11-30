@@ -16,6 +16,9 @@ $(declareGirls girls)
 {-# ANN module transformees #-}
 $(declareTransformees transformees)
 
+{-# ANN module transformedGroups #-}
+$(declareTransformedGroups transformedGroups)
+
 {-# ANN module specialItems #-}
 $(declareSpecialItems specialItems)
 

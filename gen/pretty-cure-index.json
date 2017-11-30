@@ -99,6 +99,12 @@
             "attachments": [],
             "nameJa": "クリスタルアニマルペガサス",
             "id": "CrystalAnimalPegasus"
+        },
+        {
+            "nameEn": "SweetsCastle",
+            "attachments": [],
+            "nameJa": "スイーツキャッスル",
+            "id": "SweetsCastle"
         }
     ],
     "transformees": [
@@ -143,6 +149,48 @@
             "id": "CureParfait",
             "introducesHerselfAs": "パフェ！夢と希望を！レッツ・ラ・まぜまぜ！キュアパルフェ！できあがり！",
             "variation": ""
+        },
+        {
+            "nameEn": "Cure Whip_ALaMode",
+            "nameJa": "キュアホイップ",
+            "id": "CureWhip_ALaMode",
+            "introducesHerselfAs": "ショートケーキ！元気と笑顔を！レッツ・ラ・まぜまぜ！キュアホイップ！できあがり！",
+            "variation": "アラモードスタイル"
+        },
+        {
+            "nameEn": "Cure Custard_ALaMode",
+            "nameJa": "キュアカスタード",
+            "id": "CureCustard_ALaMode",
+            "introducesHerselfAs": "プリン！知性と勇気を！レッツ・ラ・まぜまぜ！キュアカスタード！できあがり！",
+            "variation": "アラモードスタイル"
+        },
+        {
+            "nameEn": "Cure Gelato_ALaMode",
+            "nameJa": "キュアジェラート",
+            "id": "CureGelato_ALaMode",
+            "introducesHerselfAs": "アイス！自由と情熱を！レッツ・ラ・まぜまぜ！キュアジェラート！できあがり！",
+            "variation": "アラモードスタイル"
+        },
+        {
+            "nameEn": "Cure Macaron_ALaMode",
+            "nameJa": "キュアマカロン",
+            "id": "CureMacaron_ALaMode",
+            "introducesHerselfAs": "マカロン！美しさとトキメキを！レッツ・ラ・まぜまぜ！キュアマカロン！できあがり！",
+            "variation": "アラモードスタイル"
+        },
+        {
+            "nameEn": "Cure Chocolat_ALaMode",
+            "nameJa": "キュアショコラ",
+            "id": "CureChocolat_ALaMode",
+            "introducesHerselfAs": "チョコレート！強さと愛を！レッツ・ラ・まぜまぜ！キュアショコラ！できあがり！",
+            "variation": "アラモードスタイル"
+        },
+        {
+            "nameEn": "Cure Parfait_ALaMode",
+            "nameJa": "キュアパルフェ",
+            "id": "CureParfait_ALaMode",
+            "introducesHerselfAs": "パフェ！夢と希望を！レッツ・ラ・まぜまぜ！キュアパルフェ！できあがり！",
+            "variation": "アラモードスタイル"
         }
     ],
     "girls": [
@@ -327,6 +375,71 @@
                 "CureMacaron",
                 "CureChocolat",
                 "CureParfait"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SweetsCastle"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalRabbit"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalSquirrel"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalLion"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalCat"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalDog"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalPegasus"
+                    ],
+                    "i": "KirakiraruCreamer"
+                }
+            ],
+            "speech": [
+                "キラッと輝け！",
+                "クリスタルアニマル！",
+                "ぴょーん！",
+                "くるるっ！",
+                "がぁおー！",
+                "にゃーお！",
+                "わん！",
+                "ぱたた！",
+                "プリキュア・ファンタスティックアニマーレ！"
+            ],
+            "purifier": [
+                "CureWhip_ALaMode",
+                "CureCustard_ALaMode",
+                "CureGelato_ALaMode",
+                "CureMacaron_ALaMode",
+                "CureChocolat_ALaMode",
+                "CureParfait_ALaMode"
             ]
         }
     ],
@@ -1029,6 +1142,48 @@
                 "Yukari",
                 "Akira"
             ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SweetsCastle"
+                    ],
+                    "i": "KirakiraruCreamer"
+                }
+            ],
+            "transformees": [
+                "CureWhip_ALaMode",
+                "CureCustard_ALaMode",
+                "CureGelato_ALaMode",
+                "CureMacaron_ALaMode",
+                "CureChocolat_ALaMode"
+            ],
+            "speech": [
+                "スイーツキャッスル！",
+                "レッツ・ラ・おきがえ！"
+            ],
+            "transformers": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat"
+            ]
+        }
+    ],
+    "transformedGroups": [
+        {
+            "nameEn": "Kirakira PreCure A La Mode",
+            "nameJa": "キラキラ☆プリキュアアラモード",
+            "id": "KirakiraPreCureALaMode",
+            "variation": ""
+        },
+        {
+            "nameEn": "Kirakira PreCure A La Mode_ALaMode",
+            "nameJa": "キラキラ☆プリキュアアラモード",
+            "id": "KirakiraPreCureALaMode_ALaMode",
+            "variation": "アラモードスタイル"
         }
     ]
 }
