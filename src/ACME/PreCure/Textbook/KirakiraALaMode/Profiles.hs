@@ -19,26 +19,26 @@ girls =
 
 transformees :: [Transformee]
 transformees =
-  [ mkTransformee "Cure Whip" "キュアホイップ" (concat introducesHerselfAs_CureWhip) ""
-  , mkTransformee "Cure Custard" "キュアカスタード" (concat introducesHerselfAs_CureCustard) ""
-  , mkTransformee "Cure Gelato" "キュアジェラート" (concat introducesHerselfAs_CureGelato) ""
-  , mkTransformee "Cure Macaron" "キュアマカロン" (concat introducesHerselfAs_CureMacaron) ""
-  , mkTransformee "Cure Chocolat" "キュアショコラ" (concat introducesHerselfAs_CureChocolat) ""
-  , mkTransformee "Cure Parfait" "キュアパルフェ" (concat introducesHerselfAs_CureParfait) ""
+  [ mkTransformee "Cure Whip" "" "キュアホイップ" "" (concat introducesHerselfAs_CureWhip)
+  , mkTransformee "Cure Custard" "" "キュアカスタード" "" (concat introducesHerselfAs_CureCustard)
+  , mkTransformee "Cure Gelato" "" "キュアジェラート" "" (concat introducesHerselfAs_CureGelato)
+  , mkTransformee "Cure Macaron" "" "キュアマカロン" "" (concat introducesHerselfAs_CureMacaron)
+  , mkTransformee "Cure Chocolat" "" "キュアショコラ" "" (concat introducesHerselfAs_CureChocolat)
+  , mkTransformee "Cure Parfait" "" "キュアパルフェ" "" (concat introducesHerselfAs_CureParfait)
 
-  , mkTransformee "Cure Whip_ALaMode" "キュアホイップ" (concat introducesHerselfAs_CureWhip) aLaModeStyle
-  , mkTransformee "Cure Custard_ALaMode" "キュアカスタード" (concat introducesHerselfAs_CureCustard) aLaModeStyle
-  , mkTransformee "Cure Gelato_ALaMode" "キュアジェラート" (concat introducesHerselfAs_CureGelato) aLaModeStyle
-  , mkTransformee "Cure Macaron_ALaMode" "キュアマカロン" (concat introducesHerselfAs_CureMacaron) aLaModeStyle
-  , mkTransformee "Cure Chocolat_ALaMode" "キュアショコラ" (concat introducesHerselfAs_CureChocolat) aLaModeStyle
-  , mkTransformee "Cure Parfait_ALaMode" "キュアパルフェ" (concat introducesHerselfAs_CureParfait) aLaModeStyle
+  , mkTransformee "Cure Whip" aLaModeStyleEn "キュアホイップ" aLaModeStyle (concat introducesHerselfAs_CureWhip)
+  , mkTransformee "Cure Custard" aLaModeStyleEn "キュアカスタード" aLaModeStyle (concat introducesHerselfAs_CureCustard)
+  , mkTransformee "Cure Gelato" aLaModeStyleEn "キュアジェラート" aLaModeStyle (concat introducesHerselfAs_CureGelato)
+  , mkTransformee "Cure Macaron" aLaModeStyleEn "キュアマカロン" aLaModeStyle (concat introducesHerselfAs_CureMacaron)
+  , mkTransformee "Cure Chocolat" aLaModeStyleEn "キュアショコラ" aLaModeStyle (concat introducesHerselfAs_CureChocolat)
+  , mkTransformee "Cure Parfait" aLaModeStyleEn "キュアパルフェ" aLaModeStyle (concat introducesHerselfAs_CureParfait)
   ]
 
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ne nj ""
-  , mkTransformedGroup (ne ++ "_ALaMode") nj aLaModeStyle
+  [ mkTransformedGroup ne "" nj ""
+  , mkTransformedGroup ne aLaModeStyleEn nj aLaModeStyle
   ]
   where
     ne = "Kirakira PreCure A La Mode"
@@ -47,6 +47,9 @@ transformedGroups =
 
 aLaModeStyle :: String
 aLaModeStyle = "アラモードスタイル"
+
+aLaModeStyleEn :: String
+aLaModeStyleEn = "ALaModeStyle"
 
 
 specialItems :: [SpecialItem]
@@ -147,7 +150,12 @@ transformations =
       , mkTransformation
           ["CureWhip", "CureCustard", "CureGelato", "CureMacaron", "CureChocolat"]
           [mkIA "KirakiraruCreamer" ["SweetsCastle"]]
-          ["CureWhip_ALaMode", "CureCustard_ALaMode", "CureGelato_ALaMode", "CureMacaron_ALaMode", "CureChocolat_ALaMode"]
+          [ "CureWhip_ALaModeStyle"
+          , "CureCustard_ALaModeStyle"
+          , "CureGelato_ALaModeStyle"
+          , "CureMacaron_ALaModeStyle"
+          , "CureChocolat_ALaModeStyle"
+          ]
           ["スイーツキャッスル！", "レッツ・ラ・おきがえ！"]
       ]
 
@@ -174,7 +182,13 @@ purifications =
         ++ ["プリキュア・アニマルゴーランド！"]
       )
   , mkPurification
-      ["CureWhip_ALaMode", "CureCustard_ALaMode", "CureGelato_ALaMode", "CureMacaron_ALaMode", "CureChocolat_ALaMode", "CureParfait_ALaMode"]
+      [ "CureWhip_ALaModeStyle"
+      , "CureCustard_ALaModeStyle"
+      , "CureGelato_ALaModeStyle"
+      , "CureMacaron_ALaModeStyle"
+      , "CureChocolat_ALaModeStyle"
+      , "CureParfait_ALaModeStyle"
+      ]
       (mkIA "KirakiraruCreamer" ["SweetsCastle"] : crystalAnimals)
       ( ["キラッと輝け！", "クリスタルアニマル！"]
         ++ crystalAnimalCries

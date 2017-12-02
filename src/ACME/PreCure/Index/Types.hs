@@ -54,29 +54,35 @@ data Transformee =
   Transformee
     { transformedId :: String
     , transformedNameEn :: String
+    , transformedVariationEn :: String
     , transformedNameJa :: String
+    , transformedVariationJa :: String
     , transformedIntroducesHerselfAs :: String
-    , transformedVariation :: String
     } deriving (Eq, Show, Data)
 
 $(deriveToJsonWithoutTypeNamePrefix ''Transformee)
 
-mkTransformee :: String -> String -> String -> String -> Transformee
-mkTransformee ne = Transformee (concat $ words ne) ne
+mkTransformee :: String -> String -> String -> String -> String -> Transformee
+mkTransformee ne ve = Transformee ((concat $ words ne) ++ prefix) ne ve
+  where
+    prefix = if null ve then "" else '_' : ve
 
 
 data TransformedGroup =
   TransformedGroup
     { transformedGroupId :: String
     , transformedGroupNameEn :: String
+    , transformedGroupVariationEn :: String
     , transformedGroupNameJa :: String
-    , transformedGroupVariation :: String
+    , transformedGroupVariationJa :: String
     } deriving (Eq, Show, Data)
 
 $(deriveToJsonWithoutTypeNamePrefix ''TransformedGroup)
 
-mkTransformedGroup :: String -> String -> String -> TransformedGroup
-mkTransformedGroup ne = TransformedGroup (concat $ words ne) ne
+mkTransformedGroup :: String -> String -> String -> String -> TransformedGroup
+mkTransformedGroup ne ve = TransformedGroup ((concat $ words ne) ++ prefix) ne ve
+  where
+    prefix = if null ve then "" else '_' : ve
 
 
 data SpecialItem =

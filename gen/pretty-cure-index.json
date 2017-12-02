@@ -110,87 +110,99 @@
     "transformees": [
         {
             "nameEn": "Cure Whip",
+            "variationEn": "",
             "nameJa": "キュアホイップ",
+            "variationJa": "",
             "id": "CureWhip",
-            "introducesHerselfAs": "ショートケーキ！元気と笑顔を！レッツ・ラ・まぜまぜ！キュアホイップ！できあがり！",
-            "variation": ""
+            "introducesHerselfAs": "ショートケーキ！元気と笑顔を！レッツ・ラ・まぜまぜ！キュアホイップ！できあがり！"
         },
         {
             "nameEn": "Cure Custard",
+            "variationEn": "",
             "nameJa": "キュアカスタード",
+            "variationJa": "",
             "id": "CureCustard",
-            "introducesHerselfAs": "プリン！知性と勇気を！レッツ・ラ・まぜまぜ！キュアカスタード！できあがり！",
-            "variation": ""
+            "introducesHerselfAs": "プリン！知性と勇気を！レッツ・ラ・まぜまぜ！キュアカスタード！できあがり！"
         },
         {
             "nameEn": "Cure Gelato",
+            "variationEn": "",
             "nameJa": "キュアジェラート",
+            "variationJa": "",
             "id": "CureGelato",
-            "introducesHerselfAs": "アイス！自由と情熱を！レッツ・ラ・まぜまぜ！キュアジェラート！できあがり！",
-            "variation": ""
+            "introducesHerselfAs": "アイス！自由と情熱を！レッツ・ラ・まぜまぜ！キュアジェラート！できあがり！"
         },
         {
             "nameEn": "Cure Macaron",
+            "variationEn": "",
             "nameJa": "キュアマカロン",
+            "variationJa": "",
             "id": "CureMacaron",
-            "introducesHerselfAs": "マカロン！美しさとトキメキを！レッツ・ラ・まぜまぜ！キュアマカロン！できあがり！",
-            "variation": ""
+            "introducesHerselfAs": "マカロン！美しさとトキメキを！レッツ・ラ・まぜまぜ！キュアマカロン！できあがり！"
         },
         {
             "nameEn": "Cure Chocolat",
+            "variationEn": "",
             "nameJa": "キュアショコラ",
+            "variationJa": "",
             "id": "CureChocolat",
-            "introducesHerselfAs": "チョコレート！強さと愛を！レッツ・ラ・まぜまぜ！キュアショコラ！できあがり！",
-            "variation": ""
+            "introducesHerselfAs": "チョコレート！強さと愛を！レッツ・ラ・まぜまぜ！キュアショコラ！できあがり！"
         },
         {
             "nameEn": "Cure Parfait",
+            "variationEn": "",
             "nameJa": "キュアパルフェ",
+            "variationJa": "",
             "id": "CureParfait",
-            "introducesHerselfAs": "パフェ！夢と希望を！レッツ・ラ・まぜまぜ！キュアパルフェ！できあがり！",
-            "variation": ""
+            "introducesHerselfAs": "パフェ！夢と希望を！レッツ・ラ・まぜまぜ！キュアパルフェ！できあがり！"
         },
         {
-            "nameEn": "Cure Whip_ALaMode",
+            "nameEn": "Cure Whip",
+            "variationEn": "ALaModeStyle",
             "nameJa": "キュアホイップ",
-            "id": "CureWhip_ALaMode",
-            "introducesHerselfAs": "ショートケーキ！元気と笑顔を！レッツ・ラ・まぜまぜ！キュアホイップ！できあがり！",
-            "variation": "アラモードスタイル"
+            "variationJa": "アラモードスタイル",
+            "id": "CureWhip_ALaModeStyle",
+            "introducesHerselfAs": "ショートケーキ！元気と笑顔を！レッツ・ラ・まぜまぜ！キュアホイップ！できあがり！"
         },
         {
-            "nameEn": "Cure Custard_ALaMode",
+            "nameEn": "Cure Custard",
+            "variationEn": "ALaModeStyle",
             "nameJa": "キュアカスタード",
-            "id": "CureCustard_ALaMode",
-            "introducesHerselfAs": "プリン！知性と勇気を！レッツ・ラ・まぜまぜ！キュアカスタード！できあがり！",
-            "variation": "アラモードスタイル"
+            "variationJa": "アラモードスタイル",
+            "id": "CureCustard_ALaModeStyle",
+            "introducesHerselfAs": "プリン！知性と勇気を！レッツ・ラ・まぜまぜ！キュアカスタード！できあがり！"
         },
         {
-            "nameEn": "Cure Gelato_ALaMode",
+            "nameEn": "Cure Gelato",
+            "variationEn": "ALaModeStyle",
             "nameJa": "キュアジェラート",
-            "id": "CureGelato_ALaMode",
-            "introducesHerselfAs": "アイス！自由と情熱を！レッツ・ラ・まぜまぜ！キュアジェラート！できあがり！",
-            "variation": "アラモードスタイル"
+            "variationJa": "アラモードスタイル",
+            "id": "CureGelato_ALaModeStyle",
+            "introducesHerselfAs": "アイス！自由と情熱を！レッツ・ラ・まぜまぜ！キュアジェラート！できあがり！"
         },
         {
-            "nameEn": "Cure Macaron_ALaMode",
+            "nameEn": "Cure Macaron",
+            "variationEn": "ALaModeStyle",
             "nameJa": "キュアマカロン",
-            "id": "CureMacaron_ALaMode",
-            "introducesHerselfAs": "マカロン！美しさとトキメキを！レッツ・ラ・まぜまぜ！キュアマカロン！できあがり！",
-            "variation": "アラモードスタイル"
+            "variationJa": "アラモードスタイル",
+            "id": "CureMacaron_ALaModeStyle",
+            "introducesHerselfAs": "マカロン！美しさとトキメキを！レッツ・ラ・まぜまぜ！キュアマカロン！できあがり！"
         },
         {
-            "nameEn": "Cure Chocolat_ALaMode",
+            "nameEn": "Cure Chocolat",
+            "variationEn": "ALaModeStyle",
             "nameJa": "キュアショコラ",
-            "id": "CureChocolat_ALaMode",
-            "introducesHerselfAs": "チョコレート！強さと愛を！レッツ・ラ・まぜまぜ！キュアショコラ！できあがり！",
-            "variation": "アラモードスタイル"
+            "variationJa": "アラモードスタイル",
+            "id": "CureChocolat_ALaModeStyle",
+            "introducesHerselfAs": "チョコレート！強さと愛を！レッツ・ラ・まぜまぜ！キュアショコラ！できあがり！"
         },
         {
-            "nameEn": "Cure Parfait_ALaMode",
+            "nameEn": "Cure Parfait",
+            "variationEn": "ALaModeStyle",
             "nameJa": "キュアパルフェ",
-            "id": "CureParfait_ALaMode",
-            "introducesHerselfAs": "パフェ！夢と希望を！レッツ・ラ・まぜまぜ！キュアパルフェ！できあがり！",
-            "variation": "アラモードスタイル"
+            "variationJa": "アラモードスタイル",
+            "id": "CureParfait_ALaModeStyle",
+            "introducesHerselfAs": "パフェ！夢と希望を！レッツ・ラ・まぜまぜ！キュアパルフェ！できあがり！"
         }
     ],
     "girls": [
@@ -434,12 +446,12 @@
                 "プリキュア・ファンタスティックアニマーレ！"
             ],
             "purifier": [
-                "CureWhip_ALaMode",
-                "CureCustard_ALaMode",
-                "CureGelato_ALaMode",
-                "CureMacaron_ALaMode",
-                "CureChocolat_ALaMode",
-                "CureParfait_ALaMode"
+                "CureWhip_ALaModeStyle",
+                "CureCustard_ALaModeStyle",
+                "CureGelato_ALaModeStyle",
+                "CureMacaron_ALaModeStyle",
+                "CureChocolat_ALaModeStyle",
+                "CureParfait_ALaModeStyle"
             ]
         }
     ],
@@ -1153,11 +1165,11 @@
                 }
             ],
             "transformees": [
-                "CureWhip_ALaMode",
-                "CureCustard_ALaMode",
-                "CureGelato_ALaMode",
-                "CureMacaron_ALaMode",
-                "CureChocolat_ALaMode"
+                "CureWhip_ALaModeStyle",
+                "CureCustard_ALaModeStyle",
+                "CureGelato_ALaModeStyle",
+                "CureMacaron_ALaModeStyle",
+                "CureChocolat_ALaModeStyle"
             ],
             "speech": [
                 "スイーツキャッスル！",
@@ -1175,15 +1187,17 @@
     "transformedGroups": [
         {
             "nameEn": "Kirakira PreCure A La Mode",
+            "variationEn": "",
             "nameJa": "キラキラ☆プリキュアアラモード",
-            "id": "KirakiraPreCureALaMode",
-            "variation": ""
+            "variationJa": "",
+            "id": "KirakiraPreCureALaMode"
         },
         {
-            "nameEn": "Kirakira PreCure A La Mode_ALaMode",
+            "nameEn": "Kirakira PreCure A La Mode",
+            "variationEn": "ALaModeStyle",
             "nameJa": "キラキラ☆プリキュアアラモード",
-            "id": "KirakiraPreCureALaMode_ALaMode",
-            "variation": "アラモードスタイル"
+            "variationJa": "アラモードスタイル",
+            "id": "KirakiraPreCureALaMode_ALaModeStyle"
         }
     ]
 }
