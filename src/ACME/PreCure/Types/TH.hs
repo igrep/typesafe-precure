@@ -3,6 +3,7 @@
 module ACME.PreCure.Types.TH
         ( declareGirls
         , declareTransformees
+        , declareTransformedGroups
         , declareSpecialItems
         , declareTransformations
         , declarePurifications
@@ -84,12 +85,20 @@ declareGirls = fmap concat . mapM d
       defineWith name $ girlInstance (conT name) j
 
 
+declareTransformedGroups :: [Index.TransformedGroup] -> DecsQ
+declareTransformedGroups = fmap concat . mapM d
+  where
+    d (Index.TransformedGroup n _e _ve j vj) = do
+      let name = mkName n
+      defineWith name $ transformedGroupInstance (conT name) j vj
+
+
 declareTransformees :: [Index.Transformee] -> DecsQ
 declareTransformees = fmap concat . mapM d
   where
-    d (Index.Transformee n _e j intro vari) = do
+    d (Index.Transformee n _ne _ve j vj intro) = do
       let name = mkName n
-      defineWith name $ transformedInstance (conT name) j intro vari
+      defineWith name $ transformedInstance (conT name) j intro vj
 
 
 declareSpecialItems :: [Index.SpecialItem] -> DecsQ

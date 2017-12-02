@@ -6,6 +6,7 @@
 module ACME.PreCure.Index.Types
   ( Girl(Girl)
   , Transformee(Transformee)
+  , TransformedGroup(TransformedGroup)
   , SpecialItem(SpecialItem)
   , IdAttachments(IdAttachments)
   , Transformation(Transformation)
@@ -13,6 +14,7 @@ module ACME.PreCure.Index.Types
   , Index
   , mkGirl
   , mkTransformee
+  , mkTransformedGroup
   , mkSpecialItem
   , mkIA
   , mkTransformation
@@ -48,19 +50,43 @@ mkGirl :: String -> String -> Girl
 mkGirl ne = Girl (head $ words ne) ne
 
 
+typeNamify :: String -> String
+typeNamify = concat . words
+
+
+prefixify :: String -> String
+prefixify ve = if null ve then "" else '_' : typeNamify ve
+
+
 data Transformee =
   Transformee
     { transformedId :: String
     , transformedNameEn :: String
+    , transformedVariationEn :: String
     , transformedNameJa :: String
+    , transformedVariationJa :: String
     , transformedIntroducesHerselfAs :: String
-    , transformedVariation :: String
     } deriving (Eq, Show, Data)
 
 $(deriveToJsonWithoutTypeNamePrefix ''Transformee)
 
-mkTransformee :: String -> String -> String -> String -> Transformee
-mkTransformee ne = Transformee (concat $ words ne) ne
+mkTransformee :: String -> String -> String -> String -> String -> Transformee
+mkTransformee ne ve = Transformee (typeNamify ne ++ prefixify ve) ne ve
+
+
+data TransformedGroup =
+  TransformedGroup
+    { transformedGroupId :: String
+    , transformedGroupNameEn :: String
+    , transformedGroupVariationEn :: String
+    , transformedGroupNameJa :: String
+    , transformedGroupVariationJa :: String
+    } deriving (Eq, Show, Data)
+
+$(deriveToJsonWithoutTypeNamePrefix ''TransformedGroup)
+
+mkTransformedGroup :: String -> String -> String -> String -> TransformedGroup
+mkTransformedGroup ne ve = TransformedGroup (typeNamify ne ++ prefixify ve) ne ve
 
 
 data SpecialItem =
@@ -74,7 +100,7 @@ data SpecialItem =
 $(deriveToJsonWithoutTypeNamePrefix ''SpecialItem)
 
 mkSpecialItem :: String -> String -> [String] -> SpecialItem
-mkSpecialItem ne = SpecialItem (concat $ words ne) ne
+mkSpecialItem ne = SpecialItem (typeNamify ne) ne
 
 
 data IdAttachments =
@@ -127,6 +153,7 @@ data Index =
   Index
     { indexGirls :: [Girl]
     , indexTransformees :: [Transformee]
+    , indexTransformedGroups :: [TransformedGroup]
     , indexSpecialItems :: [SpecialItem]
     , indexTransformations :: [Transformation]
     , indexPurifications :: [Purification]
@@ -137,6 +164,7 @@ $(deriveToJsonWithoutTypeNamePrefix ''Index)
 mkIndex
   :: [Girl]
   -> [Transformee]
+  -> [TransformedGroup]
   -> [SpecialItem]
   -> [Transformation]
   -> [Purification]

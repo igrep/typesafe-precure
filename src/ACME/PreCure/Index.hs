@@ -50,13 +50,14 @@ writeCureIndexJson =
               fmap concat $ forM textbookMods $ \eachSeriesMod {- ACME.PreCure.Textbook.*.* -} ->
                 concat <$> loadAnnotations eachSeriesMod
 
-        gs <- collectAnnotationsFromEachSeriesModules
-        ts <- collectAnnotationsFromEachSeriesModules
-        is <- collectAnnotationsFromEachSeriesModules
-        trs <- collectAnnotationsFromEachSeriesModules
-        prs <- collectAnnotationsFromEachSeriesModules
-
-        let index = mkIndex gs ts is trs prs
+        index <-
+          mkIndex
+            <$> collectAnnotationsFromEachSeriesModules
+            <*> collectAnnotationsFromEachSeriesModules
+            <*> collectAnnotationsFromEachSeriesModules
+            <*> collectAnnotationsFromEachSeriesModules
+            <*> collectAnnotationsFromEachSeriesModules
+            <*> collectAnnotationsFromEachSeriesModules
         runIO $ ByteString.writeFile "gen/cure-index.json" $ encode index
         runIO $ ByteString.writeFile "gen/pretty-cure-index.json" $ encodePretty index
         tupE []

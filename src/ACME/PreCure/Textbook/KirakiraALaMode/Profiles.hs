@@ -19,13 +19,37 @@ girls =
 
 transformees :: [Transformee]
 transformees =
-  [ mkTransformee "Cure Whip" "キュアホイップ" (concat introducesHerselfAs_CureWhip) ""
-  , mkTransformee "Cure Custard" "キュアカスタード" (concat introducesHerselfAs_CureCustard) ""
-  , mkTransformee "Cure Gelato" "キュアジェラート" (concat introducesHerselfAs_CureGelato) ""
-  , mkTransformee "Cure Macaron" "キュアマカロン" (concat introducesHerselfAs_CureMacaron) ""
-  , mkTransformee "Cure Chocolat" "キュアショコラ" (concat introducesHerselfAs_CureChocolat) ""
-  , mkTransformee "Cure Parfait" "キュアパルフェ" (concat introducesHerselfAs_CureParfait) ""
+  [ mkTransformee "Cure Whip" "" "キュアホイップ" "" (concat introducesHerselfAs_CureWhip)
+  , mkTransformee "Cure Custard" "" "キュアカスタード" "" (concat introducesHerselfAs_CureCustard)
+  , mkTransformee "Cure Gelato" "" "キュアジェラート" "" (concat introducesHerselfAs_CureGelato)
+  , mkTransformee "Cure Macaron" "" "キュアマカロン" "" (concat introducesHerselfAs_CureMacaron)
+  , mkTransformee "Cure Chocolat" "" "キュアショコラ" "" (concat introducesHerselfAs_CureChocolat)
+  , mkTransformee "Cure Parfait" "" "キュアパルフェ" "" (concat introducesHerselfAs_CureParfait)
+
+  , mkTransformee "Cure Whip" aLaModeStyleEn "キュアホイップ" aLaModeStyle (concat introducesHerselfAs_CureWhip)
+  , mkTransformee "Cure Custard" aLaModeStyleEn "キュアカスタード" aLaModeStyle (concat introducesHerselfAs_CureCustard)
+  , mkTransformee "Cure Gelato" aLaModeStyleEn "キュアジェラート" aLaModeStyle (concat introducesHerselfAs_CureGelato)
+  , mkTransformee "Cure Macaron" aLaModeStyleEn "キュアマカロン" aLaModeStyle (concat introducesHerselfAs_CureMacaron)
+  , mkTransformee "Cure Chocolat" aLaModeStyleEn "キュアショコラ" aLaModeStyle (concat introducesHerselfAs_CureChocolat)
+  , mkTransformee "Cure Parfait" aLaModeStyleEn "キュアパルフェ" aLaModeStyle (concat introducesHerselfAs_CureParfait)
   ]
+
+
+transformedGroups :: [TransformedGroup]
+transformedGroups =
+  [ mkTransformedGroup ne "" nj ""
+  , mkTransformedGroup ne aLaModeStyleEn nj aLaModeStyle
+  ]
+  where
+    ne = "Kirakira PreCure A La Mode"
+    nj = "キラキラ☆プリキュアアラモード"
+
+
+aLaModeStyle :: String
+aLaModeStyle = "アラモードスタイル"
+
+aLaModeStyleEn :: String
+aLaModeStyleEn = "A La Mode Style"
 
 
 specialItems :: [SpecialItem]
@@ -46,6 +70,7 @@ specialItems =
   , mkSpecialItem "Crystal Animal Cat"      "クリスタルアニマルねこ"     []
   , mkSpecialItem "Crystal Animal Dog"      "クリスタルアニマルいぬ"     []
   , mkSpecialItem "Crystal Animal Pegasus"  "クリスタルアニマルペガサス" []
+  , mkSpecialItem "SweetsCastle" "スイーツキャッスル" []
   ]
 
 
@@ -122,6 +147,16 @@ transformations =
               , introducesHerselfAs_CureChocolat
               ]
           )
+      , mkTransformation
+          ["CureWhip", "CureCustard", "CureGelato", "CureMacaron", "CureChocolat"]
+          [mkIA "KirakiraruCreamer" ["SweetsCastle"]]
+          [ "CureWhip_ALaModeStyle"
+          , "CureCustard_ALaModeStyle"
+          , "CureGelato_ALaModeStyle"
+          , "CureMacaron_ALaModeStyle"
+          , "CureChocolat_ALaModeStyle"
+          ]
+          ["スイーツキャッスル！", "レッツ・ラ・おきがえ！"]
       ]
 
 
@@ -141,6 +176,27 @@ purifications =
       ["キャンディーロッド！", "キラキラキラル・フルチャージ！", "スイー・ツー・ワンダフル・アラモード！"]
   , mkPurification
       ["CureWhip", "CureCustard", "CureGelato", "CureMacaron", "CureChocolat", "CureParfait"]
+      crystalAnimals
+      ( ["キラキラルクリーマー！", "キラッと輝け！クリスタルアニマル！"]
+        ++ crystalAnimalCries
+        ++ ["プリキュア・アニマルゴーランド！"]
+      )
+  , mkPurification
+      [ "CureWhip_ALaModeStyle"
+      , "CureCustard_ALaModeStyle"
+      , "CureGelato_ALaModeStyle"
+      , "CureMacaron_ALaModeStyle"
+      , "CureChocolat_ALaModeStyle"
+      , "CureParfait_ALaModeStyle"
+      ]
+      (mkIA "KirakiraruCreamer" ["SweetsCastle"] : crystalAnimals)
+      ( ["キラッと輝け！", "クリスタルアニマル！"]
+        ++ crystalAnimalCries
+        ++ ["プリキュア・ファンタスティックアニマーレ！"]
+      )
+  ]
+  where
+    crystalAnimals =
       [ mkIA "KirakiraruCreamer" ["CrystalAnimalRabbit"]
       , mkIA "KirakiraruCreamer" ["CrystalAnimalSquirrel"]
       , mkIA "KirakiraruCreamer" ["CrystalAnimalLion"]
@@ -148,17 +204,14 @@ purifications =
       , mkIA "KirakiraruCreamer" ["CrystalAnimalDog"]
       , mkIA "KirakiraruCreamer" ["CrystalAnimalPegasus"]
       ]
-      [ "キラキラルクリーマー！"
-      , "キラッと輝け！クリスタルアニマル！"
-      , "ぴょーん！"
+    crystalAnimalCries =
+      [ "ぴょーん！"
       , "くるるっ！"
       , "がぁおー！"
       , "にゃーお！"
       , "わん！"
       , "ぱたた！"
-      , "プリキュア・アニマルゴーランド！"
       ]
-  ]
 
 
 groupName_KirakiraALaMode = "キラキラ☆プリキュアアラモード"
