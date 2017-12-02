@@ -49,7 +49,7 @@ aLaModeStyle :: String
 aLaModeStyle = "アラモードスタイル"
 
 aLaModeStyleEn :: String
-aLaModeStyleEn = "ALaModeStyle"
+aLaModeStyleEn = "A La Mode Style"
 
 
 specialItems :: [SpecialItem]

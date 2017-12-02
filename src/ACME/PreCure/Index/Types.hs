@@ -50,6 +50,14 @@ mkGirl :: String -> String -> Girl
 mkGirl ne = Girl (head $ words ne) ne
 
 
+typeNamify :: String -> String
+typeNamify = concat . words
+
+
+prefixify :: String -> String
+prefixify ve = if null ve then "" else '_' : typeNamify ve
+
+
 data Transformee =
   Transformee
     { transformedId :: String
@@ -63,9 +71,7 @@ data Transformee =
 $(deriveToJsonWithoutTypeNamePrefix ''Transformee)
 
 mkTransformee :: String -> String -> String -> String -> String -> Transformee
-mkTransformee ne ve = Transformee ((concat $ words ne) ++ prefix) ne ve
-  where
-    prefix = if null ve then "" else '_' : ve
+mkTransformee ne ve = Transformee (typeNamify ne ++ prefixify ve) ne ve
 
 
 data TransformedGroup =
@@ -80,9 +86,7 @@ data TransformedGroup =
 $(deriveToJsonWithoutTypeNamePrefix ''TransformedGroup)
 
 mkTransformedGroup :: String -> String -> String -> String -> TransformedGroup
-mkTransformedGroup ne ve = TransformedGroup ((concat $ words ne) ++ prefix) ne ve
-  where
-    prefix = if null ve then "" else '_' : ve
+mkTransformedGroup ne ve = TransformedGroup (typeNamify ne ++ prefixify ve) ne ve
 
 
 data SpecialItem =
@@ -96,7 +100,7 @@ data SpecialItem =
 $(deriveToJsonWithoutTypeNamePrefix ''SpecialItem)
 
 mkSpecialItem :: String -> String -> [String] -> SpecialItem
-mkSpecialItem ne = SpecialItem (concat $ words ne) ne
+mkSpecialItem ne = SpecialItem (typeNamify ne) ne
 
 
 data IdAttachments =

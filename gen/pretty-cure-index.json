@@ -158,7 +158,7 @@
         },
         {
             "nameEn": "Cure Whip",
-            "variationEn": "ALaModeStyle",
+            "variationEn": "A La Mode Style",
             "nameJa": "キュアホイップ",
             "variationJa": "アラモードスタイル",
             "id": "CureWhip_ALaModeStyle",
@@ -166,7 +166,7 @@
         },
         {
             "nameEn": "Cure Custard",
-            "variationEn": "ALaModeStyle",
+            "variationEn": "A La Mode Style",
             "nameJa": "キュアカスタード",
             "variationJa": "アラモードスタイル",
             "id": "CureCustard_ALaModeStyle",
@@ -174,7 +174,7 @@
         },
         {
             "nameEn": "Cure Gelato",
-            "variationEn": "ALaModeStyle",
+            "variationEn": "A La Mode Style",
             "nameJa": "キュアジェラート",
             "variationJa": "アラモードスタイル",
             "id": "CureGelato_ALaModeStyle",
@@ -182,7 +182,7 @@
         },
         {
             "nameEn": "Cure Macaron",
-            "variationEn": "ALaModeStyle",
+            "variationEn": "A La Mode Style",
             "nameJa": "キュアマカロン",
             "variationJa": "アラモードスタイル",
             "id": "CureMacaron_ALaModeStyle",
@@ -190,7 +190,7 @@
         },
         {
             "nameEn": "Cure Chocolat",
-            "variationEn": "ALaModeStyle",
+            "variationEn": "A La Mode Style",
             "nameJa": "キュアショコラ",
             "variationJa": "アラモードスタイル",
             "id": "CureChocolat_ALaModeStyle",
@@ -198,7 +198,7 @@
         },
         {
             "nameEn": "Cure Parfait",
-            "variationEn": "ALaModeStyle",
+            "variationEn": "A La Mode Style",
             "nameJa": "キュアパルフェ",
             "variationJa": "アラモードスタイル",
             "id": "CureParfait_ALaModeStyle",
@@ -1194,7 +1194,7 @@
         },
         {
             "nameEn": "Kirakira PreCure A La Mode",
-            "variationEn": "ALaModeStyle",
+            "variationEn": "A La Mode Style",
             "nameJa": "キラキラ☆プリキュアアラモード",
             "variationJa": "アラモードスタイル",
             "id": "KirakiraPreCureALaMode_ALaModeStyle"
