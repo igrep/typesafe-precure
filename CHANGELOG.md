@@ -1,5 +1,17 @@
 # 0.4.0.0 (2017/10/07)
 
+- Add: More transformations and purifications of Kirakira :star: PreCure A La Mode:
+    - Variation: A La Mode Style
+    - Purification: Fantastic Animalé
+    - Special Item: Sweets Castle
+    - Transformed Groups of Kirakira :star: PreCure A La Mode
+- Add: `variationEn` property of `transformees` in Cure Index.
+- Add: `transformedGroups` in Cure Index.
+- Incompatible Change:
+    - Renamed `variation` property of `transformees` in Cure Index into `variationJa`.
+
+# 0.4.0.0 (2017/10/07)
+
 - Add: More transformations and purifications of Kirakira :star: PreCure A La Mode, including Cure Parfait's and Kirakiraru Creamer's.
 - Add: Experimental feature: [cure-index.json](https://github.com/igrep/typesafe-precure/blob/master/gen/cure-index.json) and [pretty-cure-index.json](https://github.com/igrep/typesafe-precure/blob/master/gen/pretty-cure-index.json) are generated at build-time by Template Haskell.
     - Currently, only data of Kirakira :star: A La Mode is collected.
