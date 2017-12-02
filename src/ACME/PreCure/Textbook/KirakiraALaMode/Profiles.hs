@@ -148,13 +148,14 @@ transformations =
               ]
           )
       , mkTransformation
-          ["CureWhip", "CureCustard", "CureGelato", "CureMacaron", "CureChocolat"]
+          ["CureWhip", "CureCustard", "CureGelato", "CureMacaron", "CureChocolat", "CureParfait"]
           [mkIA "KirakiraruCreamer" ["SweetsCastle"]]
           [ "CureWhip_ALaModeStyle"
           , "CureCustard_ALaModeStyle"
           , "CureGelato_ALaModeStyle"
           , "CureMacaron_ALaModeStyle"
           , "CureChocolat_ALaModeStyle"
+          , "CureParfait_ALaModeStyle"
           ]
           ["スイーツキャッスル！", "レッツ・ラ・おきがえ！"]
       ]

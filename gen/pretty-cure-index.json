@@ -1169,7 +1169,8 @@
                 "CureCustard_ALaModeStyle",
                 "CureGelato_ALaModeStyle",
                 "CureMacaron_ALaModeStyle",
-                "CureChocolat_ALaModeStyle"
+                "CureChocolat_ALaModeStyle",
+                "CureParfait_ALaModeStyle"
             ],
             "speech": [
                 "スイーツキャッスル！",
@@ -1180,7 +1181,8 @@
                 "CureCustard",
                 "CureGelato",
                 "CureMacaron",
-                "CureChocolat"
+                "CureChocolat",
+                "CureParfait"
             ]
         }
     ],
