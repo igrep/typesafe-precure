@@ -1,4 +1,4 @@
-# 0.4.0.0 (2017/10/07)
+# 0.5.0.0 (2017/10/07)
 
 - Add: More transformations and purifications of Kirakira :star: PreCure A La Mode:
     - Variation: A La Mode Style
