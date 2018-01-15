@@ -45,6 +45,12 @@
             "id": "PegasusParfait"
         },
         {
+            "nameEn": "Pekorin Donut",
+            "attachments": [],
+            "nameJa": "ペコリンドーナツ",
+            "id": "PekorinDonut"
+        },
+        {
             "nameEn": "Candy Rod",
             "attachments": [],
             "nameJa": "キャンディロッド",
@@ -157,6 +163,14 @@
             "introducesHerselfAs": "パフェ！夢と希望を！レッツ・ラ・まぜまぜ！キュアパルフェ！できあがり！"
         },
         {
+            "nameEn": "Cure Pekorin",
+            "variationEn": "",
+            "nameJa": "キュアペコリン",
+            "variationJa": "",
+            "id": "CurePekorin",
+            "introducesHerselfAs": "ドーナツ！ペコペコとキラキラを！レッツ・ラ・まぜまぜ！キュアペコリン！できあがり！"
+        },
+        {
             "nameEn": "Cure Whip",
             "variationEn": "A La Mode Style",
             "nameJa": "キュアホイップ",
@@ -235,6 +249,11 @@
             "nameEn": "Ciel Kirahoshi",
             "nameJa": "キラ星 シエル",
             "id": "Ciel"
+        },
+        {
+            "nameEn": "Pekorin",
+            "nameJa": "ペコリン",
+            "id": "Pekorin"
         }
     ],
     "purifications": [
@@ -592,6 +611,29 @@
             ],
             "transformers": [
                 "Ciel"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PekorinDonut"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CurePekorin"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "ドーナツ！",
+                "ペコペコとキラキラを！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアペコリン！できあがり！"
+            ],
+            "transformers": [
+                "Pekorin"
             ]
         },
         {

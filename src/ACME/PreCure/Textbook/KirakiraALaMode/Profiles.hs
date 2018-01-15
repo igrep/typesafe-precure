@@ -14,6 +14,7 @@ girls =
   , mkGirl "Yukari Kotozume" "琴爪 ゆかり"
   , mkGirl "Akira Kenjo" "剣城 あきら"
   , mkGirl "Ciel Kirahoshi" "キラ星 シエル" -- TODO: Synonym for Kirarin
+  , mkGirl "Pekorin" "ペコリン"
   ]
 
 
@@ -25,6 +26,7 @@ transformees =
   , mkTransformee "Cure Macaron" "" "キュアマカロン" "" (concat introducesHerselfAs_CureMacaron)
   , mkTransformee "Cure Chocolat" "" "キュアショコラ" "" (concat introducesHerselfAs_CureChocolat)
   , mkTransformee "Cure Parfait" "" "キュアパルフェ" "" (concat introducesHerselfAs_CureParfait)
+  , mkTransformee "Cure Pekorin" "" "キュアペコリン" "" (concat introducesHerselfAs_CurePekorin)
 
   , mkTransformee "Cure Whip" aLaModeStyleEn "キュアホイップ" aLaModeStyle (concat introducesHerselfAs_CureWhip)
   , mkTransformee "Cure Custard" aLaModeStyleEn "キュアカスタード" aLaModeStyle (concat introducesHerselfAs_CureCustard)
@@ -61,6 +63,7 @@ specialItems =
   , mkSpecialItem "Cat Macaron"        "ねこマカロン"         []
   , mkSpecialItem "Dog Chocolate"      "いぬチョコレート"     []
   , mkSpecialItem "Pegasus Parfait"    "ペガサスパフェ"       []
+  , mkSpecialItem "Pekorin Donut"      "ペコリンドーナツ"     []
   , mkSpecialItem "Candy Rod"          "キャンディロッド"     []
   , mkSpecialItem "Rainbow Ribbon"     "レインボーリボン"     []
   , mkSpecialItem "Kirakiraru Creamer" "キラキラルクリーマー" ["Crystal Animal"]
@@ -76,12 +79,13 @@ specialItems =
 
 transformations :: [Transformation]
 transformations =
-      [ mkTransformation ["Ichika"] [mkIA "SweetsPact" ["RabbitShortcake"]] ["CureWhip"]     (cureALaModeDecoration : introducesHerselfAs_CureWhip)
-      , mkTransformation ["Himari"] [mkIA "SweetsPact" ["SquirrelPudding"]] ["CureCustard"]  (cureALaModeDecoration : introducesHerselfAs_CureCustard)
-      , mkTransformation ["Aoi"]    [mkIA "SweetsPact" ["LionIce"]]         ["CureGelato"]   (cureALaModeDecoration : introducesHerselfAs_CureGelato)
-      , mkTransformation ["Yukari"] [mkIA "SweetsPact" ["CatMacaron"]]      ["CureMacaron"]  (cureALaModeDecoration : introducesHerselfAs_CureMacaron)
-      , mkTransformation ["Akira"]  [mkIA "SweetsPact" ["DogChocolate"]]    ["CureChocolat"] (cureALaModeDecoration : introducesHerselfAs_CureChocolat)
-      , mkTransformation ["Ciel"]   [mkIA "SweetsPact" ["PegasusParfait"]]  ["CureParfait"]  (cureALaModeDecoration : introducesHerselfAs_CureParfait)
+      [ mkTransformation ["Ichika"]  [mkIA "SweetsPact" ["RabbitShortcake"]] ["CureWhip"]     (cureALaModeDecoration : introducesHerselfAs_CureWhip)
+      , mkTransformation ["Himari"]  [mkIA "SweetsPact" ["SquirrelPudding"]] ["CureCustard"]  (cureALaModeDecoration : introducesHerselfAs_CureCustard)
+      , mkTransformation ["Aoi"]     [mkIA "SweetsPact" ["LionIce"]]         ["CureGelato"]   (cureALaModeDecoration : introducesHerselfAs_CureGelato)
+      , mkTransformation ["Yukari"]  [mkIA "SweetsPact" ["CatMacaron"]]      ["CureMacaron"]  (cureALaModeDecoration : introducesHerselfAs_CureMacaron)
+      , mkTransformation ["Akira"]   [mkIA "SweetsPact" ["DogChocolate"]]    ["CureChocolat"] (cureALaModeDecoration : introducesHerselfAs_CureChocolat)
+      , mkTransformation ["Ciel"]    [mkIA "SweetsPact" ["PegasusParfait"]]  ["CureParfait"]  (cureALaModeDecoration : introducesHerselfAs_CureParfait)
+      , mkTransformation ["Pekorin"] [mkIA "SweetsPact" ["PekorinDonut"]]    ["CurePekorin"]  (cureALaModeDecoration : introducesHerselfAs_CurePekorin)
       , mkTransformation
           ["Ichika", "Himari", "Aoi", "Yukari", "Akira"]
           [mkIA "SweetsPact" ["RabbitShortcake"], mkIA "SweetsPact" ["SquirrelPudding"], mkIA "SweetsPact" ["LionIce"], mkIA "SweetsPact" ["CatMacaron"], mkIA "SweetsPact" ["DogChocolate"]]
@@ -225,6 +229,7 @@ introducesHerselfAs_CureGelato   = ["アイス！", "自由と情熱を！", "�
 introducesHerselfAs_CureMacaron  = ["マカロン！", "美しさとトキメキを！", "レッツ・ラ・まぜまぜ！", "キュアマカロン！できあがり！"]
 introducesHerselfAs_CureChocolat = ["チョコレート！", "強さと愛を！", "レッツ・ラ・まぜまぜ！", "キュアショコラ！できあがり！"]
 introducesHerselfAs_CureParfait  = ["パフェ！", "夢と希望を！", "レッツ・ラ・まぜまぜ！", "キュアパルフェ！できあがり！"]
+introducesHerselfAs_CurePekorin  = ["ドーナツ！", "ペコペコとキラキラを！", "レッツ・ラ・まぜまぜ！", "キュアペコリン！できあがり！"]
 
 kirakiraALaModeTransformationSpeechOf :: [[String]] -> [String]
 kirakiraALaModeTransformationSpeechOf [] = error "No transforamation speech given!"
