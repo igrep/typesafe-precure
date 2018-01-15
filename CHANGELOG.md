@@ -1,3 +1,8 @@
+# 0.5.0.1 (2018/01/16)
+
+- Add: Cure Pekorin's transformation.
+- Fix: Hide almost never reusable modules.
+
 # 0.5.0.1 (2017/12/02)
 
 - Fix: Correct transformers of A La Mode Style.

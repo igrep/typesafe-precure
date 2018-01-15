@@ -1,9 +1,11 @@
 dependencies:
   cache_directories:
     - "~/.stack"
+    - "~/.local/bin/"
   override:
-    - stack setup
-    - stack build --pedantic
+    - stack upgrade
+    - ~/.local/bin/stack setup
+    - ~/.local/bin/stack build --pedantic
 test:
   override:
     - stack test --pedantic
