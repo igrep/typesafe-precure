@@ -78,6 +78,7 @@ library
                      , ACME.PreCure.Textbook.MahoGirls.Words
 
                      , ACME.PreCure.Textbook.KirakiraALaMode
+                     , ACME.PreCure.Textbook.Hugtto
 
                      , ACME.PreCure.Types
                      , ACME.PreCure.Monad
@@ -88,6 +89,9 @@ library
 
                      , ACME.PreCure.Textbook.KirakiraALaMode.Types
                      , ACME.PreCure.Textbook.KirakiraALaMode.Profiles
+
+                     , ACME.PreCure.Textbook.Hugtto.Types
+                     , ACME.PreCure.Textbook.Hugtto.Profiles
   build-depends:       base >= 4.7 && < 5
                      -- TODO: specify version
                      , aeson

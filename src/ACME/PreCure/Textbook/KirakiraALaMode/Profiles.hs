@@ -6,8 +6,8 @@ module ACME.PreCure.Textbook.KirakiraALaMode.Profiles where
 import           ACME.PreCure.Index.Types
 
 
-girls :: [Girl]
-girls =
+girlsKirakiraALaMode :: [Girl]
+girlsKirakiraALaMode =
   [ mkGirl "Ichika Usami" "宇佐美 いちか"
   , mkGirl "Himari Arisugawa" "有栖川 ひまり"
   , mkGirl "Aoi Tategami" "立神 あおい"
@@ -18,8 +18,8 @@ girls =
   ]
 
 
-transformees :: [Transformee]
-transformees =
+transformeesKirakiraALaMode :: [Transformee]
+transformeesKirakiraALaMode =
   [ mkTransformee "Cure Whip" "" "キュアホイップ" "" (concat introducesHerselfAs_CureWhip)
   , mkTransformee "Cure Custard" "" "キュアカスタード" "" (concat introducesHerselfAs_CureCustard)
   , mkTransformee "Cure Gelato" "" "キュアジェラート" "" (concat introducesHerselfAs_CureGelato)
@@ -37,8 +37,8 @@ transformees =
   ]
 
 
-transformedGroups :: [TransformedGroup]
-transformedGroups =
+transformedGroupsKirakiraALaMode :: [TransformedGroup]
+transformedGroupsKirakiraALaMode =
   [ mkTransformedGroup ne "" nj ""
   , mkTransformedGroup ne aLaModeStyleEn nj aLaModeStyle
   ]
@@ -54,8 +54,8 @@ aLaModeStyleEn :: String
 aLaModeStyleEn = "A La Mode Style"
 
 
-specialItems :: [SpecialItem]
-specialItems =
+specialItemsKirakiraALaMode :: [SpecialItem]
+specialItemsKirakiraALaMode =
   [ mkSpecialItem "Sweets Pact"        "スイーツパクト"       ["Animal Sweets"]
   , mkSpecialItem "Rabbit Shortcake"   "うさぎショートケーキ" []
   , mkSpecialItem "Squirrel Pudding"   "りすプリン"           []
@@ -77,8 +77,8 @@ specialItems =
   ]
 
 
-transformations :: [Transformation]
-transformations =
+transformationsKirakiraALaMode :: [Transformation]
+transformationsKirakiraALaMode =
       [ mkTransformation ["Ichika"]  [mkIA "SweetsPact" ["RabbitShortcake"]] ["CureWhip"]     (cureALaModeDecoration : introducesHerselfAs_CureWhip)
       , mkTransformation ["Himari"]  [mkIA "SweetsPact" ["SquirrelPudding"]] ["CureCustard"]  (cureALaModeDecoration : introducesHerselfAs_CureCustard)
       , mkTransformation ["Aoi"]     [mkIA "SweetsPact" ["LionIce"]]         ["CureGelato"]   (cureALaModeDecoration : introducesHerselfAs_CureGelato)
@@ -165,8 +165,8 @@ transformations =
       ]
 
 
-purifications :: [Purification]
-purifications =
+purificationsKirakiraALaMode :: [Purification]
+purificationsKirakiraALaMode =
   [ mkPurification ["CureWhip"]     ["CandyRod"] ["キラキラキラルン！", "ホイップ・デコレーション！"]
   , mkPurification ["CureCustard"]  ["CandyRod"] ["キラキラキラルン！", "カスタード・イリュージョン！"]
   , mkPurification ["CureGelato"]   ["CandyRod"] ["キラキラキラルン！", "ジェラート・シェイク！"]

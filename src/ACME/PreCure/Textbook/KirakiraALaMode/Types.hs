@@ -10,20 +10,20 @@ import           ACME.PreCure.Types.TH
 
 import           ACME.PreCure.Textbook.KirakiraALaMode.Profiles
 
-{-# ANN module girls #-}
-$(declareGirls girls)
+{-# ANN module girlsKirakiraALaMode #-}
+$(declareGirls girlsKirakiraALaMode)
 
-{-# ANN module transformees #-}
-$(declareTransformees transformees)
+{-# ANN module transformeesKirakiraALaMode #-}
+$(declareTransformees transformeesKirakiraALaMode)
 
-{-# ANN module transformedGroups #-}
-$(declareTransformedGroups transformedGroups)
+{-# ANN module transformedGroupsKirakiraALaMode #-}
+$(declareTransformedGroups transformedGroupsKirakiraALaMode)
 
-{-# ANN module specialItems #-}
-$(declareSpecialItems specialItems)
+{-# ANN module specialItemsKirakiraALaMode #-}
+$(declareSpecialItems specialItemsKirakiraALaMode)
 
-{-# ANN module transformations #-}
-$(declareTransformations transformations)
+{-# ANN module transformationsKirakiraALaMode #-}
+$(declareTransformations transformationsKirakiraALaMode)
 
-{-# ANN module purifications #-}
-$(declarePurifications purifications)
+{-# ANN module purificationsKirakiraALaMode #-}
+$(declarePurifications purificationsKirakiraALaMode)
