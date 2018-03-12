@@ -1,4 +1,8 @@
-# 0.5.0.1 (2018/01/16)
+# 0.6.1.1 (2018/03/12)
+
+- Add: Hugtto! PreCure.
+
+# 0.5.1.1 (2018/01/16)
 
 - Add: Cure Pekorin's transformation.
 - Fix: Hide almost never reusable modules.
