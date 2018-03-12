@@ -1,6 +1,32 @@
 {
     "specialItems": [
         {
+            "nameEn": "Pre Heart",
+            "attachments": [
+                "Mirai Crystal"
+            ],
+            "nameJa": "プリハート",
+            "id": "PreHeart"
+        },
+        {
+            "nameEn": "Mirai Crystal Pink",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ピンク",
+            "id": "MiraiCrystalPink"
+        },
+        {
+            "nameEn": "Mirai Crystal Blue",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ブルー",
+            "id": "MiraiCrystalBlue"
+        },
+        {
+            "nameEn": "Mirai Crystal Yellow",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・イエロー",
+            "id": "MiraiCrystalYellow"
+        },
+        {
             "nameEn": "Sweets Pact",
             "attachments": [
                 "Animal Sweets"
@@ -115,6 +141,30 @@
     ],
     "transformees": [
         {
+            "nameEn": "Cure Yell",
+            "variationEn": "",
+            "nameJa": "キュアエール",
+            "variationJa": "",
+            "id": "CureYell",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんなを応援！元気のプリキュア！キュアエール！"
+        },
+        {
+            "nameEn": "Cure Ange",
+            "variationEn": "",
+            "nameJa": "キュアアンジュ",
+            "variationJa": "",
+            "id": "CureAnge",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんなを癒す！知恵のプリキュア！キュアアンジュ！"
+        },
+        {
+            "nameEn": "Cure Etoile",
+            "variationEn": "",
+            "nameJa": "キュアエトワール",
+            "variationJa": "",
+            "id": "CureEtoile",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな輝け！力のプリキュア！キュアエトワール！"
+        },
+        {
             "nameEn": "Cure Whip",
             "variationEn": "",
             "nameJa": "キュアホイップ",
@@ -221,6 +271,21 @@
     ],
     "girls": [
         {
+            "nameEn": "Hana Nono",
+            "nameJa": "野乃 はな",
+            "id": "Hana"
+        },
+        {
+            "nameEn": "Saaya Yakushiji",
+            "nameJa": "薬師寺 さあや",
+            "id": "Saaya"
+        },
+        {
+            "nameEn": "Homare Kagayaki",
+            "nameJa": "輝木 ほまれ",
+            "id": "Homare"
+        },
+        {
             "nameEn": "Ichika Usami",
             "nameJa": "宇佐美 いちか",
             "id": "Ichika"
@@ -257,6 +322,57 @@
         }
     ],
     "purifications": [
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalPink"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "speech": [
+                "フレフレ！",
+                "ハート・フォー・ユー！"
+            ],
+            "purifier": [
+                "CureYell"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalBlue"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "speech": [
+                "フレフレ！",
+                "ハート・フェザー！"
+            ],
+            "purifier": [
+                "CureAnge"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalYellow"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "speech": [
+                "フレフレ！",
+                "ハート・スター！"
+            ],
+            "purifier": [
+                "CureEtoile"
+            ]
+        },
         {
             "specialItems": [
                 "CandyRod"
@@ -475,6 +591,124 @@
         }
     ],
     "transformations": [
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalPink"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureYell"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "ぎゅ～！",
+                "ぎゅ～～！",
+                "輝く未来をー、抱きしめて！",
+                "みんなを応援！元気のプリキュア！キュアエール！"
+            ],
+            "transformers": [
+                "Hana"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalBlue"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureAnge"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "ぎゅ～！",
+                "ぎゅ～～！",
+                "輝く未来をー、抱きしめて！",
+                "みんなを癒す！知恵のプリキュア！キュアアンジュ！"
+            ],
+            "transformers": [
+                "Saaya"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalYellow"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureEtoile"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "ぎゅ～！",
+                "ぎゅ～～！",
+                "輝く未来をー、抱きしめて！",
+                "みんな輝け！力のプリキュア！キュアエトワール！"
+            ],
+            "transformers": [
+                "Homare"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalPink"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalBlue"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalYellow"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureYell",
+                "CureAnge",
+                "CureEtoile"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "は～ぎゅ～～！",
+                "は～ぎゅ～～！",
+                "輝く未来をー、抱きしめて！",
+                "みんなを応援！元気のプリキュア！キュアエール！",
+                "みんなを癒す！知恵のプリキュア！キュアアンジュ！",
+                "みんな輝け！力のプリキュア！キュアエトワール！"
+            ],
+            "transformers": [
+                "Hana",
+                "Saaya",
+                "Homare"
+            ]
+        },
         {
             "specialItems": [
                 {
@@ -1229,6 +1463,13 @@
         }
     ],
     "transformedGroups": [
+        {
+            "nameEn": "Hugtto PreCure",
+            "variationEn": "",
+            "nameJa": "HUGっと！プリキュア",
+            "variationJa": "",
+            "id": "HugttoPreCure"
+        },
         {
             "nameEn": "Kirakira PreCure A La Mode",
             "variationEn": "",

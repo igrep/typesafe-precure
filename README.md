@@ -9,7 +9,7 @@ Written in Haskell.
 ## Features
 
 - Collection of Japanese battle heroines "PreCure"  and their transformation and purification phrases.
-    - Currently, supports from the first season to "Kirakira ☆ A La Mode", including Cure Echo and Cure Mofurun!
+    - Currently, supports from the first season to "Hugtto! PreCure", including Cure Echo, Cure Mofurun, and Cure Pekorin!
 - Monadic actions to play the speech of their transformations and purifications.
 
 ## Characteristics

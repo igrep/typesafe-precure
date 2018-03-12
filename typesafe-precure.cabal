@@ -1,5 +1,5 @@
 name:                 typesafe-precure
-version:              0.5.1.1
+version:              0.6.1.1
 synopsis:             Type-safe transformations and purifications of PreCures (Japanese Battle Heroine)
 description:          See README.md for details.
 homepage:             https://github.com/igrep/typesafe-precure#readme
@@ -78,6 +78,7 @@ library
                      , ACME.PreCure.Textbook.MahoGirls.Words
 
                      , ACME.PreCure.Textbook.KirakiraALaMode
+                     , ACME.PreCure.Textbook.Hugtto
 
                      , ACME.PreCure.Types
                      , ACME.PreCure.Monad
@@ -88,6 +89,9 @@ library
 
                      , ACME.PreCure.Textbook.KirakiraALaMode.Types
                      , ACME.PreCure.Textbook.KirakiraALaMode.Profiles
+
+                     , ACME.PreCure.Textbook.Hugtto.Types
+                     , ACME.PreCure.Textbook.Hugtto.Profiles
   build-depends:       base >= 4.7 && < 5
                      -- TODO: specify version
                      , aeson
