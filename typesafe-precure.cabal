@@ -1,5 +1,5 @@
 name:                 typesafe-precure
-version:              0.6.1.1
+version:              0.6.2.1
 synopsis:             Type-safe transformations and purifications of PreCures (Japanese Battle Heroine)
 description:          See README.md for details.
 homepage:             https://github.com/igrep/typesafe-precure#readme
@@ -7,7 +7,7 @@ license:              BSD3
 license-file:         LICENSE
 author:               Yuji Yamamoto
 maintainer:           whosekiteneverfly@gmail.com
-copyright:            2017 Yuji Yamamoto
+copyright:            2018 Yuji Yamamoto
 category:             ACME
 build-type:           Simple
 extra-source-files:   README.md
