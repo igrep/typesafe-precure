@@ -27,6 +27,38 @@
             "id": "MiraiCrystalYellow"
         },
         {
+            "nameEn": "Melody Sword",
+            "attachments": [
+                "Mirai Crystal"
+            ],
+            "nameJa": "メロディソード",
+            "id": "MelodySword"
+        },
+        {
+            "nameEn": "Mirai Crystal Rose",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ローズ",
+            "id": "MiraiCrystalRose"
+        },
+        {
+            "nameEn": "Mirai Crystal Navy",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ネイビー",
+            "id": "MiraiCrystalNavy"
+        },
+        {
+            "nameEn": "Mirai Crystal Orange",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・オレンジ",
+            "id": "MiraiCrystalOrange"
+        },
+        {
+            "nameEn": "Mirai Crystal White",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ホワイト",
+            "id": "MiraiCrystalWhite"
+        },
+        {
             "nameEn": "Sweets Pact",
             "attachments": [
                 "Animal Sweets"
@@ -370,6 +402,90 @@
                 "ハート・スター！"
             ],
             "purifier": [
+                "CureEtoile"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalRose"
+                    ],
+                    "i": "MelodySword"
+                }
+            ],
+            "speech": [
+                "フラワーシュート!"
+            ],
+            "purifier": [
+                "CureYell"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalNavy"
+                    ],
+                    "i": "MelodySword"
+                }
+            ],
+            "speech": [
+                "フェザーブラスト!"
+            ],
+            "purifier": [
+                "CureAnge"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalOrange"
+                    ],
+                    "i": "MelodySword"
+                }
+            ],
+            "speech": [
+                "スタースラッシュ！"
+            ],
+            "purifier": [
+                "CureEtoile"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalRose"
+                    ],
+                    "i": "MelodySword"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalNavy"
+                    ],
+                    "i": "MelodySword"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalOrange"
+                    ],
+                    "i": "MelodySword"
+                }
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "エールタクト！",
+                "アンジュハープ！",
+                "エトワールフルート！",
+                "心のトゲトゲ、飛んでいけ〜！",
+                "プリキュア・トリニティコンサート！",
+                "HUGっとプリキュア！エール・フォー・ユー！"
+            ],
+            "purifier": [
+                "CureYell",
+                "CureAnge",
                 "CureEtoile"
             ]
         },

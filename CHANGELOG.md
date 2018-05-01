@@ -1,3 +1,7 @@
+# 0.6.2.1 (2018/05/02)
+
+- Add: Hugtto! PreCure's new purifications.
+
 # 0.6.1.1 (2018/03/12)
 
 - Add: Hugtto! PreCure.
