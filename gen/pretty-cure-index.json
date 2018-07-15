@@ -59,6 +59,38 @@
             "id": "MiraiCrystalWhite"
         },
         {
+            "nameEn": "Twin Love Guitar",
+            "attachments": [
+                "Mirai Crystal"
+            ],
+            "nameJa": "ツインラブギター",
+            "id": "TwinLoveGuitar"
+        },
+        {
+            "nameEn": "Mirai Crystal Red",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・レッド",
+            "id": "MiraiCrystalRed"
+        },
+        {
+            "nameEn": "Mirai Crystal Purple",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・パープル",
+            "id": "MiraiCrystalPurple"
+        },
+        {
+            "nameEn": "Mirai Crystal Rouge",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ルージュ",
+            "id": "MiraiCrystalRouge"
+        },
+        {
+            "nameEn": "Mirai Crystal Violet",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・バイオレット",
+            "id": "MiraiCrystalViolet"
+        },
+        {
             "nameEn": "Sweets Pact",
             "attachments": [
                 "Animal Sweets"
@@ -197,6 +229,22 @@
             "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな輝け！力のプリキュア！キュアエトワール！"
         },
         {
+            "nameEn": "Cure Macherie",
+            "variationEn": "",
+            "nameJa": "キュアマシェリ",
+            "variationJa": "",
+            "id": "CureMacherie",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな大好き！愛のプリキュア！キュアマシェリ！"
+        },
+        {
+            "nameEn": "Cure Amour",
+            "variationEn": "",
+            "nameJa": "キュアアムール",
+            "variationJa": "",
+            "id": "CureAmour",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな大好き！愛のプリキュア！キュアアムール！"
+        },
+        {
             "nameEn": "Cure Whip",
             "variationEn": "",
             "nameJa": "キュアホイップ",
@@ -318,6 +366,16 @@
             "id": "Homare"
         },
         {
+            "nameEn": "Emiru Aisaki",
+            "nameJa": "愛崎 えみる",
+            "id": "Emiru"
+        },
+        {
+            "nameEn": "Ruru Amour",
+            "nameJa": "ルールー・アムール",
+            "id": "Ruru"
+        },
+        {
             "nameEn": "Ichika Usami",
             "nameJa": "宇佐美 いちか",
             "id": "Ichika"
@@ -409,6 +467,56 @@
             "specialItems": [
                 {
                     "a": [
+                        "MiraiCrystalOrange"
+                    ],
+                    "i": "MelodySword"
+                }
+            ],
+            "speech": [
+                "スタースラッシュ！"
+            ],
+            "purifier": [
+                "CureEtoile"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalRed"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "speech": [
+                "Are you ready?",
+                "フレフレ！ハート・ソング！"
+            ],
+            "purifier": [
+                "CureMacherie"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalPurple"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "speech": [
+                "行きます！",
+                "フレフレ！ハート・ダンス！"
+            ],
+            "purifier": [
+                "CureAmour"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
                         "MiraiCrystalRose"
                     ],
                     "i": "MelodySword"
@@ -441,16 +549,32 @@
             "specialItems": [
                 {
                     "a": [
-                        "MiraiCrystalOrange"
+                        "MiraiCrystalRouge"
                     ],
-                    "i": "MelodySword"
+                    "i": "TwinLoveGuitar"
                 }
             ],
             "speech": [
-                "スタースラッシュ！"
+                "マシェリポップン!"
             ],
             "purifier": [
-                "CureEtoile"
+                "CureMacherie"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalViolet"
+                    ],
+                    "i": "TwinLoveGuitar"
+                }
+            ],
+            "speech": [
+                "アムールロックンロール!"
+            ],
+            "purifier": [
+                "CureAmour"
             ]
         },
         {
@@ -487,6 +611,37 @@
                 "CureYell",
                 "CureAnge",
                 "CureEtoile"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalRouge"
+                    ],
+                    "i": "TwinLoveGuitar"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalViolet"
+                    ],
+                    "i": "TwinLoveGuitar"
+                }
+            ],
+            "speech": [
+                "ツインラブギター！ミライクリスタル！",
+                "Are you ready?",
+                "行くのです！",
+                "届け！私たちの、愛の歌！",
+                "心のトゲトゲ！",
+                "ズッキュン打ち抜く！",
+                "ツインラブ・ロックビート！",
+                "愛してる！",
+                "Thank you!"
+            ],
+            "purifier": [
+                "CureMacherie",
+                "CureAmour"
             ]
         },
         {
@@ -823,6 +978,106 @@
                 "Hana",
                 "Saaya",
                 "Homare"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalRed"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalPurple"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureMacherie",
+                "CureAmour"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "ぎゅ～！",
+                "ぎゅ～！",
+                "輝く未来をー、抱きしめて！",
+                "みんな大好き！愛のプリキュア！キュアマシェリ！キュアアムール！"
+            ],
+            "transformers": [
+                "Emiru",
+                "Ruru"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalPink"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalBlue"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalYellow"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalRed"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalPurple"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureYell",
+                "CureAnge",
+                "CureEtoile",
+                "CureMacherie",
+                "CureAmour"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "ミライクリスタル！",
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "は～ぎゅ～～！",
+                "ぎゅ～！",
+                "ぎゅ～！",
+                "ぎゅ～！",
+                "輝く未来をー、抱きしめて！",
+                "みんなを応援！元気のプリキュア！キュアエール！",
+                "みんなを癒す！知恵のプリキュア！キュアアンジュ！",
+                "みんな輝け！力のプリキュア！キュアエトワール！",
+                "みんな大好き！愛のプリキュア！キュアマシェリ！キュアアムール！",
+                "HUGっと！プリキュア！"
+            ],
+            "transformers": [
+                "Hana",
+                "Saaya",
+                "Homare",
+                "Emiru",
+                "Ruru"
             ]
         },
         {
