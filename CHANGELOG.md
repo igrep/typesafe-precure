@@ -1,3 +1,7 @@
+# 0.6.3.1
+
+- Add: Cure Macherie, Cure Amour, and their purifications.
+
 # 0.6.2.1 (2018/05/02)
 
 - Add: Hugtto! PreCure's new purifications.
