@@ -116,6 +116,7 @@ executable migrate2cure-index
   build-depends:       base
                      , attoparsec
                      , directory
+                     , filepath
                      , here
                      , substring-parser
                      , text

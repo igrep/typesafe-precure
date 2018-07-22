@@ -5,6 +5,7 @@ import qualified Data.String.Here.Interpolated as HI
 import qualified Data.Text                     as T
 import qualified Data.Text.IO                  as T
 import qualified System.Directory              as D
+import qualified System.FilePath               as F
 
 
 main :: IO ()
@@ -14,9 +15,17 @@ main = genTypesHs
 genTypesHs :: IO ()
 genTypesHs =
   ( mapM_ (T.putStr . typeHsFromSeriesName)
-    . filter (not . (`elem` ["Hugtto", "KirakiraALaMode"])) -- Except for already migrated series
+    . filter (\path -> notYetMigrated path && isDirectory path) -- Except for already migrated series
     )
     =<< D.listDirectory "src/ACME/PreCure/Textbook/"
+
+
+notYetMigrated :: FilePath -> Bool
+notYetMigrated = not . (`elem` ["Hugtto", "KirakiraALaMode"])
+
+
+isDirectory :: FilePath -> Bool
+isDirectory = null . F.takeExtension
 
 
 typeHsFromSeriesName :: FilePath -> T.Text
