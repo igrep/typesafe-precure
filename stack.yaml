@@ -40,7 +40,10 @@ packages:
 - '.'
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
-extra-deps: []
+extra-deps:
+- substring-parser-0.4.1.0
+- git: https://github.com/CindyLinz/Haskell-NoTrace.git
+  commit: 57b1f2bdc2c4ed247c4bd09708dde3078fc08b44
 
 # Override default flag values for local packages and extra-deps
 flags: {}
