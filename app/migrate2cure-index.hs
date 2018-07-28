@@ -2,6 +2,7 @@
 {-# LANGUAGE QuasiQuotes       #-}
 {-# LANGUAGE RecordWildCards   #-}
 
+import           Control.Applicative ((<|>))
 import           Control.Monad                 (mapM_, void)
 import qualified Data.Attoparsec.Text          as A
 import qualified Data.String.Here.Interpolated as HI
@@ -36,9 +37,9 @@ genProfilesHs = mapM_ $ \seriesRoot -> do
   mapM_ print . parseAll =<< T.readFile (seriesRoot ++ "/Types.hs")
 
 
-parseAll :: T.Text -> [Girl]
+parseAll :: T.Text -> [Aux]
 parseAll content =
-  case A.feed (A.parse (PS.matchAll pGirlInstance) content) "" of
+  case A.feed (A.parse (PS.matchAll pAux) content) "" of
       A.Done _ girls -> girls
       other -> error $ "Not done: " ++ show other
 
@@ -90,15 +91,41 @@ typeHsFromSeriesName seriesName = T.unlines $ map (T.strip . T.pack) $ lines src
 
 --------------------------------------------------- parsers
 
-pName :: A.Parser String
-pName = A.many1' (A.satisfy (\c -> ('A' <= c && c <= 'Z') || ('a' <= c && c <= 'z')))
+type Expression = String
+
+data Aux =
+    AS SingletonData
+  | AG Girl
+  deriving (Eq, Show)
+
+data SingletonData = SingletonData
+  { dataName :: !Expression
+  , typeArgs :: ![Expression]
+  } deriving (Eq, Show)
 
 
-quote :: String -> String
+pName :: A.Parser Expression
+pName =
+  A.many1' $ A.satisfy (\c -> c == '_' || ('A' <= c && c <= 'Z') || ('a' <= c && c <= 'z'))
+
+
+quote :: String -> Expression
 quote s = "\"" ++ s ++ "\""
 
 
-pGirlInstance :: A.Parser Girl
+pAux :: A.Parser Aux
+pAux = pSingletonData <|> pGirlInstance
+
+
+pSingletonData :: A.Parser Aux
+pSingletonData = do
+  void $ A.string "data "
+  dataName <- pName
+  typeArgs <- A.many' (A.char ' ' >> pName)
+  pure $ AS SingletonData {..}
+
+
+pGirlInstance :: A.Parser Aux
 pGirlInstance = do
   void $ A.string "girlInstance [t|"
   A.skipSpace
@@ -115,4 +142,4 @@ pGirlInstance = do
   girlNameJa <- pName
   traceM "DEBUG: girlNameJa"
 
-  pure Girl {..}
+  pure $ AG Girl {..}
