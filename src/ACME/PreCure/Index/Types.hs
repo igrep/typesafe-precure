@@ -4,13 +4,14 @@
 {-# OPTIONS_GHC -fno-warn-unused-top-binds #-}
 
 module ACME.PreCure.Index.Types
-  ( Girl(Girl)
-  , Transformee(Transformee)
-  , TransformedGroup(TransformedGroup)
-  , SpecialItem(SpecialItem)
-  , IdAttachments(IdAttachments)
-  , Transformation(Transformation)
-  , Purification(Purification)
+  ( Girl(..)
+  , Transformee(..)
+  , TransformedGroup(..)
+  , SpecialItem(..)
+  , IdAttachments(..)
+  , Transformation(..)
+  , Purification(..)
+  -- ^ TODO: Hide the record labels back.
   , Index
   , mkGirl
   , mkTransformee
