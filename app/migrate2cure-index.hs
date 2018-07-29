@@ -165,7 +165,6 @@ pTransformedInstance = do
       transformedVariationEn = quote $
         case transformedVariationEnUS of
             ('_' : left) -> splitBeforeUpper left
-            ""           -> ""
             other        -> other
       transformedNameEn = quote $ splitBeforeUpper transformedIdNQNV
 
