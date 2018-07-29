@@ -3,6 +3,8 @@
 
 module ACME.PreCure.Textbook.KirakiraALaMode.Profiles where
 
+import           Data.String (IsString)
+
 import           ACME.PreCure.Index.Types
 
 
@@ -39,8 +41,8 @@ transformeesKirakiraALaMode =
 
 transformedGroupsKirakiraALaMode :: [TransformedGroup]
 transformedGroupsKirakiraALaMode =
-  [ mkTransformedGroup ne "" nj ""
-  , mkTransformedGroup ne aLaModeStyleEn nj aLaModeStyle
+  [ mkTransformedGroup groupMembers_KirakiraALaMode ne "" nj ""
+  , mkTransformedGroup groupMembers_KirakiraALaMode_ALaModeStyle ne aLaModeStyleEn nj aLaModeStyle
   ]
   where
     ne = "Kirakira PreCure A La Mode"
@@ -94,7 +96,7 @@ transformationsKirakiraALaMode =
       , mkTransformation
           ["Ichika", "Himari", "Aoi", "Yukari", "Akira", "Ciel"]
           [mkIA "SweetsPact" ["RabbitShortcake"], mkIA "SweetsPact" ["SquirrelPudding"], mkIA "SweetsPact" ["LionIce"], mkIA "SweetsPact" ["CatMacaron"], mkIA "SweetsPact" ["DogChocolate"], mkIA "SweetsPact" ["PegasusParfait"]]
-          ["CureWhip", "CureCustard", "CureGelato", "CureMacaron", "CureChocolat", "CureParfait"]
+          groupMembers_KirakiraALaMode
           (kirakiraALaModeTransformationSpeechFeaturing introducesHerselfAs_CureWhip)
       , mkTransformation
           ["Himari", "Ichika", "Aoi", "Yukari", "Akira"]
@@ -152,15 +154,9 @@ transformationsKirakiraALaMode =
               ]
           )
       , mkTransformation
-          ["CureWhip", "CureCustard", "CureGelato", "CureMacaron", "CureChocolat", "CureParfait"]
+          groupMembers_KirakiraALaMode
           [mkIA "KirakiraruCreamer" ["SweetsCastle"]]
-          [ "CureWhip_ALaModeStyle"
-          , "CureCustard_ALaModeStyle"
-          , "CureGelato_ALaModeStyle"
-          , "CureMacaron_ALaModeStyle"
-          , "CureChocolat_ALaModeStyle"
-          , "CureParfait_ALaModeStyle"
-          ]
+          groupMembers_KirakiraALaMode_ALaModeStyle
           ["スイーツキャッスル！", "レッツ・ラ・おきがえ！"]
       ]
 
@@ -180,20 +176,14 @@ purificationsKirakiraALaMode =
       ["CandyRod"]
       ["キャンディーロッド！", "キラキラキラル・フルチャージ！", "スイー・ツー・ワンダフル・アラモード！"]
   , mkPurification
-      ["CureWhip", "CureCustard", "CureGelato", "CureMacaron", "CureChocolat", "CureParfait"]
+      groupMembers_KirakiraALaMode
       crystalAnimals
       ( ["キラキラルクリーマー！", "キラッと輝け！クリスタルアニマル！"]
         ++ crystalAnimalCries
         ++ ["プリキュア・アニマルゴーランド！"]
       )
   , mkPurification
-      [ "CureWhip_ALaModeStyle"
-      , "CureCustard_ALaModeStyle"
-      , "CureGelato_ALaModeStyle"
-      , "CureMacaron_ALaModeStyle"
-      , "CureChocolat_ALaModeStyle"
-      , "CureParfait_ALaModeStyle"
-      ]
+      groupMembers_KirakiraALaMode_ALaModeStyle
       (mkIA "KirakiraruCreamer" ["SweetsCastle"] : crystalAnimals)
       ( ["キラッと輝け！", "クリスタルアニマル！"]
         ++ crystalAnimalCries
@@ -218,6 +208,20 @@ purificationsKirakiraALaMode =
       , "ぱたた！"
       ]
 
+
+groupMembers_KirakiraALaMode :: IsString s => [s]
+groupMembers_KirakiraALaMode =
+  ["CureWhip", "CureCustard", "CureGelato", "CureMacaron", "CureChocolat", "CureParfait"]
+
+groupMembers_KirakiraALaMode_ALaModeStyle :: IsString s => [s]
+groupMembers_KirakiraALaMode_ALaModeStyle =
+  [ "CureWhip_ALaModeStyle"
+  , "CureCustard_ALaModeStyle"
+  , "CureGelato_ALaModeStyle"
+  , "CureMacaron_ALaModeStyle"
+  , "CureChocolat_ALaModeStyle"
+  , "CureParfait_ALaModeStyle"
+  ]
 
 groupName_KirakiraALaMode = "キラキラ☆プリキュアアラモード"
 

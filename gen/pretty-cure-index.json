@@ -1839,6 +1839,13 @@
             "variationEn": "",
             "nameJa": "HUGっと！プリキュア",
             "variationJa": "",
+            "transformerIds": [
+                "CureYell",
+                "CureAnge",
+                "CureEtoile",
+                "CureMacherie",
+                "CureAmour"
+            ],
             "id": "HugttoPreCure"
         },
         {
@@ -1846,6 +1853,14 @@
             "variationEn": "",
             "nameJa": "キラキラ☆プリキュアアラモード",
             "variationJa": "",
+            "transformerIds": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat",
+                "CureParfait"
+            ],
             "id": "KirakiraPreCureALaMode"
         },
         {
@@ -1853,6 +1868,14 @@
             "variationEn": "A La Mode Style",
             "nameJa": "キラキラ☆プリキュアアラモード",
             "variationJa": "アラモードスタイル",
+            "transformerIds": [
+                "CureWhip_ALaModeStyle",
+                "CureCustard_ALaModeStyle",
+                "CureGelato_ALaModeStyle",
+                "CureMacaron_ALaModeStyle",
+                "CureChocolat_ALaModeStyle",
+                "CureParfait_ALaModeStyle"
+            ],
             "id": "KirakiraPreCureALaMode_ALaModeStyle"
         }
     ]
