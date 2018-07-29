@@ -29,6 +29,8 @@ data ProtectFlourez = ProtectFlourez deriving (Eq, Show)
 data TornadoFlourez = TornadoFlourez deriving (Eq, Show)
 data MilkyMirror    = MilkyMirror deriving (Eq, Show)
 
+transformedInstanceDefault [t| MilkyRose |] cureName_MilkyRose introducesHerselfAs_MilkyRose
+
 transformedGroupInstanceDefault
   [t| (CureDream, CureRouge, CureLemonade, CureMint, CureAqua, MilkyRose) |]
   groupName_Yes5GoGo

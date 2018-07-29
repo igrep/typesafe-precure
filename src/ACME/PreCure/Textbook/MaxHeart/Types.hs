@@ -31,6 +31,7 @@ data HeartielBaton = HeartielBaton deriving (Eq, Show)
 
 transformedInstance [t| CureBlack_Max |] cureName_Black introducesHerselfAs_Black variation_MaxHeart
 transformedInstance [t| CureWhite_Max |] cureName_White introducesHerselfAs_White variation_MaxHeart
+transformedInstanceDefault [t| ShinyLuminous |] cureName_Luminous introducesHerselfAs_Luminous
 
 transformedGroupInstanceDefault
   [t| (CureBlack_Max, CureWhite_Max) |]
