@@ -38,10 +38,10 @@ data PassionHarp = PassionHarp deriving (Eq, Show)
 
 data CloverBox = CloverBox deriving (Eq, Show)
 
-transformedInstanceDefault [t| CurePeach |] cureName_Peach $ intercalate "\n" introducesHerselfAs_Peach
-transformedInstanceDefault [t| CureBerry |] cureName_Berry $ intercalate "\n" introducesHerselfAs_Berry
-transformedInstanceDefault [t| CurePine |] cureName_Pine $ intercalate "\n" introducesHerselfAs_Pine
-transformedInstanceDefault [t| CurePassion |] cureName_Passion $ intercalate "\n" introducesHerselfAs_Passion
+transformedInstanceDefault [t| CurePeach |] cureName_Peach (intercalate "\n" introducesHerselfAs_Peach)
+transformedInstanceDefault [t| CureBerry |] cureName_Berry (intercalate "\n" introducesHerselfAs_Berry)
+transformedInstanceDefault [t| CurePine |] cureName_Pine (intercalate "\n" introducesHerselfAs_Pine)
+transformedInstanceDefault [t| CurePassion |] cureName_Passion (intercalate "\n" introducesHerselfAs_Passion)
 
 transformedGroupInstanceDefault
   [t| (CurePeach, CureBerry, CurePine, CurePassion) |]
