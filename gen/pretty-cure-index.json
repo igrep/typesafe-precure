@@ -1845,8 +1845,7 @@
                 "CureEtoile",
                 "CureMacherie",
                 "CureAmour"
-            ],
-            "id": "HugttoPreCure"
+            ]
         },
         {
             "nameEn": "Kirakira PreCure A La Mode",
@@ -1860,8 +1859,7 @@
                 "CureMacaron",
                 "CureChocolat",
                 "CureParfait"
-            ],
-            "id": "KirakiraPreCureALaMode"
+            ]
         },
         {
             "nameEn": "Kirakira PreCure A La Mode",
@@ -1875,8 +1873,7 @@
                 "CureMacaron_ALaModeStyle",
                 "CureChocolat_ALaModeStyle",
                 "CureParfait_ALaModeStyle"
-            ],
-            "id": "KirakiraPreCureALaMode_ALaModeStyle"
+            ]
         }
     ]
 }

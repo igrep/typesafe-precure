@@ -88,7 +88,7 @@ declareGirls = fmap concat . mapM d
 declareTransformedGroups :: [Index.TransformedGroup] -> DecsQ
 declareTransformedGroups = fmap concat . mapM d
   where
-    d (Index.TransformedGroup _n ts _e _ve j vj) =
+    d (Index.TransformedGroup ts _e _ve j vj) =
       transformedGroupInstance (tupleT ts) j vj
 
 

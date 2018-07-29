@@ -77,8 +77,7 @@ mkTransformee ne ve = Transformee (typeNamify ne ++ prefixify ve) ne ve
 
 data TransformedGroup =
   TransformedGroup
-    { transformedGroupId :: String
-    , transformedGroupTransformerIds :: [String]
+    { transformedGroupTransformerIds :: [String]
     , transformedGroupNameEn :: String
     , transformedGroupVariationEn :: String
     , transformedGroupNameJa :: String
@@ -88,7 +87,7 @@ data TransformedGroup =
 $(deriveToJsonWithoutTypeNamePrefix ''TransformedGroup)
 
 mkTransformedGroup :: [String] -> String -> String -> String -> String -> TransformedGroup
-mkTransformedGroup ts ne ve = TransformedGroup (typeNamify ne ++ prefixify ve) ts ne ve
+mkTransformedGroup = TransformedGroup
 
 
 data SpecialItem =
