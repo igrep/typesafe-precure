@@ -118,9 +118,9 @@ quote s = "\"" ++ s ++ "\""
 
 
 pAux :: A.Parser Aux
-pAux = {- pSingletonData
+pAux = pSingletonData
   <|>  pGirlInstance
-  <|>  -}pTransformedInstance
+  <|>  pTransformedInstance
 
 
 pSingletonData :: A.Parser Aux
