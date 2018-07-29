@@ -2,9 +2,12 @@
 {-# LANGUAGE QuasiQuotes       #-}
 {-# LANGUAGE RecordWildCards   #-}
 
-import           Control.Applicative ((<|>))
+import           Control.Applicative           (optional, (<|>))
 import           Control.Monad                 (mapM_, void)
 import qualified Data.Attoparsec.Text          as A
+import           Data.Char                     (isUpper)
+import           Data.List                     (break)
+import           Data.Maybe
 import qualified Data.String.Here.Interpolated as HI
 import qualified Data.Text                     as T
 import qualified Data.Text.IO                  as T
@@ -40,8 +43,8 @@ genProfilesHs = mapM_ $ \seriesRoot -> do
 parseAll :: T.Text -> [Aux]
 parseAll content =
   case A.feed (A.parse (PS.matchAll pAux) content) "" of
-      A.Done _ girls -> girls
-      other -> error $ "Not done: " ++ show other
+      A.Done _ auxs -> auxs
+      other         -> error $ "Not done: " ++ show other
 
 
 -- | Use to reject already migrated series
@@ -96,6 +99,7 @@ type Expression = String
 data Aux =
     AS SingletonData
   | AG Girl
+  | AT Transformee
   deriving (Eq, Show)
 
 data SingletonData = SingletonData
@@ -114,14 +118,16 @@ quote s = "\"" ++ s ++ "\""
 
 
 pAux :: A.Parser Aux
-pAux = pSingletonData <|> pGirlInstance
+pAux = {- pSingletonData
+  <|>  pGirlInstance
+  <|>  -}pTransformedInstance
 
 
 pSingletonData :: A.Parser Aux
 pSingletonData = do
   void $ A.string "data "
-  dataName <- pName
-  typeArgs <- A.many' (A.char ' ' >> pName)
+  dataName <- quote <$> pName
+  typeArgs <- A.many' (A.char ' ' >> quote <$> pName)
   pure $ AS SingletonData {..}
 
 
@@ -143,3 +149,46 @@ pGirlInstance = do
   traceM "DEBUG: girlNameJa"
 
   pure $ AG Girl {..}
+
+
+pTransformedInstance :: A.Parser Aux
+pTransformedInstance = do
+  void $ A.string "transformedInstance"
+  isDefault <- fmap isJust $ optional $ A.string "Default"
+  A.skipSpace
+  void $ A.string "[t|"
+  A.skipSpace
+
+  transformedIdNQ <- pName
+  let transformedId = quote transformedIdNQ
+      (transformedIdNQNV, transformedVariationEnUS) = break (== '_') transformedIdNQ
+      transformedVariationEn = quote $
+        case transformedVariationEnUS of
+            ('_' : left) -> splitBeforeUpper left
+            ""           -> ""
+            other        -> other
+      transformedNameEn = quote $ splitBeforeUpper transformedIdNQNV
+
+  A.skipSpace
+  void $ A.string "|]"
+
+  A.skipSpace
+  transformedNameJa <- pName
+
+  A.skipSpace
+  (transformedIntroducesHerselfAs, transformedVariationJa) <-
+    if isDefault
+      then (,) <$> A.manyTill (A.notChar '\n') (A.char '\n') <*> pure (quote "")
+      else (,) <$> (quote <$> pName) <*> (A.skipSpace *> pName)
+
+  pure $ AT Transformee {..}
+
+
+splitBeforeUpper :: Expression -> Expression
+splitBeforeUpper "" = error "Assertion failure: non empty expression"
+splitBeforeUpper (first : left) = first : foldr f "" left
+ where
+  f c accum =
+    if isUpper c
+      then ' ' : c : accum
+      else c : accum
