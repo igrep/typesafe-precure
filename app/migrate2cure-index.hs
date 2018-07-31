@@ -7,7 +7,8 @@ import           Control.Monad                 (mapM_, void)
 import qualified Data.Attoparsec.Text          as A
 import           Data.Char                     (isUpper)
 import           Data.List                     (break)
-import           Data.Maybe
+import           Data.Maybe                    (isJust)
+import           Data.Monoid                   ((<>))
 import qualified Data.String.Here.Interpolated as HI
 import qualified Data.Text                     as T
 import qualified Data.Text.IO                  as T
@@ -100,6 +101,7 @@ data Aux =
     AS SingletonData
   | AG Girl
   | AT Transformee
+  | ATG TransformedGroup
   deriving (Eq, Show)
 
 data SingletonData = SingletonData
@@ -110,7 +112,7 @@ data SingletonData = SingletonData
 
 pName :: A.Parser Expression
 pName =
-  A.many1' $ A.satisfy (\c -> c == '_' || ('A' <= c && c <= 'Z') || ('a' <= c && c <= 'z'))
+  A.many1' $ A.satisfy (\c -> c == '_' || ('A' <= c && c <= 'Z') || ('a' <= c && c <= 'z') || ('0' <= c && c <= '9'))
 
 
 quote :: String -> Expression
@@ -121,6 +123,7 @@ pAux :: A.Parser Aux
 pAux = pSingletonData
   <|>  pGirlInstance
   <|>  pTransformedInstance
+  <|>  pTransformedGroupInstance
 
 
 pSingletonData :: A.Parser Aux
@@ -156,8 +159,7 @@ pTransformedInstance = do
   void $ A.string "transformedInstance"
   isDefault <- fmap isJust $ optional $ A.string "Default"
   A.skipSpace
-  void $ A.string "[t|"
-  A.skipSpace
+  beginQQ "t"
 
   transformedIdNQ <- pName
   let transformedId = quote transformedIdNQ
@@ -168,8 +170,7 @@ pTransformedInstance = do
             other        -> other
       transformedNameEn = quote $ splitBeforeUpper transformedIdNQNV
 
-  A.skipSpace
-  void $ A.string "|]"
+  endQQ
 
   A.skipSpace
   transformedNameJa <- pName
@@ -183,6 +184,39 @@ pTransformedInstance = do
   pure $ AT Transformee {..}
 
 
+pTransformedGroupInstance :: A.Parser Aux
+pTransformedGroupInstance = do
+  void $ A.string "transformedGroupInstance"
+  isDefault <- fmap isJust $ optional $ A.string "Default"
+  A.skipSpace
+
+  beginQQ "t"
+  transformedGroupTransformerIds <- pNameTuple
+  endQQ
+
+  A.skipSpace
+  transformedGroupNameJa <- pName
+  let transformedGroupNameEn = quote $ splitBeforeUpper $ dropPrefix transformedGroupNameJa
+
+  (transformedGroupVariationJa, transformedGroupVariationEn) <-
+    if isDefault
+      then pure (quote "", quote "")
+      else do
+        A.skipSpace
+        vari <- pName
+        pure (vari, quote $ splitBeforeUpper $ dropPrefix vari)
+
+  pure $ ATG TransformedGroup {..}
+
+
+dropPrefix :: Expression -> Expression
+dropPrefix = tail . dropWhile (/= '_')
+
+
+pNameTuple :: A.Parser [String]
+pNameTuple = A.char '(' *> (pName `A.sepBy` (A.char ',' *> A.skipSpace)) <* A.char ')'
+
+
 splitBeforeUpper :: Expression -> Expression
 splitBeforeUpper "" = error "Assertion failure: non empty expression"
 splitBeforeUpper (first : left) = first : foldr f "" left
@@ -191,3 +225,15 @@ splitBeforeUpper (first : left) = first : foldr f "" left
     if isUpper c
       then ' ' : c : accum
       else c : accum
+
+
+beginQQ :: T.Text -> A.Parser ()
+beginQQ name = do
+  void $ A.string $ "[" <> name <> "|"
+  A.skipSpace
+
+
+endQQ :: A.Parser ()
+endQQ = do
+  A.skipSpace
+  void $ A.string "|]"
