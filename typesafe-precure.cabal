@@ -117,13 +117,14 @@ executable migrate2cure-index
   default-language:    Haskell2010
   build-depends:       base
                      , typesafe-precure
+                     , NoTrace
                      , attoparsec
                      , directory
                      , filepath
                      , here
+                     , pretty-simple
                      , substring-parser
                      , text
-                     , NoTrace
 
 test-suite typesafe-precure-test
   type:                exitcode-stdio-1.0

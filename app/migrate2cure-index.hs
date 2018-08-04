@@ -15,6 +15,7 @@ import qualified Data.Text.IO                  as T
 import qualified System.Directory              as D
 import qualified System.FilePath               as F
 import qualified Text.Parser.Substring         as PS
+import           Text.Pretty.Simple            (pPrint)
 
 import           ACME.PreCure.Index.Types
 
@@ -38,7 +39,7 @@ genTypesHs = mapM_ (T.putStr . typeHsFromSeriesName)
 genProfilesHs :: [FilePath] -> IO ()
 genProfilesHs = mapM_ $ \seriesRoot -> do
   putStrLn $ "\n-- " ++ seriesRoot ++ " --"
-  mapM_ print . parseAll =<< T.readFile (seriesRoot ++ "/Types.hs")
+  mapM_ pPrint . parseAll =<< T.readFile (seriesRoot ++ "/Types.hs")
 
 
 parseAll :: T.Text -> [Aux]
@@ -102,6 +103,7 @@ data Aux =
   | AG Girl
   | AT Transformee
   | ATG TransformedGroup
+  | ATN Transformation
   deriving (Eq, Show)
 
 data SingletonData = SingletonData
@@ -124,6 +126,7 @@ pAux = pSingletonData
   <|>  pGirlInstance
   <|>  pTransformedInstance
   <|>  pTransformedGroupInstance
+  <|>  pTransformation
 
 
 pSingletonData :: A.Parser Aux
@@ -138,18 +141,15 @@ pGirlInstance :: A.Parser Aux
 pGirlInstance = do
   void $ A.string "girlInstance [t|"
   A.skipSpace
-  traceM "DEBUG: girlInstance"
 
   girlId <- quote <$> pName
   let girlNameEn = girlId ++ " ++ error \"Need family name!\""
-  traceM "DEBUG: girlId"
 
   A.skipSpace
   void $ A.string "|]"
   A.skipSpace
 
   girlNameJa <- pName
-  traceM "DEBUG: girlNameJa"
 
   pure $ AG Girl {..}
 
@@ -209,12 +209,66 @@ pTransformedGroupInstance = do
   pure $ ATG TransformedGroup {..}
 
 
+pTransformation :: A.Parser Aux
+pTransformation = do
+  void $ A.string "transformationInstance"
+  A.skipSpace
+
+  beginQQ "t"
+  transformationTransformers <- pIdAttachmentss
+  endQQ
+  A.skipSpace
+
+  beginQQ "t"
+  transformationSpecialItems <- pIdAttachmentss
+  endQQ
+  A.skipSpace
+
+  beginQQ "t"
+  transformationTransformees <- map quote <$> pNames
+  traceM $ "DEBUG: transformationTransformees <- pNames: " ++ show transformationTransformees
+  endQQ
+  A.skipSpace
+
+  beginQQ ""
+  _ <- pNames
+  endQQ
+  A.skipSpace
+
+  transformationSpeech <- (: []) <$> pName
+  traceM "DEBUG: transformationSpeech"
+
+  pure $ ATN Transformation {..}
+
 dropPrefix :: Expression -> Expression
 dropPrefix = tail . dropWhile (/= '_')
 
 
 pNameTuple :: A.Parser [String]
-pNameTuple = A.char '(' *> (pName `A.sepBy` (A.char ',' *> A.skipSpace)) <* A.char ')'
+pNameTuple = pTupleOf pName
+
+
+pNames :: A.Parser [String]
+pNames = pNameTuple <|> ((: []) <$> pName)
+
+
+pIdAttachmentss :: A.Parser [IdAttachments]
+pIdAttachmentss = pTupleOf pIdAttachments <|> ((: []) <$> pIdAttachments)
+
+
+pIdAttachments :: A.Parser IdAttachments
+pIdAttachments = do
+  idAttachementsI <- pName
+  idAttachementsA <- A.many' (A.skipSpace *> (inParen pIdAttachments <|> pIdAttachments))
+  pure IdAttachments {..}
+
+
+pTupleOf :: A.Parser a -> A.Parser [a]
+pTupleOf p = inParen (p `A.sepBy` (optional A.skipSpace *> A.char ',' *> A.skipSpace))
+
+
+inParen :: A.Parser a -> A.Parser a
+inParen p = A.char '(' *> optional A.skipSpace *> p <* optional A.skipSpace <* A.char ')'
 
 
 splitBeforeUpper :: Expression -> Expression
