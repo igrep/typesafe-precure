@@ -139,7 +139,7 @@ mkTransformation = Transformation
 
 data Purification =
   Purification
-    { purificationPurifier :: [IdAttachments]
+    { purificationPurifiers :: [IdAttachments]
     , purificationSpecialItems :: [IdAttachments]
     , purificationSpeech :: [String]
     } deriving (Eq, Show, Data)

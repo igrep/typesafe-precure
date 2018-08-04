@@ -421,12 +421,12 @@
                     "i": "PreHeart"
                 }
             ],
+            "purifiers": [
+                "CureYell"
+            ],
             "speech": [
                 "フレフレ！",
                 "ハート・フォー・ユー！"
-            ],
-            "purifier": [
-                "CureYell"
             ]
         },
         {
@@ -438,12 +438,12 @@
                     "i": "PreHeart"
                 }
             ],
+            "purifiers": [
+                "CureAnge"
+            ],
             "speech": [
                 "フレフレ！",
                 "ハート・フェザー！"
-            ],
-            "purifier": [
-                "CureAnge"
             ]
         },
         {
@@ -455,12 +455,12 @@
                     "i": "PreHeart"
                 }
             ],
+            "purifiers": [
+                "CureEtoile"
+            ],
             "speech": [
                 "フレフレ！",
                 "ハート・スター！"
-            ],
-            "purifier": [
-                "CureEtoile"
             ]
         },
         {
@@ -472,11 +472,11 @@
                     "i": "MelodySword"
                 }
             ],
+            "purifiers": [
+                "CureEtoile"
+            ],
             "speech": [
                 "スタースラッシュ！"
-            ],
-            "purifier": [
-                "CureEtoile"
             ]
         },
         {
@@ -488,12 +488,12 @@
                     "i": "PreHeart"
                 }
             ],
+            "purifiers": [
+                "CureMacherie"
+            ],
             "speech": [
                 "Are you ready?",
                 "フレフレ！ハート・ソング！"
-            ],
-            "purifier": [
-                "CureMacherie"
             ]
         },
         {
@@ -505,12 +505,12 @@
                     "i": "PreHeart"
                 }
             ],
+            "purifiers": [
+                "CureAmour"
+            ],
             "speech": [
                 "行きます！",
                 "フレフレ！ハート・ダンス！"
-            ],
-            "purifier": [
-                "CureAmour"
             ]
         },
         {
@@ -522,11 +522,11 @@
                     "i": "MelodySword"
                 }
             ],
+            "purifiers": [
+                "CureYell"
+            ],
             "speech": [
                 "フラワーシュート!"
-            ],
-            "purifier": [
-                "CureYell"
             ]
         },
         {
@@ -538,11 +538,11 @@
                     "i": "MelodySword"
                 }
             ],
+            "purifiers": [
+                "CureAnge"
+            ],
             "speech": [
                 "フェザーブラスト!"
-            ],
-            "purifier": [
-                "CureAnge"
             ]
         },
         {
@@ -554,11 +554,11 @@
                     "i": "TwinLoveGuitar"
                 }
             ],
+            "purifiers": [
+                "CureMacherie"
+            ],
             "speech": [
                 "マシェリポップン!"
-            ],
-            "purifier": [
-                "CureMacherie"
             ]
         },
         {
@@ -570,11 +570,11 @@
                     "i": "TwinLoveGuitar"
                 }
             ],
+            "purifiers": [
+                "CureAmour"
+            ],
             "speech": [
                 "アムールロックンロール!"
-            ],
-            "purifier": [
-                "CureAmour"
             ]
         },
         {
@@ -598,6 +598,11 @@
                     "i": "MelodySword"
                 }
             ],
+            "purifiers": [
+                "CureYell",
+                "CureAnge",
+                "CureEtoile"
+            ],
             "speech": [
                 "ミライクリスタル！",
                 "エールタクト！",
@@ -606,11 +611,6 @@
                 "心のトゲトゲ、飛んでいけ〜！",
                 "プリキュア・トリニティコンサート！",
                 "HUGっとプリキュア！エール・フォー・ユー！"
-            ],
-            "purifier": [
-                "CureYell",
-                "CureAnge",
-                "CureEtoile"
             ]
         },
         {
@@ -628,6 +628,10 @@
                     "i": "TwinLoveGuitar"
                 }
             ],
+            "purifiers": [
+                "CureMacherie",
+                "CureAmour"
+            ],
             "speech": [
                 "ツインラブギター！ミライクリスタル！",
                 "Are you ready?",
@@ -638,102 +642,98 @@
                 "ツインラブ・ロックビート！",
                 "愛してる！",
                 "Thank you!"
-            ],
-            "purifier": [
-                "CureMacherie",
-                "CureAmour"
             ]
         },
         {
             "specialItems": [
                 "CandyRod"
+            ],
+            "purifiers": [
+                "CureWhip"
             ],
             "speech": [
                 "キラキラキラルン！",
                 "ホイップ・デコレーション！"
-            ],
-            "purifier": [
-                "CureWhip"
             ]
         },
         {
             "specialItems": [
                 "CandyRod"
+            ],
+            "purifiers": [
+                "CureCustard"
             ],
             "speech": [
                 "キラキラキラルン！",
                 "カスタード・イリュージョン！"
-            ],
-            "purifier": [
-                "CureCustard"
             ]
         },
         {
             "specialItems": [
                 "CandyRod"
+            ],
+            "purifiers": [
+                "CureGelato"
             ],
             "speech": [
                 "キラキラキラルン！",
                 "ジェラート・シェイク！"
-            ],
-            "purifier": [
-                "CureGelato"
             ]
         },
         {
             "specialItems": [
                 "CandyRod"
+            ],
+            "purifiers": [
+                "CureMacaron"
             ],
             "speech": [
                 "キラキラキラルン！",
                 "マカロン・ジュリエンヌ！",
                 "にゃーお♥"
-            ],
-            "purifier": [
-                "CureMacaron"
             ]
         },
         {
             "specialItems": [
                 "CandyRod"
             ],
+            "purifiers": [
+                "CureChocolat"
+            ],
             "speech": [
                 "キラキラキラルン！",
                 "ショコラ・アロマーゼ！"
-            ],
-            "purifier": [
-                "CureChocolat"
             ]
         },
         {
             "specialItems": [
                 "RainbowRibbon"
             ],
+            "purifiers": [
+                "CureParfait"
+            ],
             "speech": [
                 "レインボーリボン！",
                 "行くよ！アン・ドゥ・トレビアン！",
                 "キラクル・レインボー！",
                 "ボナペティ！"
-            ],
-            "purifier": [
-                "CureParfait"
             ]
         },
         {
             "specialItems": [
                 "CandyRod"
             ],
-            "speech": [
-                "キャンディーロッド！",
-                "キラキラキラル・フルチャージ！",
-                "スイー・ツー・ワンダフル・アラモード！"
-            ],
-            "purifier": [
+            "purifiers": [
                 "CureWhip",
                 "CureCustard",
                 "CureGelato",
                 "CureMacaron",
                 "CureChocolat"
+            ],
+            "speech": [
+                "キャンディーロッド！",
+                "キラキラキラル・フルチャージ！",
+                "スイー・ツー・ワンダフル・アラモード！"
             ]
         },
         {
@@ -775,6 +775,14 @@
                     "i": "KirakiraruCreamer"
                 }
             ],
+            "purifiers": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat",
+                "CureParfait"
+            ],
             "speech": [
                 "キラキラルクリーマー！",
                 "キラッと輝け！クリスタルアニマル！",
@@ -785,14 +793,6 @@
                 "わん！",
                 "ぱたた！",
                 "プリキュア・アニマルゴーランド！"
-            ],
-            "purifier": [
-                "CureWhip",
-                "CureCustard",
-                "CureGelato",
-                "CureMacaron",
-                "CureChocolat",
-                "CureParfait"
             ]
         },
         {
@@ -840,6 +840,14 @@
                     "i": "KirakiraruCreamer"
                 }
             ],
+            "purifiers": [
+                "CureWhip_ALaModeStyle",
+                "CureCustard_ALaModeStyle",
+                "CureGelato_ALaModeStyle",
+                "CureMacaron_ALaModeStyle",
+                "CureChocolat_ALaModeStyle",
+                "CureParfait_ALaModeStyle"
+            ],
             "speech": [
                 "キラッと輝け！",
                 "クリスタルアニマル！",
@@ -850,14 +858,6 @@
                 "わん！",
                 "ぱたた！",
                 "プリキュア・ファンタスティックアニマーレ！"
-            ],
-            "purifier": [
-                "CureWhip_ALaModeStyle",
-                "CureCustard_ALaModeStyle",
-                "CureGelato_ALaModeStyle",
-                "CureMacaron_ALaModeStyle",
-                "CureChocolat_ALaModeStyle",
-                "CureParfait_ALaModeStyle"
             ]
         }
     ],
