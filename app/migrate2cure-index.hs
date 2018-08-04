@@ -104,6 +104,7 @@ data Aux =
   | AT Transformee
   | ATG TransformedGroup
   | ATN Transformation
+  | AP Purification
   deriving (Eq, Show)
 
 data SingletonData = SingletonData
@@ -127,6 +128,7 @@ pAux = pSingletonData
   <|>  pTransformedInstance
   <|>  pTransformedGroupInstance
   <|>  pTransformation
+  <|>  pPurification
 
 
 pSingletonData :: A.Parser Aux
@@ -240,6 +242,26 @@ pTransformation = do
 
   pure $ ATN Transformation {..}
 
+
+pPurification :: A.Parser Aux
+pPurification = do
+  void $ A.string "purificationInstance"
+  A.skipSpace
+
+  beginQQ "t"
+  purificationPurifiers <- pIdAttachmentss
+  endQQ
+  A.skipSpace
+
+  beginQQ "t"
+  purificationSpecialItems <- pIdAttachmentss
+  endQQ
+  A.skipSpace
+
+  purificationSpeech <- (: []) <$> pName
+
+  pure $ AP Purification {..}
+
 dropPrefix :: Expression -> Expression
 dropPrefix = tail . dropWhile (/= '_')
 
@@ -256,6 +278,9 @@ pIdAttachmentss :: A.Parser [IdAttachments]
 pIdAttachmentss = pTupleOf pIdAttachments <|> ((: []) <$> pIdAttachments)
 
 
+-- NOTE: Incorrect precedence of IdAttachments:
+--       Can't properly parse "RainbowCarriage LinkleStoneAlexandrite (Mofurun LinkleStoneAlexandrite)".
+--       So fix the place after generating.
 pIdAttachments :: A.Parser IdAttachments
 pIdAttachments = do
   idAttachementsI <- pName
