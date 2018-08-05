@@ -12,8 +12,8 @@ module ACME.PreCure.Index.Types
   , Transformation(..)
   , Purification(..)
   , NonItemPurification(..)
+  , Index(..)
   -- ^ TODO: Hide the record labels back.
-  , Index
   , mkGirl
   , mkTransformee
   , mkTransformedGroup

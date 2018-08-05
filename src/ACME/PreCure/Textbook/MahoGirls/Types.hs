@@ -94,6 +94,8 @@ transformedInstance [t| CureMofurun_Sapphire |] cureName_Mofurun introducesHerse
 
 transformedInstance [t| CureMofurun_Topaz |] cureName_Mofurun introducesHerselfAs_Mofurun variation_Topaz
 
+transformedInstance [t| CureMofurun_Heartful |] cureName_Mofurun introducesHerselfAs_Mofurun variation_Heartful
+
 transformedGroupInstance
   [t| (CureMiracle, CureMagical) |]
   groupName_MahoGirls
