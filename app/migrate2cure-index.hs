@@ -91,6 +91,9 @@ typeHsFromSeriesName seriesName = T.unlines $ map (T.strip . T.pack) $ lines src
 
     {-# ANN module purifications${seriesName} #-}
     $(declarePurifications purifications${seriesName})
+
+    {-# ANN module nonItemPurifications${seriesName} #-}
+    $(declarePurifications nonItemPurifications${seriesName})
   |]
 
 

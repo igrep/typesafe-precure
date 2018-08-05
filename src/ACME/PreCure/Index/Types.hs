@@ -11,6 +11,7 @@ module ACME.PreCure.Index.Types
   , IdAttachments(..)
   , Transformation(..)
   , Purification(..)
+  , NonItemPurification(..)
   -- ^ TODO: Hide the record labels back.
   , Index
   , mkGirl
@@ -20,6 +21,7 @@ module ACME.PreCure.Index.Types
   , mkIA
   , mkTransformation
   , mkPurification
+  , mkNonItemPurification
   , mkIndex
   ) where
 
@@ -137,6 +139,18 @@ mkTransformation :: [IdAttachments] -> [IdAttachments] -> [String] -> [String] -
 mkTransformation = Transformation
 
 
+data NonItemPurification =
+  NonItemPurification
+    { nonItemPurificationPurifiers :: [IdAttachments]
+    , nonItemPurificationSpeech :: [String]
+    } deriving (Eq, Show, Data)
+
+$(deriveToJsonWithoutTypeNamePrefix ''NonItemPurification)
+
+mkNonItemPurification :: [IdAttachments] -> [String] -> NonItemPurification
+mkNonItemPurification = NonItemPurification
+
+
 data Purification =
   Purification
     { purificationPurifiers :: [IdAttachments]
@@ -158,6 +172,7 @@ data Index =
     , indexSpecialItems :: [SpecialItem]
     , indexTransformations :: [Transformation]
     , indexPurifications :: [Purification]
+    , indexNonItemPurifications :: [NonItemPurification]
     } deriving (Eq, Show)
 
 $(deriveToJsonWithoutTypeNamePrefix ''Index)
@@ -169,5 +184,6 @@ mkIndex
   -> [SpecialItem]
   -> [Transformation]
   -> [Purification]
+  -> [NonItemPurification]
   -> Index
 mkIndex = Index
