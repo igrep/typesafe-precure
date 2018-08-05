@@ -3,11 +3,11 @@
 {-# LANGUAGE RecordWildCards   #-}
 
 import           Control.Applicative           (optional, (<|>))
-import           Control.Monad                 (mapM_, void)
+import           Control.Monad                 (mapM_, void, guard)
 import qualified Data.Attoparsec.Text          as A
 import           Data.Char                     (isUpper)
 import           Data.List                     (break)
-import           Data.Maybe                    (isJust)
+import           Data.Maybe                    (isJust, mapMaybe)
 import           Data.Monoid                   ((<>))
 import qualified Data.String.Here.Interpolated as HI
 import qualified Data.Text                     as T
@@ -39,7 +39,7 @@ genTypesHs = mapM_ (T.putStr . typeHsFromSeriesName)
 genProfilesHs :: [FilePath] -> IO ()
 genProfilesHs = mapM_ $ \seriesRoot -> do
   putStrLn $ "\n-- " ++ seriesRoot ++ " --"
-  mapM_ pPrint . parseAll =<< T.readFile (seriesRoot ++ "/Types.hs")
+  pPrint . classify . parseAll =<< T.readFile (seriesRoot ++ "/Types.hs")
 
 
 parseAll :: T.Text -> [Aux]
@@ -96,6 +96,31 @@ typeHsFromSeriesName seriesName = T.unlines $ map (T.strip . T.pack) $ lines src
     $(declarePurifications nonItemPurifications${seriesName})
   |]
 
+
+--------------------------------------------------- classifier
+
+classify :: [Aux] -> Index
+classify auxs = index { indexSpecialItems = selectSpecialItems index specialItems }
+ where
+  (index, specialItems) = foldr f (mkIndex [] [] [] [] [] [] [], []) auxs
+  f (AS sd) (idx, sds)  = (idx, sd : sds)
+  f (AG g) (idx, sds)   = (idx { indexGirls = g : indexGirls idx }, sds)
+  f (AT t) (idx, sds)   = (idx { indexTransformees = t : indexTransformees idx }, sds)
+  f (ATG tg) (idx, sds) = (idx { indexTransformedGroups = tg : indexTransformedGroups idx }, sds)
+  f (ATN t) (idx, sds)  = (idx { indexTransformations = t : indexTransformations idx }, sds)
+  f (AP p) (idx, sds)   = (idx { indexPurifications = p : indexPurifications idx }, sds)
+  f (ANP np) (idx, sds) = (idx { indexNonItemPurifications = np : indexNonItemPurifications idx }, sds)
+
+  selectSpecialItems :: Index -> [SingletonData] -> [SpecialItem]
+  selectSpecialItems Index {..} = mapMaybe $ \SingletonData {..} -> do
+    guard $ all (\Girl {..} -> dataName /= girlId) indexGirls
+    guard $ all (\Transformee {..} -> dataName /= transformedId) indexTransformees
+
+    return $ SpecialItem
+      dataName
+      (filter (/= ' ') $ splitBeforeUpper dataName)
+      "(error \"Specify specialItemNameJa\")"
+      typeArgs
 
 --------------------------------------------------- parsers
 
