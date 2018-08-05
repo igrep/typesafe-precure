@@ -257,7 +257,7 @@ pTransformation = do
   A.skipSpace
 
   beginQQ "t"
-  transformationTransformees <- map quote <$> pNames
+  transformationTransformees <- pNames
   traceM $ "DEBUG: transformationTransformees <- pNames: " ++ show transformationTransformees
   endQQ
   A.skipSpace
