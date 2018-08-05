@@ -108,6 +108,7 @@ data Aux =
   | ATG TransformedGroup
   | ATN Transformation
   | AP Purification
+  | ANP NonItemPurification
   deriving (Eq, Show)
 
 data SingletonData = SingletonData
@@ -132,6 +133,7 @@ pAux = pSingletonData
   <|>  pTransformedGroupInstance
   <|>  pTransformation
   <|>  pPurification
+  <|>  pNonItemPurification
 
 
 pSingletonData :: A.Parser Aux
@@ -264,6 +266,22 @@ pPurification = do
   purificationSpeech <- (: []) <$> pName
 
   pure $ AP Purification {..}
+
+
+pNonItemPurification :: A.Parser Aux
+pNonItemPurification = do
+  void $ A.string "nonItemPurificationInstance"
+  A.skipSpace
+
+  beginQQ "t"
+  nonItemPurificationPurifiers <- pIdAttachmentss
+  endQQ
+  A.skipSpace
+
+  nonItemPurificationSpeech <- (: []) <$> pName
+
+  pure $ ANP NonItemPurification {..}
+
 
 dropPrefix :: Expression -> Expression
 dropPrefix = tail . dropWhile (/= '_')
