@@ -7,6 +7,7 @@ module ACME.PreCure.Types.TH
         , declareSpecialItems
         , declareTransformations
         , declarePurifications
+        , declareNonItemPurifications
 
         , girlInstance
         , transformedInstance
@@ -111,7 +112,7 @@ declareSpecialItems = fmap concat . mapM d
 declareTransformations :: [Index.Transformation] -> DecsQ
 declareTransformations = fmap concat . mapM d
   where
-    d (Index.Transformation tas ias ds s) = do
+    d (Index.Transformation tas ias ds s) =
       transformationInstance
         (tupleTFromIdAttachments tas)
         (tupleTFromIdAttachments ias)
@@ -123,10 +124,19 @@ declareTransformations = fmap concat . mapM d
 declarePurifications :: [Index.Purification] -> DecsQ
 declarePurifications = fmap concat . mapM d
   where
-    d (Index.Purification pas ias s) = do
+    d (Index.Purification pas ias s) =
       purificationInstance
         (tupleTFromIdAttachments pas)
         (tupleTFromIdAttachments ias)
+        s
+
+
+declareNonItemPurifications :: [Index.NonItemPurification] -> DecsQ
+declareNonItemPurifications = fmap concat . mapM d
+  where
+    d (Index.NonItemPurification pas s) =
+      nonItemPurificationInstance
+        (tupleTFromIdAttachments pas)
         s
 
 
