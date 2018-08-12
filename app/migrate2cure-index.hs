@@ -135,7 +135,7 @@ buildProfileHs seriesName Index {..} = TL.toLazyText $ mconcat
   sourceOfGirls girls = mconcat
     ["girls :: [Girl]\n", "girls =\n", toMultiLineText (map toMkGirl girls), "\n", "\n"]
 
-  toMkGirl Girl {..} = "mkGirl " <> TL.pack girlNameEn <> " " <> TL.pack girlNameJa
+  toMkGirl Girl {..} = "mkGirl (" <> TL.pack girlNameEn <> ") " <> TL.pack girlNameJa
 
   sourceOfTransformees transformees = mconcat
     ["transformees :: [Transformee]\n", "transformees =\n", toMultiLineText (map toMkTransformee transformees), "\n", "\n"]
