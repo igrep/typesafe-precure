@@ -9,9 +9,9 @@ import           ACME.PreCure.Textbook.MahoGirls.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Mirai" ++ error "Need family name!") girlName_Mirai
-  , mkGirl ("Liko" ++ error "Need family name!") girlName_Liko
-  , mkGirl ("Kotoha" ++ error "Need family name!") girlName_Kotoha
+  [ mkGirl "Mirai Asahina" girlName_Mirai
+  , mkGirl "Liko Izayoi" girlName_Liko
+  , mkGirl "Kotoha Hanami" girlName_Kotoha
   ]
 
 
@@ -156,7 +156,6 @@ transformees =
       cureName_Mofurun
       variation_Heartful
       "introducesHerselfAs_Mofurun"
-
   ]
 
 
@@ -181,21 +180,21 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Mofurun" (error "Specify specialItemNameJa") ["ls"]
-  , mkSpecialItem "LinkleSmarthon" (error "Specify specialItemNameJa") ["ls"]
-  , mkSpecialItem "RainbowCarriage" (error "Specify specialItemNameJa") ["ls", "mof"]
-  , mkSpecialItem "PreciousBrace" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "MiracleMofurunLight" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "LinkleStoneDia" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "LinkleStoneRuby" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "LinkleStoneSapphire" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "LinkleStoneTopaz" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "LinkleStoneEmerald" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "LinkleStoneAlexandrite" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "LinkleStoneOfHope" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "HeartfulLinkleStone" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "LinkleStick" (error "Specify specialItemNameJa") ["ls"]
-  , mkSpecialItem "FlowerEchoWand" (error "Specify specialItemNameJa") ["ls"]
+  [ mkSpecialItem "Mofurun" "モフルン" ["Linkle Stone"]
+  , mkSpecialItem "Linkle Smarthon" "リンクルスマホン" ["Linkle Stone"]
+  , mkSpecialItem "Rainbow Carriage" "レインボーキャリッジ" ["Linkle Stone", "Mofurun"]
+  , mkSpecialItem "Precious Brace" "プレシャスブレス" []
+  , mkSpecialItem "Miracle Mofurun Light" "ミラクルモフルンライト" []
+  , mkSpecialItem "Linkle Stone Dia" "リンクルストーン・ダイヤ" []
+  , mkSpecialItem "Linkle Stone Ruby" "リンクルストーン・ルビー"  []
+  , mkSpecialItem "Linkle Stone Sapphire" "リンクルストーン・サファイア"  []
+  , mkSpecialItem "Linkle Stone Topaz" "リンクルストーン・トパーズ"  []
+  , mkSpecialItem "Linkle Stone Emerald" "リンクルストーン・エメラルド"  []
+  , mkSpecialItem "Linkle Stone Alexandrite" "リンクルストーン・アレキサンドライト"  []
+  , mkSpecialItem "Mofurun Linkle Stone" "モフルンリンクルストーン"  []
+  , mkSpecialItem "Heartful Linkle Stone" "ハートフルリンクルストーン" []
+  , mkSpecialItem "Linkle Stick" "リンクルステッキ" ["Linkle Stone"]
+  , mkSpecialItem "Flower Echo Wand" "フラワーエコーワンド" ["Linkle Stone"]
   ]
 
 
@@ -280,11 +279,10 @@ transformations =
       transformationSpeech_MahoGirls_OverTheRainbow
 
   , mkTransformation
-      [mkIA "Mofurun" ["LinkleStoneOfHope"]]
+      [mkIA "Mofurun" ["MofurunLinkleStone"]]
       ["MiracleMofurunLight"]
       ["CureMofurun"]
       transformationSpeech_Mofurun
-
   ]
 
 
@@ -317,15 +315,6 @@ purifications =
 
   , mkPurification
       ["CureMiracle_OverTheRainbow", "CureMagical_OverTheRainbow", "CureFelice_OverTheRainbow"]
-      [mkIA "RainbowCarriage" [mkIA "LinkleStoneAlexandrite" [mkIA "Mofurun" ["LinkleStoneAlexandrite"]]], "PreciousBrace"]
+      [mkIA "RainbowCarriage" ["LinkleStoneAlexandrite", mkIA "Mofurun" ["LinkleStoneAlexandrite"]], "PreciousBrace"]
       purificationSpeech_MahoGirls_extreme_rainbow
-
   ]
-
-
-nonItemPurifications :: [NonItemPurification]
-nonItemPurifications =
-  [ 
-  ]
-
-
