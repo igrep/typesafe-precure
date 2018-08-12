@@ -4,6 +4,7 @@
 module ACME.PreCure.Textbook.Yes5GoGo.Profiles where
 
 import           ACME.PreCure.Index.Types
+import           ACME.PreCure.Textbook.Yes5.Words
 import           ACME.PreCure.Textbook.Yes5GoGo.Words
 
 

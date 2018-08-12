@@ -3,6 +3,8 @@
 
 module ACME.PreCure.Textbook.Fresh.Profiles where
 
+import           Data.List (intercalate)
+
 import           ACME.PreCure.Index.Types
 import           ACME.PreCure.Textbook.Fresh.Words
 

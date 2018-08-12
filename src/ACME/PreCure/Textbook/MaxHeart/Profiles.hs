@@ -4,6 +4,7 @@
 module ACME.PreCure.Textbook.MaxHeart.Profiles where
 
 import           ACME.PreCure.Index.Types
+import           ACME.PreCure.Textbook.First.Words
 import           ACME.PreCure.Textbook.MaxHeart.Words
 
 
