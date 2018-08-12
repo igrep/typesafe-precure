@@ -9,8 +9,8 @@ import           ACME.PreCure.Textbook.First.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Nagisa" ++ error "Need family name!") girlName_Nagisa
-  , mkGirl ("Honoka" ++ error "Need family name!") girlName_Honoka
+  [ mkGirl "Nagisa Misumi" girlName_Nagisa
+  , mkGirl "Honoka Yukishiro" girlName_Honoka
   ]
 
 
@@ -29,7 +29,6 @@ transformees =
       cureName_White
       ""
       introducesHerselfAs_White
-
   ]
 
 
@@ -41,9 +40,9 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "CardCommune_Mepple" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "CardCommune_Mipple" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "RainbowBrace" (error "Specify specialItemNameJa") []
+  [ mkSpecialItem "Card Commune Mepple" "カードコミューン（メップル）" []
+  , mkSpecialItem "Card Commune Mipple" "カードコミューン（ミップル）" []
+  , mkSpecialItem "RainbowBrace" "レインボーブレス" []
   ]
 
 
@@ -51,10 +50,9 @@ transformations :: [Transformation]
 transformations =
   [ mkTransformation
       ["Nagisa", "Honoka"]
-      ["CardCommune_Mepple", "CardCommune_Mipple"]
+      ["CardCommuneMepple", "CardCommuneMipple"]
       ["CureBlack","CureWhite"]
       transformationSpeech_Black_White
-
   ]
 
 
@@ -64,7 +62,6 @@ purifications =
       ["CureBlack", "CureWhite"]
       ["RainbowBrace"]
       purificationSpeech_Black_White_RainbowStorm
-
   ]
 
 
@@ -72,5 +69,3 @@ nonItemPurifications :: [NonItemPurification]
 nonItemPurifications =
   [ mkNonItemPurification ["CureBlack", "CureWhite"] purificationSpeech_Black_White
   ]
-
-
