@@ -11,10 +11,10 @@ import           ACME.PreCure.Textbook.Fresh.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Love" ++ error "Need family name!") girlName_Love
-  , mkGirl ("Miki" ++ error "Need family name!") girlName_Miki
-  , mkGirl ("Inori" ++ error "Need family name!") girlName_Inori
-  , mkGirl ("Setsuna" ++ error "Need family name!") girlName_Setsuna
+  [ mkGirl "Love Momozono" girlName_Love
+  , mkGirl "Miki Aono" girlName_Miki
+  , mkGirl "Inori Yamabuki" girlName_Inori
+  , mkGirl "Setsuna Higashi" girlName_Setsuna
   ]
 
 
@@ -47,7 +47,6 @@ transformees =
       cureName_Passion
       ""
       (intercalate "\n" introducesHerselfAs_Passion)
-
   ]
 
 
@@ -59,12 +58,12 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Linkrun" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "CureStickPeachRod" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "CureStickBerrySword" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "CureStickPineFlute" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "PassionHarp" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "CloverBox" (error "Specify specialItemNameJa") []
+  [ mkSpecialItem "Linkrun" "リンクルン" []
+  , mkSpecialItem "CureStickPeachRod" "キュアスティック・ピーチロッド" []
+  , mkSpecialItem "CureStickBerrySword" "キュアスティック・ベリーソード" []
+  , mkSpecialItem "CureStickPineFlute" "キュアスティック・パインフルート"  []
+  , mkSpecialItem "PassionHarp" "パッションハープ" []
+  , mkSpecialItem "CloverBox" "クローバーボックス" []
   ]
 
 
@@ -99,7 +98,6 @@ transformations =
       ["Linkrun"]
       ["CurePeach","CureBerry","CurePine","CurePassion"]
       transformationSpeech_Fresh
-
   ]
 
 
@@ -129,7 +127,6 @@ purifications =
       ["CurePeach", "CureBerry", "CurePine", "CurePassion"]
       ["CloverBox"]
       purificationSpeech_Fresh
-
   ]
 
 
@@ -139,5 +136,3 @@ nonItemPurifications =
   , mkNonItemPurification ["CureBerry"] purificationSpeech_Berry
   , mkNonItemPurification ["CurePine"] purificationSpeech_Pine
   ]
-
-

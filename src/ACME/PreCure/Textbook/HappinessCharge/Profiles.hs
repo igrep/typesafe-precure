@@ -9,10 +9,10 @@ import           ACME.PreCure.Textbook.HappinessCharge.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Megumi" ++ error "Need family name!") girlName_Megumi
-  , mkGirl ("Hime" ++ error "Need family name!") girlName_Hime
-  , mkGirl ("Yuko" ++ error "Need family name!") girlName_Yuko
-  , mkGirl ("Iona" ++ error "Need family name!") girlName_Iona
+  [ mkGirl "Megumi Aino" girlName_Megumi
+  , mkGirl "Hime Shirayuki (Himelda Window, Cure Queen of the Blue Sky)" girlName_Hime
+  , mkGirl "Yuko Omori" girlName_Yuko
+  , mkGirl "Iona Hikawa" girlName_Iona
   ]
 
 
@@ -73,7 +73,6 @@ transformees =
       cureName_Fortune
       variation_InnocentForm
       "introducesHerselfAs_Fortune"
-
   ]
 
 
@@ -86,21 +85,21 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "PreChanMirror" (error "Specify specialItemNameJa") ["pc"]
-  , mkSpecialItem "FortunePiano" (error "Specify specialItemNameJa") ["pc"]
-  , mkSpecialItem "PreCard_Lovely" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "PreCard_Princess" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "PreCard_Honey" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "PreCard_Fortune" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "PreCard_Lovely_InnocentForm" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "PreCard_Princess_InnocentForm" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "PreCard_Honey_InnocentForm" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "PreCard_Fortune_InnocentForm" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "LovePreBrace" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "TripleDanceHoneyBaton" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "FortuneTambourine" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "ShiningMakeDresser" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "InnocentHarmonyMic" (error "Specify specialItemNameJa") []
+  [ mkSpecialItem "PreChan Mirror" "プリチェンミラー" ["PreCard"]
+  , mkSpecialItem "Fortune Piano" "フォーチュンピアノ"  ["PreCard"]
+  , mkSpecialItem "PreCard Lovely" "プリカード（ラブリー）" []
+  , mkSpecialItem "PreCard Princess" "プリカード（プリンセス）"  []
+  , mkSpecialItem "PreCard Honey" "プリカード（ハニー）"   []
+  , mkSpecialItem "PreCard Fortune" "プリカード（フォーチュン）"    []
+  , mkSpecialItem "PreCard Lovely Innocent Form" "プリカード（ラブリー：イノセントフォーム）"    []
+  , mkSpecialItem "PreCard Princess Innocent Form" "プリカード（プリンセス：イノセントフォーム）"     []
+  , mkSpecialItem "PreCard Honey Innocent Form" "プリカード（ハニー：イノセントフォーム）"     []
+  , mkSpecialItem "PreCard Fortune Innocent Form" "プリカード（フォーチュン：イノセントフォーム）"      []
+  , mkSpecialItem "Love Pre Brace" "ラブプリブレス" []
+  , mkSpecialItem "Triple Dance Honey Baton" "トリプルダンスハニーバトン" []
+  , mkSpecialItem "Fortune Tambourine" "フォーチュンタンバリン" []
+  , mkSpecialItem "Shining Make Dresser" "シャイニングメークドレッサー" []
+  , mkSpecialItem "Innocent Harmony Mic" "イノセントハーモニーマイク" []
   ]
 
 
@@ -108,52 +107,51 @@ transformations :: [Transformation]
 transformations =
   [ mkTransformation
       ["Megumi"]
-      [mkIA "PreChanMirror" ["PreCard_Lovely"]]
+      [mkIA "PreChanMirror" ["PreCardLovely"]]
       ["CureLovely"]
       transformationSpeech_Lovely
 
   , mkTransformation
       ["Hime"]
-      [mkIA "PreChanMirror" ["PreCard_Princess"]]
+      [mkIA "PreChanMirror" ["PreCardPrincess"]]
       ["CurePrincess"]
       transformationSpeech_Princess
 
   , mkTransformation
       ["Yuko"]
-      [mkIA "PreChanMirror" ["PreCard_Honey"]]
+      [mkIA "PreChanMirror" ["PreCardHoney"]]
       ["CureHoney"]
       transformationSpeech_Honey
 
   , mkTransformation
       ["Iona"]
-      [mkIA "FortunePiano" ["PreCard_Fortune"]]
+      [mkIA "FortunePiano" ["PreCardFortune"]]
       ["CureFortune"]
       transformationSpeech_Fortune
 
   , mkTransformation
       ["Megumi", "Hime"]
-      [mkIA "PreChanMirror" ["PreCard_Lovely"], mkIA "PreChanMirror" ["PreCard_Princess"]]
+      [mkIA "PreChanMirror" ["PreCardLovely"], mkIA "PreChanMirror" ["PreCardPrincess"]]
       ["CureLovely","CurePrincess"]
       transformationSpeech_Lovely_Princess
 
   , mkTransformation
       ["Megumi", "Hime", "Yuko"]
-      [mkIA "PreChanMirror" ["PreCard_Lovely"], mkIA "PreChanMirror" ["PreCard_Princess"], mkIA "PreChanMirror" ["PreCard_Honey"]]
+      [mkIA "PreChanMirror" ["PreCardLovely"], mkIA "PreChanMirror" ["PreCardPrincess"], mkIA "PreChanMirror" ["PreCardHoney"]]
       ["CureLovely","CurePrincess","CureHoney"]
       transformationSpeech_Lovely_Princess_Honey
 
   , mkTransformation
       ["Megumi", "Hime", "Yuko", "Iona"]
-      [mkIA "PreChanMirror" ["PreCard_Lovely"], mkIA "PreChanMirror" ["PreCard_Princess"], mkIA "PreChanMirror" ["PreCard_Honey"], mkIA "FortunePiano" ["PreCard_Fortune"]]
+      [mkIA "PreChanMirror" ["PreCardLovely"], mkIA "PreChanMirror" ["PreCardPrincess"], mkIA "PreChanMirror" ["PreCardHoney"], mkIA "FortunePiano" ["PreCardFortune"]]
       ["CureLovely","CurePrincess","CureHoney","CureFortune"]
       transformationSpeech_HappinessCharge
 
   , mkTransformation
       ["CureLovely", "CurePrincess", "CureHoney", "CureFortune"]
-      [mkIA "PreChanMirror" ["PreCard_Lovely_InnocentForm"], mkIA "PreChanMirror" ["PreCard_Princess_InnocentForm"], mkIA "PreChanMirror" ["PreCard_Honey_InnocentForm"], mkIA "FortunePiano" ["PreCard_Fortune_InnocentForm"]]
+      [mkIA "PreChanMirror" ["PreCardLovelyInnocentForm"], mkIA "PreChanMirror" ["PreCardPrincessInnocentForm"], mkIA "PreChanMirror" ["PreCardHoneyInnocentForm"], mkIA "FortunePiano" ["PreCardFortuneInnocentForm"]]
       ["CureLovely_InnocentForm","CurePrincess_InnocentForm","CureHoney_InnocentForm","CureFortune_InnocentForm"]
       transformationSpeech_HappinessCharge_InnocentForm
-
   ]
 
 
@@ -183,13 +181,4 @@ purifications =
       ["CureLovely_InnocentForm", "CurePrincess_InnocentForm", "CureHoney_InnocentForm", "CureFortune_InnocentForm"]
       ["ShiningMakeDresser", "InnocentHarmonyMic"]
       purificationSpeech_HappinessCharge_InnocentForm
-
   ]
-
-
-nonItemPurifications :: [NonItemPurification]
-nonItemPurifications =
-  [ 
-  ]
-
-
