@@ -9,11 +9,11 @@ import           ACME.PreCure.Textbook.Dokidoki.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Mana" ++ error "Need family name!") girlName_Mana
-  , mkGirl ("Rikka" ++ error "Need family name!") girlName_Rikka
-  , mkGirl ("Alice" ++ error "Need family name!") girlName_Alice
-  , mkGirl ("Makoto" ++ error "Need family name!") girlName_Makoto
-  , mkGirl ("Aguri" ++ error "Need family name!") girlName_Aguri
+  [ mkGirl "Mana Aida" girlName_Mana
+  , mkGirl "Rikka Hishikawa" girlName_Rikka
+  , mkGirl "Alice Yotsuba" girlName_Alice
+  , mkGirl "Makoto Kenzaki" girlName_Makoto
+  , mkGirl "Aguri Madoka" girlName_Aguri
   ]
 
 
@@ -53,7 +53,6 @@ transformees =
       cureName_Ace
       ""
       introducesHerselfAs_Ace
-
   ]
 
 
@@ -65,14 +64,14 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "LovelyCommune_Sharuru" (error "Specify specialItemNameJa") ["cl"]
-  , mkSpecialItem "LovelyCommune_Raquel" (error "Specify specialItemNameJa") ["cl"]
-  , mkSpecialItem "LovelyCommune_Lance" (error "Specify specialItemNameJa") ["cl"]
-  , mkSpecialItem "LovelyCommune_Davi" (error "Specify specialItemNameJa") ["cl"]
-  , mkSpecialItem "LoveEyesPalette" (error "Specify specialItemNameJa") ["cl"]
-  , mkSpecialItem "CureLoveads" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "LoveKissRouge" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "MagicalLovelyHarp" (error "Specify specialItemNameJa") ["cl"]
+  [ mkSpecialItem "Lovely Commune Sharuru" "ラブリーコミューン（シャルル）" ["Cure Loveads"]
+  , mkSpecialItem "Lovely Commune Raquel" "ラブリーコミューン（ラケル）" ["Cure Loveads"]
+  , mkSpecialItem "Lovely Commune Lance" "ラブリーコミューン（ランス）" ["Cure Loveads"]
+  , mkSpecialItem "Lovely Commune Davi" "ラブリーコミューン（ダビィ）"  ["Cure Loveads"]
+  , mkSpecialItem "Love Eyes Palette" "ラブアイズパレット" ["Cure Loveads"]
+  , mkSpecialItem "Cure Loveads" "キュアラビーズ" []
+  , mkSpecialItem "Love Kiss Rouge" "ラブキッスルージュ" []
+  , mkSpecialItem "MagicalLovely Harp" "マジカルラブリーハープ" ["Cure Loveads"]
   ]
 
 
@@ -80,25 +79,25 @@ transformations :: [Transformation]
 transformations =
   [ mkTransformation
       ["Mana"]
-      [mkIA "LovelyCommune_Sharuru" ["CureLoveads"]]
+      [mkIA "LovelyCommuneSharuru" ["CureLoveads"]]
       ["CureHeart"]
       transformationSpeech_Heart
 
   , mkTransformation
       ["Rikka"]
-      [mkIA "LovelyCommune_Raquel" ["CureLoveads"]]
+      [mkIA "LovelyCommuneRaquel" ["CureLoveads"]]
       ["CureDiamond"]
       transformationSpeech_Diamond
 
   , mkTransformation
       ["Alice"]
-      [mkIA "LovelyCommune_Lance" ["CureLoveads"]]
+      [mkIA "LovelyCommuneLance" ["CureLoveads"]]
       ["CureRosetta"]
       transformationSpeech_Rosetta
 
   , mkTransformation
       ["Makoto"]
-      [mkIA "LovelyCommune_Davi" ["CureLoveads"]]
+      [mkIA "LovelyCommuneDavi" ["CureLoveads"]]
       ["CureSword"]
       transformationSpeech_Sword
 
@@ -110,16 +109,15 @@ transformations =
 
   , mkTransformation
       ["Mana", "Rikka", "Alice", "Makoto"]
-      [mkIA "LovelyCommune_Sharuru" ["CureLoveads"], mkIA "LovelyCommune_Raquel" ["CureLoveads"], mkIA "LovelyCommune_Lance" ["CureLoveads"], mkIA "LovelyCommune_Davi" ["CureLoveads"]]
+      [mkIA "LovelyCommuneSharuru" ["CureLoveads"], mkIA "LovelyCommuneRaquel" ["CureLoveads"], mkIA "LovelyCommuneLance" ["CureLoveads"], mkIA "LovelyCommuneDavi" ["CureLoveads"]]
       ["CureHeart","CureDiamond","CureRosetta","CureSword"]
       transformationSpeech_Dokidoki_Heart_Diamond_Rosetta_Sword
 
   , mkTransformation
       ["Mana", "Rikka", "Alice", "Makoto", "Aguri"]
-      [mkIA "LovelyCommune_Sharuru" ["CureLoveads"], mkIA "LovelyCommune_Raquel" ["CureLoveads"], mkIA "LovelyCommune_Lance" ["CureLoveads"], mkIA "LovelyCommune_Davi" ["CureLoveads"], mkIA "LoveEyesPalette" ["CureLoveads"]]
+      [mkIA "LovelyCommuneSharuru" ["CureLoveads"], mkIA "LovelyCommuneRaquel" ["CureLoveads"], mkIA "LovelyCommuneLance" ["CureLoveads"], mkIA "LovelyCommuneDavi" ["CureLoveads"], mkIA "LoveEyesPalette" ["CureLoveads"]]
       ["CureHeart","CureDiamond","CureRosetta","CureSword","CureAce"]
       transformationSpeech_Dokidoki
-
   ]
 
 
@@ -127,22 +125,22 @@ purifications :: [Purification]
 purifications =
   [ mkPurification
       ["CureHeart"]
-      [mkIA "LovelyCommune_Sharuru" ["CureLoveads"]]
+      [mkIA "LovelyCommuneSharuru" ["CureLoveads"]]
       purificationSpeech_Heart
 
   , mkPurification
       ["CureDiamond"]
-      [mkIA "LovelyCommune_Raquel" ["CureLoveads"]]
+      [mkIA "LovelyCommuneRaquel" ["CureLoveads"]]
       purificationSpeech_Diamond
 
   , mkPurification
       ["CureRosetta"]
-      [mkIA "LovelyCommune_Lance" ["CureLoveads"]]
+      [mkIA "LovelyCommuneLance" ["CureLoveads"]]
       purificationSpeech_Rosetta
 
   , mkPurification
       ["CureSword"]
-      [mkIA "LovelyCommune_Davi" ["CureLoveads"]]
+      [mkIA "LovelyCommuneDavi" ["CureLoveads"]]
       purificationSpeech_Sword
 
   , mkPurification
@@ -154,13 +152,4 @@ purifications =
       ["CureHeart", "CureDiamond", "CureRosetta", "CureSword", "CureAce"]
       [mkIA "MagicalLovelyHarp" ["CureLoveads"]]
       purificationSpeech_Dokidoki
-
   ]
-
-
-nonItemPurifications :: [NonItemPurification]
-nonItemPurifications =
-  [ 
-  ]
-
-
