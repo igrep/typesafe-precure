@@ -122,7 +122,6 @@ executable migrate2cure-index
                      , directory
                      , filepath
                      , here
-                     , pretty-simple
                      , substring-parser
                      , text
 
