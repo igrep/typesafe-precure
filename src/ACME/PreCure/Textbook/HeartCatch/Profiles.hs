@@ -9,10 +9,10 @@ import           ACME.PreCure.Textbook.HeartCatch.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Tsubomi" ++ error "Need family name!") girlName_Tsubomi
-  , mkGirl ("Erika" ++ error "Need family name!") girlName_Erika
-  , mkGirl ("Itsuki" ++ error "Need family name!") girlName_Itsuki
-  , mkGirl ("Yuri" ++ error "Need family name!") girlName_Yuri
+  [ mkGirl "Tsubomi Hanasaki" girlName_Tsubomi
+  , mkGirl "Erika Kurumi" girlName_Erika
+  , mkGirl "Itsuki Myodoin" girlName_Itsuki
+  , mkGirl "Yuri Tsukikage" girlName_Yuri
   ]
 
 
@@ -73,7 +73,6 @@ transformees =
       cureName_Moonlight
       variation_SuperMoonlight
       "introducesHerselfAs_Moonlight"
-
   ]
 
 
@@ -86,16 +85,16 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "HeartPerfume" (error "Specify specialItemNameJa") ["hs"]
-  , mkSpecialItem "ShinyPerfume" (error "Specify specialItemNameJa") ["hs"]
-  , mkSpecialItem "HeartPot" (error "Specify specialItemNameJa") ["hs"]
-  , mkSpecialItem "HeartSeed" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "BlossomTakt" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "MarineTakt" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "ShinyTambourine" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "MoonTakt" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "HeartCatchMirage" (error "Specify specialItemNameJa") ["sps"]
-  , mkSpecialItem "SuperPreCureSeed" (error "Specify specialItemNameJa") []
+  [ mkSpecialItem "Heart Perfume" "ココロパフューム" ["PreCureSeed"]
+  , mkSpecialItem "Shiny Perfume" "シャイニーパフューム" ["PreCureSeed"]
+  , mkSpecialItem "Heart Pot" "ココロポット" ["PreCureSeed"]
+  , mkSpecialItem "PreCure Seed" "プリキュアの種" []
+  , mkSpecialItem "Blossom Takt" "ブロッサムタクト" []
+  , mkSpecialItem "Marine Takt" "マリンタクト" []
+  , mkSpecialItem "Shiny Tambourine" "シャイニータンバリン" []
+  , mkSpecialItem "Moon Takt" "ムーンタクト" []
+  , mkSpecialItem "Heart Catch Mirage" "ハートキャッチミラージュ" ["SuperPreCureSeed"]
+  , mkSpecialItem "Super PreCure Seed" "スーパープリキュアの種" []
   ]
 
 
@@ -103,31 +102,31 @@ transformations :: [Transformation]
 transformations =
   [ mkTransformation
       ["Tsubomi"]
-      [mkIA "HeartPerfume" ["HeartSeed"]]
+      [mkIA "HeartPerfume" ["PreCureSeed"]]
       ["CureBlossom"]
       transformationSpeech_Blossom
 
   , mkTransformation
       ["Erika"]
-      [mkIA "HeartPerfume" ["HeartSeed"]]
+      [mkIA "HeartPerfume" ["PreCureSeed"]]
       ["CureMarine"]
       transformationSpeech_Marine
 
   , mkTransformation
       ["Itsuki"]
-      [mkIA "ShinyPerfume" ["HeartSeed"]]
+      [mkIA "ShinyPerfume" ["PreCureSeed"]]
       ["CureSunshine"]
       transformationSpeech_Sunshine
 
   , mkTransformation
       ["Yuri"]
-      [mkIA "HeartPot" ["HeartSeed"]]
+      [mkIA "HeartPot" ["PreCureSeed"]]
       ["CureMoonlight"]
       transformationSpeech_Moonlight
 
   , mkTransformation
       ["Tsubomi", "Erika", "Itsuki", "Yuri"]
-      [mkIA "HeartPerfume" ["HeartSeed"], mkIA "HeartPerfume" ["HeartSeed"], mkIA "ShinyPerfume" ["HeartSeed"], mkIA "HeartPot" ["HeartSeed"]]
+      [mkIA "HeartPerfume" ["PreCureSeed"], mkIA "HeartPerfume" ["PreCureSeed"], mkIA "ShinyPerfume" ["PreCureSeed"], mkIA "HeartPot" ["PreCureSeed"]]
       ["CureBlossom","CureMarine","CureSunshine","CureMoonlight"]
       transformationSpeech_HeartCatch
 
@@ -136,7 +135,6 @@ transformations =
       [mkIA "HeartCatchMirage" ["SuperPreCureSeed"]]
       ["SuperCureBlossom","SuperCureMarine","SuperCureSunshine","SuperCureMoonlight"]
       transformationSpeech_HeartCatch_SuperSilhouette
-
   ]
 
 
@@ -166,13 +164,4 @@ purifications =
       ["CureBlossom", "CureMarine", "CureSunshine", "CureMoonlight"]
       [mkIA "HeartCatchMirage" ["SuperPreCureSeed"]]
       purificationSpeech_HeartCatch_SuperSilhouette
-
   ]
-
-
-nonItemPurifications :: [NonItemPurification]
-nonItemPurifications =
-  [ 
-  ]
-
-
