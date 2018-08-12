@@ -29,8 +29,7 @@ main = do
   targetDirNames <-
     filter (\path -> notYetMigrated path && isDirectory path)
     <$> D.listDirectory targetRoot
-  genTypesHs targetDirNames
-  putStrLn "\n\n----------------------------------------------------\n"
+  genSeriesRootHs targetDirNames
   genProfilesHs targetDirNames
 
 
@@ -38,14 +37,16 @@ targetRoot :: FilePath
 targetRoot = "src/ACME/PreCure/Textbook/"
 
 
-genTypesHs :: [String] -> IO ()
-genTypesHs = mapM_ (T.putStr . typeHsFromSeriesName)
+genSeriesRootHs :: [String] -> IO ()
+genSeriesRootHs = mapM_ $ \seriesName ->
+  T.writeFile (targetRoot ++ seriesName ++ ".hs") $ seriesRootHsFromSeriesName seriesName
 
 genProfilesHs :: [FilePath] -> IO ()
 genProfilesHs = mapM_ $ \seriesName -> do
   let seriesRoot = targetRoot ++ seriesName
-  putStrLn $ "\n-- " ++ seriesRoot ++ " --"
-  TL.putStr . buildProfileHs seriesName . classify . parseAll =<< T.readFile (seriesRoot ++ "/Types.hs")
+      typesHs = seriesRoot ++ "/Types.hs"
+      profilesHs = seriesRoot ++ "/Profiles.hs"
+  TL.writeFile profilesHs . buildProfileHs (TL.pack seriesName) . classify . parseAll =<< T.readFile typesHs
 
 
 parseAll :: T.Text -> [Aux]
@@ -64,8 +65,8 @@ isDirectory :: FilePath -> Bool
 isDirectory = null . F.takeExtension
 
 
-typeHsFromSeriesName :: FilePath -> T.Text
-typeHsFromSeriesName seriesName = T.unlines $ map (T.strip . T.pack) $ lines src
+seriesRootHsFromSeriesName :: FilePath -> T.Text
+seriesRootHsFromSeriesName seriesName = T.unlines $ map (T.strip . T.pack) $ lines src
  where
   src = [HI.iTrim|
     {-# LANGUAGE FlexibleInstances #-}
@@ -74,7 +75,7 @@ typeHsFromSeriesName seriesName = T.unlines $ map (T.strip . T.pack) $ lines src
     {-# LANGUAGE TemplateHaskell #-}
     {-# OPTIONS_GHC -fno-warn-orphans #-}
 
-    module ACME.PreCure.Textbook.${seriesName}.Types where
+    module ACME.PreCure.Textbook.${seriesName} where
 
     import           ACME.PreCure.Types.TH
 
@@ -106,7 +107,7 @@ typeHsFromSeriesName seriesName = T.unlines $ map (T.strip . T.pack) $ lines src
 --------------------------------------------------- classifier and builder
 
 
-buildProfileHs :: String -> Index -> TL.Text
+buildProfileHs :: TL.Text -> Index -> TL.Text
 buildProfileHs seriesName Index {..} = TL.toLazyText $ mconcat
   [ profilesHsHeader
   , sourceOfGirls indexGirls
@@ -123,10 +124,10 @@ buildProfileHs seriesName Index {..} = TL.toLazyText $ mconcat
     [ "{-# OPTIONS_GHC -fno-warn-missing-signatures #-}"
     , "{-# LANGUAGE OverloadedStrings #-}"
     , ""
-    , "module ACME.PreCure.Textbook.Hugtto.Profiles where"
+    , "module ACME.PreCure.Textbook." <> seriesName <> ".Profiles where"
     , ""
     , "import           ACME.PreCure.Index.Types"
-    , "import           ACME.PreCure.Textbook." <> TL.pack seriesName <> ".Words"
+    , "import           ACME.PreCure.Textbook." <> seriesName <> ".Words"
     , ""
     , ""
     ]
