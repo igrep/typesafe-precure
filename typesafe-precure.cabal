@@ -20,63 +20,20 @@ library
   ghc-options:         -Wall
   exposed-modules:     ACME.PreCure
                      , ACME.PreCure.Textbook
-
                      , ACME.PreCure.Textbook.First
-                     , ACME.PreCure.Textbook.First.Words
-                     , ACME.PreCure.Textbook.First.Types
-
                      , ACME.PreCure.Textbook.MaxHeart
-                     , ACME.PreCure.Textbook.MaxHeart.Words
-                     , ACME.PreCure.Textbook.MaxHeart.Types
-
                      , ACME.PreCure.Textbook.SplashStar
-                     , ACME.PreCure.Textbook.SplashStar.Words
-                     , ACME.PreCure.Textbook.SplashStar.Types
-
                      , ACME.PreCure.Textbook.Yes5
-                     , ACME.PreCure.Textbook.Yes5.Words
-                     , ACME.PreCure.Textbook.Yes5.Types
-
                      , ACME.PreCure.Textbook.Yes5GoGo
-                     , ACME.PreCure.Textbook.Yes5GoGo.Words
-                     , ACME.PreCure.Textbook.Yes5GoGo.Types
-
                      , ACME.PreCure.Textbook.Fresh
-                     , ACME.PreCure.Textbook.Fresh.Words
-                     , ACME.PreCure.Textbook.Fresh.Types
-
                      , ACME.PreCure.Textbook.HeartCatch
-                     , ACME.PreCure.Textbook.HeartCatch.Words
-                     , ACME.PreCure.Textbook.HeartCatch.Types
-
                      , ACME.PreCure.Textbook.Suite
-                     , ACME.PreCure.Textbook.Suite.Words
-                     , ACME.PreCure.Textbook.Suite.Types
-
                      , ACME.PreCure.Textbook.Smile
-                     , ACME.PreCure.Textbook.Smile.Words
-                     , ACME.PreCure.Textbook.Smile.Types
-
                      , ACME.PreCure.Textbook.Dokidoki
-                     , ACME.PreCure.Textbook.Dokidoki.Words
-                     , ACME.PreCure.Textbook.Dokidoki.Types
-
                      , ACME.PreCure.Textbook.HappinessCharge
-                     , ACME.PreCure.Textbook.HappinessCharge.Words
-                     , ACME.PreCure.Textbook.HappinessCharge.Types
-
                      , ACME.PreCure.Textbook.GoPrincess
-                     , ACME.PreCure.Textbook.GoPrincess.Words
-                     , ACME.PreCure.Textbook.GoPrincess.Types
-
                      , ACME.PreCure.Textbook.Movie
-                     , ACME.PreCure.Textbook.Movie.Words
-                     , ACME.PreCure.Textbook.Movie.Types
-
                      , ACME.PreCure.Textbook.MahoGirls
-                     , ACME.PreCure.Textbook.MahoGirls.Types
-                     , ACME.PreCure.Textbook.MahoGirls.Words
-
                      , ACME.PreCure.Textbook.KirakiraALaMode
                      , ACME.PreCure.Textbook.Hugtto
 
@@ -88,6 +45,62 @@ library
   other-modules:       ACME.PreCure.Types.TH
                      , ACME.PreCure.Index
                      , ACME.PreCure.Index.Lib
+
+                     , ACME.PreCure.Textbook.First.Profiles
+                     , ACME.PreCure.Textbook.First.Words
+                     , ACME.PreCure.Textbook.First.Types
+
+                     , ACME.PreCure.Textbook.MaxHeart.Profiles
+                     , ACME.PreCure.Textbook.MaxHeart.Words
+                     , ACME.PreCure.Textbook.MaxHeart.Types
+
+                     , ACME.PreCure.Textbook.SplashStar.Profiles
+                     , ACME.PreCure.Textbook.SplashStar.Words
+                     , ACME.PreCure.Textbook.SplashStar.Types
+
+                     , ACME.PreCure.Textbook.Yes5.Profiles
+                     , ACME.PreCure.Textbook.Yes5.Words
+                     , ACME.PreCure.Textbook.Yes5.Types
+
+                     , ACME.PreCure.Textbook.Yes5GoGo.Profiles
+                     , ACME.PreCure.Textbook.Yes5GoGo.Words
+                     , ACME.PreCure.Textbook.Yes5GoGo.Types
+
+                     , ACME.PreCure.Textbook.Fresh.Profiles
+                     , ACME.PreCure.Textbook.Fresh.Words
+                     , ACME.PreCure.Textbook.Fresh.Types
+
+                     , ACME.PreCure.Textbook.HeartCatch.Profiles
+                     , ACME.PreCure.Textbook.HeartCatch.Words
+                     , ACME.PreCure.Textbook.HeartCatch.Types
+
+                     , ACME.PreCure.Textbook.Suite.Profiles
+                     , ACME.PreCure.Textbook.Suite.Words
+                     , ACME.PreCure.Textbook.Suite.Types
+
+                     , ACME.PreCure.Textbook.Smile.Profiles
+                     , ACME.PreCure.Textbook.Smile.Words
+                     , ACME.PreCure.Textbook.Smile.Types
+
+                     , ACME.PreCure.Textbook.Dokidoki.Profiles
+                     , ACME.PreCure.Textbook.Dokidoki.Words
+                     , ACME.PreCure.Textbook.Dokidoki.Types
+
+                     , ACME.PreCure.Textbook.HappinessCharge.Profiles
+                     , ACME.PreCure.Textbook.HappinessCharge.Words
+                     , ACME.PreCure.Textbook.HappinessCharge.Types
+
+                     , ACME.PreCure.Textbook.GoPrincess.Profiles
+                     , ACME.PreCure.Textbook.GoPrincess.Words
+                     , ACME.PreCure.Textbook.GoPrincess.Types
+
+                     , ACME.PreCure.Textbook.Movie.Profiles
+                     , ACME.PreCure.Textbook.Movie.Words
+                     , ACME.PreCure.Textbook.Movie.Types
+
+                     , ACME.PreCure.Textbook.MahoGirls.Profiles
+                     , ACME.PreCure.Textbook.MahoGirls.Types
+                     , ACME.PreCure.Textbook.MahoGirls.Words
 
                      , ACME.PreCure.Textbook.KirakiraALaMode.Types
                      , ACME.PreCure.Textbook.KirakiraALaMode.Profiles
