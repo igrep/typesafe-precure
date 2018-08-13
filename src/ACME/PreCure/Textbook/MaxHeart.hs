@@ -8,6 +8,7 @@ module ACME.PreCure.Textbook.MaxHeart where
 
 import           ACME.PreCure.Types.TH
 
+import           ACME.PreCure.Textbook.First
 import           ACME.PreCure.Textbook.MaxHeart.Profiles
 
 {-# ANN module girls #-}
@@ -29,4 +30,4 @@ $(declareTransformations transformations)
 $(declarePurifications purifications)
 
 {-# ANN module nonItemPurifications #-}
-$(declarePurifications nonItemPurifications)
+$(declareNonItemPurifications nonItemPurifications)

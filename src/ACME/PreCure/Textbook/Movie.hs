@@ -16,17 +16,11 @@ $(declareGirls girls)
 {-# ANN module transformees #-}
 $(declareTransformees transformees)
 
-{-# ANN module transformedGroups #-}
-$(declareTransformedGroups transformedGroups)
-
 {-# ANN module specialItems #-}
 $(declareSpecialItems specialItems)
 
 {-# ANN module transformations #-}
 $(declareTransformations transformations)
 
-{-# ANN module purifications #-}
-$(declarePurifications purifications)
-
 {-# ANN module nonItemPurifications #-}
-$(declarePurifications nonItemPurifications)
+$(declareNonItemPurifications nonItemPurifications)

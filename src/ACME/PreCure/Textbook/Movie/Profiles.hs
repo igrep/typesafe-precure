@@ -9,7 +9,7 @@ import           ACME.PreCure.Textbook.Movie.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Ayumi" ++ error "Need family name!") girlName_Ayumi
+  [ mkGirl "Ayumi Sakagami" girlName_Ayumi
   ]
 
 
@@ -21,19 +21,12 @@ transformees =
       cureName_Echo
       ""
       introducesHerselfAs_Echo
-
-  ]
-
-
-transformedGroups :: [TransformedGroup]
-transformedGroups =
-  [ 
   ]
 
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "FeelingToBePreCure" (error "Specify specialItemNameJa") []
+  [ mkSpecialItem "Feeling To Be PreCure" "プリキュアになりたいという気持ち" []
   ]
 
 
@@ -44,13 +37,6 @@ transformations =
       ["FeelingToBePreCure"]
       ["CureEcho"]
       transformationSpeech_Echo
-
-  ]
-
-
-purifications :: [Purification]
-purifications =
-  [ 
   ]
 
 
@@ -58,5 +44,3 @@ nonItemPurifications :: [NonItemPurification]
 nonItemPurifications =
   [ mkNonItemPurification ["CureEcho"] purificationSpeech_Echo
   ]
-
-

@@ -10,7 +10,7 @@ import           ACME.PreCure.Textbook.MaxHeart.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Hikari" ++ error "Need family name!") girlName_Hikari
+  [ mkGirl "Hikari Kujou" girlName_Hikari
   ]
 
 
@@ -36,7 +36,6 @@ transformees =
       cureName_Luminous
       ""
       introducesHerselfAs_Luminous
-
   ]
 
 
@@ -49,11 +48,11 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "HeartfulCommune_Mepple" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "HeartfulCommune_Mipple" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "TouchCommune_Porun" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "SparkleBrace" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "HeartielBaton" (error "Specify specialItemNameJa") []
+  [ mkSpecialItem "Heartful Commune Mepple" "ハートフルコミューン（メップル）" []
+  , mkSpecialItem "Heartful Commune Mipple" "ハートフルコミューン（ミップル）" []
+  , mkSpecialItem "TouchCommune_Porun" "タッチコミューン（ポルン）" []
+  , mkSpecialItem "Sparkle Brace" "スパークルブレス" []
+  , mkSpecialItem "Heartiel Baton" "ハーティエルバトン" []
   ]
 
 
@@ -61,7 +60,7 @@ transformations :: [Transformation]
 transformations =
   [ mkTransformation
       ["Nagisa", "Honoka"]
-      ["HeartfulCommune_Mepple", "HeartfulCommune_Mipple"]
+      ["HeartfulCommuneMepple", "HeartfulCommuneMipple"]
       ["CureBlack_Max","CureWhite_Max"]
       transformationSpeech_Black_White
 
@@ -70,7 +69,6 @@ transformations =
       ["TouchCommune_Porun"]
       ["ShinyLuminous"]
       transformationSpeech_Luminous
-
   ]
 
 
@@ -80,7 +78,6 @@ purifications =
       ["ShinyLuminous"]
       ["HeartielBaton"]
       purificationSpeech_Luminous
-
   ]
 
 
@@ -88,5 +85,3 @@ nonItemPurifications :: [NonItemPurification]
 nonItemPurifications =
   [ mkNonItemPurification ["CureBlack_Max", "CureWhite_Max"] purificationSpeech_Black_White_Max
   ]
-
-
