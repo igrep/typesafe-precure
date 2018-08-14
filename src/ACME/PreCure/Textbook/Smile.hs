@@ -29,4 +29,4 @@ $(declareTransformations transformations)
 $(declarePurifications purifications)
 
 {-# ANN module nonItemPurifications #-}
-$(declarePurifications nonItemPurifications)
+$(declareNonItemPurifications nonItemPurifications)

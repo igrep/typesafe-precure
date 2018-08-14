@@ -9,11 +9,11 @@ import           ACME.PreCure.Textbook.Smile.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Miyuki" ++ error "Need family name!") girlName_Miyuki
-  , mkGirl ("Akane" ++ error "Need family name!") girlName_Akane
-  , mkGirl ("Yayoi" ++ error "Need family name!") girlName_Yayoi
-  , mkGirl ("Nao" ++ error "Need family name!") girlName_Nao
-  , mkGirl ("Reika" ++ error "Need family name!") girlName_Reika
+  [ mkGirl "Miyuki Hoshizora" girlName_Miyuki
+  , mkGirl "Akane Hino" girlName_Akane
+  , mkGirl "Yayoi Kise" girlName_Yayoi
+  , mkGirl "Nao Midorikawa" girlName_Nao
+  , mkGirl "Reika Aoki" girlName_Reika
   ]
 
 
@@ -88,7 +88,6 @@ transformees =
       cureName_Beauty
       variation_Beauty_Princess
       "introducesHerselfAs_Beauty_Princess"
-
   ]
 
 
@@ -101,10 +100,10 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "SmilePact" (error "Specify specialItemNameJa") ["cd"]
-  , mkSpecialItem "CureDecors" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "PrincessCandle" (error "Specify specialItemNameJa") ["cd"]
-  , mkSpecialItem "RoyalClock" (error "Specify specialItemNameJa") ["cd"]
+  [ mkSpecialItem "Smile Pact" "スマイルパクト" ["CureDecors"]
+  , mkSpecialItem "Cure Decors" "キュアデコル" []
+  , mkSpecialItem "Princess Candle" "プリンセスキャンドル" ["CureDecors"]
+  , mkSpecialItem "Royal Clock" "ロイヤルクロック" ["CureDecors"]
   ]
 
 

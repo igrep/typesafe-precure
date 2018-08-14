@@ -9,8 +9,8 @@ import           ACME.PreCure.Textbook.SplashStar.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Saki" ++ error "Need family name!") girlName_Saki
-  , mkGirl ("Mai" ++ error "Need family name!") girlName_Mai
+  [ mkGirl "Saki Hyuga" girlName_Saki
+  , mkGirl "Mai Misho" girlName_Mai
   ]
 
 
@@ -43,7 +43,6 @@ transformees =
       cureName_Windy
       ""
       introducesHerselfAs_Windy
-
   ]
 
 
@@ -56,10 +55,10 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "MixCommune_Flappy" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "MixCommune_Choppy" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "CrystalCommune_Flappy" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "CrystalCommune_Choppy" (error "Specify specialItemNameJa") []
+  [ mkSpecialItem "Mix Commune Flappy" "ミックスコミューン（フラッピ）" []
+  , mkSpecialItem "Mix Commune Choppy" "ミックスコミューン（チョッピ）"  []
+  , mkSpecialItem "Crystal Commune Flappy" "クリスタルコミューン（フラッピ）"  []
+  , mkSpecialItem "Crystal Commune Choppy" "クリスタルコミューン（チョッピ）"   []
   ]
 
 
@@ -67,22 +66,15 @@ transformations :: [Transformation]
 transformations =
   [ mkTransformation
       ["Saki", "Mai"]
-      ["MixCommune_Flappy", "MixCommune_Choppy"]
+      ["MixCommuneFlappy", "MixCommuneChoppy"]
       ["CureBloom","CureEgret"]
       transformationSpeech_Bloom_Egret
 
   , mkTransformation
       ["Saki", "Mai"]
-      ["CrystalCommune_Flappy", "CrystalCommune_Choppy"]
+      ["CrystalCommuneFlappy", "CrystalCommuneChoppy"]
       ["CureBright","CureWindy"]
       transformationSpeech_Bright_Windy
-
-  ]
-
-
-purifications :: [Purification]
-purifications =
-  [ 
   ]
 
 
@@ -90,5 +82,3 @@ nonItemPurifications :: [NonItemPurification]
 nonItemPurifications =
   [ mkNonItemPurification ["CureBloom", "CureEgret"] purificationSpeech_Bloom_Egret
   ]
-
-
