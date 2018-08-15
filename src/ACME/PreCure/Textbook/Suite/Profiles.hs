@@ -9,10 +9,10 @@ import           ACME.PreCure.Textbook.Suite.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Hibiki" ++ error "Need family name!") girlName_Hibiki
-  , mkGirl ("Kanade" ++ error "Need family name!") girlName_Kanade
-  , mkGirl ("Ellen" ++ error "Need family name!") girlName_Ellen
-  , mkGirl ("Ako" ++ error "Need family name!") girlName_Ako
+  [ mkGirl "Hibiki Hojo" girlName_Hibiki
+  , mkGirl "Kanade Minamino" girlName_Kanade
+  , mkGirl "Ellen Kurokawa" girlName_Ellen
+  , mkGirl "Ako Shirabe" girlName_Ako
   ]
 
 
@@ -45,7 +45,6 @@ transformees =
       cureName_Muse
       ""
       introducesHerselfAs_Muse
-
   ]
 
 
@@ -57,19 +56,19 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "CureModules" (error "Specify specialItemNameJa") ["fs"]
-  , mkSpecialItem "Dory" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "Rery" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "Miry" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "Fary" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "Sory" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "Lary" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "Tiry" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "Dodory" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "MiracleBelltier" (error "Specify specialItemNameJa") ["miry"]
-  , mkSpecialItem "FantasticBelltier" (error "Specify specialItemNameJa") ["fary"]
-  , mkSpecialItem "LoveGuitarRod" (error "Specify specialItemNameJa") ["sory"]
-  , mkSpecialItem "HealingChest" (error "Specify specialItemNameJa") []
+  [ mkSpecialItem "Cure Modules" "キュアモジューレ" ["FairyTone"]
+  , mkSpecialItem "Dory" "ドリー"   []
+  , mkSpecialItem "Rery" "レリー"   []
+  , mkSpecialItem "Miry" "ミリー"   []
+  , mkSpecialItem "Fary" "ファリー" []
+  , mkSpecialItem "Sory" "ソリー"   []
+  , mkSpecialItem "Lary" "ラリー"   []
+  , mkSpecialItem "Tiry" "シリー"   []
+  , mkSpecialItem "Dodory" "ドドリー" []
+  , mkSpecialItem "Miracle Belltier" "ミラクルベルティエ"  ["Miry"]
+  , mkSpecialItem "Fantastic Belltier" "ファンタスティックベルティエ" ["Fary"]
+  , mkSpecialItem "Love Guitar Rod" "ラブギターロッド" ["Sory"]
+  , mkSpecialItem "Healing Chest" "ヒーリングチェスト" []
   ]
 
 
@@ -104,7 +103,6 @@ transformations =
       [mkIA "CureModules" ["Dory"], mkIA "CureModules" ["Rery"], mkIA "CureModules" ["Lary"], mkIA "CureModules" ["Dodory"]]
       ["CureMelody","CureRhythm","CureBeat","CureMuse"]
       transformationSpeech_Suite
-
   ]
 
 
@@ -134,13 +132,4 @@ purifications =
       ["CureMelody", "CureRhythm", "CureBeat", "CureMuse"]
       ["HealingChest"]
       purificationSpeech_Suite
-
   ]
-
-
-nonItemPurifications :: [NonItemPurification]
-nonItemPurifications =
-  [ 
-  ]
-
-

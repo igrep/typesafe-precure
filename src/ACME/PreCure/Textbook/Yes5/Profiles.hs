@@ -9,11 +9,11 @@ import           ACME.PreCure.Textbook.Yes5.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Nozomi" ++ error "Need family name!") girlName_Nozomi
-  , mkGirl ("Rin" ++ error "Need family name!") girlName_Rin
-  , mkGirl ("Urara" ++ error "Need family name!") girlName_Urara
-  , mkGirl ("Komachi" ++ error "Need family name!") girlName_Komachi
-  , mkGirl ("Karen" ++ error "Need family name!") girlName_Karen
+  [ mkGirl "Nozomi Yumehara" girlName_Nozomi
+  , mkGirl "Rin Natsuki" girlName_Rin
+  , mkGirl "Urara Kasugano" girlName_Urara
+  , mkGirl "Komachi Akimoto" girlName_Komachi
+  , mkGirl "Karen Minazuki" girlName_Karen
   ]
 
 
@@ -53,7 +53,6 @@ transformees =
       cureName_Aqua
       ""
       introducesHerselfAs_Aqua
-
   ]
 
 
@@ -65,12 +64,12 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "PinkyCatch" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "DreamTorch" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "RougeTact" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "LemonadeCastanet" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "MintLeaf" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "AquaRibbon" (error "Specify specialItemNameJa") []
+  [ mkSpecialItem "Pinky Catch" "ピンキーキャッチュ" []
+  , mkSpecialItem "Dream Torch" "ドリーム・トーチ" []
+  , mkSpecialItem "Rouge Tact" "ルージュ・タクト" []
+  , mkSpecialItem "Lemonade Castanet" "レモネード・カスタネット" []
+  , mkSpecialItem "Mint Leaf" "ミント・リーフ" []
+  , mkSpecialItem "Aqua Ribbon" "アクア・リボン" []
   ]
 
 
@@ -111,7 +110,6 @@ transformations =
       ["PinkyCatch"]
       ["CureDream","CureRouge","CureLemonade","CureMint","CureAqua"]
       transformationSpeech_Yes5
-
   ]
 
 
@@ -171,13 +169,4 @@ purifications =
       ["CureDream", "CureRouge", "CureLemonade", "CureMint", "CureAqua"]
       ["DreamTorch", "RougeTact", "LemonadeCastanet", "MintLeaf", "AquaRibbon"]
       purificationSpeech_Yes5
-
   ]
-
-
-nonItemPurifications :: [NonItemPurification]
-nonItemPurifications =
-  [ 
-  ]
-
-

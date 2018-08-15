@@ -10,7 +10,7 @@ import           ACME.PreCure.Textbook.Yes5GoGo.Words
 
 girls :: [Girl]
 girls =
-  [ mkGirl ("Kurumi" ++ error "Need family name!") girlName_Kurumi
+  [ mkGirl "Kurumi Mimino" girlName_Kurumi
   ]
 
 
@@ -22,7 +22,6 @@ transformees =
       cureName_MilkyRose
       ""
       introducesHerselfAs_MilkyRose
-
   ]
 
 
@@ -34,14 +33,14 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "CureMo" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "MilkyPalette" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "CrystalFlourez" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "FireFlourez" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "ShiningFlourez" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "ProtectFlourez" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "TornadoFlourez" (error "Specify specialItemNameJa") []
-  , mkSpecialItem "MilkyMirror" (error "Specify specialItemNameJa") []
+  [ mkSpecialItem "CureMo" "キュアモ" []
+  , mkSpecialItem "Milky Palette" "ミルキィパレット" []
+  , mkSpecialItem "Crystal Flourez" "クリスタル・フルーレ" []
+  , mkSpecialItem "Fire Flourez" "ファイヤー・フルーレ" []
+  , mkSpecialItem "Shining Flourez" "シャイニング・フルーレ" []
+  , mkSpecialItem "Protect Flourez" "プロテクト・フルーレ" []
+  , mkSpecialItem "Tornado Flourez" "トルネード・フルーレ" []
+  , mkSpecialItem "Milky Mirror" "ミルキィミラー" []
   ]
 
 
@@ -94,7 +93,6 @@ transformations =
       ["CureMo", "MilkyPalette"]
       ["CureDream","CureRouge","CureLemonade","CureMint","CureAqua","MilkyRose"]
       transformationSpeech_Yes5GoGo
-
   ]
 
 
@@ -114,7 +112,6 @@ purifications =
       ["CureDream", "CureRouge", "CureLemonade", "CureMint", "CureAqua"]
       ["CrystalFlourez", "FireFlourez", "ShiningFlourez", "ProtectFlourez", "TornadoFlourez"]
       purificationSpeech_Yes5GoGo
-
   ]
 
 
@@ -126,5 +123,3 @@ nonItemPurifications =
   , mkNonItemPurification ["CureMint"] purificationSpeech_Mint_GoGo
   , mkNonItemPurification ["CureAqua"] purificationSpeech_Aqua_GoGo
   ]
-
-
