@@ -35,11 +35,11 @@ specialItems :: [SpecialItem]
 specialItems =
   [ mkSpecialItem "CureMo" "キュアモ" []
   , mkSpecialItem "Milky Palette" "ミルキィパレット" []
-  , mkSpecialItem "Crystal Flourez" "クリスタル・フルーレ" []
-  , mkSpecialItem "Fire Flourez" "ファイヤー・フルーレ" []
-  , mkSpecialItem "Shining Flourez" "シャイニング・フルーレ" []
-  , mkSpecialItem "Protect Flourez" "プロテクト・フルーレ" []
-  , mkSpecialItem "Tornado Flourez" "トルネード・フルーレ" []
+  , mkSpecialItem "Crystal Fleuret" "クリスタル・フルーレ" []
+  , mkSpecialItem "Fire Fleuret" "ファイヤー・フルーレ" []
+  , mkSpecialItem "Shining Fleuret" "シャイニング・フルーレ" []
+  , mkSpecialItem "Protect Fleuret" "プロテクト・フルーレ" []
+  , mkSpecialItem "Tornado Fleuret" "トルネード・フルーレ" []
   , mkSpecialItem "Milky Mirror" "ミルキィミラー" []
   ]
 
@@ -110,7 +110,7 @@ purifications =
 
   , mkPurification
       ["CureDream", "CureRouge", "CureLemonade", "CureMint", "CureAqua"]
-      ["CrystalFlourez", "FireFlourez", "ShiningFlourez", "ProtectFlourez", "TornadoFlourez"]
+      ["CrystalFleuret", "FireFleuret", "ShiningFleuret", "ProtectFleuret", "TornadoFleuret"]
       purificationSpeech_Yes5GoGo
   ]
 
