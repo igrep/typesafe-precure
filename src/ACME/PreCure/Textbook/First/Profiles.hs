@@ -42,7 +42,7 @@ specialItems :: [SpecialItem]
 specialItems =
   [ mkSpecialItem "Card Commune Mepple" "カードコミューン（メップル）" []
   , mkSpecialItem "Card Commune Mipple" "カードコミューン（ミップル）" []
-  , mkSpecialItem "RainbowBrace" "レインボーブレス" []
+  , mkSpecialItem "Rainbow Bracelets" "レインボーブレス" []
   ]
 
 
@@ -60,7 +60,7 @@ purifications :: [Purification]
 purifications =
   [ mkPurification
       ["CureBlack", "CureWhite"]
-      ["RainbowBrace"]
+      ["RainbowBracelets"]
       purificationSpeech_Black_White_RainbowStorm
   ]
 

@@ -53,7 +53,7 @@ spec = do
   let action = do
         (CureBlack, CureWhite) <- transform (Nagisa, Honoka) (CardCommuneMepple, CardCommuneMipple)
         purifyWithoutItem (CureBlack, CureWhite)
-        purify (CureBlack, CureWhite) RainbowBrace
+        purify (CureBlack, CureWhite) RainbowBracelets
 
   describe "composeEpisode" $ do
     it "returns accumulated lines" $ do
@@ -61,7 +61,7 @@ spec = do
           expected =
               transformationSpeech (Nagisa, Honoka) (CardCommuneMepple, CardCommuneMipple)
                 ++ nonItemPurificationSpeech (CureBlack, CureWhite)
-                ++ purificationSpeech (CureBlack, CureWhite) RainbowBrace
+                ++ purificationSpeech (CureBlack, CureWhite) RainbowBracelets
       actual `shouldBe` expected
 
   describe "printEpisodeWith" $ do
