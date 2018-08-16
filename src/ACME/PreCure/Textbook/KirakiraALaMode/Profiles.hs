@@ -45,7 +45,7 @@ transformedGroupsKirakiraALaMode =
   , mkTransformedGroup groupMembers_KirakiraALaMode_ALaModeStyle ne aLaModeStyleEn nj aLaModeStyle
   ]
   where
-    ne = "Kirakira PreCure A La Mode"
+    ne = "Kirakira ☆ PreCure A La Mode"
     nj = "キラキラ☆プリキュアアラモード"
 
 

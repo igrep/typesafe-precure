@@ -106,8 +106,8 @@ transformees =
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ["CureFlora", "CureMermaid", "CureTwinkle", "CureScarlet"] "Go Princess" "" groupName_GoPrincess ""
-  , mkTransformedGroup ["CureFlora_ModeElegantRoyal", "CureMermaid_ModeElegantRoyal", "CureTwinkle_ModeElegantRoyal", "CureScarlet_ModeElegantRoyal"] "Go Princess" "Mode Elegant Royal" groupName_GoPrincess variation_ModeElegantRoyal
+  [ mkTransformedGroup ["CureFlora", "CureMermaid", "CureTwinkle", "CureScarlet"] "Go! Princess PreCure" "" groupName_GoPrincess ""
+  , mkTransformedGroup ["CureFlora_ModeElegantRoyal", "CureMermaid_ModeElegantRoyal", "CureTwinkle_ModeElegantRoyal", "CureScarlet_ModeElegantRoyal"] "Go! Princess PreCure" "Mode Elegant Royal" groupName_GoPrincess variation_ModeElegantRoyal
   ]
 
 

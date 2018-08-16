@@ -34,7 +34,7 @@ transformees =
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ["CureBlack", "CureWhite"] "First" "" groupName_First ""
+  [ mkTransformedGroup ["CureBlack", "CureWhite"] "Futari wa PreCure" "" groupName_First ""
   ]
 
 

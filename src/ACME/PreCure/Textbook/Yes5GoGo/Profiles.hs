@@ -27,7 +27,7 @@ transformees =
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ["CureDream", "CureRouge", "CureLemonade", "CureMint", "CureAqua", "MilkyRose"] "Yes5 Go Go" "" groupName_Yes5GoGo ""
+  [ mkTransformedGroup ["CureDream", "CureRouge", "CureLemonade", "CureMint", "CureAqua", "MilkyRose"] "Yes! PreCure 5 GoGo!" "" groupName_Yes5GoGo ""
   ]
 
 

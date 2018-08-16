@@ -41,8 +41,8 @@ transformees =
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ["CureBlack_Max", "CureWhite_Max"] "Max Heart" "" groupName_MaxHeart ""
-  , mkTransformedGroup ["CureBlack_Max", "CureWhite_Max", "ShinyLuminous"] "Max Heart" "" groupName_MaxHeart ""
+  [ mkTransformedGroup ["CureBlack_Max", "CureWhite_Max"] "Futari wa PreCure Max Heart" "" groupName_MaxHeart ""
+  , mkTransformedGroup ["CureBlack_Max", "CureWhite_Max", "ShinyLuminous"] "Futari wa PreCure Max Heart" "" groupName_MaxHeart ""
   ]
 
 

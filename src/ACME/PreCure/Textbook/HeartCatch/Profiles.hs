@@ -78,8 +78,8 @@ transformees =
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ["CureBlossom", "CureMarine", "CureSunshine", "CureMoonlight"] "Heart Catch" "" groupName_HeartCatch ""
-  , mkTransformedGroup ["SuperCureBlossom", "SuperCureMarine", "SuperCureSunshine", "SuperCureMoonlight"] "Heart Catch" "Super Silhouette" groupName_HeartCatch variation_SuperSilhouette
+  [ mkTransformedGroup ["CureBlossom", "CureMarine", "CureSunshine", "CureMoonlight"] "HeartCatch PreCure!" "" groupName_HeartCatch ""
+  , mkTransformedGroup ["SuperCureBlossom", "SuperCureMarine", "SuperCureSunshine", "SuperCureMoonlight"] "HeartCatch PreCure!" "Super Silhouette" groupName_HeartCatch variation_SuperSilhouette
   ]
 
 

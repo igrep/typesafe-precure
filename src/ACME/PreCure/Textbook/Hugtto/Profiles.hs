@@ -53,7 +53,7 @@ transformeesHugtto =
 transformedGroupsHugtto :: [TransformedGroup]
 transformedGroupsHugtto = [mkTransformedGroup groupMembers_Hugtto ne "" nj ""]
   where
-    ne = "Hugtto PreCure"
+    ne = "Hugtto! PreCure"
     nj = "HUGっと！プリキュア"
 
 specialItemsHugtto :: [SpecialItem]

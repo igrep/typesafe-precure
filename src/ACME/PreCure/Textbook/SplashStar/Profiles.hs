@@ -48,8 +48,8 @@ transformees =
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ["CureBloom", "CureEgret"] "Splash Star" "" groupName_SplashStar ""
-  , mkTransformedGroup ["CureBright", "CureWindy"] "Splash Star" "Bright_ Windy" groupName_SplashStar variation_Bright_Windy
+  [ mkTransformedGroup ["CureBloom", "CureEgret"] "Futari wa PreCure Splash Star" "" groupName_SplashStar ""
+  , mkTransformedGroup ["CureBright", "CureWindy"] "Futari wa PreCure Splash Star" "(Cure Bloom, Cure Windy)" groupName_SplashStar variation_Bright_Windy
   ]
 
 

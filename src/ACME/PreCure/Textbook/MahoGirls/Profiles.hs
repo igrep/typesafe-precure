@@ -161,20 +161,20 @@ transformees =
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ["CureMiracle", "CureMagical"] "Maho Girls" "Dia" groupName_MahoGirls variation_Dia
-  , mkTransformedGroup ["CureMiracle_Ruby", "CureMagical_Ruby"] "Maho Girls" "Ruby" groupName_MahoGirls variation_Ruby
-  , mkTransformedGroup ["CureMiracle_Sapphire", "CureMagical_Sapphire"] "Maho Girls" "Sapphire" groupName_MahoGirls variation_Sapphire
-  , mkTransformedGroup ["CureMiracle_Topaz", "CureMagical_Topaz"] "Maho Girls" "Topaz" groupName_MahoGirls variation_Topaz
-  , mkTransformedGroup ["CureMiracle", "CureMagical", "CureFelice"] "Maho Girls" "Dia" groupName_MahoGirls variation_Dia
-  , mkTransformedGroup ["CureMiracle_Ruby", "CureMagical_Ruby", "CureFelice"] "Maho Girls" "Ruby" groupName_MahoGirls variation_Ruby
-  , mkTransformedGroup ["CureMiracle_Sapphire", "CureMagical_Sapphire", "CureFelice"] "Maho Girls" "Sapphire" groupName_MahoGirls variation_Sapphire
-  , mkTransformedGroup ["CureMiracle_Topaz", "CureMagical_Topaz", "CureFelice"] "Maho Girls" "Topaz" groupName_MahoGirls variation_Topaz
-  , mkTransformedGroup ["CureMiracle", "CureMagical", "CureFelice", "CureMofurun"] "Maho Girls" "Dia" groupName_MahoGirls variation_Dia
-  , mkTransformedGroup ["CureMiracle_Ruby", "CureMagical_Ruby", "CureFelice", "CureMofurun_Ruby"] "Maho Girls" "Ruby" groupName_MahoGirls variation_Ruby
-  , mkTransformedGroup ["CureMiracle_Sapphire", "CureMagical_Sapphire", "CureFelice", "CureMofurun_Sapphire"] "Maho Girls" "Sapphire" groupName_MahoGirls variation_Sapphire
-  , mkTransformedGroup ["CureMiracle_Topaz", "CureMagical_Topaz", "CureFelice", "CureMofurun_Topaz"] "Maho Girls" "Topaz" groupName_MahoGirls variation_Topaz
-  , mkTransformedGroup ["CureMiracle_OverTheRainbow", "CureMagical_OverTheRainbow", "CureFelice_OverTheRainbow"] "Maho Girls" "Over The Rainbow" groupName_MahoGirls variation_OverTheRainbow
-  , mkTransformedGroup ["CureMiracle_Heartful", "CureMagical_Heartful", "CureFelice_Heartful", "CureMofurun_Heartful"] "Maho Girls" "Heartful" groupName_MahoGirls variation_Heartful
+  [ mkTransformedGroup ["CureMiracle", "CureMagical"] "Maho Girls PreCure!" "Dia Style" groupName_MahoGirls variation_Dia
+  , mkTransformedGroup ["CureMiracle_Ruby", "CureMagical_Ruby"] "Maho Girls PreCure!" "Ruby Style" groupName_MahoGirls variation_Ruby
+  , mkTransformedGroup ["CureMiracle_Sapphire", "CureMagical_Sapphire"] "Maho Girls PreCure!" "Sapphire Style" groupName_MahoGirls variation_Sapphire
+  , mkTransformedGroup ["CureMiracle_Topaz", "CureMagical_Topaz"] "Maho Girls PreCure!" "Topaz Style" groupName_MahoGirls variation_Topaz
+  , mkTransformedGroup ["CureMiracle", "CureMagical", "CureFelice"] "Maho Girls PreCure!" "Dia Style" groupName_MahoGirls variation_Dia
+  , mkTransformedGroup ["CureMiracle_Ruby", "CureMagical_Ruby", "CureFelice"] "Maho Girls PreCure!" "Ruby Style" groupName_MahoGirls variation_Ruby
+  , mkTransformedGroup ["CureMiracle_Sapphire", "CureMagical_Sapphire", "CureFelice"] "Maho Girls PreCure!" "Sapphire Style" groupName_MahoGirls variation_Sapphire
+  , mkTransformedGroup ["CureMiracle_Topaz", "CureMagical_Topaz", "CureFelice"] "Maho Girls PreCure!" "Topaz Style" groupName_MahoGirls variation_Topaz
+  , mkTransformedGroup ["CureMiracle", "CureMagical", "CureFelice", "CureMofurun"] "Maho Girls PreCure!" "Dia Style" groupName_MahoGirls variation_Dia
+  , mkTransformedGroup ["CureMiracle_Ruby", "CureMagical_Ruby", "CureFelice", "CureMofurun_Ruby"] "Maho Girls PreCure!" "Ruby Style" groupName_MahoGirls variation_Ruby
+  , mkTransformedGroup ["CureMiracle_Sapphire", "CureMagical_Sapphire", "CureFelice", "CureMofurun_Sapphire"] "Maho Girls PreCure!" "Sapphire Style" groupName_MahoGirls variation_Sapphire
+  , mkTransformedGroup ["CureMiracle_Topaz", "CureMagical_Topaz", "CureFelice", "CureMofurun_Topaz"] "Maho Girls PreCure!" "Topaz Style" groupName_MahoGirls variation_Topaz
+  , mkTransformedGroup ["CureMiracle_OverTheRainbow", "CureMagical_OverTheRainbow", "CureFelice_OverTheRainbow"] "Maho Girls PreCure!" "Over The Rainbow" groupName_MahoGirls variation_OverTheRainbow
+  , mkTransformedGroup ["CureMiracle_Heartful", "CureMagical_Heartful", "CureFelice_Heartful", "CureMofurun_Heartful"] "Maho Girls PreCure!" "Heartful Style" groupName_MahoGirls variation_Heartful
   ]
 
 

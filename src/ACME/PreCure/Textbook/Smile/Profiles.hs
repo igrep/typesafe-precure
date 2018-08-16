@@ -93,8 +93,8 @@ transformees =
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ["CureHappy", "CureSunny", "CurePeace", "CureMarch", "CureBeauty"] "Smile" "" groupName_Smile ""
-  , mkTransformedGroup ["PrincessHappy", "PrincessSunny", "PrincessPeace", "PrincessMarch", "PrincessBeauty"] "Smile" "Smile_ Princess" groupName_Smile variation_Smile_Princess
+  [ mkTransformedGroup ["CureHappy", "CureSunny", "CurePeace", "CureMarch", "CureBeauty"] "Smile PreCure!" "" groupName_Smile ""
+  , mkTransformedGroup ["PrincessHappy", "PrincessSunny", "PrincessPeace", "PrincessMarch", "PrincessBeauty"] "Smile PreCure!" "PreCure Princess Form" groupName_Smile variation_Smile_Princess
   ]
 
 

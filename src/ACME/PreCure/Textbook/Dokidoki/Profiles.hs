@@ -58,7 +58,7 @@ transformees =
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ["CureHeart", "CureDiamond", "CureRosetta", "CureSword", "CureAce"] "Dokidoki" "" groupName_Dokidoki ""
+  [ mkTransformedGroup ["CureHeart", "CureDiamond", "CureRosetta", "CureSword", "CureAce"] "DokiDoki! PreCure" "" groupName_Dokidoki ""
   ]
 
 

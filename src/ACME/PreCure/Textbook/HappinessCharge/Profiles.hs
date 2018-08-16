@@ -78,8 +78,8 @@ transformees =
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ["CureLovely", "CurePrincess", "CureHoney", "CureFortune"] "Happiness Charge" "" groupName_HappinessCharge ""
-  , mkTransformedGroup ["CureLovely_InnocentForm", "CurePrincess_InnocentForm", "CureHoney_InnocentForm", "CureFortune_InnocentForm"] "Happiness Charge" "Innocent Form" groupName_HappinessCharge variation_InnocentForm
+  [ mkTransformedGroup ["CureLovely", "CurePrincess", "CureHoney", "CureFortune"] "HappinessCharge PreCure!" "" groupName_HappinessCharge ""
+  , mkTransformedGroup ["CureLovely_InnocentForm", "CurePrincess_InnocentForm", "CureHoney_InnocentForm", "CureFortune_InnocentForm"] "HappinessCharge PreCure!" "Innocent Form" groupName_HappinessCharge variation_InnocentForm
   ]
 
 
