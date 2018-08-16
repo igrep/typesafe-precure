@@ -201,6 +201,60 @@
             "attachments": [],
             "nameJa": "スイーツキャッスル",
             "id": "SweetsCastle"
+        },
+        {
+            "nameEn": "Card Commune Mepple",
+            "attachments": [],
+            "nameJa": "カードコミューン（メップル）",
+            "id": "CardCommuneMepple"
+        },
+        {
+            "nameEn": "Card Commune Mipple",
+            "attachments": [],
+            "nameJa": "カードコミューン（ミップル）",
+            "id": "CardCommuneMipple"
+        },
+        {
+            "nameEn": "RainbowBrace",
+            "attachments": [],
+            "nameJa": "レインボーブレス",
+            "id": "RainbowBrace"
+        },
+        {
+            "nameEn": "Pinky Catch",
+            "attachments": [],
+            "nameJa": "ピンキーキャッチュ",
+            "id": "PinkyCatch"
+        },
+        {
+            "nameEn": "Dream Torch",
+            "attachments": [],
+            "nameJa": "ドリーム・トーチ",
+            "id": "DreamTorch"
+        },
+        {
+            "nameEn": "Rouge Tact",
+            "attachments": [],
+            "nameJa": "ルージュ・タクト",
+            "id": "RougeTact"
+        },
+        {
+            "nameEn": "Lemonade Castanet",
+            "attachments": [],
+            "nameJa": "レモネード・カスタネット",
+            "id": "LemonadeCastanet"
+        },
+        {
+            "nameEn": "Mint Leaf",
+            "attachments": [],
+            "nameJa": "ミント・リーフ",
+            "id": "MintLeaf"
+        },
+        {
+            "nameEn": "Aqua Ribbon",
+            "attachments": [],
+            "nameJa": "アクア・リボン",
+            "id": "AquaRibbon"
         }
     ],
     "transformees": [
@@ -347,6 +401,62 @@
             "variationJa": "アラモードスタイル",
             "id": "CureParfait_ALaModeStyle",
             "introducesHerselfAs": "パフェ！夢と希望を！レッツ・ラ・まぜまぜ！キュアパルフェ！できあがり！"
+        },
+        {
+            "nameEn": "Cure Black",
+            "variationEn": "",
+            "nameJa": "キュアブラック",
+            "variationJa": "",
+            "id": "CureBlack",
+            "introducesHerselfAs": "光の使者、キュアブラック！"
+        },
+        {
+            "nameEn": "Cure White",
+            "variationEn": "",
+            "nameJa": "キュアホワイト",
+            "variationJa": "",
+            "id": "CureWhite",
+            "introducesHerselfAs": "光の使者、キュアホワイト！"
+        },
+        {
+            "nameEn": "Cure Dream",
+            "variationEn": "",
+            "nameJa": "キュアドリーム",
+            "variationJa": "",
+            "id": "CureDream",
+            "introducesHerselfAs": "大いなる希望の力、キュアドリーム！"
+        },
+        {
+            "nameEn": "Cure Rouge",
+            "variationEn": "",
+            "nameJa": "キュアルージュ",
+            "variationJa": "",
+            "id": "CureRouge",
+            "introducesHerselfAs": "情熱の赤い炎、キュアルージュ！"
+        },
+        {
+            "nameEn": "Cure Lemonade",
+            "variationEn": "",
+            "nameJa": "キュアレモネード",
+            "variationJa": "",
+            "id": "CureLemonade",
+            "introducesHerselfAs": "はじけるレモンの香り、キュアレモネード！"
+        },
+        {
+            "nameEn": "Cure Mint",
+            "variationEn": "",
+            "nameJa": "キュアミント",
+            "variationJa": "",
+            "id": "CureMint",
+            "introducesHerselfAs": "安らぎの緑の大地、キュアミント！"
+        },
+        {
+            "nameEn": "Cure Aqua",
+            "variationEn": "",
+            "nameJa": "キュアアクア",
+            "variationJa": "",
+            "id": "CureAqua",
+            "introducesHerselfAs": "知性の青き泉、キュアアクア！"
         }
     ],
     "girls": [
@@ -409,6 +519,41 @@
             "nameEn": "Pekorin",
             "nameJa": "ペコリン",
             "id": "Pekorin"
+        },
+        {
+            "nameEn": "Nagisa Misumi",
+            "nameJa": "美墨 なぎさ",
+            "id": "Nagisa"
+        },
+        {
+            "nameEn": "Honoka Yukishiro",
+            "nameJa": "雪城 ほのか",
+            "id": "Honoka"
+        },
+        {
+            "nameEn": "Nozomi Yumehara",
+            "nameJa": "夢原 のぞみ",
+            "id": "Nozomi"
+        },
+        {
+            "nameEn": "Rin Natsuki",
+            "nameJa": "夏木 りん",
+            "id": "Rin"
+        },
+        {
+            "nameEn": "Urara Kasugano",
+            "nameJa": "春日野 うらら",
+            "id": "Urara"
+        },
+        {
+            "nameEn": "Komachi Akimoto",
+            "nameJa": "秋元 こまち",
+            "id": "Komachi"
+        },
+        {
+            "nameEn": "Karen Minazuki",
+            "nameJa": "水無月 かれん",
+            "id": "Karen"
         }
     ],
     "purifications": [
@@ -858,6 +1003,162 @@
                 "わん！",
                 "ぱたた！",
                 "プリキュア・ファンタスティックアニマーレ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "RainbowBrace"
+            ],
+            "purifiers": [
+                "CureBlack",
+                "CureWhite"
+            ],
+            "speech": [
+                "希望の力よ！光の意思よ！",
+                "未来に向かって、突き進め！",
+                "プリキュア・レインボー・ストーム！！"
+            ]
+        },
+        {
+            "specialItems": [
+                "PinkyCatch"
+            ],
+            "purifiers": [
+                "CureDream"
+            ],
+            "speech": [
+                "夢見る乙女の底力、受けてみなさい！",
+                "プリキュア！ドリーム・アタック！"
+            ]
+        },
+        {
+            "specialItems": [
+                "PinkyCatch"
+            ],
+            "purifiers": [
+                "CureRouge"
+            ],
+            "speech": [
+                "純情乙女の炎の力、受けてみなさい！",
+                "プリキュア！ルージュ・ファイヤー！"
+            ]
+        },
+        {
+            "specialItems": [
+                "PinkyCatch"
+            ],
+            "purifiers": [
+                "CureLemonade"
+            ],
+            "speech": [
+                "輝く乙女のはじける力、受けてみなさい！",
+                "プリキュア！レモネード・フラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "PinkyCatch"
+            ],
+            "purifiers": [
+                "CureMint"
+            ],
+            "speech": [
+                "大地を揺るがす乙女の怒り、受けてみなさい！",
+                "プリキュア！ミント・プロテクション！"
+            ]
+        },
+        {
+            "specialItems": [
+                "PinkyCatch"
+            ],
+            "purifiers": [
+                "CureAqua"
+            ],
+            "speech": [
+                "岩をも砕く乙女の激流、受けてみなさい！",
+                "プリキュア！アクア・ストリーム！"
+            ]
+        },
+        {
+            "specialItems": [
+                "DreamTorch"
+            ],
+            "purifiers": [
+                "CureDream"
+            ],
+            "speech": [
+                "夢見る乙女の底力、受けてみなさい！",
+                "プリキュア！クリスタル・シュート！"
+            ]
+        },
+        {
+            "specialItems": [
+                "RougeTact"
+            ],
+            "purifiers": [
+                "CureRouge"
+            ],
+            "speech": [
+                "純情乙女の炎の力、受けてみなさい！",
+                "プリキュア！ルージュ・バーニング！"
+            ]
+        },
+        {
+            "specialItems": [
+                "LemonadeCastanet"
+            ],
+            "purifiers": [
+                "CureLemonade"
+            ],
+            "speech": [
+                "輝く乙女のはじける力、受けてみなさい！",
+                "プリキュア！レモネード・シャイニング！"
+            ]
+        },
+        {
+            "specialItems": [
+                "MintLeaf"
+            ],
+            "purifiers": [
+                "CureMint"
+            ],
+            "speech": [
+                "大地を揺るがす乙女の怒り、受けてみなさい！",
+                "プリキュア！ミント・シールド！"
+            ]
+        },
+        {
+            "specialItems": [
+                "AquaRibbon"
+            ],
+            "purifiers": [
+                "CureAqua"
+            ],
+            "speech": [
+                "岩をも砕く乙女の激流、受けてみなさい！",
+                "プリキュア！アクア・トルネード！"
+            ]
+        },
+        {
+            "specialItems": [
+                "DreamTorch",
+                "RougeTact",
+                "LemonadeCastanet",
+                "MintLeaf",
+                "AquaRibbon"
+            ],
+            "purifiers": [
+                "CureDream",
+                "CureRouge",
+                "CureLemonade",
+                "CureMint",
+                "CureAqua"
+            ],
+            "speech": [
+                "夢と希望の力とともに！",
+                "5つの光よ！",
+                "今ここに！",
+                "プリキュア！ファイブ・エクスプロージョン！"
             ]
         }
     ],
@@ -1831,12 +2132,153 @@
                 "CureChocolat",
                 "CureParfait"
             ]
+        },
+        {
+            "specialItems": [
+                "CardCommuneMepple",
+                "CardCommuneMipple"
+            ],
+            "transformees": [
+                "CureBlack",
+                "CureWhite"
+            ],
+            "speech": [
+                "デュアル・オーロラ・ウェイブ！！",
+                "光の使者、キュアブラック！",
+                "光の使者、キュアホワイト！",
+                "ふたりはプリキュア！",
+                "闇の力のしもべ達よ！",
+                "とっととお家に帰りなさい！"
+            ],
+            "transformers": [
+                "Nagisa",
+                "Honoka"
+            ]
+        },
+        {
+            "specialItems": [
+                "PinkyCatch"
+            ],
+            "transformees": [
+                "CureDream"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "大いなる希望の力、キュアドリーム！"
+            ],
+            "transformers": [
+                "Nozomi"
+            ]
+        },
+        {
+            "specialItems": [
+                "PinkyCatch"
+            ],
+            "transformees": [
+                "CureRouge"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "情熱の赤い炎、キュアルージュ！"
+            ],
+            "transformers": [
+                "Rin"
+            ]
+        },
+        {
+            "specialItems": [
+                "PinkyCatch"
+            ],
+            "transformees": [
+                "CureLemonade"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "はじけるレモンの香り、キュアレモネード！"
+            ],
+            "transformers": [
+                "Urara"
+            ]
+        },
+        {
+            "specialItems": [
+                "PinkyCatch"
+            ],
+            "transformees": [
+                "CureMint"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "安らぎの緑の大地、キュアミント！"
+            ],
+            "transformers": [
+                "Komachi"
+            ]
+        },
+        {
+            "specialItems": [
+                "PinkyCatch"
+            ],
+            "transformees": [
+                "CureAqua"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "知性の青き泉、キュアアクア！"
+            ],
+            "transformers": [
+                "Karen"
+            ]
+        },
+        {
+            "specialItems": [
+                "PinkyCatch"
+            ],
+            "transformees": [
+                "CureDream",
+                "CureRouge",
+                "CureLemonade",
+                "CureMint",
+                "CureAqua"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "大いなる希望の力、キュアドリーム！",
+                "情熱の赤い炎、キュアルージュ！",
+                "はじけるレモンの香り、キュアレモネード！",
+                "安らぎの緑の大地、キュアミント！",
+                "知性の青き泉、キュアアクア！",
+                "希望の力と未来の光！",
+                "華麗に羽ばたく5つの心！",
+                "Yes！プリキュア5！"
+            ],
+            "transformers": [
+                "Nozomi",
+                "Rin",
+                "Urara",
+                "Komachi",
+                "Karen"
+            ]
         }
     ],
-    "nonItemPurifications": [],
+    "nonItemPurifications": [
+        {
+            "purifiers": [
+                "CureBlack",
+                "CureWhite"
+            ],
+            "speech": [
+                "ブラックサンダー！",
+                "ホワイトサンダー！",
+                "プリキュアの美しき魂が！",
+                "邪悪な心を打ち砕く！",
+                "プリキュア・マーブル・スクリュー！！"
+            ]
+        }
+    ],
     "transformedGroups": [
         {
-            "nameEn": "Hugtto PreCure",
+            "nameEn": "Hugtto! PreCure",
             "variationEn": "",
             "nameJa": "HUGっと！プリキュア",
             "variationJa": "",
@@ -1849,7 +2291,7 @@
             ]
         },
         {
-            "nameEn": "Kirakira PreCure A La Mode",
+            "nameEn": "Kirakira ☆ PreCure A La Mode",
             "variationEn": "",
             "nameJa": "キラキラ☆プリキュアアラモード",
             "variationJa": "",
@@ -1863,7 +2305,7 @@
             ]
         },
         {
-            "nameEn": "Kirakira PreCure A La Mode",
+            "nameEn": "Kirakira ☆ PreCure A La Mode",
             "variationEn": "A La Mode Style",
             "nameJa": "キラキラ☆プリキュアアラモード",
             "variationJa": "アラモードスタイル",
@@ -1874,6 +2316,29 @@
                 "CureMacaron_ALaModeStyle",
                 "CureChocolat_ALaModeStyle",
                 "CureParfait_ALaModeStyle"
+            ]
+        },
+        {
+            "nameEn": "Futari wa PreCure",
+            "variationEn": "",
+            "nameJa": "ふたりはプリキュア",
+            "variationJa": "",
+            "transformerIds": [
+                "CureBlack",
+                "CureWhite"
+            ]
+        },
+        {
+            "nameEn": "Yes! PreCure 5",
+            "variationEn": "",
+            "nameJa": "Yes! プリキュア 5",
+            "variationJa": "",
+            "transformerIds": [
+                "CureDream",
+                "CureRouge",
+                "CureLemonade",
+                "CureMint",
+                "CureAqua"
             ]
         }
     ]
