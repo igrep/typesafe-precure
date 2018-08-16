@@ -1,6 +1,66 @@
 {
     "specialItems": [
         {
+            "nameEn": "Lovely Commune Sharuru",
+            "attachments": [
+                "Cure Loveads"
+            ],
+            "nameJa": "ラブリーコミューン（シャルル）",
+            "id": "LovelyCommuneSharuru"
+        },
+        {
+            "nameEn": "Lovely Commune Raquel",
+            "attachments": [
+                "Cure Loveads"
+            ],
+            "nameJa": "ラブリーコミューン（ラケル）",
+            "id": "LovelyCommuneRaquel"
+        },
+        {
+            "nameEn": "Lovely Commune Lance",
+            "attachments": [
+                "Cure Loveads"
+            ],
+            "nameJa": "ラブリーコミューン（ランス）",
+            "id": "LovelyCommuneLance"
+        },
+        {
+            "nameEn": "Lovely Commune Davi",
+            "attachments": [
+                "Cure Loveads"
+            ],
+            "nameJa": "ラブリーコミューン（ダビィ）",
+            "id": "LovelyCommuneDavi"
+        },
+        {
+            "nameEn": "Love Eyes Palette",
+            "attachments": [
+                "Cure Loveads"
+            ],
+            "nameJa": "ラブアイズパレット",
+            "id": "LoveEyesPalette"
+        },
+        {
+            "nameEn": "Cure Loveads",
+            "attachments": [],
+            "nameJa": "キュアラビーズ",
+            "id": "CureLoveads"
+        },
+        {
+            "nameEn": "Love Kiss Rouge",
+            "attachments": [],
+            "nameJa": "ラブキッスルージュ",
+            "id": "LoveKissRouge"
+        },
+        {
+            "nameEn": "MagicalLovely Harp",
+            "attachments": [
+                "Cure Loveads"
+            ],
+            "nameJa": "マジカルラブリーハープ",
+            "id": "MagicalLovelyHarp"
+        },
+        {
             "nameEn": "Card Commune Mepple",
             "attachments": [],
             "nameJa": "カードコミューン（メップル）",
@@ -13,10 +73,821 @@
             "id": "CardCommuneMipple"
         },
         {
-            "nameEn": "RainbowBrace",
+            "nameEn": "Rainbow Bracelets",
             "attachments": [],
             "nameJa": "レインボーブレス",
-            "id": "RainbowBrace"
+            "id": "RainbowBracelets"
+        },
+        {
+            "nameEn": "Linkrun",
+            "attachments": [],
+            "nameJa": "リンクルン",
+            "id": "Linkrun"
+        },
+        {
+            "nameEn": "CureStickPeachRod",
+            "attachments": [],
+            "nameJa": "キュアスティック・ピーチロッド",
+            "id": "CureStickPeachRod"
+        },
+        {
+            "nameEn": "CureStickBerrySword",
+            "attachments": [],
+            "nameJa": "キュアスティック・ベリーソード",
+            "id": "CureStickBerrySword"
+        },
+        {
+            "nameEn": "CureStickPineFlute",
+            "attachments": [],
+            "nameJa": "キュアスティック・パインフルート",
+            "id": "CureStickPineFlute"
+        },
+        {
+            "nameEn": "PassionHarp",
+            "attachments": [],
+            "nameJa": "パッションハープ",
+            "id": "PassionHarp"
+        },
+        {
+            "nameEn": "CloverBox",
+            "attachments": [],
+            "nameJa": "クローバーボックス",
+            "id": "CloverBox"
+        },
+        {
+            "nameEn": "Princess Perfume",
+            "attachments": [
+                "DressUpKey"
+            ],
+            "nameJa": "プリンセスパフューム",
+            "id": "PrincessPerfume"
+        },
+        {
+            "nameEn": "Crystal Princess Rod",
+            "attachments": [
+                "DressUpKey"
+            ],
+            "nameJa": "クリスタルプリンセスロッド",
+            "id": "CrystalPrincessRod"
+        },
+        {
+            "nameEn": "Scarlet Violin",
+            "attachments": [
+                "DressUpKey"
+            ],
+            "nameJa": "スカーレットバイオリン",
+            "id": "ScarletViolin"
+        },
+        {
+            "nameEn": "Music Princess Palace",
+            "attachments": [
+                "DressUpKey"
+            ],
+            "nameJa": "ミュージックプリンセスパレス",
+            "id": "MusicPrincessPalace"
+        },
+        {
+            "nameEn": "Dress Up Key Flora",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・フローラ",
+            "id": "DressUpKeyFlora"
+        },
+        {
+            "nameEn": "Dress Up Key Rose",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・ローズ",
+            "id": "DressUpKeyRose"
+        },
+        {
+            "nameEn": "Dress Up Key Lily",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・リリィ",
+            "id": "DressUpKeyLily"
+        },
+        {
+            "nameEn": "Dress Up Key Sakura",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・サクラ",
+            "id": "DressUpKeySakura"
+        },
+        {
+            "nameEn": "Dress Up Key Mermaid",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・マーメイド",
+            "id": "DressUpKeyMermaid"
+        },
+        {
+            "nameEn": "Dress Up Key Ice",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・アイス",
+            "id": "DressUpKeyIce"
+        },
+        {
+            "nameEn": "Dress Up Key Bubble",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・バブル",
+            "id": "DressUpKeyBubble"
+        },
+        {
+            "nameEn": "Dress Up Key Sango",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・サンゴ",
+            "id": "DressUpKeySango"
+        },
+        {
+            "nameEn": "Dress Up Key Twinkle",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・トゥインクル",
+            "id": "DressUpKeyTwinkle"
+        },
+        {
+            "nameEn": "Dress Up Key Luna",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・ルナ",
+            "id": "DressUpKeyLuna"
+        },
+        {
+            "nameEn": "Dress Up Key ShootingStar",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・シューティングスター",
+            "id": "DressUpKeyShootingStar"
+        },
+        {
+            "nameEn": "Dress Up Key Ginga",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・ギンガ",
+            "id": "DressUpKeyGinga"
+        },
+        {
+            "nameEn": "Dress Up Key Scarlet",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・スカーレット",
+            "id": "DressUpKeyScarlet"
+        },
+        {
+            "nameEn": "Dress Up Key Phoenix",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・フェニックス",
+            "id": "DressUpKeyPhoenix"
+        },
+        {
+            "nameEn": "Dress Up Key Hanabi",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・ハナビ",
+            "id": "DressUpKeyHanabi"
+        },
+        {
+            "nameEn": "Dress Up Key Sun",
+            "attachments": [],
+            "nameJa": "ドレスアップキー・サン",
+            "id": "DressUpKeySun"
+        },
+        {
+            "nameEn": "Royal Dress Up Key",
+            "attachments": [],
+            "nameJa": "ロイヤルドレスアップキー",
+            "id": "RoyalDressUpKey"
+        },
+        {
+            "nameEn": "PreChan Mirror",
+            "attachments": [
+                "PreCard"
+            ],
+            "nameJa": "プリチェンミラー",
+            "id": "PreChanMirror"
+        },
+        {
+            "nameEn": "Fortune Piano",
+            "attachments": [
+                "PreCard"
+            ],
+            "nameJa": "フォーチュンピアノ",
+            "id": "FortunePiano"
+        },
+        {
+            "nameEn": "PreCard Lovely",
+            "attachments": [],
+            "nameJa": "プリカード（ラブリー）",
+            "id": "PreCardLovely"
+        },
+        {
+            "nameEn": "PreCard Princess",
+            "attachments": [],
+            "nameJa": "プリカード（プリンセス）",
+            "id": "PreCardPrincess"
+        },
+        {
+            "nameEn": "PreCard Honey",
+            "attachments": [],
+            "nameJa": "プリカード（ハニー）",
+            "id": "PreCardHoney"
+        },
+        {
+            "nameEn": "PreCard Fortune",
+            "attachments": [],
+            "nameJa": "プリカード（フォーチュン）",
+            "id": "PreCardFortune"
+        },
+        {
+            "nameEn": "PreCard Lovely Innocent Form",
+            "attachments": [],
+            "nameJa": "プリカード（ラブリー：イノセントフォーム）",
+            "id": "PreCardLovelyInnocentForm"
+        },
+        {
+            "nameEn": "PreCard Princess Innocent Form",
+            "attachments": [],
+            "nameJa": "プリカード（プリンセス：イノセントフォーム）",
+            "id": "PreCardPrincessInnocentForm"
+        },
+        {
+            "nameEn": "PreCard Honey Innocent Form",
+            "attachments": [],
+            "nameJa": "プリカード（ハニー：イノセントフォーム）",
+            "id": "PreCardHoneyInnocentForm"
+        },
+        {
+            "nameEn": "PreCard Fortune Innocent Form",
+            "attachments": [],
+            "nameJa": "プリカード（フォーチュン：イノセントフォーム）",
+            "id": "PreCardFortuneInnocentForm"
+        },
+        {
+            "nameEn": "Love Pre Brace",
+            "attachments": [],
+            "nameJa": "ラブプリブレス",
+            "id": "LovePreBrace"
+        },
+        {
+            "nameEn": "Triple Dance Honey Baton",
+            "attachments": [],
+            "nameJa": "トリプルダンスハニーバトン",
+            "id": "TripleDanceHoneyBaton"
+        },
+        {
+            "nameEn": "Fortune Tambourine",
+            "attachments": [],
+            "nameJa": "フォーチュンタンバリン",
+            "id": "FortuneTambourine"
+        },
+        {
+            "nameEn": "Shining Make Dresser",
+            "attachments": [],
+            "nameJa": "シャイニングメークドレッサー",
+            "id": "ShiningMakeDresser"
+        },
+        {
+            "nameEn": "Innocent Harmony Mic",
+            "attachments": [],
+            "nameJa": "イノセントハーモニーマイク",
+            "id": "InnocentHarmonyMic"
+        },
+        {
+            "nameEn": "Heart Perfume",
+            "attachments": [
+                "PreCureSeed"
+            ],
+            "nameJa": "ココロパフューム",
+            "id": "HeartPerfume"
+        },
+        {
+            "nameEn": "Shiny Perfume",
+            "attachments": [
+                "PreCureSeed"
+            ],
+            "nameJa": "シャイニーパフューム",
+            "id": "ShinyPerfume"
+        },
+        {
+            "nameEn": "Heart Pot",
+            "attachments": [
+                "PreCureSeed"
+            ],
+            "nameJa": "ココロポット",
+            "id": "HeartPot"
+        },
+        {
+            "nameEn": "PreCure Seed",
+            "attachments": [],
+            "nameJa": "プリキュアの種",
+            "id": "PreCureSeed"
+        },
+        {
+            "nameEn": "Blossom Takt",
+            "attachments": [],
+            "nameJa": "ブロッサムタクト",
+            "id": "BlossomTakt"
+        },
+        {
+            "nameEn": "Marine Takt",
+            "attachments": [],
+            "nameJa": "マリンタクト",
+            "id": "MarineTakt"
+        },
+        {
+            "nameEn": "Shiny Tambourine",
+            "attachments": [],
+            "nameJa": "シャイニータンバリン",
+            "id": "ShinyTambourine"
+        },
+        {
+            "nameEn": "Moon Takt",
+            "attachments": [],
+            "nameJa": "ムーンタクト",
+            "id": "MoonTakt"
+        },
+        {
+            "nameEn": "Heart Catch Mirage",
+            "attachments": [
+                "SuperPreCureSeed"
+            ],
+            "nameJa": "ハートキャッチミラージュ",
+            "id": "HeartCatchMirage"
+        },
+        {
+            "nameEn": "Super PreCure Seed",
+            "attachments": [],
+            "nameJa": "スーパープリキュアの種",
+            "id": "SuperPreCureSeed"
+        },
+        {
+            "nameEn": "Pre Heart",
+            "attachments": [
+                "Mirai Crystal"
+            ],
+            "nameJa": "プリハート",
+            "id": "PreHeart"
+        },
+        {
+            "nameEn": "Mirai Crystal Pink",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ピンク",
+            "id": "MiraiCrystalPink"
+        },
+        {
+            "nameEn": "Mirai Crystal Blue",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ブルー",
+            "id": "MiraiCrystalBlue"
+        },
+        {
+            "nameEn": "Mirai Crystal Yellow",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・イエロー",
+            "id": "MiraiCrystalYellow"
+        },
+        {
+            "nameEn": "Melody Sword",
+            "attachments": [
+                "Mirai Crystal"
+            ],
+            "nameJa": "メロディソード",
+            "id": "MelodySword"
+        },
+        {
+            "nameEn": "Mirai Crystal Rose",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ローズ",
+            "id": "MiraiCrystalRose"
+        },
+        {
+            "nameEn": "Mirai Crystal Navy",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ネイビー",
+            "id": "MiraiCrystalNavy"
+        },
+        {
+            "nameEn": "Mirai Crystal Orange",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・オレンジ",
+            "id": "MiraiCrystalOrange"
+        },
+        {
+            "nameEn": "Mirai Crystal White",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ホワイト",
+            "id": "MiraiCrystalWhite"
+        },
+        {
+            "nameEn": "Twin Love Guitar",
+            "attachments": [
+                "Mirai Crystal"
+            ],
+            "nameJa": "ツインラブギター",
+            "id": "TwinLoveGuitar"
+        },
+        {
+            "nameEn": "Mirai Crystal Red",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・レッド",
+            "id": "MiraiCrystalRed"
+        },
+        {
+            "nameEn": "Mirai Crystal Purple",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・パープル",
+            "id": "MiraiCrystalPurple"
+        },
+        {
+            "nameEn": "Mirai Crystal Rouge",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・ルージュ",
+            "id": "MiraiCrystalRouge"
+        },
+        {
+            "nameEn": "Mirai Crystal Violet",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・バイオレット",
+            "id": "MiraiCrystalViolet"
+        },
+        {
+            "nameEn": "Sweets Pact",
+            "attachments": [
+                "Animal Sweets"
+            ],
+            "nameJa": "スイーツパクト",
+            "id": "SweetsPact"
+        },
+        {
+            "nameEn": "Rabbit Shortcake",
+            "attachments": [],
+            "nameJa": "うさぎショートケーキ",
+            "id": "RabbitShortcake"
+        },
+        {
+            "nameEn": "Squirrel Pudding",
+            "attachments": [],
+            "nameJa": "りすプリン",
+            "id": "SquirrelPudding"
+        },
+        {
+            "nameEn": "Lion Ice",
+            "attachments": [],
+            "nameJa": "らいおんアイス",
+            "id": "LionIce"
+        },
+        {
+            "nameEn": "Cat Macaron",
+            "attachments": [],
+            "nameJa": "ねこマカロン",
+            "id": "CatMacaron"
+        },
+        {
+            "nameEn": "Dog Chocolate",
+            "attachments": [],
+            "nameJa": "いぬチョコレート",
+            "id": "DogChocolate"
+        },
+        {
+            "nameEn": "Pegasus Parfait",
+            "attachments": [],
+            "nameJa": "ペガサスパフェ",
+            "id": "PegasusParfait"
+        },
+        {
+            "nameEn": "Pekorin Donut",
+            "attachments": [],
+            "nameJa": "ペコリンドーナツ",
+            "id": "PekorinDonut"
+        },
+        {
+            "nameEn": "Candy Rod",
+            "attachments": [],
+            "nameJa": "キャンディロッド",
+            "id": "CandyRod"
+        },
+        {
+            "nameEn": "Rainbow Ribbon",
+            "attachments": [],
+            "nameJa": "レインボーリボン",
+            "id": "RainbowRibbon"
+        },
+        {
+            "nameEn": "Kirakiraru Creamer",
+            "attachments": [
+                "Crystal Animal"
+            ],
+            "nameJa": "キラキラルクリーマー",
+            "id": "KirakiraruCreamer"
+        },
+        {
+            "nameEn": "Crystal Animal Rabbit",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルうさぎ",
+            "id": "CrystalAnimalRabbit"
+        },
+        {
+            "nameEn": "Crystal Animal Squirrel",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルりす",
+            "id": "CrystalAnimalSquirrel"
+        },
+        {
+            "nameEn": "Crystal Animal Lion",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルらいおん",
+            "id": "CrystalAnimalLion"
+        },
+        {
+            "nameEn": "Crystal Animal Cat",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルねこ",
+            "id": "CrystalAnimalCat"
+        },
+        {
+            "nameEn": "Crystal Animal Dog",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルいぬ",
+            "id": "CrystalAnimalDog"
+        },
+        {
+            "nameEn": "Crystal Animal Pegasus",
+            "attachments": [],
+            "nameJa": "クリスタルアニマルペガサス",
+            "id": "CrystalAnimalPegasus"
+        },
+        {
+            "nameEn": "SweetsCastle",
+            "attachments": [],
+            "nameJa": "スイーツキャッスル",
+            "id": "SweetsCastle"
+        },
+        {
+            "nameEn": "Mofurun",
+            "attachments": [
+                "Linkle Stone"
+            ],
+            "nameJa": "モフルン",
+            "id": "Mofurun"
+        },
+        {
+            "nameEn": "Linkle Smarthon",
+            "attachments": [
+                "Linkle Stone"
+            ],
+            "nameJa": "リンクルスマホン",
+            "id": "LinkleSmarthon"
+        },
+        {
+            "nameEn": "Rainbow Carriage",
+            "attachments": [
+                "Linkle Stone",
+                "Mofurun"
+            ],
+            "nameJa": "レインボーキャリッジ",
+            "id": "RainbowCarriage"
+        },
+        {
+            "nameEn": "Precious Brace",
+            "attachments": [],
+            "nameJa": "プレシャスブレス",
+            "id": "PreciousBrace"
+        },
+        {
+            "nameEn": "Miracle Mofurun Light",
+            "attachments": [],
+            "nameJa": "ミラクルモフルンライト",
+            "id": "MiracleMofurunLight"
+        },
+        {
+            "nameEn": "Linkle Stone Dia",
+            "attachments": [],
+            "nameJa": "リンクルストーン・ダイヤ",
+            "id": "LinkleStoneDia"
+        },
+        {
+            "nameEn": "Linkle Stone Ruby",
+            "attachments": [],
+            "nameJa": "リンクルストーン・ルビー",
+            "id": "LinkleStoneRuby"
+        },
+        {
+            "nameEn": "Linkle Stone Sapphire",
+            "attachments": [],
+            "nameJa": "リンクルストーン・サファイア",
+            "id": "LinkleStoneSapphire"
+        },
+        {
+            "nameEn": "Linkle Stone Topaz",
+            "attachments": [],
+            "nameJa": "リンクルストーン・トパーズ",
+            "id": "LinkleStoneTopaz"
+        },
+        {
+            "nameEn": "Linkle Stone Emerald",
+            "attachments": [],
+            "nameJa": "リンクルストーン・エメラルド",
+            "id": "LinkleStoneEmerald"
+        },
+        {
+            "nameEn": "Linkle Stone Alexandrite",
+            "attachments": [],
+            "nameJa": "リンクルストーン・アレキサンドライト",
+            "id": "LinkleStoneAlexandrite"
+        },
+        {
+            "nameEn": "Mofurun Linkle Stone",
+            "attachments": [],
+            "nameJa": "モフルンリンクルストーン",
+            "id": "MofurunLinkleStone"
+        },
+        {
+            "nameEn": "Heartful Linkle Stone",
+            "attachments": [],
+            "nameJa": "ハートフルリンクルストーン",
+            "id": "HeartfulLinkleStone"
+        },
+        {
+            "nameEn": "Linkle Stick",
+            "attachments": [
+                "Linkle Stone"
+            ],
+            "nameJa": "リンクルステッキ",
+            "id": "LinkleStick"
+        },
+        {
+            "nameEn": "Flower Echo Wand",
+            "attachments": [
+                "Linkle Stone"
+            ],
+            "nameJa": "フラワーエコーワンド",
+            "id": "FlowerEchoWand"
+        },
+        {
+            "nameEn": "Heartful Commune Mepple",
+            "attachments": [],
+            "nameJa": "ハートフルコミューン（メップル）",
+            "id": "HeartfulCommuneMepple"
+        },
+        {
+            "nameEn": "Heartful Commune Mipple",
+            "attachments": [],
+            "nameJa": "ハートフルコミューン（ミップル）",
+            "id": "HeartfulCommuneMipple"
+        },
+        {
+            "nameEn": "TouchCommune_Porun",
+            "attachments": [],
+            "nameJa": "タッチコミューン（ポルン）",
+            "id": "TouchCommune_Porun"
+        },
+        {
+            "nameEn": "Sparkle Brace",
+            "attachments": [],
+            "nameJa": "スパークルブレス",
+            "id": "SparkleBrace"
+        },
+        {
+            "nameEn": "Heartiel Baton",
+            "attachments": [],
+            "nameJa": "ハーティエルバトン",
+            "id": "HeartielBaton"
+        },
+        {
+            "nameEn": "Feeling To Be PreCure",
+            "attachments": [],
+            "nameJa": "プリキュアになりたいという気持ち",
+            "id": "FeelingToBePreCure"
+        },
+        {
+            "nameEn": "Smile Pact",
+            "attachments": [
+                "CureDecors"
+            ],
+            "nameJa": "スマイルパクト",
+            "id": "SmilePact"
+        },
+        {
+            "nameEn": "Cure Decors",
+            "attachments": [],
+            "nameJa": "キュアデコル",
+            "id": "CureDecors"
+        },
+        {
+            "nameEn": "Princess Candle",
+            "attachments": [
+                "CureDecors"
+            ],
+            "nameJa": "プリンセスキャンドル",
+            "id": "PrincessCandle"
+        },
+        {
+            "nameEn": "Royal Clock",
+            "attachments": [
+                "CureDecors"
+            ],
+            "nameJa": "ロイヤルクロック",
+            "id": "RoyalClock"
+        },
+        {
+            "nameEn": "Mix Commune Flappy",
+            "attachments": [],
+            "nameJa": "ミックスコミューン（フラッピ）",
+            "id": "MixCommuneFlappy"
+        },
+        {
+            "nameEn": "Mix Commune Choppy",
+            "attachments": [],
+            "nameJa": "ミックスコミューン（チョッピ）",
+            "id": "MixCommuneChoppy"
+        },
+        {
+            "nameEn": "Crystal Commune Flappy",
+            "attachments": [],
+            "nameJa": "クリスタルコミューン（フラッピ）",
+            "id": "CrystalCommuneFlappy"
+        },
+        {
+            "nameEn": "Crystal Commune Choppy",
+            "attachments": [],
+            "nameJa": "クリスタルコミューン（チョッピ）",
+            "id": "CrystalCommuneChoppy"
+        },
+        {
+            "nameEn": "Cure Modules",
+            "attachments": [
+                "FairyTone"
+            ],
+            "nameJa": "キュアモジューレ",
+            "id": "CureModules"
+        },
+        {
+            "nameEn": "Dory",
+            "attachments": [],
+            "nameJa": "ドリー",
+            "id": "Dory"
+        },
+        {
+            "nameEn": "Rery",
+            "attachments": [],
+            "nameJa": "レリー",
+            "id": "Rery"
+        },
+        {
+            "nameEn": "Miry",
+            "attachments": [],
+            "nameJa": "ミリー",
+            "id": "Miry"
+        },
+        {
+            "nameEn": "Fary",
+            "attachments": [],
+            "nameJa": "ファリー",
+            "id": "Fary"
+        },
+        {
+            "nameEn": "Sory",
+            "attachments": [],
+            "nameJa": "ソリー",
+            "id": "Sory"
+        },
+        {
+            "nameEn": "Lary",
+            "attachments": [],
+            "nameJa": "ラリー",
+            "id": "Lary"
+        },
+        {
+            "nameEn": "Tiry",
+            "attachments": [],
+            "nameJa": "シリー",
+            "id": "Tiry"
+        },
+        {
+            "nameEn": "Dodory",
+            "attachments": [],
+            "nameJa": "ドドリー",
+            "id": "Dodory"
+        },
+        {
+            "nameEn": "Miracle Belltier",
+            "attachments": [
+                "Miry"
+            ],
+            "nameJa": "ミラクルベルティエ",
+            "id": "MiracleBelltier"
+        },
+        {
+            "nameEn": "Fantastic Belltier",
+            "attachments": [
+                "Fary"
+            ],
+            "nameJa": "ファンタスティックベルティエ",
+            "id": "FantasticBelltier"
+        },
+        {
+            "nameEn": "Love Guitar Rod",
+            "attachments": [
+                "Sory"
+            ],
+            "nameJa": "ラブギターロッド",
+            "id": "LoveGuitarRod"
+        },
+        {
+            "nameEn": "Healing Chest",
+            "attachments": [],
+            "nameJa": "ヒーリングチェスト",
+            "id": "HealingChest"
         },
         {
             "nameEn": "Pinky Catch",
@@ -53,9 +924,97 @@
             "attachments": [],
             "nameJa": "アクア・リボン",
             "id": "AquaRibbon"
+        },
+        {
+            "nameEn": "CureMo",
+            "attachments": [],
+            "nameJa": "キュアモ",
+            "id": "CureMo"
+        },
+        {
+            "nameEn": "Milky Palette",
+            "attachments": [],
+            "nameJa": "ミルキィパレット",
+            "id": "MilkyPalette"
+        },
+        {
+            "nameEn": "Crystal Fleuret",
+            "attachments": [],
+            "nameJa": "クリスタル・フルーレ",
+            "id": "CrystalFleuret"
+        },
+        {
+            "nameEn": "Fire Fleuret",
+            "attachments": [],
+            "nameJa": "ファイヤー・フルーレ",
+            "id": "FireFleuret"
+        },
+        {
+            "nameEn": "Shining Fleuret",
+            "attachments": [],
+            "nameJa": "シャイニング・フルーレ",
+            "id": "ShiningFleuret"
+        },
+        {
+            "nameEn": "Protect Fleuret",
+            "attachments": [],
+            "nameJa": "プロテクト・フルーレ",
+            "id": "ProtectFleuret"
+        },
+        {
+            "nameEn": "Tornado Fleuret",
+            "attachments": [],
+            "nameJa": "トルネード・フルーレ",
+            "id": "TornadoFleuret"
+        },
+        {
+            "nameEn": "Milky Mirror",
+            "attachments": [],
+            "nameJa": "ミルキィミラー",
+            "id": "MilkyMirror"
         }
     ],
     "transformees": [
+        {
+            "nameEn": "Cure Heart",
+            "variationEn": "",
+            "nameJa": "キュアハート",
+            "variationJa": "",
+            "id": "CureHeart",
+            "introducesHerselfAs": "みなぎる愛！ キュアハート！"
+        },
+        {
+            "nameEn": "Cure Diamond",
+            "variationEn": "",
+            "nameJa": "キュアダイヤモンド",
+            "variationJa": "",
+            "id": "CureDiamond",
+            "introducesHerselfAs": "英知の光！ キュアダイヤモンド！"
+        },
+        {
+            "nameEn": "Cure Rosetta",
+            "variationEn": "",
+            "nameJa": "キュアロゼッタ",
+            "variationJa": "",
+            "id": "CureRosetta",
+            "introducesHerselfAs": "ひだまりポカポカ、キュアロゼッタ！"
+        },
+        {
+            "nameEn": "Cure Sword",
+            "variationEn": "",
+            "nameJa": "キュアソード",
+            "variationJa": "",
+            "id": "CureSword",
+            "introducesHerselfAs": "勇気の刃！ キュアソード！"
+        },
+        {
+            "nameEn": "Cure Ace",
+            "variationEn": "",
+            "nameJa": "キュアエース",
+            "variationJa": "",
+            "id": "CureAce",
+            "introducesHerselfAs": "愛の切り札！ キュアエース！"
+        },
         {
             "nameEn": "Cure Black",
             "variationEn": "",
@@ -71,6 +1030,742 @@
             "variationJa": "",
             "id": "CureWhite",
             "introducesHerselfAs": "光の使者、キュアホワイト！"
+        },
+        {
+            "nameEn": "Cure Peach",
+            "variationEn": "",
+            "nameJa": "キュアピーチ",
+            "variationJa": "",
+            "id": "CurePeach",
+            "introducesHerselfAs": "ピンクのハートは愛ある印！\nもぎたてフレッシュ、キュアピーチ！"
+        },
+        {
+            "nameEn": "Cure Berry",
+            "variationEn": "",
+            "nameJa": "キュアベリー",
+            "variationJa": "",
+            "id": "CureBerry",
+            "introducesHerselfAs": "ブルーのハートは希望の印！\nつみたてフレッシュ、キュアベリー！"
+        },
+        {
+            "nameEn": "Cure Pine",
+            "variationEn": "",
+            "nameJa": "キュアパイン",
+            "variationJa": "",
+            "id": "CurePine",
+            "introducesHerselfAs": "イエローハートは祈りの印！\nとれたてフレッシュ、キュアパイン！"
+        },
+        {
+            "nameEn": "Cure Passion",
+            "variationEn": "",
+            "nameJa": "キュアパッション",
+            "variationJa": "",
+            "id": "CurePassion",
+            "introducesHerselfAs": "真っ赤なハートは幸せの証！\nうれたてフレッシュ、キュアパッション！"
+        },
+        {
+            "nameEn": "Cure Flora",
+            "variationEn": "",
+            "nameJa": "キュアフローラ",
+            "variationJa": "",
+            "id": "CureFlora",
+            "introducesHerselfAs": "咲き誇る、花のプリンセス！キュアフローラ！"
+        },
+        {
+            "nameEn": "Cure Mermaid",
+            "variationEn": "",
+            "nameJa": "キュアマーメイド",
+            "variationJa": "",
+            "id": "CureMermaid",
+            "introducesHerselfAs": "澄み渡る、海のプリンセス！キュアマーメイド！"
+        },
+        {
+            "nameEn": "Cure Twinkle",
+            "variationEn": "",
+            "nameJa": "キュアトゥインクル",
+            "variationJa": "",
+            "id": "CureTwinkle",
+            "introducesHerselfAs": "きらめく星のプリンセス！キュアトゥインクル！"
+        },
+        {
+            "nameEn": "Cure Scarlet",
+            "variationEn": "",
+            "nameJa": "キュアスカーレット",
+            "variationJa": "",
+            "id": "CureScarlet",
+            "introducesHerselfAs": "深紅の炎のプリンセス！キュアスカーレット！"
+        },
+        {
+            "nameEn": "Cure Flora",
+            "variationEn": "Mode Elegant",
+            "nameJa": "キュアフローラ",
+            "variationJa": "モードエレガント",
+            "id": "CureFlora_ModeElegant",
+            "introducesHerselfAs": "introducesHerselfAs_Flora"
+        },
+        {
+            "nameEn": "Cure Mermaid",
+            "variationEn": "Mode Elegant",
+            "nameJa": "キュアマーメイド",
+            "variationJa": "モードエレガント",
+            "id": "CureMermaid_ModeElegant",
+            "introducesHerselfAs": "introducesHerselfAs_Mermaid"
+        },
+        {
+            "nameEn": "Cure Twinkle",
+            "variationEn": "Mode Elegant",
+            "nameJa": "キュアトゥインクル",
+            "variationJa": "モードエレガント",
+            "id": "CureTwinkle_ModeElegant",
+            "introducesHerselfAs": "introducesHerselfAs_Twinkle"
+        },
+        {
+            "nameEn": "Cure Scarlet",
+            "variationEn": "Mode Elegant",
+            "nameJa": "キュアスカーレット",
+            "variationJa": "モードエレガント",
+            "id": "CureScarlet_ModeElegant",
+            "introducesHerselfAs": "introducesHerselfAs_Scarlet"
+        },
+        {
+            "nameEn": "Cure Flora",
+            "variationEn": "Mode Elegant Royal",
+            "nameJa": "キュアフローラ",
+            "variationJa": "モードエレガント・ロイヤル",
+            "id": "CureFlora_ModeElegantRoyal",
+            "introducesHerselfAs": "introducesHerselfAs_Flora"
+        },
+        {
+            "nameEn": "Cure Mermaid",
+            "variationEn": "Mode Elegant Royal",
+            "nameJa": "キュアマーメイド",
+            "variationJa": "モードエレガント・ロイヤル",
+            "id": "CureMermaid_ModeElegantRoyal",
+            "introducesHerselfAs": "introducesHerselfAs_Mermaid"
+        },
+        {
+            "nameEn": "Cure Twinkle",
+            "variationEn": "Mode Elegant Royal",
+            "nameJa": "キュアトゥインクル",
+            "variationJa": "モードエレガント・ロイヤル",
+            "id": "CureTwinkle_ModeElegantRoyal",
+            "introducesHerselfAs": "introducesHerselfAs_Twinkle"
+        },
+        {
+            "nameEn": "Cure Scarlet",
+            "variationEn": "Mode Elegant Royal",
+            "nameJa": "キュアスカーレット",
+            "variationJa": "モードエレガント・ロイヤル",
+            "id": "CureScarlet_ModeElegantRoyal",
+            "introducesHerselfAs": "introducesHerselfAs_Scarlet"
+        },
+        {
+            "nameEn": "Cure Lovely",
+            "variationEn": "",
+            "nameJa": "キュアラブリー",
+            "variationJa": "",
+            "id": "CureLovely",
+            "introducesHerselfAs": "世界に広がる、ビッグな愛！ キュアラブリー！"
+        },
+        {
+            "nameEn": "Cure Princess",
+            "variationEn": "",
+            "nameJa": "キュアプリンセス",
+            "variationJa": "",
+            "id": "CurePrincess",
+            "introducesHerselfAs": "天空に舞う、蒼き風！ (ヒュッ！) キュアプリンセス！"
+        },
+        {
+            "nameEn": "Cure Honey",
+            "variationEn": "",
+            "nameJa": "キュアハニー",
+            "variationJa": "",
+            "id": "CureHoney",
+            "introducesHerselfAs": "大地に実る、命の光！ キュアハニー！"
+        },
+        {
+            "nameEn": "Cure Fortune",
+            "variationEn": "",
+            "nameJa": "キュアフォーチュン",
+            "variationJa": "",
+            "id": "CureFortune",
+            "introducesHerselfAs": "夜空に煌めく、希望の星！ キュアフォーチュン！"
+        },
+        {
+            "nameEn": "Cure Lovely",
+            "variationEn": "Innocent Form",
+            "nameJa": "キュアラブリー",
+            "variationJa": "イノセントフォーム",
+            "id": "CureLovely_InnocentForm",
+            "introducesHerselfAs": "introducesHerselfAs_Lovely"
+        },
+        {
+            "nameEn": "Cure Princess",
+            "variationEn": "Innocent Form",
+            "nameJa": "キュアプリンセス",
+            "variationJa": "イノセントフォーム",
+            "id": "CurePrincess_InnocentForm",
+            "introducesHerselfAs": "introducesHerselfAs_Princess"
+        },
+        {
+            "nameEn": "Cure Honey",
+            "variationEn": "Innocent Form",
+            "nameJa": "キュアハニー",
+            "variationJa": "イノセントフォーム",
+            "id": "CureHoney_InnocentForm",
+            "introducesHerselfAs": "introducesHerselfAs_Honey"
+        },
+        {
+            "nameEn": "Cure Fortune",
+            "variationEn": "Innocent Form",
+            "nameJa": "キュアフォーチュン",
+            "variationJa": "イノセントフォーム",
+            "id": "CureFortune_InnocentForm",
+            "introducesHerselfAs": "introducesHerselfAs_Fortune"
+        },
+        {
+            "nameEn": "Cure Blossom",
+            "variationEn": "",
+            "nameJa": "キュアブロッサム",
+            "variationJa": "",
+            "id": "CureBlossom",
+            "introducesHerselfAs": "大地に咲く一輪の花！ キュアブロッサム！"
+        },
+        {
+            "nameEn": "Cure Marine",
+            "variationEn": "",
+            "nameJa": "キュアマリン",
+            "variationJa": "",
+            "id": "CureMarine",
+            "introducesHerselfAs": "海風に揺れる一輪の花！ キュアマリン！"
+        },
+        {
+            "nameEn": "Cure Sunshine",
+            "variationEn": "",
+            "nameJa": "キュアサンシャイン",
+            "variationJa": "",
+            "id": "CureSunshine",
+            "introducesHerselfAs": "陽の光浴びる一輪の花！ キュアサンシャイン！"
+        },
+        {
+            "nameEn": "Cure Moonlight",
+            "variationEn": "",
+            "nameJa": "キュアムーンライト",
+            "variationJa": "",
+            "id": "CureMoonlight",
+            "introducesHerselfAs": "月光に冴える一輪の花！ キュアムーンライト！"
+        },
+        {
+            "nameEn": "Super Cure Blossom",
+            "variationEn": "",
+            "nameJa": "キュアブロッサム",
+            "variationJa": "スーパーキュアブロッサム",
+            "id": "SuperCureBlossom",
+            "introducesHerselfAs": "introducesHerselfAs_Blossom"
+        },
+        {
+            "nameEn": "Super Cure Marine",
+            "variationEn": "",
+            "nameJa": "キュアマリン",
+            "variationJa": "スーパーキュアマリン",
+            "id": "SuperCureMarine",
+            "introducesHerselfAs": "introducesHerselfAs_Marine"
+        },
+        {
+            "nameEn": "Super Cure Sunshine",
+            "variationEn": "",
+            "nameJa": "キュアサンシャイン",
+            "variationJa": "スーパーキュアサンシャイン",
+            "id": "SuperCureSunshine",
+            "introducesHerselfAs": "introducesHerselfAs_Sunshine"
+        },
+        {
+            "nameEn": "Super Cure Moonlight",
+            "variationEn": "",
+            "nameJa": "キュアムーンライト",
+            "variationJa": "スーパーキュアムーンライト",
+            "id": "SuperCureMoonlight",
+            "introducesHerselfAs": "introducesHerselfAs_Moonlight"
+        },
+        {
+            "nameEn": "Cure Yell",
+            "variationEn": "",
+            "nameJa": "キュアエール",
+            "variationJa": "",
+            "id": "CureYell",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんなを応援！元気のプリキュア！キュアエール！"
+        },
+        {
+            "nameEn": "Cure Ange",
+            "variationEn": "",
+            "nameJa": "キュアアンジュ",
+            "variationJa": "",
+            "id": "CureAnge",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんなを癒す！知恵のプリキュア！キュアアンジュ！"
+        },
+        {
+            "nameEn": "Cure Etoile",
+            "variationEn": "",
+            "nameJa": "キュアエトワール",
+            "variationJa": "",
+            "id": "CureEtoile",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな輝け！力のプリキュア！キュアエトワール！"
+        },
+        {
+            "nameEn": "Cure Macherie",
+            "variationEn": "",
+            "nameJa": "キュアマシェリ",
+            "variationJa": "",
+            "id": "CureMacherie",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな大好き！愛のプリキュア！キュアマシェリ！"
+        },
+        {
+            "nameEn": "Cure Amour",
+            "variationEn": "",
+            "nameJa": "キュアアムール",
+            "variationJa": "",
+            "id": "CureAmour",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな大好き！愛のプリキュア！キュアアムール！"
+        },
+        {
+            "nameEn": "Cure Whip",
+            "variationEn": "",
+            "nameJa": "キュアホイップ",
+            "variationJa": "",
+            "id": "CureWhip",
+            "introducesHerselfAs": "ショートケーキ！元気と笑顔を！レッツ・ラ・まぜまぜ！キュアホイップ！できあがり！"
+        },
+        {
+            "nameEn": "Cure Custard",
+            "variationEn": "",
+            "nameJa": "キュアカスタード",
+            "variationJa": "",
+            "id": "CureCustard",
+            "introducesHerselfAs": "プリン！知性と勇気を！レッツ・ラ・まぜまぜ！キュアカスタード！できあがり！"
+        },
+        {
+            "nameEn": "Cure Gelato",
+            "variationEn": "",
+            "nameJa": "キュアジェラート",
+            "variationJa": "",
+            "id": "CureGelato",
+            "introducesHerselfAs": "アイス！自由と情熱を！レッツ・ラ・まぜまぜ！キュアジェラート！できあがり！"
+        },
+        {
+            "nameEn": "Cure Macaron",
+            "variationEn": "",
+            "nameJa": "キュアマカロン",
+            "variationJa": "",
+            "id": "CureMacaron",
+            "introducesHerselfAs": "マカロン！美しさとトキメキを！レッツ・ラ・まぜまぜ！キュアマカロン！できあがり！"
+        },
+        {
+            "nameEn": "Cure Chocolat",
+            "variationEn": "",
+            "nameJa": "キュアショコラ",
+            "variationJa": "",
+            "id": "CureChocolat",
+            "introducesHerselfAs": "チョコレート！強さと愛を！レッツ・ラ・まぜまぜ！キュアショコラ！できあがり！"
+        },
+        {
+            "nameEn": "Cure Parfait",
+            "variationEn": "",
+            "nameJa": "キュアパルフェ",
+            "variationJa": "",
+            "id": "CureParfait",
+            "introducesHerselfAs": "パフェ！夢と希望を！レッツ・ラ・まぜまぜ！キュアパルフェ！できあがり！"
+        },
+        {
+            "nameEn": "Cure Pekorin",
+            "variationEn": "",
+            "nameJa": "キュアペコリン",
+            "variationJa": "",
+            "id": "CurePekorin",
+            "introducesHerselfAs": "ドーナツ！ペコペコとキラキラを！レッツ・ラ・まぜまぜ！キュアペコリン！できあがり！"
+        },
+        {
+            "nameEn": "Cure Whip",
+            "variationEn": "A La Mode Style",
+            "nameJa": "キュアホイップ",
+            "variationJa": "アラモードスタイル",
+            "id": "CureWhip_ALaModeStyle",
+            "introducesHerselfAs": "ショートケーキ！元気と笑顔を！レッツ・ラ・まぜまぜ！キュアホイップ！できあがり！"
+        },
+        {
+            "nameEn": "Cure Custard",
+            "variationEn": "A La Mode Style",
+            "nameJa": "キュアカスタード",
+            "variationJa": "アラモードスタイル",
+            "id": "CureCustard_ALaModeStyle",
+            "introducesHerselfAs": "プリン！知性と勇気を！レッツ・ラ・まぜまぜ！キュアカスタード！できあがり！"
+        },
+        {
+            "nameEn": "Cure Gelato",
+            "variationEn": "A La Mode Style",
+            "nameJa": "キュアジェラート",
+            "variationJa": "アラモードスタイル",
+            "id": "CureGelato_ALaModeStyle",
+            "introducesHerselfAs": "アイス！自由と情熱を！レッツ・ラ・まぜまぜ！キュアジェラート！できあがり！"
+        },
+        {
+            "nameEn": "Cure Macaron",
+            "variationEn": "A La Mode Style",
+            "nameJa": "キュアマカロン",
+            "variationJa": "アラモードスタイル",
+            "id": "CureMacaron_ALaModeStyle",
+            "introducesHerselfAs": "マカロン！美しさとトキメキを！レッツ・ラ・まぜまぜ！キュアマカロン！できあがり！"
+        },
+        {
+            "nameEn": "Cure Chocolat",
+            "variationEn": "A La Mode Style",
+            "nameJa": "キュアショコラ",
+            "variationJa": "アラモードスタイル",
+            "id": "CureChocolat_ALaModeStyle",
+            "introducesHerselfAs": "チョコレート！強さと愛を！レッツ・ラ・まぜまぜ！キュアショコラ！できあがり！"
+        },
+        {
+            "nameEn": "Cure Parfait",
+            "variationEn": "A La Mode Style",
+            "nameJa": "キュアパルフェ",
+            "variationJa": "アラモードスタイル",
+            "id": "CureParfait_ALaModeStyle",
+            "introducesHerselfAs": "パフェ！夢と希望を！レッツ・ラ・まぜまぜ！キュアパルフェ！できあがり！"
+        },
+        {
+            "nameEn": "Cure Miracle",
+            "variationEn": "",
+            "nameJa": "キュアミラクル",
+            "variationJa": "ダイヤスタイル",
+            "id": "CureMiracle",
+            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+        },
+        {
+            "nameEn": "Cure Miracle",
+            "variationEn": "Ruby",
+            "nameJa": "キュアミラクル",
+            "variationJa": "ルビースタイル",
+            "id": "CureMiracle_Ruby",
+            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+        },
+        {
+            "nameEn": "Cure Miracle",
+            "variationEn": "Sapphire",
+            "nameJa": "キュアミラクル",
+            "variationJa": "サファイアスタイル",
+            "id": "CureMiracle_Sapphire",
+            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+        },
+        {
+            "nameEn": "Cure Miracle",
+            "variationEn": "Topaz",
+            "nameJa": "キュアミラクル",
+            "variationJa": "トパーズスタイル",
+            "id": "CureMiracle_Topaz",
+            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+        },
+        {
+            "nameEn": "Cure Miracle",
+            "variationEn": "Over The Rainbow",
+            "nameJa": "キュアミラクル",
+            "variationJa": "オーバー・ザ・レインボー",
+            "id": "CureMiracle_OverTheRainbow",
+            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+        },
+        {
+            "nameEn": "Cure Miracle",
+            "variationEn": "Heartful",
+            "nameJa": "キュアミラクル",
+            "variationJa": "ハートフルスタイル",
+            "id": "CureMiracle_Heartful",
+            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+        },
+        {
+            "nameEn": "Cure Magical",
+            "variationEn": "",
+            "nameJa": "キュアマジカル",
+            "variationJa": "ダイヤスタイル",
+            "id": "CureMagical",
+            "introducesHerselfAs": "introducesHerselfAs_Magical"
+        },
+        {
+            "nameEn": "Cure Magical",
+            "variationEn": "Ruby",
+            "nameJa": "キュアマジカル",
+            "variationJa": "ルビースタイル",
+            "id": "CureMagical_Ruby",
+            "introducesHerselfAs": "introducesHerselfAs_Magical"
+        },
+        {
+            "nameEn": "Cure Magical",
+            "variationEn": "Sapphire",
+            "nameJa": "キュアマジカル",
+            "variationJa": "サファイアスタイル",
+            "id": "CureMagical_Sapphire",
+            "introducesHerselfAs": "introducesHerselfAs_Magical"
+        },
+        {
+            "nameEn": "Cure Magical",
+            "variationEn": "Topaz",
+            "nameJa": "キュアマジカル",
+            "variationJa": "トパーズスタイル",
+            "id": "CureMagical_Topaz",
+            "introducesHerselfAs": "introducesHerselfAs_Magical"
+        },
+        {
+            "nameEn": "Cure Magical",
+            "variationEn": "Over The Rainbow",
+            "nameJa": "キュアマジカル",
+            "variationJa": "オーバー・ザ・レインボー",
+            "id": "CureMagical_OverTheRainbow",
+            "introducesHerselfAs": "introducesHerselfAs_Magical"
+        },
+        {
+            "nameEn": "Cure Magical",
+            "variationEn": "Heartful",
+            "nameJa": "キュアマジカル",
+            "variationJa": "ハートフルスタイル",
+            "id": "CureMagical_Heartful",
+            "introducesHerselfAs": "introducesHerselfAs_Magical"
+        },
+        {
+            "nameEn": "Cure Felice",
+            "variationEn": "",
+            "nameJa": "キュアフェリーチェ",
+            "variationJa": "",
+            "id": "CureFelice",
+            "introducesHerselfAs": "あまねく生命に祝福を！キュアフェリーチェ！"
+        },
+        {
+            "nameEn": "Cure Felice",
+            "variationEn": "Over The Rainbow",
+            "nameJa": "キュアフェリーチェ",
+            "variationJa": "オーバー・ザ・レインボー",
+            "id": "CureFelice_OverTheRainbow",
+            "introducesHerselfAs": "introducesHerselfAs_Felice"
+        },
+        {
+            "nameEn": "Cure Felice",
+            "variationEn": "Heartful",
+            "nameJa": "キュアフェリーチェ",
+            "variationJa": "ハートフルスタイル",
+            "id": "CureFelice_Heartful",
+            "introducesHerselfAs": "introducesHerselfAs_Felice"
+        },
+        {
+            "nameEn": "Cure Mofurun",
+            "variationEn": "",
+            "nameJa": "キュアモフルン",
+            "variationJa": "ダイヤスタイル",
+            "id": "CureMofurun",
+            "introducesHerselfAs": "introducesHerselfAs_Mofurun"
+        },
+        {
+            "nameEn": "Cure Mofurun",
+            "variationEn": "Ruby",
+            "nameJa": "キュアモフルン",
+            "variationJa": "ルビースタイル",
+            "id": "CureMofurun_Ruby",
+            "introducesHerselfAs": "introducesHerselfAs_Mofurun"
+        },
+        {
+            "nameEn": "Cure Mofurun",
+            "variationEn": "Sapphire",
+            "nameJa": "キュアモフルン",
+            "variationJa": "サファイアスタイル",
+            "id": "CureMofurun_Sapphire",
+            "introducesHerselfAs": "introducesHerselfAs_Mofurun"
+        },
+        {
+            "nameEn": "Cure Mofurun",
+            "variationEn": "Topaz",
+            "nameJa": "キュアモフルン",
+            "variationJa": "トパーズスタイル",
+            "id": "CureMofurun_Topaz",
+            "introducesHerselfAs": "introducesHerselfAs_Mofurun"
+        },
+        {
+            "nameEn": "Cure Mofurun",
+            "variationEn": "Heartful",
+            "nameJa": "キュアモフルン",
+            "variationJa": "ハートフルスタイル",
+            "id": "CureMofurun_Heartful",
+            "introducesHerselfAs": "introducesHerselfAs_Mofurun"
+        },
+        {
+            "nameEn": "Cure Black",
+            "variationEn": "Max",
+            "nameJa": "キュアブラック",
+            "variationJa": "Max Heart",
+            "id": "CureBlack_Max",
+            "introducesHerselfAs": "introducesHerselfAs_Black"
+        },
+        {
+            "nameEn": "Cure White",
+            "variationEn": "Max",
+            "nameJa": "キュアホワイト",
+            "variationJa": "Max Heart",
+            "id": "CureWhite_Max",
+            "introducesHerselfAs": "introducesHerselfAs_White"
+        },
+        {
+            "nameEn": "Shiny Luminous",
+            "variationEn": "",
+            "nameJa": "シャイニールミナス",
+            "variationJa": "",
+            "id": "ShinyLuminous",
+            "introducesHerselfAs": "輝く命、シャイニールミナス！"
+        },
+        {
+            "nameEn": "Cure Echo",
+            "variationEn": "",
+            "nameJa": "キュアエコー",
+            "variationJa": "",
+            "id": "CureEcho",
+            "introducesHerselfAs": "思いよ届け！キュアエコー！"
+        },
+        {
+            "nameEn": "Cure Happy",
+            "variationEn": "",
+            "nameJa": "キュアハッピー",
+            "variationJa": "",
+            "id": "CureHappy",
+            "introducesHerselfAs": "キラキラ輝く未来の光！ キュアハッピー！"
+        },
+        {
+            "nameEn": "Cure Sunny",
+            "variationEn": "",
+            "nameJa": "キュアサニー",
+            "variationJa": "",
+            "id": "CureSunny",
+            "introducesHerselfAs": "太陽サンサン熱血パワー！ キュアサニー！"
+        },
+        {
+            "nameEn": "Cure Peace",
+            "variationEn": "",
+            "nameJa": "キュアピース",
+            "variationJa": "",
+            "id": "CurePeace",
+            "introducesHerselfAs": "ピカピカピカリン、ジャンケンポン！ キュアピース！"
+        },
+        {
+            "nameEn": "Cure March",
+            "variationEn": "",
+            "nameJa": "キュアマーチ",
+            "variationJa": "",
+            "id": "CureMarch",
+            "introducesHerselfAs": "勇気リンリン、直球勝負！ キュアマーチ！"
+        },
+        {
+            "nameEn": "Cure Beauty",
+            "variationEn": "",
+            "nameJa": "キュアビューティー",
+            "variationJa": "",
+            "id": "CureBeauty",
+            "introducesHerselfAs": "しんしんと降り積もる清き心！ キュアビューティ！"
+        },
+        {
+            "nameEn": "Princess Happy",
+            "variationEn": "",
+            "nameJa": "キュアハッピー",
+            "variationJa": "プリンセスハッピー",
+            "id": "PrincessHappy",
+            "introducesHerselfAs": "introducesHerselfAs_Happy_Princess"
+        },
+        {
+            "nameEn": "Princess Sunny",
+            "variationEn": "",
+            "nameJa": "キュアサニー",
+            "variationJa": "プリンセスサニー",
+            "id": "PrincessSunny",
+            "introducesHerselfAs": "introducesHerselfAs_Sunny_Princess"
+        },
+        {
+            "nameEn": "Princess Peace",
+            "variationEn": "",
+            "nameJa": "キュアピース",
+            "variationJa": "プリンセスピース",
+            "id": "PrincessPeace",
+            "introducesHerselfAs": "introducesHerselfAs_Peace_Princess"
+        },
+        {
+            "nameEn": "Princess March",
+            "variationEn": "",
+            "nameJa": "キュアマーチ",
+            "variationJa": "プリンセスマーチ",
+            "id": "PrincessMarch",
+            "introducesHerselfAs": "introducesHerselfAs_March_Princess"
+        },
+        {
+            "nameEn": "Princess Beauty",
+            "variationEn": "",
+            "nameJa": "キュアビューティー",
+            "variationJa": "プリンセスビューティー",
+            "id": "PrincessBeauty",
+            "introducesHerselfAs": "introducesHerselfAs_Beauty_Princess"
+        },
+        {
+            "nameEn": "Cure Bloom",
+            "variationEn": "",
+            "nameJa": "キュアブルーム",
+            "variationJa": "",
+            "id": "CureBloom",
+            "introducesHerselfAs": "輝く金の花！ キュアブルーム！"
+        },
+        {
+            "nameEn": "Cure Egret",
+            "variationEn": "",
+            "nameJa": "キュアイーグレット",
+            "variationJa": "",
+            "id": "CureEgret",
+            "introducesHerselfAs": "煌めく銀の翼！ キュアイーグレット！"
+        },
+        {
+            "nameEn": "Cure Bright",
+            "variationEn": "",
+            "nameJa": "キュアブライト",
+            "variationJa": "",
+            "id": "CureBright",
+            "introducesHerselfAs": "天空に満ちる月！ キュアブライト！"
+        },
+        {
+            "nameEn": "Cure Windy",
+            "variationEn": "",
+            "nameJa": "キュアウィンディ",
+            "variationJa": "",
+            "id": "CureWindy",
+            "introducesHerselfAs": "大地に薫る風！ キュアウィンディ！"
+        },
+        {
+            "nameEn": "Cure Melody",
+            "variationEn": "",
+            "nameJa": "キュアメロディ",
+            "variationJa": "",
+            "id": "CureMelody",
+            "introducesHerselfAs": "爪弾くは荒ぶる調べ！ キュアメロディー！"
+        },
+        {
+            "nameEn": "Cure Rhythm",
+            "variationEn": "",
+            "nameJa": "キュアリズム",
+            "variationJa": "",
+            "id": "CureRhythm",
+            "introducesHerselfAs": "爪弾くはたおやかな調べ！ キュアリズム！"
+        },
+        {
+            "nameEn": "Cure Beat",
+            "variationEn": "",
+            "nameJa": "キュアビート",
+            "variationJa": "",
+            "id": "CureBeat",
+            "introducesHerselfAs": "爪弾くは魂の調べ！ キュアビート！"
+        },
+        {
+            "nameEn": "Cure Muse",
+            "variationEn": "",
+            "nameJa": "キュアミューズ",
+            "variationJa": "",
+            "id": "CureMuse",
+            "introducesHerselfAs": "爪弾くは女神の調べ！ キュアミューズ！"
         },
         {
             "nameEn": "Cure Dream",
@@ -111,9 +1806,42 @@
             "variationJa": "",
             "id": "CureAqua",
             "introducesHerselfAs": "知性の青き泉、キュアアクア！"
+        },
+        {
+            "nameEn": "Milky Rose",
+            "variationEn": "",
+            "nameJa": "ミルキィローズ",
+            "variationJa": "",
+            "id": "MilkyRose",
+            "introducesHerselfAs": "青いバラは秘密のしるし！ ミルキィローズ！"
         }
     ],
     "girls": [
+        {
+            "nameEn": "Mana Aida",
+            "nameJa": "相田 マナ",
+            "id": "Mana"
+        },
+        {
+            "nameEn": "Rikka Hishikawa",
+            "nameJa": "菱川 六花",
+            "id": "Rikka"
+        },
+        {
+            "nameEn": "Alice Yotsuba",
+            "nameJa": "四葉 ありす",
+            "id": "Alice"
+        },
+        {
+            "nameEn": "Makoto Kenzaki",
+            "nameJa": "剣崎 真琴",
+            "id": "Makoto"
+        },
+        {
+            "nameEn": "Aguri Madoka",
+            "nameJa": "円亜 久里",
+            "id": "Aguri"
+        },
         {
             "nameEn": "Nagisa Misumi",
             "nameJa": "美墨 なぎさ",
@@ -123,6 +1851,226 @@
             "nameEn": "Honoka Yukishiro",
             "nameJa": "雪城 ほのか",
             "id": "Honoka"
+        },
+        {
+            "nameEn": "Love Momozono",
+            "nameJa": "桃園 ラブ",
+            "id": "Love"
+        },
+        {
+            "nameEn": "Miki Aono",
+            "nameJa": "蒼乃 美希",
+            "id": "Miki"
+        },
+        {
+            "nameEn": "Inori Yamabuki",
+            "nameJa": "山吹 祈里",
+            "id": "Inori"
+        },
+        {
+            "nameEn": "Setsuna Higashi",
+            "nameJa": "東 せつな",
+            "id": "Setsuna"
+        },
+        {
+            "nameEn": "Haruka Haruno",
+            "nameJa": "春野 はるか",
+            "id": "Haruka"
+        },
+        {
+            "nameEn": "Minami Kaido",
+            "nameJa": "海藤 みなみ",
+            "id": "Minami"
+        },
+        {
+            "nameEn": "Kirara Amanogawa",
+            "nameJa": "天ノ川 きらら",
+            "id": "Kirara"
+        },
+        {
+            "nameEn": "Towa Akagi",
+            "nameJa": "紅城 トワ",
+            "id": "Towa"
+        },
+        {
+            "nameEn": "Megumi Aino",
+            "nameJa": "愛乃 めぐみ",
+            "id": "Megumi"
+        },
+        {
+            "nameEn": "Hime Shirayuki (Himelda Window, Cure Queen of the Blue Sky)",
+            "nameJa": "白雪 ひめ (ヒメルダ・ウインドウ・キュアクイーン・オブ・ザ・ブルースカイ)",
+            "id": "Hime"
+        },
+        {
+            "nameEn": "Yuko Omori",
+            "nameJa": "大森 ゆうこ",
+            "id": "Yuko"
+        },
+        {
+            "nameEn": "Iona Hikawa",
+            "nameJa": "氷川 いおな",
+            "id": "Iona"
+        },
+        {
+            "nameEn": "Tsubomi Hanasaki",
+            "nameJa": "花咲 つぼみ",
+            "id": "Tsubomi"
+        },
+        {
+            "nameEn": "Erika Kurumi",
+            "nameJa": "来海 えりか",
+            "id": "Erika"
+        },
+        {
+            "nameEn": "Itsuki Myodoin",
+            "nameJa": "明堂院 いつき",
+            "id": "Itsuki"
+        },
+        {
+            "nameEn": "Yuri Tsukikage",
+            "nameJa": "月影 ゆり",
+            "id": "Yuri"
+        },
+        {
+            "nameEn": "Hana Nono",
+            "nameJa": "野乃 はな",
+            "id": "Hana"
+        },
+        {
+            "nameEn": "Saaya Yakushiji",
+            "nameJa": "薬師寺 さあや",
+            "id": "Saaya"
+        },
+        {
+            "nameEn": "Homare Kagayaki",
+            "nameJa": "輝木 ほまれ",
+            "id": "Homare"
+        },
+        {
+            "nameEn": "Emiru Aisaki",
+            "nameJa": "愛崎 えみる",
+            "id": "Emiru"
+        },
+        {
+            "nameEn": "Ruru Amour",
+            "nameJa": "ルールー・アムール",
+            "id": "Ruru"
+        },
+        {
+            "nameEn": "Ichika Usami",
+            "nameJa": "宇佐美 いちか",
+            "id": "Ichika"
+        },
+        {
+            "nameEn": "Himari Arisugawa",
+            "nameJa": "有栖川 ひまり",
+            "id": "Himari"
+        },
+        {
+            "nameEn": "Aoi Tategami",
+            "nameJa": "立神 あおい",
+            "id": "Aoi"
+        },
+        {
+            "nameEn": "Yukari Kotozume",
+            "nameJa": "琴爪 ゆかり",
+            "id": "Yukari"
+        },
+        {
+            "nameEn": "Akira Kenjo",
+            "nameJa": "剣城 あきら",
+            "id": "Akira"
+        },
+        {
+            "nameEn": "Ciel Kirahoshi",
+            "nameJa": "キラ星 シエル",
+            "id": "Ciel"
+        },
+        {
+            "nameEn": "Pekorin",
+            "nameJa": "ペコリン",
+            "id": "Pekorin"
+        },
+        {
+            "nameEn": "Mirai Asahina",
+            "nameJa": "朝日奈 みらい",
+            "id": "Mirai"
+        },
+        {
+            "nameEn": "Liko Izayoi",
+            "nameJa": "十六夜 リコ",
+            "id": "Liko"
+        },
+        {
+            "nameEn": "Kotoha Hanami",
+            "nameJa": "花海 ことは",
+            "id": "Kotoha"
+        },
+        {
+            "nameEn": "Hikari Kujou",
+            "nameJa": "九条 ひかり",
+            "id": "Hikari"
+        },
+        {
+            "nameEn": "Ayumi Sakagami",
+            "nameJa": "坂上 あゆみ",
+            "id": "Ayumi"
+        },
+        {
+            "nameEn": "Miyuki Hoshizora",
+            "nameJa": "星空 みゆき",
+            "id": "Miyuki"
+        },
+        {
+            "nameEn": "Akane Hino",
+            "nameJa": "日野 あかね",
+            "id": "Akane"
+        },
+        {
+            "nameEn": "Yayoi Kise",
+            "nameJa": "黄瀬 やよい",
+            "id": "Yayoi"
+        },
+        {
+            "nameEn": "Nao Midorikawa",
+            "nameJa": "緑川 なお",
+            "id": "Nao"
+        },
+        {
+            "nameEn": "Reika Aoki",
+            "nameJa": "青木 れいか",
+            "id": "Reika"
+        },
+        {
+            "nameEn": "Saki Hyuga",
+            "nameJa": "日向 咲",
+            "id": "Saki"
+        },
+        {
+            "nameEn": "Mai Misho",
+            "nameJa": "美翔 舞",
+            "id": "Mai"
+        },
+        {
+            "nameEn": "Hibiki Hojo",
+            "nameJa": "北条 響",
+            "id": "Hibiki"
+        },
+        {
+            "nameEn": "Kanade Minamino",
+            "nameJa": "南野 奏",
+            "id": "Kanade"
+        },
+        {
+            "nameEn": "Ellen Kurokawa",
+            "nameJa": "黒川 エレン",
+            "id": "Ellen"
+        },
+        {
+            "nameEn": "Ako Shirabe",
+            "nameJa": "調辺 アコ",
+            "id": "Ako"
         },
         {
             "nameEn": "Nozomi Yumehara",
@@ -148,12 +2096,115 @@
             "nameEn": "Karen Minazuki",
             "nameJa": "水無月 かれん",
             "id": "Karen"
+        },
+        {
+            "nameEn": "Kurumi Mimino",
+            "nameJa": "美々野 くるみ",
+            "id": "Kurumi"
         }
     ],
     "purifications": [
         {
             "specialItems": [
-                "RainbowBrace"
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneSharuru"
+                }
+            ],
+            "purifiers": [
+                "CureHeart"
+            ],
+            "speech": [
+                "あなたに届け！マイ・スイート・ハート！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneRaquel"
+                }
+            ],
+            "purifiers": [
+                "CureDiamond"
+            ],
+            "speech": [
+                "煌めきなさい！トゥインクル・ダイヤモンド！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneLance"
+                }
+            ],
+            "purifiers": [
+                "CureRosetta"
+            ],
+            "speech": [
+                "カッチカチの！ロゼッタ・ウォール！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneDavi"
+                }
+            ],
+            "purifiers": [
+                "CureSword"
+            ],
+            "speech": [
+                "閃け！ホーリー・ソード！"
+            ]
+        },
+        {
+            "specialItems": [
+                "LoveKissRouge"
+            ],
+            "purifiers": [
+                "CureAce"
+            ],
+            "speech": [
+                "彩れ！ラブ・キッス・ルージュ！",
+                "ときめきなさい！エースショット！",
+                "ばきゅ〜ん！！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "MagicalLovelyHarp"
+                }
+            ],
+            "purifiers": [
+                "CureHeart",
+                "CureDiamond",
+                "CureRosetta",
+                "CureSword",
+                "CureAce"
+            ],
+            "speech": [
+                "(キュピラッパー！)",
+                "プリキュア！ロイヤル・ラブリー・ストレート・フラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "RainbowBracelets"
             ],
             "purifiers": [
                 "CureBlack",
@@ -163,6 +2214,1335 @@
                 "希望の力よ！光の意思よ！",
                 "未来に向かって、突き進め！",
                 "プリキュア・レインボー・ストーム！！"
+            ]
+        },
+        {
+            "specialItems": [
+                "CureStickPeachRod"
+            ],
+            "purifiers": [
+                "CurePeach"
+            ],
+            "speech": [
+                "届け！愛のメロディ！",
+                "キュアスティック・ピーチロッド！",
+                "悪いの悪いの飛んでいけ！",
+                "プリキュア！ラブサンシャイン・フレッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "CureStickBerrySword"
+            ],
+            "purifiers": [
+                "CureBerry"
+            ],
+            "speech": [
+                "響け！希望のリズム！",
+                "キュアスティック・ベリーソード！",
+                "悪いの悪いの飛んでいけ！",
+                "プリキュア！エスポワールシャワー・フレッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "CureStickPineFlute"
+            ],
+            "purifiers": [
+                "CurePine"
+            ],
+            "speech": [
+                "癒せ！祈りのハーモニー！",
+                "キュアスティック・パインフルート！",
+                "悪いの悪いの飛んでいけ！",
+                "プリキュア！ヒーリングプレアー・フレッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "PassionHarp"
+            ],
+            "purifiers": [
+                "CurePassion"
+            ],
+            "speech": [
+                "歌え！幸せのラプソディ、パッションハープ！",
+                "吹き荒れよ、幸せの嵐！",
+                "プリキュア！ハピネス・ハリケーン！"
+            ]
+        },
+        {
+            "specialItems": [
+                "CloverBox"
+            ],
+            "purifiers": [
+                "CurePeach",
+                "CureBerry",
+                "CurePine",
+                "CurePassion"
+            ],
+            "speech": [
+                "クローバーボックスよ、私達に力を貸して！",
+                "プリキュア・フォーメーション！レディー・ゴー!",
+                "ハピネスリーフ、セット！",
+                "パイン！",
+                "プラスワン、プレアーリーフ！",
+                "ベリー！",
+                "プラスワン、エスポワールリーフ！",
+                "ピーチ！",
+                "プラスワン、ラブリーリーフ！",
+                "ラッキークローバー・グランドフィナーレ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyRose"
+                    ],
+                    "i": "CrystalPrincessRod"
+                }
+            ],
+            "purifiers": [
+                "CureFlora"
+            ],
+            "speech": [
+                "ローズ！",
+                "舞え、バラよ！",
+                "プリキュア！ ローズ・トルビヨン！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyLily"
+                    ],
+                    "i": "CrystalPrincessRod"
+                }
+            ],
+            "purifiers": [
+                "CureFlora"
+            ],
+            "speech": [
+                "リリィ！",
+                "舞え、ユリよ！",
+                "プリキュア！ リィス・トルビヨン！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeySakura"
+                    ],
+                    "i": "MusicPrincessPalace"
+                }
+            ],
+            "purifiers": [
+                "CureFlora"
+            ],
+            "speech": [
+                "サクラ！",
+                "舞え、サクラよ！",
+                "プリキュア！ サクラ・トルビュランス！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyIce"
+                    ],
+                    "i": "CrystalPrincessRod"
+                }
+            ],
+            "purifiers": [
+                "CureMermaid"
+            ],
+            "speech": [
+                "アイス！",
+                "高鳴れ、氷よ！",
+                "プリキュア！ フローズン・リップル！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyBubble"
+                    ],
+                    "i": "CrystalPrincessRod"
+                }
+            ],
+            "purifiers": [
+                "CureMermaid"
+            ],
+            "speech": [
+                "バブル！",
+                "高鳴れ、泡よ！",
+                "プリキュア！ バブル・リップル！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeySango"
+                    ],
+                    "i": "MusicPrincessPalace"
+                }
+            ],
+            "purifiers": [
+                "CureMermaid"
+            ],
+            "speech": [
+                "サンゴ！",
+                "高鳴れ、珊瑚よ！",
+                "プリキュア！ コーラル・メイルシュトロム！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyLuna"
+                    ],
+                    "i": "CrystalPrincessRod"
+                }
+            ],
+            "purifiers": [
+                "CureTwinkle"
+            ],
+            "speech": [
+                "ルナ！",
+                "キラキラ、月よ！",
+                "プリキュア！ フルムーン・ハミング！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyShootingStar"
+                    ],
+                    "i": "CrystalPrincessRod"
+                }
+            ],
+            "purifiers": [
+                "CureTwinkle"
+            ],
+            "speech": [
+                "シューティングスター！",
+                "キラキラ、流れ星よ！",
+                "プリキュア！ ミーティア・ハミング！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyGinga"
+                    ],
+                    "i": "MusicPrincessPalace"
+                }
+            ],
+            "purifiers": [
+                "CureTwinkle"
+            ],
+            "speech": [
+                "ギンガ！",
+                "シャランラ、銀河よ！",
+                "プリキュア！ ギャラクシー・コーラス！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyPhoenix"
+                    ],
+                    "i": "ScarletViolin"
+                }
+            ],
+            "purifiers": [
+                "CureScarlet_ModeElegant"
+            ],
+            "speech": [
+                "スカーレット・バイオリン！フェニックス！",
+                "羽ばたけ炎の翼！",
+                "プリキュア！ フェニックス・ブレイズ！",
+                "ごきげんよう。"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyScarlet"
+                    ],
+                    "i": "ScarletViolin"
+                }
+            ],
+            "purifiers": [
+                "CureScarlet"
+            ],
+            "speech": [
+                "たぎれ、炎よ！",
+                "プリキュア！ スカーレット・フレイム！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyHanabi"
+                    ],
+                    "i": "ScarletViolin"
+                }
+            ],
+            "purifiers": [
+                "CureScarlet"
+            ],
+            "speech": [
+                "ハナビ！",
+                "燃えよ、炎よ！",
+                "プリキュア！ スカーレット・イリュージョン！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeySun"
+                    ],
+                    "i": "MusicPrincessPalace"
+                }
+            ],
+            "purifiers": [
+                "CureScarlet"
+            ],
+            "speech": [
+                "サン！",
+                "燃えよ、炎よ！",
+                "プリキュア！ スカーレット・プロミネンス！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "RoyalDressUpKey"
+                    ],
+                    "i": "MusicPrincessPalace"
+                }
+            ],
+            "purifiers": [
+                "CureFlora_ModeElegantRoyal",
+                "CureMermaid_ModeElegantRoyal",
+                "CureTwinkle_ModeElegantRoyal",
+                "CureScarlet_ModeElegantRoyal"
+            ],
+            "speech": [
+                "はっ！",
+                "響け！遙か彼方へ！",
+                "プリキュア！ グラン・プランタン！",
+                "ブルーミング",
+                "ごきげんよう。"
+            ]
+        },
+        {
+            "specialItems": [
+                "LovePreBrace"
+            ],
+            "purifiers": [
+                "CureLovely"
+            ],
+            "speech": [
+                "愛の光を聖なる力に！",
+                "ラブプリブレス！",
+                "プリキュア！ピンキーラブ・シュート！！",
+                "愛よ、天に返れ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "LovePreBrace"
+            ],
+            "purifiers": [
+                "CurePrincess"
+            ],
+            "speech": [
+                "勇気の光を聖なる力へ！",
+                "ラブプリブレス！",
+                "プリキュア！ブルーハッピー・シュート！！",
+                "勇気よ、天に返れ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "TripleDanceHoneyBaton"
+            ],
+            "purifiers": [
+                "CureHoney"
+            ],
+            "speech": [
+                "命の光を聖なる力へ！",
+                "ハニーバトン！",
+                "プリキュア！スパークリングバトンアタック！！",
+                "イエイ！",
+                "命よ、天に返れ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "FortuneTambourine"
+            ],
+            "purifiers": [
+                "CureFortune"
+            ],
+            "speech": [
+                "星の光を聖なる力に！",
+                "フォーチュン・タンバリン！",
+                "プリキュア！スターライト・アセンション！！",
+                "星よ、天に返れ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "ShiningMakeDresser",
+                "InnocentHarmonyMic"
+            ],
+            "purifiers": [
+                "CureLovely_InnocentForm",
+                "CurePrincess_InnocentForm",
+                "CureHoney_InnocentForm",
+                "CureFortune_InnocentForm"
+            ],
+            "speech": [
+                "(集まれ、ハピネスな気持ち！)",
+                "(高まれ、イノセントな思い！)",
+                "輝け！シャイニング・メイク・ドレッサー！",
+                "カタチなき愛求め♪",
+                "確かなその優しさ♪",
+                "色褪せない希望♪",
+                "奏でよう未来へ♪",
+                "勇気のカケラがひとつ♪",
+                "まだ見つからない♪",
+                "だけどきっと♪",
+                "イノセント♪ イノセント♪",
+                "小さな勇気 愛の光り 星の瞬き 尊き命♪",
+                "心を重ねて 響き合うメロディ♪",
+                "プリキュア！ イノセントプリフィケーション！"
+            ]
+        },
+        {
+            "specialItems": [
+                "BlossomTakt"
+            ],
+            "purifiers": [
+                "CureBlossom"
+            ],
+            "speech": [
+                "集まれ、花のパワー！",
+                "ブロッサム・タクト！",
+                "花よ輝け！",
+                "プリキュア！ピンクフォルテウェイブ！！"
+            ]
+        },
+        {
+            "specialItems": [
+                "MarineTakt"
+            ],
+            "purifiers": [
+                "CureMarine"
+            ],
+            "speech": [
+                "集まれ、花のパワー！",
+                "マリン・タクト！",
+                "花よ煌めけ！",
+                "プリキュア！ブルーフォルテウェイブ！！"
+            ]
+        },
+        {
+            "specialItems": [
+                "ShinyTambourine"
+            ],
+            "purifiers": [
+                "CureSunshine"
+            ],
+            "speech": [
+                "集まれ、花のパワー！",
+                "シャイニー・タンバリン！",
+                "花よ、舞い踊れ！",
+                "プリキュア！ゴールドフォルテバースト！！"
+            ]
+        },
+        {
+            "specialItems": [
+                "MoonTakt"
+            ],
+            "purifiers": [
+                "CureMoonlight"
+            ],
+            "speech": [
+                "集まれ、花のパワー！",
+                "ムーン・タクト！",
+                "花よ輝け！",
+                "プリキュア！シルバーフォルテウェイブ！！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SuperPreCureSeed"
+                    ],
+                    "i": "HeartCatchMirage"
+                }
+            ],
+            "purifiers": [
+                "CureBlossom",
+                "CureMarine",
+                "CureSunshine",
+                "CureMoonlight"
+            ],
+            "speech": [
+                "花よ、咲き誇れ！",
+                "プリキュア！ハートキャッチ・オーケストラ！！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalPink"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "purifiers": [
+                "CureYell"
+            ],
+            "speech": [
+                "フレフレ！",
+                "ハート・フォー・ユー！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalBlue"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "purifiers": [
+                "CureAnge"
+            ],
+            "speech": [
+                "フレフレ！",
+                "ハート・フェザー！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalYellow"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "purifiers": [
+                "CureEtoile"
+            ],
+            "speech": [
+                "フレフレ！",
+                "ハート・スター！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalOrange"
+                    ],
+                    "i": "MelodySword"
+                }
+            ],
+            "purifiers": [
+                "CureEtoile"
+            ],
+            "speech": [
+                "スタースラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalRed"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "purifiers": [
+                "CureMacherie"
+            ],
+            "speech": [
+                "Are you ready?",
+                "フレフレ！ハート・ソング！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalPurple"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "purifiers": [
+                "CureAmour"
+            ],
+            "speech": [
+                "行きます！",
+                "フレフレ！ハート・ダンス！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalRose"
+                    ],
+                    "i": "MelodySword"
+                }
+            ],
+            "purifiers": [
+                "CureYell"
+            ],
+            "speech": [
+                "フラワーシュート!"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalNavy"
+                    ],
+                    "i": "MelodySword"
+                }
+            ],
+            "purifiers": [
+                "CureAnge"
+            ],
+            "speech": [
+                "フェザーブラスト!"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalRouge"
+                    ],
+                    "i": "TwinLoveGuitar"
+                }
+            ],
+            "purifiers": [
+                "CureMacherie"
+            ],
+            "speech": [
+                "マシェリポップン!"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalViolet"
+                    ],
+                    "i": "TwinLoveGuitar"
+                }
+            ],
+            "purifiers": [
+                "CureAmour"
+            ],
+            "speech": [
+                "アムールロックンロール!"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalRose"
+                    ],
+                    "i": "MelodySword"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalNavy"
+                    ],
+                    "i": "MelodySword"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalOrange"
+                    ],
+                    "i": "MelodySword"
+                }
+            ],
+            "purifiers": [
+                "CureYell",
+                "CureAnge",
+                "CureEtoile"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "エールタクト！",
+                "アンジュハープ！",
+                "エトワールフルート！",
+                "心のトゲトゲ、飛んでいけ〜！",
+                "プリキュア・トリニティコンサート！",
+                "HUGっとプリキュア！エール・フォー・ユー！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalRouge"
+                    ],
+                    "i": "TwinLoveGuitar"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalViolet"
+                    ],
+                    "i": "TwinLoveGuitar"
+                }
+            ],
+            "purifiers": [
+                "CureMacherie",
+                "CureAmour"
+            ],
+            "speech": [
+                "ツインラブギター！ミライクリスタル！",
+                "Are you ready?",
+                "行くのです！",
+                "届け！私たちの、愛の歌！",
+                "心のトゲトゲ！",
+                "ズッキュン打ち抜く！",
+                "ツインラブ・ロックビート！",
+                "愛してる！",
+                "Thank you!"
+            ]
+        },
+        {
+            "specialItems": [
+                "CandyRod"
+            ],
+            "purifiers": [
+                "CureWhip"
+            ],
+            "speech": [
+                "キラキラキラルン！",
+                "ホイップ・デコレーション！"
+            ]
+        },
+        {
+            "specialItems": [
+                "CandyRod"
+            ],
+            "purifiers": [
+                "CureCustard"
+            ],
+            "speech": [
+                "キラキラキラルン！",
+                "カスタード・イリュージョン！"
+            ]
+        },
+        {
+            "specialItems": [
+                "CandyRod"
+            ],
+            "purifiers": [
+                "CureGelato"
+            ],
+            "speech": [
+                "キラキラキラルン！",
+                "ジェラート・シェイク！"
+            ]
+        },
+        {
+            "specialItems": [
+                "CandyRod"
+            ],
+            "purifiers": [
+                "CureMacaron"
+            ],
+            "speech": [
+                "キラキラキラルン！",
+                "マカロン・ジュリエンヌ！",
+                "にゃーお♥"
+            ]
+        },
+        {
+            "specialItems": [
+                "CandyRod"
+            ],
+            "purifiers": [
+                "CureChocolat"
+            ],
+            "speech": [
+                "キラキラキラルン！",
+                "ショコラ・アロマーゼ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "RainbowRibbon"
+            ],
+            "purifiers": [
+                "CureParfait"
+            ],
+            "speech": [
+                "レインボーリボン！",
+                "行くよ！アン・ドゥ・トレビアン！",
+                "キラクル・レインボー！",
+                "ボナペティ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "CandyRod"
+            ],
+            "purifiers": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat"
+            ],
+            "speech": [
+                "キャンディーロッド！",
+                "キラキラキラル・フルチャージ！",
+                "スイー・ツー・ワンダフル・アラモード！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CrystalAnimalRabbit"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalSquirrel"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalLion"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalCat"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalDog"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalPegasus"
+                    ],
+                    "i": "KirakiraruCreamer"
+                }
+            ],
+            "purifiers": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat",
+                "CureParfait"
+            ],
+            "speech": [
+                "キラキラルクリーマー！",
+                "キラッと輝け！クリスタルアニマル！",
+                "ぴょーん！",
+                "くるるっ！",
+                "がぁおー！",
+                "にゃーお！",
+                "わん！",
+                "ぱたた！",
+                "プリキュア・アニマルゴーランド！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SweetsCastle"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalRabbit"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalSquirrel"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalLion"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalCat"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalDog"
+                    ],
+                    "i": "KirakiraruCreamer"
+                },
+                {
+                    "a": [
+                        "CrystalAnimalPegasus"
+                    ],
+                    "i": "KirakiraruCreamer"
+                }
+            ],
+            "purifiers": [
+                "CureWhip_ALaModeStyle",
+                "CureCustard_ALaModeStyle",
+                "CureGelato_ALaModeStyle",
+                "CureMacaron_ALaModeStyle",
+                "CureChocolat_ALaModeStyle",
+                "CureParfait_ALaModeStyle"
+            ],
+            "speech": [
+                "キラッと輝け！",
+                "クリスタルアニマル！",
+                "ぴょーん！",
+                "くるるっ！",
+                "がぁおー！",
+                "にゃーお！",
+                "わん！",
+                "ぱたた！",
+                "プリキュア・ファンタスティックアニマーレ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneDia"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneDia"
+                    ],
+                    "i": "LinkleStick"
+                }
+            ],
+            "purifiers": [
+                "CureMiracle",
+                "CureMagical"
+            ],
+            "speech": [
+                "ダイヤ！永遠の輝きを私達の手に！",
+                "フルフルリンクル！",
+                "プリキュア！ダイヤモンド・エターナル！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneRuby"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneRuby"
+                    ],
+                    "i": "LinkleStick"
+                }
+            ],
+            "purifiers": [
+                "CureMiracle_Ruby",
+                "CureMagical_Ruby"
+            ],
+            "speech": [
+                "リンクルステッキ！",
+                "(モッフー！)",
+                "ルビー！紅の情熱よ私達の手に！",
+                "フルフルリンクル！",
+                "プリキュア！ルビー・パッショナーレ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneSapphire"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneSapphire"
+                    ],
+                    "i": "LinkleStick"
+                }
+            ],
+            "purifiers": [
+                "CureMiracle_Sapphire",
+                "CureMagical_Sapphire"
+            ],
+            "speech": [
+                "リンクルステッキ！",
+                "(モッフー！)",
+                "サファイア！青き知性よ私達の手に！",
+                "フルフルリンクル！",
+                "プリキュア！サファイア・スマーティッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneTopaz"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneTopaz"
+                    ],
+                    "i": "LinkleStick"
+                }
+            ],
+            "purifiers": [
+                "CureMiracle_Topaz",
+                "CureMagical_Topaz"
+            ],
+            "speech": [
+                "リンクルステッキ！",
+                "(モォッフー！モッフッ！)",
+                "トパーズ！金色の希望よ私達の手に！",
+                "フルフルリンクル！",
+                "プリキュア！トパーズ・エスペランサ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneEmerald"
+                    ],
+                    "i": "FlowerEchoWand"
+                }
+            ],
+            "purifiers": [
+                "CureFelice"
+            ],
+            "speech": [
+                "フラワーエコーワンド！",
+                "エメラルド！",
+                "キュアー・アップ！",
+                "（キュアー・アップ！キュアー・アップ！キュアー・アップ！）",
+                "プリキュア！エメラルド・リンカネーション！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneAlexandrite",
+                        {
+                            "a": [
+                                "LinkleStoneAlexandrite"
+                            ],
+                            "i": "Mofurun"
+                        }
+                    ],
+                    "i": "RainbowCarriage"
+                },
+                "PreciousBrace"
+            ],
+            "purifiers": [
+                "CureMiracle_OverTheRainbow",
+                "CureMagical_OverTheRainbow",
+                "CureFelice_OverTheRainbow"
+            ],
+            "speech": [
+                "（レインボー・キャリッジ！ モフッ！　モォッフー！！）",
+                "巡り会う奇跡よ！",
+                "繋がる魔法よ！",
+                "育まれし幸福（しあわせ）よ！",
+                "今私たちの手に！",
+                "プレシャスブレス！",
+                "フル・フル・フルフルリンクル！",
+                "プリキュア！エクストリーム・レインボー！",
+                "キュアップ・ラパパ！　虹の彼方に！"
+            ]
+        },
+        {
+            "specialItems": [
+                "HeartielBaton"
+            ],
+            "purifiers": [
+                "ShinyLuminous"
+            ],
+            "speech": [
+                "光の意志よ！私に勇気を！希望と力を！！",
+                "ルミナス・ハーティエル・アンクション！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "SmilePact"
+                }
+            ],
+            "purifiers": [
+                "CureHappy"
+            ],
+            "speech": [
+                "プリキュア！ハッピー・シャワー！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "SmilePact"
+                }
+            ],
+            "purifiers": [
+                "CureSunny"
+            ],
+            "speech": [
+                "プリキュア！サニー・ファイヤー！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "SmilePact"
+                }
+            ],
+            "purifiers": [
+                "CurePeace"
+            ],
+            "speech": [
+                "プリキュア！ピース・サンダー！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "SmilePact"
+                }
+            ],
+            "purifiers": [
+                "CureMarch"
+            ],
+            "speech": [
+                "プリキュア！マーチ・シュート！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "SmilePact"
+                }
+            ],
+            "purifiers": [
+                "CureBeauty"
+            ],
+            "speech": [
+                "プリキュア！ビューティー・ブリザード！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "RoyalClock"
+                }
+            ],
+            "purifiers": [
+                "PrincessHappy",
+                "PrincessSunny",
+                "PrincessPeace",
+                "PrincessMarch",
+                "PrincessBeauty"
+            ],
+            "speech": [
+                "開け、ロイヤルクロック！",
+                "(みんなの力を1つにするクル！)",
+                "届け、希望の光！",
+                "はばたけ！光り輝く未来へ！",
+                "プリキュア！ロイヤル・レインボー・バースト！",
+                "輝け！ハッピースマイル！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Miry"
+                    ],
+                    "i": "MiracleBelltier"
+                }
+            ],
+            "purifiers": [
+                "CureMelody"
+            ],
+            "speech": [
+                "(ミミ～！)",
+                "奏でましょう、奇跡のメロディー！ミラクル・ベルティエ！",
+                "おいで、ミリー！",
+                "(ミミ～！)",
+                "翔けめぐれ、トーンのリング！",
+                "プリキュア！ミュージックロンド！",
+                "三拍子！１、２、３",
+                "フィナーレ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Fary"
+                    ],
+                    "i": "FantasticBelltier"
+                }
+            ],
+            "purifiers": [
+                "CureRhythm"
+            ],
+            "speech": [
+                "(ファファ～！)",
+                "刻みましょう、大いなるリズム！ファンタスティック・ベルティエ！",
+                "おいで、ファリー！",
+                "(ファファ～！)",
+                "翔けめぐれ、トーンのリング！",
+                "プリキュア！ミュージックロンド！",
+                "三拍子！１、２、３",
+                "フィナーレ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Sory"
+                    ],
+                    "i": "LoveGuitarRod"
+                }
+            ],
+            "purifiers": [
+                "CureBeat"
+            ],
+            "speech": [
+                "(ソソッ)",
+                "弾き鳴らせ、愛の魂！ラブギターロッド！",
+                "おいで、ソリー！",
+                "(ソソッ)",
+                "チェンジ！ソウルロッド！",
+                "翔けめぐれ、トーンのリング！",
+                "プリキュア！ハートフル・ビート・ロック！",
+                "三拍子！１、２、３",
+                "フィナーレ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Tiry"
+                    ],
+                    "i": "CureModules"
+                }
+            ],
+            "purifiers": [
+                "CureMuse"
+            ],
+            "speech": [
+                "おいで、シリー！",
+                "(シシ～)",
+                "「シ」の音符の、シャイニングメロディ！",
+                "プリキュア！スパーリング・シャワー！！",
+                "三拍子！１、２、３",
+                "フィナーレ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "HealingChest"
+            ],
+            "purifiers": [
+                "CureMelody",
+                "CureRhythm",
+                "CureBeat",
+                "CureMuse"
+            ],
+            "speech": [
+                "いでよ、すべての音の源よ！",
+                "届けましょう、希望のシンフォニー！",
+                "プリキュア！スイートセッションアンサンブル！",
+                "クレッシェンド！！",
+                "フィナーレ！"
             ]
         },
         {
@@ -306,9 +3686,287 @@
                 "今ここに！",
                 "プリキュア！ファイブ・エクスプロージョン！"
             ]
+        },
+        {
+            "specialItems": [
+                "MilkyPalette"
+            ],
+            "purifiers": [
+                "MilkyRose"
+            ],
+            "speech": [
+                "邪悪な力を包み込む",
+                "バラの吹雪を咲かせましょう！",
+                "ミルキィローズ・ブリザード！"
+            ]
+        },
+        {
+            "specialItems": [
+                "MilkyMirror"
+            ],
+            "purifiers": [
+                "MilkyRose"
+            ],
+            "speech": [
+                "邪悪な力を包み込む",
+                "煌くバラを咲かせましょう！",
+                "ミルキィローズ・メタル・ブリザード！"
+            ]
+        },
+        {
+            "specialItems": [
+                "CrystalFleuret",
+                "FireFleuret",
+                "ShiningFleuret",
+                "ProtectFleuret",
+                "TornadoFleuret"
+            ],
+            "purifiers": [
+                "CureDream",
+                "CureRouge",
+                "CureLemonade",
+                "CureMint",
+                "CureAqua"
+            ],
+            "speech": [
+                "クリスタルフルーレ！希望の光！",
+                "ファイヤーフルーレ！情熱の光！",
+                "プロテクトフルーレ！安らぎの光！",
+                "トルネードフルーレ！知性の光！",
+                "5つの光に！",
+                "勇気をのせて！",
+                "プリキュア！レインボー・ローズ・エクスプロージョン！",
+                "行け！"
+            ]
         }
     ],
     "transformations": [
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneSharuru"
+                }
+            ],
+            "transformees": [
+                "CureHeart"
+            ],
+            "speech": [
+                "(シャールルーン！)",
+                "プリキュア！ラブリンク！",
+                "(L! O! V! E!)",
+                "みなぎる愛！ キュアハート！",
+                "愛を無くした悲しいジコチューさん、このキュアハートが あなたのドキドキ 取り戻してみせる！"
+            ],
+            "transformers": [
+                "Mana"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneRaquel"
+                }
+            ],
+            "transformees": [
+                "CureDiamond"
+            ],
+            "speech": [
+                "(ラケル！)",
+                "プリキュア！ラブリンク！",
+                "(L! O! V! E!)",
+                "英知の光！ キュアダイヤモンド！",
+                "人の思いを踏みにじるなんて許せない、このキュアダイヤモンドが あなたの頭を冷やしてあげる！"
+            ],
+            "transformers": [
+                "Rikka"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneLance"
+                }
+            ],
+            "transformees": [
+                "CureRosetta"
+            ],
+            "speech": [
+                "(ラーンスー！)",
+                "プリキュア！ラブリンク！",
+                "(L! O! V! E!)",
+                "ひだまりポカポカ、キュアロゼッタ！",
+                "世界を制するのは愛だけです、さぁ、あなたも私と 愛を育んでくださいな"
+            ],
+            "transformers": [
+                "Alice"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneDavi"
+                }
+            ],
+            "transformees": [
+                "CureSword"
+            ],
+            "speech": [
+                "(ダビィー！)",
+                "プリキュア！ラブリンク！",
+                "(L! O! V! E!)",
+                "勇気の刃！ キュアソード！",
+                "このキュアソードが 愛の剣で、あなたの野望を断ち切ってみせる！"
+            ],
+            "transformers": [
+                "Makoto"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LoveEyesPalette"
+                }
+            ],
+            "transformees": [
+                "CureAce"
+            ],
+            "speech": [
+                "プリキュアドレスアップ！",
+                "(キュピラッパー！)",
+                "愛の切り札！ キュアエース！",
+                "美しさは正義の証し！",
+                "ウインク一つで、あなたのハートを射抜いて差し上げますわ！"
+            ],
+            "transformers": [
+                "Aguri"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneSharuru"
+                },
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneRaquel"
+                },
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneLance"
+                },
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneDavi"
+                }
+            ],
+            "transformees": [
+                "CureHeart",
+                "CureDiamond",
+                "CureRosetta",
+                "CureSword"
+            ],
+            "speech": [
+                "(シャールルーン！)",
+                "プリキュア！ラブリンク！",
+                "(L! O! V! E!)",
+                "みなぎる愛！ キュアハート！",
+                "英知の光！ キュアダイヤモンド！",
+                "ひだまりポカポカ、キュアロゼッタ！",
+                "勇気の刃！ キュアソード！",
+                "響け愛の鼓動！ドキドキプリキュア！"
+            ],
+            "transformers": [
+                "Mana",
+                "Rikka",
+                "Alice",
+                "Makoto"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneSharuru"
+                },
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneRaquel"
+                },
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneLance"
+                },
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LovelyCommuneDavi"
+                },
+                {
+                    "a": [
+                        "CureLoveads"
+                    ],
+                    "i": "LoveEyesPalette"
+                }
+            ],
+            "transformees": [
+                "CureHeart",
+                "CureDiamond",
+                "CureRosetta",
+                "CureSword",
+                "CureAce"
+            ],
+            "speech": [
+                "(シャールルーン！)",
+                "プリキュア！ラブリンク！",
+                "(L! O! V! E!)",
+                "プリキュアドレスアップ！",
+                "(キュピラッパー！)",
+                "みなぎる愛！ キュアハート！",
+                "英知の光！ キュアダイヤモンド！",
+                "ひだまりポカポカ、キュアロゼッタ！",
+                "勇気の刃！ キュアソード！",
+                "愛の切り札！ キュアエース！",
+                "響け愛の鼓動！ドキドキプリキュア！"
+            ],
+            "transformers": [
+                "Mana",
+                "Rikka",
+                "Alice",
+                "Makoto",
+                "Aguri"
+            ]
+        },
         {
             "specialItems": [
                 "CardCommuneMepple",
@@ -329,6 +3987,2602 @@
             "transformers": [
                 "Nagisa",
                 "Honoka"
+            ]
+        },
+        {
+            "specialItems": [
+                "Linkrun"
+            ],
+            "transformees": [
+                "CurePeach"
+            ],
+            "speech": [
+                "チェインジ！プリキュア・ビートアップ！",
+                "ピンクのハートは愛ある印！",
+                "もぎたてフレッシュ、キュアピーチ！"
+            ],
+            "transformers": [
+                "Love"
+            ]
+        },
+        {
+            "specialItems": [
+                "Linkrun"
+            ],
+            "transformees": [
+                "CureBerry"
+            ],
+            "speech": [
+                "チェインジ！プリキュア・ビートアップ！",
+                "ブルーのハートは希望の印！",
+                "つみたてフレッシュ、キュアベリー！"
+            ],
+            "transformers": [
+                "Miki"
+            ]
+        },
+        {
+            "specialItems": [
+                "Linkrun"
+            ],
+            "transformees": [
+                "CurePine"
+            ],
+            "speech": [
+                "チェインジ！プリキュア・ビートアップ！",
+                "イエローハートは祈りの印！",
+                "とれたてフレッシュ、キュアパイン！"
+            ],
+            "transformers": [
+                "Inori"
+            ]
+        },
+        {
+            "specialItems": [
+                "Linkrun"
+            ],
+            "transformees": [
+                "CurePassion"
+            ],
+            "speech": [
+                "チェインジ！プリキュア・ビートアップ！",
+                "真っ赤なハートは幸せの証！",
+                "うれたてフレッシュ、キュアパッション！"
+            ],
+            "transformers": [
+                "Setsuna"
+            ]
+        },
+        {
+            "specialItems": [
+                "Linkrun"
+            ],
+            "transformees": [
+                "CurePeach",
+                "CureBerry",
+                "CurePine",
+                "CurePassion"
+            ],
+            "speech": [
+                "チェインジ！プリキュア・ビートアップ！",
+                "ピンクのハートは愛ある印！",
+                "もぎたてフレッシュ、キュアピーチ！",
+                "ブルーのハートは希望の印！",
+                "つみたてフレッシュ、キュアベリー！",
+                "イエローハートは祈りの印！",
+                "とれたてフレッシュ、キュアパイン！",
+                "真っ赤なハートは幸せの証！",
+                "うれたてフレッシュ、キュアパッション！",
+                "レッツ・プリキュア！"
+            ],
+            "transformers": [
+                "Love",
+                "Miki",
+                "Inori",
+                "Setsuna"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyFlora"
+                    ],
+                    "i": "PrincessPerfume"
+                }
+            ],
+            "transformees": [
+                "CureFlora"
+            ],
+            "speech": [
+                "プリキュア！プリンセスエンゲージ！",
+                "咲き誇る、花のプリンセス！キュアフローラ！",
+                "冷たい檻に閉ざされた夢、返していただきますわ！",
+                "お覚悟はよろしくて？"
+            ],
+            "transformers": [
+                "Haruka"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyMermaid"
+                    ],
+                    "i": "PrincessPerfume"
+                }
+            ],
+            "transformees": [
+                "CureMermaid"
+            ],
+            "speech": [
+                "プリキュア！プリンセスエンゲージ！",
+                "澄み渡る、海のプリンセス！キュアマーメイド！",
+                "冷たい檻に閉ざされた夢、返していただきますわ！",
+                "お覚悟はよろしくて？"
+            ],
+            "transformers": [
+                "Minami"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyTwinkle"
+                    ],
+                    "i": "PrincessPerfume"
+                }
+            ],
+            "transformees": [
+                "CureTwinkle"
+            ],
+            "speech": [
+                "プリキュア！プリンセスエンゲージ！",
+                "きらめく星のプリンセス！キュアトゥインクル！",
+                "冷たい檻に閉ざされた夢、返していただきますわ！",
+                "お覚悟はよろしくて？"
+            ],
+            "transformers": [
+                "Kirara"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyScarlet"
+                    ],
+                    "i": "PrincessPerfume"
+                }
+            ],
+            "transformees": [
+                "CureScarlet"
+            ],
+            "speech": [
+                "プリキュア！プリンセスエンゲージ！",
+                "深紅の炎のプリンセス！キュアスカーレット！",
+                "冷たい檻に閉ざされた夢、返していただきますわ。",
+                "お覚悟を決めなさい！"
+            ],
+            "transformers": [
+                "Towa"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyFlora"
+                    ],
+                    "i": "PrincessPerfume"
+                }
+            ],
+            "transformees": [
+                "CureFlora_ModeElegant"
+            ],
+            "speech": [
+                "エクスチェンジ！モードエレガント！"
+            ],
+            "transformers": [
+                "CureFlora"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyMermaid"
+                    ],
+                    "i": "PrincessPerfume"
+                }
+            ],
+            "transformees": [
+                "CureMermaid_ModeElegant"
+            ],
+            "speech": [
+                "エクスチェンジ！モードエレガント！"
+            ],
+            "transformers": [
+                "CureMermaid"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyTwinkle"
+                    ],
+                    "i": "PrincessPerfume"
+                }
+            ],
+            "transformees": [
+                "CureTwinkle_ModeElegant"
+            ],
+            "speech": [
+                "エクスチェンジ！モードエレガント！"
+            ],
+            "transformers": [
+                "CureTwinkle"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyPhoenix"
+                    ],
+                    "i": "PrincessPerfume"
+                }
+            ],
+            "transformees": [
+                "CureScarlet_ModeElegant"
+            ],
+            "speech": [
+                "エクスチェンジ！モードエレガント！"
+            ],
+            "transformers": [
+                "CureScarlet"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyFlora"
+                    ],
+                    "i": "PrincessPerfume"
+                },
+                {
+                    "a": [
+                        "DressUpKeyMermaid"
+                    ],
+                    "i": "PrincessPerfume"
+                },
+                {
+                    "a": [
+                        "DressUpKeyTwinkle"
+                    ],
+                    "i": "PrincessPerfume"
+                }
+            ],
+            "transformees": [
+                "CureFlora",
+                "CureMermaid",
+                "CureTwinkle"
+            ],
+            "speech": [
+                "プリキュア！プリンセスエンゲージ！",
+                "咲き誇る、花のプリンセス！キュアフローラ！",
+                "澄み渡る、海のプリンセス！キュアマーメイド！",
+                "きらめく星のプリンセス！キュアトゥインクル！",
+                "つよく、やさしく、美しく！",
+                "Go! プリンセスプリキュア！"
+            ],
+            "transformers": [
+                "Haruka",
+                "Minami",
+                "Kirara"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DressUpKeyFlora"
+                    ],
+                    "i": "PrincessPerfume"
+                },
+                {
+                    "a": [
+                        "DressUpKeyMermaid"
+                    ],
+                    "i": "PrincessPerfume"
+                },
+                {
+                    "a": [
+                        "DressUpKeyTwinkle"
+                    ],
+                    "i": "PrincessPerfume"
+                },
+                {
+                    "a": [
+                        "DressUpKeyScarlet"
+                    ],
+                    "i": "PrincessPerfume"
+                }
+            ],
+            "transformees": [
+                "CureFlora",
+                "CureMermaid",
+                "CureTwinkle",
+                "CureScarlet"
+            ],
+            "speech": [
+                "プリキュア！プリンセスエンゲージ！",
+                "咲き誇る、花のプリンセス！キュアフローラ！",
+                "澄み渡る、海のプリンセス！キュアマーメイド！",
+                "きらめく星のプリンセス！キュアトゥインクル！",
+                "深紅の炎のプリンセス！キュアスカーレット！",
+                "つよく、やさしく、美しく！",
+                "Go! プリンセスプリキュア！"
+            ],
+            "transformers": [
+                "Haruka",
+                "Minami",
+                "Kirara",
+                "Towa"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "RoyalDressUpKey"
+                    ],
+                    "i": "MusicPrincessPalace"
+                }
+            ],
+            "transformees": [
+                "CureFlora_ModeElegantRoyal",
+                "CureMermaid_ModeElegantRoyal",
+                "CureTwinkle_ModeElegantRoyal",
+                "CureScarlet_ModeElegantRoyal"
+            ],
+            "speech": [
+                "モードエレガント・ロイヤル！",
+                "ドレスアップ・ロイヤル！"
+            ],
+            "transformers": [
+                "CureFlora",
+                "CureMermaid",
+                "CureTwinkle",
+                "CureScarlet"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCardLovely"
+                    ],
+                    "i": "PreChanMirror"
+                }
+            ],
+            "transformees": [
+                "CureLovely"
+            ],
+            "speech": [
+                "(かわルンルン！)",
+                "プリキュア！くるりんミラーチェーンジ！",
+                "世界に広がる、ビッグな愛！ キュアラブリー！"
+            ],
+            "transformers": [
+                "Megumi"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCardPrincess"
+                    ],
+                    "i": "PreChanMirror"
+                }
+            ],
+            "transformees": [
+                "CurePrincess"
+            ],
+            "speech": [
+                "(かわルンルン！)",
+                "プリキュア！くるりんミラーチェンジ！",
+                "天空に舞う、蒼き風！ (ヒュッ！) キュアプリンセス！"
+            ],
+            "transformers": [
+                "Hime"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCardHoney"
+                    ],
+                    "i": "PreChanMirror"
+                }
+            ],
+            "transformees": [
+                "CureHoney"
+            ],
+            "speech": [
+                "(かわルンルン！)",
+                "プリキュア！くるりんミラーチェーンジ！",
+                "大地に実る、命の光！ キュアハニー！"
+            ],
+            "transformers": [
+                "Yuko"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCardFortune"
+                    ],
+                    "i": "FortunePiano"
+                }
+            ],
+            "transformees": [
+                "CureFortune"
+            ],
+            "speech": [
+                "(かわルンルン！)",
+                "プリキュア！きらりんスターシンフォニー！",
+                "夜空に煌めく、希望の星！ キュアフォーチュン！"
+            ],
+            "transformers": [
+                "Iona"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCardLovely"
+                    ],
+                    "i": "PreChanMirror"
+                },
+                {
+                    "a": [
+                        "PreCardPrincess"
+                    ],
+                    "i": "PreChanMirror"
+                }
+            ],
+            "transformees": [
+                "CureLovely",
+                "CurePrincess"
+            ],
+            "speech": [
+                "(かわルンルン！)",
+                "プリキュア！くるりんミラーチェーンジ！",
+                "世界に広がる、ビッグな愛！ キュアラブリー！",
+                "天空に舞う、蒼き風！ (ヒュッ！) キュアプリンセス！",
+                "ハピネス注入！幸せチャージ！",
+                "ハピネスチャージプリキュア！"
+            ],
+            "transformers": [
+                "Megumi",
+                "Hime"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCardLovely"
+                    ],
+                    "i": "PreChanMirror"
+                },
+                {
+                    "a": [
+                        "PreCardPrincess"
+                    ],
+                    "i": "PreChanMirror"
+                },
+                {
+                    "a": [
+                        "PreCardHoney"
+                    ],
+                    "i": "PreChanMirror"
+                }
+            ],
+            "transformees": [
+                "CureLovely",
+                "CurePrincess",
+                "CureHoney"
+            ],
+            "speech": [
+                "(かわルンルン！)",
+                "プリキュア！くるりんミラーチェーンジ！",
+                "世界に広がる、ビッグな愛！ キュアラブリー！",
+                "天空に舞う、蒼き風！ (ヒュッ！) キュアプリンセス！",
+                "大地に実る、命の光！ キュアハニー！",
+                "ハピネス注入！幸せチャージ！",
+                "ハピネスチャージプリキュア！"
+            ],
+            "transformers": [
+                "Megumi",
+                "Hime",
+                "Yuko"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCardLovely"
+                    ],
+                    "i": "PreChanMirror"
+                },
+                {
+                    "a": [
+                        "PreCardPrincess"
+                    ],
+                    "i": "PreChanMirror"
+                },
+                {
+                    "a": [
+                        "PreCardHoney"
+                    ],
+                    "i": "PreChanMirror"
+                },
+                {
+                    "a": [
+                        "PreCardFortune"
+                    ],
+                    "i": "FortunePiano"
+                }
+            ],
+            "transformees": [
+                "CureLovely",
+                "CurePrincess",
+                "CureHoney",
+                "CureFortune"
+            ],
+            "speech": [
+                "(かわルンルン！)",
+                "プリキュア！くるりんミラーチェンジ！",
+                "プリキュア！きらりんスターシンフォニー！",
+                "世界に広がる、ビッグな愛！ キュアラブリー！",
+                "天空に舞う、蒼き風！ (ヒュッ！) キュアプリンセス！",
+                "大地に実る、命の光！ キュアハニー！",
+                "夜空に煌めく、希望の星！ キュアフォーチュン！",
+                "ハピネス注入！幸せチャージ！",
+                "ハピネスチャージプリキュア！"
+            ],
+            "transformers": [
+                "Megumi",
+                "Hime",
+                "Yuko",
+                "Iona"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCardLovelyInnocentForm"
+                    ],
+                    "i": "PreChanMirror"
+                },
+                {
+                    "a": [
+                        "PreCardPrincessInnocentForm"
+                    ],
+                    "i": "PreChanMirror"
+                },
+                {
+                    "a": [
+                        "PreCardHoneyInnocentForm"
+                    ],
+                    "i": "PreChanMirror"
+                },
+                {
+                    "a": [
+                        "PreCardFortuneInnocentForm"
+                    ],
+                    "i": "FortunePiano"
+                }
+            ],
+            "transformees": [
+                "CureLovely_InnocentForm",
+                "CurePrincess_InnocentForm",
+                "CureHoney_InnocentForm",
+                "CureFortune_InnocentForm"
+            ],
+            "speech": [
+                "(かわルンルン！)",
+                "プリキュア！くるりんミラーチェンジ！",
+                "プリキュア！きらりんスターシンフォニー！",
+                "ハピネスチャージプリキュア！イノセントフォーム！"
+            ],
+            "transformers": [
+                "CureLovely",
+                "CurePrincess",
+                "CureHoney",
+                "CureFortune"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureSeed"
+                    ],
+                    "i": "HeartPerfume"
+                }
+            ],
+            "transformees": [
+                "CureBlossom"
+            ],
+            "speech": [
+                "(プリキュアの種、いくですぅ！)",
+                "プリキュア！オープンマイハート！",
+                "大地に咲く一輪の花！ キュアブロッサム！"
+            ],
+            "transformers": [
+                "Tsubomi"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureSeed"
+                    ],
+                    "i": "HeartPerfume"
+                }
+            ],
+            "transformees": [
+                "CureMarine"
+            ],
+            "speech": [
+                "(プリキュアの種、いくですぅ！)",
+                "プリキュア！オープンマイハート！",
+                "海風に揺れる一輪の花！ キュアマリン！"
+            ],
+            "transformers": [
+                "Erika"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureSeed"
+                    ],
+                    "i": "ShinyPerfume"
+                }
+            ],
+            "transformees": [
+                "CureSunshine"
+            ],
+            "speech": [
+                "(プリキュアの種、いくですぅ！)",
+                "プリキュア！オープンマイハート！",
+                "陽の光浴びる一輪の花！ キュアサンシャイン！"
+            ],
+            "transformers": [
+                "Itsuki"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureSeed"
+                    ],
+                    "i": "HeartPot"
+                }
+            ],
+            "transformees": [
+                "CureMoonlight"
+            ],
+            "speech": [
+                "プリキュア！オープンマイハート！",
+                "月光に冴える一輪の花！ キュアムーンライト！"
+            ],
+            "transformers": [
+                "Yuri"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureSeed"
+                    ],
+                    "i": "HeartPerfume"
+                },
+                {
+                    "a": [
+                        "PreCureSeed"
+                    ],
+                    "i": "HeartPerfume"
+                },
+                {
+                    "a": [
+                        "PreCureSeed"
+                    ],
+                    "i": "ShinyPerfume"
+                },
+                {
+                    "a": [
+                        "PreCureSeed"
+                    ],
+                    "i": "HeartPot"
+                }
+            ],
+            "transformees": [
+                "CureBlossom",
+                "CureMarine",
+                "CureSunshine",
+                "CureMoonlight"
+            ],
+            "speech": [
+                "(プリキュアの種、いくですぅ！)",
+                "プリキュア！オープンマイハート！",
+                "大地に咲く一輪の花！ キュアブロッサム！",
+                "海風に揺れる一輪の花！ キュアマリン！",
+                "陽の光浴びる一輪の花！ キュアサンシャイン！",
+                "月光に冴える一輪の花！ キュアムーンライト！",
+                "ハートキャッチ・プリキュア！"
+            ],
+            "transformers": [
+                "Tsubomi",
+                "Erika",
+                "Itsuki",
+                "Yuri"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SuperPreCureSeed"
+                    ],
+                    "i": "HeartCatchMirage"
+                }
+            ],
+            "transformees": [
+                "SuperCureBlossom",
+                "SuperCureMarine",
+                "SuperCureSunshine",
+                "SuperCureMoonlight"
+            ],
+            "speech": [
+                "鏡よ鏡、プリキュアに力を！",
+                "世界に輝く一面の花！ ハートキャッチプリキュア！ スーパーシルエット！"
+            ],
+            "transformers": [
+                "CureBlossom",
+                "CureMarine",
+                "CureSunshine",
+                "CureMoonlight"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalPink"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureYell"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "ぎゅ～！",
+                "ぎゅ～～！",
+                "輝く未来をー、抱きしめて！",
+                "みんなを応援！元気のプリキュア！キュアエール！"
+            ],
+            "transformers": [
+                "Hana"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalBlue"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureAnge"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "ぎゅ～！",
+                "ぎゅ～～！",
+                "輝く未来をー、抱きしめて！",
+                "みんなを癒す！知恵のプリキュア！キュアアンジュ！"
+            ],
+            "transformers": [
+                "Saaya"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalYellow"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureEtoile"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "ぎゅ～！",
+                "ぎゅ～～！",
+                "輝く未来をー、抱きしめて！",
+                "みんな輝け！力のプリキュア！キュアエトワール！"
+            ],
+            "transformers": [
+                "Homare"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalPink"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalBlue"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalYellow"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureYell",
+                "CureAnge",
+                "CureEtoile"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "は～ぎゅ～～！",
+                "は～ぎゅ～～！",
+                "輝く未来をー、抱きしめて！",
+                "みんなを応援！元気のプリキュア！キュアエール！",
+                "みんなを癒す！知恵のプリキュア！キュアアンジュ！",
+                "みんな輝け！力のプリキュア！キュアエトワール！"
+            ],
+            "transformers": [
+                "Hana",
+                "Saaya",
+                "Homare"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalRed"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalPurple"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureMacherie",
+                "CureAmour"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "ぎゅ～！",
+                "ぎゅ～！",
+                "輝く未来をー、抱きしめて！",
+                "みんな大好き！愛のプリキュア！キュアマシェリ！キュアアムール！"
+            ],
+            "transformers": [
+                "Emiru",
+                "Ruru"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MiraiCrystalPink"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalBlue"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalYellow"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalRed"
+                    ],
+                    "i": "PreHeart"
+                },
+                {
+                    "a": [
+                        "MiraiCrystalPurple"
+                    ],
+                    "i": "PreHeart"
+                }
+            ],
+            "transformees": [
+                "CureYell",
+                "CureAnge",
+                "CureEtoile",
+                "CureMacherie",
+                "CureAmour"
+            ],
+            "speech": [
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "ミライクリスタル！",
+                "ミライクリスタル！",
+                "ハートキラっと！",
+                "は～ぎゅ～～！",
+                "は～ぎゅ～～！",
+                "ぎゅ～！",
+                "ぎゅ～！",
+                "ぎゅ～！",
+                "輝く未来をー、抱きしめて！",
+                "みんなを応援！元気のプリキュア！キュアエール！",
+                "みんなを癒す！知恵のプリキュア！キュアアンジュ！",
+                "みんな輝け！力のプリキュア！キュアエトワール！",
+                "みんな大好き！愛のプリキュア！キュアマシェリ！キュアアムール！",
+                "HUGっと！プリキュア！"
+            ],
+            "transformers": [
+                "Hana",
+                "Saaya",
+                "Homare",
+                "Emiru",
+                "Ruru"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureWhip"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "ショートケーキ！",
+                "元気と笑顔を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！"
+            ],
+            "transformers": [
+                "Ichika"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureCustard"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "プリン！",
+                "知性と勇気を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアカスタード！できあがり！"
+            ],
+            "transformers": [
+                "Himari"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureGelato"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "アイス！",
+                "自由と情熱を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアジェラート！できあがり！"
+            ],
+            "transformers": [
+                "Aoi"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureMacaron"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "マカロン！",
+                "美しさとトキメキを！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアマカロン！できあがり！"
+            ],
+            "transformers": [
+                "Yukari"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DogChocolate"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureChocolat"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "チョコレート！",
+                "強さと愛を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアショコラ！できあがり！"
+            ],
+            "transformers": [
+                "Akira"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PegasusParfait"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureParfait"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "パフェ！",
+                "夢と希望を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアパルフェ！できあがり！"
+            ],
+            "transformers": [
+                "Ciel"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PekorinDonut"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CurePekorin"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "ドーナツ！",
+                "ペコペコとキラキラを！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアペコリン！できあがり！"
+            ],
+            "transformers": [
+                "Pekorin"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "DogChocolate"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "ショートケーキ！",
+                "元気と笑顔を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！",
+                "キュアカスタード！できあがり！",
+                "キュアジェラート！できあがり！",
+                "キュアマカロン！できあがり！",
+                "キュアショコラ！できあがり！",
+                "キラキラ☆プリキュアアラモード！"
+            ],
+            "transformers": [
+                "Ichika",
+                "Himari",
+                "Aoi",
+                "Yukari",
+                "Akira"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "DogChocolate"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "PegasusParfait"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat",
+                "CureParfait"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "ショートケーキ！",
+                "元気と笑顔を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！",
+                "キュアカスタード！できあがり！",
+                "キュアジェラート！できあがり！",
+                "キュアマカロン！できあがり！",
+                "キュアショコラ！できあがり！",
+                "キュアパルフェ！できあがり！",
+                "キラキラ☆プリキュアアラモード！"
+            ],
+            "transformers": [
+                "Ichika",
+                "Himari",
+                "Aoi",
+                "Yukari",
+                "Akira",
+                "Ciel"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "DogChocolate"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureCustard",
+                "CureWhip",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "プリン！",
+                "知性と勇気を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！",
+                "キュアカスタード！できあがり！",
+                "キュアジェラート！できあがり！",
+                "キュアマカロン！できあがり！",
+                "キュアショコラ！できあがり！",
+                "キラキラ☆プリキュアアラモード！"
+            ],
+            "transformers": [
+                "Himari",
+                "Ichika",
+                "Aoi",
+                "Yukari",
+                "Akira"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "DogChocolate"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureGelato",
+                "CureWhip",
+                "CureCustard",
+                "CureMacaron",
+                "CureChocolat"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "アイス！",
+                "自由と情熱を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！",
+                "キュアカスタード！できあがり！",
+                "キュアジェラート！できあがり！",
+                "キュアマカロン！できあがり！",
+                "キュアショコラ！できあがり！",
+                "キラキラ☆プリキュアアラモード！"
+            ],
+            "transformers": [
+                "Aoi",
+                "Ichika",
+                "Himari",
+                "Yukari",
+                "Akira"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "DogChocolate"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureMacaron",
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureChocolat"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "マカロン！",
+                "美しさとトキメキを！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！",
+                "キュアカスタード！できあがり！",
+                "キュアジェラート！できあがり！",
+                "キュアマカロン！できあがり！",
+                "キュアショコラ！できあがり！",
+                "キラキラ☆プリキュアアラモード！"
+            ],
+            "transformers": [
+                "Yukari",
+                "Ichika",
+                "Himari",
+                "Aoi",
+                "Akira"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "DogChocolate"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureChocolat",
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "チョコレート！",
+                "強さと愛を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！",
+                "キュアカスタード！できあがり！",
+                "キュアジェラート！できあがり！",
+                "キュアマカロン！できあがり！",
+                "キュアショコラ！できあがり！",
+                "キラキラ☆プリキュアアラモード！"
+            ],
+            "transformers": [
+                "Akira",
+                "Ichika",
+                "Himari",
+                "Aoi",
+                "Yukari"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PegasusParfait"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "DogChocolate"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureParfait",
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "パフェ！",
+                "夢と希望を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！",
+                "キュアカスタード！できあがり！",
+                "キュアジェラート！できあがり！",
+                "キュアマカロン！できあがり！",
+                "キュアショコラ！できあがり！",
+                "キュアパルフェ！できあがり！",
+                "キラキラ☆プリキュアアラモード！"
+            ],
+            "transformers": [
+                "Ciel",
+                "Ichika",
+                "Himari",
+                "Aoi",
+                "Yukari",
+                "Akira"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "ショートケーキ！",
+                "元気と笑顔を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！",
+                "キュアカスタード！できあがり！",
+                "キュアジェラート！できあがり！"
+            ],
+            "transformers": [
+                "Ichika",
+                "Himari",
+                "Aoi"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "RabbitShortcake"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "SquirrelPudding"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "LionIce"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "ショートケーキ！",
+                "元気と笑顔を！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアホイップ！できあがり！",
+                "キュアカスタード！できあがり！",
+                "キュアジェラート！できあがり！",
+                "キュアマカロン！できあがり！"
+            ],
+            "transformers": [
+                "Ichika",
+                "Himari",
+                "Aoi",
+                "Yukari"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CatMacaron"
+                    ],
+                    "i": "SweetsPact"
+                },
+                {
+                    "a": [
+                        "DogChocolate"
+                    ],
+                    "i": "SweetsPact"
+                }
+            ],
+            "transformees": [
+                "CureMacaron",
+                "CureChocolat"
+            ],
+            "speech": [
+                "キュアラモード・デコレーション！",
+                "マカロン！",
+                "美しさとトキメキを！",
+                "レッツ・ラ・まぜまぜ！",
+                "キュアマカロン！できあがり！",
+                "キュアショコラ！できあがり！"
+            ],
+            "transformers": [
+                "Yukari",
+                "Akira"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SweetsCastle"
+                    ],
+                    "i": "KirakiraruCreamer"
+                }
+            ],
+            "transformees": [
+                "CureWhip_ALaModeStyle",
+                "CureCustard_ALaModeStyle",
+                "CureGelato_ALaModeStyle",
+                "CureMacaron_ALaModeStyle",
+                "CureChocolat_ALaModeStyle",
+                "CureParfait_ALaModeStyle"
+            ],
+            "speech": [
+                "スイーツキャッスル！",
+                "レッツ・ラ・おきがえ！"
+            ],
+            "transformers": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat",
+                "CureParfait"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneDia"
+                    ],
+                    "i": "Mofurun"
+                }
+            ],
+            "transformees": [
+                "CureMiracle",
+                "CureMagical"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　ダイヤ！",
+                "ミラクル・マジカル・ジュエリーレ！",
+                "ふたりの奇跡！キュアミラクル！",
+                "ふたりの魔法！キュアマジカル！",
+                "魔法つかいプリキュア！！"
+            ],
+            "transformers": [
+                "Mirai",
+                "Liko"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneRuby"
+                    ],
+                    "i": "Mofurun"
+                }
+            ],
+            "transformees": [
+                "CureMiracle_Ruby",
+                "CureMagical_Ruby"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　ルビー！",
+                "ミラクル・マジカル・ジュエリーレ！",
+                "ふたりの奇跡！キュアミラクル！",
+                "ふたりの魔法！キュアマジカル！",
+                "魔法つかいプリキュア！！"
+            ],
+            "transformers": [
+                "Mirai",
+                "Liko"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneSapphire"
+                    ],
+                    "i": "Mofurun"
+                }
+            ],
+            "transformees": [
+                "CureMiracle_Sapphire",
+                "CureMagical_Sapphire"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　サファイヤ！",
+                "ミラクル・マジカル・ジュエリーレ！",
+                "ふたりの奇跡！キュアミラクル！",
+                "ふたりの魔法！キュアマジカル！",
+                "魔法つかいプリキュア！！"
+            ],
+            "transformers": [
+                "Mirai",
+                "Liko"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneTopaz"
+                    ],
+                    "i": "Mofurun"
+                }
+            ],
+            "transformees": [
+                "CureMiracle_Topaz",
+                "CureMagical_Topaz"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　トパーズ！",
+                "ミラクル・マジカル・ジュエリーレ！",
+                "ふたりの奇跡！キュアミラクル！",
+                "ふたりの魔法！キュアマジカル！",
+                "魔法つかいプリキュア！！"
+            ],
+            "transformers": [
+                "Mirai",
+                "Liko"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneEmerald"
+                    ],
+                    "i": "LinkleSmarthon"
+                }
+            ],
+            "transformees": [
+                "CureFelice"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　エメラルド！",
+                "フェリーチェ・ファンファン・フラワーレ！",
+                "あまねく生命に祝福を！キュアフェリーチェ！"
+            ],
+            "transformers": [
+                "Kotoha"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneDia"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneEmerald"
+                    ],
+                    "i": "LinkleSmarthon"
+                }
+            ],
+            "transformees": [
+                "CureMiracle",
+                "CureMagical",
+                "CureFelice"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　ダイヤ！",
+                "ミラクル・マジカル・ジュエリーレ！",
+                "エメラルド！",
+                "フェリーチェ・ファンファン・フラワーレ！",
+                "ふたりの奇跡！キュアミラクル！",
+                "ふたりの魔法！キュアマジカル！",
+                "あまねく生命に祝福を！キュアフェリーチェ！",
+                "魔法つかいプリキュア！！"
+            ],
+            "transformers": [
+                "Mirai",
+                "Liko",
+                "Kotoha"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneRuby"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneEmerald"
+                    ],
+                    "i": "LinkleSmarthon"
+                }
+            ],
+            "transformees": [
+                "CureMiracle_Ruby",
+                "CureMagical_Ruby",
+                "CureFelice"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　ルビー！",
+                "ミラクル・マジカル・ジュエリーレ！",
+                "エメラルド！",
+                "フェリーチェ・ファンファン・フラワーレ！",
+                "ふたりの奇跡！キュアミラクル！",
+                "ふたりの魔法！キュアマジカル！",
+                "あまねく生命に祝福を！キュアフェリーチェ！",
+                "魔法つかいプリキュア！！"
+            ],
+            "transformers": [
+                "Mirai",
+                "Liko",
+                "Kotoha"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneSapphire"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneEmerald"
+                    ],
+                    "i": "LinkleSmarthon"
+                }
+            ],
+            "transformees": [
+                "CureMiracle_Sapphire",
+                "CureMagical_Sapphire",
+                "CureFelice"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　サファイヤ！",
+                "ミラクル・マジカル・ジュエリーレ！",
+                "エメラルド！",
+                "フェリーチェ・ファンファン・フラワーレ！",
+                "ふたりの奇跡！キュアミラクル！",
+                "ふたりの魔法！キュアマジカル！",
+                "あまねく生命に祝福を！キュアフェリーチェ！",
+                "魔法つかいプリキュア！！"
+            ],
+            "transformers": [
+                "Mirai",
+                "Liko",
+                "Kotoha"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneTopaz"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneEmerald"
+                    ],
+                    "i": "LinkleSmarthon"
+                }
+            ],
+            "transformees": [
+                "CureMiracle_Topaz",
+                "CureMagical_Topaz",
+                "CureFelice"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　トパーズ！",
+                "ミラクル・マジカル・ジュエリーレ！",
+                "エメラルド！",
+                "フェリーチェ・ファンファン・フラワーレ！",
+                "ふたりの奇跡！キュアミラクル！",
+                "ふたりの魔法！キュアマジカル！",
+                "あまねく生命に祝福を！キュアフェリーチェ！",
+                "魔法つかいプリキュア！！"
+            ],
+            "transformers": [
+                "Mirai",
+                "Liko",
+                "Kotoha"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneAlexandrite"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneAlexandrite"
+                    ],
+                    "i": "LinkleSmarthon"
+                }
+            ],
+            "transformees": [
+                "CureMiracle_OverTheRainbow",
+                "CureMagical_OverTheRainbow",
+                "CureFelice_OverTheRainbow"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　アレキサンドライト！",
+                "魔法つかいプリキュア！　オーバー・ザ・レインボー！"
+            ],
+            "transformers": [
+                "CureMiracle",
+                "CureMagical",
+                "CureFelice"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneAlexandrite"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneAlexandrite"
+                    ],
+                    "i": "LinkleSmarthon"
+                }
+            ],
+            "transformees": [
+                "CureMiracle_OverTheRainbow",
+                "CureMagical_OverTheRainbow",
+                "CureFelice_OverTheRainbow"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　アレキサンドライト！",
+                "魔法つかいプリキュア！　オーバー・ザ・レインボー！"
+            ],
+            "transformers": [
+                "CureMiracle_Ruby",
+                "CureMagical_Ruby",
+                "CureFelice"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneAlexandrite"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneAlexandrite"
+                    ],
+                    "i": "LinkleSmarthon"
+                }
+            ],
+            "transformees": [
+                "CureMiracle_OverTheRainbow",
+                "CureMagical_OverTheRainbow",
+                "CureFelice_OverTheRainbow"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　アレキサンドライト！",
+                "魔法つかいプリキュア！　オーバー・ザ・レインボー！"
+            ],
+            "transformers": [
+                "CureMiracle_Sapphire",
+                "CureMagical_Sapphire",
+                "CureFelice"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LinkleStoneAlexandrite"
+                    ],
+                    "i": "Mofurun"
+                },
+                {
+                    "a": [
+                        "LinkleStoneAlexandrite"
+                    ],
+                    "i": "LinkleSmarthon"
+                }
+            ],
+            "transformees": [
+                "CureMiracle_OverTheRainbow",
+                "CureMagical_OverTheRainbow",
+                "CureFelice_OverTheRainbow"
+            ],
+            "speech": [
+                "キュアップ・ラパパ！　アレキサンドライト！",
+                "魔法つかいプリキュア！　オーバー・ザ・レインボー！"
+            ],
+            "transformers": [
+                "CureMiracle_Topaz",
+                "CureMagical_Topaz",
+                "CureFelice"
+            ]
+        },
+        {
+            "specialItems": [
+                "MiracleMofurunLight"
+            ],
+            "transformees": [
+                "CureMofurun"
+            ],
+            "speech": [
+                "モフモフモフルン！キュアモフルン！"
+            ],
+            "transformers": [
+                {
+                    "a": [
+                        "MofurunLinkleStone"
+                    ],
+                    "i": "Mofurun"
+                }
+            ]
+        },
+        {
+            "specialItems": [
+                "HeartfulCommuneMepple",
+                "HeartfulCommuneMipple"
+            ],
+            "transformees": [
+                "CureBlack_Max",
+                "CureWhite_Max"
+            ],
+            "speech": [
+                "デュアル・オーロラ・ウェイブ！！",
+                "光の使者、キュアブラック！",
+                "光の使者、キュアホワイト！",
+                "ふたりはプリキュア！",
+                "闇の力のしもべ達よ！",
+                "とっととお家に帰りなさい！"
+            ],
+            "transformers": [
+                "Nagisa",
+                "Honoka"
+            ]
+        },
+        {
+            "specialItems": [
+                "TouchCommune_Porun"
+            ],
+            "transformees": [
+                "ShinyLuminous"
+            ],
+            "speech": [
+                "ルミナス・シャイニングストリーム！",
+                "輝く命、シャイニールミナス！",
+                "光の心と光の意志、すべてを一つにするために！"
+            ],
+            "transformers": [
+                "Hikari"
+            ]
+        },
+        {
+            "specialItems": [
+                "FeelingToBePreCure"
+            ],
+            "transformees": [
+                "CureEcho"
+            ],
+            "speech": [
+                "みんなの思いを守るために",
+                "心をひとつに！",
+                "思いよ届け！キュアエコー！"
+            ],
+            "transformers": [
+                "Ayumi"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "SmilePact"
+                }
+            ],
+            "transformees": [
+                "CureHappy"
+            ],
+            "speech": [
+                "(レディ？)",
+                "プリキュア！スマイルチャージ！",
+                "(ゴー！ゴー！レッツ・ゴー！ハッピー！！)",
+                "キラキラ輝く未来の光！ キュアハッピー！"
+            ],
+            "transformers": [
+                "Miyuki"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "SmilePact"
+                }
+            ],
+            "transformees": [
+                "CureSunny"
+            ],
+            "speech": [
+                "(レディ？)",
+                "プリキュア！スマイルチャージ！",
+                "(ゴー！ゴー！レッツ・ゴー！サニー！！)",
+                "太陽サンサン熱血パワー！ キュアサニー！"
+            ],
+            "transformers": [
+                "Akane"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "SmilePact"
+                }
+            ],
+            "transformees": [
+                "CurePeace"
+            ],
+            "speech": [
+                "(レディ？)",
+                "プリキュア！スマイルチャージ！",
+                "(ゴー！ゴー！レッツ・ゴー！ピース！！)",
+                "ピカピカピカリン、ジャンケンポン！ キュアピース！"
+            ],
+            "transformers": [
+                "Yayoi"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "SmilePact"
+                }
+            ],
+            "transformees": [
+                "CureMarch"
+            ],
+            "speech": [
+                "(レディ？)",
+                "プリキュア！スマイルチャージ！",
+                "(ゴー！ゴー！レッツ・ゴー！マーチ！！)",
+                "勇気リンリン、直球勝負！ キュアマーチ！"
+            ],
+            "transformers": [
+                "Nao"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "SmilePact"
+                }
+            ],
+            "transformees": [
+                "CureBeauty"
+            ],
+            "speech": [
+                "(レディ？)",
+                "プリキュア！スマイルチャージ！",
+                "(ゴー！ゴー！レッツ・ゴー！ビューティー！！)",
+                "しんしんと降り積もる清き心！ キュアビューティ！"
+            ],
+            "transformers": [
+                "Reika"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "SmilePact"
+                }
+            ],
+            "transformees": [
+                "CureHappy",
+                "CureSunny",
+                "CurePeace",
+                "CureMarch",
+                "CureBeauty"
+            ],
+            "speech": [
+                "(レディ？)",
+                "プリキュア！スマイルチャージ！",
+                "(ゴー！ゴー！レッツ・ゴー！)",
+                "キラキラ輝く未来の光！ キュアハッピー！",
+                "太陽サンサン熱血パワー！ キュアサニー！",
+                "ピカピカピカリン、ジャンケンポン！ キュアピース！",
+                "勇気リンリン、直球勝負！ キュアマーチ！",
+                "しんしんと降り積もる清き心！ キュアビューティ！",
+                "5つの光が導く未来！",
+                "輝け！スマイルプリキュア！"
+            ],
+            "transformers": [
+                "Miyuki",
+                "Akane",
+                "Yayoi",
+                "Nao",
+                "Reika"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "CureDecors"
+                    ],
+                    "i": "PrincessCandle"
+                }
+            ],
+            "transformees": [
+                "PrincessHappy",
+                "PrincessSunny",
+                "PrincessPeace",
+                "PrincessMarch",
+                "PrincessBeauty"
+            ],
+            "speech": [
+                "ペガサスよ！私たちに力を！",
+                "プリンセスハッピー！",
+                "プリンセスサニー！",
+                "プリンセスピース！",
+                "プリンセスマーチ！",
+                "プリンセスビューティー！",
+                "プリキュア・プリンセス・フォーム！"
+            ],
+            "transformers": [
+                "CureHappy",
+                "CureSunny",
+                "CurePeace",
+                "CureMarch",
+                "CureBeauty"
+            ]
+        },
+        {
+            "specialItems": [
+                "MixCommuneFlappy",
+                "MixCommuneChoppy"
+            ],
+            "transformees": [
+                "CureBloom",
+                "CureEgret"
+            ],
+            "speech": [
+                "デュアル・スピリチュアル・パワー！",
+                "花開け大地に！",
+                "羽ばたけ空に！",
+                "輝く金の花！ キュアブルーム！",
+                "煌めく銀の翼！ キュアイーグレット！",
+                "ふたりはプリキュア！",
+                "聖なる泉を汚す者よ！",
+                "阿漕な真似はお止めなさい！"
+            ],
+            "transformers": [
+                "Saki",
+                "Mai"
+            ]
+        },
+        {
+            "specialItems": [
+                "CrystalCommuneFlappy",
+                "CrystalCommuneChoppy"
+            ],
+            "transformees": [
+                "CureBright",
+                "CureWindy"
+            ],
+            "speech": [
+                "デュアル・スピリチュアル・パワー！",
+                "未来を照らし!",
+                "勇気を運べ!",
+                "天空に満ちる月！ キュアブライト！",
+                "大地に薫る風！ キュアウィンディ！",
+                "ふたりはプリキュア！",
+                "聖なる泉を汚す者よ！",
+                "阿漕な真似はお止めなさい！"
+            ],
+            "transformers": [
+                "Saki",
+                "Mai"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Dory"
+                    ],
+                    "i": "CureModules"
+                },
+                {
+                    "a": [
+                        "Rery"
+                    ],
+                    "i": "CureModules"
+                }
+            ],
+            "transformees": [
+                "CureMelody",
+                "CureRhythm"
+            ],
+            "speech": [
+                "レッツプレイ！ プリキュア・モジュレーション！",
+                "爪弾くは荒ぶる調べ！ キュアメロディー！",
+                "爪弾くはたおやかな調べ！ キュアリズム！",
+                "届け！2人の組曲！ スイートプリキュア！"
+            ],
+            "transformers": [
+                "Hibiki",
+                "Kanade"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Lary"
+                    ],
+                    "i": "CureModules"
+                }
+            ],
+            "transformees": [
+                "CureBeat"
+            ],
+            "speech": [
+                "レッツプレイ！ プリキュア・モジュレーション！",
+                "爪弾くは魂の調べ！ キュアビート！"
+            ],
+            "transformers": [
+                "Ellen"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Dodory"
+                    ],
+                    "i": "CureModules"
+                }
+            ],
+            "transformees": [
+                "CureMuse"
+            ],
+            "speech": [
+                "レッツプレイ！ プリキュア・モジュレーション！",
+                "爪弾くは女神の調べ！ キュアミューズ！"
+            ],
+            "transformers": [
+                "Ako"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Dory"
+                    ],
+                    "i": "CureModules"
+                },
+                {
+                    "a": [
+                        "Rery"
+                    ],
+                    "i": "CureModules"
+                },
+                {
+                    "a": [
+                        "Lary"
+                    ],
+                    "i": "CureModules"
+                }
+            ],
+            "transformees": [
+                "CureMelody",
+                "CureRhythm",
+                "CureBeat"
+            ],
+            "speech": [
+                "レッツプレイ！ プリキュア・モジュレーション！",
+                "爪弾くは荒ぶる調べ！ キュアメロディー！",
+                "爪弾くはたおやかな調べ！ キュアリズム！",
+                "爪弾くは魂の調べ！ キュアビート！",
+                "届け！3人の組曲！ スイートプリキュア！"
+            ],
+            "transformers": [
+                "Hibiki",
+                "Kanade",
+                "Ellen"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Dory"
+                    ],
+                    "i": "CureModules"
+                },
+                {
+                    "a": [
+                        "Rery"
+                    ],
+                    "i": "CureModules"
+                },
+                {
+                    "a": [
+                        "Lary"
+                    ],
+                    "i": "CureModules"
+                },
+                {
+                    "a": [
+                        "Dodory"
+                    ],
+                    "i": "CureModules"
+                }
+            ],
+            "transformees": [
+                "CureMelody",
+                "CureRhythm",
+                "CureBeat",
+                "CureMuse"
+            ],
+            "speech": [
+                "レッツプレイ！ プリキュア・モジュレーション！",
+                "爪弾くは荒ぶる調べ！ キュアメロディー！",
+                "爪弾くはたおやかな調べ！ キュアリズム！",
+                "爪弾くは魂の調べ！ キュアビート！",
+                "爪弾くは女神の調べ！ キュアミューズ！",
+                "届け！4人の組曲！ スイートプリキュア！"
+            ],
+            "transformers": [
+                "Hibiki",
+                "Kanade",
+                "Ellen",
+                "Ako"
             ]
         },
         {
@@ -435,6 +6689,161 @@
                 "Komachi",
                 "Karen"
             ]
+        },
+        {
+            "specialItems": [
+                "CureMo"
+            ],
+            "transformees": [
+                "CureDream"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "大いなる希望の力、キュアドリーム！"
+            ],
+            "transformers": [
+                "Nozomi"
+            ]
+        },
+        {
+            "specialItems": [
+                "CureMo"
+            ],
+            "transformees": [
+                "CureRouge"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "情熱の赤い炎、キュアルージュ！"
+            ],
+            "transformers": [
+                "Rin"
+            ]
+        },
+        {
+            "specialItems": [
+                "CureMo"
+            ],
+            "transformees": [
+                "CureLemonade"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "はじけるレモンの香り、キュアレモネード！"
+            ],
+            "transformers": [
+                "Urara"
+            ]
+        },
+        {
+            "specialItems": [
+                "CureMo"
+            ],
+            "transformees": [
+                "CureMint"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "安らぎの緑の大地、キュアミント！"
+            ],
+            "transformers": [
+                "Komachi"
+            ]
+        },
+        {
+            "specialItems": [
+                "CureMo"
+            ],
+            "transformees": [
+                "CureAqua"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "知性の青き泉、キュアアクア！"
+            ],
+            "transformers": [
+                "Karen"
+            ]
+        },
+        {
+            "specialItems": [
+                "MilkyPalette"
+            ],
+            "transformees": [
+                "MilkyRose"
+            ],
+            "speech": [
+                "スカイローズ・トランスレイト！",
+                "青いバラは秘密のしるし！ ミルキィローズ！"
+            ],
+            "transformers": [
+                "Kurumi"
+            ]
+        },
+        {
+            "specialItems": [
+                "CureMo"
+            ],
+            "transformees": [
+                "CureDream",
+                "CureRouge",
+                "CureLemonade",
+                "CureMint",
+                "CureAqua"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "大いなる希望の力、キュアドリーム！",
+                "情熱の赤い炎、キュアルージュ！",
+                "はじけるレモンの香り、キュアレモネード！",
+                "安らぎの緑の大地、キュアミント！",
+                "知性の青き泉、キュアアクア！",
+                "希望の力と未来の光！",
+                "華麗に羽ばたく5つの心！",
+                "Yes！プリキュア5！"
+            ],
+            "transformers": [
+                "Nozomi",
+                "Rin",
+                "Urara",
+                "Komachi",
+                "Karen"
+            ]
+        },
+        {
+            "specialItems": [
+                "CureMo",
+                "MilkyPalette"
+            ],
+            "transformees": [
+                "CureDream",
+                "CureRouge",
+                "CureLemonade",
+                "CureMint",
+                "CureAqua",
+                "MilkyRose"
+            ],
+            "speech": [
+                "プリキュア！メタモルフォーゼ！",
+                "大いなる希望の力、キュアドリーム！",
+                "情熱の赤い炎、キュアルージュ！",
+                "はじけるレモンの香り、キュアレモネード！",
+                "安らぎの緑の大地、キュアミント！",
+                "知性の青き泉、キュアアクア！",
+                "希望の力と未来の光！",
+                "華麗に羽ばたく5つの心！",
+                "Yes！プリキュア5！",
+                "スカイローズ・トランスレイト！",
+                "青いバラは秘密のしるし！ ミルキィローズ！"
+            ],
+            "transformers": [
+                "Nozomi",
+                "Rin",
+                "Urara",
+                "Komachi",
+                "Karen",
+                "Kurumi"
+            ]
         }
     ],
     "nonItemPurifications": [
@@ -450,9 +6859,160 @@
                 "邪悪な心を打ち砕く！",
                 "プリキュア・マーブル・スクリュー！！"
             ]
+        },
+        {
+            "purifiers": [
+                "CurePeach"
+            ],
+            "speech": [
+                "悪いの悪いの飛んでいけ！",
+                "プリキュア！ラブ・サンシャイン！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureBerry"
+            ],
+            "speech": [
+                "悪いの悪いの飛んでいけ！",
+                "プリキュア！エスポワール・シャワー！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CurePine"
+            ],
+            "speech": [
+                "悪いの悪いの飛んでいけ！",
+                "プリキュア！ヒーリング・プレアー！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureFlora_ModeElegant"
+            ],
+            "speech": [
+                "舞え、花よ！",
+                "プリキュア！ フローラル・トルビヨン！",
+                "ごきげんよう。"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureMermaid_ModeElegant"
+            ],
+            "speech": [
+                "高鳴れ、海よ！",
+                "プリキュア！ マーメイド・リップル！",
+                "ごきげんよう。"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureTwinkle_ModeElegant"
+            ],
+            "speech": [
+                "キラキラ、星よ！",
+                "プリキュア！ トゥインクル・ハミング！",
+                "ごきげんよう。"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureBlack_Max",
+                "CureWhite_Max"
+            ],
+            "speech": [
+                "ブラックサンダー！",
+                "ホワイトサンダー！",
+                "プリキュアの美しき魂が！",
+                "邪悪な心を打ち砕く！",
+                "プリキュア・マーブル・スクリュー！！",
+                "マックス！！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureEcho"
+            ],
+            "speech": [
+                "世界に響け、みんなの思い！",
+                "プリキュア・ハートフルエコー！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureBloom",
+                "CureEgret"
+            ],
+            "speech": [
+                "大地の精霊よ",
+                "大空の精霊よ",
+                "今、プリキュアと共に！",
+                "奇跡の力を解き放て！",
+                "プリキュア　ツインストリーム・スプラッシュ！！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureDream"
+            ],
+            "speech": [
+                "夢見る乙女の底力、受けてみなさい！",
+                "プリキュア！シューティング・スター！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureRouge"
+            ],
+            "speech": [
+                "純情乙女の炎の力、受けてみなさい！",
+                "プリキュア！ファイヤー・ストライク！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureLemonade"
+            ],
+            "speech": [
+                "輝く乙女のはじける力、受けてみなさい！",
+                "プリキュア！プリズム・チェーン！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureMint"
+            ],
+            "speech": [
+                "大地を揺るがす乙女の怒り、受けてみなさい！",
+                "プリキュア！エメラルド・ソーサー！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureAqua"
+            ],
+            "speech": [
+                "岩をも砕く乙女の激流、受けてみなさい！",
+                "プリキュア！サファイヤ・アロー！"
+            ]
         }
     ],
     "transformedGroups": [
+        {
+            "nameEn": "DokiDoki! PreCure",
+            "variationEn": "",
+            "nameJa": "ドキドキ！プリキュア",
+            "variationJa": "",
+            "transformerIds": [
+                "CureHeart",
+                "CureDiamond",
+                "CureRosetta",
+                "CureSword",
+                "CureAce"
+            ]
+        },
         {
             "nameEn": "Futari wa PreCure",
             "variationEn": "",
@@ -461,6 +7021,365 @@
             "transformerIds": [
                 "CureBlack",
                 "CureWhite"
+            ]
+        },
+        {
+            "nameEn": "Fresh PreCure!",
+            "variationEn": "",
+            "nameJa": "フレッシュプリキュア！",
+            "variationJa": "",
+            "transformerIds": [
+                "CurePeach",
+                "CureBerry",
+                "CurePine",
+                "CurePassion"
+            ]
+        },
+        {
+            "nameEn": "Go! Princess PreCure",
+            "variationEn": "",
+            "nameJa": "Go! プリンセスプリキュア！",
+            "variationJa": "",
+            "transformerIds": [
+                "CureFlora",
+                "CureMermaid",
+                "CureTwinkle",
+                "CureScarlet"
+            ]
+        },
+        {
+            "nameEn": "Go! Princess PreCure",
+            "variationEn": "Mode Elegant Royal",
+            "nameJa": "Go! プリンセスプリキュア！",
+            "variationJa": "モードエレガント・ロイヤル",
+            "transformerIds": [
+                "CureFlora_ModeElegantRoyal",
+                "CureMermaid_ModeElegantRoyal",
+                "CureTwinkle_ModeElegantRoyal",
+                "CureScarlet_ModeElegantRoyal"
+            ]
+        },
+        {
+            "nameEn": "HappinessCharge PreCure!",
+            "variationEn": "",
+            "nameJa": "ハピネスチャージプリキュア！",
+            "variationJa": "",
+            "transformerIds": [
+                "CureLovely",
+                "CurePrincess",
+                "CureHoney",
+                "CureFortune"
+            ]
+        },
+        {
+            "nameEn": "HappinessCharge PreCure!",
+            "variationEn": "Innocent Form",
+            "nameJa": "ハピネスチャージプリキュア！",
+            "variationJa": "イノセントフォーム",
+            "transformerIds": [
+                "CureLovely_InnocentForm",
+                "CurePrincess_InnocentForm",
+                "CureHoney_InnocentForm",
+                "CureFortune_InnocentForm"
+            ]
+        },
+        {
+            "nameEn": "HeartCatch PreCure!",
+            "variationEn": "",
+            "nameJa": "ハートキャッチプリキュア！",
+            "variationJa": "",
+            "transformerIds": [
+                "CureBlossom",
+                "CureMarine",
+                "CureSunshine",
+                "CureMoonlight"
+            ]
+        },
+        {
+            "nameEn": "HeartCatch PreCure!",
+            "variationEn": "Super Silhouette",
+            "nameJa": "ハートキャッチプリキュア！",
+            "variationJa": "スーパーシルエット",
+            "transformerIds": [
+                "SuperCureBlossom",
+                "SuperCureMarine",
+                "SuperCureSunshine",
+                "SuperCureMoonlight"
+            ]
+        },
+        {
+            "nameEn": "Hugtto! PreCure",
+            "variationEn": "",
+            "nameJa": "HUGっと！プリキュア",
+            "variationJa": "",
+            "transformerIds": [
+                "CureYell",
+                "CureAnge",
+                "CureEtoile",
+                "CureMacherie",
+                "CureAmour"
+            ]
+        },
+        {
+            "nameEn": "Kirakira ☆ PreCure A La Mode",
+            "variationEn": "",
+            "nameJa": "キラキラ☆プリキュアアラモード",
+            "variationJa": "",
+            "transformerIds": [
+                "CureWhip",
+                "CureCustard",
+                "CureGelato",
+                "CureMacaron",
+                "CureChocolat",
+                "CureParfait"
+            ]
+        },
+        {
+            "nameEn": "Kirakira ☆ PreCure A La Mode",
+            "variationEn": "A La Mode Style",
+            "nameJa": "キラキラ☆プリキュアアラモード",
+            "variationJa": "アラモードスタイル",
+            "transformerIds": [
+                "CureWhip_ALaModeStyle",
+                "CureCustard_ALaModeStyle",
+                "CureGelato_ALaModeStyle",
+                "CureMacaron_ALaModeStyle",
+                "CureChocolat_ALaModeStyle",
+                "CureParfait_ALaModeStyle"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Dia Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "ダイヤスタイル",
+            "transformerIds": [
+                "CureMiracle",
+                "CureMagical"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Ruby Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "ルビースタイル",
+            "transformerIds": [
+                "CureMiracle_Ruby",
+                "CureMagical_Ruby"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Sapphire Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "サファイアスタイル",
+            "transformerIds": [
+                "CureMiracle_Sapphire",
+                "CureMagical_Sapphire"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Topaz Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "トパーズスタイル",
+            "transformerIds": [
+                "CureMiracle_Topaz",
+                "CureMagical_Topaz"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Dia Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "ダイヤスタイル",
+            "transformerIds": [
+                "CureMiracle",
+                "CureMagical",
+                "CureFelice"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Ruby Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "ルビースタイル",
+            "transformerIds": [
+                "CureMiracle_Ruby",
+                "CureMagical_Ruby",
+                "CureFelice"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Sapphire Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "サファイアスタイル",
+            "transformerIds": [
+                "CureMiracle_Sapphire",
+                "CureMagical_Sapphire",
+                "CureFelice"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Topaz Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "トパーズスタイル",
+            "transformerIds": [
+                "CureMiracle_Topaz",
+                "CureMagical_Topaz",
+                "CureFelice"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Dia Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "ダイヤスタイル",
+            "transformerIds": [
+                "CureMiracle",
+                "CureMagical",
+                "CureFelice",
+                "CureMofurun"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Ruby Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "ルビースタイル",
+            "transformerIds": [
+                "CureMiracle_Ruby",
+                "CureMagical_Ruby",
+                "CureFelice",
+                "CureMofurun_Ruby"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Sapphire Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "サファイアスタイル",
+            "transformerIds": [
+                "CureMiracle_Sapphire",
+                "CureMagical_Sapphire",
+                "CureFelice",
+                "CureMofurun_Sapphire"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Topaz Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "トパーズスタイル",
+            "transformerIds": [
+                "CureMiracle_Topaz",
+                "CureMagical_Topaz",
+                "CureFelice",
+                "CureMofurun_Topaz"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Over The Rainbow",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "オーバー・ザ・レインボー",
+            "transformerIds": [
+                "CureMiracle_OverTheRainbow",
+                "CureMagical_OverTheRainbow",
+                "CureFelice_OverTheRainbow"
+            ]
+        },
+        {
+            "nameEn": "Maho Girls PreCure!",
+            "variationEn": "Heartful Style",
+            "nameJa": "魔法つかいプリキュア！",
+            "variationJa": "ハートフルスタイル",
+            "transformerIds": [
+                "CureMiracle_Heartful",
+                "CureMagical_Heartful",
+                "CureFelice_Heartful",
+                "CureMofurun_Heartful"
+            ]
+        },
+        {
+            "nameEn": "Futari wa PreCure Max Heart",
+            "variationEn": "",
+            "nameJa": "ふたりはプリキュア Max Heart",
+            "variationJa": "",
+            "transformerIds": [
+                "CureBlack_Max",
+                "CureWhite_Max"
+            ]
+        },
+        {
+            "nameEn": "Futari wa PreCure Max Heart",
+            "variationEn": "",
+            "nameJa": "ふたりはプリキュア Max Heart",
+            "variationJa": "",
+            "transformerIds": [
+                "CureBlack_Max",
+                "CureWhite_Max",
+                "ShinyLuminous"
+            ]
+        },
+        {
+            "nameEn": "Smile PreCure!",
+            "variationEn": "",
+            "nameJa": "スマイルプリキュア！",
+            "variationJa": "",
+            "transformerIds": [
+                "CureHappy",
+                "CureSunny",
+                "CurePeace",
+                "CureMarch",
+                "CureBeauty"
+            ]
+        },
+        {
+            "nameEn": "Smile PreCure!",
+            "variationEn": "PreCure Princess Form",
+            "nameJa": "スマイルプリキュア！",
+            "variationJa": "プリキュア・プリンセス・フォーム",
+            "transformerIds": [
+                "PrincessHappy",
+                "PrincessSunny",
+                "PrincessPeace",
+                "PrincessMarch",
+                "PrincessBeauty"
+            ]
+        },
+        {
+            "nameEn": "Futari wa PreCure Splash Star",
+            "variationEn": "",
+            "nameJa": "ふたりはプリキュア Splash Star",
+            "variationJa": "",
+            "transformerIds": [
+                "CureBloom",
+                "CureEgret"
+            ]
+        },
+        {
+            "nameEn": "Futari wa PreCure Splash Star",
+            "variationEn": "(Cure Bloom, Cure Windy)",
+            "nameJa": "ふたりはプリキュア Splash Star",
+            "variationJa": "（キュアブルーム・キュアウィンディ）",
+            "transformerIds": [
+                "CureBright",
+                "CureWindy"
+            ]
+        },
+        {
+            "nameEn": "Suite PreCure♪",
+            "variationEn": "",
+            "nameJa": "ハートキャッチプリキュア！",
+            "variationJa": "",
+            "transformerIds": [
+                "CureMelody",
+                "CureRhythm",
+                "CureBeat",
+                "CureMuse"
             ]
         },
         {
@@ -474,6 +7393,20 @@
                 "CureLemonade",
                 "CureMint",
                 "CureAqua"
+            ]
+        },
+        {
+            "nameEn": "Yes! PreCure 5 GoGo!",
+            "variationEn": "",
+            "nameJa": "Yes! プリキュア 5 GoGo!",
+            "variationJa": "",
+            "transformerIds": [
+                "CureDream",
+                "CureRouge",
+                "CureLemonade",
+                "CureMint",
+                "CureAqua",
+                "MilkyRose"
             ]
         }
     ]

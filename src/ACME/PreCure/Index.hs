@@ -41,13 +41,9 @@ writeCureIndexJson =
 
         modsImportedByRoot <- loadImportedModules textbookRootMod :: Q [Module]
 
-        textbookMods <-
-            fmap (filter isTextbookMod . concat) $ mapM loadImportedModules modsImportedByRoot :: Q [Module]
-          -- ^ ACME.PreCure.Textbook.*
-
         let collectAnnotationsFromEachSeriesModules :: Data a => Q [a]
             collectAnnotationsFromEachSeriesModules =
-              fmap concat $ forM textbookMods $ \eachSeriesMod {- ACME.PreCure.Textbook.*.* -} ->
+              fmap concat . forM modsImportedByRoot $ \eachSeriesMod {- ACME.PreCure.Textbook.* -} ->
                 concat <$> loadAnnotations eachSeriesMod
 
         index <-
