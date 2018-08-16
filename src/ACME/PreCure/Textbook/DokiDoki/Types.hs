@@ -3,10 +3,10 @@
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE TypeFamilies #-}
 
-module ACME.PreCure.Textbook.Dokidoki.Types where
+module ACME.PreCure.Textbook.DokiDoki.Types where
 
 
-import           ACME.PreCure.Textbook.Dokidoki.Words
+import           ACME.PreCure.Textbook.DokiDoki.Words
 import           ACME.PreCure.Types.TH
 
 

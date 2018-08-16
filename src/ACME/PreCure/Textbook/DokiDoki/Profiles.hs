@@ -1,10 +1,10 @@
 {-# OPTIONS_GHC -fno-warn-missing-signatures #-}
 {-# LANGUAGE OverloadedStrings #-}
 
-module ACME.PreCure.Textbook.Dokidoki.Profiles where
+module ACME.PreCure.Textbook.DokiDoki.Profiles where
 
 import           ACME.PreCure.Index.Types
-import           ACME.PreCure.Textbook.Dokidoki.Words
+import           ACME.PreCure.Textbook.DokiDoki.Words
 
 
 girls :: [Girl]

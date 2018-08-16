@@ -1,6 +1,6 @@
 {-# OPTIONS_GHC -fno-warn-missing-signatures #-}
 
-module ACME.PreCure.Textbook.Dokidoki.Words where
+module ACME.PreCure.Textbook.DokiDoki.Words where
 
 
 groupName_Dokidoki = "ドキドキ！プリキュア"

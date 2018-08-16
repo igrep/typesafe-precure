@@ -29,7 +29,7 @@ library
                      , ACME.PreCure.Textbook.HeartCatch
                      , ACME.PreCure.Textbook.Suite
                      , ACME.PreCure.Textbook.Smile
-                     , ACME.PreCure.Textbook.Dokidoki
+                     , ACME.PreCure.Textbook.DokiDoki
                      , ACME.PreCure.Textbook.HappinessCharge
                      , ACME.PreCure.Textbook.GoPrincess
                      , ACME.PreCure.Textbook.Movie
@@ -82,9 +82,9 @@ library
                      , ACME.PreCure.Textbook.Smile.Words
                      , ACME.PreCure.Textbook.Smile.Types
 
-                     , ACME.PreCure.Textbook.Dokidoki.Profiles
-                     , ACME.PreCure.Textbook.Dokidoki.Words
-                     , ACME.PreCure.Textbook.Dokidoki.Types
+                     , ACME.PreCure.Textbook.DokiDoki.Profiles
+                     , ACME.PreCure.Textbook.DokiDoki.Words
+                     , ACME.PreCure.Textbook.DokiDoki.Types
 
                      , ACME.PreCure.Textbook.HappinessCharge.Profiles
                      , ACME.PreCure.Textbook.HappinessCharge.Words
