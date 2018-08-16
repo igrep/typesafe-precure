@@ -2,7 +2,7 @@
 
 module ACME.PreCure.Textbook.Movie.Words where
 
-girlName_Ayumi = "坂上あゆみ"
+girlName_Ayumi = "坂上 あゆみ"
 
 cureName_Echo = "キュアエコー"
 introducesHerselfAs_Echo = "思いよ届け！キュアエコー！"

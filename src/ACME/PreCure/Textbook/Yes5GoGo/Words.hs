@@ -7,7 +7,7 @@ import           ACME.PreCure.Textbook.Yes5.Words
 
 groupName_Yes5GoGo = "Yes! プリキュア 5 GoGo!"
 
-girlName_Kurumi = "美々野くるみ"
+girlName_Kurumi = "美々野 くるみ"
 
 cureName_MilkyRose = "ミルキィローズ"
 

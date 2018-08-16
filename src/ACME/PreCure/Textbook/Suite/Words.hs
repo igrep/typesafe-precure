@@ -4,10 +4,10 @@ module ACME.PreCure.Textbook.Suite.Words where
 
 groupName_Suite = "ハートキャッチプリキュア！"
 
-girlName_Hibiki = "北条響"
-girlName_Kanade = "南野奏"
-girlName_Ellen  = "黒川エレン"
-girlName_Ako    = "調辺アコ"
+girlName_Hibiki = "北条 響"
+girlName_Kanade = "南野 奏"
+girlName_Ellen  = "黒川 エレン"
+girlName_Ako    = "調辺 アコ"
 
 
 cureName_Melody = "キュアメロディ"

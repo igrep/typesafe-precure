@@ -8,7 +8,7 @@ import           ACME.PreCure.Textbook.First.Words
 
 groupName_MaxHeart = "ふたりはプリキュア Max Heart"
 
-girlName_Hikari = "九条ひかり"
+girlName_Hikari = "九条 ひかり"
 
 cureName_Luminous = "シャイニールミナス"
 

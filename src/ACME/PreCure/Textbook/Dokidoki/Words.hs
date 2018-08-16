@@ -5,11 +5,11 @@ module ACME.PreCure.Textbook.Dokidoki.Words where
 
 groupName_Dokidoki = "ドキドキ！プリキュア"
 
-girlName_Mana   = "相田マナ"
-girlName_Rikka  = "菱川六花"
-girlName_Alice  = "四葉ありす"
-girlName_Makoto = "剣崎真琴"
-girlName_Aguri  = "円亜久里"
+girlName_Mana   = "相田 マナ"
+girlName_Rikka  = "菱川 六花"
+girlName_Alice  = "四葉 ありす"
+girlName_Makoto = "剣崎 真琴"
+girlName_Aguri  = "円亜 久里"
 
 cureName_Heart   = "キュアハート"
 cureName_Diamond = "キュアダイヤモンド"

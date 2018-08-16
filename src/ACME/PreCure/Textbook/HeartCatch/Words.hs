@@ -4,10 +4,10 @@ module ACME.PreCure.Textbook.HeartCatch.Words where
 
 groupName_HeartCatch = "ハートキャッチプリキュア！"
 
-girlName_Tsubomi = "花咲つぼみ"
-girlName_Erika   = "来海えりか"
-girlName_Itsuki  = "明堂院いつき"
-girlName_Yuri    = "月影ゆり"
+girlName_Tsubomi = "花咲 つぼみ"
+girlName_Erika   = "来海 えりか"
+girlName_Itsuki  = "明堂院 いつき"
+girlName_Yuri    = "月影 ゆり"
 
 cureName_Blossom   = "キュアブロッサム"
 cureName_Marine    = "キュアマリン"

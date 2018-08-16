@@ -6,9 +6,9 @@ module ACME.PreCure.Textbook.MahoGirls.Words where
 groupName_MahoGirls = "魔法つかいプリキュア！"
 
 
-girlName_Mirai  = "朝日奈みらい"
-girlName_Liko   = "十六夜リコ"
-girlName_Kotoha = "花海ことは"
+girlName_Mirai  = "朝日奈 みらい"
+girlName_Liko   = "十六夜 リコ"
+girlName_Kotoha = "花海 ことは"
 
 cureName_Miracle = "キュアミラクル"
 cureName_Magical = "キュアマジカル"

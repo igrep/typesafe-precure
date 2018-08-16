@@ -4,10 +4,10 @@ module ACME.PreCure.Textbook.GoPrincess.Words where
 
 groupName_GoPrincess = "Go! プリンセスプリキュア！"
 
-girlName_Haruka = "春野はるか"
-girlName_Minami = "海藤みなみ"
-girlName_Kirara = "天ノ川きらら"
-girlName_Towa   = "紅城トワ"
+girlName_Haruka = "春野 はるか"
+girlName_Minami = "海藤 みなみ"
+girlName_Kirara = "天ノ川 きらら"
+girlName_Towa   = "紅城 トワ"
 
 cureName_Flora   = "キュアフローラ"
 cureName_Mermaid = "キュアマーメイド"
