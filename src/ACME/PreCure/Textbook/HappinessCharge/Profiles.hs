@@ -51,28 +51,28 @@ transformees =
       "Innocent Form"
       cureName_Lovely
       variation_InnocentForm
-      "introducesHerselfAs_Lovely"
+      introducesHerselfAs_Lovely
 
   , mkTransformee
       "Cure Princess"
       "Innocent Form"
       cureName_Princess
       variation_InnocentForm
-      "introducesHerselfAs_Princess"
+      introducesHerselfAs_Princess
 
   , mkTransformee
       "Cure Honey"
       "Innocent Form"
       cureName_Honey
       variation_InnocentForm
-      "introducesHerselfAs_Honey"
+      introducesHerselfAs_Honey
 
   , mkTransformee
       "Cure Fortune"
       "Innocent Form"
       cureName_Fortune
       variation_InnocentForm
-      "introducesHerselfAs_Fortune"
+      introducesHerselfAs_Fortune
   ]
 
 

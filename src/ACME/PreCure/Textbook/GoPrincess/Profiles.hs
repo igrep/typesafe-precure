@@ -51,56 +51,56 @@ transformees =
       "Mode Elegant"
       cureName_Flora
       variation_ModeElegant
-      "introducesHerselfAs_Flora"
+      introducesHerselfAs_Flora
 
   , mkTransformee
       "Cure Mermaid"
       "Mode Elegant"
       cureName_Mermaid
       variation_ModeElegant
-      "introducesHerselfAs_Mermaid"
+      introducesHerselfAs_Mermaid
 
   , mkTransformee
       "Cure Twinkle"
       "Mode Elegant"
       cureName_Twinkle
       variation_ModeElegant
-      "introducesHerselfAs_Twinkle"
+      introducesHerselfAs_Twinkle
 
   , mkTransformee
       "Cure Scarlet"
       "Mode Elegant"
       cureName_Scarlet
       variation_ModeElegant
-      "introducesHerselfAs_Scarlet"
+      introducesHerselfAs_Scarlet
 
   , mkTransformee
       "Cure Flora"
       "Mode Elegant Royal"
       cureName_Flora
       variation_ModeElegantRoyal
-      "introducesHerselfAs_Flora"
+      introducesHerselfAs_Flora
 
   , mkTransformee
       "Cure Mermaid"
       "Mode Elegant Royal"
       cureName_Mermaid
       variation_ModeElegantRoyal
-      "introducesHerselfAs_Mermaid"
+      introducesHerselfAs_Mermaid
 
   , mkTransformee
       "Cure Twinkle"
       "Mode Elegant Royal"
       cureName_Twinkle
       variation_ModeElegantRoyal
-      "introducesHerselfAs_Twinkle"
+      introducesHerselfAs_Twinkle
 
   , mkTransformee
       "Cure Scarlet"
       "Mode Elegant Royal"
       cureName_Scarlet
       variation_ModeElegantRoyal
-      "introducesHerselfAs_Scarlet"
+      introducesHerselfAs_Scarlet
   ]
 
 

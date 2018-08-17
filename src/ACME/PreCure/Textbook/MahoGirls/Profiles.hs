@@ -22,84 +22,84 @@ transformees =
       ""
       cureName_Miracle
       variation_Dia
-      "introducesHerselfAs_Miracle"
+      introducesHerselfAs_Miracle
 
   , mkTransformee
       "Cure Miracle"
       "Ruby"
       cureName_Miracle
       variation_Ruby
-      "introducesHerselfAs_Miracle"
+      introducesHerselfAs_Miracle
 
   , mkTransformee
       "Cure Miracle"
       "Sapphire"
       cureName_Miracle
       variation_Sapphire
-      "introducesHerselfAs_Miracle"
+      introducesHerselfAs_Miracle
 
   , mkTransformee
       "Cure Miracle"
       "Topaz"
       cureName_Miracle
       variation_Topaz
-      "introducesHerselfAs_Miracle"
+      introducesHerselfAs_Miracle
 
   , mkTransformee
       "Cure Miracle"
       "Over The Rainbow"
       cureName_Miracle
       variation_OverTheRainbow
-      "introducesHerselfAs_Miracle"
+      introducesHerselfAs_Miracle
 
   , mkTransformee
       "Cure Miracle"
       "Heartful"
       cureName_Miracle
       variation_Heartful
-      "introducesHerselfAs_Miracle"
+      introducesHerselfAs_Miracle
 
   , mkTransformee
       "Cure Magical"
       ""
       cureName_Magical
       variation_Dia
-      "introducesHerselfAs_Magical"
+      introducesHerselfAs_Magical
 
   , mkTransformee
       "Cure Magical"
       "Ruby"
       cureName_Magical
       variation_Ruby
-      "introducesHerselfAs_Magical"
+      introducesHerselfAs_Magical
 
   , mkTransformee
       "Cure Magical"
       "Sapphire"
       cureName_Magical
       variation_Sapphire
-      "introducesHerselfAs_Magical"
+      introducesHerselfAs_Magical
 
   , mkTransformee
       "Cure Magical"
       "Topaz"
       cureName_Magical
       variation_Topaz
-      "introducesHerselfAs_Magical"
+      introducesHerselfAs_Magical
 
   , mkTransformee
       "Cure Magical"
       "Over The Rainbow"
       cureName_Magical
       variation_OverTheRainbow
-      "introducesHerselfAs_Magical"
+      introducesHerselfAs_Magical
 
   , mkTransformee
       "Cure Magical"
       "Heartful"
       cureName_Magical
       variation_Heartful
-      "introducesHerselfAs_Magical"
+      introducesHerselfAs_Magical
 
   , mkTransformee
       "Cure Felice"
@@ -113,49 +113,49 @@ transformees =
       "Over The Rainbow"
       cureName_Felice
       variation_OverTheRainbow
-      "introducesHerselfAs_Felice"
+      introducesHerselfAs_Felice
 
   , mkTransformee
       "Cure Felice"
       "Heartful"
       cureName_Felice
       variation_Heartful
-      "introducesHerselfAs_Felice"
+      introducesHerselfAs_Felice
 
   , mkTransformee
       "Cure Mofurun"
       ""
       cureName_Mofurun
       variation_Dia
-      "introducesHerselfAs_Mofurun"
+      introducesHerselfAs_Mofurun
 
   , mkTransformee
       "Cure Mofurun"
       "Ruby"
       cureName_Mofurun
       variation_Ruby
-      "introducesHerselfAs_Mofurun"
+      introducesHerselfAs_Mofurun
 
   , mkTransformee
       "Cure Mofurun"
       "Sapphire"
       cureName_Mofurun
       variation_Sapphire
-      "introducesHerselfAs_Mofurun"
+      introducesHerselfAs_Mofurun
 
   , mkTransformee
       "Cure Mofurun"
       "Topaz"
       cureName_Mofurun
       variation_Topaz
-      "introducesHerselfAs_Mofurun"
+      introducesHerselfAs_Mofurun
 
   , mkTransformee
       "Cure Mofurun"
       "Heartful"
       cureName_Mofurun
       variation_Heartful
-      "introducesHerselfAs_Mofurun"
+      introducesHerselfAs_Mofurun
   ]
 
 
