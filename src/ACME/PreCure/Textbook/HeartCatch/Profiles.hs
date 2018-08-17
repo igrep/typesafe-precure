@@ -51,28 +51,28 @@ transformees =
       ""
       cureName_Blossom
       variation_SuperBlossom
-      "introducesHerselfAs_Blossom"
+      introducesHerselfAs_Blossom
 
   , mkTransformee
       "Super Cure Marine"
       ""
       cureName_Marine
       variation_SuperMarine
-      "introducesHerselfAs_Marine"
+      introducesHerselfAs_Marine
 
   , mkTransformee
       "Super Cure Sunshine"
       ""
       cureName_Sunshine
       variation_SuperSunshine
-      "introducesHerselfAs_Sunshine"
+      introducesHerselfAs_Sunshine
 
   , mkTransformee
       "Super Cure Moonlight"
       ""
       cureName_Moonlight
       variation_SuperMoonlight
-      "introducesHerselfAs_Moonlight"
+      introducesHerselfAs_Moonlight
   ]
 
 

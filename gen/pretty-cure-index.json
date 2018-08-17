@@ -1101,7 +1101,7 @@
             "nameJa": "キュアフローラ",
             "variationJa": "モードエレガント",
             "id": "CureFlora_ModeElegant",
-            "introducesHerselfAs": "introducesHerselfAs_Flora"
+            "introducesHerselfAs": "咲き誇る、花のプリンセス！キュアフローラ！"
         },
         {
             "nameEn": "Cure Mermaid",
@@ -1109,7 +1109,7 @@
             "nameJa": "キュアマーメイド",
             "variationJa": "モードエレガント",
             "id": "CureMermaid_ModeElegant",
-            "introducesHerselfAs": "introducesHerselfAs_Mermaid"
+            "introducesHerselfAs": "澄み渡る、海のプリンセス！キュアマーメイド！"
         },
         {
             "nameEn": "Cure Twinkle",
@@ -1117,7 +1117,7 @@
             "nameJa": "キュアトゥインクル",
             "variationJa": "モードエレガント",
             "id": "CureTwinkle_ModeElegant",
-            "introducesHerselfAs": "introducesHerselfAs_Twinkle"
+            "introducesHerselfAs": "きらめく星のプリンセス！キュアトゥインクル！"
         },
         {
             "nameEn": "Cure Scarlet",
@@ -1125,7 +1125,7 @@
             "nameJa": "キュアスカーレット",
             "variationJa": "モードエレガント",
             "id": "CureScarlet_ModeElegant",
-            "introducesHerselfAs": "introducesHerselfAs_Scarlet"
+            "introducesHerselfAs": "深紅の炎のプリンセス！キュアスカーレット！"
         },
         {
             "nameEn": "Cure Flora",
@@ -1133,7 +1133,7 @@
             "nameJa": "キュアフローラ",
             "variationJa": "モードエレガント・ロイヤル",
             "id": "CureFlora_ModeElegantRoyal",
-            "introducesHerselfAs": "introducesHerselfAs_Flora"
+            "introducesHerselfAs": "咲き誇る、花のプリンセス！キュアフローラ！"
         },
         {
             "nameEn": "Cure Mermaid",
@@ -1141,7 +1141,7 @@
             "nameJa": "キュアマーメイド",
             "variationJa": "モードエレガント・ロイヤル",
             "id": "CureMermaid_ModeElegantRoyal",
-            "introducesHerselfAs": "introducesHerselfAs_Mermaid"
+            "introducesHerselfAs": "澄み渡る、海のプリンセス！キュアマーメイド！"
         },
         {
             "nameEn": "Cure Twinkle",
@@ -1149,7 +1149,7 @@
             "nameJa": "キュアトゥインクル",
             "variationJa": "モードエレガント・ロイヤル",
             "id": "CureTwinkle_ModeElegantRoyal",
-            "introducesHerselfAs": "introducesHerselfAs_Twinkle"
+            "introducesHerselfAs": "きらめく星のプリンセス！キュアトゥインクル！"
         },
         {
             "nameEn": "Cure Scarlet",
@@ -1157,7 +1157,7 @@
             "nameJa": "キュアスカーレット",
             "variationJa": "モードエレガント・ロイヤル",
             "id": "CureScarlet_ModeElegantRoyal",
-            "introducesHerselfAs": "introducesHerselfAs_Scarlet"
+            "introducesHerselfAs": "深紅の炎のプリンセス！キュアスカーレット！"
         },
         {
             "nameEn": "Cure Lovely",
@@ -1197,7 +1197,7 @@
             "nameJa": "キュアラブリー",
             "variationJa": "イノセントフォーム",
             "id": "CureLovely_InnocentForm",
-            "introducesHerselfAs": "introducesHerselfAs_Lovely"
+            "introducesHerselfAs": "世界に広がる、ビッグな愛！ キュアラブリー！"
         },
         {
             "nameEn": "Cure Princess",
@@ -1205,7 +1205,7 @@
             "nameJa": "キュアプリンセス",
             "variationJa": "イノセントフォーム",
             "id": "CurePrincess_InnocentForm",
-            "introducesHerselfAs": "introducesHerselfAs_Princess"
+            "introducesHerselfAs": "天空に舞う、蒼き風！ (ヒュッ！) キュアプリンセス！"
         },
         {
             "nameEn": "Cure Honey",
@@ -1213,7 +1213,7 @@
             "nameJa": "キュアハニー",
             "variationJa": "イノセントフォーム",
             "id": "CureHoney_InnocentForm",
-            "introducesHerselfAs": "introducesHerselfAs_Honey"
+            "introducesHerselfAs": "大地に実る、命の光！ キュアハニー！"
         },
         {
             "nameEn": "Cure Fortune",
@@ -1221,7 +1221,7 @@
             "nameJa": "キュアフォーチュン",
             "variationJa": "イノセントフォーム",
             "id": "CureFortune_InnocentForm",
-            "introducesHerselfAs": "introducesHerselfAs_Fortune"
+            "introducesHerselfAs": "夜空に煌めく、希望の星！ キュアフォーチュン！"
         },
         {
             "nameEn": "Cure Blossom",
@@ -1261,7 +1261,7 @@
             "nameJa": "キュアブロッサム",
             "variationJa": "スーパーキュアブロッサム",
             "id": "SuperCureBlossom",
-            "introducesHerselfAs": "introducesHerselfAs_Blossom"
+            "introducesHerselfAs": "大地に咲く一輪の花！ キュアブロッサム！"
         },
         {
             "nameEn": "Super Cure Marine",
@@ -1269,7 +1269,7 @@
             "nameJa": "キュアマリン",
             "variationJa": "スーパーキュアマリン",
             "id": "SuperCureMarine",
-            "introducesHerselfAs": "introducesHerselfAs_Marine"
+            "introducesHerselfAs": "海風に揺れる一輪の花！ キュアマリン！"
         },
         {
             "nameEn": "Super Cure Sunshine",
@@ -1277,7 +1277,7 @@
             "nameJa": "キュアサンシャイン",
             "variationJa": "スーパーキュアサンシャイン",
             "id": "SuperCureSunshine",
-            "introducesHerselfAs": "introducesHerselfAs_Sunshine"
+            "introducesHerselfAs": "陽の光浴びる一輪の花！ キュアサンシャイン！"
         },
         {
             "nameEn": "Super Cure Moonlight",
@@ -1285,7 +1285,7 @@
             "nameJa": "キュアムーンライト",
             "variationJa": "スーパーキュアムーンライト",
             "id": "SuperCureMoonlight",
-            "introducesHerselfAs": "introducesHerselfAs_Moonlight"
+            "introducesHerselfAs": "月光に冴える一輪の花！ キュアムーンライト！"
         },
         {
             "nameEn": "Cure Yell",
@@ -1437,7 +1437,7 @@
             "nameJa": "キュアミラクル",
             "variationJa": "ダイヤスタイル",
             "id": "CureMiracle",
-            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+            "introducesHerselfAs": "ふたりの奇跡！キュアミラクル！"
         },
         {
             "nameEn": "Cure Miracle",
@@ -1445,7 +1445,7 @@
             "nameJa": "キュアミラクル",
             "variationJa": "ルビースタイル",
             "id": "CureMiracle_Ruby",
-            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+            "introducesHerselfAs": "ふたりの奇跡！キュアミラクル！"
         },
         {
             "nameEn": "Cure Miracle",
@@ -1453,7 +1453,7 @@
             "nameJa": "キュアミラクル",
             "variationJa": "サファイアスタイル",
             "id": "CureMiracle_Sapphire",
-            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+            "introducesHerselfAs": "ふたりの奇跡！キュアミラクル！"
         },
         {
             "nameEn": "Cure Miracle",
@@ -1461,7 +1461,7 @@
             "nameJa": "キュアミラクル",
             "variationJa": "トパーズスタイル",
             "id": "CureMiracle_Topaz",
-            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+            "introducesHerselfAs": "ふたりの奇跡！キュアミラクル！"
         },
         {
             "nameEn": "Cure Miracle",
@@ -1469,7 +1469,7 @@
             "nameJa": "キュアミラクル",
             "variationJa": "オーバー・ザ・レインボー",
             "id": "CureMiracle_OverTheRainbow",
-            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+            "introducesHerselfAs": "ふたりの奇跡！キュアミラクル！"
         },
         {
             "nameEn": "Cure Miracle",
@@ -1477,7 +1477,7 @@
             "nameJa": "キュアミラクル",
             "variationJa": "ハートフルスタイル",
             "id": "CureMiracle_Heartful",
-            "introducesHerselfAs": "introducesHerselfAs_Miracle"
+            "introducesHerselfAs": "ふたりの奇跡！キュアミラクル！"
         },
         {
             "nameEn": "Cure Magical",
@@ -1485,7 +1485,7 @@
             "nameJa": "キュアマジカル",
             "variationJa": "ダイヤスタイル",
             "id": "CureMagical",
-            "introducesHerselfAs": "introducesHerselfAs_Magical"
+            "introducesHerselfAs": "ふたりの魔法！キュアマジカル！"
         },
         {
             "nameEn": "Cure Magical",
@@ -1493,7 +1493,7 @@
             "nameJa": "キュアマジカル",
             "variationJa": "ルビースタイル",
             "id": "CureMagical_Ruby",
-            "introducesHerselfAs": "introducesHerselfAs_Magical"
+            "introducesHerselfAs": "ふたりの魔法！キュアマジカル！"
         },
         {
             "nameEn": "Cure Magical",
@@ -1501,7 +1501,7 @@
             "nameJa": "キュアマジカル",
             "variationJa": "サファイアスタイル",
             "id": "CureMagical_Sapphire",
-            "introducesHerselfAs": "introducesHerselfAs_Magical"
+            "introducesHerselfAs": "ふたりの魔法！キュアマジカル！"
         },
         {
             "nameEn": "Cure Magical",
@@ -1509,7 +1509,7 @@
             "nameJa": "キュアマジカル",
             "variationJa": "トパーズスタイル",
             "id": "CureMagical_Topaz",
-            "introducesHerselfAs": "introducesHerselfAs_Magical"
+            "introducesHerselfAs": "ふたりの魔法！キュアマジカル！"
         },
         {
             "nameEn": "Cure Magical",
@@ -1517,7 +1517,7 @@
             "nameJa": "キュアマジカル",
             "variationJa": "オーバー・ザ・レインボー",
             "id": "CureMagical_OverTheRainbow",
-            "introducesHerselfAs": "introducesHerselfAs_Magical"
+            "introducesHerselfAs": "ふたりの魔法！キュアマジカル！"
         },
         {
             "nameEn": "Cure Magical",
@@ -1525,7 +1525,7 @@
             "nameJa": "キュアマジカル",
             "variationJa": "ハートフルスタイル",
             "id": "CureMagical_Heartful",
-            "introducesHerselfAs": "introducesHerselfAs_Magical"
+            "introducesHerselfAs": "ふたりの魔法！キュアマジカル！"
         },
         {
             "nameEn": "Cure Felice",
@@ -1541,7 +1541,7 @@
             "nameJa": "キュアフェリーチェ",
             "variationJa": "オーバー・ザ・レインボー",
             "id": "CureFelice_OverTheRainbow",
-            "introducesHerselfAs": "introducesHerselfAs_Felice"
+            "introducesHerselfAs": "あまねく生命に祝福を！キュアフェリーチェ！"
         },
         {
             "nameEn": "Cure Felice",
@@ -1549,7 +1549,7 @@
             "nameJa": "キュアフェリーチェ",
             "variationJa": "ハートフルスタイル",
             "id": "CureFelice_Heartful",
-            "introducesHerselfAs": "introducesHerselfAs_Felice"
+            "introducesHerselfAs": "あまねく生命に祝福を！キュアフェリーチェ！"
         },
         {
             "nameEn": "Cure Mofurun",
@@ -1557,7 +1557,7 @@
             "nameJa": "キュアモフルン",
             "variationJa": "ダイヤスタイル",
             "id": "CureMofurun",
-            "introducesHerselfAs": "introducesHerselfAs_Mofurun"
+            "introducesHerselfAs": "モフモフモフルン！キュアモフルン！"
         },
         {
             "nameEn": "Cure Mofurun",
@@ -1565,7 +1565,7 @@
             "nameJa": "キュアモフルン",
             "variationJa": "ルビースタイル",
             "id": "CureMofurun_Ruby",
-            "introducesHerselfAs": "introducesHerselfAs_Mofurun"
+            "introducesHerselfAs": "モフモフモフルン！キュアモフルン！"
         },
         {
             "nameEn": "Cure Mofurun",
@@ -1573,7 +1573,7 @@
             "nameJa": "キュアモフルン",
             "variationJa": "サファイアスタイル",
             "id": "CureMofurun_Sapphire",
-            "introducesHerselfAs": "introducesHerselfAs_Mofurun"
+            "introducesHerselfAs": "モフモフモフルン！キュアモフルン！"
         },
         {
             "nameEn": "Cure Mofurun",
@@ -1581,7 +1581,7 @@
             "nameJa": "キュアモフルン",
             "variationJa": "トパーズスタイル",
             "id": "CureMofurun_Topaz",
-            "introducesHerselfAs": "introducesHerselfAs_Mofurun"
+            "introducesHerselfAs": "モフモフモフルン！キュアモフルン！"
         },
         {
             "nameEn": "Cure Mofurun",
@@ -1589,7 +1589,7 @@
             "nameJa": "キュアモフルン",
             "variationJa": "ハートフルスタイル",
             "id": "CureMofurun_Heartful",
-            "introducesHerselfAs": "introducesHerselfAs_Mofurun"
+            "introducesHerselfAs": "モフモフモフルン！キュアモフルン！"
         },
         {
             "nameEn": "Cure Black",
@@ -1597,7 +1597,7 @@
             "nameJa": "キュアブラック",
             "variationJa": "Max Heart",
             "id": "CureBlack_Max",
-            "introducesHerselfAs": "introducesHerselfAs_Black"
+            "introducesHerselfAs": "光の使者、キュアブラック！"
         },
         {
             "nameEn": "Cure White",
@@ -1605,7 +1605,7 @@
             "nameJa": "キュアホワイト",
             "variationJa": "Max Heart",
             "id": "CureWhite_Max",
-            "introducesHerselfAs": "introducesHerselfAs_White"
+            "introducesHerselfAs": "光の使者、キュアホワイト！"
         },
         {
             "nameEn": "Shiny Luminous",
@@ -1669,7 +1669,7 @@
             "nameJa": "キュアハッピー",
             "variationJa": "プリンセスハッピー",
             "id": "PrincessHappy",
-            "introducesHerselfAs": "introducesHerselfAs_Happy_Princess"
+            "introducesHerselfAs": "プリンセスハッピー！"
         },
         {
             "nameEn": "Princess Sunny",
@@ -1677,7 +1677,7 @@
             "nameJa": "キュアサニー",
             "variationJa": "プリンセスサニー",
             "id": "PrincessSunny",
-            "introducesHerselfAs": "introducesHerselfAs_Sunny_Princess"
+            "introducesHerselfAs": "プリンセスサニー！"
         },
         {
             "nameEn": "Princess Peace",
@@ -1685,7 +1685,7 @@
             "nameJa": "キュアピース",
             "variationJa": "プリンセスピース",
             "id": "PrincessPeace",
-            "introducesHerselfAs": "introducesHerselfAs_Peace_Princess"
+            "introducesHerselfAs": "プリンセスピース！"
         },
         {
             "nameEn": "Princess March",
@@ -1693,7 +1693,7 @@
             "nameJa": "キュアマーチ",
             "variationJa": "プリンセスマーチ",
             "id": "PrincessMarch",
-            "introducesHerselfAs": "introducesHerselfAs_March_Princess"
+            "introducesHerselfAs": "プリンセスマーチ！"
         },
         {
             "nameEn": "Princess Beauty",
@@ -1701,7 +1701,7 @@
             "nameJa": "キュアビューティー",
             "variationJa": "プリンセスビューティー",
             "id": "PrincessBeauty",
-            "introducesHerselfAs": "introducesHerselfAs_Beauty_Princess"
+            "introducesHerselfAs": "プリンセスビューティー！"
         },
         {
             "nameEn": "Cure Bloom",

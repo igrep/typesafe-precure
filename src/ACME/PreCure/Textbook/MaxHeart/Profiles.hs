@@ -21,14 +21,14 @@ transformees =
       "Max"
       cureName_Black
       variation_MaxHeart
-      "introducesHerselfAs_Black"
+      introducesHerselfAs_Black
 
   , mkTransformee
       "Cure White"
       "Max"
       cureName_White
       variation_MaxHeart
-      "introducesHerselfAs_White"
+      introducesHerselfAs_White
 
   , mkTransformee
       "Shiny Luminous"

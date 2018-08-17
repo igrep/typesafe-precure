@@ -59,35 +59,35 @@ transformees =
       ""
       cureName_Happy
       variation_Happy_Princess
-      "introducesHerselfAs_Happy_Princess"
+      introducesHerselfAs_Happy_Princess
 
   , mkTransformee
       "Princess Sunny"
       ""
       cureName_Sunny
       variation_Sunny_Princess
-      "introducesHerselfAs_Sunny_Princess"
+      introducesHerselfAs_Sunny_Princess
 
   , mkTransformee
       "Princess Peace"
       ""
       cureName_Peace
       variation_Peace_Princess
-      "introducesHerselfAs_Peace_Princess"
+      introducesHerselfAs_Peace_Princess
 
   , mkTransformee
       "Princess March"
       ""
       cureName_March
       variation_March_Princess
-      "introducesHerselfAs_March_Princess"
+      introducesHerselfAs_March_Princess
 
   , mkTransformee
       "Princess Beauty"
       ""
       cureName_Beauty
       variation_Beauty_Princess
-      "introducesHerselfAs_Beauty_Princess"
+      introducesHerselfAs_Beauty_Princess
   ]
 
 
