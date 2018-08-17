@@ -5,10 +5,10 @@ module ACME.PreCure.Textbook.Fresh.Words where
 
 groupName_Fresh = "フレッシュプリキュア！"
 
-girlName_Love    = "桃園ラブ"
-girlName_Miki    = "蒼乃美希"
-girlName_Inori   = "山吹祈里"
-girlName_Setsuna = "東せつな"
+girlName_Love    = "桃園 ラブ"
+girlName_Miki    = "蒼乃 美希"
+girlName_Inori   = "山吹 祈里"
+girlName_Setsuna = "東 せつな"
 
 cureName_Peach   = "キュアピーチ"
 cureName_Berry   = "キュアベリー"

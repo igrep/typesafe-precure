@@ -11,7 +11,8 @@ module ACME.PreCure.Index.Types
   , IdAttachments(IdAttachments)
   , Transformation(Transformation)
   , Purification(Purification)
-  , Index
+  , NonItemPurification(NonItemPurification)
+  , Index(Index)
   , mkGirl
   , mkTransformee
   , mkTransformedGroup
@@ -19,6 +20,7 @@ module ACME.PreCure.Index.Types
   , mkIA
   , mkTransformation
   , mkPurification
+  , mkNonItemPurification
   , mkIndex
   ) where
 
@@ -76,7 +78,7 @@ mkTransformee ne ve = Transformee (typeNamify ne ++ prefixify ve) ne ve
 
 data TransformedGroup =
   TransformedGroup
-    { transformedGroupId :: String
+    { transformedGroupTransformerIds :: [String]
     , transformedGroupNameEn :: String
     , transformedGroupVariationEn :: String
     , transformedGroupNameJa :: String
@@ -85,8 +87,8 @@ data TransformedGroup =
 
 $(deriveToJsonWithoutTypeNamePrefix ''TransformedGroup)
 
-mkTransformedGroup :: String -> String -> String -> String -> TransformedGroup
-mkTransformedGroup ne ve = TransformedGroup (typeNamify ne ++ prefixify ve) ne ve
+mkTransformedGroup :: [String] -> String -> String -> String -> String -> TransformedGroup
+mkTransformedGroup = TransformedGroup
 
 
 data SpecialItem =
@@ -136,9 +138,21 @@ mkTransformation :: [IdAttachments] -> [IdAttachments] -> [String] -> [String] -
 mkTransformation = Transformation
 
 
+data NonItemPurification =
+  NonItemPurification
+    { nonItemPurificationPurifiers :: [IdAttachments]
+    , nonItemPurificationSpeech :: [String]
+    } deriving (Eq, Show, Data)
+
+$(deriveToJsonWithoutTypeNamePrefix ''NonItemPurification)
+
+mkNonItemPurification :: [IdAttachments] -> [String] -> NonItemPurification
+mkNonItemPurification = NonItemPurification
+
+
 data Purification =
   Purification
-    { purificationPurifier :: [IdAttachments]
+    { purificationPurifiers :: [IdAttachments]
     , purificationSpecialItems :: [IdAttachments]
     , purificationSpeech :: [String]
     } deriving (Eq, Show, Data)
@@ -157,6 +171,7 @@ data Index =
     , indexSpecialItems :: [SpecialItem]
     , indexTransformations :: [Transformation]
     , indexPurifications :: [Purification]
+    , indexNonItemPurifications :: [NonItemPurification]
     } deriving (Eq, Show)
 
 $(deriveToJsonWithoutTypeNamePrefix ''Index)
@@ -168,5 +183,6 @@ mkIndex
   -> [SpecialItem]
   -> [Transformation]
   -> [Purification]
+  -> [NonItemPurification]
   -> Index
 mkIndex = Index

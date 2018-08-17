@@ -5,8 +5,8 @@ module ACME.PreCure.Textbook.SplashStar.Words where
 
 groupName_SplashStar = "ふたりはプリキュア Splash Star"
 
-girlName_Saki = "日向咲"
-girlName_Mai  = "美翔舞"
+girlName_Saki = "日向 咲"
+girlName_Mai  = "美翔 舞"
 
 cureName_Bloom = "キュアブルーム"
 cureName_Egret = "キュアイーグレット"

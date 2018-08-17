@@ -5,11 +5,11 @@ module ACME.PreCure.Textbook.Yes5.Words where
 
 groupName_Yes5 = "Yes! プリキュア 5"
 
-girlName_Nozomi  = "夢原のぞみ"
-girlName_Rin     = "夏木りん"
-girlName_Urara   = "春日野うらら"
-girlName_Komachi = "秋元こまち"
-girlName_Karen   = "水無月かれん"
+girlName_Nozomi  = "夢原 のぞみ"
+girlName_Rin     = "夏木 りん"
+girlName_Urara   = "春日野 うらら"
+girlName_Komachi = "秋元 こまち"
+girlName_Karen   = "水無月 かれん"
 
 cureName_Dream    = "キュアドリーム"
 cureName_Rouge    = "キュアルージュ"

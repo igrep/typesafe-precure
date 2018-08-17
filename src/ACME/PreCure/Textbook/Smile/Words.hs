@@ -5,11 +5,11 @@ module ACME.PreCure.Textbook.Smile.Words where
 
 groupName_Smile = "スマイルプリキュア！"
 
-girlName_Miyuki = "星空みゆき"
-girlName_Akane  = "日野あかね"
-girlName_Yayoi  = "黄瀬やよい"
-girlName_Nao    = "緑川なお"
-girlName_Reika  = "青木れいか"
+girlName_Miyuki = "星空 みゆき"
+girlName_Akane  = "日野 あかね"
+girlName_Yayoi  = "黄瀬 やよい"
+girlName_Nao    = "緑川 なお"
+girlName_Reika  = "青木 れいか"
 
 cureName_Happy  = "キュアハッピー"
 cureName_Sunny  = "キュアサニー"

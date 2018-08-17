@@ -4,10 +4,10 @@ module ACME.PreCure.Textbook.HappinessCharge.Words where
 
 groupName_HappinessCharge = "ハピネスチャージプリキュア！"
 
-girlName_Megumi = "愛乃めぐみ"
-girlName_Hime   = "白雪ひめ(ヒメルダ・ウインドウ・キュアクイーン・オブ・ザ・ブルースカイ)"
-girlName_Yuko   = "大森ゆうこ"
-girlName_Iona   = "氷川いおな"
+girlName_Megumi = "愛乃 めぐみ"
+girlName_Hime   = "白雪 ひめ (ヒメルダ・ウインドウ・キュアクイーン・オブ・ザ・ブルースカイ)"
+girlName_Yuko   = "大森 ゆうこ"
+girlName_Iona   = "氷川 いおな"
 
 cureName_Lovely   = "キュアラブリー"
 cureName_Princess = "キュアプリンセス"

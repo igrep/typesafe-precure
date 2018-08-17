@@ -5,8 +5,8 @@ module ACME.PreCure.Textbook.First.Words where
 
 groupName_First = "ふたりはプリキュア"
 
-girlName_Nagisa = "美墨なぎさ"
-girlName_Honoka = "雪城ほのか"
+girlName_Nagisa = "美墨 なぎさ"
+girlName_Honoka = "雪城 ほのか"
 
 cureName_Black = "キュアブラック"
 cureName_White = "キュアホワイト"

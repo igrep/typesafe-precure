@@ -4,11 +4,11 @@
 {-# LANGUAGE TemplateHaskell #-}
 {-# OPTIONS_GHC -fno-warn-orphans #-}
 
-module ACME.PreCure.Textbook.Yes5 where
+module ACME.PreCure.Textbook.DokiDoki where
 
 import           ACME.PreCure.Types.TH
 
-import           ACME.PreCure.Textbook.Yes5.Profiles
+import           ACME.PreCure.Textbook.DokiDoki.Profiles
 
 {-# ANN module girls #-}
 $(declareGirls girls)

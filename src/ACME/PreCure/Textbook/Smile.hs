@@ -1,6 +1,32 @@
-module ACME.PreCure.Textbook.Smile
-  ( module S
-  ) where
+{-# LANGUAGE FlexibleInstances #-}
+{-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE TypeFamilies #-}
+{-# LANGUAGE TemplateHaskell #-}
+{-# OPTIONS_GHC -fno-warn-orphans #-}
 
+module ACME.PreCure.Textbook.Smile where
 
-import           ACME.PreCure.Textbook.Smile.Types as S
+import           ACME.PreCure.Types.TH
+
+import           ACME.PreCure.Textbook.Smile.Profiles
+
+{-# ANN module girls #-}
+$(declareGirls girls)
+
+{-# ANN module transformees #-}
+$(declareTransformees transformees)
+
+{-# ANN module transformedGroups #-}
+$(declareTransformedGroups transformedGroups)
+
+{-# ANN module specialItems #-}
+$(declareSpecialItems specialItems)
+
+{-# ANN module transformations #-}
+$(declareTransformations transformations)
+
+{-# ANN module purifications #-}
+$(declarePurifications purifications)
+
+{-# ANN module nonItemPurifications #-}
+$(declareNonItemPurifications nonItemPurifications)

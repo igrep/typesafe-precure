@@ -3,7 +3,9 @@
 
 module ACME.PreCure.Textbook.Hugtto.Profiles where
 
-import ACME.PreCure.Index.Types
+import           Data.String (IsString)
+
+import           ACME.PreCure.Index.Types
 
 girlsHugtto :: [Girl]
 girlsHugtto =
@@ -49,9 +51,9 @@ transformeesHugtto =
   ]
 
 transformedGroupsHugtto :: [TransformedGroup]
-transformedGroupsHugtto = [mkTransformedGroup ne "" nj ""]
+transformedGroupsHugtto = [mkTransformedGroup groupMembers_Hugtto ne "" nj ""]
   where
-    ne = "Hugtto PreCure"
+    ne = "Hugtto! PreCure"
     nj = "HUGっと！プリキュア"
 
 specialItemsHugtto :: [SpecialItem]
@@ -123,7 +125,7 @@ transformationsHugtto =
       , mkIA "PreHeart" ["MiraiCrystalRed"]
       , mkIA "PreHeart" ["MiraiCrystalPurple"]
       ]
-      ["CureYell", "CureAnge", "CureEtoile", "CureMacherie", "CureAmour"]
+      groupMembers_Hugtto
       (miraiCrystalHeartKiratto ++ miraiCrystal2HeartKiratto ++
        replicate 2 hagyoo ++
        replicate 3 gyoo ++
@@ -209,6 +211,10 @@ purificationsHugtto =
       , "Thank you!"
       ]
   ]
+
+groupMembers_Hugtto :: IsString s => [s]
+groupMembers_Hugtto =
+  ["CureYell", "CureAnge", "CureEtoile", "CureMacherie", "CureAmour"]
 
 miraiCrystalHeartKiratto = ["ミライクリスタル！", "ハートキラっと！"]
 miraiCrystal2HeartKiratto = head miraiCrystalHeartKiratto : miraiCrystalHeartKiratto

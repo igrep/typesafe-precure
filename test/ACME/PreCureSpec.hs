@@ -7,7 +7,6 @@ module ACME.PreCureSpec
 import           Test.Hspec
 
 import           ACME.PreCure
-import           ACME.PreCure.Textbook.First.Words
 
 
 main :: IO ()
@@ -52,17 +51,17 @@ spec = do
         groupVariation specialForm `shouldBe` "オーバー・ザ・レインボー"
 
   let action = do
-        (CureBlack, CureWhite) <- transform (Nagisa, Honoka) (CardCommune_Mepple, CardCommune_Mipple)
+        (CureBlack, CureWhite) <- transform (Nagisa, Honoka) (CardCommuneMepple, CardCommuneMipple)
         purifyWithoutItem (CureBlack, CureWhite)
-        purify (CureBlack, CureWhite) RainbowBrace
+        purify (CureBlack, CureWhite) RainbowBracelets
 
   describe "composeEpisode" $ do
     it "returns accumulated lines" $ do
       let actual = composeEpisode action
           expected =
-              transformationSpeech_Black_White
-                ++ purificationSpeech_Black_White
-                ++ purificationSpeech_Black_White_RainbowStorm
+              transformationSpeech (Nagisa, Honoka) (CardCommuneMepple, CardCommuneMipple)
+                ++ nonItemPurificationSpeech (CureBlack, CureWhite)
+                ++ purificationSpeech (CureBlack, CureWhite) RainbowBracelets
       actual `shouldBe` expected
 
   describe "printEpisodeWith" $ do

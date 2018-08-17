@@ -7,6 +7,7 @@ module ACME.PreCure.Types.TH
         , declareSpecialItems
         , declareTransformations
         , declarePurifications
+        , declareNonItemPurifications
 
         , girlInstance
         , transformedInstance
@@ -88,9 +89,8 @@ declareGirls = fmap concat . mapM d
 declareTransformedGroups :: [Index.TransformedGroup] -> DecsQ
 declareTransformedGroups = fmap concat . mapM d
   where
-    d (Index.TransformedGroup n _e _ve j vj) = do
-      let name = mkName n
-      defineWith name $ transformedGroupInstance (conT name) j vj
+    d (Index.TransformedGroup ts _e _ve j vj) =
+      transformedGroupInstance (tupleT ts) j vj
 
 
 declareTransformees :: [Index.Transformee] -> DecsQ
@@ -112,22 +112,31 @@ declareSpecialItems = fmap concat . mapM d
 declareTransformations :: [Index.Transformation] -> DecsQ
 declareTransformations = fmap concat . mapM d
   where
-    d (Index.Transformation tas ias ds s) = do
+    d (Index.Transformation tas ias ds s) =
       transformationInstance
         (tupleTFromIdAttachments tas)
         (tupleTFromIdAttachments ias)
-        (tupleT $ map mkName ds)
-        (tupleE $ map mkName ds)
+        (tupleT ds)
+        (tupleE ds)
         s
 
 
 declarePurifications :: [Index.Purification] -> DecsQ
 declarePurifications = fmap concat . mapM d
   where
-    d (Index.Purification pas ias s) = do
+    d (Index.Purification pas ias s) =
       purificationInstance
         (tupleTFromIdAttachments pas)
         (tupleTFromIdAttachments ias)
+        s
+
+
+declareNonItemPurifications :: [Index.NonItemPurification] -> DecsQ
+declareNonItemPurifications = fmap concat . mapM d
+  where
+    d (Index.NonItemPurification pas s) =
+      nonItemPurificationInstance
+        (tupleTFromIdAttachments pas)
         s
 
 
@@ -208,16 +217,16 @@ tupleTFromIdAttachments = tupleTBy toAppT
     toAppT (Index.IdAttachments i ias) = appsT (ConT $ mkName i) $ map toAppT ias
 
 
-tupleT :: [Name] -> TypeQ
-tupleT ns = tupleTBy ConT ns
+tupleT :: [String] -> TypeQ
+tupleT ns = tupleTBy (ConT . mkName) ns
 
 
 tupleTBy :: (a -> Type) -> [a] -> TypeQ
 tupleTBy f ns = return $ appsT (TupleT (length ns)) (map f ns)
 
 
-tupleE :: [Name] -> ExpQ
-tupleE = tupE . map conE
+tupleE :: [String] -> ExpQ
+tupleE = tupE . map (conE . mkName)
 
 
 firstLower :: String -> String
