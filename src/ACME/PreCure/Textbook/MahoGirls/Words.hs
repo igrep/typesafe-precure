@@ -17,7 +17,7 @@ cureName_Mofurun = "キュアモフルン"
 
 introducesHerselfAs_Miracle = "ふたりの奇跡！キュアミラクル！" 
 introducesHerselfAs_Magical = "ふたりの魔法！キュアマジカル！" 
-introducesHerselfAs_Felice  = "あまねく生命に祝福を！キュアフェリーチェ！" 
+introducesHerselfAs_Felice  = "あまねく生命に祝福を！ (フッ...) キュアフェリーチェ！" 
 introducesHerselfAs_Mofurun = "モフモフモフルン！キュアモフルン！" 
 
 variation_Dia = "ダイヤスタイル"
