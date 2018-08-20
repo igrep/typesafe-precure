@@ -1,3 +1,13 @@
+# 0.7.0.1
+
+- Add 「フッ...」 in `introducesHerselfAs` of `Felice`
+    - <https://github.com/igrep/typesafe-precure/pull/27>
+- Collect all PreCures into cure-index.json and restructure the `ACME.PreCure.Textbook.*` modules.
+    - <https://github.com/igrep/typesafe-precure/pull/25>
+    - <https://github.com/igrep/typesafe-precure/pull/26>
+    - By this change, `ACME.PreCure.Textbook` (including its children) exports only data types.  
+      Say good bye to the a little ugly names such as `girlName_Mana`.
+
 # 0.6.3.1
 
 - Add: Cure Macherie, Cure Amour, and their purifications.
