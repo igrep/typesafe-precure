@@ -14,6 +14,7 @@ girlsHugtto =
   , mkGirl "Homare Kagayaki" "輝木 ほまれ"
   , mkGirl "Emiru Aisaki" "愛崎 えみる"
   , mkGirl "Ruru Amour" "ルールー・アムール"
+  , mkGirl "Hugtan" "はぐたん"
   ]
 
 transformeesHugtto :: [Transformee]
@@ -48,6 +49,44 @@ transformeesHugtto =
       "キュアアムール"
       ""
       (concat introducesHerselfAs_CureAmour)
+
+  , mkTransformee
+      "Cure Yell"
+      cheerfulStyleEn
+      "キュアエール"
+      cheerfulStyle
+      (concat introducesHerselfAs_CureYell)
+  , mkTransformee
+      "Cure Ange"
+      cheerfulStyleEn
+      "キュアアンジュ"
+      cheerfulStyle
+      (concat introducesHerselfAs_CureAnge)
+  , mkTransformee
+      "Cure Etoile"
+      cheerfulStyleEn
+      "キュアエトワール"
+      cheerfulStyle
+      (concat introducesHerselfAs_CureEtoile)
+  , mkTransformee
+      "Cure Macherie"
+      cheerfulStyleEn
+      "キュアマシェリ"
+      cheerfulStyle
+      (concat introducesHerselfAs_CureMacherie)
+  , mkTransformee
+      "Cure Amour"
+      cheerfulStyleEn
+      "キュアアムール"
+      cheerfulStyle
+      (concat introducesHerselfAs_CureAmour)
+
+  , mkTransformee
+      "Hugtan"
+      cheerfulStyleEn
+      "はぐたん"
+      cheerfulStyle
+      ""
   ]
 
 transformedGroupsHugtto :: [TransformedGroup]
@@ -74,6 +113,10 @@ specialItemsHugtto =
   , mkSpecialItem "Mirai Crystal Purple" "ミライクリスタル・パープル" []
   , mkSpecialItem "Mirai Crystal Rouge" "ミライクリスタル・ルージュ" []
   , mkSpecialItem "Mirai Crystal Violet" "ミライクリスタル・バイオレット" []
+
+  , mkSpecialItem "Mirai Pad" "ミライパッド"  ["Mirai Crystal"]
+  , mkSpecialItem "Mirai Crystal Cheerful" "ミライクリスタル・チアフル" []
+  , mkSpecialItem "Memorial Cure Clock" "メモリアルキュアクロック" ["Mirai Pad"]
   ]
 
 transformationsHugtto :: [Transformation]
@@ -135,6 +178,12 @@ transformationsHugtto =
        , last introducesHerselfAs_CureMacherie_CureAmour
        , "HUGっと！プリキュア！"
        ])
+
+  , mkTransformation -- https://www.youtube.com/watch?v=Dr8SVNTNbJ8
+      (groupMembers_Hugtto ++ ["Hugtan"])
+      [mkIA "MemorialCureClock" [mkIA "MiraiPad" ["MiraiCrystalCheerful"]]]
+      groupMembers_Hugtto_Cheerful
+      (error "TODO")
   ]
 
 purificationsHugtto :: [Purification]
@@ -210,11 +259,19 @@ purificationsHugtto =
       , "愛してる！"
       , "Thank you!"
       ]
+  , mkPurification
+      groupMembers_Hugtto_Cheerful
+      [mkIA "MemorialCureClock" [mkIA "MiraiPad" ["MiraiCrystalCheerful"]]]
+      (error "TODO")
   ]
 
 groupMembers_Hugtto :: IsString s => [s]
 groupMembers_Hugtto =
   ["CureYell", "CureAnge", "CureEtoile", "CureMacherie", "CureAmour"]
+
+groupMembers_Hugtto_Cheerful :: IsString s => [s]
+groupMembers_Hugtto_Cheerful =
+  ["CureYell_Cheerful", "CureAnge_Cheerful", "CureEtoile_Cheerful", "CureMacherie_Cheerful", "CureAmour_Cheerful", "Hugtan_Cheerful"]
 
 miraiCrystalHeartKiratto = ["ミライクリスタル！", "ハートキラっと！"]
 miraiCrystal2HeartKiratto = head miraiCrystalHeartKiratto : miraiCrystalHeartKiratto
@@ -244,3 +301,7 @@ introducesHerselfAs_CureAmour =
 
 introducesHerselfAs_CureMacherie_CureAmour =
   [kagayakuMiraiWoDakishimete, "みんな大好き！愛のプリキュア！キュアマシェリ！キュアアムール！"]
+
+cheerfulStyleEn = "Cheerful Style"
+
+cheerfulStyle = "チアフルスタイル"
