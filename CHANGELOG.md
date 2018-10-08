@@ -1,3 +1,7 @@
+# 0.7.1.1
+
+- Add Hugtto! PreCure Cheerful Style
+
 # 0.7.0.1
 
 - Add 「フッ...」 in `introducesHerselfAs` of `Felice`
