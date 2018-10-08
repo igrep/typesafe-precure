@@ -183,7 +183,10 @@ transformationsHugtto =
       (groupMembers_Hugtto ++ ["Hugtan"])
       [mkIA "MemorialCureClock" [mkIA "MiraiPad" ["MiraiCrystalCheerful"]]]
       groupMembers_Hugtto_Cheerful
-      (error "TODO")
+      [ "メモリアルキュアクロック・チアフル！"
+      , "ミライパッド！オープン！"
+      , "プリキュア！チアフルスタイル！"
+      ]
   ]
 
 purificationsHugtto :: [Purification]
@@ -262,7 +265,10 @@ purificationsHugtto =
   , mkPurification
       groupMembers_Hugtto_Cheerful
       [mkIA "MemorialCureClock" [mkIA "MiraiPad" ["MiraiCrystalCheerful"]]]
-      (error "TODO")
+      [ "メモリアルパワー・フルチャージ！"
+      , "プリキュア！チアフルアターック！"
+      , "はぎゅ！"
+      ]
   ]
 
 groupMembers_Hugtto :: IsString s => [s]
@@ -271,7 +277,7 @@ groupMembers_Hugtto =
 
 groupMembers_Hugtto_Cheerful :: IsString s => [s]
 groupMembers_Hugtto_Cheerful =
-  ["CureYell_Cheerful", "CureAnge_Cheerful", "CureEtoile_Cheerful", "CureMacherie_Cheerful", "CureAmour_Cheerful", "Hugtan_Cheerful"]
+  ["CureYell_CheerfulStyle", "CureAnge_CheerfulStyle", "CureEtoile_CheerfulStyle", "CureMacherie_CheerfulStyle", "CureAmour_CheerfulStyle", "Hugtan_CheerfulStyle"]
 
 miraiCrystalHeartKiratto = ["ミライクリスタル！", "ハートキラっと！"]
 miraiCrystal2HeartKiratto = head miraiCrystalHeartKiratto : miraiCrystalHeartKiratto

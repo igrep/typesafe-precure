@@ -501,6 +501,28 @@
             "id": "MiraiCrystalViolet"
         },
         {
+            "nameEn": "Mirai Pad",
+            "attachments": [
+                "Mirai Crystal"
+            ],
+            "nameJa": "ミライパッド",
+            "id": "MiraiPad"
+        },
+        {
+            "nameEn": "Mirai Crystal Cheerful",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・チアフル",
+            "id": "MiraiCrystalCheerful"
+        },
+        {
+            "nameEn": "Memorial Cure Clock",
+            "attachments": [
+                "Mirai Pad"
+            ],
+            "nameJa": "メモリアルキュアクロック",
+            "id": "MemorialCureClock"
+        },
+        {
             "nameEn": "Sweets Pact",
             "attachments": [
                 "Animal Sweets"
@@ -1328,6 +1350,54 @@
             "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな大好き！愛のプリキュア！キュアアムール！"
         },
         {
+            "nameEn": "Cure Yell",
+            "variationEn": "Cheerful Style",
+            "nameJa": "キュアエール",
+            "variationJa": "チアフルスタイル",
+            "id": "CureYell_CheerfulStyle",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんなを応援！元気のプリキュア！キュアエール！"
+        },
+        {
+            "nameEn": "Cure Ange",
+            "variationEn": "Cheerful Style",
+            "nameJa": "キュアアンジュ",
+            "variationJa": "チアフルスタイル",
+            "id": "CureAnge_CheerfulStyle",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんなを癒す！知恵のプリキュア！キュアアンジュ！"
+        },
+        {
+            "nameEn": "Cure Etoile",
+            "variationEn": "Cheerful Style",
+            "nameJa": "キュアエトワール",
+            "variationJa": "チアフルスタイル",
+            "id": "CureEtoile_CheerfulStyle",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな輝け！力のプリキュア！キュアエトワール！"
+        },
+        {
+            "nameEn": "Cure Macherie",
+            "variationEn": "Cheerful Style",
+            "nameJa": "キュアマシェリ",
+            "variationJa": "チアフルスタイル",
+            "id": "CureMacherie_CheerfulStyle",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな大好き！愛のプリキュア！キュアマシェリ！"
+        },
+        {
+            "nameEn": "Cure Amour",
+            "variationEn": "Cheerful Style",
+            "nameJa": "キュアアムール",
+            "variationJa": "チアフルスタイル",
+            "id": "CureAmour_CheerfulStyle",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな大好き！愛のプリキュア！キュアアムール！"
+        },
+        {
+            "nameEn": "Hugtan",
+            "variationEn": "Cheerful Style",
+            "nameJa": "はぐたん",
+            "variationJa": "チアフルスタイル",
+            "id": "Hugtan_CheerfulStyle",
+            "introducesHerselfAs": ""
+        },
+        {
             "nameEn": "Cure Whip",
             "variationEn": "",
             "nameJa": "キュアホイップ",
@@ -1956,6 +2026,11 @@
             "nameEn": "Ruru Amour",
             "nameJa": "ルールー・アムール",
             "id": "Ruru"
+        },
+        {
+            "nameEn": "Hugtan",
+            "nameJa": "はぐたん",
+            "id": "Hugtan"
         },
         {
             "nameEn": "Ichika Usami",
@@ -2942,6 +3017,34 @@
                 "ツインラブ・ロックビート！",
                 "愛してる！",
                 "Thank you!"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        {
+                            "a": [
+                                "MiraiCrystalCheerful"
+                            ],
+                            "i": "MiraiPad"
+                        }
+                    ],
+                    "i": "MemorialCureClock"
+                }
+            ],
+            "purifiers": [
+                "CureYell_CheerfulStyle",
+                "CureAnge_CheerfulStyle",
+                "CureEtoile_CheerfulStyle",
+                "CureMacherie_CheerfulStyle",
+                "CureAmour_CheerfulStyle",
+                "Hugtan_CheerfulStyle"
+            ],
+            "speech": [
+                "メモリアルパワー・フルチャージ！",
+                "プリキュア！チアフルアターック！",
+                "はぎゅ！"
             ]
         },
         {
@@ -4989,6 +5092,42 @@
                 "Homare",
                 "Emiru",
                 "Ruru"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        {
+                            "a": [
+                                "MiraiCrystalCheerful"
+                            ],
+                            "i": "MiraiPad"
+                        }
+                    ],
+                    "i": "MemorialCureClock"
+                }
+            ],
+            "transformees": [
+                "CureYell_CheerfulStyle",
+                "CureAnge_CheerfulStyle",
+                "CureEtoile_CheerfulStyle",
+                "CureMacherie_CheerfulStyle",
+                "CureAmour_CheerfulStyle",
+                "Hugtan_CheerfulStyle"
+            ],
+            "speech": [
+                "メモリアルキュアクロック・チアフル！",
+                "ミライパッド！オープン！",
+                "プリキュア！チアフルスタイル！"
+            ],
+            "transformers": [
+                "CureYell",
+                "CureAnge",
+                "CureEtoile",
+                "CureMacherie",
+                "CureAmour",
+                "Hugtan"
             ]
         },
         {
