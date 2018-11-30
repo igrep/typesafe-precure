@@ -46,21 +46,21 @@ class HEq (x :: k) (y :: k) (b :: Bool) | x y -> b
 instance ((Proxy x == Proxy y) ~ b) => HEq x y b
 -}
 
-class HSetIf (b :: Bool) (y :: Type) (xs :: [Assoc k Type]) where
-  type HSetIfResult b y xs :: [Assoc k Type]
-  hSetIf :: Proxy b -> y -> HList (Field h) xs -> HList (Field h) (HSetIfResult b y xs)
+class HSetIf (b :: Bool) (val :: Type) (kvs :: [Assoc k Type]) where
+  type HSetIfResult b val kvs :: [Assoc k Type]
+  hSetIf :: Proxy b -> val -> HList (Field Identity) kvs -> HList (Field Identity) (HSetIfResult b val kvs)
 
-instance HSetIf b y '[] where
-  type HSetIfResult b y '[] = '[]
+instance HSetIf b val '[] where
+  type HSetIfResult b val '[] = '[]
   hSetIf _ _ _ = HNil
 
-instance HSetIf 'True  y xs => HSetIf 'True  y ((k :> x) ': xs) where
-  type HSetIfResult 'True y ((k :> x) ': xs) = (k :> y) ': HSetIfResult 'True y xs
-  hSetIf b y (HCons _ xs) = (itemAssoc (Proxy :: Proxy k) @= y) `HCons` hSetIf b y xs
+instance HSetIf 'True  val kvs => HSetIf 'True  val ((k :> x) ': kvs) where
+  type HSetIfResult 'True val ((k :> x) ': kvs) = (k :> val) ': HSetIfResult 'True val kvs
+  hSetIf b val (HCons x kvs) = (itemAssoc (Proxy :: Proxy k) @= val) `HCons` hSetIf b val kvs
 
-instance HSetIf 'False y xs => HSetIf 'False y ((k :> x) ': xs) where
-  type HSetIfResult 'False y ((k :> x) ': xs) = (k :> x) ': HSetIfResult 'False y xs
-  hSetIf b y (HCons x xs) = x `HCons` hSetIf b y xs
+instance HSetIf 'False val kvs => HSetIf 'False val ((k :> x) ': kvs) where
+  type HSetIfResult 'False val ((k :> x) ': kvs) = (k :> x) ': HSetIfResult 'False val kvs
+  hSetIf b val (HCons x kvs) = x `HCons` hSetIf b val kvs
 
 
 {-
