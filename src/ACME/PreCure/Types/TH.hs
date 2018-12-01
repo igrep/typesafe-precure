@@ -23,6 +23,7 @@ module ACME.PreCure.Types.TH
 
 import           ACME.PreCure.Types
 import qualified ACME.PreCure.Index.Types as Index
+import           ACME.PreCure.Monad.Super.Types
 
 import           Data.Char
                    ( toLower

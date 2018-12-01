@@ -15,8 +15,8 @@ import           Data.Extensible
 import           Data.Extensible.HList
 import           Data.Functor.Identity (Identity(Identity))
 import           Data.Kind (Type)
-import           Data.Proxy (Proxy(Proxy))
-import           Data.Type.Equality (type (==))
+import           Data.Proxy (Proxy)
+-- import           Data.Type.Equality (type (==))
 
 
 type GirlS = Type
@@ -54,12 +54,12 @@ instance HSetIf b val '[] where
   type HSetIfResult b val '[] = '[]
   hSetIf _ _ _ = HNil
 
-instance HSetIf 'True  val kvs => HSetIf 'True  val ((k :> x) ': kvs) where
-  type HSetIfResult 'True val ((k :> x) ': kvs) = (k :> val) ': HSetIfResult 'True val kvs
-  hSetIf b val (HCons x kvs) = (itemAssoc (Proxy :: Proxy k) @= val) `HCons` hSetIf b val kvs
+instance HSetIf 'True  val kvs => HSetIf 'True  val ((k ':> x) ': kvs) where
+  type HSetIfResult 'True val ((k ':> x) ': kvs) = (k ':> val) ': HSetIfResult 'True val kvs
+  hSetIf b val (HCons _ kvs) = Field (Identity val) `HCons` hSetIf b val kvs
 
-instance HSetIf 'False val kvs => HSetIf 'False val ((k :> x) ': kvs) where
-  type HSetIfResult 'False val ((k :> x) ': kvs) = (k :> x) ': HSetIfResult 'False val kvs
+instance HSetIf 'False val kvs => HSetIf 'False val ((k ':> x) ': kvs) where
+  type HSetIfResult 'False val ((k ':> x) ': kvs) = (k ':> x) ': HSetIfResult 'False val kvs
   hSetIf b val (HCons x kvs) = x `HCons` hSetIf b val kvs
 
 
