@@ -101,7 +101,7 @@ hPrintEpisodeWith :: IO.Handle -> EpisodeConfig -> PreCureMonad a -> IO ()
 hPrintEpisodeWith h cfg a = do
   let interval = lineIntervalMicroSec cfg
   Monad.forM_ (composeEpisode a) $ \s -> do
-    IO.hPutStrLn h s 
+    IO.hPutStrLn h s
     IO.hFlush h
     Concurrent.threadDelay interval
 
