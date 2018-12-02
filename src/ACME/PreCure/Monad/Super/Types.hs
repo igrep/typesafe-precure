@@ -5,9 +5,11 @@
 {-# LANGUAGE KindSignatures #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE PolyKinds #-}
+{-# LANGUAGE ScopedTypeVariables #-}
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE TypeInType #-}
 {-# LANGUAGE TypeOperators #-}
+{-# LANGUAGE UndecidableInstances #-}
 
 module ACME.PreCure.Monad.Super.Types where
 
@@ -15,8 +17,8 @@ import           Data.Extensible
 import           Data.Extensible.HList
 import           Data.Functor.Identity (Identity(Identity))
 import           Data.Kind (Type)
-import           Data.Proxy (Proxy)
--- import           Data.Type.Equality (type (==))
+import           Data.Proxy (Proxy(Proxy))
+import           Data.Type.Equality (type (==))
 
 
 type GirlS = Type
@@ -46,38 +48,34 @@ class HEq (x :: k) (y :: k) (b :: Bool) | x y -> b
 instance ((Proxy x == Proxy y) ~ b) => HEq x y b
 -}
 
-class HSetIf (b :: Bool) (val :: Type) (kvs :: [Assoc k Type]) where
-  type HSetIfResult b val kvs :: [Assoc k Type]
-  hSetIf :: Proxy b -> val -> HList (Field Identity) kvs -> HList (Field Identity) (HSetIfResult b val kvs)
+class HSwapValIf (b :: Bool) (val1 :: Type) (kv :: Assoc k Type) where
+  type HSwapValIfResult b val1 kv :: Assoc k Type
+  hSwapValIf :: Proxy b -> val1 -> Field Identity kv -> Field Identity (HSwapValIfResult b val1 kv)
 
-instance HSetIf b val '[] where
-  type HSetIfResult b val '[] = '[]
-  hSetIf _ _ _ = HNil
+instance HSwapValIf 'True  val1 (k ':> val2) where
+  type HSwapValIfResult 'True val1 (k ':> val2) = (k ':> val1)
+  hSwapValIf _b val1 _kv = Field (Identity val1)
 
-instance HSetIf 'True  val kvs => HSetIf 'True  val ((k ':> x) ': kvs) where
-  type HSetIfResult 'True val ((k ':> x) ': kvs) = (k ':> val) ': HSetIfResult 'True val kvs
-  hSetIf b val (HCons _ kvs) = Field (Identity val) `HCons` hSetIf b val kvs
-
-instance HSetIf 'False val kvs => HSetIf 'False val ((k ':> x) ': kvs) where
-  type HSetIfResult 'False val ((k ':> x) ': kvs) = (k ':> x) ': HSetIfResult 'False val kvs
-  hSetIf b val (HCons x kvs) = x `HCons` hSetIf b val kvs
+instance HSwapValIf 'False val1 (k ':> val2) where
+  type HSwapValIfResult 'False val1 (k ':> val2) = (k ':> val2)
+  hSwapValIf _b _val1 kv = kv
 
 
-{-
-class HSet (x :: Type) (y :: Type) (xs :: [Assoc Type Type]) (rs :: [Assoc Type Type])
-  | x y xs -> rs, x y rs -> xs
+class HSet (key :: k) (val :: Type) (kvs :: [Assoc k Type]) where
+  type HSetResult key val kvs :: [Assoc k Type]
+  hSet :: Proxy key -> val -> HList (Field Identity) kvs -> HList (Field Identity) (HSetResult key val kvs)
+
+instance HSet key val '[] where
+  type HSetResult key val '[] = '[]
+  hSet _key _val HNil = HNil
+
+instance
+  (HSwapValIf (key1 == key2) val (key2 ':> oldVal), HSet key1 val kvs)
+  => HSet key1 val ((key2 ':> oldVal) ': kvs)
  where
-  hSet :: x -> y -> HList h xs -> HList h rs
-
-instance HSet x y '[] '[] where
-  hSet _x _y _nil = HNil
-
-instance ((x == y) ~ 'True,  HSet x y xs rs) => HSet x y ((x' :> y') ': xs) rs where
-  hSet x y (HCons _ tl) = undefined
-
-instance ((x == y) ~ 'False, HSet x y xs rs) => HSet x y ((x' :> y') ': xs) rs where
-  hSet x y (HCons hd tl) = hd `HCons` hSet x y tl
--}
+  type HSetResult key1 val ((key2 ':> oldVal) ': kvs) =
+    HSwapValIfResult (key1 == key2) val (key2 ':> oldVal) ': HSetResult key1 val kvs
+  hSet key1 val (HCons kv kvs) = hSwapValIf (Proxy :: Proxy (key1 == key2)) val kv `HCons` hSet key1 val kvs
 
 
 {-
