@@ -39,6 +39,8 @@ library
 
                      , ACME.PreCure.Types
                      , ACME.PreCure.Monad
+                     , ACME.PreCure.Monad.Super
+                     , ACME.PreCure.Monad.Super.Types
 
   other-modules:       ACME.PreCure.Types.TH
                      , ACME.PreCure.Index
@@ -97,12 +99,16 @@ library
                      , autoexporter
                      , bytestring
                      , monad-skeleton
+                     , indexed
+                     , indexed-extras
+                     , extensible
                      , dlist
                      , template-haskell
                      , text
                      , th-data-compat
                      , th-strict-compat
                      , th-utilities
+                     , transformers
   default-language:    Haskell2010
 
 test-suite typesafe-precure-test

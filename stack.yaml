@@ -40,7 +40,15 @@ packages:
 - '.'
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
+<<<<<<< HEAD
 extra-deps: []
+=======
+extra-deps:
+- indexed-0.1.3
+- git: https://github.com/reinerp/indexed-extras
+  commit: 8b38e7503c030644154e844cd932003d9438cfa2
+
+>>>>>>> forgot to add dependencies
 
 # Override default flag values for local packages and extra-deps
 flags: {}
