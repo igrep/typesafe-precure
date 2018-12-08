@@ -1,17 +1,18 @@
-{-# LANGUAGE DataKinds #-}
-{-# LANGUAGE FlexibleContexts #-}
-{-# LANGUAGE FlexibleInstances #-}
-{-# LANGUAGE GADTs #-}
-{-# LANGUAGE KindSignatures #-}
+{-# LANGUAGE DataKinds             #-}
+{-# LANGUAGE ExplicitNamespaces    #-}
+{-# LANGUAGE FlexibleContexts      #-}
+{-# LANGUAGE FlexibleInstances     #-}
+{-# LANGUAGE GADTs                 #-}
+{-# LANGUAGE KindSignatures        #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
-{-# LANGUAGE PolyKinds #-}
-{-# LANGUAGE ScopedTypeVariables #-}
-{-# LANGUAGE TypeFamilies #-}
-{-# LANGUAGE TypeInType #-}
-{-# LANGUAGE TypeOperators #-}
-{-# LANGUAGE UndecidableInstances #-}
+{-# LANGUAGE PolyKinds             #-}
+{-# LANGUAGE ScopedTypeVariables   #-}
+{-# LANGUAGE TypeFamilies          #-}
+{-# LANGUAGE TypeInType            #-}
+{-# LANGUAGE TypeOperators         #-}
+{-# LANGUAGE UndecidableInstances  #-}
 
-module ACME.PreCure.Monad.Super.Types
+module ACME.PreCure.Monad.Super.Core
   ( GirlS
   , GirlOrPreCureS
   , IsTransformedS
@@ -21,14 +22,21 @@ module ACME.PreCure.Monad.Super.Types
   , IsTransformedOrNot (..)
   , PSet (PSetResult)
   , pSet
+
+  , ifThenElse
+  , module Prelude
+  , (>>=)
+  , (>>)
   ) where
 
+import           Control.Monad.Indexed
 import           Data.Extensible
 import           Data.Extensible.HList
-import           Data.Functor.Identity (Identity(Identity))
-import           Data.Kind (Type)
-import           Data.Proxy (Proxy(Proxy))
-import           Data.Type.Equality (type (==))
+import           Data.Functor.Identity (Identity (Identity))
+import           Data.Kind             (Type)
+import           Data.Proxy            (Proxy (Proxy))
+import           Data.Type.Equality    (type (==))
+import           Prelude               hiding ((>>), (>>=))
 
 
 type GirlS = Type
@@ -41,16 +49,16 @@ type IsTransformedS = Type
 type StatusTable xs = Record (xs :: [Assoc GirlS IsTransformedS])
 
 data HasTransformed :: Bool -> Type where
-  HasTransformed    :: HasTransformed 'True
   HasNotTransformed :: HasTransformed 'False
+  HasTransformed    :: HasTransformed 'True
 
 -- | Returns a (not-yet transformed) girl given a transformed PreCure.
 --   If a (not-yet transformed) girl is given, returns herself.
 type family AsGirl (p :: GirlOrPreCureS) :: GirlS
 
 class IsTransformedOrNot g where
-  type IsTransformed (g :: GirlS) :: IsTransformedS
-  isTransformed :: g -> HasTransformed b
+  type IsTransformed (g :: GirlS) :: Bool
+  isTransformed :: g -> HasTransformed (IsTransformed g)
 
 
 class HSwapValIf (b :: Bool) (val1 :: Type) (kv :: Assoc k Type) where
@@ -86,5 +94,19 @@ instance
 
 -- | Polymorphic update for 'Record'
 --   TODO: Type error when key doesn't exist in kvs
+{-# INLINE pSet #-}
 pSet :: forall key val kvs. PSet key val kvs => Proxy key -> val -> Record kvs -> Record (PSetResult key val kvs)
 pSet _key val = fromHList . hPSet (Proxy :: Proxy key) val . toHList
+
+{-# INLINE (>>=) #-}
+(>>=) :: forall m i j k a b. IxMonad m => m i j a -> (a -> m j k b) -> m i k b
+(>>=) = (>>>=)
+
+{-# INLINE (>>) #-}
+(>>) :: forall m i j k a b. IxMonad m => m i j a -> m j k b -> m i k b
+(>>) a b = a >>= const b
+
+
+{-# INLINE ifThenElse #-}
+ifThenElse :: Bool -> a -> a -> a
+ifThenElse b t f = if b then t else f

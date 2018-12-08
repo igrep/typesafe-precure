@@ -1,9 +1,11 @@
-{-# LANGUAGE DataKinds #-}
-{-# LANGUAGE FlexibleContexts #-}
+{-# LANGUAGE DataKinds                  #-}
+{-# LANGUAGE FlexibleContexts           #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
-{-# LANGUAGE KindSignatures #-}
-{-# LANGUAGE TypeInType #-}
-{-# LANGUAGE TypeOperators #-}
+{-# LANGUAGE RebindableSyntax           #-}
+{-# LANGUAGE ScopedTypeVariables        #-}
+{-# LANGUAGE TypeInType                 #-}
+{-# LANGUAGE TypeOperators              #-}
+{-# OPTIONS_GHC -fno-warn-simplifiable-class-constraints #-}
 
 
 module ACME.PreCure.Monad.Super
@@ -11,28 +13,42 @@ module ACME.PreCure.Monad.Super
   , EpisodeConfig(lineIntervalMicroSec)
   , defaultEpisodeConfig
   , enter
-  , (>>)
-  , (>>=)
+  , (Core.>>)
+  , (Core.>>=)
   , ifThenElse
   , module Prelude
+
+  , say
+  , speak
+  , transform
+  , purify
+  , purifyWithoutItem
+
+  , printEpisodeWith
+  , printEpisode
+  , hPrintEpisodeWith
+  , hPrintEpisode
   ) where
 
 
-import qualified Control.Arrow as Arrow
-import qualified Control.Concurrent as Concurrent
-import           Control.Monad.Indexed.State
+import qualified Control.Concurrent              as Concurrent
 import           Control.Monad.Indexed
+import           Control.Monad.Indexed.State
+import           Control.Monad.Indexed.Trans
 import           Control.Monad.Trans.Writer.Lazy
-import qualified Data.DList as DList
-import           Data.Extensible
-import           Data.Foldable (for_)
-import           Data.Monoid ((<>))
-import qualified System.IO as IO
+import qualified Data.DList                      as DList
+import           Data.Extensible                 hiding (item)
+import           Data.Foldable                   (for_)
+import           Data.Monoid                     ((<>))
+import           Data.Proxy                      (Proxy (Proxy))
+import qualified System.IO                       as IO
 
+import           ACME.PreCure.Monad.Super.Core   hiding ((>>), (>>=))
+import qualified ACME.PreCure.Monad.Super.Core   as Core
 import           ACME.PreCure.Types
-import           ACME.PreCure.Monad.Super.Types
 
-import           Prelude hiding ((>>), (>>=))
+import           Prelude                         hiding ((>>), (>>=))
+import qualified Prelude
 
 
 newtype PreCureM i j a =
@@ -43,29 +59,38 @@ newtype PreCureM i j a =
 
 
 enter
-  :: IsTransformedOrNot g
-  => g -> PreCureM (StatusTable xs) (StatusTable (AsGirl g >: IsTransformed g ': xs)) ()
-enter = undefined
+  :: forall girlOrPreCure xs
+   . IsTransformedOrNot girlOrPreCure
+  => girlOrPreCure -> PreCureM (StatusTable xs) (StatusTable (AsGirl girlOrPreCure >: HasTransformed (IsTransformed girlOrPreCure) ': xs)) ()
+enter girlOrPreCure = PreCureM $ imodify (itemAssoc (Proxy :: Proxy (AsGirl girlOrPreCure)) @= isTransformed girlOrPreCure <:)
 
 
 transform
-  :: (Transformation g i , Associate g (HasTransformed 'False) xs , TransformGirl g xs)
-  => g -> i -> PreCureM (StatusTable xs) (StatusTable (ToTransformed g xs)) ()
-transform g i = do
-  speak $ transformationSpeech g i
-  ireturn $ transformedStyle g i
+  :: forall girlOrPreCure item xs.
+    ( Transformation girlOrPreCure item
+    , Associate girlOrPreCure (HasTransformed 'False) xs
+    , PSet girlOrPreCure (HasTransformed 'True) xs
+    )
+  => girlOrPreCure -> item -> PreCureM (StatusTable xs) (StatusTable (PSetResult girlOrPreCure (HasTransformed 'True) xs)) ()
+transform girlOrPreCure item = do
+  speak $ transformationSpeech girlOrPreCure item
+  PreCureM $ imodify $ pSet (Proxy :: Proxy girlOrPreCure) HasTransformed
+ where
+  {-# INLINE (>>) #-}
+  (>>) :: forall m i j k a b. IxMonad m => m i j a -> m j k b -> m i k b
+  (>>) = (Core.>>)
 
 
 purify
-  :: (Purification p i, Associate (AsGirl p) (HasTransformed 'True) xs)
-  => p -> i -> PreCureM (StatusTable xs) (StatusTable xs) ()
-purify p =
-  speak . purificationSpeech p
+  :: (Purification preCure item, Associate (AsGirl preCure) (HasTransformed 'True) xs)
+  => preCure -> item -> PreCureM (StatusTable xs) (StatusTable xs) ()
+purify preCure =
+  speak . purificationSpeech preCure
 
 
 purifyWithoutItem
-  :: (NonItemPurification p, Associate (AsGirl p) (HasTransformed 'True) xs)
-  => p -> PreCureM (StatusTable xs) (StatusTable xs) ()
+  :: (NonItemPurification preCure, Associate (AsGirl preCure) (HasTransformed 'True) xs)
+  => preCure -> PreCureM (StatusTable xs) (StatusTable xs) ()
 purifyWithoutItem =
   speak . nonItemPurificationSpeech
 
@@ -78,57 +103,47 @@ defaultEpisodeConfig = EpisodeConfig $ 1 * 1000 * 1000
 
 
 speak :: [String] -> PreCureM i i ()
-speak = PreCureM . tell . DList.fromList
+speak = PreCureM . ilift . tell . DList.fromList
 
 
 say :: String -> PreCureM i i ()
-say = PreCureM . tell . DList.singleton
+say = PreCureM . ilift . tell . DList.singleton
 
 
-composeEpisode :: PreCureM i j a -> [String]
+composeEpisode :: PreCureM (StatusTable '[]) (StatusTable xs) a -> [String]
 composeEpisode =
   snd . runPreCureMonad
 
 
-runPreCureMonad :: PreCureM i j a -> (a, [String])
-runPreCureMonad =
-  Arrow.second DList.toList . runPreCureM
+runPreCureMonad :: PreCureM (StatusTable '[]) (StatusTable xs) a -> (a, [String])
+runPreCureMonad act =
+  let ((x, _), ss) = runWriter $ (`runIxStateT` nil) $ runPreCureM act
+  in (x, DList.toList ss)
 
 
-printEpisode :: PreCureM i j a -> IO ()
+printEpisode :: PreCureM (StatusTable '[]) (StatusTable xs) a -> IO ()
 printEpisode =
   printEpisodeWith defaultEpisodeConfig
 
 
-hPrintEpisode :: IO.Handle -> PreCureM i j a -> IO ()
+hPrintEpisode :: IO.Handle -> PreCureM (StatusTable '[]) (StatusTable xs) a -> IO ()
 hPrintEpisode =
   flip hPrintEpisodeWith defaultEpisodeConfig
 
 
-printEpisodeWith :: EpisodeConfig -> PreCureM i j a -> IO ()
+printEpisodeWith :: EpisodeConfig -> PreCureM (StatusTable '[]) (StatusTable xs) a -> IO ()
 printEpisodeWith =
   hPrintEpisodeWith IO.stdout
 
 
-hPrintEpisodeWith :: IO.Handle -> EpisodeConfig -> PreCureM i j a -> IO ()
+hPrintEpisodeWith :: IO.Handle -> EpisodeConfig -> PreCureM (StatusTable '[]) (StatusTable xs) a -> IO ()
 hPrintEpisodeWith h cfg a = do
   let interval = lineIntervalMicroSec cfg
   for_ (composeEpisode a) $ \s -> do
     IO.hPutStrLn h s
     IO.hFlush h
     Concurrent.threadDelay interval
-
-
-{-# INLINE (>>=) #-}
-(>>=) :: IxMonad m => m i j a -> (a -> m j k b) -> m i k b
-(>>=) = (>>>=)
-
-
-{-# INLINE (>>) #-}
-(>>) :: IxMonad m => m i j a -> m j k b -> m i k b
-(>>) a b = a >>= const b
-
-
-{-# INLINE ifThenElse #-}
-ifThenElse :: Bool -> a -> a -> a
-ifThenElse b t f = if b then t else f
+ where
+  {-# INLINE (>>) #-}
+  (>>) :: Monad m => m a -> m b -> m b
+  (>>) = (Prelude.>>)
