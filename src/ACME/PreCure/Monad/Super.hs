@@ -45,6 +45,7 @@ import qualified System.IO                       as IO
 
 import           ACME.PreCure.Monad.Super.Core   hiding ((>>), (>>=))
 import qualified ACME.PreCure.Monad.Super.Core   as Core
+import           ACME.PreCure.Monad.Config
 import           ACME.PreCure.Types
 
 import           Prelude                         hiding ((>>), (>>=))
@@ -93,13 +94,6 @@ purifyWithoutItem
   => preCure -> PreCureM (StatusTable xs) (StatusTable xs) ()
 purifyWithoutItem =
   speak . nonItemPurificationSpeech
-
-
--- TODO: Refactor: split out common functions
-newtype EpisodeConfig = EpisodeConfig { lineIntervalMicroSec :: Int }
-
-defaultEpisodeConfig :: EpisodeConfig
-defaultEpisodeConfig = EpisodeConfig $ 1 * 1000 * 1000
 
 
 speak :: [String] -> PreCureM i i ()

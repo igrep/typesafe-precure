@@ -32,6 +32,7 @@ import qualified Data.DList as DList
 import           Data.Monoid ((<>))
 import qualified System.IO as IO
 
+import           ACME.PreCure.Monad.Config
 import           ACME.PreCure.Types
 
 
@@ -40,16 +41,6 @@ data PreCureMonadBase x where
 
 
 type PreCureMonad = Skeleton PreCureMonadBase
-
-
-newtype EpisodeConfig =
-  EpisodeConfig
-    { lineIntervalMicroSec :: Int }
-
-
-defaultEpisodeConfig :: EpisodeConfig
-defaultEpisodeConfig =
-  EpisodeConfig $ 1 * 1000 * 1000
 
 
 speak :: [String] -> PreCureMonad ()

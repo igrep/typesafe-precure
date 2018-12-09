@@ -45,6 +45,7 @@ library
                      , ACME.PreCure.Index
                      , ACME.PreCure.Index.Types
                      , ACME.PreCure.Index.Lib
+                     , ACME.PreCure.Monad.Config
                      , ACME.PreCure.Monad.Super.Core
 
                      , ACME.PreCure.Textbook.First.Profiles
