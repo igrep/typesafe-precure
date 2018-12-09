@@ -1,61 +1,58 @@
-{-# LANGUAGE TemplateHaskell #-}
-{-# LANGUAGE OverloadedStrings #-}
-
-module ACME.PreCure.Index where
-
-
-import           Control.Monad
-                   ( forM
-                   )
-import           Data.Aeson
-                   ( encode
-                   )
-import           Data.Aeson.Encode.Pretty
-                   ( encodePretty
-                   )
-import           Data.Data
-                   ( Data
-                   )
-import qualified Data.ByteString.Lazy as ByteString
-import           Language.Haskell.TH
-                   ( Q
-                   , thisModule
-                   , runIO
-                   , tupE
-                   )
-import           Language.Haskell.TH.Syntax
-                   ( Module
-                   )
-
-import           ACME.PreCure.Textbook ()
-import           ACME.PreCure.Index.Lib
-import           ACME.PreCure.Index.Types
-
-
-writeCureIndexJson :: ()
-writeCureIndexJson =
-  $( do
-        textbookRootMod <-
-          fmap (head . filter isTextbookMod) . loadImportedModules =<< thisModule :: Q Module
-        -- ^ ACME.PreCure.Textbook
-
-        modsImportedByRoot <- loadImportedModules textbookRootMod :: Q [Module]
-
-        let collectAnnotationsFromEachSeriesModules :: Data a => Q [a]
-            collectAnnotationsFromEachSeriesModules =
-              fmap concat . forM modsImportedByRoot $ \eachSeriesMod {- ACME.PreCure.Textbook.* -} ->
-                concat <$> loadAnnotations eachSeriesMod
-
-        index <-
-          mkIndex
-            <$> collectAnnotationsFromEachSeriesModules
-            <*> collectAnnotationsFromEachSeriesModules
-            <*> collectAnnotationsFromEachSeriesModules
-            <*> collectAnnotationsFromEachSeriesModules
-            <*> collectAnnotationsFromEachSeriesModules
-            <*> collectAnnotationsFromEachSeriesModules
-            <*> collectAnnotationsFromEachSeriesModules
-        runIO $ ByteString.writeFile "gen/cure-index.json" $ encode index
-        runIO $ ByteString.writeFile "gen/pretty-cure-index.json" $ encodePretty index
-        tupE []
+module ACME.PreCure.Index
+  ( Girl
+    ( girlId
+    , girlNameEn
+    , girlNameJa
     )
+  , Transformee
+    ( transformedId
+    , transformedNameEn
+    , transformedVariationEn
+    , transformedNameJa
+    , transformedVariationJa
+    , transformedIntroducesHerselfAs
+    )
+  , TransformedGroup
+    ( transformedGroupTransformerIds
+    , transformedGroupNameEn
+    , transformedGroupVariationEn
+    , transformedGroupNameJa
+    , transformedGroupVariationJa
+    )
+  , SpecialItem
+    ( specialItemId
+    , specialItemNameEn
+    , specialItemNameJa
+    , specialItemAttachments
+    )
+  , IdAttachments
+    ( idAttachementsI
+    , idAttachementsA
+    )
+  , Transformation
+    ( transformationTransformers
+    , transformationSpecialItems
+    , transformationTransformees
+    , transformationSpeech
+    )
+  , Purification
+    ( purificationPurifiers
+    , purificationSpecialItems
+    , purificationSpeech
+    )
+  , NonItemPurification
+    ( nonItemPurificationPurifiers
+    , nonItemPurificationSpeech
+    )
+  , Index
+    ( indexGirls
+    , indexTransformees
+    , indexTransformedGroups
+    , indexSpecialItems
+    , indexTransformations
+    , indexPurifications
+    , indexNonItemPurifications
+    )
+  ) where
+
+import           ACME.PreCure.Index.Types

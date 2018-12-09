@@ -40,9 +40,10 @@ library
                      , ACME.PreCure.Types
                      , ACME.PreCure.Monad
                      , ACME.PreCure.Monad.Super
+                     , ACME.PreCure.Index
 
   other-modules:       ACME.PreCure.Types.TH
-                     , ACME.PreCure.Index
+                     , ACME.PreCure.Index.Gen
                      , ACME.PreCure.Index.Types
                      , ACME.PreCure.Index.Lib
                      , ACME.PreCure.Monad.Config
