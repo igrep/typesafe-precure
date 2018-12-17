@@ -100,6 +100,7 @@ library
                      , aeson-pretty
                      , autoexporter
                      , bytestring
+                     , deriveJsonNoPrefix
                      , monad-skeleton
                      , indexed
                      , indexed-extras
@@ -122,7 +123,25 @@ test-suite typesafe-precure-test
   build-depends:       base
                      , typesafe-precure
                      , hspec
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+flag build-test-script
+  default: False
+
+executable typesafe-precure-generate-all-precurem
+  if flag(build-test-script)
+    buildable: True
+  else
+    buildable: False
+  hs-source-dirs:      scripts
+  ghc-options:         -Wall
+  main-is:             generate-all-precurem.hs
+  build-depends:       base
+                     , typesafe-precure
+                     , aeson
+                     , containers
+                     , here
+                     , transformers
   default-language:    Haskell2010
 
 source-repository head

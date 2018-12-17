@@ -24,10 +24,20 @@ module ACME.PreCure.Monad.Super
   , purify
   , purifyWithoutItem
 
+  , runPreCureMonad
+  , composeEpisode
   , printEpisodeWith
   , printEpisode
   , hPrintEpisodeWith
   , hPrintEpisode
+
+  , GirlS
+  , GirlOrPreCureS
+  , IsTransformedS
+  , StatusTable
+  , HasTransformed (..)
+  , AsGirl
+  , IsTransformedOrNot (..)
   ) where
 
 
@@ -59,6 +69,7 @@ newtype PreCureM i j a =
   } deriving (IxFunctor, IxPointed, IxApplicative, IxMonad)
 
 
+-- TODO: Support girls in tuple
 enter
   :: forall girlOrPreCure xs
    . IsTransformedOrNot girlOrPreCure
@@ -66,6 +77,7 @@ enter
 enter girlOrPreCure = PreCureM $ imodify (itemAssoc (Proxy :: Proxy (AsGirl girlOrPreCure)) @= isTransformed girlOrPreCure <:)
 
 
+-- TODO: Support precures in tuple
 transform
   :: forall girlOrPreCure item xs.
     ( Transformation girlOrPreCure item
@@ -82,6 +94,7 @@ transform girlOrPreCure item = do
   (>>) = (Core.>>)
 
 
+-- TODO: Support precures in tuple
 purify
   :: (Purification preCure item, Associate (AsGirl preCure) (HasTransformed 'True) xs)
   => preCure -> item -> PreCureM (StatusTable xs) (StatusTable xs) ()

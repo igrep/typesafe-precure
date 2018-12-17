@@ -27,8 +27,15 @@ module ACME.PreCure.Index.Types
 import           Data.Aeson
                    ( ToJSON
                    , toJSON
-                   , object
+                   , FromJSON
+                   , parseJSON
                    , (.=)
+                   , (.:)
+                   )
+import qualified Data.Aeson as Json
+import qualified Data.Aeson.Types as Json
+import           Data.Aeson.DeriveNoPrefix
+                   ( deriveJsonNoTypeNamePrefix
                    )
 import           Data.Data
                    ( Data
@@ -37,16 +44,15 @@ import           Data.String
                    ( IsString
                    , fromString
                    )
-
-import           ACME.PreCure.Index.Lib
+import qualified Data.Text as T
 
 
 -- | Pair of the Girl data type name and their name
 data Girl =
   Girl { girlId :: String, girlNameEn :: String, girlNameJa :: String }
-    deriving (Eq, Show, Data)
+    deriving (Eq, Show, Data, Ord)
 
-$(deriveToJsonWithoutTypeNamePrefix ''Girl)
+$(deriveJsonNoTypeNamePrefix ''Girl)
 
 mkGirl :: String -> String -> Girl
 mkGirl ne = Girl (head $ words ne) ne
@@ -68,9 +74,9 @@ data Transformee =
     , transformedNameJa :: String
     , transformedVariationJa :: String
     , transformedIntroducesHerselfAs :: String
-    } deriving (Eq, Show, Data)
+    } deriving (Eq, Show, Data, Ord)
 
-$(deriveToJsonWithoutTypeNamePrefix ''Transformee)
+$(deriveJsonNoTypeNamePrefix ''Transformee)
 
 mkTransformee :: String -> String -> String -> String -> String -> Transformee
 mkTransformee ne ve = Transformee (typeNamify ne ++ prefixify ve) ne ve
@@ -83,9 +89,9 @@ data TransformedGroup =
     , transformedGroupVariationEn :: String
     , transformedGroupNameJa :: String
     , transformedGroupVariationJa :: String
-    } deriving (Eq, Show, Data)
+    } deriving (Eq, Show, Data, Ord)
 
-$(deriveToJsonWithoutTypeNamePrefix ''TransformedGroup)
+$(deriveJsonNoTypeNamePrefix ''TransformedGroup)
 
 mkTransformedGroup :: [String] -> String -> String -> String -> String -> TransformedGroup
 mkTransformedGroup = TransformedGroup
@@ -97,9 +103,9 @@ data SpecialItem =
     , specialItemNameEn :: String
     , specialItemNameJa :: String
     , specialItemAttachments :: [String]
-    } deriving (Eq, Show, Data)
+    } deriving (Eq, Show, Data, Ord)
 
-$(deriveToJsonWithoutTypeNamePrefix ''SpecialItem)
+$(deriveJsonNoTypeNamePrefix ''SpecialItem)
 
 mkSpecialItem :: String -> String -> [String] -> SpecialItem
 mkSpecialItem ne = SpecialItem (typeNamify ne) ne
@@ -109,12 +115,17 @@ data IdAttachments =
   IdAttachments
     { idAttachementsI :: String
     , idAttachementsA :: [IdAttachments]
-    } deriving (Eq, Show, Data)
+    } deriving (Eq, Show, Data, Ord)
 
 instance ToJSON IdAttachments where
   toJSON (IdAttachments i []) = toJSON i
   toJSON (IdAttachments i a) =
-    object ["i" .= toJSON i, "a" .= toJSON a]
+    Json.object ["i" .= toJSON i, "a" .= toJSON a]
+
+instance FromJSON IdAttachments where
+  parseJSON (Json.String t) = return $ IdAttachments (T.unpack t) []
+  parseJSON (Json.Object o) = IdAttachments <$> o .: "i" <*> o .: "a"
+  parseJSON other = Json.typeMismatch "IdAttachments" other
 
 instance IsString IdAttachments where
   fromString s = mkIA s []
@@ -130,9 +141,9 @@ data Transformation =
     , transformationSpecialItems :: [IdAttachments]
     , transformationTransformees :: [String]
     , transformationSpeech :: [String]
-    } deriving (Eq, Show, Data)
+    } deriving (Eq, Show, Data, Ord)
 
-$(deriveToJsonWithoutTypeNamePrefix ''Transformation)
+$(deriveJsonNoTypeNamePrefix ''Transformation)
 
 mkTransformation :: [IdAttachments] -> [IdAttachments] -> [String] -> [String] -> Transformation
 mkTransformation = Transformation
@@ -142,9 +153,9 @@ data NonItemPurification =
   NonItemPurification
     { nonItemPurificationPurifiers :: [IdAttachments]
     , nonItemPurificationSpeech :: [String]
-    } deriving (Eq, Show, Data)
+    } deriving (Eq, Show, Data, Ord)
 
-$(deriveToJsonWithoutTypeNamePrefix ''NonItemPurification)
+$(deriveJsonNoTypeNamePrefix ''NonItemPurification)
 
 mkNonItemPurification :: [IdAttachments] -> [String] -> NonItemPurification
 mkNonItemPurification = NonItemPurification
@@ -155,9 +166,9 @@ data Purification =
     { purificationPurifiers :: [IdAttachments]
     , purificationSpecialItems :: [IdAttachments]
     , purificationSpeech :: [String]
-    } deriving (Eq, Show, Data)
+    } deriving (Eq, Show, Data, Ord)
 
-$(deriveToJsonWithoutTypeNamePrefix ''Purification)
+$(deriveJsonNoTypeNamePrefix ''Purification)
 
 mkPurification :: [IdAttachments] -> [IdAttachments] -> [String] -> Purification
 mkPurification = Purification
@@ -172,9 +183,9 @@ data Index =
     , indexTransformations :: [Transformation]
     , indexPurifications :: [Purification]
     , indexNonItemPurifications :: [NonItemPurification]
-    } deriving (Eq, Show)
+    } deriving (Eq, Show, Ord)
 
-$(deriveToJsonWithoutTypeNamePrefix ''Index)
+$(deriveJsonNoTypeNamePrefix ''Index)
 
 mkIndex
   :: [Girl]
