@@ -15,6 +15,7 @@ girlsHugtto =
   , mkGirl "Emiru Aisaki" "愛崎 えみる"
   , mkGirl "Ruru Amour" "ルールー・アムール"
   , mkGirl "Hugtan" "はぐたん"
+  , mkGirl "Anri Wakamiya" "若宮アンリ"
   ]
 
 transformeesHugtto :: [Transformee]
@@ -49,6 +50,13 @@ transformeesHugtto =
       "キュアアムール"
       ""
       (concat introducesHerselfAs_CureAmour)
+
+  , mkTransformee
+      "Cure Infini"
+      ""
+      "キュアアンフィニ"
+      ""
+      (concat introducesHerselfAs_CureInfini)
 
   , mkTransformee
       "Cure Yell"
@@ -87,6 +95,44 @@ transformeesHugtto =
       "はぐたん"
       cheerfulStyle
       ""
+
+  , mkTransformee
+      "Cure Yell"
+      motherHeartStyleEn
+      "キュアエール"
+      motherHeartStyle
+      (concat introducesHerselfAs_CureYell)
+  , mkTransformee
+      "Cure Ange"
+      motherHeartStyleEn
+      "キュアアンジュ"
+      motherHeartStyle
+      (concat introducesHerselfAs_CureAnge)
+  , mkTransformee
+      "Cure Etoile"
+      motherHeartStyleEn
+      "キュアエトワール"
+      motherHeartStyle
+      (concat introducesHerselfAs_CureEtoile)
+  , mkTransformee
+      "Cure Macherie"
+      motherHeartStyleEn
+      "キュアマシェリ"
+      motherHeartStyle
+      (concat introducesHerselfAs_CureMacherie)
+  , mkTransformee
+      "Cure Amour"
+      motherHeartStyleEn
+      "キュアアムール"
+      motherHeartStyle
+      (concat introducesHerselfAs_CureAmour)
+
+  , mkTransformee
+      "Hugtan"
+      motherHeartStyleEn
+      "はぐたん"
+      motherHeartStyle
+      ""
   ]
 
 transformedGroupsHugtto :: [TransformedGroup]
@@ -116,7 +162,10 @@ specialItemsHugtto =
 
   , mkSpecialItem "Mirai Pad" "ミライパッド"  ["Mirai Crystal"]
   , mkSpecialItem "Mirai Crystal Cheerful" "ミライクリスタル・チアフル" []
+  , mkSpecialItem "Mirai Crystal Mother Heart" "ミライクリスタル・マザーハート" []
   , mkSpecialItem "Memorial Cure Clock" "メモリアルキュアクロック" ["Mirai Pad"]
+
+  , mkSpecialItem "Miracle By Mirai Brace" "ミライブレスが起こした奇跡" []
   ]
 
 transformationsHugtto :: [Transformation]
@@ -187,6 +236,27 @@ transformationsHugtto =
       , "ミライパッド！オープン！"
       , "プリキュア！チアフルスタイル！"
       ]
+
+  , mkTransformation -- https://www.youtube.com/watch?v=Dr8SVNTNbJ8
+      (groupMembers_Hugtto ++ ["Hugtan"])
+      [mkIA "MemorialCureClock" [mkIA "MiraiPad" ["MiraiCrystalMotherHeart"]]]
+      groupMembers_Hugtto_MotherHeart
+      [ "メモリアルキュアクロック・マザーハート！"
+      , "ミライパッド！オープン！"
+      , "HUGっとプリキュア！今ここに！"
+      ]
+
+  , mkTransformation -- https://www.youtube.com/watch?v=6PDxRppZhPY
+      ["Anri"]
+      ["MiracleByMiraiBrace"]
+      ["CureInfini"]
+      (
+        [ "なんでもできる！なんでもなれる！"
+        , "悲しいときも、迷うときも！"
+        , "みんなを励まし、未来へ輝け！"
+        , "そうだ、それが、プリキュアだ！"
+        ] ++ introducesHerselfAs_CureInfini
+        )
   ]
 
 purificationsHugtto :: [Purification]
@@ -269,6 +339,18 @@ purificationsHugtto =
       , "プリキュア！チアフルアターック！"
       , "はぎゅ！"
       ]
+  , mkPurification -- https://www.youtube.com/watch?v=U-3-CtWiGaM
+      groupMembers_Hugtto_MotherHeart
+      [mkIA "MemorialCureClock" [mkIA "MiraiPad" ["MiraiCrystalMotherHeart"]]]
+      [ "ワン・フォー・オール！"
+      , "オール・フォー・ワン！"
+      , "ウィー・アー！"
+      , "プリー・キュアー！"
+      , "明日に、エールを！"
+      , "ゴーファイ！"
+      , "みんなでトゥモロー！"
+      , "あったかい...。"
+      ]
   ]
 
 groupMembers_Hugtto :: IsString s => [s]
@@ -278,6 +360,10 @@ groupMembers_Hugtto =
 groupMembers_Hugtto_Cheerful :: IsString s => [s]
 groupMembers_Hugtto_Cheerful =
   ["CureYell_CheerfulStyle", "CureAnge_CheerfulStyle", "CureEtoile_CheerfulStyle", "CureMacherie_CheerfulStyle", "CureAmour_CheerfulStyle", "Hugtan_CheerfulStyle"]
+
+groupMembers_Hugtto_MotherHeart :: IsString s => [s]
+groupMembers_Hugtto_MotherHeart =
+  ["CureYell_MotherHeartStyle", "CureAnge_MotherHeartStyle", "CureEtoile_MotherHeartStyle", "CureMacherie_MotherHeartStyle", "CureAmour_MotherHeartStyle", "Hugtan_MotherHeartStyle"]
 
 miraiCrystalHeartKiratto = ["ミライクリスタル！", "ハートキラっと！"]
 miraiCrystal2HeartKiratto = head miraiCrystalHeartKiratto : miraiCrystalHeartKiratto
@@ -308,6 +394,12 @@ introducesHerselfAs_CureAmour =
 introducesHerselfAs_CureMacherie_CureAmour =
   [kagayakuMiraiWoDakishimete, "みんな大好き！愛のプリキュア！キュアマシェリ！キュアアムール！"]
 
+introducesHerselfAs_CureInfini = ["キュアアンフィニ！", "それが僕の名前かな。"]
+
 cheerfulStyleEn = "Cheerful Style"
 
 cheerfulStyle = "チアフルスタイル"
+
+motherHeartStyleEn = "Mother Heart Style"
+
+motherHeartStyle = "マザーハートスタイル"

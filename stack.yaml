@@ -16,7 +16,7 @@
 #  name: custom-snapshot
 #  location: "./custom-snapshot.yaml"
 
-resolver: lts-12.6
+resolver: lts-12.24
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
@@ -40,10 +40,7 @@ packages:
 - '.'
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
-extra-deps:
-- substring-parser-0.4.1.0
-- git: https://github.com/CindyLinz/Haskell-NoTrace.git
-  commit: 57b1f2bdc2c4ed247c4bd09708dde3078fc08b44
+extra-deps: []
 
 # Override default flag values for local packages and extra-deps
 flags: {}
