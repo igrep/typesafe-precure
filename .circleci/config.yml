@@ -20,4 +20,4 @@ jobs:
         paths:
         - ~/.stack/
         - .stack-work/
-    - run: stack --compiler=ghc-8.4.3 --no-terminal test --pedantic
+    - run: stack --compiler=ghc-8.4.4 --no-terminal test --pedantic
