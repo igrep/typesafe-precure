@@ -1,3 +1,8 @@
+# 0.7.2.1
+
+- Add Hugtto! PreCure Mother Heart Style
+- Add Cure Infini's transformation.
+
 # 0.7.1.1
 
 - Add Hugtto! PreCure Cheerful Style

@@ -515,12 +515,24 @@
             "id": "MiraiCrystalCheerful"
         },
         {
+            "nameEn": "Mirai Crystal Mother Heart",
+            "attachments": [],
+            "nameJa": "ミライクリスタル・マザーハート",
+            "id": "MiraiCrystalMotherHeart"
+        },
+        {
             "nameEn": "Memorial Cure Clock",
             "attachments": [
                 "Mirai Pad"
             ],
             "nameJa": "メモリアルキュアクロック",
             "id": "MemorialCureClock"
+        },
+        {
+            "nameEn": "Miracle By Mirai Brace",
+            "attachments": [],
+            "nameJa": "ミライブレスが起こした奇跡",
+            "id": "MiracleByMiraiBrace"
         },
         {
             "nameEn": "Sweets Pact",
@@ -1350,6 +1362,14 @@
             "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな大好き！愛のプリキュア！キュアアムール！"
         },
         {
+            "nameEn": "Cure Infini",
+            "variationEn": "",
+            "nameJa": "キュアアンフィニ",
+            "variationJa": "",
+            "id": "CureInfini",
+            "introducesHerselfAs": "キュアアンフィニ！それが僕の名前かな。"
+        },
+        {
             "nameEn": "Cure Yell",
             "variationEn": "Cheerful Style",
             "nameJa": "キュアエール",
@@ -1395,6 +1415,54 @@
             "nameJa": "はぐたん",
             "variationJa": "チアフルスタイル",
             "id": "Hugtan_CheerfulStyle",
+            "introducesHerselfAs": ""
+        },
+        {
+            "nameEn": "Cure Yell",
+            "variationEn": "Mother Heart Style",
+            "nameJa": "キュアエール",
+            "variationJa": "マザーハートスタイル",
+            "id": "CureYell_MotherHeartStyle",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんなを応援！元気のプリキュア！キュアエール！"
+        },
+        {
+            "nameEn": "Cure Ange",
+            "variationEn": "Mother Heart Style",
+            "nameJa": "キュアアンジュ",
+            "variationJa": "マザーハートスタイル",
+            "id": "CureAnge_MotherHeartStyle",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんなを癒す！知恵のプリキュア！キュアアンジュ！"
+        },
+        {
+            "nameEn": "Cure Etoile",
+            "variationEn": "Mother Heart Style",
+            "nameJa": "キュアエトワール",
+            "variationJa": "マザーハートスタイル",
+            "id": "CureEtoile_MotherHeartStyle",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな輝け！力のプリキュア！キュアエトワール！"
+        },
+        {
+            "nameEn": "Cure Macherie",
+            "variationEn": "Mother Heart Style",
+            "nameJa": "キュアマシェリ",
+            "variationJa": "マザーハートスタイル",
+            "id": "CureMacherie_MotherHeartStyle",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな大好き！愛のプリキュア！キュアマシェリ！"
+        },
+        {
+            "nameEn": "Cure Amour",
+            "variationEn": "Mother Heart Style",
+            "nameJa": "キュアアムール",
+            "variationJa": "マザーハートスタイル",
+            "id": "CureAmour_MotherHeartStyle",
+            "introducesHerselfAs": "輝く未来をー、抱きしめて！みんな大好き！愛のプリキュア！キュアアムール！"
+        },
+        {
+            "nameEn": "Hugtan",
+            "variationEn": "Mother Heart Style",
+            "nameJa": "はぐたん",
+            "variationJa": "マザーハートスタイル",
+            "id": "Hugtan_MotherHeartStyle",
             "introducesHerselfAs": ""
         },
         {
@@ -2031,6 +2099,11 @@
             "nameEn": "Hugtan",
             "nameJa": "はぐたん",
             "id": "Hugtan"
+        },
+        {
+            "nameEn": "Anri Wakamiya",
+            "nameJa": "若宮アンリ",
+            "id": "Anri"
         },
         {
             "nameEn": "Ichika Usami",
@@ -3045,6 +3118,39 @@
                 "メモリアルパワー・フルチャージ！",
                 "プリキュア！チアフルアターック！",
                 "はぎゅ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        {
+                            "a": [
+                                "MiraiCrystalMotherHeart"
+                            ],
+                            "i": "MiraiPad"
+                        }
+                    ],
+                    "i": "MemorialCureClock"
+                }
+            ],
+            "purifiers": [
+                "CureYell_MotherHeartStyle",
+                "CureAnge_MotherHeartStyle",
+                "CureEtoile_MotherHeartStyle",
+                "CureMacherie_MotherHeartStyle",
+                "CureAmour_MotherHeartStyle",
+                "Hugtan_MotherHeartStyle"
+            ],
+            "speech": [
+                "ワン・フォー・オール！",
+                "オール・フォー・ワン！",
+                "ウィー・アー！",
+                "プリー・キュアー！",
+                "明日に、エールを！",
+                "ゴーファイ！",
+                "みんなでトゥモロー！",
+                "あったかい...。"
             ]
         },
         {
@@ -5128,6 +5234,61 @@
                 "CureMacherie",
                 "CureAmour",
                 "Hugtan"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        {
+                            "a": [
+                                "MiraiCrystalMotherHeart"
+                            ],
+                            "i": "MiraiPad"
+                        }
+                    ],
+                    "i": "MemorialCureClock"
+                }
+            ],
+            "transformees": [
+                "CureYell_MotherHeartStyle",
+                "CureAnge_MotherHeartStyle",
+                "CureEtoile_MotherHeartStyle",
+                "CureMacherie_MotherHeartStyle",
+                "CureAmour_MotherHeartStyle",
+                "Hugtan_MotherHeartStyle"
+            ],
+            "speech": [
+                "メモリアルキュアクロック・マザーハート！",
+                "ミライパッド！オープン！",
+                "HUGっとプリキュア！今ここに！"
+            ],
+            "transformers": [
+                "CureYell",
+                "CureAnge",
+                "CureEtoile",
+                "CureMacherie",
+                "CureAmour",
+                "Hugtan"
+            ]
+        },
+        {
+            "specialItems": [
+                "MiracleByMiraiBrace"
+            ],
+            "transformees": [
+                "CureInfini"
+            ],
+            "speech": [
+                "なんでもできる！なんでもなれる！",
+                "悲しいときも、迷うときも！",
+                "みんなを励まし、未来へ輝け！",
+                "そうだ、それが、プリキュアだ！",
+                "キュアアンフィニ！",
+                "それが僕の名前かな。"
+            ],
+            "transformers": [
+                "Anri"
             ]
         },
         {
