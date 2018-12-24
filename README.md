@@ -64,9 +64,9 @@ ghci> purificationSpeech (CureMiracle_Ruby, CureMagical_Ruby) (LinkleStick Linkl
 ghci> :{
 ghci> let scene = do
 ....>       say "この罪を抱いたまま、もう一度、グランプリンセスを目指す！"
-....>       scarlet <- transform Towa (PrincessPerfume DressUpKey_Scarlet)
-....>       scarletModeElegant <- transform scarlet (PrincessPerfume DressUpKey_Phoenix)
-....>       purify scarletModeElegant (ScarletViolin DressUpKey_Phoenix)
+....>       scarlet <- transform Towa (PrincessPerfume DressUpKeyScarlet)
+....>       scarletModeElegant <- transform scarlet (PrincessPerfume DressUpKeyPhoenix)
+....>       purify scarletModeElegant (ScarletViolin DressUpKeyPhoenix)
 ghci> :}
 ghci> :t scene
 scene
