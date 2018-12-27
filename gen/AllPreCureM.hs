@@ -1,9 +1,12 @@
 {-# LANGUAGE RebindableSyntax #-}
+{-# LANGUAGE DataKinds #-}
 
 module AllPreCureM where
 
 import           ACME.PreCure
 import           ACME.PreCure.Monad.Super
+
+import           Data.Extensible
 
 
 act_CureHeart_LovelyCommuneSharuru_CureLoveads = printEpisode $ do
@@ -347,6 +350,12 @@ act_CureYell_PreHeart_MiraiCrystalPink = printEpisode $ do
   transform Hana (PreHeart MiraiCrystalPink)
   purify CureYell (PreHeart MiraiCrystalPink)
   purify CureYell (MelodySword MiraiCrystalRose)
+
+cureYellTransformationAndPurification :: PreCureM (StatusTable '[]) (StatusTable '[Hana >: HasTransformed 'True]) ()
+cureYellTransformationAndPurification = do
+  enter Hana
+  transform Hana (PreHeart MiraiCrystalPink)
+  purify CureYell (PreHeart MiraiCrystalPink)
 
   -- NO NONITEM PURIFICATIONS
 
