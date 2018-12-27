@@ -1,5 +1,6 @@
 {-# LANGUAGE RebindableSyntax #-}
 {-# LANGUAGE DataKinds #-}
+{-# LANGUAGE TypeOperators #-}
 
 module AllPreCureM where
 
