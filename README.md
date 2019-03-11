@@ -9,7 +9,7 @@ Written in Haskell.
 ## Features
 
 - Collection of Japanese battle heroines "PreCure"  and their transformation and purification phrases.
-    - Currently, supports from the first season to "Hugtto! PreCure", including Cure Echo, Cure Mofurun, Cure Pekorin, and Cure Infini!
+    - Currently, supports from the first season to "Star☆Twinkle PreCure", including Cure Echo, Cure Mofurun, Cure Pekorin, and Cure Infini!
 - Monadic actions to play the speech of their transformations and purifications.
 
 ## Characteristics
