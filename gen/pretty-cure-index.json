@@ -838,6 +838,62 @@
             "id": "CrystalCommuneChoppy"
         },
         {
+            "nameEn": "Star Color Pendant",
+            "attachments": [
+                "Star Color Pen"
+            ],
+            "nameJa": "スターカラーペンダント",
+            "id": "StarColorPendant"
+        },
+        {
+            "nameEn": "Star Color Pen Cure Star",
+            "attachments": [],
+            "nameJa": "スターカラーペン キュアスター",
+            "id": "StarColorPenCureStar"
+        },
+        {
+            "nameEn": "Star Color Pen Cure Milky",
+            "attachments": [],
+            "nameJa": "スターカラーペン キュアミルキー",
+            "id": "StarColorPenCureMilky"
+        },
+        {
+            "nameEn": "Star Color Pen Cure Soleil",
+            "attachments": [],
+            "nameJa": "スターカラーペン キュアソレイユ",
+            "id": "StarColorPenCureSoleil"
+        },
+        {
+            "nameEn": "Star Color Pen Cure Selene",
+            "attachments": [],
+            "nameJa": "スターカラーペン キュアセレーネ",
+            "id": "StarColorPenCureSelene"
+        },
+        {
+            "nameEn": "Star Color Pen Taurus",
+            "attachments": [],
+            "nameJa": "スターカラーペン おうし座",
+            "id": "StarColorPenTaurus"
+        },
+        {
+            "nameEn": "Star Color Pen Leo",
+            "attachments": [],
+            "nameJa": "スターカラーペン しし座",
+            "id": "StarColorPenLeo"
+        },
+        {
+            "nameEn": "Star Color Pen Libra",
+            "attachments": [],
+            "nameJa": "スターカラーペン てんびん座",
+            "id": "StarColorPenLibra"
+        },
+        {
+            "nameEn": "Star Color Pen Capricorn",
+            "attachments": [],
+            "nameJa": "スターカラーペン やぎ座",
+            "id": "StarColorPenCapricorn"
+        },
+        {
             "nameEn": "Cure Modules",
             "attachments": [
                 "FairyTone"
@@ -1874,6 +1930,38 @@
             "introducesHerselfAs": "大地に薫る風！ キュアウィンディ！"
         },
         {
+            "nameEn": "Cure Star",
+            "variationEn": "",
+            "nameJa": "キュアスター",
+            "variationJa": "",
+            "id": "CureStar",
+            "introducesHerselfAs": "宇宙に輝くー！キラキラ星！キュアスター！"
+        },
+        {
+            "nameEn": "Cure Milky",
+            "variationEn": "",
+            "nameJa": "キュアアンジュ",
+            "variationJa": "",
+            "id": "CureMilky",
+            "introducesHerselfAs": "天にあまねくー！ミルキーウェイ！キュアミルキー！"
+        },
+        {
+            "nameEn": "Cure Soleil",
+            "variationEn": "",
+            "nameJa": "キュアエトワール",
+            "variationJa": "",
+            "id": "CureSoleil",
+            "introducesHerselfAs": "宇宙を照らす！灼熱の、きらめき！キュアソレイユ！"
+        },
+        {
+            "nameEn": "Cure Selene",
+            "variationEn": "",
+            "nameJa": "キュアセレーネ",
+            "variationJa": "",
+            "id": "CureSelene",
+            "introducesHerselfAs": "夜空に輝く！神秘の、月あかり！キュアセレーネ！"
+        },
+        {
             "nameEn": "Cure Melody",
             "variationEn": "",
             "nameJa": "キュアメロディ",
@@ -2199,6 +2287,26 @@
             "nameEn": "Mai Misho",
             "nameJa": "美翔 舞",
             "id": "Mai"
+        },
+        {
+            "nameEn": "Hikaru Hoshina",
+            "nameJa": "星奈 ひかる",
+            "id": "Hikaru"
+        },
+        {
+            "nameEn": "Lala Hagoromo",
+            "nameJa": "羽衣 ララ",
+            "id": "Lala"
+        },
+        {
+            "nameEn": "Elena Amamiya",
+            "nameJa": "天宮 えれな",
+            "id": "Elena"
+        },
+        {
+            "nameEn": "Madoka Kaguya",
+            "nameJa": "香久矢 まどか",
+            "id": "Madoka"
         },
         {
             "nameEn": "Hibiki Hojo",
@@ -3643,6 +3751,42 @@
                 "はばたけ！光り輝く未来へ！",
                 "プリキュア！ロイヤル・レインボー・バースト！",
                 "輝け！ハッピースマイル！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenTaurus"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureStar"
+            ],
+            "speech": [
+                "プリキュア！",
+                "おうし座！",
+                "スター・パンチ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenLeo"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureMilky"
+            ],
+            "speech": [
+                "プリキュア！",
+                "しし座！",
+                "ミルキー・ショック！"
             ]
         },
         {
@@ -6732,6 +6876,184 @@
             "specialItems": [
                 {
                     "a": [
+                        "StarColorPenCureStar"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "transformees": [
+                "CureStar"
+            ],
+            "speech": [
+                "スターカラーペンダント！",
+                "カラーチャージ！",
+                "きーらーめーくー♪",
+                "ほーしーの力でー♪",
+                "あこがーれのー♪",
+                "わーたーし描くよー♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "スター☆トゥインクル♪",
+                "スター☆トゥインクルプリキュアー♪ ああー♪",
+                "宇宙に輝くー！キラキラ星！キュアスター！"
+            ],
+            "transformers": [
+                "Hikaru"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenCureMilky"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "transformees": [
+                "CureMilky"
+            ],
+            "speech": [
+                "スターカラーペンダント！",
+                "カラーチャージ！",
+                "きーらーめーくー♪",
+                "ほーしーの力でー♪",
+                "あこがーれのー♪",
+                "わーたーし描くよー♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "スター☆トゥインクル♪",
+                "スター☆トゥインクルプリキュアー♪ ああー♪",
+                "天にあまねくー！ミルキーウェイ！キュアミルキー！"
+            ],
+            "transformers": [
+                "Lala"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenCureSoleil"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "transformees": [
+                "CureSoleil"
+            ],
+            "speech": [
+                "スターカラーペンダント！",
+                "カラーチャージ！",
+                "きーらーめーくー♪",
+                "ほーしーの力でー♪",
+                "あこがーれのー♪",
+                "わーたーし描くよー♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "スター☆トゥインクル♪",
+                "スター☆トゥインクルプリキュアー♪ ああー♪",
+                "宇宙を照らす！灼熱の、きらめき！キュアソレイユ！"
+            ],
+            "transformers": [
+                "Elena"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenCureSelene"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "transformees": [
+                "CureSelene"
+            ],
+            "speech": [
+                "スターカラーペンダント！",
+                "カラーチャージ！",
+                "きーらーめーくー♪",
+                "ほーしーの力でー♪",
+                "あこがーれのー♪",
+                "わーたーし描くよー♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "スター☆トゥインクル♪",
+                "スター☆トゥインクルプリキュアー♪ ああー♪",
+                "夜空に輝く！神秘の、月あかり！キュアセレーネ！"
+            ],
+            "transformers": [
+                "Madoka"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenCureStar"
+                    ],
+                    "i": "StarColorPendant"
+                },
+                {
+                    "a": [
+                        "StarColorPenCureMilky"
+                    ],
+                    "i": "StarColorPendant"
+                },
+                {
+                    "a": [
+                        "StarColorPenCureSoleil"
+                    ],
+                    "i": "StarColorPendant"
+                },
+                {
+                    "a": [
+                        "StarColorPenCureSelene"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "transformees": [
+                "CureStar",
+                "CureMilky",
+                "CureSoleil",
+                "CureSelene"
+            ],
+            "speech": [
+                "スターカラーペンダント！",
+                "カラーチャージ！",
+                "きーらーめーくー♪",
+                "ほーしーの力でー♪",
+                "あこがーれのー♪",
+                "わーたーし描くよー♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "スター☆トゥインクル♪",
+                "スター☆トゥインクルプリキュアー♪ ああー♪",
+                "宇宙に輝くー！キラキラ星！キュアスター！",
+                "天にあまねくー！ミルキーウェイ！キュアミルキー！",
+                "宇宙を照らす！灼熱の、きらめき！キュアソレイユ！",
+                "夜空に輝く！神秘の、月あかり！キュアセレーネ！",
+                "スター☆トゥインクルプリキュア！"
+            ],
+            "transformers": [
+                "Hikaru",
+                "Lala",
+                "Elena",
+                "Madoka"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
                         "Dory"
                     ],
                     "i": "CureModules"
@@ -7255,6 +7577,42 @@
         },
         {
             "purifiers": [
+                "CureStar"
+            ],
+            "speech": [
+                "プリキュア！",
+                "スター・パンチ！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureMilky"
+            ],
+            "speech": [
+                "プリキュア！",
+                "ミルキー・ショック！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureSoleil"
+            ],
+            "speech": [
+                "プリキュア！",
+                "ソレイユ・シュート！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureSelene"
+            ],
+            "speech": [
+                "プリキュア！",
+                "セレーネ・アロー！"
+            ]
+        },
+        {
+            "purifiers": [
                 "CureDream"
             ],
             "speech": [
@@ -7668,6 +8026,18 @@
             "transformerIds": [
                 "CureBright",
                 "CureWindy"
+            ]
+        },
+        {
+            "nameEn": "StarTwinkle☆ PreCure",
+            "variationEn": "",
+            "nameJa": "スター☆トゥインクルプリキュア",
+            "variationJa": "",
+            "transformerIds": [
+                "CureStar",
+                "CureMilky",
+                "CureSoleil",
+                "CureSelene"
             ]
         },
         {
