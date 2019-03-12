@@ -1,3 +1,7 @@
+# 0.7.3.1
+
+- Add Star☆Twinkle PreCure's characters and some of their purifications and transformations.
+
 # 0.7.2.1
 
 - Add Hugtto! PreCure Mother Heart Style
