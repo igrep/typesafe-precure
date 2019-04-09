@@ -26,13 +26,13 @@ transformees =
   , mkTransformee
       "Cure Milky"
       ""
-      "キュアアンジュ"
+      "キュアミルキー"
       ""
       introducesHerselfAs_CureMilky
   , mkTransformee
       "Cure Soleil"
       ""
-      "キュアエトワール"
+      "キュアソレイユ"
       ""
       introducesHerselfAs_CureSoleil
   , mkTransformee
