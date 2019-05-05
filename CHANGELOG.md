@@ -1,3 +1,12 @@
+# 0.7.4.1
+
+- Add Star☆Twinkle PreCure'spurifications and special items:
+    - Libra Soleil Shoot
+    - Scorpius Soleil Shoot
+    - Capricorn Selene Arrow
+    - Southern Cross Shot
+- Correct some of the Japanese names in StarTwinkle: [#34](https://github.com/igrep/typesafe-precure/pull/34). Thanks [\@tsuka](https://github.com/tsuka)!
+
 # 0.7.3.1
 
 - Add Star☆Twinkle PreCure's characters and some of their purifications and transformations.

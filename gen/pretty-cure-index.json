@@ -888,10 +888,22 @@
             "id": "StarColorPenLibra"
         },
         {
+            "nameEn": "Star Color Pen Scorpius",
+            "attachments": [],
+            "nameJa": "スターカラーペン さそり座",
+            "id": "StarColorPenScorpius"
+        },
+        {
             "nameEn": "Star Color Pen Capricorn",
             "attachments": [],
             "nameJa": "スターカラーペン やぎ座",
             "id": "StarColorPenCapricorn"
+        },
+        {
+            "nameEn": "Twinkle Stick",
+            "attachments": [],
+            "nameJa": "トゥインクルステッキ",
+            "id": "TwinkleStick"
         },
         {
             "nameEn": "Cure Modules",
@@ -3787,6 +3799,81 @@
                 "プリキュア！",
                 "しし座！",
                 "ミルキー・ショック！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenLibra"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureSoleil"
+            ],
+            "speech": [
+                "プリキュア！",
+                "てんびん座！",
+                "ソレイユ・シュート！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenScorpius"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureSoleil"
+            ],
+            "speech": [
+                "プリキュア！",
+                "さそり座！",
+                "ソレイユ・シュート！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenCapricorn"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureSelene"
+            ],
+            "speech": [
+                "プリキュア！",
+                "やぎ座！",
+                "セレーネ・アロー！"
+            ]
+        },
+        {
+            "specialItems": [
+                "TwinkleStick"
+            ],
+            "purifiers": [
+                "CureStar",
+                "CureMilky",
+                "CureSoleil",
+                "CureSelene"
+            ],
+            "speech": [
+                "宇宙（そら）に輝け！イマジネーションの力！",
+                "トゥインクルステッキ！",
+                "スター☆トゥインクル！",
+                "ミルキー☆トゥインクル！",
+                "ソレイユ☆トゥインクル！",
+                "セレーネ☆トゥインクル！",
+                "四つの輝きを！今、一つに！",
+                "プリキュア！サザンクロス・ショット！"
             ]
         },
         {

@@ -59,7 +59,10 @@ specialItems =
   , mkSpecialItem "Star Color Pen Taurus"      "スターカラーペン おうし座" []
   , mkSpecialItem "Star Color Pen Leo"         "スターカラーペン しし座" []
   , mkSpecialItem "Star Color Pen Libra"       "スターカラーペン てんびん座" []
+  , mkSpecialItem "Star Color Pen Scorpius"    "スターカラーペン さそり座" []
   , mkSpecialItem "Star Color Pen Capricorn"   "スターカラーペン やぎ座" []
+
+  , mkSpecialItem "Twinkle Stick" "トゥインクルステッキ" []
   ]
 
 transformations :: [Transformation]
@@ -118,6 +121,30 @@ purifications =
       ["CureMilky"]
       [mkIA "StarColorPendant" ["StarColorPenLeo"]]
       ["プリキュア！", "しし座！", "ミルキー・ショック！"]
+  , mkPurification
+      ["CureSoleil"]
+      [mkIA "StarColorPendant" ["StarColorPenLibra"]]
+      ["プリキュア！", "てんびん座！", "ソレイユ・シュート！"]
+  , mkPurification
+      ["CureSoleil"]
+      [mkIA "StarColorPendant" ["StarColorPenScorpius"]]
+      ["プリキュア！", "さそり座！", "ソレイユ・シュート！"]
+  , mkPurification
+      ["CureSelene"]
+      [mkIA "StarColorPendant" ["StarColorPenCapricorn"]]
+      ["プリキュア！", "やぎ座！", "セレーネ・アロー！"]
+  , mkPurification
+      ["CureStar", "CureMilky", "CureSoleil", "CureSelene"]
+      ["TwinkleStick"]
+      ["宇宙（そら）に輝け！イマジネーションの力！"
+      , "トゥインクルステッキ！"
+      , "スター☆トゥインクル！"
+      , "ミルキー☆トゥインクル！"
+      , "ソレイユ☆トゥインクル！"
+      , "セレーネ☆トゥインクル！"
+      , "四つの輝きを！今、一つに！"
+      , "プリキュア！サザンクロス・ショット！"
+      ]
   ]
 
 
