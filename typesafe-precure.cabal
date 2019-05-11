@@ -101,6 +101,7 @@ library
                      , autoexporter
                      , bytestring
                      , deriveJsonNoPrefix
+                     , membership
                      , monad-skeleton
                      , indexed
                      , indexed-extras

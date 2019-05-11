@@ -1,10 +1,11 @@
+{-# LANGUAGE DataKinds        #-}
 {-# LANGUAGE RebindableSyntax #-}
-{-# LANGUAGE DataKinds #-}
-{-# LANGUAGE TypeOperators #-}
+{-# LANGUAGE TypeOperators    #-}
 
 module AllPreCureM where
 
-import           ACME.PreCure
+import           ACME.PreCure             hiding (printEpisode, purify,
+                                           purifyWithoutItem, transform)
 import           ACME.PreCure.Monad.Super
 
 import           Data.Extensible

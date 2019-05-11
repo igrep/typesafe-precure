@@ -31,12 +31,12 @@ module ACME.PreCure.Monad.Super.Core
 
 import           Control.Monad.Indexed
 import           Data.Extensible
-import           Data.Extensible.HList
 import           Data.Functor.Identity (Identity (Identity))
 import           Data.Kind             (Type)
 import           Data.Proxy            (Proxy (Proxy))
 import           Data.Type.Equality    (type (==))
 import           Prelude               hiding ((>>), (>>=))
+import           Type.Membership.HList
 
 
 type GirlS = Type

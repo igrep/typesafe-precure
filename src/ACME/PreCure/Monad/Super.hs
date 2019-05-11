@@ -52,6 +52,7 @@ import           Data.Foldable                   (for_)
 import           Data.Monoid                     ((<>))
 import           Data.Proxy                      (Proxy (Proxy))
 import qualified System.IO                       as IO
+import           Type.Membership                 (Lookup)
 
 import           ACME.PreCure.Monad.Super.Core   hiding ((>>), (>>=))
 import qualified ACME.PreCure.Monad.Super.Core   as Core
@@ -81,7 +82,7 @@ enter girlOrPreCure = PreCureM $ imodify (itemAssoc (Proxy :: Proxy (AsGirl girl
 transform
   :: forall girlOrPreCure item xs.
     ( Transformation girlOrPreCure item
-    , Associate girlOrPreCure (HasTransformed 'False) xs
+    , Lookup xs girlOrPreCure (HasTransformed 'False)
     , PSet girlOrPreCure (HasTransformed 'True) xs
     )
   => girlOrPreCure -> item -> PreCureM (StatusTable xs) (StatusTable (PSetResult girlOrPreCure (HasTransformed 'True) xs)) ()
@@ -96,14 +97,14 @@ transform girlOrPreCure item = do
 
 -- TODO: Support precures in tuple
 purify
-  :: (Purification preCure item, Associate (AsGirl preCure) (HasTransformed 'True) xs)
+  :: (Purification preCure item, Lookup xs (AsGirl preCure) (HasTransformed 'True))
   => preCure -> item -> PreCureM (StatusTable xs) (StatusTable xs) ()
 purify preCure =
   speak . purificationSpeech preCure
 
 
 purifyWithoutItem
-  :: (NonItemPurification preCure, Associate (AsGirl preCure) (HasTransformed 'True) xs)
+  :: (NonItemPurification preCure, Lookup xs (AsGirl preCure) (HasTransformed 'True))
   => preCure -> PreCureM (StatusTable xs) (StatusTable xs) ()
 purifyWithoutItem =
   speak . nonItemPurificationSpeech
