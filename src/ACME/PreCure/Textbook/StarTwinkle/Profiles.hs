@@ -13,6 +13,7 @@ girls =
   , mkGirl "Lala Hagoromo"  "羽衣 ララ"
   , mkGirl "Elena Amamiya"  "天宮 えれな"
   , mkGirl "Madoka Kaguya"  "香久矢 まどか"
+  , mkGirl "Yuni"           "ユニ"
   ]
 
 transformees :: [Transformee]
@@ -41,6 +42,12 @@ transformees =
       "キュアセレーネ"
       ""
       introducesHerselfAs_CureSelene
+  , mkTransformee
+      "Cure Cosmo"
+      ""
+      "キュアコスモ"
+      ""
+      introducesHerselfAs_CureCosmo
   ]
 
 transformedGroups :: [TransformedGroup]
@@ -56,13 +63,22 @@ specialItems =
   , mkSpecialItem "Star Color Pen Cure Milky"  "スターカラーペン キュアミルキー" []
   , mkSpecialItem "Star Color Pen Cure Soleil" "スターカラーペン キュアソレイユ" []
   , mkSpecialItem "Star Color Pen Cure Selene" "スターカラーペン キュアセレーネ" []
+  , mkSpecialItem "Star Color Pen Cure Cosmo"  "スターカラーペン キュアコスモ" []
   , mkSpecialItem "Star Color Pen Taurus"      "スターカラーペン おうし座" []
   , mkSpecialItem "Star Color Pen Leo"         "スターカラーペン しし座" []
   , mkSpecialItem "Star Color Pen Libra"       "スターカラーペン てんびん座" []
   , mkSpecialItem "Star Color Pen Scorpius"    "スターカラーペン さそり座" []
   , mkSpecialItem "Star Color Pen Capricorn"   "スターカラーペン やぎ座" []
+  , mkSpecialItem "Star Color Pen Scorpio"     "スターカラーペン さそり座" []
+  , mkSpecialItem "Star Color Pen Sagittarius" "スターカラーペン いて座" []
+  , mkSpecialItem "Star Color Pen Virgo"       "スターカラーペン おとめ座" []
+  , mkSpecialItem "Star Color Pen Gemini"      "スターカラーペン ふたご座" []
+  , mkSpecialItem "Star Color Pen Aries"       "スターカラーペン おひつじ座" []
+  , mkSpecialItem "Star Color Pen Aquarius"    "スターカラーペン みずがめ座" []
 
   , mkSpecialItem "Twinkle Stick" "トゥインクルステッキ" []
+
+  , mkSpecialItem "Rainbow Perfume" "レインボーパフューム" ["Star Color Pen"]
   ]
 
 transformations :: [Transformation]
@@ -93,6 +109,13 @@ transformations =
       (starColorPendantColorCharge ++
        transformationSong ++ [introducesHerselfAs_CureSelene])
   , mkTransformation
+      ["Yuni"]
+      [ mkIA "StarColorPendant" ["StarColorPenCureCosmo"]
+      ]
+      ["CureSelene"]
+      (starColorPendantColorCharge ++
+       transformationSong ++ [introducesHerselfAs_CureCosmo])
+  , mkTransformation
       ["Hikaru", "Lala", "Elena", "Madoka"]
       [ mkIA "StarColorPendant" ["StarColorPenCureStar"]
       , mkIA "StarColorPendant" ["StarColorPenCureMilky"]
@@ -109,6 +132,25 @@ transformations =
        , "スター☆トゥインクルプリキュア！"
        ]
       )
+  , mkTransformation
+      ["Hikaru", "Lala", "Elena", "Madoka", "Yuni"]
+      [ mkIA "StarColorPendant" ["StarColorPenCureStar"]
+      , mkIA "StarColorPendant" ["StarColorPenCureMilky"]
+      , mkIA "StarColorPendant" ["StarColorPenCureSoleil"]
+      , mkIA "StarColorPendant" ["StarColorPenCureSelene"]
+      , mkIA "StarColorPendant" ["StarColorPenCureCosmo"]
+      ]
+      ["CureStar", "CureMilky", "CureSoleil", "CureSelene", "CureCosmo"]
+      (starColorPendantColorCharge ++
+       transformationSong ++
+       [ introducesHerselfAs_CureStar
+       , introducesHerselfAs_CureMilky
+       , introducesHerselfAs_CureSoleil
+       , introducesHerselfAs_CureSelene
+       , introducesHerselfAs_CureCosmo
+       , "スター☆トゥインクルプリキュア！"
+       ]
+      )
   ]
 
 purifications :: [Purification]
@@ -118,9 +160,19 @@ purifications =
       [mkIA "StarColorPendant" ["StarColorPenTaurus"]]
       ["プリキュア！", "おうし座！", "スター・パンチ！"]
   , mkPurification
+      ["CureStar"]
+      [mkIA "StarColorPendant" ["StarColorPenAries"]]
+      ["プリキュア！", "おひつじ座！", "スター・パンチ！"]
+
+  , mkPurification
       ["CureMilky"]
       [mkIA "StarColorPendant" ["StarColorPenLeo"]]
       ["プリキュア！", "しし座！", "ミルキー・ショック！"]
+  , mkPurification
+      ["CureMilky"]
+      [mkIA "StarColorPendant" ["StarColorPenGemini"]]
+      ["プリキュア！", "ふたご座！", "ミルキー・ショック！"]
+
   , mkPurification
       ["CureSoleil"]
       [mkIA "StarColorPendant" ["StarColorPenLibra"]]
@@ -130,13 +182,27 @@ purifications =
       [mkIA "StarColorPendant" ["StarColorPenScorpius"]]
       ["プリキュア！", "さそり座！", "ソレイユ・シュート！"]
   , mkPurification
+      ["CureSoleil"]
+      [mkIA "StarColorPendant" ["StarColorPenVirgo"]]
+      ["プリキュア！", "おとめ座！", "ソレイユ・シュート！"]
+
+  , mkPurification
       ["CureSelene"]
       [mkIA "StarColorPendant" ["StarColorPenCapricorn"]]
       ["プリキュア！", "やぎ座！", "セレーネ・アロー！"]
   , mkPurification
+      ["CureSelene"]
+      [mkIA "StarColorPendant" ["StarColorPenSagittarius"]]
+      ["プリキュア！", "いて座！", "セレーネ・アロー！"]
+  , mkPurification
+      ["CureSelene"]
+      [mkIA "StarColorPendant" ["StarColorPenAquarius"]]
+      ["プリキュア！", "みずがめ座！", "セレーネ・アロー！"]
+
+  , mkPurification
       ["CureStar", "CureMilky", "CureSoleil", "CureSelene"]
       ["TwinkleStick"]
-      ["宇宙（そら）に輝け！イマジネーションの力！"
+      [ "宇宙（そら）に輝け！イマジネーションの力！"
       , "トゥインクルステッキ！"
       , "スター☆トゥインクル！"
       , "ミルキー☆トゥインクル！"
@@ -145,6 +211,17 @@ purifications =
       , "四つの輝きを！今、一つに！"
       , "プリキュア！サザンクロス・ショット！"
       ]
+
+  , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenTaurus"]] $ rainbowPerfumeOfConstellation "おうし"
+  , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenAries"]] $ rainbowPerfumeOfConstellation "おひつじ"
+  , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenLeo"]] $ rainbowPerfumeOfConstellation "しし"
+  , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenGemini"]] $ rainbowPerfumeOfConstellation "ふたご"
+  , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenLibra"]] $ rainbowPerfumeOfConstellation "てんびん"
+  , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenScorpius"]] $ rainbowPerfumeOfConstellation "さそり"
+  , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenVirgo"]] $ rainbowPerfumeOfConstellation "おとめ"
+  , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenCapricorn"]] $ rainbowPerfumeOfConstellation "やぎ"
+  , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenSagittarius"]] $ rainbowPerfumeOfConstellation "いて"
+  , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenAquarius"]] $ rainbowPerfumeOfConstellation "みずがめ"
   ]
 
 
@@ -154,6 +231,7 @@ nonItemPurifications =
   , mkNonItemPurification ["CureMilky"]  ["プリキュア！", "ミルキー・ショック！"]
   , mkNonItemPurification ["CureSoleil"] ["プリキュア！", "ソレイユ・シュート！"]
   , mkNonItemPurification ["CureSelene"] ["プリキュア！", "セレーネ・アロー！"]
+  , mkNonItemPurification ["CureCosmo"]  ["プリキュア！", "コスモ・シャイニング！"]
   ]
 
 groupMembers :: IsString s => [s]
@@ -185,3 +263,13 @@ introducesHerselfAs_CureSoleil =
 
 introducesHerselfAs_CureSelene =
   "夜空に輝く！神秘の、月あかり！キュアセレーネ！"
+
+introducesHerselfAs_CureCosmo =
+  "銀河に光る！虹色の、スペクトル！キュアコスモ！"
+
+rainbowPerfumeOfConstellation constellation =
+  [ "レインボーパフューム！行くニャン♡"
+  , "プリンセススターカラーペン！" ++ constellation ++ "座！"
+  , "クルクルチャージ！"
+  , "プリキュア！レインボー・スプラッシュ！"
+  ]

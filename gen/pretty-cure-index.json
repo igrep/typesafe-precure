@@ -870,6 +870,12 @@
             "id": "StarColorPenCureSelene"
         },
         {
+            "nameEn": "Star Color Pen Cure Cosmo",
+            "attachments": [],
+            "nameJa": "スターカラーペン キュアコスモ",
+            "id": "StarColorPenCureCosmo"
+        },
+        {
             "nameEn": "Star Color Pen Taurus",
             "attachments": [],
             "nameJa": "スターカラーペン おうし座",
@@ -900,10 +906,54 @@
             "id": "StarColorPenCapricorn"
         },
         {
+            "nameEn": "Star Color Pen Scorpio",
+            "attachments": [],
+            "nameJa": "スターカラーペン さそり座",
+            "id": "StarColorPenScorpio"
+        },
+        {
+            "nameEn": "Star Color Pen Sagittarius",
+            "attachments": [],
+            "nameJa": "スターカラーペン いて座",
+            "id": "StarColorPenSagittarius"
+        },
+        {
+            "nameEn": "Star Color Pen Virgo",
+            "attachments": [],
+            "nameJa": "スターカラーペン おとめ座",
+            "id": "StarColorPenVirgo"
+        },
+        {
+            "nameEn": "Star Color Pen Gemini",
+            "attachments": [],
+            "nameJa": "スターカラーペン ふたご座",
+            "id": "StarColorPenGemini"
+        },
+        {
+            "nameEn": "Star Color Pen Aries",
+            "attachments": [],
+            "nameJa": "スターカラーペン おひつじ座",
+            "id": "StarColorPenAries"
+        },
+        {
+            "nameEn": "Star Color Pen Aquarius",
+            "attachments": [],
+            "nameJa": "スターカラーペン みずがめ座",
+            "id": "StarColorPenAquarius"
+        },
+        {
             "nameEn": "Twinkle Stick",
             "attachments": [],
             "nameJa": "トゥインクルステッキ",
             "id": "TwinkleStick"
+        },
+        {
+            "nameEn": "Rainbow Perfume",
+            "attachments": [
+                "Star Color Pen"
+            ],
+            "nameJa": "レインボーパフューム",
+            "id": "RainbowPerfume"
         },
         {
             "nameEn": "Cure Modules",
@@ -1974,6 +2024,14 @@
             "introducesHerselfAs": "夜空に輝く！神秘の、月あかり！キュアセレーネ！"
         },
         {
+            "nameEn": "Cure Cosmo",
+            "variationEn": "",
+            "nameJa": "キュアコスモ",
+            "variationJa": "",
+            "id": "CureCosmo",
+            "introducesHerselfAs": "銀河に光る！虹色の、スペクトル！キュアコスモ！"
+        },
+        {
             "nameEn": "Cure Melody",
             "variationEn": "",
             "nameJa": "キュアメロディ",
@@ -2319,6 +2377,11 @@
             "nameEn": "Madoka Kaguya",
             "nameJa": "香久矢 まどか",
             "id": "Madoka"
+        },
+        {
+            "nameEn": "Yuni",
+            "nameJa": "ユニ",
+            "id": "Yuni"
         },
         {
             "nameEn": "Hibiki Hojo",
@@ -3787,6 +3850,24 @@
             "specialItems": [
                 {
                     "a": [
+                        "StarColorPenAries"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureStar"
+            ],
+            "speech": [
+                "プリキュア！",
+                "おひつじ座！",
+                "スター・パンチ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
                         "StarColorPenLeo"
                     ],
                     "i": "StarColorPendant"
@@ -3798,6 +3879,24 @@
             "speech": [
                 "プリキュア！",
                 "しし座！",
+                "ミルキー・ショック！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenGemini"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureMilky"
+            ],
+            "speech": [
+                "プリキュア！",
+                "ふたご座！",
                 "ミルキー・ショック！"
             ]
         },
@@ -3841,6 +3940,24 @@
             "specialItems": [
                 {
                     "a": [
+                        "StarColorPenVirgo"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureSoleil"
+            ],
+            "speech": [
+                "プリキュア！",
+                "おとめ座！",
+                "ソレイユ・シュート！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
                         "StarColorPenCapricorn"
                     ],
                     "i": "StarColorPendant"
@@ -3852,6 +3969,42 @@
             "speech": [
                 "プリキュア！",
                 "やぎ座！",
+                "セレーネ・アロー！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenSagittarius"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureSelene"
+            ],
+            "speech": [
+                "プリキュア！",
+                "いて座！",
+                "セレーネ・アロー！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenAquarius"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureSelene"
+            ],
+            "speech": [
+                "プリキュア！",
+                "みずがめ座！",
                 "セレーネ・アロー！"
             ]
         },
@@ -3874,6 +4027,196 @@
                 "セレーネ☆トゥインクル！",
                 "四つの輝きを！今、一つに！",
                 "プリキュア！サザンクロス・ショット！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenTaurus"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！おうし座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenAries"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！おひつじ座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenLeo"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！しし座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenGemini"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！ふたご座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenLibra"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！てんびん座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenScorpius"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！さそり座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenVirgo"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！おとめ座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenCapricorn"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！やぎ座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenSagittarius"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！いて座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenAquarius"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！みずがめ座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
             ]
         },
         {
@@ -7083,6 +7426,36 @@
             "specialItems": [
                 {
                     "a": [
+                        "StarColorPenCureCosmo"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "transformees": [
+                "CureSelene"
+            ],
+            "speech": [
+                "スターカラーペンダント！",
+                "カラーチャージ！",
+                "きーらーめーくー♪",
+                "ほーしーの力でー♪",
+                "あこがーれのー♪",
+                "わーたーし描くよー♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "スター☆トゥインクル♪",
+                "スター☆トゥインクルプリキュアー♪ ああー♪",
+                "銀河に光る！虹色の、スペクトル！キュアコスモ！"
+            ],
+            "transformers": [
+                "Yuni"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
                         "StarColorPenCureStar"
                     ],
                     "i": "StarColorPendant"
@@ -7135,6 +7508,73 @@
                 "Lala",
                 "Elena",
                 "Madoka"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenCureStar"
+                    ],
+                    "i": "StarColorPendant"
+                },
+                {
+                    "a": [
+                        "StarColorPenCureMilky"
+                    ],
+                    "i": "StarColorPendant"
+                },
+                {
+                    "a": [
+                        "StarColorPenCureSoleil"
+                    ],
+                    "i": "StarColorPendant"
+                },
+                {
+                    "a": [
+                        "StarColorPenCureSelene"
+                    ],
+                    "i": "StarColorPendant"
+                },
+                {
+                    "a": [
+                        "StarColorPenCureCosmo"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "transformees": [
+                "CureStar",
+                "CureMilky",
+                "CureSoleil",
+                "CureSelene",
+                "CureCosmo"
+            ],
+            "speech": [
+                "スターカラーペンダント！",
+                "カラーチャージ！",
+                "きーらーめーくー♪",
+                "ほーしーの力でー♪",
+                "あこがーれのー♪",
+                "わーたーし描くよー♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "トゥインクル♪トゥインクルプリキュア♪",
+                "スター☆トゥインクル♪",
+                "スター☆トゥインクルプリキュアー♪ ああー♪",
+                "宇宙に輝くー！キラキラ星！キュアスター！",
+                "天にあまねくー！ミルキーウェイ！キュアミルキー！",
+                "宇宙を照らす！灼熱の、きらめき！キュアソレイユ！",
+                "夜空に輝く！神秘の、月あかり！キュアセレーネ！",
+                "銀河に光る！虹色の、スペクトル！キュアコスモ！",
+                "スター☆トゥインクルプリキュア！"
+            ],
+            "transformers": [
+                "Hikaru",
+                "Lala",
+                "Elena",
+                "Madoka",
+                "Yuni"
             ]
         },
         {
@@ -7696,6 +8136,15 @@
             "speech": [
                 "プリキュア！",
                 "セレーネ・アロー！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "プリキュア！",
+                "コスモ・シャイニング！"
             ]
         },
         {
