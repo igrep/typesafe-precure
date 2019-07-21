@@ -1,6 +1,10 @@
+# 0.7.5.1
+
+- Add Cure Cosmo and other new purifications of Star☆Twinkle PreCure.
+
 # 0.7.4.1
 
-- Add Star☆Twinkle PreCure'spurifications and special items:
+- Add Star☆Twinkle PreCure's purifications and special items:
     - Libra Soleil Shoot
     - Scorpius Soleil Shoot
     - Capricorn Selene Arrow
