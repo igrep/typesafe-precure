@@ -1,3 +1,7 @@
+# 0.7.6.1
+
+- Add Shiny Twinkle Pen and its purification in Star☆Twinkle PreCure.
+
 # 0.7.5.1
 
 - Add Cure Cosmo and other new purifications of Star☆Twinkle PreCure.

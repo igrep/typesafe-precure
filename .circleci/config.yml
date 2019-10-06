@@ -13,11 +13,11 @@ jobs:
 
     - restore_cache:
         keys:
-        - 'dependencies-{{ checksum "stack.yaml" }}-{{ checksum "typesafe-precure.cabal" }}'
+        - 'dependencies-{{ checksum "stack.yaml.lock" }}-{{ checksum "typesafe-precure.cabal" }}'
         - 'dependencies-'
+    - run: stack --compiler=ghc-8.6.5 --no-terminal test --pedantic
     - save_cache:
-        key: 'dependencies-{{ checksum "stack.yaml" }}-{{ checksum "typesafe-precure.cabal" }}'
+        key: 'dependencies-{{ checksum "stack.yaml.lock" }}-{{ checksum "typesafe-precure.cabal" }}'
         paths:
         - ~/.stack/
         - .stack-work/
-    - run: stack --compiler=ghc-8.6.5 --no-terminal test --pedantic
