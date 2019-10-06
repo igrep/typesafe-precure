@@ -48,10 +48,44 @@ transformees =
       "キュアコスモ"
       ""
       introducesHerselfAs_CureCosmo
+  , mkTransformee
+      "Cure Star"
+      twinkleStyleEn
+      "キュアスター"
+      twinkleStyle
+      introducesHerselfAs_CureStar
+  , mkTransformee
+      "Cure Milky"
+      twinkleStyleEn
+      "キュアミルキー"
+      twinkleStyle
+      introducesHerselfAs_CureMilky
+  , mkTransformee
+      "Cure Soleil"
+      twinkleStyleEn
+      "キュアソレイユ"
+      twinkleStyle
+      introducesHerselfAs_CureSoleil
+  , mkTransformee
+      "Cure Selene"
+      twinkleStyleEn
+      "キュアセレーネ"
+      twinkleStyle
+      introducesHerselfAs_CureSelene
+  , mkTransformee
+      "Cure Cosmo"
+      twinkleStyleEn
+      "キュアコスモ"
+      twinkleStyle
+      introducesHerselfAs_CureCosmo
   ]
 
 transformedGroups :: [TransformedGroup]
-transformedGroups = [mkTransformedGroup groupMembers ne "" nj ""]
+transformedGroups =
+    [ mkTransformedGroup groupMembers1 ne "" nj ""
+    , mkTransformedGroup groupMembers2 ne "" nj ""
+    , mkTransformedGroup groupMembersTwinkleStyle ne twinkleStyleEn nj twinkleStyle
+    ]
   where
     ne = "StarTwinkle☆ PreCure"
     nj = "スター☆トゥインクルプリキュア"
@@ -79,6 +113,8 @@ specialItems =
   , mkSpecialItem "Twinkle Stick" "トゥインクルステッキ" []
 
   , mkSpecialItem "Rainbow Perfume" "レインボーパフューム" ["Star Color Pen"]
+
+  , mkSpecialItem "Shiny Twinkle Pen" "シャイニートゥインクルペン" []
   ]
 
 transformations :: [Transformation]
@@ -122,7 +158,7 @@ transformations =
       , mkIA "StarColorPendant" ["StarColorPenCureSoleil"]
       , mkIA "StarColorPendant" ["StarColorPenCureSelene"]
       ]
-      ["CureStar", "CureMilky", "CureSoleil", "CureSelene"]
+      groupMembers1
       (starColorPendantColorCharge ++
        transformationSong ++
        [ introducesHerselfAs_CureStar
@@ -140,7 +176,7 @@ transformations =
       , mkIA "StarColorPendant" ["StarColorPenCureSelene"]
       , mkIA "StarColorPendant" ["StarColorPenCureCosmo"]
       ]
-      ["CureStar", "CureMilky", "CureSoleil", "CureSelene", "CureCosmo"]
+      groupMembers2
       (starColorPendantColorCharge ++
        transformationSong ++
        [ introducesHerselfAs_CureStar
@@ -151,6 +187,20 @@ transformations =
        , "スター☆トゥインクルプリキュア！"
        ]
       )
+  , mkTransformation
+      groupMembers2
+      ["ShinyTwinklePen"]
+      groupMembersTwinkleStyle
+      [ "みんなの思い！重ねるフワ〜！"
+      , "シャイニートゥインクルペン！"
+      , "声を重ねるフワ！"
+      , "キラキラ〜！"
+      , "トゥインクル！"
+      , "キラキラ〜！"
+      , "トゥインクル！"
+      , "フゥゥワ～～！"
+      , "イマジネーションの輝き！なりたい自分に！"
+      ]
   ]
 
 purifications :: [Purification]
@@ -200,7 +250,7 @@ purifications =
       ["プリキュア！", "みずがめ座！", "セレーネ・アロー！"]
 
   , mkPurification
-      ["CureStar", "CureMilky", "CureSoleil", "CureSelene"]
+      groupMembers1
       ["TwinkleStick"]
       [ "宇宙（そら）に輝け！イマジネーションの力！"
       , "トゥインクルステッキ！"
@@ -222,6 +272,14 @@ purifications =
   , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenCapricorn"]] $ rainbowPerfumeOfConstellation "やぎ"
   , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenSagittarius"]] $ rainbowPerfumeOfConstellation "いて"
   , mkPurification ["CureCosmo"] [mkIA "RainbowPerfume" ["StarColorPenAquarius"]] $ rainbowPerfumeOfConstellation "みずがめ"
+
+  , mkPurification
+      groupMembersTwinkleStyle
+      ["ShinyTwinklePen"]
+      [ "星の力～！輝くフゥワ〜！"
+      , "思いを重ねて！"
+      , "プリキュア！スタートゥインクル・イマジネーション！"
+      ]
   ]
 
 
@@ -234,9 +292,14 @@ nonItemPurifications =
   , mkNonItemPurification ["CureCosmo"]  ["プリキュア！", "コスモ・シャイニング！"]
   ]
 
-groupMembers :: IsString s => [s]
-groupMembers =
-  ["CureStar", "CureMilky", "CureSoleil", "CureSelene"]
+groupMembers1 :: IsString s => [s]
+groupMembers1 = ["CureStar", "CureMilky", "CureSoleil", "CureSelene"]
+
+groupMembers2 :: IsString s => [s]
+groupMembers2 = groupMembers1 ++ ["CureCosmo"]
+
+groupMembersTwinkleStyle :: IsString s => [s]
+groupMembersTwinkleStyle = ["CureStar_TwinkleStyle", "CureMilky_TwinkleStyle", "CureSoleil_TwinkleStyle", "CureSelene_TwinkleStyle", "CureCosmo_TwinkleStyle"]
 
 starColorPendantColorCharge = ["スターカラーペンダント！", "カラーチャージ！"]
 
@@ -273,3 +336,7 @@ rainbowPerfumeOfConstellation constellation =
   , "クルクルチャージ！"
   , "プリキュア！レインボー・スプラッシュ！"
   ]
+
+twinkleStyleEn = "Twinkle Style"
+
+twinkleStyle = "トゥインクルスタイル"

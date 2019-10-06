@@ -956,6 +956,12 @@
             "id": "RainbowPerfume"
         },
         {
+            "nameEn": "Shiny Twinkle Pen",
+            "attachments": [],
+            "nameJa": "シャイニートゥインクルペン",
+            "id": "ShinyTwinklePen"
+        },
+        {
             "nameEn": "Cure Modules",
             "attachments": [
                 "FairyTone"
@@ -2029,6 +2035,46 @@
             "nameJa": "キュアコスモ",
             "variationJa": "",
             "id": "CureCosmo",
+            "introducesHerselfAs": "銀河に光る！虹色の、スペクトル！キュアコスモ！"
+        },
+        {
+            "nameEn": "Cure Star",
+            "variationEn": "Twinkle Style",
+            "nameJa": "キュアスター",
+            "variationJa": "トゥインクルスタイル",
+            "id": "CureStar_TwinkleStyle",
+            "introducesHerselfAs": "宇宙に輝くー！キラキラ星！キュアスター！"
+        },
+        {
+            "nameEn": "Cure Milky",
+            "variationEn": "Twinkle Style",
+            "nameJa": "キュアミルキー",
+            "variationJa": "トゥインクルスタイル",
+            "id": "CureMilky_TwinkleStyle",
+            "introducesHerselfAs": "天にあまねくー！ミルキーウェイ！キュアミルキー！"
+        },
+        {
+            "nameEn": "Cure Soleil",
+            "variationEn": "Twinkle Style",
+            "nameJa": "キュアソレイユ",
+            "variationJa": "トゥインクルスタイル",
+            "id": "CureSoleil_TwinkleStyle",
+            "introducesHerselfAs": "宇宙を照らす！灼熱の、きらめき！キュアソレイユ！"
+        },
+        {
+            "nameEn": "Cure Selene",
+            "variationEn": "Twinkle Style",
+            "nameJa": "キュアセレーネ",
+            "variationJa": "トゥインクルスタイル",
+            "id": "CureSelene_TwinkleStyle",
+            "introducesHerselfAs": "夜空に輝く！神秘の、月あかり！キュアセレーネ！"
+        },
+        {
+            "nameEn": "Cure Cosmo",
+            "variationEn": "Twinkle Style",
+            "nameJa": "キュアコスモ",
+            "variationJa": "トゥインクルスタイル",
+            "id": "CureCosmo_TwinkleStyle",
             "introducesHerselfAs": "銀河に光る！虹色の、スペクトル！キュアコスモ！"
         },
         {
@@ -4217,6 +4263,23 @@
                 "プリンセススターカラーペン！みずがめ座！",
                 "クルクルチャージ！",
                 "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "ShinyTwinklePen"
+            ],
+            "purifiers": [
+                "CureStar_TwinkleStyle",
+                "CureMilky_TwinkleStyle",
+                "CureSoleil_TwinkleStyle",
+                "CureSelene_TwinkleStyle",
+                "CureCosmo_TwinkleStyle"
+            ],
+            "speech": [
+                "星の力～！輝くフゥワ〜！",
+                "思いを重ねて！",
+                "プリキュア！スタートゥインクル・イマジネーション！"
             ]
         },
         {
@@ -7579,6 +7642,36 @@
         },
         {
             "specialItems": [
+                "ShinyTwinklePen"
+            ],
+            "transformees": [
+                "CureStar_TwinkleStyle",
+                "CureMilky_TwinkleStyle",
+                "CureSoleil_TwinkleStyle",
+                "CureSelene_TwinkleStyle",
+                "CureCosmo_TwinkleStyle"
+            ],
+            "speech": [
+                "みんなの思い！重ねるフワ〜！",
+                "シャイニートゥインクルペン！",
+                "声を重ねるフワ！",
+                "キラキラ〜！",
+                "トゥインクル！",
+                "キラキラ〜！",
+                "トゥインクル！",
+                "フゥゥワ～～！",
+                "イマジネーションの輝き！なりたい自分に！"
+            ],
+            "transformers": [
+                "CureStar",
+                "CureMilky",
+                "CureSoleil",
+                "CureSelene",
+                "CureCosmo"
+            ]
+        },
+        {
+            "specialItems": [
                 {
                     "a": [
                         "Dory"
@@ -8574,6 +8667,32 @@
                 "CureMilky",
                 "CureSoleil",
                 "CureSelene"
+            ]
+        },
+        {
+            "nameEn": "StarTwinkle☆ PreCure",
+            "variationEn": "",
+            "nameJa": "スター☆トゥインクルプリキュア",
+            "variationJa": "",
+            "transformerIds": [
+                "CureStar",
+                "CureMilky",
+                "CureSoleil",
+                "CureSelene",
+                "CureCosmo"
+            ]
+        },
+        {
+            "nameEn": "StarTwinkle☆ PreCure",
+            "variationEn": "Twinkle Style",
+            "nameJa": "スター☆トゥインクルプリキュア",
+            "variationJa": "トゥインクルスタイル",
+            "transformerIds": [
+                "CureStar_TwinkleStyle",
+                "CureMilky_TwinkleStyle",
+                "CureSoleil_TwinkleStyle",
+                "CureSelene_TwinkleStyle",
+                "CureCosmo_TwinkleStyle"
             ]
         },
         {

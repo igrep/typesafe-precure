@@ -3,7 +3,7 @@ jobs:
   build:
     # Ref: https://mmhaskell.com/blog/2018/4/25/dockerizing-our-haskell-app
     docker:
-    - image: haskell:8.4
+    - image: haskell:8.6.5
     steps:
     - run: apt update
     - run: stack upgrade
@@ -20,4 +20,4 @@ jobs:
         paths:
         - ~/.stack/
         - .stack-work/
-    - run: stack --compiler=ghc-8.4.4 --no-terminal test --pedantic
+    - run: stack --compiler=ghc-8.6.5 --no-terminal test --pedantic
