@@ -23,23 +23,37 @@ module ACME.PreCure.Types.TH
 
 import           ACME.PreCure.Types
 import qualified ACME.PreCure.Index.Types as Index
+import           ACME.PreCure.Monad.Super.Core
 
+import           Control.Monad.Trans.Accum
+                   ( AccumT
+                   , add
+                   , evalAccumT
+                   , look
+                   )
+import           Control.Monad.Trans.Class
+                   ( lift
+                   )
 import           Data.Char
                    ( toLower
                    )
 import           Language.Haskell.TH
                    ( Name
+                   , Dec
                    , DecQ
                    , DecsQ
                    , ExpQ
+                   , Q
                    , TypeQ
                    , Type(VarT, ConT, TupleT)
                    , conE
                    , conT
                    , cxt
                    , listE
+                   , lookupTypeName
                    , mkName
                    , normalC
+                   , isInstance
                    , stringE
                    , tupE
                    )
@@ -110,15 +124,76 @@ declareSpecialItems = fmap concat . mapM d
 
 
 declareTransformations :: [Index.Transformation] -> DecsQ
-declareTransformations = fmap concat . mapM d
+declareTransformations = fmap concat . (`evalAccumT` []) . mapM d
   where
-    d (Index.Transformation tas ias ds s) =
-      transformationInstance
+    d (Index.Transformation tas ias ds s) = do
+      tis <- lift $ transformationInstance
         (tupleTFromIdAttachments tas)
         (tupleTFromIdAttachments ias)
         (tupleT ds)
         (tupleE ds)
         s
+      (tis ++) <$> declareIsTransformedOrNot (zip tas ds)
+
+declareIsTransformedOrNot :: [(Index.IdAttachments, String)] -> AccumT [Type] Q [Dec]
+declareIsTransformedOrNot = fmap concat . mapM (uncurry d)
+  where
+    d :: Index.IdAttachments -> String -> AccumT [Type] Q [Dec]
+    d beforeTransformed afterTransformed = do
+      typFalse <- lift typeqFalse
+      defined1 <- lift $ isInstance ''IsTransformedOrNot [typFalse]
+      added1 <- isTypeAdded typFalse
+      ds1 <-
+        if defined1 || added1
+          then
+            return []
+          else do
+            addType typFalse
+            lift
+              [d|
+                type instance AsGirl $(typeqFalse) = $(typeqFalse)
+
+                instance IsTransformedOrNot $(typeqFalse) where
+                  type IsTransformed $(typeqFalse) = 'False
+                  isTransformed _ = HasNotTransformed
+              |]
+
+      typTrue <- lift typeqTrue
+      defined2 <- lift $ isInstance ''IsTransformedOrNot [typTrue]
+      added2 <- isTypeAdded typTrue
+      ds2 <-
+        if defined2 || added2
+          then
+            return []
+          else do
+            addType typTrue
+            lift
+              [d|
+
+                type instance AsGirl $(typeqTrue) = $(typeqFalse)
+
+                instance IsTransformedOrNot $(typeqTrue) where
+                  type IsTransformed $(typeqTrue) = 'True
+                  isTransformed _ = HasTransformed
+              |]
+      return $ ds1 ++ ds2
+      where
+        getTypeFromStringName strName =
+          maybe
+            (error $ "Assertion Failure: " ++ show strName ++ " is not declared yet!")
+            ConT
+            <$> lookupTypeName strName
+        typeqFalse = idAttachmentsToTypeQ beforeTransformed
+        typeqTrue  = getTypeFromStringName afterTransformed
+
+        idAttachmentsToTypeQ (Index.IdAttachments i ias) =
+          appsT <$> getTypeFromStringName i <*> mapM idAttachmentsToTypeQ ias
+
+        isTypeAdded :: Type -> AccumT [Type] Q Bool
+        isTypeAdded typ = elem typ <$> look
+
+        addType :: Type -> AccumT [Type] Q ()
+        addType = add . (: [])
 
 
 declarePurifications :: [Index.Purification] -> DecsQ
