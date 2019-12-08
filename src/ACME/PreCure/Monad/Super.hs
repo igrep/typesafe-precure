@@ -31,9 +31,9 @@ module ACME.PreCure.Monad.Super
   , hPrintEpisodeWith
   , hPrintEpisode
 
-  , GirlS
-  , GirlOrPreCureS
-  , IsTransformedS
+  , GirlKind
+  , GirlOrPreCureKind
+  , IsTransformedKind
   , StatusTable
   , HasTransformed (..)
   , AsGirl
