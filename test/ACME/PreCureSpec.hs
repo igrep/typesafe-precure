@@ -7,6 +7,7 @@ module ACME.PreCureSpec
 import           Test.Hspec
 
 import           ACME.PreCure
+import           ACME.PreCure.Monad
 
 
 main :: IO ()
