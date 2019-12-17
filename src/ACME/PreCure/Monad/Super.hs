@@ -1,18 +1,29 @@
 {-# LANGUAGE DataKinds                  #-}
 {-# LANGUAGE FlexibleContexts           #-}
 {-# LANGUAGE GeneralizedNewtypeDeriving #-}
+{-# LANGUAGE MultiParamTypeClasses      #-}
 {-# LANGUAGE RebindableSyntax           #-}
 {-# LANGUAGE ScopedTypeVariables        #-}
+{-# LANGUAGE TypeFamilies               #-}
 {-# LANGUAGE TypeInType                 #-}
 {-# LANGUAGE TypeOperators              #-}
 {-# OPTIONS_GHC -fno-warn-simplifiable-class-constraints #-}
 
 
 module ACME.PreCure.Monad.Super
-  ( PreCureM
+  ( PreCureM (PreCureM)
   , EpisodeConfig(lineIntervalMicroSec)
   , defaultEpisodeConfig
+
+  , EnterAction
+  , EnterActionResult
   , enter
+
+  , TransformAction
+  , TransformActionConstraint
+  , TransformActionResult
+  , transform
+
   , (Core.>>)
   , (Core.>>=)
   , ifThenElse
@@ -20,7 +31,6 @@ module ACME.PreCure.Monad.Super
 
   , say
   , speak
-  , transform
   , purify
   , purifyWithoutItem
 
@@ -49,13 +59,13 @@ import           Control.Monad.Trans.Writer.Lazy
 import qualified Data.DList                      as DList
 import           Data.Extensible                 hiding (item)
 import           Data.Foldable                   (for_)
+import           Data.Kind                       (Constraint)
 import           Data.Monoid                     ((<>))
-import           Data.Proxy                      (Proxy (Proxy))
 import qualified System.IO                       as IO
 
+import           ACME.PreCure.Monad.Config
 import           ACME.PreCure.Monad.Super.Core   hiding ((>>), (>>=))
 import qualified ACME.PreCure.Monad.Super.Core   as Core
-import           ACME.PreCure.Monad.Config
 import           ACME.PreCure.Types
 
 import           Prelude                         hiding ((>>), (>>=))
@@ -69,15 +79,20 @@ newtype PreCureM i j a =
   } deriving (IxFunctor, IxPointed, IxApplicative, IxMonad)
 
 
--- TODO: Support girls in tuple
-enter
-  :: forall girlOrPreCure xs
-   . IsTransformedOrNot girlOrPreCure
-  => girlOrPreCure -> PreCureM (StatusTable xs) (StatusTable (AsGirl girlOrPreCure >: HasTransformed (IsTransformed girlOrPreCure) ': xs)) ()
-enter girlOrPreCure = PreCureM $ imodify (itemAssoc (Proxy :: Proxy (AsGirl girlOrPreCure)) @= isTransformed girlOrPreCure <:)
+class EnterAction girlOrPreCure where
+  type EnterActionResult girlOrPreCure :: StatusTableKind
+  enter :: girlOrPreCure -> PreCureM (StatusTable xs) (StatusTable (EnterActionResult girlOrPreCure ++ xs)) ()
 
 
--- TODO: Support precures in tuple
+class Transformation girlOrPreCure item => TransformAction girlOrPreCure item where
+  type TransformActionConstraint girlOrPreCure :: StatusTableKind -> Constraint
+  type TransformActionResult girlOrPreCure :: StatusTableKind -> StatusTableKind
+  transform
+    :: TransformActionConstraint girlOrPreCure xs
+    => girlOrPreCure -> item -> PreCureM (StatusTable xs) (StatusTable (TransformActionResult girlOrPreCure xs)) ()
+
+
+{-
 transform
   :: forall girlOrPreCure item xs.
     ( Transformation girlOrPreCure item
@@ -92,6 +107,7 @@ transform girlOrPreCure item = do
   {-# INLINE (>>) #-}
   (>>) :: forall m i j k a b. IxMonad m => m i j a -> m j k b -> m i k b
   (>>) = (Core.>>)
+-}
 
 
 -- TODO: Support precures in tuple

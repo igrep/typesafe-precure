@@ -3,7 +3,6 @@
 {-# LANGUAGE FlexibleContexts      #-}
 {-# LANGUAGE FlexibleInstances     #-}
 {-# LANGUAGE GADTs                 #-}
-{-# LANGUAGE KindSignatures        #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE PolyKinds             #-}
 {-# LANGUAGE ScopedTypeVariables   #-}
@@ -17,6 +16,7 @@ module ACME.PreCure.Monad.Super.Core
   , GirlOrPreCureKind
   , IsTransformedKind
   , StatusTable
+  , StatusTableKind
   , HasTransformed (..)
   , AsGirl
   , IsTransformedOrNot (..)
@@ -32,12 +32,12 @@ module ACME.PreCure.Monad.Super.Core
 import           Control.Monad.Indexed
 import           Data.Extensible
 import           Data.Extensible.Product (fromHList, toHList)
-import           Type.Membership.HList (HList (HCons, HNil))
-import           Data.Functor.Identity (Identity (Identity))
-import           Data.Kind             (Type)
-import           Data.Proxy            (Proxy (Proxy))
-import           Data.Type.Equality    (type (==))
-import           Prelude               hiding ((>>), (>>=))
+import           Data.Functor.Identity   (Identity (Identity))
+import           Data.Kind               (Type)
+import           Data.Proxy              (Proxy (Proxy))
+import           Data.Type.Equality      (type (==))
+import           Prelude                 hiding ((>>), (>>=))
+import           Type.Membership.HList   (HList (HCons, HNil))
 
 
 type GirlKind = Type
@@ -57,8 +57,10 @@ data HasTransformed :: Bool -> Type where
 
 -- | Returns a (not-yet transformed) girl given a transformed PreCure.
 --   If a (not-yet transformed) girl is given, returns herself.
+-- TODO: Delete
 type family AsGirl (p :: GirlOrPreCureKind) :: GirlKind
 
+-- TODO: Delete
 class IsTransformedOrNot g where
   type IsTransformed (g :: GirlKind) :: Bool
   isTransformed :: g -> HasTransformed (IsTransformed g)

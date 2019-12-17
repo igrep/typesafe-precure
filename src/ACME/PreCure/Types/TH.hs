@@ -1,4 +1,9 @@
-{-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE DataKinds             #-}
+{-# LANGUAGE ExplicitNamespaces    #-}
+{-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE TemplateHaskell       #-}
+{-# LANGUAGE TypeFamilies          #-}
+{-# LANGUAGE TypeOperators         #-}
 
 module ACME.PreCure.Types.TH
         ( declareGirls
@@ -21,55 +26,36 @@ module ACME.PreCure.Types.TH
         ) where
 
 
+import qualified ACME.PreCure.Index.Types          as Index
+import           ACME.PreCure.Monad.Super
+import qualified ACME.PreCure.Monad.Super          as Super
+import           ACME.PreCure.Monad.Super.Core     (PSet, PSetResult)
 import           ACME.PreCure.Types
-import qualified ACME.PreCure.Index.Types as Index
-import           ACME.PreCure.Monad.Super.Core
 
-import           Control.Monad.Trans.Accum
-                   ( AccumT
-                   , add
-                   , evalAccumT
-                   , look
-                   )
-import           Control.Monad.Trans.Class
-                   ( lift
-                   )
-import           Data.Char
-                   ( toLower
-                   )
-import           Language.Haskell.TH
-                   ( Name
-                   , Dec
-                   , DecQ
-                   , DecsQ
-                   , ExpQ
-                   , Q
-                   , TypeQ
-                   , Type(VarT, ConT, TupleT)
-                   , conE
-                   , conT
-                   , cxt
-                   , listE
-                   , lookupTypeName
-                   , mkName
-                   , normalC
-                   , isInstance
-                   , stringE
-                   , tupE
-                   )
-import           Language.Haskell.TH.Lib
-                   ( StrictTypeQ
-                   , plainTV
-                   )
-import           Language.Haskell.TH.Compat.Data
-                   ( dataD'
-                   )
-import           Language.Haskell.TH.Compat.Strict
-                   ( isStrict
-                   )
-import           TH.Utilities
-                   ( appsT
-                   )
+import           Control.Monad                     (join)
+import           Control.Monad.Indexed.State       (imodify)
+import           Control.Monad.Trans.Accum         (AccumT, add, evalAccumT,
+                                                    look)
+import           Control.Monad.Trans.Class         (lift)
+import           Data.Char                         (toLower)
+import           Data.Extensible                   (type (>:), Lookup, happend,
+                                                    itemAssoc, nil, (<:), (@=))
+import           Data.Proxy                        (Proxy (Proxy))
+import           Language.Haskell.TH               (Dec, DecQ, DecsQ, ExpQ,
+                                                    Name, Q,
+                                                    Type (ConT, TupleT, VarT),
+                                                    TypeQ, conE, conT, cxt,
+                                                    isInstance, listE, mkName,
+                                                    normalC, stringE, tupE)
+import           Language.Haskell.TH.Compat.Data   (dataD')
+import           Language.Haskell.TH.Compat.Strict (isStrict)
+import           Language.Haskell.TH.Lib           (StrictTypeQ, plainTV,
+                                                    promotedNilT)
+import           TH.Utilities                      (appsT, unAppsT)
+
+
+type family Id a where
+  Id a = a
 
 
 -- Add type argument names
@@ -124,76 +110,102 @@ declareSpecialItems = fmap concat . mapM d
 
 
 declareTransformations :: [Index.Transformation] -> DecsQ
-declareTransformations = fmap concat . (`evalAccumT` []) . mapM d
+declareTransformations = fmap (concat . concat) . (`evalAccumT` []) . mapM d
   where
     d (Index.Transformation tas ias ds s) = do
-      tis <- lift $ transformationInstance
-        (tupleTFromIdAttachments tas)
-        (tupleTFromIdAttachments ias)
-        (tupleT ds)
-        (tupleE ds)
-        s
-      (tis ++) <$> declareIsTransformedOrNot (zip tas ds)
+      let tasTypeQ = tupleTFromIdAttachments tas
+          iasTypeQ = tupleTFromIdAttachments ias
+          psTypeQ = tupleT ds
+      sequenceA
+        [ lift $ transformationInstance tasTypeQ iasTypeQ psTypeQ (tupleE ds) s
+        , enterActionInstances tasTypeQ psTypeQ
+        , lift $ transformActionInstance tasTypeQ iasTypeQ psTypeQ -- s
+        ]
 
-declareIsTransformedOrNot :: [(Index.IdAttachments, String)] -> AccumT [Type] Q [Dec]
-declareIsTransformedOrNot = fmap concat . mapM (uncurry d)
-  where
-    d :: Index.IdAttachments -> String -> AccumT [Type] Q [Dec]
-    d beforeTransformed afterTransformed = do
-      typFalse <- lift typeqFalse
-      defined1 <- lift $ isInstance ''IsTransformedOrNot [typFalse]
-      added1 <- isTypeAdded typFalse
-      ds1 <-
-        if defined1 || added1
-          then
-            return []
-          else do
-            addType typFalse
-            lift
-              [d|
-                type instance AsGirl $(typeqFalse) = $(typeqFalse)
 
-                instance IsTransformedOrNot $(typeqFalse) where
-                  type IsTransformed $(typeqFalse) = 'False
-                  isTransformed _ = HasNotTransformed
-              |]
+enterActionInstances :: TypeQ -> TypeQ -> AccumT [Type] Q [Dec]
+enterActionInstances tasTypeQ psTypeQ =
+  (++)
+    <$> declareEnterActionInstance tasTypeQ tasTypeQ [t| HasTransformed 'False |] [e| HasNotTransformed |]
+    <*> declareEnterActionInstance psTypeQ tasTypeQ [t| HasTransformed 'True |] [e| HasTransformed |]
 
-      typTrue <- lift typeqTrue
-      defined2 <- lift $ isInstance ''IsTransformedOrNot [typTrue]
-      added2 <- isTypeAdded typTrue
-      ds2 <-
-        if defined2 || added2
-          then
-            return []
-          else do
-            addType typTrue
-            lift
-              [d|
 
-                type instance AsGirl $(typeqTrue) = $(typeqFalse)
+declareEnterActionInstance :: TypeQ -> TypeQ -> TypeQ -> ExpQ -> AccumT [Type] Q [Dec]
+declareEnterActionInstance typeTarget typeKey typeBool valBool = do
+  typeTarget' <- lift typeTarget
+  added <- isTypeAdded typeTarget'
+  defined <- lift $ isInstance ''EnterAction [typeTarget']
+  if added || defined
+    then return []
+    else do
+      addType typeTarget'
+      lift [d|
+        instance EnterAction $(typeTarget) where
+          type EnterActionResult $(typeTarget) = $(join resultType)
+          enter _ = PreCureM $ imodify ($(join resultVal) `happend`)
+        |]
+ where
+  typesInTuple = extractTypesFromTuple <$> typeKey
 
-                instance IsTransformedOrNot $(typeqTrue) where
-                  type IsTransformed $(typeqTrue) = 'True
-                  isTransformed _ = HasTransformed
-              |]
-      return $ ds1 ++ ds2
-      where
-        getTypeFromStringName strName =
-          maybe
-            (error $ "Assertion Failure: " ++ show strName ++ " is not declared yet!")
-            ConT
-            <$> lookupTypeName strName
-        typeqFalse = idAttachmentsToTypeQ beforeTransformed
-        typeqTrue  = getTypeFromStringName afterTransformed
+  resultType = foldr consKVT promotedNilT <$> typesInTuple
+  consKVT typ lisQ = [t| ($(pure typ) >: $(typeBool)) ': $(lisQ) |]
 
-        idAttachmentsToTypeQ (Index.IdAttachments i ias) =
-          appsT <$> getTypeFromStringName i <*> mapM idAttachmentsToTypeQ ias
+  resultVal = foldr consKVV [e| nil |] <$> typesInTuple
+  consKVV typ lisV = [e| itemAssoc (Proxy :: Proxy $(pure typ)) @= $(valBool) <: $(lisV) |]
 
-        isTypeAdded :: Type -> AccumT [Type] Q Bool
-        isTypeAdded typ = elem typ <$> look
+  isTypeAdded :: Type -> AccumT [Type] Q Bool
+  isTypeAdded typ = elem typ <$> look
 
-        addType :: Type -> AccumT [Type] Q ()
-        addType = add . (: [])
+  addType :: Type -> AccumT [Type] Q ()
+  addType = add . (: [])
+
+  -- > runQ [t| (Bool, Int, Int) |]
+  -- AppT (AppT (AppT (TupleT 3) (ConT GHC.Types.Bool)) (ConT GHC.Types.Int)) (ConT GHC.Types.Int)
+
+  -- > runQ $ [t| Maybe Int |]
+  -- AppT (ConT GHC.Maybe.Maybe) (ConT GHC.Types.Int)
+
+  -- > runQ $ fmap unAppsT [t| Maybe Int |]
+  -- [ConT GHC.Maybe.Maybe,ConT GHC.Types.Int]
+
+  -- > runQ $ fmap unAppsT [t| Bool |]
+  -- [ConT GHC.Types.Bool]
+
+  -- > runQ $ fmap unAppsT [t| (Maybe Int, Int, Int) |]
+  -- [TupleT 3,AppT (ConT GHC.Maybe.Maybe) (ConT GHC.Types.Int),ConT GHC.Types.Int,ConT GHC.Types.Int]
+
+  -- > runQ $ fmap unAppsT [t| (Int, Char, Bool) |]
+  -- [TupleT 3,ConT GHC.Types.Int,ConT GHC.Types.Char,ConT GHC.Types.Bool]
+
+
+transformActionInstance :: TypeQ -> TypeQ -> TypeQ -> DecsQ
+transformActionInstance tasTypeQ iasTypeQ psTypeQ = do
+  tasType <- tasTypeQ
+  iasType <- iasTypeQ
+  defined <- isInstance ''TransformAction [tasType, iasType]
+  if defined
+    then return []
+    else
+      [d|
+        instance TransformAction $(tasTypeQ) $(iasTypeQ) where
+          type TransformActionConstraint $(tasTypeQ) xs = $(join . constraint $ conT ''xs)
+          type TransformActionResult $(tasTypeQ) xs = $(join . resultType $ conT ''xs)
+          transform girlOrPreCure item =
+            speak (transformationSpeech girlOrPreCure item)
+              Super.>> PreCureM (imodify $(join update))
+      |]
+ where
+  typesInTuple = extractTypesFromTuple <$> tasTypeQ
+
+  constraint xsQ = map (mkLookupAndPSet xsQ) <$> typesInTuple
+  mkLookupAndPSet xsQ typ =
+    [t| (Lookup $(xsQ) $(pure typ) (HasTransformed 'False), PSet $(pure typ) (HasTransformed 'True) $(xsQ)) |]
+
+  resultType xsQ = foldr consKVT [t| Id $(xsQ) |] <$> typesInTuple
+  consKVT typ xsQ' = [t| PSetResult $(pure typ) (HasTransformed 'True) $(xsQ') |]
+
+  update = foldr composePSet [e| id |] <$> typesInTuple
+  composePSet typ f = [e| pSet (Proxy :: Proxy $(pure typ)) HasTransformed . $(f) |]
 
 
 declarePurifications :: [Index.Purification] -> DecsQ
@@ -293,7 +305,7 @@ tupleTFromIdAttachments = tupleTBy toAppT
 
 
 tupleT :: [String] -> TypeQ
-tupleT ns = tupleTBy (ConT . mkName) ns
+tupleT = tupleTBy (ConT . mkName)
 
 
 tupleTBy :: (a -> Type) -> [a] -> TypeQ
@@ -306,4 +318,11 @@ tupleE = tupE . map (conE . mkName)
 
 firstLower :: String -> String
 firstLower (x:xs) = toLower x : xs
-firstLower _ = error "firstLower: Assertion failed: empty string"
+firstLower _      = error "firstLower: Assertion failed: empty string"
+
+
+extractTypesFromTuple :: Type -> [Type]
+extractTypesFromTuple = dropWhile isTupleT . unAppsT
+ where
+  isTupleT (TupleT _) = True
+  isTupleT _other     = False
