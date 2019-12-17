@@ -1,6 +1,7 @@
 {-# LANGUAGE DataKinds             #-}
 {-# LANGUAGE ExplicitNamespaces    #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE PolyKinds             #-}
 {-# LANGUAGE TemplateHaskell       #-}
 {-# LANGUAGE TypeFamilies          #-}
 {-# LANGUAGE TypeOperators         #-}
@@ -29,7 +30,7 @@ module ACME.PreCure.Types.TH
 import qualified ACME.PreCure.Index.Types          as Index
 import           ACME.PreCure.Monad.Super
 import qualified ACME.PreCure.Monad.Super          as Super
-import           ACME.PreCure.Monad.Super.Core     (PSet, PSetResult)
+import           ACME.PreCure.Monad.Super.Core     (PSet, PSetResult, pSet)
 import           ACME.PreCure.Types
 
 import           Control.Monad                     (join)
@@ -46,7 +47,8 @@ import           Language.Haskell.TH               (Dec, DecQ, DecsQ, ExpQ,
                                                     Type (ConT, TupleT, VarT),
                                                     TypeQ, conE, conT, cxt,
                                                     isInstance, listE, mkName,
-                                                    normalC, stringE, tupE)
+                                                    normalC, stringE, tupE,
+                                                    varT)
 import           Language.Haskell.TH.Compat.Data   (dataD')
 import           Language.Haskell.TH.Compat.Strict (isStrict)
 import           Language.Haskell.TH.Lib           (StrictTypeQ, plainTV,
@@ -54,7 +56,7 @@ import           Language.Haskell.TH.Lib           (StrictTypeQ, plainTV,
 import           TH.Utilities                      (appsT, unAppsT)
 
 
-type family Id a where
+type family Id (a :: k) where
   Id a = a
 
 
@@ -119,7 +121,7 @@ declareTransformations = fmap (concat . concat) . (`evalAccumT` []) . mapM d
       sequenceA
         [ lift $ transformationInstance tasTypeQ iasTypeQ psTypeQ (tupleE ds) s
         , enterActionInstances tasTypeQ psTypeQ
-        , lift $ transformActionInstance tasTypeQ iasTypeQ psTypeQ -- s
+        , lift $ transformActionInstance tasTypeQ iasTypeQ
         ]
 
 
@@ -178,8 +180,8 @@ declareEnterActionInstance typeTarget typeKey typeBool valBool = do
   -- [TupleT 3,ConT GHC.Types.Int,ConT GHC.Types.Char,ConT GHC.Types.Bool]
 
 
-transformActionInstance :: TypeQ -> TypeQ -> TypeQ -> DecsQ
-transformActionInstance tasTypeQ iasTypeQ psTypeQ = do
+transformActionInstance :: TypeQ -> TypeQ -> DecsQ
+transformActionInstance tasTypeQ iasTypeQ = do
   tasType <- tasTypeQ
   iasType <- iasTypeQ
   defined <- isInstance ''TransformAction [tasType, iasType]
@@ -187,9 +189,9 @@ transformActionInstance tasTypeQ iasTypeQ psTypeQ = do
     then return []
     else
       [d|
-        instance TransformAction $(tasTypeQ) $(iasTypeQ) where
-          type TransformActionConstraint $(tasTypeQ) xs = $(join . constraint $ conT ''xs)
-          type TransformActionResult $(tasTypeQ) xs = $(join . resultType $ conT ''xs)
+        instance TransformAction $(tasTypeQ) $(iasTypeQ) xs where
+          type TransformActionConstraint $(tasTypeQ) xs = $(join . constraint $ varT ''xs)
+          type TransformActionResult $(tasTypeQ) xs = $(join . resultType $ varT ''xs)
           transform girlOrPreCure item =
             speak (transformationSpeech girlOrPreCure item)
               Super.>> PreCureM (imodify $(join update))
@@ -197,9 +199,14 @@ transformActionInstance tasTypeQ iasTypeQ psTypeQ = do
  where
   typesInTuple = extractTypesFromTuple <$> tasTypeQ
 
-  constraint xsQ = map (mkLookupAndPSet xsQ) <$> typesInTuple
+  constraint xsQ = appsTupleT . concatMap (mkLookupAndPSet xsQ) <$> typesInTuple
   mkLookupAndPSet xsQ typ =
-    [t| (Lookup $(xsQ) $(pure typ) (HasTransformed 'False), PSet $(pure typ) (HasTransformed 'True) $(xsQ)) |]
+    [ [t| Lookup $(xsQ) $(pure typ) (HasTransformed 'False) |]
+    , [t| PSet $(pure typ) (HasTransformed 'True) $(xsQ) |]
+    ]
+  appsTupleT tqs = do
+    ts <- sequenceA tqs
+    return $ appsT (TupleT (length ts)) ts
 
   resultType xsQ = foldr consKVT [t| Id $(xsQ) |] <$> typesInTuple
   consKVT typ xsQ' = [t| PSetResult $(pure typ) (HasTransformed 'True) $(xsQ') |]

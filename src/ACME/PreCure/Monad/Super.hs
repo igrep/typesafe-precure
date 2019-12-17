@@ -84,9 +84,9 @@ class EnterAction girlOrPreCure where
   enter :: girlOrPreCure -> PreCureM (StatusTable xs) (StatusTable (EnterActionResult girlOrPreCure ++ xs)) ()
 
 
-class Transformation girlOrPreCure item => TransformAction girlOrPreCure item where
-  type TransformActionConstraint girlOrPreCure :: StatusTableKind -> Constraint
-  type TransformActionResult girlOrPreCure :: StatusTableKind -> StatusTableKind
+class Transformation girlOrPreCure item => TransformAction girlOrPreCure item xs where
+  type TransformActionConstraint girlOrPreCure xs :: Constraint
+  type TransformActionResult girlOrPreCure xs :: StatusTableKind
   transform
     :: TransformActionConstraint girlOrPreCure xs
     => girlOrPreCure -> item -> PreCureM (StatusTable xs) (StatusTable (TransformActionResult girlOrPreCure xs)) ()
