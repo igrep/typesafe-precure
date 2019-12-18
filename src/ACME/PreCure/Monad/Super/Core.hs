@@ -35,6 +35,7 @@ import           Data.Extensible.Product (fromHList, toHList)
 import           Data.Functor.Identity   (Identity (Identity))
 import           Data.Kind               (Type)
 import           Data.Proxy              (Proxy (Proxy))
+import           Data.Type.Bool          (type (||))
 import           Data.Type.Equality      (type (==))
 import           Prelude                 hiding ((>>), (>>=))
 import           Type.Membership.HList   (HList (HCons, HNil))
@@ -66,6 +67,16 @@ class IsTransformedOrNot g where
   isTransformed :: g -> HasTransformed (IsTransformed g)
 
 
+-- | Type level elem function for tuples.
+type family TElem (x :: Type) (xs :: Type) where
+  TElem x (y1, y2)                 = x == y1 || x == y2
+  TElem x (y1, y2, y3)             = x == y1 || x == y2 || x == y3
+  TElem x (y1, y2, y3, y4)         = x == y1 || x == y2 || x == y3 || x == y4
+  TElem x (y1, y2, y3, y4, y5)     = x == y1 || x == y2 || x == y3 || x == y4 || x == y5
+  TElem x (y1, y2, y3, y4, y5, y6) = x == y1 || x == y2 || x == y3 || x == y4 || x == y5 || x == y6
+  TElem x y                        = x == y
+
+
 class HSwapValIf (b :: Bool) (val1 :: Type) (kv :: Assoc k Type) where
   type HSwapValIfResult b val1 kv :: Assoc k Type
   hSwapValIf :: Proxy b -> val1 -> Field Identity kv -> Field Identity (HSwapValIfResult b val1 kv)
@@ -80,21 +91,21 @@ instance HSwapValIf 'False val1 (k ':> val2) where
 
 
 -- | Polymorphic update for 'HList'
-class PSet (key :: k) (val :: Type) (kvs :: [Assoc k Type]) where
-  type PSetResult key val kvs :: [Assoc k Type]
-  hPSet :: Proxy key -> val -> HList (Field Identity) kvs -> HList (Field Identity) (PSetResult key val kvs)
+class PSet (keys :: k) (val :: Type) (kvs :: [Assoc k Type]) where
+  type PSetResult keys val kvs :: [Assoc k Type]
+  hPSet :: Proxy keys -> val -> HList (Field Identity) kvs -> HList (Field Identity) (PSetResult keys val kvs)
 
-instance PSet key val '[] where
-  type PSetResult key val '[] = '[]
-  hPSet _key _val HNil = HNil
+instance PSet keys val '[] where
+  type PSetResult keys val '[] = '[]
+  hPSet _keys _val HNil = HNil
 
 instance
-  (HSwapValIf (key1 == key2) val (key2 ':> oldVal), PSet key1 val kvs)
-  => PSet key1 val ((key2 ':> oldVal) ': kvs)
+  (HSwapValIf (TElem key2 keys) val (key2 ':> oldVal), PSet keys val kvs)
+  => PSet keys val ((key2 ':> oldVal) ': kvs)
  where
-  type PSetResult key1 val ((key2 ':> oldVal) ': kvs) =
-    HSwapValIfResult (key1 == key2) val (key2 ':> oldVal) ': PSetResult key1 val kvs
-  hPSet key1 val (HCons kv kvs) = hSwapValIf (Proxy :: Proxy (key1 == key2)) val kv `HCons` hPSet key1 val kvs
+  type PSetResult keys val ((key2 ':> oldVal) ': kvs) =
+    HSwapValIfResult (TElem key2 keys) val (key2 ':> oldVal) ': PSetResult keys val kvs
+  hPSet keys val (HCons kv kvs) = hSwapValIf (Proxy :: Proxy (TElem key2 keys)) val kv `HCons` hPSet keys val kvs
 
 
 -- | Polymorphic update for 'Record'
