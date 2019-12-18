@@ -24,6 +24,14 @@ module ACME.PreCure.Monad.Super
   , TransformActionResult
   , transform
 
+  , PurifyAction
+  , PurifyActionConstraint
+  , purify
+
+  , PurifyWithoutItemAction
+  , PurifyWithoutItemActionConstraint
+  , purifyWithoutItem
+
   , (Core.>>)
   , (Core.>>=)
   , ifThenElse
@@ -31,8 +39,6 @@ module ACME.PreCure.Monad.Super
 
   , say
   , speak
-  , purify
-  , purifyWithoutItem
 
   , runPreCureMonad
   , composeEpisode
@@ -92,25 +98,21 @@ class Transformation girlOrPreCure item => TransformAction girlOrPreCure item xs
     => girlOrPreCure -> item -> PreCureM (StatusTable xs) (StatusTable (TransformActionResult girlOrPreCure xs)) ()
 
 
+class Purification preCure item => PurifyAction preCure item xs where
+  type PurifyActionConstraint preCure xs :: Constraint
+  purify
+    :: PurifyActionConstraint preCure xs
+    => preCure -> item -> PreCureM (StatusTable xs) (StatusTable xs) ()
+
+
+class NonItemPurification preCure => PurifyWithoutItemAction preCure xs where
+  type PurifyWithoutItemActionConstraint preCure xs :: Constraint
+  purifyWithoutItem
+    :: PurifyWithoutItemActionConstraint preCure xs
+    => preCure -> PreCureM (StatusTable xs) (StatusTable xs) ()
+
+
 {-
-transform
-  :: forall girlOrPreCure item xs.
-    ( Transformation girlOrPreCure item
-    , Lookup xs girlOrPreCure (HasTransformed 'False)
-    , PSet girlOrPreCure (HasTransformed 'True) xs
-    )
-  => girlOrPreCure -> item -> PreCureM (StatusTable xs) (StatusTable (PSetResult girlOrPreCure (HasTransformed 'True) xs)) ()
-transform girlOrPreCure item = do
-  speak $ transformationSpeech girlOrPreCure item
-  PreCureM $ imodify $ pSet (Proxy :: Proxy girlOrPreCure) HasTransformed
- where
-  {-# INLINE (>>) #-}
-  (>>) :: forall m i j k a b. IxMonad m => m i j a -> m j k b -> m i k b
-  (>>) = (Core.>>)
--}
-
-
--- TODO: Support precures in tuple
 purify
   :: (Purification preCure item, Lookup xs (AsGirl preCure) (HasTransformed 'True))
   => preCure -> item -> PreCureM (StatusTable xs) (StatusTable xs) ()
@@ -123,6 +125,7 @@ purifyWithoutItem
   => preCure -> PreCureM (StatusTable xs) (StatusTable xs) ()
 purifyWithoutItem =
   speak . nonItemPurificationSpeech
+-}
 
 
 speak :: [String] -> PreCureM i i ()

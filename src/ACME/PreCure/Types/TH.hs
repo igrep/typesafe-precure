@@ -181,21 +181,15 @@ declareEnterActionInstance typeTarget typeKey typeBool valBool = do
 
 
 transformActionInstance :: TypeQ -> TypeQ -> DecsQ
-transformActionInstance tasTypeQ iasTypeQ = do
-  tasType <- tasTypeQ
-  iasType <- iasTypeQ
-  defined <- isInstance ''TransformAction [tasType, iasType]
-  if defined
-    then return []
-    else
-      [d|
-        instance TransformAction $(tasTypeQ) $(iasTypeQ) xs where
-          type TransformActionConstraint $(tasTypeQ) xs = $(join . constraint $ varT ''xs)
-          type TransformActionResult $(tasTypeQ) xs = $(resultType $ varT ''xs)
-          transform girlOrPreCure item =
-            speak (transformationSpeech girlOrPreCure item)
-              Super.>> PreCureM (imodify $(update))
-      |]
+transformActionInstance tasTypeQ iasTypeQ =
+  [d|
+    instance TransformAction $(tasTypeQ) $(iasTypeQ) xs where
+      type TransformActionConstraint $(tasTypeQ) xs = $(join . constraint $ varT ''xs)
+      type TransformActionResult $(tasTypeQ) xs = $(resultType $ varT ''xs)
+      transform girlOrPreCure item =
+        speak (transformationSpeech girlOrPreCure item)
+          Super.>> PreCureM (imodify $(update))
+  |]
  where
   constraint xsQ =
     appsTupleT
@@ -205,10 +199,6 @@ transformActionInstance tasTypeQ iasTypeQ = do
       <$> tasTypeQ
   mkLookup xsQ typ = [t| Lookup $(xsQ) $(pure typ) (HasTransformed 'False) |]
 
-  appsTupleT tqs = do
-    ts <- sequenceA tqs
-    return $ appsT (TupleT (length ts)) ts
-
   resultType xsQ = [t| PSetResult $(tasTypeQ) (HasTransformed 'True) $(xsQ) |]
 
   update = [e| pSet (Proxy :: Proxy $(tasTypeQ)) HasTransformed |]
@@ -217,11 +207,29 @@ transformActionInstance tasTypeQ iasTypeQ = do
 declarePurifications :: [Index.Purification] -> DecsQ
 declarePurifications = fmap concat . mapM d
   where
-    d (Index.Purification pas ias s) =
-      purificationInstance
-        (tupleTFromIdAttachments pas)
-        (tupleTFromIdAttachments ias)
-        s
+    d (Index.Purification pas ias s) = do
+      let pasTypeQ = tupleTFromIdAttachments pas
+          iasTypeQ = tupleTFromIdAttachments ias
+      ps <- purificationInstance pasTypeQ iasTypeQ s
+      pacts <- purifyActionInstance pasTypeQ iasTypeQ
+      return $ ps ++ pacts
+
+
+-- TODO: Pass girls before transformation
+purifyActionInstance :: TypeQ -> TypeQ -> DecsQ
+purifyActionInstance pasTypeQ iasTypeQ =
+  [d|
+    instance PurifyAction $(pasTypeQ) $(iasTypeQ) xs where
+      type PurifyActionConstraint $(pasTypeQ) xs = $(join . constraint $ varT ''xs)
+      purify preCure item = speak (purificationSpeech preCure item)
+  |]
+ where
+  constraint xsQ =
+    appsTupleT
+      . map (mkLookup xsQ)
+      . extractTypesFromTuple
+      <$> pasTypeQ
+  mkLookup xsQ typ = [t| Lookup $(xsQ) $(pure typ) (HasTransformed 'True) |]
 
 
 declareNonItemPurifications :: [Index.NonItemPurification] -> DecsQ
@@ -332,3 +340,9 @@ extractTypesFromTuple = dropWhile isTupleT . unAppsT
  where
   isTupleT (TupleT _) = True
   isTupleT _other     = False
+
+
+appsTupleT :: [Q Type] -> Q Type
+appsTupleT tqs = do
+  ts <- sequenceA tqs
+  return $ appsT (TupleT (length ts)) ts
