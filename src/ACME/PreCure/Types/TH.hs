@@ -191,28 +191,27 @@ transformActionInstance tasTypeQ iasTypeQ = do
       [d|
         instance TransformAction $(tasTypeQ) $(iasTypeQ) xs where
           type TransformActionConstraint $(tasTypeQ) xs = $(join . constraint $ varT ''xs)
-          type TransformActionResult $(tasTypeQ) xs = $(join . resultType $ varT ''xs)
+          type TransformActionResult $(tasTypeQ) xs = $(resultType $ varT ''xs)
           transform girlOrPreCure item =
             speak (transformationSpeech girlOrPreCure item)
-              Super.>> PreCureM (imodify $(join update))
+              Super.>> PreCureM (imodify $(update))
       |]
  where
-  typesInTuple = extractTypesFromTuple <$> tasTypeQ
+  constraint xsQ =
+    appsTupleT
+      . ([t| PSet $(tasTypeQ) (HasTransformed 'True) $(xsQ)|] :)
+      . map (mkLookup xsQ)
+      . extractTypesFromTuple
+      <$> tasTypeQ
+  mkLookup xsQ typ = [t| Lookup $(xsQ) $(pure typ) (HasTransformed 'False) |]
 
-  constraint xsQ = appsTupleT . concatMap (mkLookupAndPSet xsQ) <$> typesInTuple
-  mkLookupAndPSet xsQ typ =
-    [ [t| Lookup $(xsQ) $(pure typ) (HasTransformed 'False) |]
-    , [t| PSet $(pure typ) (HasTransformed 'True) $(xsQ) |]
-    ]
   appsTupleT tqs = do
     ts <- sequenceA tqs
     return $ appsT (TupleT (length ts)) ts
 
-  resultType xsQ = foldr consKVT [t| Id $(xsQ) |] <$> typesInTuple
-  consKVT typ xsQ' = [t| PSetResult $(pure typ) (HasTransformed 'True) $(xsQ') |]
+  resultType xsQ = [t| PSetResult $(tasTypeQ) (HasTransformed 'True) $(xsQ) |]
 
-  update = foldr composePSet [e| id |] <$> typesInTuple
-  composePSet typ f = [e| pSet (Proxy :: Proxy $(pure typ)) HasTransformed . $(f) |]
+  update = [e| pSet (Proxy :: Proxy $(tasTypeQ)) HasTransformed |]
 
 
 declarePurifications :: [Index.Purification] -> DecsQ
