@@ -1,3 +1,7 @@
+# 0.7.6.2
+
+- Correct Yuni's transformation [#40](https://github.com/igrep/typesafe-precure/pull/40)
+
 # 0.7.6.1
 
 - Add Shiny Twinkle Pen and its purification in Star☆Twinkle PreCure.
