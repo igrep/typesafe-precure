@@ -3,7 +3,7 @@
 
 module ACME.PreCure.Textbook.StarTwinkle.Profiles where
 
-import           Data.String (IsString)
+import           Data.String              (IsString)
 
 import           ACME.PreCure.Index.Types
 
@@ -148,7 +148,7 @@ transformations =
       ["Yuni"]
       [ mkIA "StarColorPendant" ["StarColorPenCureCosmo"]
       ]
-      ["CureSelene"]
+      ["CureCosmo"]
       (starColorPendantColorCharge ++
        transformationSong ++ [introducesHerselfAs_CureCosmo])
   , mkTransformation
