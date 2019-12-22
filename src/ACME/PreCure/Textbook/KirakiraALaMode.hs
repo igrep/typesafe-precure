@@ -25,7 +25,9 @@ $(declareTransformedGroups transformedGroupsKirakiraALaMode)
 $(declareSpecialItems specialItemsKirakiraALaMode)
 
 {-# ANN module transformationsKirakiraALaMode #-}
-$(declareTransformations transformationsKirakiraALaMode)
-
 {-# ANN module purificationsKirakiraALaMode #-}
-$(declarePurifications purificationsKirakiraALaMode)
+$( do
+  (ts, pcgm) <- declareTransformations transformationsKirakiraALaMode
+  ps <- declarePurifications pcgm purificationsKirakiraALaMode
+  return $ ts ++ ps
+  )

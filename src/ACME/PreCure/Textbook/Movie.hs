@@ -22,7 +22,9 @@ $(declareTransformees transformees)
 $(declareSpecialItems specialItems)
 
 {-# ANN module transformations #-}
-$(declareTransformations transformations)
-
 {-# ANN module nonItemPurifications #-}
-$(declareNonItemPurifications nonItemPurifications)
+$( do
+  (ts, pcgm) <- declareTransformations transformations
+  nps <- declareNonItemPurifications pcgm nonItemPurifications
+  return $ ts ++ nps
+  )

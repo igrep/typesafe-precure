@@ -877,11 +877,18 @@ act_CureSelene_StarColorPendant_StarColorPenCureSelene = printEpisode $ do
 act_CureSelene_StarColorPendant_StarColorPenCureCosmo = printEpisode $ do
   enter Yuni
   transform Yuni (StarColorPendant StarColorPenCureCosmo)
-  purify CureSelene (StarColorPendant StarColorPenCapricorn)
-  purify CureSelene (StarColorPendant StarColorPenSagittarius)
-  purify CureSelene (StarColorPendant StarColorPenAquarius)
+  purify CureCosmo (RainbowPerfumeStarColorPenTaurus)
+  purify CureCosmo (RainbowPerfumeStarColorPenAries)
+  purify CureCosmo (RainbowPerfumeStarColorPenLeo)
+  purify CureCosmo (RainbowPerfumeStarColorPenGemini)
+  purify CureCosmo (RainbowPerfumeStarColorPenLibra)
+  purify CureCosmo (RainbowPerfumeStarColorPenScorpius)
+  purify CureCosmo (RainbowPerfumeStarColorPenVirgo)
+  purify CureCosmo (RainbowPerfumeStarColorPenCapricorn)
+  purify CureCosmo (RainbowPerfumeStarColorPenSagittarius)
+  purify CureCosmo (RainbowPerfumeStarColorPenAquarius)
 
-  purifyWithoutItem CureSelene
+  purifyWithoutItem CureCosmo
 
 
 act_CureStar_CureMilky_CureSoleil_CureSelene_StarColorPendant_StarColorPenCureStar_StarColorPendant_StarColorPenCureMilky_StarColorPendant_StarColorPenCureSoleil_StarColorPendant_StarColorPenCureSelene = printEpisode $ do

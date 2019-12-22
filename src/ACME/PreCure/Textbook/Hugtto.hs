@@ -25,7 +25,9 @@ $(declareTransformedGroups transformedGroupsHugtto)
 $(declareSpecialItems specialItemsHugtto)
 
 {-# ANN module transformationsHugtto #-}
-$(declareTransformations transformationsHugtto)
-
 {-# ANN module purificationsHugtto #-}
-$(declarePurifications purificationsHugtto)
+$( do
+  (ts, pcgm) <- declareTransformations transformationsHugtto
+  ps <- declarePurifications pcgm purificationsHugtto
+  return $ ts ++ ps
+  )

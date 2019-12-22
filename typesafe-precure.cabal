@@ -44,6 +44,7 @@ library
                      , ACME.PreCure.Index
 
   other-modules:       ACME.PreCure.Types.TH
+                     , ACME.PreCure.Types.TH.PreCureGirlMap
                      , ACME.PreCure.Index.Gen
                      , ACME.PreCure.Index.Types
                      , ACME.PreCure.Index.Lib
@@ -101,6 +102,7 @@ library
                      , aeson-pretty
                      , autoexporter
                      , bytestring
+                     , containers
                      , deriveJsonNoPrefix
                      , monad-skeleton
                      , indexed

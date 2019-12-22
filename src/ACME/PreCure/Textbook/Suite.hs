@@ -25,7 +25,9 @@ $(declareTransformedGroups transformedGroups)
 $(declareSpecialItems specialItems)
 
 {-# ANN module transformations #-}
-$(declareTransformations transformations)
-
 {-# ANN module purifications #-}
-$(declarePurifications purifications)
+$( do
+  (ts, pcgm) <- declareTransformations transformations
+  ps <- declarePurifications pcgm purifications
+  return $ ts ++ ps
+  )

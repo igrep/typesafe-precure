@@ -25,10 +25,11 @@ $(declareTransformedGroups transformedGroups)
 $(declareSpecialItems specialItems)
 
 {-# ANN module transformations #-}
-$(declareTransformations transformations)
-
 {-# ANN module purifications #-}
-$(declarePurifications purifications)
-
 {-# ANN module nonItemPurifications #-}
-$(declareNonItemPurifications nonItemPurifications)
+$( do
+  (ts, pcgm) <- declareTransformations transformations
+  ps <- declarePurifications pcgm purifications
+  nps <- declareNonItemPurifications pcgm nonItemPurifications
+  return $ ts ++ ps ++ nps
+  )
