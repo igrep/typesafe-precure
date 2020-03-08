@@ -6,6 +6,8 @@ jobs:
     - image: haskell:8.6.5
     steps:
     - run: apt update
+    - run: apt-get install locales locales-all -y
+    - run: locale-gen en_US.UTF-8
     - run: stack upgrade
     - run: "echo 'tcp     6       TCP' > /etc/protocols"
     - run: "stack config --system-ghc set system-ghc --global true"
@@ -15,7 +17,12 @@ jobs:
         keys:
         - 'dependencies-{{ checksum "stack.yaml.lock" }}-{{ checksum "typesafe-precure.cabal" }}'
         - 'dependencies-'
-    - run: stack --compiler=ghc-8.6.5 --no-terminal test --pedantic
+    - run:
+        command: stack --compiler=ghc-8.6.5 --no-terminal test --pedantic
+        environment:
+          LANG: en_US.UTF-8
+          LANGUAGE: en_US:en
+          LC_ALL: en_US.UTF-8
     - save_cache:
         key: 'dependencies-{{ checksum "stack.yaml.lock" }}-{{ checksum "typesafe-precure.cabal" }}'
         paths:
