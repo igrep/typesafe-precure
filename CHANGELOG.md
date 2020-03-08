@@ -1,3 +1,7 @@
+# 0.7.7.1
+
+- Add Healin' Good♡PreCure PreCure's characters and some of their purifications and transformations.
+
 # 0.7.6.2
 
 - Correct Yuni's transformation [#40](https://github.com/igrep/typesafe-precure/pull/40)

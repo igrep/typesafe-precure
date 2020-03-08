@@ -343,6 +343,51 @@
             "id": "InnocentHarmonyMic"
         },
         {
+            "nameEn": "Healing Stick",
+            "attachments": [
+                "Healing Animal",
+                "Element Bottle"
+            ],
+            "nameJa": "ヒーリングステッキ",
+            "id": "HealingStick"
+        },
+        {
+            "nameEn": "Rabirin",
+            "attachments": [],
+            "nameJa": "ラビリン",
+            "id": "Rabirin"
+        },
+        {
+            "nameEn": "Pegitan",
+            "attachments": [],
+            "nameJa": "ペギタン",
+            "id": "Pegitan"
+        },
+        {
+            "nameEn": "Nyatoran",
+            "attachments": [],
+            "nameJa": "ニャトラン",
+            "id": "Nyatoran"
+        },
+        {
+            "nameEn": "Element Bottle Of Flower",
+            "attachments": [],
+            "nameJa": "花のエレメントボトル",
+            "id": "ElementBottleOfFlower"
+        },
+        {
+            "nameEn": "Element Bottle Of Water",
+            "attachments": [],
+            "nameJa": "水のエレメントボトル",
+            "id": "ElementBottleOfWater"
+        },
+        {
+            "nameEn": "Element Bottle Of Light",
+            "attachments": [],
+            "nameJa": "光のエレメントボトル",
+            "id": "ElementBottleOfLight"
+        },
+        {
             "nameEn": "Heart Perfume",
             "attachments": [
                 "PreCureSeed"
@@ -1382,6 +1427,30 @@
             "introducesHerselfAs": "夜空に煌めく、希望の星！ キュアフォーチュン！"
         },
         {
+            "nameEn": "Cure Grace",
+            "variationEn": "",
+            "nameJa": "キュアグレース",
+            "variationJa": "",
+            "id": "CureGrace",
+            "introducesHerselfAs": "重なる二つの花！キュアグレース！"
+        },
+        {
+            "nameEn": "Cure Fontaine",
+            "variationEn": "",
+            "nameJa": "キュアフォンテーヌ",
+            "variationJa": "",
+            "id": "CureFontaine",
+            "introducesHerselfAs": "交わる二つの流れ！キュアフォンテーヌ！"
+        },
+        {
+            "nameEn": "Cure Sparkle",
+            "variationEn": "",
+            "nameJa": "キュアスパークル",
+            "variationJa": "",
+            "id": "CureSparkle",
+            "introducesHerselfAs": "溶け合う二つの光！キュアスパークル！"
+        },
+        {
             "nameEn": "Cure Blossom",
             "variationEn": "",
             "nameJa": "キュアブロッサム",
@@ -2255,6 +2324,21 @@
             "id": "Iona"
         },
         {
+            "nameEn": "Nodoka Hanadera",
+            "nameJa": "花寺 のどか",
+            "id": "Nodoka"
+        },
+        {
+            "nameEn": "Chiyu Sawaizumi",
+            "nameJa": "沢泉 ちゆ",
+            "id": "Chiyu"
+        },
+        {
+            "nameEn": "Hinata Hiramitsu",
+            "nameJa": "平光 ひなた",
+            "id": "Hinata"
+        },
+        {
             "nameEn": "Tsubomi Hanasaki",
             "nameJa": "花咲 つぼみ",
             "id": "Tsubomi"
@@ -3011,6 +3095,72 @@
                 "小さな勇気 愛の光り 星の瞬き 尊き命♪",
                 "心を重ねて 響き合うメロディ♪",
                 "プリキュア！ イノセントプリフィケーション！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Rabirin",
+                        "ElementBottleOfFlower"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureGrace"
+            ],
+            "speech": [
+                "エレメントチャージ！",
+                "（キュン！キュン！キュン！）",
+                "ヒーリングゲージ、上昇！",
+                "プリキュア！ヒーリング・フラワー！",
+                "（ヒーリングッバ～イ）",
+                "お大事に。"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Pegitan",
+                        "ElementBottleOfWater"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureFontaine"
+            ],
+            "speech": [
+                "エレメントチャージ！",
+                "（キュン！キュン！キュン！）",
+                "ヒーリングゲージ、上昇！",
+                "プリキュア！ヒーリング・ストリーム！",
+                "（ヒーリングッバ～イ）",
+                "お大事に。"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Nyatoran",
+                        "ElementBottleOfLight"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureSparkle"
+            ],
+            "speech": [
+                "エレメントチャージ！",
+                "（キュン！キュン！キュン！）",
+                "ヒーリングゲージ、上昇！",
+                "プリキュア！ヒーリング・フラッシュ！",
+                "（ヒーリングッバ～イ）",
+                "お大事に。"
             ]
         },
         {
@@ -5459,6 +5609,179 @@
                 "CurePrincess",
                 "CureHoney",
                 "CureFortune"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Rabirin",
+                        "ElementBottleOfFlower"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "transformees": [
+                "CureGrace"
+            ],
+            "speech": [
+                "（スタート！）",
+                "プリキュア！オペレーション！",
+                "（エレメントレベル、上昇ラビ！）",
+                "キュアタッチ！",
+                "（キュン！）",
+                "（キュン！）",
+                "重なる二つの花！キュアグレース！",
+                "（ラビ！）"
+            ],
+            "transformers": [
+                "Nodoka"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Pegitan",
+                        "ElementBottleOfWater"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "transformees": [
+                "CureFontaine"
+            ],
+            "speech": [
+                "（スタート！）",
+                "プリキュア！オペレーション！",
+                "（エレメントレベル、上昇ペェ！）",
+                "キュアタッチ！",
+                "（キュン！）",
+                "（キュン！）",
+                "交わる二つの流れ！キュアフォンテーヌ！",
+                "（ペェ！）"
+            ],
+            "transformers": [
+                "Chiyu"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Nyatoran",
+                        "ElementBottleOfLight"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "transformees": [
+                "CureSparkle"
+            ],
+            "speech": [
+                "（スタート！）",
+                "プリキュア！オペレーション！",
+                "（エレメントレベル、上昇にゃあ！）",
+                "キュアタッチ！",
+                "（キュン！）",
+                "（キュン！）",
+                "溶け合う二つの光！キュアスパークル！",
+                "（にゃあ！）"
+            ],
+            "transformers": [
+                "Hinata"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Rabirin",
+                        "ElementBottleOfFlower"
+                    ],
+                    "i": "HealingStick"
+                },
+                {
+                    "a": [
+                        "Pegitan",
+                        "ElementBottleOfWater"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "transformees": [
+                "CureGrace",
+                "CureFontaine"
+            ],
+            "speech": [
+                "（スタート！）",
+                "プリキュア！オペレーション！",
+                "（エレメントレベル、上昇(ラビ|ペェ)！）",
+                "キュアタッチ！",
+                "（キュン！）",
+                "（キュン！）",
+                "重なる二つの花！キュアグレース！",
+                "（ラビ！）",
+                "（キュン！）",
+                "交わる二つの流れ！キュアフォンテーヌ！",
+                "（ペェ！）"
+            ],
+            "transformers": [
+                "Nodoka",
+                "Chiyu",
+                "Nodoka"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Rabirin",
+                        "ElementBottleOfFlower"
+                    ],
+                    "i": "HealingStick"
+                },
+                {
+                    "a": [
+                        "Pegitan",
+                        "ElementBottleOfWater"
+                    ],
+                    "i": "HealingStick"
+                },
+                {
+                    "a": [
+                        "Nyatoran",
+                        "ElementBottleOfLight"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "transformees": [
+                "CureGrace",
+                "CureFontaine",
+                "CureSparkle"
+            ],
+            "speech": [
+                "（スタート！）",
+                "プリキュア！オペレーション！",
+                "（エレメントレベル、上昇(ラビ|ペェ|にゃあ)！）",
+                "キュアタッチ！",
+                "（キュン！）",
+                "（キュン！）",
+                "重なる二つの花！キュアグレース！",
+                "（ラビ！）",
+                "（キュン！）",
+                "交わる二つの流れ！キュアフォンテーヌ！",
+                "（ペェ！）",
+                "（キュン！）",
+                "溶け合う二つの光！キュアスパークル！",
+                "（にゃあ！）",
+                "地球をお手当て！ヒーリングっど♥プリキュア！"
+            ],
+            "transformers": [
+                "Nodoka",
+                "Chiyu",
+                "Nodoka"
             ]
         },
         {
@@ -8368,6 +8691,17 @@
                 "CurePrincess_InnocentForm",
                 "CureHoney_InnocentForm",
                 "CureFortune_InnocentForm"
+            ]
+        },
+        {
+            "nameEn": "Healin' Good♡PreCure",
+            "variationEn": "",
+            "nameJa": "ヒーリングっど♥プリキュア ",
+            "variationJa": "",
+            "transformerIds": [
+                "CureGrace",
+                "CureFontaine",
+                "CureSparkle"
             ]
         },
         {
