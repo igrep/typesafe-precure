@@ -388,6 +388,54 @@
             "id": "ElementBottleOfLight"
         },
         {
+            "nameEn": "Element Bottle Of Fruit",
+            "attachments": [],
+            "nameJa": "実りのエレメントボトル",
+            "id": "ElementBottleOfFruit"
+        },
+        {
+            "nameEn": "Element Bottle Of Ice",
+            "attachments": [],
+            "nameJa": "氷のエレメントボトル",
+            "id": "ElementBottleOfIce"
+        },
+        {
+            "nameEn": "Element Bottle Of Lightning",
+            "attachments": [],
+            "nameJa": "雷のエレメントボトル",
+            "id": "ElementBottleOfLightning"
+        },
+        {
+            "nameEn": "Element Bottle Of Leaf",
+            "attachments": [],
+            "nameJa": "葉っぱのエレメントボトル",
+            "id": "ElementBottleOfLeaf"
+        },
+        {
+            "nameEn": "Element Bottle Of Rain",
+            "attachments": [],
+            "nameJa": "雨のエレメントボトル",
+            "id": "ElementBottleOfRain"
+        },
+        {
+            "nameEn": "Element Bottle Of Fire",
+            "attachments": [],
+            "nameJa": "火のエレメントボトル",
+            "id": "ElementBottleOfFire"
+        },
+        {
+            "nameEn": "Element Bottle Of Wind",
+            "attachments": [],
+            "nameJa": "風のエレメントボトル",
+            "id": "ElementBottleOfWind"
+        },
+        {
+            "nameEn": "Miracle Healing Bottle",
+            "attachments": [],
+            "nameJa": "ミラクルヒーリングボトル",
+            "id": "MiracleHealingBottle"
+        },
+        {
             "nameEn": "Heart Perfume",
             "attachments": [
                 "PreCureSeed"
@@ -3161,6 +3209,114 @@
                 "プリキュア！ヒーリング・フラッシュ！",
                 "（ヒーリングッバ～イ）",
                 "お大事に。"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Rabirin",
+                        "ElementBottleOfFruit"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureGrace"
+            ],
+            "speech": [
+                "実りのエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Pegitan",
+                        "ElementBottleOfIce"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureFontaine"
+            ],
+            "speech": [
+                "氷のエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Nyatoran",
+                        "ElementBottleOfLightning"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureSparkle"
+            ],
+            "speech": [
+                "雷のエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Rabirin",
+                        "ElementBottleOfLeaf"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureGrace"
+            ],
+            "speech": [
+                "葉っぱのエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Pegitan",
+                        "ElementBottleOfRain"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureFontaine"
+            ],
+            "speech": [
+                "雨のエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Nyatoran",
+                        "ElementBottleOfFire"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureSparkle"
+            ],
+            "speech": [
+                "火のエレメント！",
+                "はぁーっ！"
             ]
         },
         {

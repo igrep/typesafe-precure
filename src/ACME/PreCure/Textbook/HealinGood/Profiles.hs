@@ -52,9 +52,18 @@ specialItems =
   , mkSpecialItem "Pegitan"  "ペギタン" []
   , mkSpecialItem "Nyatoran" "ニャトラン" []
 
-  , mkSpecialItem "Element Bottle Of Flower" "花のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Water"  "水のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Light"  "光のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Flower"    "花のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Water"     "水のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Light"     "光のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Fruit"     "実りのエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Ice"       "氷のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Lightning" "雷のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Leaf"      "葉っぱのエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Rain"      "雨のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Fire"      "火のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Wind"      "風のエレメントボトル" []
+
+  , mkSpecialItem "Miracle Healing Bottle"  "ミラクルヒーリングボトル" []
   ]
 
 transformations :: [Transformation]
@@ -136,7 +145,50 @@ purifications =
       ["CureSparkle"]
       [mkIA "HealingStick" ["Nyatoran", "ElementBottleOfLight"]]
       [elementCharge, kyun3, healingGauge, "プリキュア！ヒーリング・フラッシュ！", healinGoodBye, takeCare]
+
+  , mkPurification
+      ["CureGrace"]
+      [mkIA "HealingStick" ["Rabirin", "ElementBottleOfFruit"]]
+      ["実りのエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureFontaine"]
+      [mkIA "HealingStick" ["Pegitan", "ElementBottleOfIce"]]
+      ["氷のエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureSparkle"]
+      [mkIA "HealingStick" ["Nyatoran", "ElementBottleOfLightning"]]
+      ["雷のエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureGrace"]
+      [mkIA "HealingStick" ["Rabirin", "ElementBottleOfLeaf"]]
+      ["葉っぱのエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureFontaine"]
+      [mkIA "HealingStick" ["Pegitan", "ElementBottleOfRain"]]
+      ["雨のエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureSparkle"]
+      [mkIA "HealingStick" ["Nyatoran", "ElementBottleOfFire"]]
+      ["火のエレメント！", "はぁーっ！"]
+  , mkPurification
+      groupMembers
+      [ mkIA "HealingStick" ["Rabirin", "MiracleHealingBottle"]
+      , mkIA "HealingStick" ["Pegitan", "MiracleHealingBottle"]
+      , mkIA "HealingStick" ["Nyatoran", "MiracleHealingBottle"]
+      ]
+      [ "トリプルハートチャージ"
+      , "届け！癒やしの！パワー！"
+      , "プリキュア！ヒーリング・オアシス！"
+      , healinGoodBye
+      , takeCare
+      ]
   ]
+
  where
   elementCharge = "エレメントチャージ！"
   kyun3 = "（キュン！キュン！キュン！）"
