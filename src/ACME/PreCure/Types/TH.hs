@@ -222,11 +222,14 @@ tupleT ns = tupleTBy (ConT . mkName) ns
 
 
 tupleTBy :: (a -> Type) -> [a] -> TypeQ
+-- Avoid generating `Unit`. See https://gitlab.haskell.org/ghc/ghc/-/issues/18622 for details.
+tupleTBy f [n] = return $ f n
 tupleTBy f ns = return $ appsT (TupleT (length ns)) (map f ns)
 
 
 tupleE :: [String] -> ExpQ
-tupleE = tupE . map (conE . mkName)
+tupleE [name] = conE $ mkName name
+tupleE names  = tupE $ map (conE . mkName) names
 
 
 firstLower :: String -> String

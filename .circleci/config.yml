@@ -3,7 +3,7 @@ jobs:
   build:
     # Ref: https://mmhaskell.com/blog/2018/4/25/dockerizing-our-haskell-app
     docker:
-    - image: haskell:8.6.5
+    - image: haskell:8.8.4
     steps:
     - run: apt update
     - run: apt-get install locales locales-all -y
@@ -18,7 +18,7 @@ jobs:
         - 'dependencies-{{ checksum "stack.yaml.lock" }}-{{ checksum "typesafe-precure.cabal" }}'
         - 'dependencies-'
     - run:
-        command: stack --compiler=ghc-8.6.5 --no-terminal test --pedantic
+        command: stack --compiler=ghc-8.8.4 --no-terminal test --pedantic
         environment:
           LANG: en_US.UTF-8
           LANGUAGE: en_US:en

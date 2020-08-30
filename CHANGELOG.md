@@ -1,3 +1,8 @@
+# 0.7.8.1
+
+- Add more purifications of Healin' Good♡PreCure, and Cure Earth.
+- Correct members of some group transformations in Healin' Good♡PreCur.
+
 # 0.7.7.1
 
 - Add Healin' Good♡PreCure PreCure's characters and some of their purifications and transformations.

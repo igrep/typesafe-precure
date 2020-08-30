@@ -352,6 +352,12 @@
             "id": "HealingStick"
         },
         {
+            "nameEn": "Earth Windy Harp",
+            "attachments": [],
+            "nameJa": "アースウィンディハープ",
+            "id": "EarthWindyHarp"
+        },
+        {
             "nameEn": "Rabirin",
             "attachments": [],
             "nameJa": "ラビリン",
@@ -370,6 +376,14 @@
             "id": "Nyatoran"
         },
         {
+            "nameEn": "Latte",
+            "attachments": [
+                "Element Bottle"
+            ],
+            "nameJa": "ラテ",
+            "id": "Latte"
+        },
+        {
             "nameEn": "Element Bottle Of Flower",
             "attachments": [],
             "nameJa": "花のエレメントボトル",
@@ -386,6 +400,54 @@
             "attachments": [],
             "nameJa": "光のエレメントボトル",
             "id": "ElementBottleOfLight"
+        },
+        {
+            "nameEn": "Element Bottle Of Fruit",
+            "attachments": [],
+            "nameJa": "実りのエレメントボトル",
+            "id": "ElementBottleOfFruit"
+        },
+        {
+            "nameEn": "Element Bottle Of Ice",
+            "attachments": [],
+            "nameJa": "氷のエレメントボトル",
+            "id": "ElementBottleOfIce"
+        },
+        {
+            "nameEn": "Element Bottle Of Lightning",
+            "attachments": [],
+            "nameJa": "雷のエレメントボトル",
+            "id": "ElementBottleOfLightning"
+        },
+        {
+            "nameEn": "Element Bottle Of Leaf",
+            "attachments": [],
+            "nameJa": "葉っぱのエレメントボトル",
+            "id": "ElementBottleOfLeaf"
+        },
+        {
+            "nameEn": "Element Bottle Of Rain",
+            "attachments": [],
+            "nameJa": "雨のエレメントボトル",
+            "id": "ElementBottleOfRain"
+        },
+        {
+            "nameEn": "Element Bottle Of Fire",
+            "attachments": [],
+            "nameJa": "火のエレメントボトル",
+            "id": "ElementBottleOfFire"
+        },
+        {
+            "nameEn": "Element Bottle Of Wind",
+            "attachments": [],
+            "nameJa": "風のエレメントボトル",
+            "id": "ElementBottleOfWind"
+        },
+        {
+            "nameEn": "Miracle Healing Bottle",
+            "attachments": [],
+            "nameJa": "ミラクルヒーリングボトル",
+            "id": "MiracleHealingBottle"
         },
         {
             "nameEn": "Heart Perfume",
@@ -1451,6 +1513,14 @@
             "introducesHerselfAs": "溶け合う二つの光！キュアスパークル！"
         },
         {
+            "nameEn": "Cure Earth",
+            "variationEn": "",
+            "nameJa": "キュアアース",
+            "variationJa": "",
+            "id": "CureEarth",
+            "introducesHerselfAs": "時を経てつながる、二つの風！キュアアース！"
+        },
+        {
             "nameEn": "Cure Blossom",
             "variationEn": "",
             "nameJa": "キュアブロッサム",
@@ -2339,6 +2409,11 @@
             "id": "Hinata"
         },
         {
+            "nameEn": "Asumi Fuurin",
+            "nameJa": "風鈴アスミ",
+            "id": "Asumi"
+        },
+        {
             "nameEn": "Tsubomi Hanasaki",
             "nameJa": "花咲 つぼみ",
             "id": "Tsubomi"
@@ -3159,6 +3234,168 @@
                 "（キュン！キュン！キュン！）",
                 "ヒーリングゲージ、上昇！",
                 "プリキュア！ヒーリング・フラッシュ！",
+                "（ヒーリングッバ～イ）",
+                "お大事に。"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Rabirin",
+                        "ElementBottleOfFruit"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureGrace"
+            ],
+            "speech": [
+                "実りのエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Pegitan",
+                        "ElementBottleOfIce"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureFontaine"
+            ],
+            "speech": [
+                "氷のエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Nyatoran",
+                        "ElementBottleOfLightning"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureSparkle"
+            ],
+            "speech": [
+                "雷のエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Rabirin",
+                        "ElementBottleOfLeaf"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureGrace"
+            ],
+            "speech": [
+                "葉っぱのエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Pegitan",
+                        "ElementBottleOfRain"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureFontaine"
+            ],
+            "speech": [
+                "雨のエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Nyatoran",
+                        "ElementBottleOfFire"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureSparkle"
+            ],
+            "speech": [
+                "火のエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "EarthWindyHarp",
+                "ElementBottleOfWind"
+            ],
+            "purifiers": [
+                "CureEarth"
+            ],
+            "speech": [
+                "アースウィンディハープ！",
+                "エレメントチャージ！",
+                "舞い上がれ、癒やしの風！",
+                "プリキュア！ヒーリング・ハリケーン！",
+                "（ヒーリングッバ～イ）",
+                "お大事に。"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Rabirin",
+                        "MiracleHealingBottle"
+                    ],
+                    "i": "HealingStick"
+                },
+                {
+                    "a": [
+                        "Pegitan",
+                        "MiracleHealingBottle"
+                    ],
+                    "i": "HealingStick"
+                },
+                {
+                    "a": [
+                        "Nyatoran",
+                        "MiracleHealingBottle"
+                    ],
+                    "i": "HealingStick"
+                }
+            ],
+            "purifiers": [
+                "CureGrace",
+                "CureFontaine",
+                "CureSparkle"
+            ],
+            "speech": [
+                "トリプルハートチャージ",
+                "届け！癒やしの！パワー！",
+                "プリキュア！ヒーリング・オアシス！",
                 "（ヒーリングッバ～イ）",
                 "お大事に。"
             ]
@@ -5694,6 +5931,32 @@
         },
         {
             "specialItems": [
+                "EarthWindyHarp",
+                {
+                    "a": [
+                        "ElementBottleOfWind"
+                    ],
+                    "i": "Latte"
+                }
+            ],
+            "transformees": [
+                "CureSparkle"
+            ],
+            "speech": [
+                "（スタート！）",
+                "プリキュア！オペレーション！",
+                "（エレメントレベル、上昇ラテ！）",
+                "キュアタッチ！",
+                "（キュン！）",
+                "時を経てつながる、二つの風！キュアアース！",
+                "（ワン！）"
+            ],
+            "transformers": [
+                "Asumi"
+            ]
+        },
+        {
+            "specialItems": [
                 {
                     "a": [
                         "Rabirin",
@@ -5728,8 +5991,7 @@
             ],
             "transformers": [
                 "Nodoka",
-                "Chiyu",
-                "Nodoka"
+                "Chiyu"
             ]
         },
         {
@@ -5781,7 +6043,75 @@
             "transformers": [
                 "Nodoka",
                 "Chiyu",
-                "Nodoka"
+                "Hinata"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Rabirin",
+                        "ElementBottleOfFlower"
+                    ],
+                    "i": "HealingStick"
+                },
+                {
+                    "a": [
+                        "Pegitan",
+                        "ElementBottleOfWater"
+                    ],
+                    "i": "HealingStick"
+                },
+                {
+                    "a": [
+                        "Nyatoran",
+                        "ElementBottleOfLight"
+                    ],
+                    "i": "HealingStick"
+                },
+                "EarthWindyHarp",
+                {
+                    "a": [
+                        "ElementBottleOfWind"
+                    ],
+                    "i": "Latte"
+                }
+            ],
+            "transformees": [
+                "CureGrace",
+                "CureFontaine",
+                "CureSparkle",
+                "CureEarth"
+            ],
+            "speech": [
+                "（スタート！）",
+                "プリキュア！オペレーション！",
+                "（エレメントレベル、上昇(ラビ|ペェ|にゃあ)！）",
+                "キュアタッチ！",
+                "（キュン！）",
+                "（キュン！）",
+                "重なる二つの花！キュアグレース！",
+                "（ラビ！）",
+                "（キュン！）",
+                "交わる二つの流れ！キュアフォンテーヌ！",
+                "（ペェ！）",
+                "（キュン！）",
+                "溶け合う二つの光！キュアスパークル！",
+                "（にゃあ！）",
+                "（スタート！）",
+                "プリキュア！オペレーション！",
+                "（エレメントレベル、上昇ラテ！）",
+                "キュアタッチ！",
+                "（キュン！）",
+                "時を経てつながる、二つの風！キュアアース！",
+                "（ワン！）",
+                "地球をお手当て！ヒーリングっど♥プリキュア！"
+            ],
+            "transformers": [
+                "Nodoka",
+                "Chiyu",
+                "Hinata",
+                "Asumi"
             ]
         },
         {
@@ -8702,6 +9032,18 @@
                 "CureGrace",
                 "CureFontaine",
                 "CureSparkle"
+            ]
+        },
+        {
+            "nameEn": "Healin' Good♡PreCure",
+            "variationEn": "",
+            "nameJa": "ヒーリングっど♥プリキュア ",
+            "variationJa": "",
+            "transformerIds": [
+                "CureGrace",
+                "CureFontaine",
+                "CureSparkle",
+                "CureEarth"
             ]
         },
         {

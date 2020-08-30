@@ -1,5 +1,5 @@
+{-# LANGUAGE GADTs                 #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
-{-# LANGUAGE GADTs #-}
 
 module ACME.PreCure.Monad
   ( PreCureMonad
@@ -19,18 +19,13 @@ module ACME.PreCure.Monad
   ) where
 
 
-import qualified Control.Arrow as Arrow
-import qualified Control.Concurrent as Concurrent
-import qualified Control.Monad as Monad
-import           Control.Monad.Skeleton
-                   ( Skeleton
-                   , MonadView((:>>=), Return)
-                   , bone
-                   , debone
-                   )
-import qualified Data.DList as DList
-import           Data.Monoid ((<>))
-import qualified System.IO as IO
+import qualified Control.Arrow          as Arrow
+import qualified Control.Concurrent     as Concurrent
+import qualified Control.Monad          as Monad
+import           Control.Monad.Skeleton (MonadView ((:>>=), Return), Skeleton,
+                                         bone, debone)
+import qualified Data.DList             as DList
+import qualified System.IO              as IO
 
 import           ACME.PreCure.Types
 
@@ -101,7 +96,7 @@ hPrintEpisodeWith :: IO.Handle -> EpisodeConfig -> PreCureMonad a -> IO ()
 hPrintEpisodeWith h cfg a = do
   let interval = lineIntervalMicroSec cfg
   Monad.forM_ (composeEpisode a) $ \s -> do
-    IO.hPutStrLn h s 
+    IO.hPutStrLn h s
     IO.hFlush h
     Concurrent.threadDelay interval
 

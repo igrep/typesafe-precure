@@ -12,6 +12,7 @@ girls =
   [ mkGirl "Nodoka Hanadera" "花寺 のどか"
   , mkGirl "Chiyu Sawaizumi"  "沢泉 ちゆ"
   , mkGirl "Hinata Hiramitsu"  "平光 ひなた"
+  , mkGirl "Asumi Fuurin"  "風鈴アスミ"
   ]
 
 transformees :: [Transformee]
@@ -34,11 +35,18 @@ transformees =
       "キュアスパークル"
       ""
       introducesHerselfAs_CureSparkle
+  , mkTransformee
+      "Cure Earth"
+      ""
+      "キュアアース"
+      ""
+      introducesHerselfAs_CureEarth
   ]
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-    [ mkTransformedGroup groupMembers ne "" nj ""
+    [ mkTransformedGroup groupMembers1 ne "" nj ""
+    , mkTransformedGroup groupMembers2 ne "" nj ""
     ]
   where
     ne = "Healin' Good♡PreCure"
@@ -47,14 +55,25 @@ transformedGroups =
 specialItems :: [SpecialItem]
 specialItems =
   [ mkSpecialItem "Healing Stick" "ヒーリングステッキ" ["Healing Animal", "Element Bottle"]
+  , mkSpecialItem "Earth Windy Harp" "アースウィンディハープ" []
 
   , mkSpecialItem "Rabirin"  "ラビリン" []
   , mkSpecialItem "Pegitan"  "ペギタン" []
   , mkSpecialItem "Nyatoran" "ニャトラン" []
+  , mkSpecialItem "Latte" "ラテ" ["Element Bottle"]
 
-  , mkSpecialItem "Element Bottle Of Flower" "花のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Water"  "水のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Light"  "光のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Flower"    "花のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Water"     "水のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Light"     "光のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Fruit"     "実りのエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Ice"       "氷のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Lightning" "雷のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Leaf"      "葉っぱのエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Rain"      "雨のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Fire"      "火のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Wind"      "風のエレメントボトル" []
+
+  , mkSpecialItem "Miracle Healing Bottle"  "ミラクルヒーリングボトル" []
   ]
 
 transformations :: [Transformation]
@@ -87,7 +106,16 @@ transformations =
       ++ ["（キュン！）", introducesHerselfAs_CureSparkle, "（にゃあ！）"]
       )
   , mkTransformation
-      ["Nodoka", "Chiyu", "Nodoka"]
+      ["Asumi"]
+      ["EarthWindyHarp", mkIA "Latte" ["ElementBottleOfWind"]]
+      ["CureSparkle"]
+      ( startPreCureOperation
+      ++ ["（エレメントレベル、上昇ラテ！）"]
+      ++ cureTouchKyun
+      ++ [introducesHerselfAs_CureEarth, "（ワン！）"]
+      )
+  , mkTransformation
+      ["Nodoka", "Chiyu"]
       [ mkIA "HealingStick" ["Rabirin", "ElementBottleOfFlower"]
       , mkIA "HealingStick" ["Pegitan", "ElementBottleOfWater"]
       ]
@@ -99,25 +127,49 @@ transformations =
       ++ ["（キュン！）", introducesHerselfAs_CureFontaine, "（ペェ！）"]
       )
   , mkTransformation
-      ["Nodoka", "Chiyu", "Nodoka"]
-      [ mkIA "HealingStick" ["Rabirin", "ElementBottleOfFlower"]
-      , mkIA "HealingStick" ["Pegitan", "ElementBottleOfWater"]
-      , mkIA "HealingStick" ["Nyatoran", "ElementBottleOfLight"]
-      ]
-      groupMembers
+      girls1
+      items1
+      groupMembers1
       ( startPreCureOperation
       ++ ["（エレメントレベル、上昇(ラビ|ペェ|にゃあ)！）"]
       ++ cureTouchKyun
       ++ ["（キュン！）", introducesHerselfAs_CureGrace, "（ラビ！）"]
       ++ ["（キュン！）", introducesHerselfAs_CureFontaine, "（ペェ！）"]
       ++ ["（キュン！）", introducesHerselfAs_CureSparkle, "（にゃあ！）"]
-      ++ ["地球をお手当て！ヒーリングっど♥プリキュア！"]
+      ++ takeCareOfEarth
+      )
+  , mkTransformation
+      (girls1 ++ ["Asumi"])
+      ( items1
+      ++ ["EarthWindyHarp", mkIA "Latte" ["ElementBottleOfWind"]]
+      )
+      groupMembers2
+      ( untilIntroductions1
+      ++ startPreCureOperation
+      ++ ["（エレメントレベル、上昇ラテ！）"]
+      ++ cureTouchKyun
+      ++ [introducesHerselfAs_CureEarth, "（ワン！）"]
+      ++ takeCareOfEarth
       )
   ]
  where
   startPreCureOperation = ["（スタート！）", "プリキュア！オペレーション！"]
-
   cureTouchKyun = ["キュアタッチ！", "（キュン！）"]
+  girls1 = ["Nodoka", "Chiyu", "Hinata"]
+  items1 =
+    [ mkIA "HealingStick" ["Rabirin", "ElementBottleOfFlower"]
+    , mkIA "HealingStick" ["Pegitan", "ElementBottleOfWater"]
+    , mkIA "HealingStick" ["Nyatoran", "ElementBottleOfLight"]
+    ]
+  untilIntroductions1 =
+    ( startPreCureOperation
+    ++ ["（エレメントレベル、上昇(ラビ|ペェ|にゃあ)！）"]
+    ++ cureTouchKyun
+    ++ ["（キュン！）", introducesHerselfAs_CureGrace, "（ラビ！）"]
+    ++ ["（キュン！）", introducesHerselfAs_CureFontaine, "（ペェ！）"]
+    ++ ["（キュン！）", introducesHerselfAs_CureSparkle, "（にゃあ！）"]
+    )
+  takeCareOfEarth = ["地球をお手当て！ヒーリングっど♥プリキュア！"]
 
 
 purifications :: [Purification]
@@ -136,7 +188,62 @@ purifications =
       ["CureSparkle"]
       [mkIA "HealingStick" ["Nyatoran", "ElementBottleOfLight"]]
       [elementCharge, kyun3, healingGauge, "プリキュア！ヒーリング・フラッシュ！", healinGoodBye, takeCare]
+
+  , mkPurification
+      ["CureGrace"]
+      [mkIA "HealingStick" ["Rabirin", "ElementBottleOfFruit"]]
+      ["実りのエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureFontaine"]
+      [mkIA "HealingStick" ["Pegitan", "ElementBottleOfIce"]]
+      ["氷のエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureSparkle"]
+      [mkIA "HealingStick" ["Nyatoran", "ElementBottleOfLightning"]]
+      ["雷のエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureGrace"]
+      [mkIA "HealingStick" ["Rabirin", "ElementBottleOfLeaf"]]
+      ["葉っぱのエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureFontaine"]
+      [mkIA "HealingStick" ["Pegitan", "ElementBottleOfRain"]]
+      ["雨のエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureSparkle"]
+      [mkIA "HealingStick" ["Nyatoran", "ElementBottleOfFire"]]
+      ["火のエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureEarth"]
+      ["EarthWindyHarp", "ElementBottleOfWind"]
+      [ "アースウィンディハープ！"
+      , elementCharge
+      , "舞い上がれ、癒やしの風！"
+      , "プリキュア！ヒーリング・ハリケーン！"
+      , healinGoodBye
+      , takeCare
+      ]
+
+  , mkPurification
+      groupMembers1
+      [ mkIA "HealingStick" ["Rabirin", "MiracleHealingBottle"]
+      , mkIA "HealingStick" ["Pegitan", "MiracleHealingBottle"]
+      , mkIA "HealingStick" ["Nyatoran", "MiracleHealingBottle"]
+      ]
+      [ "トリプルハートチャージ"
+      , "届け！癒やしの！パワー！"
+      , "プリキュア！ヒーリング・オアシス！"
+      , healinGoodBye
+      , takeCare
+      ]
   ]
+
  where
   elementCharge = "エレメントチャージ！"
   kyun3 = "（キュン！キュン！キュン！）"
@@ -144,8 +251,11 @@ purifications =
   healinGoodBye = "（ヒーリングッバ～イ）"
   takeCare = "お大事に。"
 
-groupMembers :: IsString s => [s]
-groupMembers = ["CureGrace", "CureFontaine", "CureSparkle"]
+groupMembers1 :: IsString s => [s]
+groupMembers1 = ["CureGrace", "CureFontaine", "CureSparkle"]
+
+groupMembers2 :: IsString s => [s]
+groupMembers2 = groupMembers1 ++ ["CureEarth"]
 
 introducesHerselfAs_CureGrace =
   "重なる二つの花！キュアグレース！"
@@ -155,3 +265,6 @@ introducesHerselfAs_CureFontaine =
 
 introducesHerselfAs_CureSparkle =
   "溶け合う二つの光！キュアスパークル！"
+
+introducesHerselfAs_CureEarth =
+  "時を経てつながる、二つの風！キュアアース！"
