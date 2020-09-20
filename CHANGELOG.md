@@ -1,3 +1,7 @@
+# 0.7.9.1
+
+- Add the transformations by Cure Grace, Cure Sparkle, and Cure Earth.
+
 # 0.7.8.1
 
 - Add more purifications of Healin' Good♡PreCure, and Cure Earth.

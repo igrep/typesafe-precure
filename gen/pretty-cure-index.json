@@ -6005,6 +6005,56 @@
                 },
                 {
                     "a": [
+                        "Nyatoran",
+                        "ElementBottleOfLight"
+                    ],
+                    "i": "HealingStick"
+                },
+                "EarthWindyHarp",
+                {
+                    "a": [
+                        "ElementBottleOfWind"
+                    ],
+                    "i": "Latte"
+                }
+            ],
+            "transformees": [
+                "CureGrace",
+                "CureSparkle",
+                "CureEarth"
+            ],
+            "speech": [
+                "（スタート！）",
+                "プリキュア！オペレーション！",
+                "（エレメントレベル、上昇(ラビ|にゃあ|ラテ)！）",
+                "キュアタッチ！",
+                "（キュン！）",
+                "（キュン！）",
+                "重なる二つの花！キュアグレース！",
+                "（ラビ！）",
+                "（キュン！）",
+                "溶け合う二つの光！キュアスパークル！",
+                "（にゃあ！）",
+                "時を経てつながる、二つの風！キュアアース！",
+                "（ワン！）"
+            ],
+            "transformers": [
+                "Nodoka",
+                "Hinata",
+                "Asumi"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "Rabirin",
+                        "ElementBottleOfFlower"
+                    ],
+                    "i": "HealingStick"
+                },
+                {
+                    "a": [
                         "Pegitan",
                         "ElementBottleOfWater"
                     ],
