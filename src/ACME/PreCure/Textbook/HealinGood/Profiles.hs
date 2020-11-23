@@ -3,7 +3,7 @@
 
 module ACME.PreCure.Textbook.HealinGood.Profiles where
 
-import           Data.String              (IsString)
+import           Data.String              (IsString, fromString)
 
 import           ACME.PreCure.Index.Types
 
@@ -41,15 +41,41 @@ transformees =
       "キュアアース"
       ""
       introducesHerselfAs_CureEarth
+
+  , mkTransformee
+      "Cure Grace"
+      "Special Healin'Good Style"
+      "キュアグレース"
+      "スペシャルヒーリングっどスタイル"
+      introducesHerselfAs_CureGrace
+  , mkTransformee
+      "Cure Fontaine"
+      "Special Healin'Good Style"
+      "キュアフォンテーヌ"
+      "スペシャルヒーリングっどスタイル"
+      introducesHerselfAs_CureFontaine
+  , mkTransformee
+      "Cure Sparkle"
+      "Special Healin'Good Style"
+      "キュアスパークル"
+      "スペシャルヒーリングっどスタイル"
+      introducesHerselfAs_CureSparkle
+  , mkTransformee
+      "Cure Earth"
+      "Special Healin'Good Style"
+      "キュアアース"
+      "スペシャルヒーリングっどスタイル"
+      introducesHerselfAs_CureEarth
   ]
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
     [ mkTransformedGroup groupMembers1 ne "" nj ""
     , mkTransformedGroup groupMembers2 ne "" nj ""
+    , mkTransformedGroup groupMembers3 ne "Special Healin'Good Style" nj "スペシャルヒーリングっどスタイル"
     ]
   where
-    ne = "Healin' Good♡PreCure"
+    ne = "Healin'Good♡PreCure"
     nj = "ヒーリングっど♥プリキュア "
 
 specialItems :: [SpecialItem]
@@ -74,6 +100,12 @@ specialItems =
   , mkSpecialItem "Element Bottle Of Wind"      "風のエレメントボトル" []
 
   , mkSpecialItem "Miracle Healing Bottle"  "ミラクルヒーリングボトル" []
+
+  , mkSpecialItem "Special Healin'Good Bottle" "スペシャル・ヒーリングっどボトル" []
+  , mkSpecialItem "Healin'Good Arrow" "ヒーリングっどアロー"
+      [ "Special Healin'Good Bottle"
+      , "Rabirin", "Pegitan", "Nyatoran", "Latte"
+      ]
   ]
 
 transformations :: [Transformation]
@@ -166,6 +198,23 @@ transformations =
       ++ [introducesHerselfAs_CureEarth, "（ワン！）"]
       ++ takeCareOfEarth
       )
+  , mkTransformation
+      groupMembers2
+      [ mkIA "Healin'GoodArrow"
+          [ "SpecialHealin'GoodBottle"
+          , "Rabirin"
+          , "Pegitan"
+          , "Nyatoran"
+          , mkIA "Latte" ["SpecialHealin'GoodBottle"]
+          ]
+      ]
+      groupMembers3
+      [ "（わふー！）"
+      , "ヒーリングっどアロー！"
+      , "ヒーリングアニマルパワー、全開！"
+      , "（キュン！）"
+      , "アメイジングお手当て、準備OK！"
+      ]
   ]
  where
   startPreCureOperation = ["（スタート！）", "プリキュア！オペレーション！"]
@@ -257,6 +306,23 @@ purifications =
       , healinGoodBye
       , takeCare
       ]
+
+  , mkPurification
+      groupMembers3
+      [ mkIA "Healin'GoodArrow"
+          [ "SpecialHealin'GoodBottle"
+          , "Rabirin"
+          , "Pegitan"
+          , "Nyatoran"
+          , mkIA "Latte" ["SpecialHealin'GoodBottle"]
+          ]
+      ]
+      [ "（OK！）"
+      , "プリキュア・ファイナル・ヒーリングっどシャワー！"
+      , healinGoodBye
+      , takeCare
+      , "（わふー！）"
+      ]
   ]
 
  where
@@ -267,10 +333,19 @@ purifications =
   takeCare = "お大事に。"
 
 groupMembers1 :: IsString s => [s]
-groupMembers1 = ["CureGrace", "CureFontaine", "CureSparkle"]
+groupMembers1 = map fromString groupMembers1'
 
 groupMembers2 :: IsString s => [s]
-groupMembers2 = groupMembers1 ++ ["CureEarth"]
+groupMembers2 = map fromString groupMembers2'
+
+groupMembers1' :: [String]
+groupMembers1' = ["CureGrace", "CureFontaine", "CureSparkle"]
+
+groupMembers2' :: [String]
+groupMembers2' = groupMembers1 ++ ["CureEarth"]
+
+groupMembers3 :: IsString s => [s]
+groupMembers3 = map (fromString . (++ "_SpecialHealin'GoodStyle")) groupMembers2'
 
 introducesHerselfAs_CureGrace =
   "重なる二つの花！キュアグレース！"

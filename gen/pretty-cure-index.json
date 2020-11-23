@@ -450,6 +450,24 @@
             "id": "MiracleHealingBottle"
         },
         {
+            "nameEn": "Special Healin'Good Bottle",
+            "attachments": [],
+            "nameJa": "スペシャル・ヒーリングっどボトル",
+            "id": "SpecialHealin'GoodBottle"
+        },
+        {
+            "nameEn": "Healin'Good Arrow",
+            "attachments": [
+                "Special Healin'Good Bottle",
+                "Rabirin",
+                "Pegitan",
+                "Nyatoran",
+                "Latte"
+            ],
+            "nameJa": "ヒーリングっどアロー",
+            "id": "Healin'GoodArrow"
+        },
+        {
             "nameEn": "Heart Perfume",
             "attachments": [
                 "PreCureSeed"
@@ -1518,6 +1536,38 @@
             "nameJa": "キュアアース",
             "variationJa": "",
             "id": "CureEarth",
+            "introducesHerselfAs": "時を経てつながる、二つの風！キュアアース！"
+        },
+        {
+            "nameEn": "Cure Grace",
+            "variationEn": "Special Healin'Good Style",
+            "nameJa": "キュアグレース",
+            "variationJa": "スペシャルヒーリングっどスタイル",
+            "id": "CureGrace_SpecialHealin'GoodStyle",
+            "introducesHerselfAs": "重なる二つの花！キュアグレース！"
+        },
+        {
+            "nameEn": "Cure Fontaine",
+            "variationEn": "Special Healin'Good Style",
+            "nameJa": "キュアフォンテーヌ",
+            "variationJa": "スペシャルヒーリングっどスタイル",
+            "id": "CureFontaine_SpecialHealin'GoodStyle",
+            "introducesHerselfAs": "交わる二つの流れ！キュアフォンテーヌ！"
+        },
+        {
+            "nameEn": "Cure Sparkle",
+            "variationEn": "Special Healin'Good Style",
+            "nameJa": "キュアスパークル",
+            "variationJa": "スペシャルヒーリングっどスタイル",
+            "id": "CureSparkle_SpecialHealin'GoodStyle",
+            "introducesHerselfAs": "溶け合う二つの光！キュアスパークル！"
+        },
+        {
+            "nameEn": "Cure Earth",
+            "variationEn": "Special Healin'Good Style",
+            "nameJa": "キュアアース",
+            "variationJa": "スペシャルヒーリングっどスタイル",
+            "id": "CureEarth_SpecialHealin'GoodStyle",
             "introducesHerselfAs": "時を経てつながる、二つの風！キュアアース！"
         },
         {
@@ -3398,6 +3448,38 @@
                 "プリキュア！ヒーリング・オアシス！",
                 "（ヒーリングッバ～イ）",
                 "お大事に。"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SpecialHealin'GoodBottle",
+                        "Rabirin",
+                        "Pegitan",
+                        "Nyatoran",
+                        {
+                            "a": [
+                                "SpecialHealin'GoodBottle"
+                            ],
+                            "i": "Latte"
+                        }
+                    ],
+                    "i": "Healin'GoodArrow"
+                }
+            ],
+            "purifiers": [
+                "CureGrace_SpecialHealin'GoodStyle",
+                "CureFontaine_SpecialHealin'GoodStyle",
+                "CureSparkle_SpecialHealin'GoodStyle",
+                "CureEarth_SpecialHealin'GoodStyle"
+            ],
+            "speech": [
+                "（OK！）",
+                "プリキュア・ファイナル・ヒーリングっどシャワー！",
+                "（ヒーリングッバ～イ）",
+                "お大事に。",
+                "（わふー！）"
             ]
         },
         {
@@ -6162,6 +6244,44 @@
                 "Chiyu",
                 "Hinata",
                 "Asumi"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SpecialHealin'GoodBottle",
+                        "Rabirin",
+                        "Pegitan",
+                        "Nyatoran",
+                        {
+                            "a": [
+                                "SpecialHealin'GoodBottle"
+                            ],
+                            "i": "Latte"
+                        }
+                    ],
+                    "i": "Healin'GoodArrow"
+                }
+            ],
+            "transformees": [
+                "CureGrace_SpecialHealin'GoodStyle",
+                "CureFontaine_SpecialHealin'GoodStyle",
+                "CureSparkle_SpecialHealin'GoodStyle",
+                "CureEarth_SpecialHealin'GoodStyle"
+            ],
+            "speech": [
+                "（わふー！）",
+                "ヒーリングっどアロー！",
+                "ヒーリングアニマルパワー、全開！",
+                "（キュン！）",
+                "アメイジングお手当て、準備OK！"
+            ],
+            "transformers": [
+                "CureGrace",
+                "CureFontaine",
+                "CureSparkle",
+                "CureEarth"
             ]
         },
         {
@@ -9074,7 +9194,7 @@
             ]
         },
         {
-            "nameEn": "Healin' Good♡PreCure",
+            "nameEn": "Healin'Good♡PreCure",
             "variationEn": "",
             "nameJa": "ヒーリングっど♥プリキュア ",
             "variationJa": "",
@@ -9085,7 +9205,7 @@
             ]
         },
         {
-            "nameEn": "Healin' Good♡PreCure",
+            "nameEn": "Healin'Good♡PreCure",
             "variationEn": "",
             "nameJa": "ヒーリングっど♥プリキュア ",
             "variationJa": "",
@@ -9094,6 +9214,18 @@
                 "CureFontaine",
                 "CureSparkle",
                 "CureEarth"
+            ]
+        },
+        {
+            "nameEn": "Healin'Good♡PreCure",
+            "variationEn": "Special Healin'Good Style",
+            "nameJa": "ヒーリングっど♥プリキュア ",
+            "variationJa": "スペシャルヒーリングっどスタイル",
+            "transformerIds": [
+                "CureGrace_SpecialHealin'GoodStyle",
+                "CureFontaine_SpecialHealin'GoodStyle",
+                "CureSparkle_SpecialHealin'GoodStyle",
+                "CureEarth_SpecialHealin'GoodStyle"
             ]
         },
         {
