@@ -1,3 +1,8 @@
+# 0.7.10.1
+
+- Add Healin'Good PreCure's new purification and transformation.
+- Fix the English name of Healin'Good PreCure as a transformed group.
+
 # 0.7.9.1
 
 - Add the transformations by Cure Grace, Cure Sparkle, and Cure Earth.
