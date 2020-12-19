@@ -1,3 +1,7 @@
+# 0.7.11.1
+
+- Add Healin'Good PreCure's transformation without Hinata.
+
 # 0.7.10.1
 
 - Add Healin'Good PreCure's new purification and transformation.

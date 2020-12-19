@@ -174,6 +174,21 @@ transformations =
       ++ [introducesHerselfAs_CureEarth, "（ワン！）"]
       )
   , mkTransformation
+      ["Nodoka", "Chiyu", "Asumi"]
+      [ mkIA "HealingStick" ["Rabirin", "ElementBottleOfFlower"]
+      , mkIA "HealingStick" ["Pegitan", "ElementBottleOfWater"]
+      , "EarthWindyHarp"
+      , mkIA "Latte" ["ElementBottleOfWind"]
+      ]
+      ["CureGrace", "CureFontaine", "CureEarth"]
+      ( startPreCureOperation
+      ++ ["（エレメントレベル、上昇(ラビ|ペェ|ラテ)！）"]
+      ++ cureTouchKyun
+      ++ ["（キュン！）", introducesHerselfAs_CureGrace, "（ラビ！）"]
+      ++ ["（キュン！）", introducesHerselfAs_CureFontaine, "（ペェ！）"]
+      ++ [introducesHerselfAs_CureEarth, "（ワン！）"]
+      )
+  , mkTransformation
       girls1
       items1
       groupMembers1
