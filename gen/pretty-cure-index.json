@@ -836,6 +836,16 @@
             "id": "StarColorPenAquarius"
         },
         {
+            "nameEn": "Star Color Pen Cancer",
+            "nameJa": "スターカラーペン かに座",
+            "id": "StarColorPenCancer"
+        },
+        {
+            "nameEn": "Star Color Pen Pisces",
+            "nameJa": "スターカラーペン うお座",
+            "id": "StarColorPenPisces"
+        },
+        {
             "nameEn": "Twinkle Stick",
             "nameJa": "トゥインクルステッキ",
             "id": "TwinkleStick"
@@ -4150,6 +4160,24 @@
             "specialItems": [
                 {
                     "a": [
+                        "StarColorPenPisces"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureStar"
+            ],
+            "speech": [
+                "プリキュア！",
+                "うお座！",
+                "スター・パンチ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
                         "StarColorPenLeo"
                     ],
                     "i": "StarColorPendant"
@@ -4179,6 +4207,24 @@
             "speech": [
                 "プリキュア！",
                 "ふたご座！",
+                "ミルキー・ショック！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenCancer"
+                    ],
+                    "i": "StarColorPendant"
+                }
+            ],
+            "purifiers": [
+                "CureMilky"
+            ],
+            "speech": [
+                "プリキュア！",
+                "かに座！",
                 "ミルキー・ショック！"
             ]
         },
@@ -4309,6 +4355,18 @@
                 "セレーネ☆トゥインクル！",
                 "四つの輝きを！今、一つに！",
                 "プリキュア！サザンクロス・ショット！"
+            ]
+        },
+        {
+            "specialItems": [
+                "RainbowPerfume"
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "プリキュア！",
+                "コスモ・シャイニング！"
             ]
         },
         {
@@ -4497,6 +4555,44 @@
             "speech": [
                 "レインボーパフューム！行くニャン♡",
                 "プリンセススターカラーペン！みずがめ座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenCancer"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！かにがめ座！",
+                "クルクルチャージ！",
+                "プリキュア！レインボー・スプラッシュ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "StarColorPenPisces"
+                    ],
+                    "i": "RainbowPerfume"
+                }
+            ],
+            "purifiers": [
+                "CureCosmo"
+            ],
+            "speech": [
+                "レインボーパフューム！行くニャン♡",
+                "プリンセススターカラーペン！うおがめ座！",
                 "クルクルチャージ！",
                 "プリキュア！レインボー・スプラッシュ！"
             ]
@@ -8869,15 +8965,6 @@
             "speech": [
                 "プリキュア！",
                 "セレーネ・アロー！"
-            ]
-        },
-        {
-            "purifiers": [
-                "CureCosmo"
-            ],
-            "speech": [
-                "プリキュア！",
-                "コスモ・シャイニング！"
             ]
         },
         {
