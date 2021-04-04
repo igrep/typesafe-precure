@@ -40,16 +40,16 @@ $ cabal install typesafe-precure unicode-show
 $ ghci -interactive-print=Text.Show.Unicode.uprint
 
 ghci> :m ACME.PreCure
-ghci> transformationSpeech (Mirai, Liko) (Mofurun LinkleStoneDia)
+ghci> transformationSpeech (Mirai, Liko) (Mofurun :+: LinkleStoneDia)
 [ "キュアップ・ラパパ！　ダイヤ！"
 , "ミラクル・マジカル・ジュエリーレ！"
 , "ふたりの奇跡！キュアミラクル！"
 , "ふたりの魔法！キュアマジカル！"
 , "魔法つかいプリキュア！！"
 ]
-ghci> transformedStyle (Mirai, Liko) (Mofurun LinkleStoneRuby)
+ghci> transformedStyle (Mirai, Liko) (Mofurun :+: LinkleStoneRuby)
 (CureMiracle_Ruby, CureMagical_Ruby)
-ghci> purificationSpeech (CureMiracle_Ruby, CureMagical_Ruby) (LinkleStick LinkleStoneRuby, Mofurun LinkleStoneRuby)
+ghci> purificationSpeech (CureMiracle_Ruby, CureMagical_Ruby) (LinkleStick :+: LinkleStoneRuby, Mofurun :+: LinkleStoneRuby)
 [ "リンクルステッキ！"
 , "(モッフー！)"
 , "ルビー！紅の情熱よ私達の手に！"
@@ -64,9 +64,9 @@ ghci> purificationSpeech (CureMiracle_Ruby, CureMagical_Ruby) (LinkleStick Linkl
 ghci> :{
 ghci> let scene = do
 ....>       say "この罪を抱いたまま、もう一度、グランプリンセスを目指す！"
-....>       scarlet <- transform Towa (PrincessPerfume DressUpKeyScarlet)
-....>       scarletModeElegant <- transform scarlet (PrincessPerfume DressUpKeyPhoenix)
-....>       purify scarletModeElegant (ScarletViolin DressUpKeyPhoenix)
+....>       scarlet <- transform Towa (PrincessPerfume :+: DressUpKeyScarlet)
+....>       scarletModeElegant <- transform scarlet (PrincessPerfume :+: DressUpKeyPhoenix)
+....>       purify scarletModeElegant (ScarletViolin :+: DressUpKeyPhoenix)
 ghci> :}
 ghci> :t scene
 scene
