@@ -1,6 +1,6 @@
 {-# LANGUAGE DeriveDataTypeable #-}
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE OverloadedStrings  #-}
+{-# LANGUAGE TemplateHaskell    #-}
 {-# OPTIONS_GHC -fno-warn-unused-top-binds #-}
 
 module ACME.PreCure.Index.Types
@@ -8,6 +8,7 @@ module ACME.PreCure.Index.Types
   , Transformee(Transformee)
   , TransformedGroup(TransformedGroup)
   , SpecialItem(SpecialItem)
+  , SpecialItem2(SpecialItem2)
   , IdAttachments(IdAttachments)
   , Transformation(Transformation)
   , Purification(Purification)
@@ -17,6 +18,7 @@ module ACME.PreCure.Index.Types
   , mkTransformee
   , mkTransformedGroup
   , mkSpecialItem
+  , mkSpecialItem2
   , mkIA
   , mkTransformation
   , mkPurification
@@ -24,19 +26,9 @@ module ACME.PreCure.Index.Types
   , mkIndex
   ) where
 
-import           Data.Aeson
-                   ( ToJSON
-                   , toJSON
-                   , object
-                   , (.=)
-                   )
-import           Data.Data
-                   ( Data
-                   )
-import           Data.String
-                   ( IsString
-                   , fromString
-                   )
+import           Data.Aeson             (ToJSON, object, toJSON, (.=))
+import           Data.Data              (Data)
+import           Data.String            (IsString, fromString)
 
 import           ACME.PreCure.Index.Lib
 
@@ -62,11 +54,11 @@ prefixify ve = if null ve then "" else '_' : typeNamify ve
 
 data Transformee =
   Transformee
-    { transformedId :: String
-    , transformedNameEn :: String
-    , transformedVariationEn :: String
-    , transformedNameJa :: String
-    , transformedVariationJa :: String
+    { transformedId                  :: String
+    , transformedNameEn              :: String
+    , transformedVariationEn         :: String
+    , transformedNameJa              :: String
+    , transformedVariationJa         :: String
     , transformedIntroducesHerselfAs :: String
     } deriving (Eq, Show, Data)
 
@@ -79,10 +71,10 @@ mkTransformee ne ve = Transformee (typeNamify ne ++ prefixify ve) ne ve
 data TransformedGroup =
   TransformedGroup
     { transformedGroupTransformerIds :: [String]
-    , transformedGroupNameEn :: String
-    , transformedGroupVariationEn :: String
-    , transformedGroupNameJa :: String
-    , transformedGroupVariationJa :: String
+    , transformedGroupNameEn         :: String
+    , transformedGroupVariationEn    :: String
+    , transformedGroupNameJa         :: String
+    , transformedGroupVariationJa    :: String
     } deriving (Eq, Show, Data)
 
 $(deriveToJsonWithoutTypeNamePrefix ''TransformedGroup)
@@ -93,9 +85,9 @@ mkTransformedGroup = TransformedGroup
 
 data SpecialItem =
   SpecialItem
-    { specialItemId :: String
-    , specialItemNameEn :: String
-    , specialItemNameJa :: String
+    { specialItemId          :: String
+    , specialItemNameEn      :: String
+    , specialItemNameJa      :: String
     , specialItemAttachments :: [String]
     } deriving (Eq, Show, Data)
 
@@ -103,6 +95,19 @@ $(deriveToJsonWithoutTypeNamePrefix ''SpecialItem)
 
 mkSpecialItem :: String -> String -> [String] -> SpecialItem
 mkSpecialItem ne = SpecialItem (typeNamify ne) ne
+
+
+data SpecialItem2 =
+  SpecialItem2
+    { specialItem2Id     :: String
+    , specialItem2NameEn :: String
+    , specialItem2NameJa :: String
+    } deriving (Eq, Show, Data)
+
+$(deriveToJsonWithoutTypeNamePrefix ''SpecialItem2)
+
+mkSpecialItem2 :: String -> String -> SpecialItem2
+mkSpecialItem2 ne = SpecialItem2 (typeNamify ne) ne
 
 
 data IdAttachments =
@@ -129,7 +134,7 @@ data Transformation =
     { transformationTransformers :: [IdAttachments]
     , transformationSpecialItems :: [IdAttachments]
     , transformationTransformees :: [String]
-    , transformationSpeech :: [String]
+    , transformationSpeech       :: [String]
     } deriving (Eq, Show, Data)
 
 $(deriveToJsonWithoutTypeNamePrefix ''Transformation)
@@ -141,7 +146,7 @@ mkTransformation = Transformation
 data NonItemPurification =
   NonItemPurification
     { nonItemPurificationPurifiers :: [IdAttachments]
-    , nonItemPurificationSpeech :: [String]
+    , nonItemPurificationSpeech    :: [String]
     } deriving (Eq, Show, Data)
 
 $(deriveToJsonWithoutTypeNamePrefix ''NonItemPurification)
@@ -152,9 +157,9 @@ mkNonItemPurification = NonItemPurification
 
 data Purification =
   Purification
-    { purificationPurifiers :: [IdAttachments]
+    { purificationPurifiers    :: [IdAttachments]
     , purificationSpecialItems :: [IdAttachments]
-    , purificationSpeech :: [String]
+    , purificationSpeech       :: [String]
     } deriving (Eq, Show, Data)
 
 $(deriveToJsonWithoutTypeNamePrefix ''Purification)
@@ -165,12 +170,13 @@ mkPurification = Purification
 
 data Index =
   Index
-    { indexGirls :: [Girl]
-    , indexTransformees :: [Transformee]
-    , indexTransformedGroups :: [TransformedGroup]
-    , indexSpecialItems :: [SpecialItem]
-    , indexTransformations :: [Transformation]
-    , indexPurifications :: [Purification]
+    { indexGirls                :: [Girl]
+    , indexTransformees         :: [Transformee]
+    , indexTransformedGroups    :: [TransformedGroup]
+    , indexSpecialItems         :: [SpecialItem]
+    , indexSpecialItems2        :: [SpecialItem2]
+    , indexTransformations      :: [Transformation]
+    , indexPurifications        :: [Purification]
     , indexNonItemPurifications :: [NonItemPurification]
     } deriving (Eq, Show)
 
@@ -181,6 +187,7 @@ mkIndex
   -> [Transformee]
   -> [TransformedGroup]
   -> [SpecialItem]
+  -> [SpecialItem2]
   -> [Transformation]
   -> [Purification]
   -> [NonItemPurification]

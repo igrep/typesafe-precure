@@ -78,34 +78,31 @@ transformedGroups =
     ne = "Healin'Good♡PreCure"
     nj = "ヒーリングっど♥プリキュア "
 
-specialItems :: [SpecialItem]
+specialItems :: [SpecialItem2]
 specialItems =
-  [ mkSpecialItem "Healing Stick" "ヒーリングステッキ" ["Healing Animal", "Element Bottle"]
-  , mkSpecialItem "Earth Windy Harp" "アースウィンディハープ" []
+  [ mkSpecialItem2 "Healing Stick" "ヒーリングステッキ"
+  , mkSpecialItem2 "Earth Windy Harp" "アースウィンディハープ"
 
-  , mkSpecialItem "Rabirin"  "ラビリン" []
-  , mkSpecialItem "Pegitan"  "ペギタン" []
-  , mkSpecialItem "Nyatoran" "ニャトラン" []
-  , mkSpecialItem "Latte" "ラテ" ["Element Bottle"]
+  , mkSpecialItem2 "Rabirin"  "ラビリン"
+  , mkSpecialItem2 "Pegitan"  "ペギタン"
+  , mkSpecialItem2 "Nyatoran" "ニャトラン"
+  , mkSpecialItem2 "Latte" "ラテ"
 
-  , mkSpecialItem "Element Bottle Of Flower"    "花のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Water"     "水のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Light"     "光のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Fruit"     "実りのエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Ice"       "氷のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Lightning" "雷のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Leaf"      "葉っぱのエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Rain"      "雨のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Fire"      "火のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Wind"      "風のエレメントボトル" []
+  , mkSpecialItem2 "Element Bottle Of Flower"    "花のエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Water"     "水のエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Light"     "光のエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Fruit"     "実りのエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Ice"       "氷のエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Lightning" "雷のエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Leaf"      "葉っぱのエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Rain"      "雨のエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Fire"      "火のエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Wind"      "風のエレメントボトル"
 
-  , mkSpecialItem "Miracle Healing Bottle"  "ミラクルヒーリングボトル" []
+  , mkSpecialItem2 "Miracle Healing Bottle"  "ミラクルヒーリングボトル"
 
-  , mkSpecialItem "Special Healin'Good Bottle" "スペシャル・ヒーリングっどボトル" []
-  , mkSpecialItem "Healin'Good Arrow" "ヒーリングっどアロー"
-      [ "Special Healin'Good Bottle"
-      , "Rabirin", "Pegitan", "Nyatoran", "Latte"
-      ]
+  , mkSpecialItem2 "Special Healin'Good Bottle" "スペシャル・ヒーリングっどボトル"
+  , mkSpecialItem2 "Healin'Good Arrow" "ヒーリングっどアロー"
   ]
 
 transformations :: [Transformation]

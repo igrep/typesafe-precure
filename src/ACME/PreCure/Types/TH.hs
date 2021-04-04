@@ -1,12 +1,16 @@
 {-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE TypeOperators #-}
 
 module ACME.PreCure.Types.TH
         ( declareGirls
         , declareTransformees
         , declareTransformedGroups
         , declareSpecialItems
+        , declareSpecialItems2
         , declareTransformations
+        , declareTransformations2
         , declarePurifications
+        , declarePurifications2
         , declareNonItemPurifications
 
         , girlInstance
@@ -33,7 +37,7 @@ import           Language.Haskell.TH
                    , DecsQ
                    , ExpQ
                    , TypeQ
-                   , Type(VarT, ConT, TupleT)
+                   , Type(VarT)
                    , conE
                    , conT
                    , cxt
@@ -45,16 +49,15 @@ import           Language.Haskell.TH
                    )
 import           Language.Haskell.TH.Lib
                    ( StrictTypeQ
+                   , appT
                    , plainTV
+                   , tupleT
                    )
 import           Language.Haskell.TH.Compat.Data
                    ( dataD'
                    )
 import           Language.Haskell.TH.Compat.Strict
                    ( isStrict
-                   )
-import           TH.Utilities
-                   ( appsT
                    )
 
 
@@ -90,7 +93,7 @@ declareTransformedGroups :: [Index.TransformedGroup] -> DecsQ
 declareTransformedGroups = fmap concat . mapM d
   where
     d (Index.TransformedGroup ts _e _ve j vj) =
-      transformedGroupInstance (tupleT ts) j vj
+      transformedGroupInstance (tupleTFromList ts) j vj
 
 
 declareTransformees :: [Index.Transformee] -> DecsQ
@@ -109,6 +112,12 @@ declareSpecialItems = fmap concat . mapM d
       defineWithTypeVars n aNames
 
 
+declareSpecialItems2 :: [Index.SpecialItem2] -> DecsQ
+declareSpecialItems2 = fmap concat . mapM d
+  where
+    d (Index.SpecialItem2 n _e _j) = defineWithTypeVars n []
+
+
 declareTransformations :: [Index.Transformation] -> DecsQ
 declareTransformations = fmap concat . mapM d
   where
@@ -116,7 +125,19 @@ declareTransformations = fmap concat . mapM d
       transformationInstance
         (tupleTFromIdAttachments tas)
         (tupleTFromIdAttachments ias)
-        (tupleT ds)
+        (tupleTFromList ds)
+        (tupleE ds)
+        s
+
+
+declareTransformations2 :: [Index.Transformation] -> DecsQ
+declareTransformations2 = fmap concat . mapM d
+  where
+    d (Index.Transformation tas ias ds s) =
+      transformationInstance
+        (plusTFromIdAttachments tas)
+        (plusTFromIdAttachments ias)
+        (tupleTFromList ds)
         (tupleE ds)
         s
 
@@ -128,6 +149,16 @@ declarePurifications = fmap concat . mapM d
       purificationInstance
         (tupleTFromIdAttachments pas)
         (tupleTFromIdAttachments ias)
+        s
+
+
+declarePurifications2 :: [Index.Purification] -> DecsQ
+declarePurifications2 = fmap concat . mapM d
+  where
+    d (Index.Purification pas ias s) =
+      purificationInstance
+        (plusTFromIdAttachments pas)
+        (plusTFromIdAttachments ias)
         s
 
 
@@ -213,18 +244,28 @@ nonItemPurificationInstance p' speech =
 tupleTFromIdAttachments :: [Index.IdAttachments] -> TypeQ
 tupleTFromIdAttachments = tupleTBy toAppT
   where
-    toAppT :: Index.IdAttachments -> Type
-    toAppT (Index.IdAttachments i ias) = appsT (ConT $ mkName i) $ map toAppT ias
+    toAppT :: Index.IdAttachments -> TypeQ
+    toAppT (Index.IdAttachments i ias) = foldl appT (conT $ mkName i) $ map toAppT ias
 
 
-tupleT :: [String] -> TypeQ
-tupleT ns = tupleTBy (ConT . mkName) ns
+plusTFromIdAttachments :: [Index.IdAttachments] -> TypeQ
+plusTFromIdAttachments = tupleTBy toPlusT
+  where
+    toPlusT :: Index.IdAttachments -> TypeQ
+    toPlusT (Index.IdAttachments i ias) =
+      if null ias
+        then conT (mkName i)
+        else [t| $(conT (mkName i)) :+: $(tupleTBy toPlusT ias) |]
 
 
-tupleTBy :: (a -> Type) -> [a] -> TypeQ
+tupleTFromList :: [String] -> TypeQ
+tupleTFromList = tupleTBy (conT . mkName)
+
+
+tupleTBy :: (a -> TypeQ) -> [a] -> TypeQ
 -- Avoid generating `Unit`. See https://gitlab.haskell.org/ghc/ghc/-/issues/18622 for details.
-tupleTBy f [n] = return $ f n
-tupleTBy f ns = return $ appsT (TupleT (length ns)) (map f ns)
+tupleTBy f [n] = f n
+tupleTBy f ns = foldl appT (tupleT (length ns)) (map f ns)
 
 
 tupleE :: [String] -> ExpQ

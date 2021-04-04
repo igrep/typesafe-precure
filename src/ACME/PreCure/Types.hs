@@ -1,5 +1,6 @@
 {-# LANGUAGE MultiParamTypeClasses #-}
-{-# LANGUAGE TypeFamilies #-}
+{-# LANGUAGE TypeFamilies          #-}
+{-# LANGUAGE TypeOperators         #-}
 
 module ACME.PreCure.Types where
 
@@ -37,3 +38,8 @@ class NonItemPurification p' where
 -- g: A girl
 class Girl g where
   humanName :: g -> String
+
+-- | Represents a 'SpecialItem' @b` is attached to the 'SpecialItem' @a@.
+data a :+: b = a :+: b
+
+infixr 1 :+:

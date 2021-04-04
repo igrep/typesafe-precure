@@ -1,9 +1,10 @@
+cabal-version:        2.4
 name:                 typesafe-precure
 version:              0.7.11.1
 synopsis:             Type-safe transformations and purifications of PreCures (Japanese Battle Heroine)
 description:          See README.md for details.
 homepage:             https://github.com/igrep/typesafe-precure#readme
-license:              BSD3
+license:              BSD-3-Clause
 license-file:         LICENSE
 author:               Yuji Yamamoto
 maintainer:           whosekiteneverfly@gmail.com
@@ -13,7 +14,6 @@ build-type:           Simple
 extra-source-files:   README.md
                       CHANGELOG.md
                       gen/*.json
-cabal-version:        >=1.10
 
 library
   hs-source-dirs:      src
@@ -105,7 +105,7 @@ library
                      , text
                      , th-data-compat
                      , th-strict-compat
-                     , th-utilities
+  build-tool-depends:  autoexporter:autoexporter
   default-language:    Haskell2010
 
 test-suite typesafe-precure-test
