@@ -8,7 +8,6 @@ module ACME.PreCure.Index.Types
   , Transformee(Transformee)
   , TransformedGroup(TransformedGroup)
   , SpecialItem(SpecialItem)
-  , SpecialItem2(SpecialItem2)
   , IdAttachments(IdAttachments)
   , Transformation(Transformation)
   , Purification(Purification)
@@ -18,7 +17,6 @@ module ACME.PreCure.Index.Types
   , mkTransformee
   , mkTransformedGroup
   , mkSpecialItem
-  , mkSpecialItem2
   , mkIA
   , mkTransformation
   , mkPurification
@@ -85,29 +83,15 @@ mkTransformedGroup = TransformedGroup
 
 data SpecialItem =
   SpecialItem
-    { specialItemId          :: String
-    , specialItemNameEn      :: String
-    , specialItemNameJa      :: String
-    , specialItemAttachments :: [String]
+    { specialItemId     :: String
+    , specialItemNameEn :: String
+    , specialItemNameJa :: String
     } deriving (Eq, Show, Data)
 
 $(deriveToJsonWithoutTypeNamePrefix ''SpecialItem)
 
-mkSpecialItem :: String -> String -> [String] -> SpecialItem
+mkSpecialItem :: String -> String -> SpecialItem
 mkSpecialItem ne = SpecialItem (typeNamify ne) ne
-
-
-data SpecialItem2 =
-  SpecialItem2
-    { specialItem2Id     :: String
-    , specialItem2NameEn :: String
-    , specialItem2NameJa :: String
-    } deriving (Eq, Show, Data)
-
-$(deriveToJsonWithoutTypeNamePrefix ''SpecialItem2)
-
-mkSpecialItem2 :: String -> String -> SpecialItem2
-mkSpecialItem2 ne = SpecialItem2 (typeNamify ne) ne
 
 
 data IdAttachments =
@@ -174,7 +158,6 @@ data Index =
     , indexTransformees         :: [Transformee]
     , indexTransformedGroups    :: [TransformedGroup]
     , indexSpecialItems         :: [SpecialItem]
-    , indexSpecialItems2        :: [SpecialItem2]
     , indexTransformations      :: [Transformation]
     , indexPurifications        :: [Purification]
     , indexNonItemPurifications :: [NonItemPurification]
@@ -187,7 +170,6 @@ mkIndex
   -> [Transformee]
   -> [TransformedGroup]
   -> [SpecialItem]
-  -> [SpecialItem2]
   -> [Transformation]
   -> [Purification]
   -> [NonItemPurification]

@@ -20,10 +20,10 @@ $(declareTransformees transformees)
 $(declareTransformedGroups transformedGroups)
 
 {-# ANN module specialItems #-}
-$(declareSpecialItems2 specialItems)
+$(declareSpecialItems specialItems)
 
 {-# ANN module transformations #-}
-$(declareTransformations2 transformations)
+$(declareTransformations transformations)
 
 {-# ANN module purifications #-}
-$(declarePurifications2 purifications)
+$(declarePurifications purifications)

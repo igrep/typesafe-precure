@@ -26,7 +26,7 @@ transformees =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Feeling To Be PreCure" "プリキュアになりたいという気持ち" []
+  [ mkSpecialItem "Feeling To Be PreCure" "プリキュアになりたいという気持ち"
   ]
 
 

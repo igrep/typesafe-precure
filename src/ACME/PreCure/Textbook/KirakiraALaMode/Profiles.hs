@@ -3,7 +3,7 @@
 
 module ACME.PreCure.Textbook.KirakiraALaMode.Profiles where
 
-import           Data.String (IsString)
+import           Data.String              (IsString)
 
 import           ACME.PreCure.Index.Types
 
@@ -58,24 +58,24 @@ aLaModeStyleEn = "A La Mode Style"
 
 specialItemsKirakiraALaMode :: [SpecialItem]
 specialItemsKirakiraALaMode =
-  [ mkSpecialItem "Sweets Pact"        "スイーツパクト"       ["Animal Sweets"]
-  , mkSpecialItem "Rabbit Shortcake"   "うさぎショートケーキ" []
-  , mkSpecialItem "Squirrel Pudding"   "りすプリン"           []
-  , mkSpecialItem "Lion Ice"           "らいおんアイス"       []
-  , mkSpecialItem "Cat Macaron"        "ねこマカロン"         []
-  , mkSpecialItem "Dog Chocolate"      "いぬチョコレート"     []
-  , mkSpecialItem "Pegasus Parfait"    "ペガサスパフェ"       []
-  , mkSpecialItem "Pekorin Donut"      "ペコリンドーナツ"     []
-  , mkSpecialItem "Candy Rod"          "キャンディロッド"     []
-  , mkSpecialItem "Rainbow Ribbon"     "レインボーリボン"     []
-  , mkSpecialItem "Kirakiraru Creamer" "キラキラルクリーマー" ["Crystal Animal"]
-  , mkSpecialItem "Crystal Animal Rabbit"   "クリスタルアニマルうさぎ"   []
-  , mkSpecialItem "Crystal Animal Squirrel" "クリスタルアニマルりす"     []
-  , mkSpecialItem "Crystal Animal Lion"     "クリスタルアニマルらいおん" []
-  , mkSpecialItem "Crystal Animal Cat"      "クリスタルアニマルねこ"     []
-  , mkSpecialItem "Crystal Animal Dog"      "クリスタルアニマルいぬ"     []
-  , mkSpecialItem "Crystal Animal Pegasus"  "クリスタルアニマルペガサス" []
-  , mkSpecialItem "SweetsCastle" "スイーツキャッスル" []
+  [ mkSpecialItem "Sweets Pact"        "スイーツパクト"
+  , mkSpecialItem "Rabbit Shortcake"   "うさぎショートケーキ"
+  , mkSpecialItem "Squirrel Pudding"   "りすプリン"
+  , mkSpecialItem "Lion Ice"           "らいおんアイス"
+  , mkSpecialItem "Cat Macaron"        "ねこマカロン"
+  , mkSpecialItem "Dog Chocolate"      "いぬチョコレート"
+  , mkSpecialItem "Pegasus Parfait"    "ペガサスパフェ"
+  , mkSpecialItem "Pekorin Donut"      "ペコリンドーナツ"
+  , mkSpecialItem "Candy Rod"          "キャンディロッド"
+  , mkSpecialItem "Rainbow Ribbon"     "レインボーリボン"
+  , mkSpecialItem "Kirakiraru Creamer" "キラキラルクリーマー"
+  , mkSpecialItem "Crystal Animal Rabbit"   "クリスタルアニマルうさぎ"
+  , mkSpecialItem "Crystal Animal Squirrel" "クリスタルアニマルりす"
+  , mkSpecialItem "Crystal Animal Lion"     "クリスタルアニマルらいおん"
+  , mkSpecialItem "Crystal Animal Cat"      "クリスタルアニマルねこ"
+  , mkSpecialItem "Crystal Animal Dog"      "クリスタルアニマルいぬ"
+  , mkSpecialItem "Crystal Animal Pegasus"  "クリスタルアニマルペガサス"
+  , mkSpecialItem "SweetsCastle" "スイーツキャッスル"
   ]
 
 

@@ -40,9 +40,9 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Card Commune Mepple" "カードコミューン（メップル）" []
-  , mkSpecialItem "Card Commune Mipple" "カードコミューン（ミップル）" []
-  , mkSpecialItem "Rainbow Bracelets" "レインボーブレス" []
+  [ mkSpecialItem "Card Commune Mepple" "カードコミューン（メップル）"
+  , mkSpecialItem "Card Commune Mipple" "カードコミューン（ミップル）"
+  , mkSpecialItem "Rainbow Bracelets" "レインボーブレス"
   ]
 
 

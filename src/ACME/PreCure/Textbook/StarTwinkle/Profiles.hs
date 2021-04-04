@@ -92,29 +92,29 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Star Color Pendant" "スターカラーペンダント" ["Star Color Pen"]
-  , mkSpecialItem "Star Color Pen Cure Star"   "スターカラーペン キュアスター" []
-  , mkSpecialItem "Star Color Pen Cure Milky"  "スターカラーペン キュアミルキー" []
-  , mkSpecialItem "Star Color Pen Cure Soleil" "スターカラーペン キュアソレイユ" []
-  , mkSpecialItem "Star Color Pen Cure Selene" "スターカラーペン キュアセレーネ" []
-  , mkSpecialItem "Star Color Pen Cure Cosmo"  "スターカラーペン キュアコスモ" []
-  , mkSpecialItem "Star Color Pen Taurus"      "スターカラーペン おうし座" []
-  , mkSpecialItem "Star Color Pen Leo"         "スターカラーペン しし座" []
-  , mkSpecialItem "Star Color Pen Libra"       "スターカラーペン てんびん座" []
-  , mkSpecialItem "Star Color Pen Scorpius"    "スターカラーペン さそり座" []
-  , mkSpecialItem "Star Color Pen Capricorn"   "スターカラーペン やぎ座" []
-  , mkSpecialItem "Star Color Pen Scorpio"     "スターカラーペン さそり座" []
-  , mkSpecialItem "Star Color Pen Sagittarius" "スターカラーペン いて座" []
-  , mkSpecialItem "Star Color Pen Virgo"       "スターカラーペン おとめ座" []
-  , mkSpecialItem "Star Color Pen Gemini"      "スターカラーペン ふたご座" []
-  , mkSpecialItem "Star Color Pen Aries"       "スターカラーペン おひつじ座" []
-  , mkSpecialItem "Star Color Pen Aquarius"    "スターカラーペン みずがめ座" []
+  [ mkSpecialItem "Star Color Pendant" "スターカラーペンダント"
+  , mkSpecialItem "Star Color Pen Cure Star"   "スターカラーペン キュアスター"
+  , mkSpecialItem "Star Color Pen Cure Milky"  "スターカラーペン キュアミルキー"
+  , mkSpecialItem "Star Color Pen Cure Soleil" "スターカラーペン キュアソレイユ"
+  , mkSpecialItem "Star Color Pen Cure Selene" "スターカラーペン キュアセレーネ"
+  , mkSpecialItem "Star Color Pen Cure Cosmo"  "スターカラーペン キュアコスモ"
+  , mkSpecialItem "Star Color Pen Taurus"      "スターカラーペン おうし座"
+  , mkSpecialItem "Star Color Pen Leo"         "スターカラーペン しし座"
+  , mkSpecialItem "Star Color Pen Libra"       "スターカラーペン てんびん座"
+  , mkSpecialItem "Star Color Pen Scorpius"    "スターカラーペン さそり座"
+  , mkSpecialItem "Star Color Pen Capricorn"   "スターカラーペン やぎ座"
+  , mkSpecialItem "Star Color Pen Scorpio"     "スターカラーペン さそり座"
+  , mkSpecialItem "Star Color Pen Sagittarius" "スターカラーペン いて座"
+  , mkSpecialItem "Star Color Pen Virgo"       "スターカラーペン おとめ座"
+  , mkSpecialItem "Star Color Pen Gemini"      "スターカラーペン ふたご座"
+  , mkSpecialItem "Star Color Pen Aries"       "スターカラーペン おひつじ座"
+  , mkSpecialItem "Star Color Pen Aquarius"    "スターカラーペン みずがめ座"
 
-  , mkSpecialItem "Twinkle Stick" "トゥインクルステッキ" []
+  , mkSpecialItem "Twinkle Stick" "トゥインクルステッキ"
 
-  , mkSpecialItem "Rainbow Perfume" "レインボーパフューム" ["Star Color Pen"]
+  , mkSpecialItem "Rainbow Perfume" "レインボーパフューム"
 
-  , mkSpecialItem "Shiny Twinkle Pen" "シャイニートゥインクルペン" []
+  , mkSpecialItem "Shiny Twinkle Pen" "シャイニートゥインクルペン"
   ]
 
 transformations :: [Transformation]

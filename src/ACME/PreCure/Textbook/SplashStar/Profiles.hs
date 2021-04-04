@@ -55,10 +55,10 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Mix Commune Flappy" "ミックスコミューン（フラッピ）" []
-  , mkSpecialItem "Mix Commune Choppy" "ミックスコミューン（チョッピ）"  []
-  , mkSpecialItem "Crystal Commune Flappy" "クリスタルコミューン（フラッピ）"  []
-  , mkSpecialItem "Crystal Commune Choppy" "クリスタルコミューン（チョッピ）"   []
+  [ mkSpecialItem "Mix Commune Flappy" "ミックスコミューン（フラッピ）"
+  , mkSpecialItem "Mix Commune Choppy" "ミックスコミューン（チョッピ）"
+  , mkSpecialItem "Crystal Commune Flappy" "クリスタルコミューン（フラッピ）"
+  , mkSpecialItem "Crystal Commune Choppy" "クリスタルコミューン（チョッピ）"
   ]
 
 

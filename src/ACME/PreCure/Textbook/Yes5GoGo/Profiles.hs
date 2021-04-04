@@ -33,14 +33,14 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "CureMo" "キュアモ" []
-  , mkSpecialItem "Milky Palette" "ミルキィパレット" []
-  , mkSpecialItem "Crystal Fleuret" "クリスタル・フルーレ" []
-  , mkSpecialItem "Fire Fleuret" "ファイヤー・フルーレ" []
-  , mkSpecialItem "Shining Fleuret" "シャイニング・フルーレ" []
-  , mkSpecialItem "Protect Fleuret" "プロテクト・フルーレ" []
-  , mkSpecialItem "Tornado Fleuret" "トルネード・フルーレ" []
-  , mkSpecialItem "Milky Mirror" "ミルキィミラー" []
+  [ mkSpecialItem "CureMo" "キュアモ"
+  , mkSpecialItem "Milky Palette" "ミルキィパレット"
+  , mkSpecialItem "Crystal Fleuret" "クリスタル・フルーレ"
+  , mkSpecialItem "Fire Fleuret" "ファイヤー・フルーレ"
+  , mkSpecialItem "Shining Fleuret" "シャイニング・フルーレ"
+  , mkSpecialItem "Protect Fleuret" "プロテクト・フルーレ"
+  , mkSpecialItem "Tornado Fleuret" "トルネード・フルーレ"
+  , mkSpecialItem "Milky Mirror" "ミルキィミラー"
   ]
 
 

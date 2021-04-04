@@ -180,21 +180,21 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Mofurun" "モフルン" ["Linkle Stone"]
-  , mkSpecialItem "Linkle Smarthon" "リンクルスマホン" ["Linkle Stone"]
-  , mkSpecialItem "Rainbow Carriage" "レインボーキャリッジ" ["Linkle Stone", "Mofurun"]
-  , mkSpecialItem "Precious Brace" "プレシャスブレス" []
-  , mkSpecialItem "Miracle Mofurun Light" "ミラクルモフルンライト" []
-  , mkSpecialItem "Linkle Stone Dia" "リンクルストーン・ダイヤ" []
-  , mkSpecialItem "Linkle Stone Ruby" "リンクルストーン・ルビー"  []
-  , mkSpecialItem "Linkle Stone Sapphire" "リンクルストーン・サファイア"  []
-  , mkSpecialItem "Linkle Stone Topaz" "リンクルストーン・トパーズ"  []
-  , mkSpecialItem "Linkle Stone Emerald" "リンクルストーン・エメラルド"  []
-  , mkSpecialItem "Linkle Stone Alexandrite" "リンクルストーン・アレキサンドライト"  []
-  , mkSpecialItem "Mofurun Linkle Stone" "モフルンリンクルストーン"  []
-  , mkSpecialItem "Heartful Linkle Stone" "ハートフルリンクルストーン" []
-  , mkSpecialItem "Linkle Stick" "リンクルステッキ" ["Linkle Stone"]
-  , mkSpecialItem "Flower Echo Wand" "フラワーエコーワンド" ["Linkle Stone"]
+  [ mkSpecialItem "Mofurun" "モフルン"
+  , mkSpecialItem "Linkle Smarthon" "リンクルスマホン"
+  , mkSpecialItem "Rainbow Carriage" "レインボーキャリッジ"
+  , mkSpecialItem "Precious Brace" "プレシャスブレス"
+  , mkSpecialItem "Miracle Mofurun Light" "ミラクルモフルンライト"
+  , mkSpecialItem "Linkle Stone Dia" "リンクルストーン・ダイヤ"
+  , mkSpecialItem "Linkle Stone Ruby" "リンクルストーン・ルビー"
+  , mkSpecialItem "Linkle Stone Sapphire" "リンクルストーン・サファイア"
+  , mkSpecialItem "Linkle Stone Topaz" "リンクルストーン・トパーズ"
+  , mkSpecialItem "Linkle Stone Emerald" "リンクルストーン・エメラルド"
+  , mkSpecialItem "Linkle Stone Alexandrite" "リンクルストーン・アレキサンドライト"
+  , mkSpecialItem "Mofurun Linkle Stone" "モフルンリンクルストーン"
+  , mkSpecialItem "Heartful Linkle Stone" "ハートフルリンクルストーン"
+  , mkSpecialItem "Linkle Stick" "リンクルステッキ"
+  , mkSpecialItem "Flower Echo Wand" "フラワーエコーワンド"
   ]
 
 

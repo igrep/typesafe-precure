@@ -56,19 +56,19 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Cure Modules" "キュアモジューレ" ["FairyTone"]
-  , mkSpecialItem "Dory" "ドリー"   []
-  , mkSpecialItem "Rery" "レリー"   []
-  , mkSpecialItem "Miry" "ミリー"   []
-  , mkSpecialItem "Fary" "ファリー" []
-  , mkSpecialItem "Sory" "ソリー"   []
-  , mkSpecialItem "Lary" "ラリー"   []
-  , mkSpecialItem "Tiry" "シリー"   []
-  , mkSpecialItem "Dodory" "ドドリー" []
-  , mkSpecialItem "Miracle Belltier" "ミラクルベルティエ"  ["Miry"]
-  , mkSpecialItem "Fantastic Belltier" "ファンタスティックベルティエ" ["Fary"]
-  , mkSpecialItem "Love Guitar Rod" "ラブギターロッド" ["Sory"]
-  , mkSpecialItem "Healing Chest" "ヒーリングチェスト" []
+  [ mkSpecialItem "Cure Modules" "キュアモジューレ"
+  , mkSpecialItem "Dory" "ドリー"
+  , mkSpecialItem "Rery" "レリー"
+  , mkSpecialItem "Miry" "ミリー"
+  , mkSpecialItem "Fary" "ファリー"
+  , mkSpecialItem "Sory" "ソリー"
+  , mkSpecialItem "Lary" "ラリー"
+  , mkSpecialItem "Tiry" "シリー"
+  , mkSpecialItem "Dodory" "ドドリー"
+  , mkSpecialItem "Miracle Belltier" "ミラクルベルティエ"
+  , mkSpecialItem "Fantastic Belltier" "ファンタスティックベルティエ"
+  , mkSpecialItem "Love Guitar Rod" "ラブギターロッド"
+  , mkSpecialItem "Healing Chest" "ヒーリングチェスト"
   ]
 
 

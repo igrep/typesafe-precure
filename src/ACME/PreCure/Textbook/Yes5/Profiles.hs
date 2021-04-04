@@ -64,12 +64,12 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Pinky Catch" "ピンキーキャッチュ" []
-  , mkSpecialItem "Dream Torch" "ドリーム・トーチ" []
-  , mkSpecialItem "Rouge Tact" "ルージュ・タクト" []
-  , mkSpecialItem "Lemonade Castanet" "レモネード・カスタネット" []
-  , mkSpecialItem "Mint Leaf" "ミント・リーフ" []
-  , mkSpecialItem "Aqua Ribbon" "アクア・リボン" []
+  [ mkSpecialItem "Pinky Catch" "ピンキーキャッチュ"
+  , mkSpecialItem "Dream Torch" "ドリーム・トーチ"
+  , mkSpecialItem "Rouge Tact" "ルージュ・タクト"
+  , mkSpecialItem "Lemonade Castanet" "レモネード・カスタネット"
+  , mkSpecialItem "Mint Leaf" "ミント・リーフ"
+  , mkSpecialItem "Aqua Ribbon" "アクア・リボン"
   ]
 
 

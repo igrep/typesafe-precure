@@ -40,7 +40,6 @@ writeCureIndexJson =
             <*> collectAnnotationsFromEachSeriesModules
             <*> collectAnnotationsFromEachSeriesModules
             <*> collectAnnotationsFromEachSeriesModules
-            <*> collectAnnotationsFromEachSeriesModules
         runIO $ ByteString.writeFile "gen/cure-index.json" $ encode index
         runIO $ ByteString.writeFile "gen/pretty-cure-index.json" $ encodePretty index
         tupE []

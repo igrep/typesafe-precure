@@ -2,1257 +2,986 @@
     "specialItems": [
         {
             "nameEn": "Lovely Commune Sharuru",
-            "attachments": [
-                "Cure Loveads"
-            ],
             "nameJa": "ラブリーコミューン（シャルル）",
             "id": "LovelyCommuneSharuru"
         },
         {
             "nameEn": "Lovely Commune Raquel",
-            "attachments": [
-                "Cure Loveads"
-            ],
             "nameJa": "ラブリーコミューン（ラケル）",
             "id": "LovelyCommuneRaquel"
         },
         {
             "nameEn": "Lovely Commune Lance",
-            "attachments": [
-                "Cure Loveads"
-            ],
             "nameJa": "ラブリーコミューン（ランス）",
             "id": "LovelyCommuneLance"
         },
         {
             "nameEn": "Lovely Commune Davi",
-            "attachments": [
-                "Cure Loveads"
-            ],
             "nameJa": "ラブリーコミューン（ダビィ）",
             "id": "LovelyCommuneDavi"
         },
         {
             "nameEn": "Love Eyes Palette",
-            "attachments": [
-                "Cure Loveads"
-            ],
             "nameJa": "ラブアイズパレット",
             "id": "LoveEyesPalette"
         },
         {
             "nameEn": "Cure Loveads",
-            "attachments": [],
             "nameJa": "キュアラビーズ",
             "id": "CureLoveads"
         },
         {
             "nameEn": "Love Kiss Rouge",
-            "attachments": [],
             "nameJa": "ラブキッスルージュ",
             "id": "LoveKissRouge"
         },
         {
             "nameEn": "MagicalLovely Harp",
-            "attachments": [
-                "Cure Loveads"
-            ],
             "nameJa": "マジカルラブリーハープ",
             "id": "MagicalLovelyHarp"
         },
         {
             "nameEn": "Card Commune Mepple",
-            "attachments": [],
             "nameJa": "カードコミューン（メップル）",
             "id": "CardCommuneMepple"
         },
         {
             "nameEn": "Card Commune Mipple",
-            "attachments": [],
             "nameJa": "カードコミューン（ミップル）",
             "id": "CardCommuneMipple"
         },
         {
             "nameEn": "Rainbow Bracelets",
-            "attachments": [],
             "nameJa": "レインボーブレス",
             "id": "RainbowBracelets"
         },
         {
             "nameEn": "Linkrun",
-            "attachments": [],
             "nameJa": "リンクルン",
             "id": "Linkrun"
         },
         {
             "nameEn": "CureStickPeachRod",
-            "attachments": [],
             "nameJa": "キュアスティック・ピーチロッド",
             "id": "CureStickPeachRod"
         },
         {
             "nameEn": "CureStickBerrySword",
-            "attachments": [],
             "nameJa": "キュアスティック・ベリーソード",
             "id": "CureStickBerrySword"
         },
         {
             "nameEn": "CureStickPineFlute",
-            "attachments": [],
             "nameJa": "キュアスティック・パインフルート",
             "id": "CureStickPineFlute"
         },
         {
             "nameEn": "PassionHarp",
-            "attachments": [],
             "nameJa": "パッションハープ",
             "id": "PassionHarp"
         },
         {
             "nameEn": "CloverBox",
-            "attachments": [],
             "nameJa": "クローバーボックス",
             "id": "CloverBox"
         },
         {
             "nameEn": "Princess Perfume",
-            "attachments": [
-                "DressUpKey"
-            ],
             "nameJa": "プリンセスパフューム",
             "id": "PrincessPerfume"
         },
         {
             "nameEn": "Crystal Princess Rod",
-            "attachments": [
-                "DressUpKey"
-            ],
             "nameJa": "クリスタルプリンセスロッド",
             "id": "CrystalPrincessRod"
         },
         {
             "nameEn": "Scarlet Violin",
-            "attachments": [
-                "DressUpKey"
-            ],
             "nameJa": "スカーレットバイオリン",
             "id": "ScarletViolin"
         },
         {
             "nameEn": "Music Princess Palace",
-            "attachments": [
-                "DressUpKey"
-            ],
             "nameJa": "ミュージックプリンセスパレス",
             "id": "MusicPrincessPalace"
         },
         {
             "nameEn": "Dress Up Key Flora",
-            "attachments": [],
             "nameJa": "ドレスアップキー・フローラ",
             "id": "DressUpKeyFlora"
         },
         {
             "nameEn": "Dress Up Key Rose",
-            "attachments": [],
             "nameJa": "ドレスアップキー・ローズ",
             "id": "DressUpKeyRose"
         },
         {
             "nameEn": "Dress Up Key Lily",
-            "attachments": [],
             "nameJa": "ドレスアップキー・リリィ",
             "id": "DressUpKeyLily"
         },
         {
             "nameEn": "Dress Up Key Sakura",
-            "attachments": [],
             "nameJa": "ドレスアップキー・サクラ",
             "id": "DressUpKeySakura"
         },
         {
             "nameEn": "Dress Up Key Mermaid",
-            "attachments": [],
             "nameJa": "ドレスアップキー・マーメイド",
             "id": "DressUpKeyMermaid"
         },
         {
             "nameEn": "Dress Up Key Ice",
-            "attachments": [],
             "nameJa": "ドレスアップキー・アイス",
             "id": "DressUpKeyIce"
         },
         {
             "nameEn": "Dress Up Key Bubble",
-            "attachments": [],
             "nameJa": "ドレスアップキー・バブル",
             "id": "DressUpKeyBubble"
         },
         {
             "nameEn": "Dress Up Key Sango",
-            "attachments": [],
             "nameJa": "ドレスアップキー・サンゴ",
             "id": "DressUpKeySango"
         },
         {
             "nameEn": "Dress Up Key Twinkle",
-            "attachments": [],
             "nameJa": "ドレスアップキー・トゥインクル",
             "id": "DressUpKeyTwinkle"
         },
         {
             "nameEn": "Dress Up Key Luna",
-            "attachments": [],
             "nameJa": "ドレスアップキー・ルナ",
             "id": "DressUpKeyLuna"
         },
         {
             "nameEn": "Dress Up Key ShootingStar",
-            "attachments": [],
             "nameJa": "ドレスアップキー・シューティングスター",
             "id": "DressUpKeyShootingStar"
         },
         {
             "nameEn": "Dress Up Key Ginga",
-            "attachments": [],
             "nameJa": "ドレスアップキー・ギンガ",
             "id": "DressUpKeyGinga"
         },
         {
             "nameEn": "Dress Up Key Scarlet",
-            "attachments": [],
             "nameJa": "ドレスアップキー・スカーレット",
             "id": "DressUpKeyScarlet"
         },
         {
             "nameEn": "Dress Up Key Phoenix",
-            "attachments": [],
             "nameJa": "ドレスアップキー・フェニックス",
             "id": "DressUpKeyPhoenix"
         },
         {
             "nameEn": "Dress Up Key Hanabi",
-            "attachments": [],
             "nameJa": "ドレスアップキー・ハナビ",
             "id": "DressUpKeyHanabi"
         },
         {
             "nameEn": "Dress Up Key Sun",
-            "attachments": [],
             "nameJa": "ドレスアップキー・サン",
             "id": "DressUpKeySun"
         },
         {
             "nameEn": "Royal Dress Up Key",
-            "attachments": [],
             "nameJa": "ロイヤルドレスアップキー",
             "id": "RoyalDressUpKey"
         },
         {
             "nameEn": "PreChan Mirror",
-            "attachments": [
-                "PreCard"
-            ],
             "nameJa": "プリチェンミラー",
             "id": "PreChanMirror"
         },
         {
             "nameEn": "Fortune Piano",
-            "attachments": [
-                "PreCard"
-            ],
             "nameJa": "フォーチュンピアノ",
             "id": "FortunePiano"
         },
         {
             "nameEn": "PreCard Lovely",
-            "attachments": [],
             "nameJa": "プリカード（ラブリー）",
             "id": "PreCardLovely"
         },
         {
             "nameEn": "PreCard Princess",
-            "attachments": [],
             "nameJa": "プリカード（プリンセス）",
             "id": "PreCardPrincess"
         },
         {
             "nameEn": "PreCard Honey",
-            "attachments": [],
             "nameJa": "プリカード（ハニー）",
             "id": "PreCardHoney"
         },
         {
             "nameEn": "PreCard Fortune",
-            "attachments": [],
             "nameJa": "プリカード（フォーチュン）",
             "id": "PreCardFortune"
         },
         {
             "nameEn": "PreCard Lovely Innocent Form",
-            "attachments": [],
             "nameJa": "プリカード（ラブリー：イノセントフォーム）",
             "id": "PreCardLovelyInnocentForm"
         },
         {
             "nameEn": "PreCard Princess Innocent Form",
-            "attachments": [],
             "nameJa": "プリカード（プリンセス：イノセントフォーム）",
             "id": "PreCardPrincessInnocentForm"
         },
         {
             "nameEn": "PreCard Honey Innocent Form",
-            "attachments": [],
             "nameJa": "プリカード（ハニー：イノセントフォーム）",
             "id": "PreCardHoneyInnocentForm"
         },
         {
             "nameEn": "PreCard Fortune Innocent Form",
-            "attachments": [],
             "nameJa": "プリカード（フォーチュン：イノセントフォーム）",
             "id": "PreCardFortuneInnocentForm"
         },
         {
             "nameEn": "Love Pre Brace",
-            "attachments": [],
             "nameJa": "ラブプリブレス",
             "id": "LovePreBrace"
         },
         {
             "nameEn": "Triple Dance Honey Baton",
-            "attachments": [],
             "nameJa": "トリプルダンスハニーバトン",
             "id": "TripleDanceHoneyBaton"
         },
         {
             "nameEn": "Fortune Tambourine",
-            "attachments": [],
             "nameJa": "フォーチュンタンバリン",
             "id": "FortuneTambourine"
         },
         {
             "nameEn": "Shining Make Dresser",
-            "attachments": [],
             "nameJa": "シャイニングメークドレッサー",
             "id": "ShiningMakeDresser"
         },
         {
             "nameEn": "Innocent Harmony Mic",
-            "attachments": [],
             "nameJa": "イノセントハーモニーマイク",
             "id": "InnocentHarmonyMic"
         },
         {
             "nameEn": "Healing Stick",
-            "attachments": [
-                "Healing Animal",
-                "Element Bottle"
-            ],
             "nameJa": "ヒーリングステッキ",
             "id": "HealingStick"
         },
         {
             "nameEn": "Earth Windy Harp",
-            "attachments": [],
             "nameJa": "アースウィンディハープ",
             "id": "EarthWindyHarp"
         },
         {
             "nameEn": "Rabirin",
-            "attachments": [],
             "nameJa": "ラビリン",
             "id": "Rabirin"
         },
         {
             "nameEn": "Pegitan",
-            "attachments": [],
             "nameJa": "ペギタン",
             "id": "Pegitan"
         },
         {
             "nameEn": "Nyatoran",
-            "attachments": [],
             "nameJa": "ニャトラン",
             "id": "Nyatoran"
         },
         {
             "nameEn": "Latte",
-            "attachments": [
-                "Element Bottle"
-            ],
             "nameJa": "ラテ",
             "id": "Latte"
         },
         {
             "nameEn": "Element Bottle Of Flower",
-            "attachments": [],
             "nameJa": "花のエレメントボトル",
             "id": "ElementBottleOfFlower"
         },
         {
             "nameEn": "Element Bottle Of Water",
-            "attachments": [],
             "nameJa": "水のエレメントボトル",
             "id": "ElementBottleOfWater"
         },
         {
             "nameEn": "Element Bottle Of Light",
-            "attachments": [],
             "nameJa": "光のエレメントボトル",
             "id": "ElementBottleOfLight"
         },
         {
+            "nameEn": "Element Bottle Of Wind",
+            "nameJa": "風のエレメントボトル",
+            "id": "ElementBottleOfWind"
+        },
+        {
             "nameEn": "Element Bottle Of Fruit",
-            "attachments": [],
             "nameJa": "実りのエレメントボトル",
             "id": "ElementBottleOfFruit"
         },
         {
             "nameEn": "Element Bottle Of Ice",
-            "attachments": [],
             "nameJa": "氷のエレメントボトル",
             "id": "ElementBottleOfIce"
         },
         {
             "nameEn": "Element Bottle Of Lightning",
-            "attachments": [],
             "nameJa": "雷のエレメントボトル",
             "id": "ElementBottleOfLightning"
         },
         {
+            "nameEn": "Element Bottle Of Air",
+            "nameJa": "空気のエレメントボトル",
+            "id": "ElementBottleOfAir"
+        },
+        {
             "nameEn": "Element Bottle Of Leaf",
-            "attachments": [],
             "nameJa": "葉っぱのエレメントボトル",
             "id": "ElementBottleOfLeaf"
         },
         {
             "nameEn": "Element Bottle Of Rain",
-            "attachments": [],
             "nameJa": "雨のエレメントボトル",
             "id": "ElementBottleOfRain"
         },
         {
             "nameEn": "Element Bottle Of Fire",
-            "attachments": [],
             "nameJa": "火のエレメントボトル",
             "id": "ElementBottleOfFire"
         },
         {
-            "nameEn": "Element Bottle Of Wind",
-            "attachments": [],
-            "nameJa": "風のエレメントボトル",
-            "id": "ElementBottleOfWind"
+            "nameEn": "Element Bottle Of Sound",
+            "nameJa": "音のエレメントボトル",
+            "id": "ElementBottleOfSound"
         },
         {
             "nameEn": "Miracle Healing Bottle",
-            "attachments": [],
             "nameJa": "ミラクルヒーリングボトル",
             "id": "MiracleHealingBottle"
         },
         {
             "nameEn": "Special Healin'Good Bottle",
-            "attachments": [],
             "nameJa": "スペシャル・ヒーリングっどボトル",
             "id": "SpecialHealin'GoodBottle"
         },
         {
             "nameEn": "Healin'Good Arrow",
-            "attachments": [
-                "Special Healin'Good Bottle",
-                "Rabirin",
-                "Pegitan",
-                "Nyatoran",
-                "Latte"
-            ],
             "nameJa": "ヒーリングっどアロー",
             "id": "Healin'GoodArrow"
         },
         {
             "nameEn": "Heart Perfume",
-            "attachments": [
-                "PreCureSeed"
-            ],
             "nameJa": "ココロパフューム",
             "id": "HeartPerfume"
         },
         {
             "nameEn": "Shiny Perfume",
-            "attachments": [
-                "PreCureSeed"
-            ],
             "nameJa": "シャイニーパフューム",
             "id": "ShinyPerfume"
         },
         {
             "nameEn": "Heart Pot",
-            "attachments": [
-                "PreCureSeed"
-            ],
             "nameJa": "ココロポット",
             "id": "HeartPot"
         },
         {
             "nameEn": "PreCure Seed",
-            "attachments": [],
             "nameJa": "プリキュアの種",
             "id": "PreCureSeed"
         },
         {
             "nameEn": "Blossom Takt",
-            "attachments": [],
             "nameJa": "ブロッサムタクト",
             "id": "BlossomTakt"
         },
         {
             "nameEn": "Marine Takt",
-            "attachments": [],
             "nameJa": "マリンタクト",
             "id": "MarineTakt"
         },
         {
             "nameEn": "Shiny Tambourine",
-            "attachments": [],
             "nameJa": "シャイニータンバリン",
             "id": "ShinyTambourine"
         },
         {
             "nameEn": "Moon Takt",
-            "attachments": [],
             "nameJa": "ムーンタクト",
             "id": "MoonTakt"
         },
         {
             "nameEn": "Heart Catch Mirage",
-            "attachments": [
-                "SuperPreCureSeed"
-            ],
             "nameJa": "ハートキャッチミラージュ",
             "id": "HeartCatchMirage"
         },
         {
             "nameEn": "Super PreCure Seed",
-            "attachments": [],
             "nameJa": "スーパープリキュアの種",
             "id": "SuperPreCureSeed"
         },
         {
             "nameEn": "Pre Heart",
-            "attachments": [
-                "Mirai Crystal"
-            ],
             "nameJa": "プリハート",
             "id": "PreHeart"
         },
         {
             "nameEn": "Mirai Crystal Pink",
-            "attachments": [],
             "nameJa": "ミライクリスタル・ピンク",
             "id": "MiraiCrystalPink"
         },
         {
             "nameEn": "Mirai Crystal Blue",
-            "attachments": [],
             "nameJa": "ミライクリスタル・ブルー",
             "id": "MiraiCrystalBlue"
         },
         {
             "nameEn": "Mirai Crystal Yellow",
-            "attachments": [],
             "nameJa": "ミライクリスタル・イエロー",
             "id": "MiraiCrystalYellow"
         },
         {
             "nameEn": "Melody Sword",
-            "attachments": [
-                "Mirai Crystal"
-            ],
             "nameJa": "メロディソード",
             "id": "MelodySword"
         },
         {
             "nameEn": "Mirai Crystal Rose",
-            "attachments": [],
             "nameJa": "ミライクリスタル・ローズ",
             "id": "MiraiCrystalRose"
         },
         {
             "nameEn": "Mirai Crystal Navy",
-            "attachments": [],
             "nameJa": "ミライクリスタル・ネイビー",
             "id": "MiraiCrystalNavy"
         },
         {
             "nameEn": "Mirai Crystal Orange",
-            "attachments": [],
             "nameJa": "ミライクリスタル・オレンジ",
             "id": "MiraiCrystalOrange"
         },
         {
             "nameEn": "Mirai Crystal White",
-            "attachments": [],
             "nameJa": "ミライクリスタル・ホワイト",
             "id": "MiraiCrystalWhite"
         },
         {
             "nameEn": "Twin Love Guitar",
-            "attachments": [
-                "Mirai Crystal"
-            ],
             "nameJa": "ツインラブギター",
             "id": "TwinLoveGuitar"
         },
         {
             "nameEn": "Mirai Crystal Red",
-            "attachments": [],
             "nameJa": "ミライクリスタル・レッド",
             "id": "MiraiCrystalRed"
         },
         {
             "nameEn": "Mirai Crystal Purple",
-            "attachments": [],
             "nameJa": "ミライクリスタル・パープル",
             "id": "MiraiCrystalPurple"
         },
         {
             "nameEn": "Mirai Crystal Rouge",
-            "attachments": [],
             "nameJa": "ミライクリスタル・ルージュ",
             "id": "MiraiCrystalRouge"
         },
         {
             "nameEn": "Mirai Crystal Violet",
-            "attachments": [],
             "nameJa": "ミライクリスタル・バイオレット",
             "id": "MiraiCrystalViolet"
         },
         {
             "nameEn": "Mirai Pad",
-            "attachments": [
-                "Mirai Crystal"
-            ],
             "nameJa": "ミライパッド",
             "id": "MiraiPad"
         },
         {
             "nameEn": "Mirai Crystal Cheerful",
-            "attachments": [],
             "nameJa": "ミライクリスタル・チアフル",
             "id": "MiraiCrystalCheerful"
         },
         {
             "nameEn": "Mirai Crystal Mother Heart",
-            "attachments": [],
             "nameJa": "ミライクリスタル・マザーハート",
             "id": "MiraiCrystalMotherHeart"
         },
         {
             "nameEn": "Memorial Cure Clock",
-            "attachments": [
-                "Mirai Pad"
-            ],
             "nameJa": "メモリアルキュアクロック",
             "id": "MemorialCureClock"
         },
         {
             "nameEn": "Miracle By Mirai Brace",
-            "attachments": [],
             "nameJa": "ミライブレスが起こした奇跡",
             "id": "MiracleByMiraiBrace"
         },
         {
             "nameEn": "Sweets Pact",
-            "attachments": [
-                "Animal Sweets"
-            ],
             "nameJa": "スイーツパクト",
             "id": "SweetsPact"
         },
         {
             "nameEn": "Rabbit Shortcake",
-            "attachments": [],
             "nameJa": "うさぎショートケーキ",
             "id": "RabbitShortcake"
         },
         {
             "nameEn": "Squirrel Pudding",
-            "attachments": [],
             "nameJa": "りすプリン",
             "id": "SquirrelPudding"
         },
         {
             "nameEn": "Lion Ice",
-            "attachments": [],
             "nameJa": "らいおんアイス",
             "id": "LionIce"
         },
         {
             "nameEn": "Cat Macaron",
-            "attachments": [],
             "nameJa": "ねこマカロン",
             "id": "CatMacaron"
         },
         {
             "nameEn": "Dog Chocolate",
-            "attachments": [],
             "nameJa": "いぬチョコレート",
             "id": "DogChocolate"
         },
         {
             "nameEn": "Pegasus Parfait",
-            "attachments": [],
             "nameJa": "ペガサスパフェ",
             "id": "PegasusParfait"
         },
         {
             "nameEn": "Pekorin Donut",
-            "attachments": [],
             "nameJa": "ペコリンドーナツ",
             "id": "PekorinDonut"
         },
         {
             "nameEn": "Candy Rod",
-            "attachments": [],
             "nameJa": "キャンディロッド",
             "id": "CandyRod"
         },
         {
             "nameEn": "Rainbow Ribbon",
-            "attachments": [],
             "nameJa": "レインボーリボン",
             "id": "RainbowRibbon"
         },
         {
             "nameEn": "Kirakiraru Creamer",
-            "attachments": [
-                "Crystal Animal"
-            ],
             "nameJa": "キラキラルクリーマー",
             "id": "KirakiraruCreamer"
         },
         {
             "nameEn": "Crystal Animal Rabbit",
-            "attachments": [],
             "nameJa": "クリスタルアニマルうさぎ",
             "id": "CrystalAnimalRabbit"
         },
         {
             "nameEn": "Crystal Animal Squirrel",
-            "attachments": [],
             "nameJa": "クリスタルアニマルりす",
             "id": "CrystalAnimalSquirrel"
         },
         {
             "nameEn": "Crystal Animal Lion",
-            "attachments": [],
             "nameJa": "クリスタルアニマルらいおん",
             "id": "CrystalAnimalLion"
         },
         {
             "nameEn": "Crystal Animal Cat",
-            "attachments": [],
             "nameJa": "クリスタルアニマルねこ",
             "id": "CrystalAnimalCat"
         },
         {
             "nameEn": "Crystal Animal Dog",
-            "attachments": [],
             "nameJa": "クリスタルアニマルいぬ",
             "id": "CrystalAnimalDog"
         },
         {
             "nameEn": "Crystal Animal Pegasus",
-            "attachments": [],
             "nameJa": "クリスタルアニマルペガサス",
             "id": "CrystalAnimalPegasus"
         },
         {
             "nameEn": "SweetsCastle",
-            "attachments": [],
             "nameJa": "スイーツキャッスル",
             "id": "SweetsCastle"
         },
         {
             "nameEn": "Mofurun",
-            "attachments": [
-                "Linkle Stone"
-            ],
             "nameJa": "モフルン",
             "id": "Mofurun"
         },
         {
             "nameEn": "Linkle Smarthon",
-            "attachments": [
-                "Linkle Stone"
-            ],
             "nameJa": "リンクルスマホン",
             "id": "LinkleSmarthon"
         },
         {
             "nameEn": "Rainbow Carriage",
-            "attachments": [
-                "Linkle Stone",
-                "Mofurun"
-            ],
             "nameJa": "レインボーキャリッジ",
             "id": "RainbowCarriage"
         },
         {
             "nameEn": "Precious Brace",
-            "attachments": [],
             "nameJa": "プレシャスブレス",
             "id": "PreciousBrace"
         },
         {
             "nameEn": "Miracle Mofurun Light",
-            "attachments": [],
             "nameJa": "ミラクルモフルンライト",
             "id": "MiracleMofurunLight"
         },
         {
             "nameEn": "Linkle Stone Dia",
-            "attachments": [],
             "nameJa": "リンクルストーン・ダイヤ",
             "id": "LinkleStoneDia"
         },
         {
             "nameEn": "Linkle Stone Ruby",
-            "attachments": [],
             "nameJa": "リンクルストーン・ルビー",
             "id": "LinkleStoneRuby"
         },
         {
             "nameEn": "Linkle Stone Sapphire",
-            "attachments": [],
             "nameJa": "リンクルストーン・サファイア",
             "id": "LinkleStoneSapphire"
         },
         {
             "nameEn": "Linkle Stone Topaz",
-            "attachments": [],
             "nameJa": "リンクルストーン・トパーズ",
             "id": "LinkleStoneTopaz"
         },
         {
             "nameEn": "Linkle Stone Emerald",
-            "attachments": [],
             "nameJa": "リンクルストーン・エメラルド",
             "id": "LinkleStoneEmerald"
         },
         {
             "nameEn": "Linkle Stone Alexandrite",
-            "attachments": [],
             "nameJa": "リンクルストーン・アレキサンドライト",
             "id": "LinkleStoneAlexandrite"
         },
         {
             "nameEn": "Mofurun Linkle Stone",
-            "attachments": [],
             "nameJa": "モフルンリンクルストーン",
             "id": "MofurunLinkleStone"
         },
         {
             "nameEn": "Heartful Linkle Stone",
-            "attachments": [],
             "nameJa": "ハートフルリンクルストーン",
             "id": "HeartfulLinkleStone"
         },
         {
             "nameEn": "Linkle Stick",
-            "attachments": [
-                "Linkle Stone"
-            ],
             "nameJa": "リンクルステッキ",
             "id": "LinkleStick"
         },
         {
             "nameEn": "Flower Echo Wand",
-            "attachments": [
-                "Linkle Stone"
-            ],
             "nameJa": "フラワーエコーワンド",
             "id": "FlowerEchoWand"
         },
         {
             "nameEn": "Heartful Commune Mepple",
-            "attachments": [],
             "nameJa": "ハートフルコミューン（メップル）",
             "id": "HeartfulCommuneMepple"
         },
         {
             "nameEn": "Heartful Commune Mipple",
-            "attachments": [],
             "nameJa": "ハートフルコミューン（ミップル）",
             "id": "HeartfulCommuneMipple"
         },
         {
             "nameEn": "TouchCommune_Porun",
-            "attachments": [],
             "nameJa": "タッチコミューン（ポルン）",
             "id": "TouchCommune_Porun"
         },
         {
             "nameEn": "Sparkle Brace",
-            "attachments": [],
             "nameJa": "スパークルブレス",
             "id": "SparkleBrace"
         },
         {
             "nameEn": "Heartiel Baton",
-            "attachments": [],
             "nameJa": "ハーティエルバトン",
             "id": "HeartielBaton"
         },
         {
             "nameEn": "Feeling To Be PreCure",
-            "attachments": [],
             "nameJa": "プリキュアになりたいという気持ち",
             "id": "FeelingToBePreCure"
         },
         {
             "nameEn": "Smile Pact",
-            "attachments": [
-                "CureDecors"
-            ],
             "nameJa": "スマイルパクト",
             "id": "SmilePact"
         },
         {
             "nameEn": "Cure Decors",
-            "attachments": [],
             "nameJa": "キュアデコル",
             "id": "CureDecors"
         },
         {
             "nameEn": "Princess Candle",
-            "attachments": [
-                "CureDecors"
-            ],
             "nameJa": "プリンセスキャンドル",
             "id": "PrincessCandle"
         },
         {
             "nameEn": "Royal Clock",
-            "attachments": [
-                "CureDecors"
-            ],
             "nameJa": "ロイヤルクロック",
             "id": "RoyalClock"
         },
         {
             "nameEn": "Mix Commune Flappy",
-            "attachments": [],
             "nameJa": "ミックスコミューン（フラッピ）",
             "id": "MixCommuneFlappy"
         },
         {
             "nameEn": "Mix Commune Choppy",
-            "attachments": [],
             "nameJa": "ミックスコミューン（チョッピ）",
             "id": "MixCommuneChoppy"
         },
         {
             "nameEn": "Crystal Commune Flappy",
-            "attachments": [],
             "nameJa": "クリスタルコミューン（フラッピ）",
             "id": "CrystalCommuneFlappy"
         },
         {
             "nameEn": "Crystal Commune Choppy",
-            "attachments": [],
             "nameJa": "クリスタルコミューン（チョッピ）",
             "id": "CrystalCommuneChoppy"
         },
         {
             "nameEn": "Star Color Pendant",
-            "attachments": [
-                "Star Color Pen"
-            ],
             "nameJa": "スターカラーペンダント",
             "id": "StarColorPendant"
         },
         {
             "nameEn": "Star Color Pen Cure Star",
-            "attachments": [],
             "nameJa": "スターカラーペン キュアスター",
             "id": "StarColorPenCureStar"
         },
         {
             "nameEn": "Star Color Pen Cure Milky",
-            "attachments": [],
             "nameJa": "スターカラーペン キュアミルキー",
             "id": "StarColorPenCureMilky"
         },
         {
             "nameEn": "Star Color Pen Cure Soleil",
-            "attachments": [],
             "nameJa": "スターカラーペン キュアソレイユ",
             "id": "StarColorPenCureSoleil"
         },
         {
             "nameEn": "Star Color Pen Cure Selene",
-            "attachments": [],
             "nameJa": "スターカラーペン キュアセレーネ",
             "id": "StarColorPenCureSelene"
         },
         {
             "nameEn": "Star Color Pen Cure Cosmo",
-            "attachments": [],
             "nameJa": "スターカラーペン キュアコスモ",
             "id": "StarColorPenCureCosmo"
         },
         {
             "nameEn": "Star Color Pen Taurus",
-            "attachments": [],
             "nameJa": "スターカラーペン おうし座",
             "id": "StarColorPenTaurus"
         },
         {
             "nameEn": "Star Color Pen Leo",
-            "attachments": [],
             "nameJa": "スターカラーペン しし座",
             "id": "StarColorPenLeo"
         },
         {
             "nameEn": "Star Color Pen Libra",
-            "attachments": [],
             "nameJa": "スターカラーペン てんびん座",
             "id": "StarColorPenLibra"
         },
         {
             "nameEn": "Star Color Pen Scorpius",
-            "attachments": [],
             "nameJa": "スターカラーペン さそり座",
             "id": "StarColorPenScorpius"
         },
         {
             "nameEn": "Star Color Pen Capricorn",
-            "attachments": [],
             "nameJa": "スターカラーペン やぎ座",
             "id": "StarColorPenCapricorn"
         },
         {
             "nameEn": "Star Color Pen Scorpio",
-            "attachments": [],
             "nameJa": "スターカラーペン さそり座",
             "id": "StarColorPenScorpio"
         },
         {
             "nameEn": "Star Color Pen Sagittarius",
-            "attachments": [],
             "nameJa": "スターカラーペン いて座",
             "id": "StarColorPenSagittarius"
         },
         {
             "nameEn": "Star Color Pen Virgo",
-            "attachments": [],
             "nameJa": "スターカラーペン おとめ座",
             "id": "StarColorPenVirgo"
         },
         {
             "nameEn": "Star Color Pen Gemini",
-            "attachments": [],
             "nameJa": "スターカラーペン ふたご座",
             "id": "StarColorPenGemini"
         },
         {
             "nameEn": "Star Color Pen Aries",
-            "attachments": [],
             "nameJa": "スターカラーペン おひつじ座",
             "id": "StarColorPenAries"
         },
         {
             "nameEn": "Star Color Pen Aquarius",
-            "attachments": [],
             "nameJa": "スターカラーペン みずがめ座",
             "id": "StarColorPenAquarius"
         },
         {
             "nameEn": "Twinkle Stick",
-            "attachments": [],
             "nameJa": "トゥインクルステッキ",
             "id": "TwinkleStick"
         },
         {
             "nameEn": "Rainbow Perfume",
-            "attachments": [
-                "Star Color Pen"
-            ],
             "nameJa": "レインボーパフューム",
             "id": "RainbowPerfume"
         },
         {
             "nameEn": "Shiny Twinkle Pen",
-            "attachments": [],
             "nameJa": "シャイニートゥインクルペン",
             "id": "ShinyTwinklePen"
         },
         {
             "nameEn": "Cure Modules",
-            "attachments": [
-                "FairyTone"
-            ],
             "nameJa": "キュアモジューレ",
             "id": "CureModules"
         },
         {
             "nameEn": "Dory",
-            "attachments": [],
             "nameJa": "ドリー",
             "id": "Dory"
         },
         {
             "nameEn": "Rery",
-            "attachments": [],
             "nameJa": "レリー",
             "id": "Rery"
         },
         {
             "nameEn": "Miry",
-            "attachments": [],
             "nameJa": "ミリー",
             "id": "Miry"
         },
         {
             "nameEn": "Fary",
-            "attachments": [],
             "nameJa": "ファリー",
             "id": "Fary"
         },
         {
             "nameEn": "Sory",
-            "attachments": [],
             "nameJa": "ソリー",
             "id": "Sory"
         },
         {
             "nameEn": "Lary",
-            "attachments": [],
             "nameJa": "ラリー",
             "id": "Lary"
         },
         {
             "nameEn": "Tiry",
-            "attachments": [],
             "nameJa": "シリー",
             "id": "Tiry"
         },
         {
             "nameEn": "Dodory",
-            "attachments": [],
             "nameJa": "ドドリー",
             "id": "Dodory"
         },
         {
             "nameEn": "Miracle Belltier",
-            "attachments": [
-                "Miry"
-            ],
             "nameJa": "ミラクルベルティエ",
             "id": "MiracleBelltier"
         },
         {
             "nameEn": "Fantastic Belltier",
-            "attachments": [
-                "Fary"
-            ],
             "nameJa": "ファンタスティックベルティエ",
             "id": "FantasticBelltier"
         },
         {
             "nameEn": "Love Guitar Rod",
-            "attachments": [
-                "Sory"
-            ],
             "nameJa": "ラブギターロッド",
             "id": "LoveGuitarRod"
         },
         {
             "nameEn": "Healing Chest",
-            "attachments": [],
             "nameJa": "ヒーリングチェスト",
             "id": "HealingChest"
         },
         {
             "nameEn": "Pinky Catch",
-            "attachments": [],
             "nameJa": "ピンキーキャッチュ",
             "id": "PinkyCatch"
         },
         {
             "nameEn": "Dream Torch",
-            "attachments": [],
             "nameJa": "ドリーム・トーチ",
             "id": "DreamTorch"
         },
         {
             "nameEn": "Rouge Tact",
-            "attachments": [],
             "nameJa": "ルージュ・タクト",
             "id": "RougeTact"
         },
         {
             "nameEn": "Lemonade Castanet",
-            "attachments": [],
             "nameJa": "レモネード・カスタネット",
             "id": "LemonadeCastanet"
         },
         {
             "nameEn": "Mint Leaf",
-            "attachments": [],
             "nameJa": "ミント・リーフ",
             "id": "MintLeaf"
         },
         {
             "nameEn": "Aqua Ribbon",
-            "attachments": [],
             "nameJa": "アクア・リボン",
             "id": "AquaRibbon"
         },
         {
             "nameEn": "CureMo",
-            "attachments": [],
             "nameJa": "キュアモ",
             "id": "CureMo"
         },
         {
             "nameEn": "Milky Palette",
-            "attachments": [],
             "nameJa": "ミルキィパレット",
             "id": "MilkyPalette"
         },
         {
             "nameEn": "Crystal Fleuret",
-            "attachments": [],
             "nameJa": "クリスタル・フルーレ",
             "id": "CrystalFleuret"
         },
         {
             "nameEn": "Fire Fleuret",
-            "attachments": [],
             "nameJa": "ファイヤー・フルーレ",
             "id": "FireFleuret"
         },
         {
             "nameEn": "Shining Fleuret",
-            "attachments": [],
             "nameJa": "シャイニング・フルーレ",
             "id": "ShiningFleuret"
         },
         {
             "nameEn": "Protect Fleuret",
-            "attachments": [],
             "nameJa": "プロテクト・フルーレ",
             "id": "ProtectFleuret"
         },
         {
             "nameEn": "Tornado Fleuret",
-            "attachments": [],
             "nameJa": "トルネード・フルーレ",
             "id": "TornadoFleuret"
         },
         {
             "nameEn": "Milky Mirror",
-            "attachments": [],
             "nameJa": "ミルキィミラー",
             "id": "MilkyMirror"
         }
@@ -3310,6 +3039,23 @@
             "specialItems": [
                 {
                     "a": [
+                        "ElementBottleOfAir"
+                    ],
+                    "i": "EarthWindyHarp"
+                }
+            ],
+            "purifiers": [
+                "CureEarth"
+            ],
+            "speech": [
+                "空気のエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
                         "Pegitan",
                         "ElementBottleOfIce"
                     ],
@@ -3398,8 +3144,29 @@
         },
         {
             "specialItems": [
-                "EarthWindyHarp",
-                "ElementBottleOfWind"
+                {
+                    "a": [
+                        "ElementBottleOfSound"
+                    ],
+                    "i": "EarthWindyHarp"
+                }
+            ],
+            "purifiers": [
+                "CureEarth"
+            ],
+            "speech": [
+                "音のエレメント！",
+                "はぁーっ！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "ElementBottleOfWind"
+                    ],
+                    "i": "EarthWindyHarp"
+                }
             ],
             "purifiers": [
                 "CureEarth"
@@ -6022,7 +5789,7 @@
                 }
             ],
             "transformees": [
-                "CureSparkle"
+                "CureEarth"
             ],
             "speech": [
                 "（スタート！）",

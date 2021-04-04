@@ -6,11 +6,8 @@ module ACME.PreCure.Types.TH
         , declareTransformees
         , declareTransformedGroups
         , declareSpecialItems
-        , declareSpecialItems2
         , declareTransformations
-        , declareTransformations2
         , declarePurifications
-        , declarePurifications2
         , declareNonItemPurifications
 
         , girlInstance
@@ -28,9 +25,6 @@ module ACME.PreCure.Types.TH
 import           ACME.PreCure.Types
 import qualified ACME.PreCure.Index.Types as Index
 
-import           Data.Char
-                   ( toLower
-                   )
 import           Language.Haskell.TH
                    ( Name
                    , DecQ
@@ -107,31 +101,11 @@ declareTransformees = fmap concat . mapM d
 declareSpecialItems :: [Index.SpecialItem] -> DecsQ
 declareSpecialItems = fmap concat . mapM d
   where
-    d (Index.SpecialItem n _e _j as) = do
-      let aNames = map (firstLower . concat . words) as
-      defineWithTypeVars n aNames
-
-
-declareSpecialItems2 :: [Index.SpecialItem2] -> DecsQ
-declareSpecialItems2 = fmap concat . mapM d
-  where
-    d (Index.SpecialItem2 n _e _j) = defineWithTypeVars n []
+    d (Index.SpecialItem n _e _j) = defineWithTypeVars n []
 
 
 declareTransformations :: [Index.Transformation] -> DecsQ
 declareTransformations = fmap concat . mapM d
-  where
-    d (Index.Transformation tas ias ds s) =
-      transformationInstance
-        (tupleTFromIdAttachments tas)
-        (tupleTFromIdAttachments ias)
-        (tupleTFromList ds)
-        (tupleE ds)
-        s
-
-
-declareTransformations2 :: [Index.Transformation] -> DecsQ
-declareTransformations2 = fmap concat . mapM d
   where
     d (Index.Transformation tas ias ds s) =
       transformationInstance
@@ -144,16 +118,6 @@ declareTransformations2 = fmap concat . mapM d
 
 declarePurifications :: [Index.Purification] -> DecsQ
 declarePurifications = fmap concat . mapM d
-  where
-    d (Index.Purification pas ias s) =
-      purificationInstance
-        (tupleTFromIdAttachments pas)
-        (tupleTFromIdAttachments ias)
-        s
-
-
-declarePurifications2 :: [Index.Purification] -> DecsQ
-declarePurifications2 = fmap concat . mapM d
   where
     d (Index.Purification pas ias s) =
       purificationInstance
@@ -271,8 +235,3 @@ tupleTBy f ns = foldl appT (tupleT (length ns)) (map f ns)
 tupleE :: [String] -> ExpQ
 tupleE [name] = conE $ mkName name
 tupleE names  = tupE $ map (conE . mkName) names
-
-
-firstLower :: String -> String
-firstLower (x:xs) = toLower x : xs
-firstLower _ = error "firstLower: Assertion failed: empty string"
