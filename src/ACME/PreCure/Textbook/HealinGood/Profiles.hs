@@ -91,13 +91,17 @@ specialItems =
   , mkSpecialItem2 "Element Bottle Of Flower"    "花のエレメントボトル"
   , mkSpecialItem2 "Element Bottle Of Water"     "水のエレメントボトル"
   , mkSpecialItem2 "Element Bottle Of Light"     "光のエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Wind"      "風のエレメントボトル"
+
   , mkSpecialItem2 "Element Bottle Of Fruit"     "実りのエレメントボトル"
   , mkSpecialItem2 "Element Bottle Of Ice"       "氷のエレメントボトル"
   , mkSpecialItem2 "Element Bottle Of Lightning" "雷のエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Air"       "空気のエレメントボトル"
+
   , mkSpecialItem2 "Element Bottle Of Leaf"      "葉っぱのエレメントボトル"
   , mkSpecialItem2 "Element Bottle Of Rain"      "雨のエレメントボトル"
   , mkSpecialItem2 "Element Bottle Of Fire"      "火のエレメントボトル"
-  , mkSpecialItem2 "Element Bottle Of Wind"      "風のエレメントボトル"
+  , mkSpecialItem2 "Element Bottle Of Sound"     "音のエレメントボトル"
 
   , mkSpecialItem2 "Miracle Healing Bottle"  "ミラクルヒーリングボトル"
 
@@ -271,6 +275,11 @@ purifications =
       ["実りのエレメント！", "はぁーっ！"]
 
   , mkPurification
+      ["CureEarth"]
+      [mkIA "EarthWindyHarp" ["ElementBottleOfAir"]]
+      ["空気のエレメント！", "はぁーっ！"]
+
+  , mkPurification
       ["CureFontaine"]
       [mkIA "HealingStick" ["Pegitan", "ElementBottleOfIce"]]
       ["氷のエレメント！", "はぁーっ！"]
@@ -297,7 +306,12 @@ purifications =
 
   , mkPurification
       ["CureEarth"]
-      ["EarthWindyHarp", "ElementBottleOfWind"]
+      [mkIA "EarthWindyHarp" ["ElementBottleOfSound"]]
+      ["音のエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureEarth"]
+      [mkIA "EarthWindyHarp" ["ElementBottleOfWind"]]
       [ "アースウィンディハープ！"
       , elementCharge
       , "舞い上がれ、癒やしの風！"
