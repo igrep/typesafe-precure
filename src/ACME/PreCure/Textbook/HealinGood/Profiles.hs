@@ -137,7 +137,7 @@ transformations =
   , mkTransformation
       ["Asumi"]
       ["EarthWindyHarp", mkIA "Latte" ["ElementBottleOfWind"]]
-      ["CureSparkle"]
+      ["CureEarth"]
       ( startPreCureOperation
       ++ ["（エレメントレベル、上昇ラテ！）"]
       ++ cureTouchKyun
