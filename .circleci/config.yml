@@ -1,4 +1,11 @@
-version: 2
+version: 2.1
+
+workflows:
+  build:
+    jobs:
+      - build:
+          context:
+            - org-global
 jobs:
   build:
     # Ref: https://mmhaskell.com/blog/2018/4/25/dockerizing-our-haskell-app
