@@ -4,6 +4,9 @@ jobs:
     # Ref: https://mmhaskell.com/blog/2018/4/25/dockerizing-our-haskell-app
     docker:
     - image: haskell:8.8.4
+      auth:
+        username: '$DOCKERHUB_USERNAME'
+        password: '$DOCKERHUB_PASSWORD'
     steps:
     - run: apt update
     - run: apt-get install locales locales-all -y
