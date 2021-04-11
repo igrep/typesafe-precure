@@ -100,10 +100,10 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Smile Pact" "スマイルパクト" ["CureDecors"]
-  , mkSpecialItem "Cure Decors" "キュアデコル" []
-  , mkSpecialItem "Princess Candle" "プリンセスキャンドル" ["CureDecors"]
-  , mkSpecialItem "Royal Clock" "ロイヤルクロック" ["CureDecors"]
+  [ mkSpecialItem "Smile Pact" "スマイルパクト"
+  , mkSpecialItem "Cure Decors" "キュアデコル"
+  , mkSpecialItem "Princess Candle" "プリンセスキャンドル"
+  , mkSpecialItem "Royal Clock" "ロイヤルクロック"
   ]
 
 
@@ -191,7 +191,6 @@ purifications =
 
 nonItemPurifications :: [NonItemPurification]
 nonItemPurifications =
-  [ 
+  [
   ]
-
 

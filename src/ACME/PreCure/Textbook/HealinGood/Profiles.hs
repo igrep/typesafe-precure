@@ -80,32 +80,33 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Healing Stick" "ヒーリングステッキ" ["Healing Animal", "Element Bottle"]
-  , mkSpecialItem "Earth Windy Harp" "アースウィンディハープ" []
+  [ mkSpecialItem "Healing Stick" "ヒーリングステッキ"
+  , mkSpecialItem "Earth Windy Harp" "アースウィンディハープ"
 
-  , mkSpecialItem "Rabirin"  "ラビリン" []
-  , mkSpecialItem "Pegitan"  "ペギタン" []
-  , mkSpecialItem "Nyatoran" "ニャトラン" []
-  , mkSpecialItem "Latte" "ラテ" ["Element Bottle"]
+  , mkSpecialItem "Rabirin"  "ラビリン"
+  , mkSpecialItem "Pegitan"  "ペギタン"
+  , mkSpecialItem "Nyatoran" "ニャトラン"
+  , mkSpecialItem "Latte" "ラテ"
 
-  , mkSpecialItem "Element Bottle Of Flower"    "花のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Water"     "水のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Light"     "光のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Fruit"     "実りのエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Ice"       "氷のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Lightning" "雷のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Leaf"      "葉っぱのエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Rain"      "雨のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Fire"      "火のエレメントボトル" []
-  , mkSpecialItem "Element Bottle Of Wind"      "風のエレメントボトル" []
+  , mkSpecialItem "Element Bottle Of Flower"    "花のエレメントボトル"
+  , mkSpecialItem "Element Bottle Of Water"     "水のエレメントボトル"
+  , mkSpecialItem "Element Bottle Of Light"     "光のエレメントボトル"
+  , mkSpecialItem "Element Bottle Of Wind"      "風のエレメントボトル"
 
-  , mkSpecialItem "Miracle Healing Bottle"  "ミラクルヒーリングボトル" []
+  , mkSpecialItem "Element Bottle Of Fruit"     "実りのエレメントボトル"
+  , mkSpecialItem "Element Bottle Of Ice"       "氷のエレメントボトル"
+  , mkSpecialItem "Element Bottle Of Lightning" "雷のエレメントボトル"
+  , mkSpecialItem "Element Bottle Of Air"       "空気のエレメントボトル"
 
-  , mkSpecialItem "Special Healin'Good Bottle" "スペシャル・ヒーリングっどボトル" []
+  , mkSpecialItem "Element Bottle Of Leaf"      "葉っぱのエレメントボトル"
+  , mkSpecialItem "Element Bottle Of Rain"      "雨のエレメントボトル"
+  , mkSpecialItem "Element Bottle Of Fire"      "火のエレメントボトル"
+  , mkSpecialItem "Element Bottle Of Sound"     "音のエレメントボトル"
+
+  , mkSpecialItem "Miracle Healing Bottle"  "ミラクルヒーリングボトル"
+
+  , mkSpecialItem "Special Healin'Good Bottle" "スペシャル・ヒーリングっどボトル"
   , mkSpecialItem "Healin'Good Arrow" "ヒーリングっどアロー"
-      [ "Special Healin'Good Bottle"
-      , "Rabirin", "Pegitan", "Nyatoran", "Latte"
-      ]
   ]
 
 transformations :: [Transformation]
@@ -140,7 +141,7 @@ transformations =
   , mkTransformation
       ["Asumi"]
       ["EarthWindyHarp", mkIA "Latte" ["ElementBottleOfWind"]]
-      ["CureSparkle"]
+      ["CureEarth"]
       ( startPreCureOperation
       ++ ["（エレメントレベル、上昇ラテ！）"]
       ++ cureTouchKyun
@@ -274,6 +275,11 @@ purifications =
       ["実りのエレメント！", "はぁーっ！"]
 
   , mkPurification
+      ["CureEarth"]
+      [mkIA "EarthWindyHarp" ["ElementBottleOfAir"]]
+      ["空気のエレメント！", "はぁーっ！"]
+
+  , mkPurification
       ["CureFontaine"]
       [mkIA "HealingStick" ["Pegitan", "ElementBottleOfIce"]]
       ["氷のエレメント！", "はぁーっ！"]
@@ -300,7 +306,12 @@ purifications =
 
   , mkPurification
       ["CureEarth"]
-      ["EarthWindyHarp", "ElementBottleOfWind"]
+      [mkIA "EarthWindyHarp" ["ElementBottleOfSound"]]
+      ["音のエレメント！", "はぁーっ！"]
+
+  , mkPurification
+      ["CureEarth"]
+      [mkIA "EarthWindyHarp" ["ElementBottleOfWind"]]
       [ "アースウィンディハープ！"
       , elementCharge
       , "舞い上がれ、癒やしの風！"

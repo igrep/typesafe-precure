@@ -1,35 +1,20 @@
-{-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TemplateHaskell   #-}
 
 module ACME.PreCure.Index where
 
 
-import           Control.Monad
-                   ( forM
-                   )
-import           Data.Aeson
-                   ( encode
-                   )
-import           Data.Aeson.Encode.Pretty
-                   ( encodePretty
-                   )
-import           Data.Data
-                   ( Data
-                   )
-import qualified Data.ByteString.Lazy as ByteString
-import           Language.Haskell.TH
-                   ( Q
-                   , thisModule
-                   , runIO
-                   , tupE
-                   )
-import           Language.Haskell.TH.Syntax
-                   ( Module
-                   )
+import           Control.Monad              (forM)
+import           Data.Aeson                 (encode)
+import           Data.Aeson.Encode.Pretty   (encodePretty)
+import qualified Data.ByteString.Lazy       as ByteString
+import           Data.Data                  (Data)
+import           Language.Haskell.TH        (Q, runIO, thisModule, tupE)
+import           Language.Haskell.TH.Syntax (Module)
 
-import           ACME.PreCure.Textbook ()
 import           ACME.PreCure.Index.Lib
 import           ACME.PreCure.Index.Types
+import           ACME.PreCure.Textbook      ()
 
 
 writeCureIndexJson :: ()

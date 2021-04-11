@@ -85,21 +85,21 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "PreChan Mirror" "プリチェンミラー" ["PreCard"]
-  , mkSpecialItem "Fortune Piano" "フォーチュンピアノ"  ["PreCard"]
-  , mkSpecialItem "PreCard Lovely" "プリカード（ラブリー）" []
-  , mkSpecialItem "PreCard Princess" "プリカード（プリンセス）"  []
-  , mkSpecialItem "PreCard Honey" "プリカード（ハニー）"   []
-  , mkSpecialItem "PreCard Fortune" "プリカード（フォーチュン）"    []
-  , mkSpecialItem "PreCard Lovely Innocent Form" "プリカード（ラブリー：イノセントフォーム）"    []
-  , mkSpecialItem "PreCard Princess Innocent Form" "プリカード（プリンセス：イノセントフォーム）"     []
-  , mkSpecialItem "PreCard Honey Innocent Form" "プリカード（ハニー：イノセントフォーム）"     []
-  , mkSpecialItem "PreCard Fortune Innocent Form" "プリカード（フォーチュン：イノセントフォーム）"      []
-  , mkSpecialItem "Love Pre Brace" "ラブプリブレス" []
-  , mkSpecialItem "Triple Dance Honey Baton" "トリプルダンスハニーバトン" []
-  , mkSpecialItem "Fortune Tambourine" "フォーチュンタンバリン" []
-  , mkSpecialItem "Shining Make Dresser" "シャイニングメークドレッサー" []
-  , mkSpecialItem "Innocent Harmony Mic" "イノセントハーモニーマイク" []
+  [ mkSpecialItem "PreChan Mirror" "プリチェンミラー"
+  , mkSpecialItem "Fortune Piano" "フォーチュンピアノ"
+  , mkSpecialItem "PreCard Lovely" "プリカード（ラブリー）"
+  , mkSpecialItem "PreCard Princess" "プリカード（プリンセス）"
+  , mkSpecialItem "PreCard Honey" "プリカード（ハニー）"
+  , mkSpecialItem "PreCard Fortune" "プリカード（フォーチュン）"
+  , mkSpecialItem "PreCard Lovely Innocent Form" "プリカード（ラブリー：イノセントフォーム）"
+  , mkSpecialItem "PreCard Princess Innocent Form" "プリカード（プリンセス：イノセントフォーム）"
+  , mkSpecialItem "PreCard Honey Innocent Form" "プリカード（ハニー：イノセントフォーム）"
+  , mkSpecialItem "PreCard Fortune Innocent Form" "プリカード（フォーチュン：イノセントフォーム）"
+  , mkSpecialItem "Love Pre Brace" "ラブプリブレス"
+  , mkSpecialItem "Triple Dance Honey Baton" "トリプルダンスハニーバトン"
+  , mkSpecialItem "Fortune Tambourine" "フォーチュンタンバリン"
+  , mkSpecialItem "Shining Make Dresser" "シャイニングメークドレッサー"
+  , mkSpecialItem "Innocent Harmony Mic" "イノセントハーモニーマイク"
   ]
 
 

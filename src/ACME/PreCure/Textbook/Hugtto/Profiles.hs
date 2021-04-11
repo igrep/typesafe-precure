@@ -3,7 +3,7 @@
 
 module ACME.PreCure.Textbook.Hugtto.Profiles where
 
-import           Data.String (IsString)
+import           Data.String              (IsString)
 
 import           ACME.PreCure.Index.Types
 
@@ -143,29 +143,29 @@ transformedGroupsHugtto = [mkTransformedGroup groupMembers_Hugtto ne "" nj ""]
 
 specialItemsHugtto :: [SpecialItem]
 specialItemsHugtto =
-  [ mkSpecialItem "Pre Heart" "プリハート" ["Mirai Crystal"]
-  , mkSpecialItem "Mirai Crystal Pink" "ミライクリスタル・ピンク" []
-  , mkSpecialItem "Mirai Crystal Blue" "ミライクリスタル・ブルー" []
-  , mkSpecialItem "Mirai Crystal Yellow" "ミライクリスタル・イエロー" []
+  [ mkSpecialItem "Pre Heart" "プリハート"
+  , mkSpecialItem "Mirai Crystal Pink" "ミライクリスタル・ピンク"
+  , mkSpecialItem "Mirai Crystal Blue" "ミライクリスタル・ブルー"
+  , mkSpecialItem "Mirai Crystal Yellow" "ミライクリスタル・イエロー"
 
-  , mkSpecialItem "Melody Sword" "メロディソード" ["Mirai Crystal"]
-  , mkSpecialItem "Mirai Crystal Rose" "ミライクリスタル・ローズ" []
-  , mkSpecialItem "Mirai Crystal Navy" "ミライクリスタル・ネイビー" []
-  , mkSpecialItem "Mirai Crystal Orange" "ミライクリスタル・オレンジ" []
-  , mkSpecialItem "Mirai Crystal White" "ミライクリスタル・ホワイト" []
+  , mkSpecialItem "Melody Sword" "メロディソード"
+  , mkSpecialItem "Mirai Crystal Rose" "ミライクリスタル・ローズ"
+  , mkSpecialItem "Mirai Crystal Navy" "ミライクリスタル・ネイビー"
+  , mkSpecialItem "Mirai Crystal Orange" "ミライクリスタル・オレンジ"
+  , mkSpecialItem "Mirai Crystal White" "ミライクリスタル・ホワイト"
 
-  , mkSpecialItem "Twin Love Guitar" "ツインラブギター" ["Mirai Crystal"]
-  , mkSpecialItem "Mirai Crystal Red" "ミライクリスタル・レッド" []
-  , mkSpecialItem "Mirai Crystal Purple" "ミライクリスタル・パープル" []
-  , mkSpecialItem "Mirai Crystal Rouge" "ミライクリスタル・ルージュ" []
-  , mkSpecialItem "Mirai Crystal Violet" "ミライクリスタル・バイオレット" []
+  , mkSpecialItem "Twin Love Guitar" "ツインラブギター"
+  , mkSpecialItem "Mirai Crystal Red" "ミライクリスタル・レッド"
+  , mkSpecialItem "Mirai Crystal Purple" "ミライクリスタル・パープル"
+  , mkSpecialItem "Mirai Crystal Rouge" "ミライクリスタル・ルージュ"
+  , mkSpecialItem "Mirai Crystal Violet" "ミライクリスタル・バイオレット"
 
-  , mkSpecialItem "Mirai Pad" "ミライパッド"  ["Mirai Crystal"]
-  , mkSpecialItem "Mirai Crystal Cheerful" "ミライクリスタル・チアフル" []
-  , mkSpecialItem "Mirai Crystal Mother Heart" "ミライクリスタル・マザーハート" []
-  , mkSpecialItem "Memorial Cure Clock" "メモリアルキュアクロック" ["Mirai Pad"]
+  , mkSpecialItem "Mirai Pad" "ミライパッド"
+  , mkSpecialItem "Mirai Crystal Cheerful" "ミライクリスタル・チアフル"
+  , mkSpecialItem "Mirai Crystal Mother Heart" "ミライクリスタル・マザーハート"
+  , mkSpecialItem "Memorial Cure Clock" "メモリアルキュアクロック"
 
-  , mkSpecialItem "Miracle By Mirai Brace" "ミライブレスが起こした奇跡" []
+  , mkSpecialItem "Miracle By Mirai Brace" "ミライブレスが起こした奇跡"
   ]
 
 transformationsHugtto :: [Transformation]

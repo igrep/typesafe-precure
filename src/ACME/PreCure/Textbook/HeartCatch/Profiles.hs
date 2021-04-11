@@ -85,16 +85,16 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Heart Perfume" "ココロパフューム" ["PreCureSeed"]
-  , mkSpecialItem "Shiny Perfume" "シャイニーパフューム" ["PreCureSeed"]
-  , mkSpecialItem "Heart Pot" "ココロポット" ["PreCureSeed"]
-  , mkSpecialItem "PreCure Seed" "プリキュアの種" []
-  , mkSpecialItem "Blossom Takt" "ブロッサムタクト" []
-  , mkSpecialItem "Marine Takt" "マリンタクト" []
-  , mkSpecialItem "Shiny Tambourine" "シャイニータンバリン" []
-  , mkSpecialItem "Moon Takt" "ムーンタクト" []
-  , mkSpecialItem "Heart Catch Mirage" "ハートキャッチミラージュ" ["SuperPreCureSeed"]
-  , mkSpecialItem "Super PreCure Seed" "スーパープリキュアの種" []
+  [ mkSpecialItem "Heart Perfume" "ココロパフューム"
+  , mkSpecialItem "Shiny Perfume" "シャイニーパフューム"
+  , mkSpecialItem "Heart Pot" "ココロポット"
+  , mkSpecialItem "PreCure Seed" "プリキュアの種"
+  , mkSpecialItem "Blossom Takt" "ブロッサムタクト"
+  , mkSpecialItem "Marine Takt" "マリンタクト"
+  , mkSpecialItem "Shiny Tambourine" "シャイニータンバリン"
+  , mkSpecialItem "Moon Takt" "ムーンタクト"
+  , mkSpecialItem "Heart Catch Mirage" "ハートキャッチミラージュ"
+  , mkSpecialItem "Super PreCure Seed" "スーパープリキュアの種"
   ]
 
 

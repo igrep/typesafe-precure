@@ -64,14 +64,14 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Lovely Commune Sharuru" "ラブリーコミューン（シャルル）" ["Cure Loveads"]
-  , mkSpecialItem "Lovely Commune Raquel" "ラブリーコミューン（ラケル）" ["Cure Loveads"]
-  , mkSpecialItem "Lovely Commune Lance" "ラブリーコミューン（ランス）" ["Cure Loveads"]
-  , mkSpecialItem "Lovely Commune Davi" "ラブリーコミューン（ダビィ）"  ["Cure Loveads"]
-  , mkSpecialItem "Love Eyes Palette" "ラブアイズパレット" ["Cure Loveads"]
-  , mkSpecialItem "Cure Loveads" "キュアラビーズ" []
-  , mkSpecialItem "Love Kiss Rouge" "ラブキッスルージュ" []
-  , mkSpecialItem "MagicalLovely Harp" "マジカルラブリーハープ" ["Cure Loveads"]
+  [ mkSpecialItem "Lovely Commune Sharuru" "ラブリーコミューン（シャルル）"
+  , mkSpecialItem "Lovely Commune Raquel" "ラブリーコミューン（ラケル）"
+  , mkSpecialItem "Lovely Commune Lance" "ラブリーコミューン（ランス）"
+  , mkSpecialItem "Lovely Commune Davi" "ラブリーコミューン（ダビィ）"
+  , mkSpecialItem "Love Eyes Palette" "ラブアイズパレット"
+  , mkSpecialItem "Cure Loveads" "キュアラビーズ"
+  , mkSpecialItem "Love Kiss Rouge" "ラブキッスルージュ"
+  , mkSpecialItem "MagicalLovely Harp" "マジカルラブリーハープ"
   ]
 
 

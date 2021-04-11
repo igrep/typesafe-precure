@@ -113,27 +113,27 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Princess Perfume" "プリンセスパフューム" ["DressUpKey"]
-  , mkSpecialItem "Crystal Princess Rod" "クリスタルプリンセスロッド" ["DressUpKey"]
-  , mkSpecialItem "Scarlet Violin" "スカーレットバイオリン" ["DressUpKey"]
-  , mkSpecialItem "Music Princess Palace" "ミュージックプリンセスパレス" ["DressUpKey"]
-  , mkSpecialItem "Dress Up Key Flora" "ドレスアップキー・フローラ" []
-  , mkSpecialItem "Dress Up Key Rose" "ドレスアップキー・ローズ"  []
-  , mkSpecialItem "Dress Up Key Lily" "ドレスアップキー・リリィ"  []
-  , mkSpecialItem "Dress Up Key Sakura" "ドレスアップキー・サクラ"  []
-  , mkSpecialItem "Dress Up Key Mermaid" "ドレスアップキー・マーメイド"  []
-  , mkSpecialItem "Dress Up Key Ice" "ドレスアップキー・アイス"  []
-  , mkSpecialItem "Dress Up Key Bubble" "ドレスアップキー・バブル"  []
-  , mkSpecialItem "Dress Up Key Sango" "ドレスアップキー・サンゴ"  []
-  , mkSpecialItem "Dress Up Key Twinkle" "ドレスアップキー・トゥインクル"  []
-  , mkSpecialItem "Dress Up Key Luna" "ドレスアップキー・ルナ"   []
-  , mkSpecialItem "Dress Up Key ShootingStar" "ドレスアップキー・シューティングスター" []
-  , mkSpecialItem "Dress Up Key Ginga" "ドレスアップキー・ギンガ" []
-  , mkSpecialItem "Dress Up Key Scarlet" "ドレスアップキー・スカーレット" []
-  , mkSpecialItem "Dress Up Key Phoenix" "ドレスアップキー・フェニックス" []
-  , mkSpecialItem "Dress Up Key Hanabi" "ドレスアップキー・ハナビ" []
-  , mkSpecialItem "Dress Up Key Sun" "ドレスアップキー・サン" []
-  , mkSpecialItem "Royal Dress Up Key" "ロイヤルドレスアップキー" []
+  [ mkSpecialItem "Princess Perfume" "プリンセスパフューム"
+  , mkSpecialItem "Crystal Princess Rod" "クリスタルプリンセスロッド"
+  , mkSpecialItem "Scarlet Violin" "スカーレットバイオリン"
+  , mkSpecialItem "Music Princess Palace" "ミュージックプリンセスパレス"
+  , mkSpecialItem "Dress Up Key Flora" "ドレスアップキー・フローラ"
+  , mkSpecialItem "Dress Up Key Rose" "ドレスアップキー・ローズ"
+  , mkSpecialItem "Dress Up Key Lily" "ドレスアップキー・リリィ"
+  , mkSpecialItem "Dress Up Key Sakura" "ドレスアップキー・サクラ"
+  , mkSpecialItem "Dress Up Key Mermaid" "ドレスアップキー・マーメイド"
+  , mkSpecialItem "Dress Up Key Ice" "ドレスアップキー・アイス"
+  , mkSpecialItem "Dress Up Key Bubble" "ドレスアップキー・バブル"
+  , mkSpecialItem "Dress Up Key Sango" "ドレスアップキー・サンゴ"
+  , mkSpecialItem "Dress Up Key Twinkle" "ドレスアップキー・トゥインクル"
+  , mkSpecialItem "Dress Up Key Luna" "ドレスアップキー・ルナ"
+  , mkSpecialItem "Dress Up Key ShootingStar" "ドレスアップキー・シューティングスター"
+  , mkSpecialItem "Dress Up Key Ginga" "ドレスアップキー・ギンガ"
+  , mkSpecialItem "Dress Up Key Scarlet" "ドレスアップキー・スカーレット"
+  , mkSpecialItem "Dress Up Key Phoenix" "ドレスアップキー・フェニックス"
+  , mkSpecialItem "Dress Up Key Hanabi" "ドレスアップキー・ハナビ"
+  , mkSpecialItem "Dress Up Key Sun" "ドレスアップキー・サン"
+  , mkSpecialItem "Royal Dress Up Key" "ロイヤルドレスアップキー"
   ]
 
 

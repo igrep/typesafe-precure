@@ -48,11 +48,11 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Heartful Commune Mepple" "ハートフルコミューン（メップル）" []
-  , mkSpecialItem "Heartful Commune Mipple" "ハートフルコミューン（ミップル）" []
-  , mkSpecialItem "TouchCommune_Porun" "タッチコミューン（ポルン）" []
-  , mkSpecialItem "Sparkle Brace" "スパークルブレス" []
-  , mkSpecialItem "Heartiel Baton" "ハーティエルバトン" []
+  [ mkSpecialItem "Heartful Commune Mepple" "ハートフルコミューン（メップル）"
+  , mkSpecialItem "Heartful Commune Mipple" "ハートフルコミューン（ミップル）"
+  , mkSpecialItem "TouchCommune_Porun" "タッチコミューン（ポルン）"
+  , mkSpecialItem "Sparkle Brace" "スパークルブレス"
+  , mkSpecialItem "Heartiel Baton" "ハーティエルバトン"
   ]
 
 

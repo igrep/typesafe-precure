@@ -1,3 +1,14 @@
+# 0.8.0.1 (Not released yet)
+
+- From <https://github.com/igrep/typesafe-precure/pull/47>:
+    - BREAKING CHANGE: Use the new `:+:` type to express the "item and attachments" relationship.
+        - Before this change, any types representing a special item have type variables of the attachments. This design works with the almost all items, except with the items introduced several years ago. For example, Cure Cosmo's Rainbow Perfume has usually an attachment, and sometimes not. In Haskell's type system, any types with type variables must have its type variables filled to be an ordinary type. To support such items which occasionally use attachments, I deleted any type variables from the types of the special items. Now we must use `:+:` to represent "item and attachments" relationship instead.
+    - Add several purifications in Star☆Twinkle PreCure.
+    - Add several purifications of Cure Earth.
+    - Fix the transformation into Cure Earth by Asumi.
+    - Fix build error in Hackage: Now explicitly depends on autoexporter!
+    - Cosmetic changes.
+
 # 0.7.11.1
 
 - Add Healin'Good PreCure's transformation without Hinata.

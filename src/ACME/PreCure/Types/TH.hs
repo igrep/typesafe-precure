@@ -1,4 +1,5 @@
 {-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE TypeOperators #-}
 
 module ACME.PreCure.Types.TH
         ( declareGirls
@@ -24,16 +25,13 @@ module ACME.PreCure.Types.TH
 import           ACME.PreCure.Types
 import qualified ACME.PreCure.Index.Types as Index
 
-import           Data.Char
-                   ( toLower
-                   )
 import           Language.Haskell.TH
                    ( Name
                    , DecQ
                    , DecsQ
                    , ExpQ
                    , TypeQ
-                   , Type(VarT, ConT, TupleT)
+                   , Type(VarT)
                    , conE
                    , conT
                    , cxt
@@ -45,16 +43,15 @@ import           Language.Haskell.TH
                    )
 import           Language.Haskell.TH.Lib
                    ( StrictTypeQ
+                   , appT
                    , plainTV
+                   , tupleT
                    )
 import           Language.Haskell.TH.Compat.Data
                    ( dataD'
                    )
 import           Language.Haskell.TH.Compat.Strict
                    ( isStrict
-                   )
-import           TH.Utilities
-                   ( appsT
                    )
 
 
@@ -90,7 +87,7 @@ declareTransformedGroups :: [Index.TransformedGroup] -> DecsQ
 declareTransformedGroups = fmap concat . mapM d
   where
     d (Index.TransformedGroup ts _e _ve j vj) =
-      transformedGroupInstance (tupleT ts) j vj
+      transformedGroupInstance (tupleTFromList ts) j vj
 
 
 declareTransformees :: [Index.Transformee] -> DecsQ
@@ -104,9 +101,7 @@ declareTransformees = fmap concat . mapM d
 declareSpecialItems :: [Index.SpecialItem] -> DecsQ
 declareSpecialItems = fmap concat . mapM d
   where
-    d (Index.SpecialItem n _e _j as) = do
-      let aNames = map (firstLower . concat . words) as
-      defineWithTypeVars n aNames
+    d (Index.SpecialItem n _e _j) = defineWithTypeVars n []
 
 
 declareTransformations :: [Index.Transformation] -> DecsQ
@@ -114,9 +109,9 @@ declareTransformations = fmap concat . mapM d
   where
     d (Index.Transformation tas ias ds s) =
       transformationInstance
-        (tupleTFromIdAttachments tas)
-        (tupleTFromIdAttachments ias)
-        (tupleT ds)
+        (plusTFromIdAttachments tas)
+        (plusTFromIdAttachments ias)
+        (tupleTFromList ds)
         (tupleE ds)
         s
 
@@ -126,8 +121,8 @@ declarePurifications = fmap concat . mapM d
   where
     d (Index.Purification pas ias s) =
       purificationInstance
-        (tupleTFromIdAttachments pas)
-        (tupleTFromIdAttachments ias)
+        (plusTFromIdAttachments pas)
+        (plusTFromIdAttachments ias)
         s
 
 
@@ -213,25 +208,30 @@ nonItemPurificationInstance p' speech =
 tupleTFromIdAttachments :: [Index.IdAttachments] -> TypeQ
 tupleTFromIdAttachments = tupleTBy toAppT
   where
-    toAppT :: Index.IdAttachments -> Type
-    toAppT (Index.IdAttachments i ias) = appsT (ConT $ mkName i) $ map toAppT ias
+    toAppT :: Index.IdAttachments -> TypeQ
+    toAppT (Index.IdAttachments i ias) = foldl appT (conT $ mkName i) $ map toAppT ias
 
 
-tupleT :: [String] -> TypeQ
-tupleT ns = tupleTBy (ConT . mkName) ns
+plusTFromIdAttachments :: [Index.IdAttachments] -> TypeQ
+plusTFromIdAttachments = tupleTBy toPlusT
+  where
+    toPlusT :: Index.IdAttachments -> TypeQ
+    toPlusT (Index.IdAttachments i ias) =
+      if null ias
+        then conT (mkName i)
+        else [t| $(conT (mkName i)) :+: $(tupleTBy toPlusT ias) |]
 
 
-tupleTBy :: (a -> Type) -> [a] -> TypeQ
+tupleTFromList :: [String] -> TypeQ
+tupleTFromList = tupleTBy (conT . mkName)
+
+
+tupleTBy :: (a -> TypeQ) -> [a] -> TypeQ
 -- Avoid generating `Unit`. See https://gitlab.haskell.org/ghc/ghc/-/issues/18622 for details.
-tupleTBy f [n] = return $ f n
-tupleTBy f ns = return $ appsT (TupleT (length ns)) (map f ns)
+tupleTBy f [n] = f n
+tupleTBy f ns = foldl appT (tupleT (length ns)) (map f ns)
 
 
 tupleE :: [String] -> ExpQ
 tupleE [name] = conE $ mkName name
 tupleE names  = tupE $ map (conE . mkName) names
-
-
-firstLower :: String -> String
-firstLower (x:xs) = toLower x : xs
-firstLower _ = error "firstLower: Assertion failed: empty string"

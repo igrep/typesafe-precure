@@ -3,7 +3,7 @@
 
 module ACME.PreCure.Textbook.Fresh.Profiles where
 
-import           Data.List (intercalate)
+import           Data.List                         (intercalate)
 
 import           ACME.PreCure.Index.Types
 import           ACME.PreCure.Textbook.Fresh.Words
@@ -58,12 +58,12 @@ transformedGroups =
 
 specialItems :: [SpecialItem]
 specialItems =
-  [ mkSpecialItem "Linkrun" "リンクルン" []
-  , mkSpecialItem "CureStickPeachRod" "キュアスティック・ピーチロッド" []
-  , mkSpecialItem "CureStickBerrySword" "キュアスティック・ベリーソード" []
-  , mkSpecialItem "CureStickPineFlute" "キュアスティック・パインフルート"  []
-  , mkSpecialItem "PassionHarp" "パッションハープ" []
-  , mkSpecialItem "CloverBox" "クローバーボックス" []
+  [ mkSpecialItem "Linkrun" "リンクルン"
+  , mkSpecialItem "CureStickPeachRod" "キュアスティック・ピーチロッド"
+  , mkSpecialItem "CureStickBerrySword" "キュアスティック・ベリーソード"
+  , mkSpecialItem "CureStickPineFlute" "キュアスティック・パインフルート"
+  , mkSpecialItem "PassionHarp" "パッションハープ"
+  , mkSpecialItem "CloverBox" "クローバーボックス"
   ]
 
 
