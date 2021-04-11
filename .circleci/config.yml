@@ -3,7 +3,7 @@ jobs:
   build:
     # Ref: https://mmhaskell.com/blog/2018/4/25/dockerizing-our-haskell-app
     docker:
-    - image: haskell:8.8.4
+    - image: haskell:8.10.4
       auth:
         username: '$DOCKERHUB_USERNAME'
         password: '$DOCKERHUB_PASSWORD'
@@ -21,7 +21,7 @@ jobs:
         - 'dependencies-{{ checksum "stack.yaml.lock" }}-{{ checksum "typesafe-precure.cabal" }}'
         - 'dependencies-'
     - run:
-        command: stack --compiler=ghc-8.8.4 --no-terminal test --pedantic
+        command: stack --compiler=ghc-8.10.4 --no-terminal test --pedantic
         environment:
           LANG: en_US.UTF-8
           LANGUAGE: en_US:en
