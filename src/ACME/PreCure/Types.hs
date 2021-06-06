@@ -39,7 +39,13 @@ class NonItemPurification p' where
 class Girl g where
   humanName :: g -> String
 
--- | Represents a 'SpecialItem' @b` is attached to the 'SpecialItem' @a@.
-data a :+: b = a :+: b
+-- | Represents a 'SpecialItem' @b@ is attached to the 'SpecialItem' @a@.
+data a :+: b = a :+: b deriving (Eq, Show)
 
 infixr 1 :+:
+
+-- | Used to define an instance of 'Transformation' or 'Purification' whose
+--   speech varies between episodes.
+data VaryingBetweenEpisodes ps = ps :< String deriving (Eq, Show)
+
+infixr 1 :<
