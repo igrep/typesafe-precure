@@ -12,7 +12,7 @@ girls =
   [ mkGirl "Nodoka Hanadera" "花寺 のどか"
   , mkGirl "Chiyu Sawaizumi"  "沢泉 ちゆ"
   , mkGirl "Hinata Hiramitsu"  "平光 ひなた"
-  , mkGirl "Asumi Fuurin"  "風鈴アスミ"
+  , mkGirl "Asumi Fuurin"  "風鈴 アスミ"
   ]
 
 transformees :: [Transformee]
