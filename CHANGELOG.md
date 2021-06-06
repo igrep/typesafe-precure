@@ -1,5 +1,9 @@
 # 0.8.0.1 (Not released yet)
 
+- From <https://github.com/igrep/typesafe-precure/pull/48>:
+    - Add Tropical-Rouge PreCure's characters and speech.
+    - Correct Asumi's Japanese name.
+    - Introduce the `VaryingBetweenEpisodes` type for Tropical-Rouge's transformation speech.
 - From <https://github.com/igrep/typesafe-precure/pull/47>:
     - BREAKING CHANGE: Use the new `:+:` type to express the "item and attachments" relationship.
         - Before this change, any types representing a special item have type variables of the attachments. This design works with the almost all items, except with the items introduced several years ago. For example, Cure Cosmo's Rainbow Perfume has usually an attachment, and sometimes not. In Haskell's type system, any types with type variables must have its type variables filled to be an ordinary type. To support such items which occasionally use attachments, I deleted any type variables from the types of the special items. Now we must use `:+:` to represent "item and attachments" relationship instead.

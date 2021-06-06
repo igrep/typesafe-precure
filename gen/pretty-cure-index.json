@@ -926,6 +926,51 @@
             "id": "HealingChest"
         },
         {
+            "nameEn": "Tropical Pact",
+            "nameJa": "トロピカルパクト",
+            "id": "TropicalPact"
+        },
+        {
+            "nameEn": "Heart Kuru Ring",
+            "nameJa": "ハートクルリング",
+            "id": "HeartKuruRing"
+        },
+        {
+            "nameEn": "Mermaid Aqua Pot",
+            "nameJa": "マーメイドアクアポット",
+            "id": "MermaidAquaPot"
+        },
+        {
+            "nameEn": "Heart Rouge Rod",
+            "nameJa": "ハートルージュロッド",
+            "id": "HeartRougeRod"
+        },
+        {
+            "nameEn": "Heart Quartet Ring",
+            "nameJa": "ハートカルテットリング",
+            "id": "HeartQuartetRing"
+        },
+        {
+            "nameEn": "Heart Kuru Ring Cure Summer",
+            "nameJa": "変身ハートクルリング キュアサマー",
+            "id": "HeartKuruRingCureSummer"
+        },
+        {
+            "nameEn": "Heart Kuru Ring Cure Coral",
+            "nameJa": "変身ハートクルリング キュアコーラル",
+            "id": "HeartKuruRingCureCoral"
+        },
+        {
+            "nameEn": "Heart Kuru Ring Cure Papaya",
+            "nameJa": "変身ハートクルリング キュアパパイア",
+            "id": "HeartKuruRingCurePapaya"
+        },
+        {
+            "nameEn": "Heart Kuru Ring Cure Flamingo",
+            "nameJa": "変身ハートクルリング キュアフラミンゴ",
+            "id": "HeartKuruRingCureFlamingo"
+        },
+        {
             "nameEn": "Pinky Catch",
             "nameJa": "ピンキーキャッチュ",
             "id": "PinkyCatch"
@@ -2038,6 +2083,70 @@
             "introducesHerselfAs": "爪弾くは女神の調べ！ キュアミューズ！"
         },
         {
+            "nameEn": "Cure Summer",
+            "variationEn": "",
+            "nameJa": "キュアサマー",
+            "variationJa": "",
+            "id": "CureSummer",
+            "introducesHerselfAs": "ときめく常夏！キュアサマー！"
+        },
+        {
+            "nameEn": "Cure Coral",
+            "variationEn": "",
+            "nameJa": "キュアコーラル",
+            "variationJa": "",
+            "id": "CureCoral",
+            "introducesHerselfAs": "きらめく宝石！キュアコーラル！"
+        },
+        {
+            "nameEn": "Cure Papaya",
+            "variationEn": "",
+            "nameJa": "キュアパパイア",
+            "variationJa": "",
+            "id": "CurePapaya",
+            "introducesHerselfAs": "ひらめく果実（フルーツ）！キュアパパイア！"
+        },
+        {
+            "nameEn": "Cure Flamingo",
+            "variationEn": "",
+            "nameJa": "キュアフラミンゴ",
+            "variationJa": "",
+            "id": "CureFlamingo",
+            "introducesHerselfAs": "はためく翼！キュアフラミンゴ！"
+        },
+        {
+            "nameEn": "Cure Summer",
+            "variationEn": "Mix Tropical Style",
+            "nameJa": "キュアサマー",
+            "variationJa": "ミックストロピカルスタイル",
+            "id": "CureSummer_MixTropicalStyle",
+            "introducesHerselfAs": "ときめく常夏！キュアサマー！"
+        },
+        {
+            "nameEn": "Cure Coral",
+            "variationEn": "Mix Tropical Style",
+            "nameJa": "キュアコーラル",
+            "variationJa": "ミックストロピカルスタイル",
+            "id": "CureCoral_MixTropicalStyle",
+            "introducesHerselfAs": "きらめく宝石！キュアコーラル！"
+        },
+        {
+            "nameEn": "Cure Papaya",
+            "variationEn": "Mix Tropical Style",
+            "nameJa": "キュアパパイア",
+            "variationJa": "ミックストロピカルスタイル",
+            "id": "CurePapaya_MixTropicalStyle",
+            "introducesHerselfAs": "ひらめく果実（フルーツ）！キュアパパイア！"
+        },
+        {
+            "nameEn": "Cure Flamingo",
+            "variationEn": "Mix Tropical Style",
+            "nameJa": "キュアフラミンゴ",
+            "variationJa": "ミックストロピカルスタイル",
+            "id": "CureFlamingo_MixTropicalStyle",
+            "introducesHerselfAs": "はためく翼！キュアフラミンゴ！"
+        },
+        {
             "nameEn": "Cure Dream",
             "variationEn": "",
             "nameJa": "キュアドリーム",
@@ -2199,7 +2308,7 @@
         },
         {
             "nameEn": "Asumi Fuurin",
-            "nameJa": "風鈴アスミ",
+            "nameJa": "風鈴 アスミ",
             "id": "Asumi"
         },
         {
@@ -2396,6 +2505,31 @@
             "nameEn": "Ako Shirabe",
             "nameJa": "調辺 アコ",
             "id": "Ako"
+        },
+        {
+            "nameEn": "Manatsu Natsuumi",
+            "nameJa": "夏海 まなつ",
+            "id": "Manatsu"
+        },
+        {
+            "nameEn": "Sango Suzumura",
+            "nameJa": "涼村 さんご",
+            "id": "Sango"
+        },
+        {
+            "nameEn": "Minori Ichinose",
+            "nameJa": "一之瀬 みのり",
+            "id": "Minori"
+        },
+        {
+            "nameEn": "Asuka Takizawa",
+            "nameJa": "滝沢 あすか",
+            "id": "Asuka"
+        },
+        {
+            "nameEn": "Laura",
+            "nameJa": "ローラ",
+            "id": "Laura"
         },
         {
             "nameEn": "Nozomi Yumehara",
@@ -4721,6 +4855,95 @@
                 "プリキュア！スイートセッションアンサンブル！",
                 "クレッシェンド！！",
                 "フィナーレ！"
+            ]
+        },
+        {
+            "specialItems": [
+                "HeartRougeRod"
+            ],
+            "purifiers": [
+                "CureSummer"
+            ],
+            "speech": [
+                "ハートルージュロッド！",
+                "プリキュア！おてんとサマー・ストライク！",
+                "ビクトリー！"
+            ]
+        },
+        {
+            "specialItems": [
+                "HeartRougeRod"
+            ],
+            "purifiers": [
+                "CureCoral"
+            ],
+            "speech": [
+                "ハートルージュロッド！",
+                "プリキュア！もこもこコーラルディフュージョン！",
+                "ビクトリー！"
+            ]
+        },
+        {
+            "specialItems": [
+                "HeartRougeRod"
+            ],
+            "purifiers": [
+                "CurePapaya"
+            ],
+            "speech": [
+                "ハートルージュロッド！",
+                "ぷわーん！",
+                "プリキュア！ぱんぱかパパイアショット！",
+                "ビクトリー！"
+            ]
+        },
+        {
+            "specialItems": [
+                "HeartRougeRod"
+            ],
+            "purifiers": [
+                "CureFlamingo"
+            ],
+            "speech": [
+                "ハートルージュロッド！",
+                "プリキュア！ぶっとびフラミンゴ・スマッシュ！",
+                "ビクトリー！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "HeartQuartetRing"
+                    ],
+                    "i": "HeartRougeRod"
+                },
+                "HeartRougeRod",
+                "HeartRougeRod",
+                "HeartRougeRod"
+            ],
+            "purifiers": [
+                "CureSummer_MixTropicalStyle",
+                "CureCoral_MixTropicalStyle",
+                "CurePapaya_MixTropicalStyle",
+                "CureFlamingo_MixTropicalStyle"
+            ],
+            "speech": [
+                "ハートドキドキ！ドッキング！",
+                "プリキュア！ミックストロピカル！",
+                "ビクトリー！"
+            ]
+        },
+        {
+            "specialItems": [
+                "MermaidAquaPot"
+            ],
+            "purifiers": [
+                "Laura"
+            ],
+            "speech": [
+                "マーメイドアクアポット！",
+                "やる気パワー、カムバック！"
             ]
         },
         {
@@ -8565,6 +8788,277 @@
         },
         {
             "specialItems": [
+                {
+                    "a": [
+                        "HeartKuruRingCureSummer"
+                    ],
+                    "i": "TropicalPact"
+                }
+            ],
+            "transformees": [
+                "CureSummer"
+            ],
+            "speech": [
+                "プリキュア！トロピカルチェンジ！",
+                "レッツメイク！キャッチ！",
+                "チーク！",
+                "アイズ！",
+                "ヘアー！",
+                "リップ！",
+                "ドレス！",
+                "ときめく常夏！キュアサマー！"
+            ],
+            "transformers": [
+                "Manatsu"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "HeartKuruRingCureCoral"
+                    ],
+                    "i": "TropicalPact"
+                }
+            ],
+            "transformees": [
+                "CureCoral"
+            ],
+            "speech": [
+                "プリキュア！トロピカルチェンジ！",
+                "レッツメイク！キャッチ！",
+                "リップ！",
+                "アイズ！",
+                "ヘアー！",
+                "チーク！",
+                "ドレス！",
+                "きらめく宝石！キュアコーラル！"
+            ],
+            "transformers": [
+                "Sango"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "HeartKuruRingCurePapaya"
+                    ],
+                    "i": "TropicalPact"
+                }
+            ],
+            "transformees": [
+                "CurePapaya"
+            ],
+            "speech": [
+                "プリキュア！トロピカルチェンジ！",
+                "レッツメイク！キャッチ！",
+                "チーク！",
+                "リップ！",
+                "ヘアー！",
+                "アイズ！",
+                "ドレス！",
+                "ひらめく果実（フルーツ）！キュアパパイア！"
+            ],
+            "transformers": [
+                "Minori"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "HeartKuruRingCureFlamingo"
+                    ],
+                    "i": "TropicalPact"
+                }
+            ],
+            "transformees": [
+                "CureFlamingo"
+            ],
+            "speech": [
+                "プリキュア！トロピカルチェンジ！",
+                "レッツメイク！キャッチ！",
+                "チーク！",
+                "アイズ！",
+                "リップ！",
+                "ヘアー！",
+                "ドレス！",
+                "はためく翼！キュアフラミンゴ！"
+            ],
+            "transformers": [
+                "Asuka"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "HeartKuruRingCureSummer"
+                    ],
+                    "i": "TropicalPact"
+                },
+                {
+                    "a": [
+                        "HeartKuruRingCureCoral"
+                    ],
+                    "i": "TropicalPact"
+                }
+            ],
+            "transformees": [
+                "CureSummer",
+                "CureCoral"
+            ],
+            "speech": [
+                "プリキュア！トロピカルチェンジ！",
+                "レッツメイク！キャッチ！",
+                "チーク！",
+                "アイズ！",
+                "ヘアー！",
+                "リップ！",
+                "ドレス！",
+                "ときめく常夏！キュアサマー！",
+                "きらめく宝石！キュアコーラル！"
+            ],
+            "transformers": [
+                "Manatsu",
+                "Sango"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "HeartKuruRingCureSummer"
+                    ],
+                    "i": "TropicalPact"
+                },
+                {
+                    "a": [
+                        "HeartKuruRingCureCoral"
+                    ],
+                    "i": "TropicalPact"
+                },
+                {
+                    "a": [
+                        "HeartKuruRingCurePapaya"
+                    ],
+                    "i": "TropicalPact"
+                }
+            ],
+            "transformees": [
+                "CureSummer",
+                "CureCoral",
+                "CurePapaya"
+            ],
+            "speech": [
+                "プリキュア！トロピカルチェンジ！",
+                "レッツメイク！キャッチ！",
+                "チーク！",
+                "アイズ！",
+                "ヘアー！",
+                "リップ！",
+                "ドレス！",
+                "ときめく常夏！キュアサマー！",
+                "きらめく宝石！キュアコーラル！",
+                "ひらめく果実（フルーツ）！キュアパパイア！"
+            ],
+            "transformers": [
+                "Manatsu",
+                "Sango",
+                "Minori"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "HeartKuruRingCureSummer"
+                    ],
+                    "i": "TropicalPact"
+                },
+                {
+                    "a": [
+                        "HeartKuruRingCureCoral"
+                    ],
+                    "i": "TropicalPact"
+                },
+                {
+                    "a": [
+                        "HeartKuruRingCurePapaya"
+                    ],
+                    "i": "TropicalPact"
+                },
+                {
+                    "a": [
+                        "HeartKuruRingCureFlamingo"
+                    ],
+                    "i": "TropicalPact"
+                }
+            ],
+            "transformees": [
+                "CureSummer",
+                "CureCoral",
+                "CurePapaya",
+                "CureFlamingo"
+            ],
+            "speech": [
+                "プリキュア！トロピカルチェンジ！",
+                "レッツメイク！キャッチ！",
+                "チーク！",
+                "アイズ！",
+                "ヘアー！",
+                "リップ！",
+                "ドレス！",
+                "ときめく常夏！キュアサマー！",
+                "きらめく宝石！キュアコーラル！",
+                "ひらめく果実（フルーツ）！キュアパパイア！",
+                "はためく翼！キュアフラミンゴ！",
+                "はーっ！",
+                "4人そろって！",
+                "トロピカル〜ジュ！プリキュア！"
+            ],
+            "transformers": [
+                "Manatsu",
+                "Sango",
+                "Minori",
+                "Asuka"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "HeartQuartetRing"
+                    ],
+                    "i": "HeartRougeRod"
+                },
+                "HeartRougeRod",
+                "HeartRougeRod",
+                "HeartRougeRod"
+            ],
+            "transformees": [
+                "CureSummer_MixTropicalStyle",
+                "CureCoral_MixTropicalStyle",
+                "CurePapaya_MixTropicalStyle",
+                "CureFlamingo_MixTropicalStyle"
+            ],
+            "speech": [
+                "ハートカルテットリング！",
+                "飛び出せ！元気なハート！",
+                "やさしいハート！",
+                "かしこいハート！",
+                "燃え立つハート！"
+            ],
+            "transformers": [
+                "CureSummer",
+                "CureCoral",
+                "CurePapaya",
+                "CureFlamingo"
+            ]
+        },
+        {
+            "specialItems": [
                 "PinkyCatch"
             ],
             "transformees": [
@@ -9467,6 +9961,30 @@
                 "CureRhythm",
                 "CureBeat",
                 "CureMuse"
+            ]
+        },
+        {
+            "nameEn": "Tropical-Rouge! PreCure",
+            "variationEn": "",
+            "nameJa": "トロピカル〜ジュ！プリキュア",
+            "variationJa": "",
+            "transformerIds": [
+                "CureSummer",
+                "CureCoral",
+                "CurePapaya",
+                "CureFlamingo"
+            ]
+        },
+        {
+            "nameEn": "Tropical-Rouge! PreCure",
+            "variationEn": "",
+            "nameJa": "トロピカル〜ジュ！プリキュア",
+            "variationJa": "ミックストロピカルスタイル",
+            "transformerIds": [
+                "CureSummer_MixTropicalStyle",
+                "CureCoral_MixTropicalStyle",
+                "CurePapaya_MixTropicalStyle",
+                "CureFlamingo_MixTropicalStyle"
             ]
         },
         {
