@@ -76,6 +76,7 @@ library
                      , ACME.PreCure.Textbook.Smile.Words
 
                      , ACME.PreCure.Textbook.DokiDoki.Profiles
+                     , ACME.PreCure.Textbook.DokiDoki.Types
                      , ACME.PreCure.Textbook.DokiDoki.Words
 
                      , ACME.PreCure.Textbook.HappinessCharge.Profiles
@@ -91,11 +92,16 @@ library
                      , ACME.PreCure.Textbook.MahoGirls.Words
 
                      , ACME.PreCure.Textbook.KirakiraALaMode.Profiles
+
                      , ACME.PreCure.Textbook.Hugtto.Profiles
+
                      , ACME.PreCure.Textbook.StarTwinkle.Profiles
+
                      , ACME.PreCure.Textbook.HealinGood.Profiles
+
                      , ACME.PreCure.Textbook.TropicalRouge.Profiles
                      , ACME.PreCure.Textbook.TropicalRouge.Types
+
   build-depends:       base >= 4.7 && < 5
                      -- TODO: specify version
                      , aeson

@@ -22,22 +22,21 @@ Compared with other PreCure implementations such as rubicure, clocure, etc., thi
 ## Installation
 
 ```sh
-# unicode-show is optional. But recommended if you try it on GHCi.
-$ stack install typesafe-precure unicode-show
+# pretty-simple is optional. But recommended if you try it on GHCi.
+$ stack install typesafe-precure pretty-simple
 ## ... OR
-$ cabal install typesafe-precure unicode-show
+$ cabal install typesafe-precure pretty-simple
 ```
 
 ## Example Usage
 
 **Note**:
-- To `show` Japanese characters in GHCi, use [unicode-show](https://github.com/nushio3/unicode-show)
-- Output of GHCi below is prettified by hand.
+- To `show` Japanese characters in GHCi, use [pretty-simple](https://github.com/cdepillabout/pretty-simple)
 
 ### Get transformed PreCure, etc.
 
 ```haskell
-$ ghci -interactive-print=Text.Show.Unicode.uprint
+$ ghci -interactive-print "Text.Pretty.Simple.pPrint"
 
 ghci> :m ACME.PreCure
 ghci> transformationSpeech (Mirai, Liko) (Mofurun :+: LinkleStoneDia)
@@ -48,14 +47,46 @@ ghci> transformationSpeech (Mirai, Liko) (Mofurun :+: LinkleStoneDia)
 , "魔法つかいプリキュア！！"
 ]
 ghci> transformedStyle (Mirai, Liko) (Mofurun :+: LinkleStoneRuby)
-(CureMiracle_Ruby, CureMagical_Ruby)
-ghci> purificationSpeech (CureMiracle_Ruby, CureMagical_Ruby) (LinkleStick :+: LinkleStoneRuby, Mofurun :+: LinkleStoneRuby)
+( CureMiracle_Ruby
+, CureMagical_Ruby
+)
+ghci> purificationSpeech (CureMiracle_Ruby, CureMagical_Ruby) (Mofurun :+: LinkleStoneRuby, LinkleStick :+: LinkleStoneRuby)
 [ "リンクルステッキ！"
 , "(モッフー！)"
 , "ルビー！紅の情熱よ私達の手に！"
 , "フルフルリンクル！"
 , "プリキュア！ルビー・パッショナーレ！"
 ]
+```
+
+### 🆕Get Transformation / Purification Speech Different between Episodes
+
+*Since v0.8.0.1*
+
+By using the `:<` operator, you can replace some part of the speech into another episode's version. For example:
+
+```haskell
+ghci> members = (Manatsu, Sango, Minori, Asuka)
+ghci> items = (TropicalPact :+: HeartKuruRingCureSummer, TropicalPact :+: HeartKuruRingCureCoral, TropicalPact :+: HeartKuruRingCurePapaya, TropicalPact :+: HeartKuruRingCureFlamingo)
+ghci> transformationSpeech (members :< "うわさも吹き飛ぶ！") items
+```
+
+Compare with `transformationSpeech members items`!
+
+In addition to the example above, the following transformations and purifications can be replaced by `:<`:
+
+From Tropical-Rouge! PreCure:
+
+```haskell
+purificationSpeech  (Laura :< "赤") MermaidAquaPot
+```
+
+From DokiDoki! PreCure:
+
+```haskell
+transformationSpeech (Mana :< "ヤギさん") (LovelyCommuneSharuru :+: CureLoveads)
+transformationSpeech ((Mana, Rikka, Alice, Makoto) :< "バラさん") (LovelyCommuneSharuru :+: CureLoveads, LovelyCommuneRaquel :+: CureLoveads, LovelyCommuneLance :+: CureLoveads, LovelyCommuneDavi :+: CureLoveads)
+transformationSpeech ((Mana, Rikka, Alice, Makoto, Aguri) :< "タコさん") (LovelyCommuneSharuru :+: CureLoveads, LovelyCommuneRaquel :+: CureLoveads, LovelyCommuneLance :+: CureLoveads, LovelyCommuneDavi :+: CureLoveads, LoveEyesPalette :+: CureLoveads)
 ```
 
 ### PreCure Monad
