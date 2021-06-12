@@ -27,8 +27,9 @@ loveLink = ["プリキュア！ラブリンク！", "(L! O! V! E!)"]
 dressUp =  ["プリキュアドレスアップ！" , "(キュピラッパー！)"]
 
 -- https://www.youtube.com/watch?v=aAQDqrN_EZI
-transformationSpeech_Heart =
-  ["(シャールルーン！)"] ++ loveLink ++ [introducesHerselfAs_Heart, "愛を無くした悲しいジコチューさん、このキュアハートが あなたのドキドキ 取り戻してみせる！"]
+transformationSpeech_Heart = transformationSpeech_Heart_against "ジコチューさん"
+transformationSpeech_Heart_against jikochuSan =
+  ["(シャールルーン！)"] ++ loveLink ++ [introducesHerselfAs_Heart] ++ aiWoNakushitaKanashiJikochuSan jikochuSan
 -- https://www.youtube.com/watch?v=Y8zh7aYhR5Q
 transformationSpeech_Diamond =
   ["(ラケル！)"] ++ loveLink ++ [introducesHerselfAs_Diamond, "人の思いを踏みにじるなんて許せない、このキュアダイヤモンドが あなたの頭を冷やしてあげる！"]
@@ -56,7 +57,7 @@ transformationSpeech_Dokidoki_Heart_Diamond_Rosetta_Sword =
     , "響け愛の鼓動！ドキドキプリキュア！"
     ]
 
--- https://www.youtube.com/watch?v=qtVFBUNNfo4&list=PLz2Gy-e060c4rfoLomOWf9foSxXUGTJer&index=11
+-- https://www.youtube.com/watch?v=D_2V-YpML8M
 transformationSpeech_Dokidoki =
   ["(シャールルーン！)"] ++ loveLink ++ dressUp ++
     [ introducesHerselfAs_Heart
@@ -66,6 +67,16 @@ transformationSpeech_Dokidoki =
     , introducesHerselfAs_Ace
     , "響け愛の鼓動！ドキドキプリキュア！"
     ]
+
+transformationSpeech_Dokidoki_Heart_Diamond_Rosetta_Sword_against jikochuSan =
+  transformationSpeech_Dokidoki_Heart_Diamond_Rosetta_Sword ++ aiWoNakushitaKanashiJikochuSan jikochuSan
+
+-- https://www.youtube.com/watch?v=D_2V-YpML8M
+transformationSpeech_Dokidoki_against jikochuSan =
+  transformationSpeech_Dokidoki ++ aiWoNakushitaKanashiJikochuSan jikochuSan
+
+aiWoNakushitaKanashiJikochuSan jikochuSan =
+  ["愛を無くした悲しい" ++ jikochuSan ++ "、このキュアハートが あなたのドキドキ 取り戻してみせる！"]
 
 -- https://www.youtube.com/watch?v=9V17voMJ9vg
 purificationSpeech_Heart   = ["あなたに届け！マイ・スイート・ハート！"]

@@ -76,6 +76,7 @@ library
                      , ACME.PreCure.Textbook.Smile.Words
 
                      , ACME.PreCure.Textbook.DokiDoki.Profiles
+                     , ACME.PreCure.Textbook.DokiDoki.Types
                      , ACME.PreCure.Textbook.DokiDoki.Words
 
                      , ACME.PreCure.Textbook.HappinessCharge.Profiles
