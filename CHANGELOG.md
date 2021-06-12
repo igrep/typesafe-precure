@@ -1,5 +1,8 @@
-# 0.8.0.1 (Not released yet)
+# 0.8.0.1
 
+- From <https://github.com/igrep/typesafe-precure/pull/49>:
+    - Add `VaryingBetweenEpisodes (...)` instance for transformations in DokiDoki!
+    - Use the pretty-simple package for pretty-printing in README.
 - From <https://github.com/igrep/typesafe-precure/pull/48>:
     - Add Tropical-Rouge PreCure's characters and speech.
     - Correct Asumi's Japanese name.
