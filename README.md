@@ -9,7 +9,7 @@ Written in Haskell.
 ## Features
 
 - Collection of Japanese battle heroines "PreCure"  and their transformation and purification phrases.
-    - Currently, supports from the first season to "Healin' Good♡Precure", including Cure Echo, Cure Mofurun, Cure Pekorin, and Cure Infini!
+    - Currently, supports from the first season to "Tropical-Rouge! PreCure", including Cure Echo, Cure Mofurun, Cure Pekorin, and Cure Infini!
 - Monadic actions to play the speech of their transformations and purifications.
 
 ## Characteristics
@@ -69,6 +69,21 @@ By using the `:<` operator, you can replace some part of the speech into another
 ghci> members = (Manatsu, Sango, Minori, Asuka)
 ghci> items = (TropicalPact :+: HeartKuruRingCureSummer, TropicalPact :+: HeartKuruRingCureCoral, TropicalPact :+: HeartKuruRingCurePapaya, TropicalPact :+: HeartKuruRingCureFlamingo)
 ghci> transformationSpeech (members :< "うわさも吹き飛ぶ！") items
+[ "プリキュア！トロピカルチェンジ！"
+, "レッツメイク！キャッチ！"
+, "チーク！"
+, "アイズ！"
+, "ヘアー！"
+, "リップ！"
+, "ドレス！"
+, "ときめく常夏！キュアサマー！"
+, "きらめく宝石！キュアコーラル！"
+, "ひらめく果実（フルーツ）！キュアパパイア！"
+, "はためく翼！キュアフラミンゴ！"
+, "はーっ！"
+, "うわさも吹き飛ぶ！"
+, "トロピカル〜ジュ！プリキュア！"
+]
 ```
 
 Compare with `transformationSpeech members items`!

@@ -1,3 +1,8 @@
+# Unrelased
+
+- From <https://github.com/igrep/typesafe-precure/pull/50>:
+    - Minor fixes in README.
+
 # 0.8.0.1
 
 - From <https://github.com/igrep/typesafe-precure/pull/49>:
