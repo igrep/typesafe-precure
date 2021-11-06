@@ -1,5 +1,8 @@
-# Unrelased
+# 0.8.1.1
 
+- From <https://github.com/igrep/typesafe-precure/pull/51>:
+    - Add Cure La Mer, her purifications, and "PreCure Land Beat Dynamic" from Tropical-Rouge PreCure.
+    - Some minor fixes and refactorings in Tropical-Rouge PreCure.
 - From <https://github.com/igrep/typesafe-precure/pull/50>:
     - Minor fixes in README.
 

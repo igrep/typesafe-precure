@@ -39,8 +39,27 @@ instance Transformation
   transformationSpeech (_ps :< catchCopy) _i = transformationSpeech_TropicalRouge catchCopy
 
 
+instance Transformation
+  (VaryingBetweenEpisodes (Manatsu, Sango, Minori, Asuka, Laura))
+  (TropicalPact :+: HeartKuruRingCureSummer, TropicalPact :+: HeartKuruRingCureCoral, TropicalPact :+: HeartKuruRingCurePapaya, TropicalPact :+: HeartKuruRingCureFlamingo, MermaidAquaPact :+: HeartKuruRingCureLaMer)
+ where
+  type Style
+    (VaryingBetweenEpisodes (Manatsu, Sango, Minori, Asuka, Laura))
+    (TropicalPact :+: HeartKuruRingCureSummer, TropicalPact :+: HeartKuruRingCureCoral, TropicalPact :+: HeartKuruRingCurePapaya, TropicalPact :+: HeartKuruRingCureFlamingo, MermaidAquaPact :+: HeartKuruRingCureLaMer)
+    = (CureSummer, CureCoral, CurePapaya, CureFlamingo, CureLaMer)
+  transformedStyle _ _ = (CureSummer, CureCoral, CurePapaya, CureFlamingo, CureLaMer)
+  transformationSpeech (_ps :< catchCopy) _i = transformationSpeech_TropicalRouge2 catchCopy
+
+
 instance Purification
   (VaryingBetweenEpisodes Laura)
+  MermaidAquaPot
+ where
+  purificationSpeech (_laura :< color) _mermaidAquaPot = mermaidAquaPotWith color
+
+
+instance Purification
+  (VaryingBetweenEpisodes CureLaMer)
   MermaidAquaPot
  where
   purificationSpeech (_laura :< color) _mermaidAquaPot = mermaidAquaPotWith color

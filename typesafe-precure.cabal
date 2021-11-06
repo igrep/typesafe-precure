@@ -1,14 +1,14 @@
 cabal-version:        2.4
 name:                 typesafe-precure
-version:              0.8.0.1
+version:              0.8.1.1
 synopsis:             Type-safe transformations and purifications of PreCures (Japanese Battle Heroine)
 description:          See README.md for details.
 homepage:             https://github.com/igrep/typesafe-precure#readme
 license:              BSD-3-Clause
 license-file:         LICENSE
-author:               Yuji Yamamoto
-maintainer:           whosekiteneverfly@gmail.com
-copyright:            2020 Yuji Yamamoto
+author:               YAMAMOTO Yuji
+maintainer:           igrep@n.email.ne.jp
+copyright:            2021 YAMAMOTO Yuji
 category:             ACME
 build-type:           Simple
 extra-source-files:   README.md
