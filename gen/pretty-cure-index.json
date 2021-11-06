@@ -936,6 +936,11 @@
             "id": "HeartKuruRing"
         },
         {
+            "nameEn": "Mermaid Aqua Pact",
+            "nameJa": "マーメイドアクアパクト",
+            "id": "MermaidAquaPact"
+        },
+        {
             "nameEn": "Mermaid Aqua Pot",
             "nameJa": "マーメイドアクアポット",
             "id": "MermaidAquaPot"
@@ -949,6 +954,26 @@
             "nameEn": "Heart Quartet Ring",
             "nameJa": "ハートカルテットリング",
             "id": "HeartQuartetRing"
+        },
+        {
+            "nameEn": "Perfume Shiny Ring",
+            "nameJa": "パフュームシャイニーリング",
+            "id": "PerfumeShinyRing"
+        },
+        {
+            "nameEn": "Mermaid Aqua Brush",
+            "nameJa": "マーメイドアクアブラシ",
+            "id": "MermaidAquaBrush"
+        },
+        {
+            "nameEn": "Tropical Heart Dresser",
+            "nameJa": "トロピカルハートドレッサー",
+            "id": "TropicalHeartDresser"
+        },
+        {
+            "nameEn": "Land Heart Kuru Ring",
+            "nameJa": "ランドハートクルリング",
+            "id": "LandHeartKuruRing"
         },
         {
             "nameEn": "Heart Kuru Ring Cure Summer",
@@ -969,6 +994,11 @@
             "nameEn": "Heart Kuru Ring Cure Flamingo",
             "nameJa": "変身ハートクルリング キュアフラミンゴ",
             "id": "HeartKuruRingCureFlamingo"
+        },
+        {
+            "nameEn": "Heart Kuru Ring Cure La Mer",
+            "nameJa": "変身ハートクルリング キュアラメール",
+            "id": "HeartKuruRingCureLaMer"
         },
         {
             "nameEn": "Pinky Catch",
@@ -2115,6 +2145,14 @@
             "introducesHerselfAs": "はためく翼！キュアフラミンゴ！"
         },
         {
+            "nameEn": "Cure La Mer",
+            "variationEn": "",
+            "nameJa": "キュアラメール",
+            "variationJa": "",
+            "id": "CureLaMer",
+            "introducesHerselfAs": "ゆらめく大海原（オーシャン）！キュアラメール！"
+        },
+        {
             "nameEn": "Cure Summer",
             "variationEn": "Mix Tropical Style",
             "nameJa": "キュアサマー",
@@ -2145,6 +2183,46 @@
             "variationJa": "ミックストロピカルスタイル",
             "id": "CureFlamingo_MixTropicalStyle",
             "introducesHerselfAs": "はためく翼！キュアフラミンゴ！"
+        },
+        {
+            "nameEn": "Cure Summer",
+            "variationEn": "Excellent Tropical Style",
+            "nameJa": "キュアサマー",
+            "variationJa": "エクセレン・トロピカルスタイル",
+            "id": "CureSummer_ExcellentTropicalStyle",
+            "introducesHerselfAs": "ときめく常夏！キュアサマー！"
+        },
+        {
+            "nameEn": "Cure Coral",
+            "variationEn": "Excellent Tropical Style",
+            "nameJa": "キュアコーラル",
+            "variationJa": "エクセレン・トロピカルスタイル",
+            "id": "CureCoral_ExcellentTropicalStyle",
+            "introducesHerselfAs": "きらめく宝石！キュアコーラル！"
+        },
+        {
+            "nameEn": "Cure Papaya",
+            "variationEn": "Excellent Tropical Style",
+            "nameJa": "キュアパパイア",
+            "variationJa": "エクセレン・トロピカルスタイル",
+            "id": "CurePapaya_ExcellentTropicalStyle",
+            "introducesHerselfAs": "ひらめく果実（フルーツ）！キュアパパイア！"
+        },
+        {
+            "nameEn": "Cure Flamingo",
+            "variationEn": "Excellent Tropical Style",
+            "nameJa": "キュアフラミンゴ",
+            "variationJa": "エクセレン・トロピカルスタイル",
+            "id": "CureFlamingo_ExcellentTropicalStyle",
+            "introducesHerselfAs": "はためく翼！キュアフラミンゴ！"
+        },
+        {
+            "nameEn": "Cure La Mer",
+            "variationEn": "Excellent Tropical Style",
+            "nameJa": "キュアラメール",
+            "variationJa": "エクセレン・トロピカルスタイル",
+            "id": "CureLaMer_ExcellentTropicalStyle",
+            "introducesHerselfAs": "ゆらめく大海原（オーシャン）！キュアラメール！"
         },
         {
             "nameEn": "Cure Dream",
@@ -2528,7 +2606,7 @@
         },
         {
             "nameEn": "Laura",
-            "nameJa": "ローラ",
+            "nameJa": "ローラ・ラメール",
             "id": "Laura"
         },
         {
@@ -4912,6 +4990,18 @@
         },
         {
             "specialItems": [
+                "MermaidAquaPact"
+            ],
+            "purifiers": [
+                "CureLaMer"
+            ],
+            "speech": [
+                "プリキュア！くるくるラメールストリーム！",
+                "ビクトリー！"
+            ]
+        },
+        {
+            "specialItems": [
                 {
                     "a": [
                         "HeartQuartetRing"
@@ -4936,10 +5026,66 @@
         },
         {
             "specialItems": [
+                {
+                    "a": [
+                        "PerfumeShinyRing",
+                        "MermaidAquaBrush"
+                    ],
+                    "i": "MermaidAquaPact"
+                }
+            ],
+            "purifiers": [
+                "CureLaMer"
+            ],
+            "speech": [
+                "パフュームシャイニーリング！",
+                "シャボンフォーム！",
+                "アクアチャージ！",
+                "プリキュア！ オーシャンバブルシャワー！",
+                "ビクトリー！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LandHeartKuruRing"
+                    ],
+                    "i": "TropicalHeartDresser"
+                }
+            ],
+            "purifiers": [
+                "CureSummer_ExcellentTropicalStyle",
+                "CureCoral_ExcellentTropicalStyle",
+                "CurePapaya_ExcellentTropicalStyle",
+                "CureFlamingo_ExcellentTropicalStyle",
+                "CureLaMer_ExcellentTropicalStyle"
+            ],
+            "speech": [
+                "5つの力！大地を照らせ！",
+                "（ぱおーん！）",
+                "プリキュア・ランドビートダイナミック！",
+                "ビクトリー！"
+            ]
+        },
+        {
+            "specialItems": [
                 "MermaidAquaPot"
             ],
             "purifiers": [
                 "Laura"
+            ],
+            "speech": [
+                "マーメイドアクアポット！",
+                "やる気パワー、カムバック！"
+            ]
+        },
+        {
+            "specialItems": [
+                "MermaidAquaPot"
+            ],
+            "purifiers": [
+                "CureLaMer"
             ],
             "speech": [
                 "マーメイドアクアポット！",
@@ -8894,6 +9040,30 @@
             "specialItems": [
                 {
                     "a": [
+                        "HeartKuruRingCureLaMer"
+                    ],
+                    "i": "MermaidAquaPact"
+                }
+            ],
+            "transformees": [
+                "CureLaMer"
+            ],
+            "speech": [
+                "プリキュア！トロピカルチェンジ！",
+                "レッツメイク！キャッチ！",
+                "フェイス！",
+                "ネイル！",
+                "ドレス！",
+                "ゆらめく大海原（オーシャン）！キュアラメール！"
+            ],
+            "transformers": [
+                "Laura"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
                         "HeartKuruRingCureSummer"
                     ],
                     "i": "TropicalPact"
@@ -9029,6 +9199,72 @@
             "specialItems": [
                 {
                     "a": [
+                        "HeartKuruRingCureSummer"
+                    ],
+                    "i": "TropicalPact"
+                },
+                {
+                    "a": [
+                        "HeartKuruRingCureCoral"
+                    ],
+                    "i": "TropicalPact"
+                },
+                {
+                    "a": [
+                        "HeartKuruRingCurePapaya"
+                    ],
+                    "i": "TropicalPact"
+                },
+                {
+                    "a": [
+                        "HeartKuruRingCureFlamingo"
+                    ],
+                    "i": "TropicalPact"
+                },
+                {
+                    "a": [
+                        "HeartKuruRingCureLaMer"
+                    ],
+                    "i": "MermaidAquaPact"
+                }
+            ],
+            "transformees": [
+                "CureSummer",
+                "CureCoral",
+                "CurePapaya",
+                "CureFlamingo",
+                "CureLaMer"
+            ],
+            "speech": [
+                "プリキュア！トロピカルチェンジ！",
+                "レッツメイク！キャッチ！",
+                "チーク！",
+                "アイズ！",
+                "ヘアー！",
+                "リップ！",
+                "ネイル！",
+                "ドレス！",
+                "ときめく常夏！キュアサマー！",
+                "きらめく宝石！キュアコーラル！",
+                "ひらめく果実（フルーツ）！キュアパパイア！",
+                "はためく翼！キュアフラミンゴ！",
+                "ゆらめく大海原（オーシャン）！キュアラメール！",
+                "はーっ！",
+                "5人そろって！",
+                "トロピカル〜ジュ！プリキュア！"
+            ],
+            "transformers": [
+                "Manatsu",
+                "Sango",
+                "Minori",
+                "Asuka",
+                "Laura"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
                         "HeartQuartetRing"
                     ],
                     "i": "HeartRougeRod"
@@ -9055,6 +9291,34 @@
                 "CureCoral",
                 "CurePapaya",
                 "CureFlamingo"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "LandHeartKuruRing"
+                    ],
+                    "i": "TropicalHeartDresser"
+                }
+            ],
+            "transformees": [
+                "CureSummer_ExcellentTropicalStyle",
+                "CureCoral_ExcellentTropicalStyle",
+                "CurePapaya_ExcellentTropicalStyle",
+                "CureFlamingo_ExcellentTropicalStyle",
+                "CureLaMer_ExcellentTropicalStyle"
+            ],
+            "speech": [
+                "ランドハートクルリング！",
+                "エクセレン・トロピカルスタイル！"
+            ],
+            "transformers": [
+                "CureSummer",
+                "CureCoral",
+                "CurePapaya",
+                "CureFlamingo",
+                "CureLaMer"
             ]
         },
         {
@@ -9979,12 +10243,38 @@
             "nameEn": "Tropical-Rouge! PreCure",
             "variationEn": "",
             "nameJa": "トロピカル〜ジュ！プリキュア",
+            "variationJa": "",
+            "transformerIds": [
+                "CureSummer",
+                "CureCoral",
+                "CurePapaya",
+                "CureFlamingo",
+                "CureLaMer"
+            ]
+        },
+        {
+            "nameEn": "Tropical-Rouge! PreCure",
+            "variationEn": "Mix Tropical Style",
+            "nameJa": "トロピカル〜ジュ！プリキュア",
             "variationJa": "ミックストロピカルスタイル",
             "transformerIds": [
                 "CureSummer_MixTropicalStyle",
                 "CureCoral_MixTropicalStyle",
                 "CurePapaya_MixTropicalStyle",
                 "CureFlamingo_MixTropicalStyle"
+            ]
+        },
+        {
+            "nameEn": "Tropical-Rouge! PreCure",
+            "variationEn": "Excellent Tropical Style",
+            "nameJa": "トロピカル〜ジュ！プリキュア",
+            "variationJa": "エクセレン・トロピカルスタイル",
+            "transformerIds": [
+                "CureSummer_ExcellentTropicalStyle",
+                "CureCoral_ExcellentTropicalStyle",
+                "CurePapaya_ExcellentTropicalStyle",
+                "CureFlamingo_ExcellentTropicalStyle",
+                "CureLaMer_ExcellentTropicalStyle"
             ]
         },
         {

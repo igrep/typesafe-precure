@@ -94,6 +94,10 @@ From Tropical-Rouge! PreCure:
 
 ```haskell
 purificationSpeech  (Laura :< "赤") MermaidAquaPot
+
+members = (Manatsu, Sango, Minori, Asuka, Laura)
+items = (TropicalPact :+: HeartKuruRingCureSummer, TropicalPact :+: HeartKuruRingCureCoral, TropicalPact :+: HeartKuruRingCurePapaya, TropicalPact :+: HeartKuruRingCureFlamingo, MermaidAquaPact :+: HeartKuruRingCureLaMer)
+transformationSpeech (members :< "子どももなれるよ！") items
 ```
 
 From DokiDoki! PreCure:
