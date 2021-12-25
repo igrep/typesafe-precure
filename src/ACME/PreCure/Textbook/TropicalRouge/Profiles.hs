@@ -132,6 +132,7 @@ specialItems =
   , mkSpecialItem "Mermaid Aqua Brush" "マーメイドアクアブラシ"
   , mkSpecialItem "Tropical Heart Dresser" "トロピカルハートドレッサー"
   , mkSpecialItem "Land Heart Kuru Ring" "ランドハートクルリング"
+  , mkSpecialItem "Marine Heart Kuru Ring" "マリンハートクルリング"
 
   , mkSpecialItem "Heart Kuru Ring Cure Summer"   "変身ハートクルリング キュアサマー"
   , mkSpecialItem "Heart Kuru Ring Cure Coral"    "変身ハートクルリング キュアコーラル"
@@ -251,10 +252,20 @@ transformations =
       [ mkIA "TropicalHeartDresser" ["LandHeartKuruRing"]
       ]
       groupMembers_ExcellentTropical
-      [ "ランドハートクルリング！"
-      , "エクセレン・トロピカルスタイル！"
+      ("ランドハートクルリング！" : omekashiUpExcellentTropicalStyle)
+
+  , mkTransformation
+      groupMembers2
+      [ mkIA "TropicalHeartDresser" ["MarineHeartKuruRing"]
       ]
+      groupMembers_ExcellentTropical
+      ("マリンハートクルリング！" : omekashiUpExcellentTropicalStyle)
   ]
+ where
+  omekashiUpExcellentTropicalStyle =
+    [ "おめかしアップ！"
+    , "エクセレン・トロピカルスタイル！"
+    ]
 
 
 transformationSpeech_TropicalRouge :: String -> [String]
@@ -358,7 +369,17 @@ purifications =
       ]
       [ "5つの力！大地を照らせ！"
       , "（ぱおーん！）"
-      , "プリキュア・ランドビートダイナミック！"
+      , "プリキュア！ランドビートダイナミック！"
+      , victory
+      ]
+
+  , mkPurification
+      groupMembers_ExcellentTropical
+      [ mkIA "TropicalHeartDresser" ["MarineHeartKuruRing"]
+      ]
+      [ "5つの力！海に轟け！！"
+      , "（シャーチ！！）"
+      , "プリキュア！マリンビートダイナミック！"
       , victory
       ]
 

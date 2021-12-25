@@ -976,6 +976,11 @@
             "id": "LandHeartKuruRing"
         },
         {
+            "nameEn": "Marine Heart Kuru Ring",
+            "nameJa": "マリンハートクルリング",
+            "id": "MarineHeartKuruRing"
+        },
+        {
             "nameEn": "Heart Kuru Ring Cure Summer",
             "nameJa": "変身ハートクルリング キュアサマー",
             "id": "HeartKuruRingCureSummer"
@@ -5064,7 +5069,30 @@
             "speech": [
                 "5つの力！大地を照らせ！",
                 "（ぱおーん！）",
-                "プリキュア・ランドビートダイナミック！",
+                "プリキュア！ランドビートダイナミック！",
+                "ビクトリー！"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MarineHeartKuruRing"
+                    ],
+                    "i": "TropicalHeartDresser"
+                }
+            ],
+            "purifiers": [
+                "CureSummer_ExcellentTropicalStyle",
+                "CureCoral_ExcellentTropicalStyle",
+                "CurePapaya_ExcellentTropicalStyle",
+                "CureFlamingo_ExcellentTropicalStyle",
+                "CureLaMer_ExcellentTropicalStyle"
+            ],
+            "speech": [
+                "5つの力！海に轟け！！",
+                "（シャーチ！！）",
+                "プリキュア！マリンビートダイナミック！",
                 "ビクトリー！"
             ]
         },
@@ -9311,6 +9339,36 @@
             ],
             "speech": [
                 "ランドハートクルリング！",
+                "おめかしアップ！",
+                "エクセレン・トロピカルスタイル！"
+            ],
+            "transformers": [
+                "CureSummer",
+                "CureCoral",
+                "CurePapaya",
+                "CureFlamingo",
+                "CureLaMer"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "MarineHeartKuruRing"
+                    ],
+                    "i": "TropicalHeartDresser"
+                }
+            ],
+            "transformees": [
+                "CureSummer_ExcellentTropicalStyle",
+                "CureCoral_ExcellentTropicalStyle",
+                "CurePapaya_ExcellentTropicalStyle",
+                "CureFlamingo_ExcellentTropicalStyle",
+                "CureLaMer_ExcellentTropicalStyle"
+            ],
+            "speech": [
+                "マリンハートクルリング！",
+                "おめかしアップ！",
                 "エクセレン・トロピカルスタイル！"
             ],
             "transformers": [
