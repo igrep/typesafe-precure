@@ -1,3 +1,8 @@
+# 0.8.2.1
+
+- From <https://github.com/igrep/typesafe-precure/pull/51>:
+    - Add "PreCure Marine Beat Dynamic", and correct the phrase of "PreCure Land Beat Dynamic" from Tropical-Rouge PreCure.
+
 # 0.8.1.1
 
 - From <https://github.com/igrep/typesafe-precure/pull/51>:
