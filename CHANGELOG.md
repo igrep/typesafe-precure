@@ -1,3 +1,7 @@
+# 0.8.2.2
+
+- Add Cure Oasis and her transformation.
+
 # 0.8.2.1
 
 - From <https://github.com/igrep/typesafe-precure/pull/51>:

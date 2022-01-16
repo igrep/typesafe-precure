@@ -1006,6 +1006,11 @@
             "id": "HeartKuruRingCureLaMer"
         },
         {
+            "nameEn": "Heart Kuru Ring Cure Oasis",
+            "nameJa": "変身ハートクルリング キュアオアシス",
+            "id": "HeartKuruRingCureOasis"
+        },
+        {
             "nameEn": "Pinky Catch",
             "nameJa": "ピンキーキャッチュ",
             "id": "PinkyCatch"
@@ -2230,6 +2235,14 @@
             "introducesHerselfAs": "ゆらめく大海原（オーシャン）！キュアラメール！"
         },
         {
+            "nameEn": "Cure Oasis",
+            "variationEn": "",
+            "nameJa": "キュアオアシス",
+            "variationJa": "",
+            "id": "CureOasis",
+            "introducesHerselfAs": "乾いた心に！キュアオアシス！"
+        },
+        {
             "nameEn": "Cure Dream",
             "variationEn": "",
             "nameJa": "キュアドリーム",
@@ -2613,6 +2626,11 @@
             "nameEn": "Laura",
             "nameJa": "ローラ・ラメール",
             "id": "Laura"
+        },
+        {
+            "nameEn": "Agnete",
+            "nameJa": "アウネーテ",
+            "id": "Agnete"
         },
         {
             "nameEn": "Nozomi Yumehara",
@@ -9377,6 +9395,26 @@
                 "CurePapaya",
                 "CureFlamingo",
                 "CureLaMer"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "HeartKuruRingCureOasis"
+                    ],
+                    "i": "TropicalPact"
+                }
+            ],
+            "transformees": [
+                "CureOasis"
+            ],
+            "speech": [
+                "プリキュア！トロピカルチェンジ！",
+                "乾いた心に！キュアオアシス！"
+            ],
+            "transformers": [
+                "Agnete"
             ]
         },
         {
