@@ -14,6 +14,8 @@ girls =
   , mkGirl "Minori Ichinose"  "一之瀬 みのり"
   , mkGirl "Asuka Takizawa"   "滝沢 あすか"
   , mkGirl "Laura"            "ローラ・ラメール"
+
+  , mkGirl "Agnete" "アウネーテ"
   ]
 
 transformees :: [Transformee]
@@ -104,6 +106,13 @@ transformees =
       "キュアラメール"
       "エクセレン・トロピカルスタイル"
       introducesHerselfAs_CureLaMer
+
+  , mkTransformee
+      "Cure Oasis"
+      ""
+      "キュアオアシス"
+      ""
+      introducesHerselfAs_CureOasis
   ]
 
 transformedGroups :: [TransformedGroup]
@@ -139,6 +148,8 @@ specialItems =
   , mkSpecialItem "Heart Kuru Ring Cure Papaya"   "変身ハートクルリング キュアパパイア"
   , mkSpecialItem "Heart Kuru Ring Cure Flamingo" "変身ハートクルリング キュアフラミンゴ"
   , mkSpecialItem "Heart Kuru Ring Cure La Mer"   "変身ハートクルリング キュアラメール"
+
+  , mkSpecialItem "Heart Kuru Ring Cure Oasis"   "変身ハートクルリング キュアオアシス"
   ]
 
 transformations :: [Transformation]
@@ -260,6 +271,14 @@ transformations =
       ]
       groupMembers_ExcellentTropical
       ("マリンハートクルリング！" : omekashiUpExcellentTropicalStyle)
+
+  , mkTransformation
+      ["Agnete"]
+      [ mkIA "TropicalPact" ["HeartKuruRingCureOasis"]
+      ]
+      ["CureOasis"]
+      [precureTropicalChange, introducesHerselfAs_CureOasis]
+
   ]
  where
   omekashiUpExcellentTropicalStyle =
@@ -307,7 +326,10 @@ face = "フェイス！"
 nail = "ネイル！"
 
 commonTransformationLines :: [String]
-commonTransformationLines = ["プリキュア！トロピカルチェンジ！", "レッツメイク！キャッチ！"]
+commonTransformationLines = [precureTropicalChange, "レッツメイク！キャッチ！"]
+
+precureTropicalChange :: String
+precureTropicalChange = "プリキュア！トロピカルチェンジ！"
 
 mermaidAquaPotWith :: String -> [String]
 mermaidAquaPotWith color =
@@ -424,3 +446,6 @@ introducesHerselfAs_CureFlamingo =
 
 introducesHerselfAs_CureLaMer =
   "ゆらめく大海原（オーシャン）！キュアラメール！"
+
+introducesHerselfAs_CureOasis =
+  "乾いた心に！キュアオアシス！"
