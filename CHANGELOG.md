@@ -1,3 +1,7 @@
+# 0.9.0.1
+
+- Add transformations and purifications from "Delicious Party♡PreCure" (except for Cure Finale).
+
 # 0.8.2.2
 
 - Add Cure Oasis and her transformation.

@@ -43,7 +43,9 @@ mkGirl ne = Girl (head $ words ne) ne
 
 
 typeNamify :: String -> String
-typeNamify = concat . words
+typeNamify = concat . words . replaceDashes
+ where
+  replaceDashes = map (\c -> if c == '-' then ' ' else c)
 
 
 prefixify :: String -> String
