@@ -112,7 +112,7 @@ library
                      , dlist
                      , template-haskell
                      , text
-                     , th-data-compat
+                     , th-data-compat >= 0.1.1.0
                      , th-strict-compat
   build-tool-depends:  autoexporter:autoexporter
   default-language:    Haskell2010
