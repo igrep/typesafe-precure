@@ -9,16 +9,6 @@ module ACME.PreCure.Types.TH
         , declareTransformations
         , declarePurifications
         , declareNonItemPurifications
-
-        , girlInstance
-        , transformedInstance
-        , transformedInstanceDefault
-        , transformedGroupInstance
-        , transformedGroupInstanceDefault
-        , transformationInstance
-
-        , purificationInstance
-        , nonItemPurificationInstance
         ) where
 
 
@@ -159,23 +149,6 @@ transformedGroupInstance typeq groupN vari =
     instance TransformedGroup $(typeq) where
       groupName _ = $(stringE groupN)
       groupVariation _ = $(stringE vari)
-  |]
-
-
-transformedInstanceDefault :: TypeQ -> String -> String -> DecsQ
-transformedInstanceDefault typeq cureN intro =
-  [d|
-    instance Transformed $(typeq) where
-      cureName _ = $(stringE cureN)
-      introducesHerselfAs _ = $(stringE intro)
-  |]
-
-
-transformedGroupInstanceDefault :: TypeQ -> String -> DecsQ
-transformedGroupInstanceDefault typeq groupN =
-  [d|
-    instance TransformedGroup $(typeq) where
-      groupName _ = $(stringE groupN)
   |]
 
 
