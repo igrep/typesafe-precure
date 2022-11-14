@@ -19,21 +19,21 @@ spec = do
 
   describe "transformedStyle" $ do
     it "returns transformed precure" $ do
-      (transformedStyle (Mirai, Liko) (Mofurun :+: LinkleStoneDia)) `shouldBe` (CureMiracle, CureMagical)
+      transformedStyle (Mirai, Liko) (Mofurun :+: LinkleStoneDia) `shouldBe` (CureMiracle, CureMagical)
 
     it "some precures can transform into special form" $ do
-      (transformedStyle (CureMiracle, CureMagical, CureFelice) (Mofurun :+: LinkleStoneAlexandrite, LinkleSmarthon :+: LinkleStoneAlexandrite)) `shouldBe` specialForm
+      transformedStyle (CureMiracle, CureMagical, CureFelice) (Mofurun :+: LinkleStoneAlexandrite, LinkleSmarthon :+: LinkleStoneAlexandrite) `shouldBe` specialForm
 
   describe "transformationSpeech" $ do
     it "returns group transformation speech of the pair" $ do
-      (transformationSpeech (Mirai, Liko) (Mofurun :+: LinkleStoneDia)) `shouldBe` ["キュアップ・ラパパ！　ダイヤ！", "ミラクル・マジカル・ジュエリーレ！", "ふたりの奇跡！キュアミラクル！", "ふたりの魔法！キュアマジカル！", "魔法つかいプリキュア！！"]
+      transformationSpeech (Mirai, Liko) (Mofurun :+: LinkleStoneDia) `shouldBe` ["キュアップ・ラパパ！　ダイヤ！", "ミラクル・マジカル・ジュエリーレ！", "ふたりの奇跡！キュアミラクル！", "ふたりの魔法！キュアマジカル！", "魔法つかいプリキュア！！"]
 
     it "returns group transformation speech with alexandrite" $ do
-      (transformationSpeech (CureMiracle, CureMagical, CureFelice) (Mofurun :+: LinkleStoneAlexandrite, LinkleSmarthon :+: LinkleStoneAlexandrite)) `shouldBe` ["キュアップ・ラパパ！　アレキサンドライト！", "魔法つかいプリキュア！　オーバー・ザ・レインボー！"]
+      transformationSpeech (CureMiracle, CureMagical, CureFelice) (Mofurun :+: LinkleStoneAlexandrite, LinkleSmarthon :+: LinkleStoneAlexandrite) `shouldBe` ["キュアップ・ラパパ！　アレキサンドライト！", "魔法つかいプリキュア！　オーバー・ザ・レインボー！"]
 
   describe "purificationSpeech" $ do
     it "returns purification speech" $ do
-      (purificationSpeech (CureMiracle, CureMagical) (Mofurun :+: LinkleStoneDia, LinkleStick :+: LinkleStoneDia)) `shouldBe` ["ダイヤ！永遠の輝きを私達の手に！", "フルフルリンクル！", "プリキュア！ダイヤモンド・エターナル！"]
+      purificationSpeech (CureMiracle, CureMagical) (Mofurun :+: LinkleStoneDia, LinkleStick :+: LinkleStoneDia) `shouldBe` ["ダイヤ！永遠の輝きを私達の手に！", "フルフルリンクル！", "プリキュア！ダイヤモンド・エターナル！"]
 
   describe "TransformedGroup" $ do
     describe "CureMagical, CureMiracle, and CureFelice" $ do
