@@ -1,3 +1,8 @@
+# 0.9.1.1
+
+- Add transformations and purifications of Cure Finale.
+- Fix linter's warnings in the test suite.
+
 # 0.9.0.1
 
 - Add transformations and purifications from "Delicious Party♡PreCure" (except for Cure Finale).

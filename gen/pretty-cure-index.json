@@ -16,6 +16,11 @@
             "nameJa": "華満 らん"
         },
         {
+            "id": "Amane",
+            "nameEn": "Amane Kasai",
+            "nameJa": "菓彩 あまね"
+        },
+        {
             "id": "Mana",
             "nameEn": "Mana Aida",
             "nameJa": "相田 マナ"
@@ -677,6 +682,21 @@
         },
         {
             "purifiers": [
+                "CureFinale"
+            ],
+            "specialItems": [
+                "CreamyFleuret"
+            ],
+            "speech": [
+                "クリーミーフルーレ！",
+                "ブルーミン・ダンシンフルーツ！",
+                "プリキュア！デリシャスフィナーレ・ファンファーレ！",
+                "（オナカ、イッパ～イ！）",
+                "ごちそうさまでした！"
+            ]
+        },
+        {
+            "purifiers": [
                 "CurePrecious",
                 "CureSpicy",
                 "CureYumYum"
@@ -692,6 +712,31 @@
                 "スパイシーフレイバー！",
                 "ヤムヤムフレイバー！",
                 "プリキュア！ミックスハート・アタック！",
+                "（オナカ、イッパ～イ！）",
+                "ごちそうさまでした！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CurePrecious_PartyUpStyle",
+                "CureSpicy_PartyUpStyle",
+                "CureYumYum_PartyUpStyle",
+                "CureFinale_PartyUpStyle"
+            ],
+            "specialItems": [
+                "KomeKome",
+                "PartyUpRing",
+                "PartyCandleTact",
+                "PartyUpRing",
+                "PartyCandleTact",
+                "PartyUpRing",
+                "PartyCandleTact",
+                "PartyUpRing",
+                "PartyCandleTact"
+            ],
+            "speech": [
+                "心をひとつに！",
+                "プリキュア！ライト・マイ・デリシャス！",
                 "（オナカ、イッパ～イ！）",
                 "ごちそうさまでした！"
             ]
@@ -3387,9 +3432,29 @@
             "nameJa": "メンメン"
         },
         {
+            "id": "HeartFruitsPendant",
+            "nameEn": "Heart Fruits Pendant",
+            "nameJa": "ハートフルーツペンダント"
+        },
+        {
+            "id": "CreamyFleuret",
+            "nameEn": "Creamy Fleuret",
+            "nameJa": "クリーミーフルーレ"
+        },
+        {
             "id": "HeartJuicyMixer",
             "nameEn": "Heart Juicy Mixer",
             "nameJa": "ハートジューシーミキサー"
+        },
+        {
+            "id": "PartyUpRing",
+            "nameEn": "Party Up Ring",
+            "nameJa": "パーティーアップリング"
+        },
+        {
+            "id": "PartyCandleTact",
+            "nameEn": "Party Candle Tact",
+            "nameJa": "パーティーキャンドルタクト"
         },
         {
             "id": "LovelyCommuneSharuru",
@@ -4547,6 +4612,28 @@
         },
         {
             "specialItems": [
+                "HeartFruitsPendant"
+            ],
+            "speech": [
+                "プリキュア！デリシャスタンバイ！",
+                "パーティーゴー！",
+                "フルーツ！",
+                "ファビュラス・オーダー！",
+                "シェアリンエナジー！",
+                "トッピング！",
+                "ブリリアント！",
+                "シャインモア！",
+                "ジェントルに、ゴージャスに！咲き誇るスウィートネス！キュアフィナーレ！食卓の最後を、このわたしが飾ろう。"
+            ],
+            "transformees": [
+                "CureFinale"
+            ],
+            "transformers": [
+                "Amane"
+            ]
+        },
+        {
+            "specialItems": [
                 "KomeKome",
                 "PamPam"
             ],
@@ -4620,6 +4707,93 @@
                 "Yui",
                 "Kokone",
                 "Ran"
+            ]
+        },
+        {
+            "specialItems": [
+                "KomeKome",
+                "PamPam",
+                "MemMem",
+                "HeartFruitsPendant"
+            ],
+            "speech": [
+                "プリキュア！デリシャスタンバイ！",
+                "パーティーゴー！",
+                "にぎにぎ！",
+                "（コメコメ！）",
+                "ハートを！",
+                "（コメコメ！）",
+                "オープン！",
+                "（パムパム！）",
+                "サンド！",
+                "（パムパム！）",
+                "クルクル！",
+                "（メンメン！！）",
+                "ミラクル！",
+                "（メンメン！！）",
+                "フルーツ！",
+                "ファビュラス・オーダー！",
+                "シェアリンエナジー！",
+                "（コメー！）",
+                "（テイスティー！）",
+                "（ワンターン！）",
+                "トッピング！",
+                "ブリリアント！",
+                "シャインモア！",
+                "（コメコメ！）",
+                "（パムパム！）",
+                "（メンメン！！）",
+                "あつあつごはんで、みなぎるパワー！キュアプレシャス！おいしい笑顔で満たしてあげる！",
+                "ふわふわサンドde心にスパイス！キュアスパイシー！分け合うおいしさ、焼きつけるわ！",
+                "きらめくヌードル・エモーション！キュアヤムヤム！おいしいの独り占め、ゆるさないよ！",
+                "ジェントルに、ゴージャスに！咲き誇るスウィートネス！キュアフィナーレ！食卓の最後を、このわたしが飾ろう。",
+                "デリシャスパーティ♡プリキュア！"
+            ],
+            "transformees": [
+                "CurePrecious",
+                "CureSpicy",
+                "CureYumYum",
+                "CureFinale"
+            ],
+            "transformers": [
+                "Yui",
+                "Kokone",
+                "Ran",
+                "Amane"
+            ]
+        },
+        {
+            "specialItems": [
+                "KomeKome",
+                "PartyUpRing",
+                "PartyCandleTact",
+                "PartyUpRing",
+                "PartyCandleTact",
+                "PartyUpRing",
+                "PartyCandleTact",
+                "PartyUpRing",
+                "PartyCandleTact"
+            ],
+            "speech": [
+                "（コメコメの力をみんなに！）",
+                "パーティキャンドルタクト！",
+                "笑顔のパワー！",
+                "分け合うパワー！",
+                "情熱のパワー！",
+                "正義のパワー！",
+                "（プリキュア・パーティアップ！）"
+            ],
+            "transformees": [
+                "CurePrecious_PartyUpStyle",
+                "CureSpicy_PartyUpStyle",
+                "CureYumYum_PartyUpStyle",
+                "CureFinale_PartyUpStyle"
+            ],
+            "transformers": [
+                "CurePrecious",
+                "CureSpicy",
+                "CureYumYum",
+                "CureFinale"
             ]
         },
         {
@@ -9535,6 +9709,46 @@
             "nameJa": "キュアヤムヤム",
             "variationEn": "",
             "variationJa": ""
+        },
+        {
+            "id": "CureFinale",
+            "introducesHerselfAs": "ジェントルに、ゴージャスに！咲き誇るスウィートネス！キュアフィナーレ！食卓の最後を、このわたしが飾ろう。",
+            "nameEn": "Cure Finale",
+            "nameJa": "キュアフィナーレ",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CurePrecious_PartyUpStyle",
+            "introducesHerselfAs": "あつあつごはんで、みなぎるパワー！キュアプレシャス！おいしい笑顔で満たしてあげる！",
+            "nameEn": "Cure Precious",
+            "nameJa": "キュアプレシャス",
+            "variationEn": "Party Up Style",
+            "variationJa": "パーティアップスタイル"
+        },
+        {
+            "id": "CureSpicy_PartyUpStyle",
+            "introducesHerselfAs": "ふわふわサンドde心にスパイス！キュアスパイシー！分け合うおいしさ、焼きつけるわ！",
+            "nameEn": "Cure Spicy",
+            "nameJa": "キュアスパイシー",
+            "variationEn": "Party Up Style",
+            "variationJa": "パーティアップスタイル"
+        },
+        {
+            "id": "CureYumYum_PartyUpStyle",
+            "introducesHerselfAs": "きらめくヌードル・エモーション！キュアヤムヤム！おいしいの独り占め、ゆるさないよ！",
+            "nameEn": "Cure Yum-Yum",
+            "nameJa": "キュアヤムヤム",
+            "variationEn": "Party Up Style",
+            "variationJa": "パーティアップスタイル"
+        },
+        {
+            "id": "CureFinale_PartyUpStyle",
+            "introducesHerselfAs": "ジェントルに、ゴージャスに！咲き誇るスウィートネス！キュアフィナーレ！食卓の最後を、このわたしが飾ろう。",
+            "nameEn": "Cure Finale",
+            "nameJa": "キュアフィナーレ",
+            "variationEn": "Party Up Style",
+            "variationJa": "パーティアップスタイル"
         },
         {
             "id": "CureHeart",
