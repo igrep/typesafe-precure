@@ -1,3 +1,8 @@
+# 0.10.0.1
+
+- Add transformations and purifications from "Soaring Sky! Pretty Cure".
+- Fix: forgot to add "Party Up Style" of "Delicious Party♡PreCure" as `TransformedGroup`.
+
 # 0.9.1.1
 
 - Add transformations and purifications of Cure Finale.

@@ -71,6 +71,7 @@ transformees =
 transformedGroups :: [TransformedGroup]
 transformedGroups =
     [ mkTransformedGroup groupMembers1 ne "" nj ""
+    , mkTransformedGroup groupMembers2 ne "Party Up Style" nj "パーティアップスタイル"
     ]
   where
     ne = "Delicious Party♡PreCure"
