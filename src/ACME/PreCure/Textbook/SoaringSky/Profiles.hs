@@ -13,6 +13,7 @@ girls =
   , mkGirl "Mashiro Nijigaoka" "虹ヶ丘 ましろ"
   , mkGirl "Tsubasa Yuunagi" "夕凪 ツバサ"
   , mkGirl "Ageha Hijiri" "聖 あげは"
+  , mkGirl "Ellee" "エル"
   ]
 
 transformees :: [Transformee]
@@ -41,11 +42,17 @@ transformees =
       "キュアバタフライ"
       ""
       introducesHerselfAs_Butterfly
+  , mkTransformee
+      "Cure Majesty"
+      ""
+      "キュアマジェスティ"
+      ""
+      introducesHerselfAs_Majesty
   ]
 
 transformedGroups :: [TransformedGroup]
 transformedGroups =
-  [ mkTransformedGroup ["CureSky", "CurePrism", "CureWing", "CureButterfly"] ne "" nj ""
+  [ mkTransformedGroup ["CureSky", "CurePrism", "CureWing", "CureButterfly", "CureMajesty"] ne "" nj ""
   ]
  where
   ne = "Soaring Sky! Pretty Cure"
@@ -59,11 +66,14 @@ specialItems =
   , mkSpecialItem "Sky Tone Prism" "スカイトーン プリズム"
   , mkSpecialItem "Sky Tone Wing" "スカイトーン ウィング"
   , mkSpecialItem "Sky Tone Butterfly" "スカイトーン バタフライ"
+  , mkSpecialItem "Sky Tone Cure Majesty" "スカイトーン キュアマジェスティ"
 
   , mkSpecialItem "Sky Tone W Shining" "スカイトーン Wシャイニング"
   , mkSpecialItem "Sky Tone W Flying" "スカイトーン Wフライング"
 
   , mkSpecialItem "Mix Palette" "ミックスパレット"
+  -- Ref. https://prettycure.fandom.com/wiki/Majestic_Chroniclon
+  , mkSpecialItem "Majestic Chroniclon" "マジェスティクルニクルン"
   ]
 
 transformations :: [Transformation]
@@ -103,6 +113,15 @@ transformations =
       ++ hirogaruChange "バタフライ！"
       ++ kiramekiHopSawayakaStepHarebareJump
       ++ [introducesHerselfAs_Butterfly]
+      )
+  , mkTransformation
+      ["Ellee"]
+      [mkIA "SkyMirage" ["SkyToneCureMajesty"]]
+      ["CureMajesty"]
+      ( skyMirageToneConnect
+      ++ hirogaruChange "マジェスティ！"
+      ++ kiramekiHopSawayakaStepHarebareJump
+      ++ [introducesHerselfAs_Majesty]
       )
 
   , mkTransformation
@@ -249,6 +268,106 @@ transformations =
       )
 
   , mkTransformation
+      ["Sora", "Mashiro", "Tsubasa", "Ageha", "Ellee"]
+      [ mkIA "SkyMirage" ["SkyToneSky"]
+      , mkIA "SkyMirage" ["SkyTonePrism"]
+      , mkIA "SkyMirage" ["SkyToneWing"]
+      , mkIA "SkyMirage" ["SkyToneButterfly"]
+      , mkIA "SkyMirage" ["SkyToneCureMajesty"]
+      ]
+      ["CureSky", "CurePrism", "CureWing", "CureButterfly", "CureMajesty"]
+      ( skyMirageToneConnect
+      ++ hirogaruChange "スカイ！"
+      ++ kiramekiHopSawayakaStepHarebareJump
+      ++
+        [ introducesHerselfAs_Sky
+        , introducesHerselfAs_Prism
+        , introducesHerselfAs_Wing
+        , introducesHerselfAs_Butterfly
+        ]
+      ++ skyMirageToneConnect
+      ++ hirogaruChange "マジェスティ！"
+      ++ kiramekiHopSawayakaStepHarebareJump
+      ++ [introducesHerselfAs_Majesty]
+      ++ readyGoHirogaruSkyPreCure
+      )
+
+  , mkTransformation
+      ["Mashiro", "Sora", "Tsubasa", "Ageha", "Ellee"]
+      [ mkIA "SkyMirage" ["SkyTonePrism"]
+      , mkIA "SkyMirage" ["SkyToneSky"]
+      , mkIA "SkyMirage" ["SkyToneWing"]
+      , mkIA "SkyMirage" ["SkyToneButterfly"]
+      , mkIA "SkyMirage" ["SkyToneCureMajesty"]
+      ]
+      ["CurePrism", "CureSky", "CureWing", "CureButterfly", "CureMajesty"]
+      ( skyMirageToneConnect
+      ++ hirogaruChange "プリズム！"
+      ++ kiramekiHopSawayakaStepHarebareJump
+      ++
+        [ introducesHerselfAs_Sky
+        , introducesHerselfAs_Prism
+        , introducesHerselfAs_Wing
+        , introducesHerselfAs_Butterfly
+        ]
+      ++ skyMirageToneConnect
+      ++ hirogaruChange "マジェスティ！"
+      ++ kiramekiHopSawayakaStepHarebareJump
+      ++ [introducesHerselfAs_Majesty]
+      ++ readyGoHirogaruSkyPreCure
+      )
+
+  , mkTransformation
+      ["Tsubasa", "Sora", "Mashiro", "Ageha", "Ellee"]
+      [ mkIA "SkyMirage" ["SkyToneWing"]
+      , mkIA "SkyMirage" ["SkyToneSky"]
+      , mkIA "SkyMirage" ["SkyTonePrism"]
+      , mkIA "SkyMirage" ["SkyToneButterfly"]
+      , mkIA "SkyMirage" ["SkyToneCureMajesty"]
+      ]
+      ["CureWing", "CureSky", "CurePrism", "CureButterfly", "CureMajesty"]
+      ( skyMirageToneConnect
+      ++ hirogaruChange "ウィング！"
+      ++ kiramekiHopSawayakaStepHarebareJump
+      ++
+        [ introducesHerselfAs_Sky
+        , introducesHerselfAs_Prism
+        , introducesHerselfAs_Wing
+        , introducesHerselfAs_Butterfly
+        ]
+      ++ skyMirageToneConnect
+      ++ hirogaruChange "マジェスティ！"
+      ++ kiramekiHopSawayakaStepHarebareJump
+      ++ [introducesHerselfAs_Majesty]
+      ++ readyGoHirogaruSkyPreCure
+      )
+
+  , mkTransformation
+      ["Ageha", "Sora", "Mashiro", "Tsubasa", "Ellee"]
+      [ mkIA "SkyMirage" ["SkyToneButterfly"]
+      , mkIA "SkyMirage" ["SkyToneSky"]
+      , mkIA "SkyMirage" ["SkyTonePrism"]
+      , mkIA "SkyMirage" ["SkyToneWing"]
+      , mkIA "SkyMirage" ["SkyToneCureMajesty"]
+      ]
+      ["CureButterfly", "CureSky", "CurePrism", "CureWing", "CureMajesty"]
+      ( skyMirageToneConnect
+      ++ hirogaruChange "バタフライ！"
+      ++ kiramekiHopSawayakaStepHarebareJump
+      ++
+        [ introducesHerselfAs_Sky
+        , introducesHerselfAs_Prism
+        , introducesHerselfAs_Wing
+        , introducesHerselfAs_Butterfly
+        ]
+      ++ skyMirageToneConnect
+      ++ hirogaruChange "マジェスティ！"
+      ++ kiramekiHopSawayakaStepHarebareJump
+      ++ [introducesHerselfAs_Majesty]
+      ++ readyGoHirogaruSkyPreCure
+      )
+
+  , mkTransformation
       ["Ageha", "Tsubasa"]
       [ mkIA "SkyMirage" ["SkyToneButterfly"]
       , mkIA "SkyMirage" ["SkyToneWing"]
@@ -305,6 +424,14 @@ purifications =
       , "アタック！"
       , "（スミキッタ～）"
       ]
+  , mkPurification
+      ["CureSky", "CurePrism", "CureWing", "CureButterfly"]
+      ["MajesticChroniclon"]
+      [ "マジェスティクルニクルン！"
+      , "ひろがる世界にテイクオフ！"
+      , "プリキュア！マジェスティック・ハレーション！"
+      , "（スミキッタ～）"
+      ]
   ]
 
 
@@ -328,3 +455,6 @@ introducesHerselfAs_Wing = "天高くひろがる勇気！キュアウィング�
 
 introducesHerselfAs_Butterfly :: String
 introducesHerselfAs_Butterfly = "アゲてひろがるワンダホー！キュアバタフライ！"
+
+introducesHerselfAs_Majesty :: String
+introducesHerselfAs_Majesty = "降り立つ気高き神秘！キュアマジェスティ！"
