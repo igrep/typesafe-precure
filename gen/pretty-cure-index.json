@@ -296,6 +296,11 @@
             "nameJa": "聖 あげは"
         },
         {
+            "id": "Ellee",
+            "nameEn": "Ellee",
+            "nameJa": "エル"
+        },
+        {
             "id": "Saki",
             "nameEn": "Saki Hyuga",
             "nameJa": "日向 咲"
@@ -2543,6 +2548,23 @@
         },
         {
             "purifiers": [
+                "CureSky",
+                "CurePrism",
+                "CureWing",
+                "CureButterfly"
+            ],
+            "specialItems": [
+                "MajesticChroniclon"
+            ],
+            "speech": [
+                "マジェスティクルニクルン！",
+                "ひろがる世界にテイクオフ！",
+                "プリキュア！マジェスティック・ハレーション！",
+                "（スミキッタ～）"
+            ]
+        },
+        {
+            "purifiers": [
                 "CureStar"
             ],
             "specialItems": [
@@ -4321,6 +4343,11 @@
             "nameJa": "スカイトーン バタフライ"
         },
         {
+            "id": "SkyToneCureMajesty",
+            "nameEn": "Sky Tone Cure Majesty",
+            "nameJa": "スカイトーン キュアマジェスティ"
+        },
+        {
             "id": "SkyToneWShining",
             "nameEn": "Sky Tone W Shining",
             "nameJa": "スカイトーン Wシャイニング"
@@ -4334,6 +4361,11 @@
             "id": "MixPalette",
             "nameEn": "Mix Palette",
             "nameJa": "ミックスパレット"
+        },
+        {
+            "id": "MajesticChroniclon",
+            "nameEn": "Majestic Chroniclon",
+            "nameJa": "マジェスティクルニクルン"
         },
         {
             "id": "MixCommuneFlappy",
@@ -8187,6 +8219,32 @@
             "specialItems": [
                 {
                     "a": [
+                        "SkyToneCureMajesty"
+                    ],
+                    "i": "SkyMirage"
+                }
+            ],
+            "speech": [
+                "スカイミラージュ！",
+                "トーンコネクト！",
+                "ひろがるチェンジ！",
+                "マジェスティ！",
+                "きらめきHOP！",
+                "さわやかSTEP！",
+                "はればれJUMP！",
+                "降り立つ気高き神秘！キュアマジェスティ！"
+            ],
+            "transformees": [
+                "CureMajesty"
+            ],
+            "transformers": [
+                "Ellee"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
                         "SkyToneSky"
                     ],
                     "i": "SkyMirage"
@@ -8563,6 +8621,294 @@
                 "Sora",
                 "Mashiro",
                 "Ageha"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SkyToneSky"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyTonePrism"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneWing"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneButterfly"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneCureMajesty"
+                    ],
+                    "i": "SkyMirage"
+                }
+            ],
+            "speech": [
+                "スカイミラージュ！",
+                "トーンコネクト！",
+                "ひろがるチェンジ！",
+                "スカイ！",
+                "きらめきHOP！",
+                "さわやかSTEP！",
+                "はればれJUMP！",
+                "無限にひろがる青い空！キュアスカイ！",
+                "ふわりひろがる優しい光！キュアプリズム！",
+                "天高くひろがる勇気！キュアウィング！",
+                "アゲてひろがるワンダホー！キュアバタフライ！",
+                "スカイミラージュ！",
+                "トーンコネクト！",
+                "ひろがるチェンジ！",
+                "マジェスティ！",
+                "きらめきHOP！",
+                "さわやかSTEP！",
+                "はればれJUMP！",
+                "降り立つ気高き神秘！キュアマジェスティ！",
+                "Ready...",
+                "Go!",
+                "ひろがるスカイ！プリキュア！"
+            ],
+            "transformees": [
+                "CureSky",
+                "CurePrism",
+                "CureWing",
+                "CureButterfly",
+                "CureMajesty"
+            ],
+            "transformers": [
+                "Sora",
+                "Mashiro",
+                "Tsubasa",
+                "Ageha",
+                "Ellee"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SkyTonePrism"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneSky"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneWing"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneButterfly"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneCureMajesty"
+                    ],
+                    "i": "SkyMirage"
+                }
+            ],
+            "speech": [
+                "スカイミラージュ！",
+                "トーンコネクト！",
+                "ひろがるチェンジ！",
+                "プリズム！",
+                "きらめきHOP！",
+                "さわやかSTEP！",
+                "はればれJUMP！",
+                "無限にひろがる青い空！キュアスカイ！",
+                "ふわりひろがる優しい光！キュアプリズム！",
+                "天高くひろがる勇気！キュアウィング！",
+                "アゲてひろがるワンダホー！キュアバタフライ！",
+                "スカイミラージュ！",
+                "トーンコネクト！",
+                "ひろがるチェンジ！",
+                "マジェスティ！",
+                "きらめきHOP！",
+                "さわやかSTEP！",
+                "はればれJUMP！",
+                "降り立つ気高き神秘！キュアマジェスティ！",
+                "Ready...",
+                "Go!",
+                "ひろがるスカイ！プリキュア！"
+            ],
+            "transformees": [
+                "CurePrism",
+                "CureSky",
+                "CureWing",
+                "CureButterfly",
+                "CureMajesty"
+            ],
+            "transformers": [
+                "Mashiro",
+                "Sora",
+                "Tsubasa",
+                "Ageha",
+                "Ellee"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SkyToneWing"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneSky"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyTonePrism"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneButterfly"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneCureMajesty"
+                    ],
+                    "i": "SkyMirage"
+                }
+            ],
+            "speech": [
+                "スカイミラージュ！",
+                "トーンコネクト！",
+                "ひろがるチェンジ！",
+                "ウィング！",
+                "きらめきHOP！",
+                "さわやかSTEP！",
+                "はればれJUMP！",
+                "無限にひろがる青い空！キュアスカイ！",
+                "ふわりひろがる優しい光！キュアプリズム！",
+                "天高くひろがる勇気！キュアウィング！",
+                "アゲてひろがるワンダホー！キュアバタフライ！",
+                "スカイミラージュ！",
+                "トーンコネクト！",
+                "ひろがるチェンジ！",
+                "マジェスティ！",
+                "きらめきHOP！",
+                "さわやかSTEP！",
+                "はればれJUMP！",
+                "降り立つ気高き神秘！キュアマジェスティ！",
+                "Ready...",
+                "Go!",
+                "ひろがるスカイ！プリキュア！"
+            ],
+            "transformees": [
+                "CureWing",
+                "CureSky",
+                "CurePrism",
+                "CureButterfly",
+                "CureMajesty"
+            ],
+            "transformers": [
+                "Tsubasa",
+                "Sora",
+                "Mashiro",
+                "Ageha",
+                "Ellee"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "SkyToneButterfly"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneSky"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyTonePrism"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneWing"
+                    ],
+                    "i": "SkyMirage"
+                },
+                {
+                    "a": [
+                        "SkyToneCureMajesty"
+                    ],
+                    "i": "SkyMirage"
+                }
+            ],
+            "speech": [
+                "スカイミラージュ！",
+                "トーンコネクト！",
+                "ひろがるチェンジ！",
+                "バタフライ！",
+                "きらめきHOP！",
+                "さわやかSTEP！",
+                "はればれJUMP！",
+                "無限にひろがる青い空！キュアスカイ！",
+                "ふわりひろがる優しい光！キュアプリズム！",
+                "天高くひろがる勇気！キュアウィング！",
+                "アゲてひろがるワンダホー！キュアバタフライ！",
+                "スカイミラージュ！",
+                "トーンコネクト！",
+                "ひろがるチェンジ！",
+                "マジェスティ！",
+                "きらめきHOP！",
+                "さわやかSTEP！",
+                "はればれJUMP！",
+                "降り立つ気高き神秘！キュアマジェスティ！",
+                "Ready...",
+                "Go!",
+                "ひろがるスカイ！プリキュア！"
+            ],
+            "transformees": [
+                "CureButterfly",
+                "CureSky",
+                "CurePrism",
+                "CureWing",
+                "CureMajesty"
+            ],
+            "transformers": [
+                "Ageha",
+                "Sora",
+                "Mashiro",
+                "Tsubasa",
+                "Ellee"
             ]
         },
         {
@@ -10226,7 +10572,8 @@
                 "CureSky",
                 "CurePrism",
                 "CureWing",
-                "CureButterfly"
+                "CureButterfly",
+                "CureMajesty"
             ],
             "variationEn": "",
             "variationJa": ""
@@ -11369,6 +11716,14 @@
             "introducesHerselfAs": "アゲてひろがるワンダホー！キュアバタフライ！",
             "nameEn": "Cure Butterfly",
             "nameJa": "キュアバタフライ",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CureMajesty",
+            "introducesHerselfAs": "降り立つ気高き神秘！キュアマジェスティ！",
+            "nameEn": "Cure Majesty",
+            "nameJa": "キュアマジェスティ",
             "variationEn": "",
             "variationJa": ""
         },

@@ -1,3 +1,7 @@
+# 0.10.1.1
+
+- Add more transformations and purifications from "Soaring Sky! Pretty Cure", such as Cure Majesty and Majestic Halation etc.
+
 # 0.10.0.1
 
 - Add transformations and purifications from "Soaring Sky! Pretty Cure".

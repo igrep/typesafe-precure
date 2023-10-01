@@ -1,6 +1,6 @@
 cabal-version:        2.4
 name:                 typesafe-precure
-version:              0.10.0.1
+version:              0.10.1.1
 synopsis:             Type-safe transformations and purifications of PreCures (Japanese Battle Heroine)
 description:          See README.md for details.
 homepage:             https://github.com/igrep/typesafe-precure#readme
