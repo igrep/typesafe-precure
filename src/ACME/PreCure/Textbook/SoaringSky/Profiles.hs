@@ -284,11 +284,8 @@ transformations =
         , introducesHerselfAs_Prism
         , introducesHerselfAs_Wing
         , introducesHerselfAs_Butterfly
+        , introducesHerselfAs_Majesty
         ]
-      ++ skyMirageToneConnect
-      ++ hirogaruChange "マジェスティ！"
-      ++ kiramekiHopSawayakaStepHarebareJump
-      ++ [introducesHerselfAs_Majesty]
       ++ readyGoHirogaruSkyPreCure
       )
 
@@ -309,11 +306,8 @@ transformations =
         , introducesHerselfAs_Prism
         , introducesHerselfAs_Wing
         , introducesHerselfAs_Butterfly
+        , introducesHerselfAs_Majesty
         ]
-      ++ skyMirageToneConnect
-      ++ hirogaruChange "マジェスティ！"
-      ++ kiramekiHopSawayakaStepHarebareJump
-      ++ [introducesHerselfAs_Majesty]
       ++ readyGoHirogaruSkyPreCure
       )
 
@@ -334,11 +328,8 @@ transformations =
         , introducesHerselfAs_Prism
         , introducesHerselfAs_Wing
         , introducesHerselfAs_Butterfly
+        , introducesHerselfAs_Majesty
         ]
-      ++ skyMirageToneConnect
-      ++ hirogaruChange "マジェスティ！"
-      ++ kiramekiHopSawayakaStepHarebareJump
-      ++ [introducesHerselfAs_Majesty]
       ++ readyGoHirogaruSkyPreCure
       )
 
@@ -359,11 +350,30 @@ transformations =
         , introducesHerselfAs_Prism
         , introducesHerselfAs_Wing
         , introducesHerselfAs_Butterfly
+        , introducesHerselfAs_Majesty
         ]
-      ++ skyMirageToneConnect
+      ++ readyGoHirogaruSkyPreCure
+      )
+
+  , mkTransformation
+      ["Ellee", "Sora", "Mashiro", "Tsubasa", "Ageha"]
+      [ mkIA "SkyMirage" ["SkyToneCureMajesty"]
+      , mkIA "SkyMirage" ["SkyToneSky"]
+      , mkIA "SkyMirage" ["SkyTonePrism"]
+      , mkIA "SkyMirage" ["SkyToneWing"]
+      , mkIA "SkyMirage" ["SkyToneButterfly"]
+      ]
+      ["CureMajesty", "CureSky", "CurePrism", "CureWing", "CureButterfly"]
+      ( skyMirageToneConnect
       ++ hirogaruChange "マジェスティ！"
       ++ kiramekiHopSawayakaStepHarebareJump
-      ++ [introducesHerselfAs_Majesty]
+      ++
+        [ introducesHerselfAs_Sky
+        , introducesHerselfAs_Prism
+        , introducesHerselfAs_Wing
+        , introducesHerselfAs_Butterfly
+        , introducesHerselfAs_Majesty
+        ]
       ++ readyGoHirogaruSkyPreCure
       )
 

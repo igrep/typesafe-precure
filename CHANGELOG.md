@@ -1,3 +1,7 @@
+# 0.10.1.2
+
+- Add/correct the team transformations with Cure Majesty of "Soaring Sky! Pretty Cure". When Cure Majesty entered for the first time, her transformations is separated from others' transformations, but now they are merged. So it looks like that the merged transformation is more official.
+
 # 0.10.1.1
 
 - Add more transformations and purifications from "Soaring Sky! Pretty Cure", such as Cure Majesty and Majestic Halation etc.
