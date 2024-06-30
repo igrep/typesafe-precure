@@ -119,9 +119,7 @@ ghci> let scene = do
 ....>       purify scarletModeElegant (ScarletViolin :+: DressUpKeyPhoenix)
 ghci> :}
 ghci> :t scene
-scene
-  :: Control.Monad.Skeleton.Skeleton
-       ACME.PreCure.Monad.PreCureMonadBase ()
+scene :: ACME.PreCure.Monad.PreCureMonad ()
 ```
 
 #### Transform and Purify as a Pure Function

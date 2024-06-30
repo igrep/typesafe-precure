@@ -114,12 +114,12 @@ library
                      , aeson-pretty
                      , autoexporter
                      , bytestring
-                     , monad-skeleton
                      , dlist
                      , template-haskell
                      , text
                      , th-data-compat >= 0.1.1.0
                      , th-strict-compat
+                     , transformers
   build-tool-depends:  autoexporter:autoexporter
   default-language:    Haskell2010
 

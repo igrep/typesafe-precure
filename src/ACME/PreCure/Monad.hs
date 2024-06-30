@@ -1,4 +1,4 @@
-{-# LANGUAGE GADTs                 #-}
+{-# LANGUAGE GeneralizedNewtypeDeriving #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
 
 module ACME.PreCure.Monad
@@ -8,6 +8,7 @@ module ACME.PreCure.Monad
   , speak
   , say
   , runPreCureMonad
+  , execPreCureMonad
   , composeEpisode
   , printEpisode
   , printEpisodeWith
@@ -19,22 +20,19 @@ module ACME.PreCure.Monad
   ) where
 
 
-import qualified Control.Arrow          as Arrow
-import qualified Control.Concurrent     as Concurrent
-import qualified Control.Monad          as Monad
-import           Control.Monad.Skeleton (MonadView ((:>>=), Return), Skeleton,
-                                         bone, debone)
-import qualified Data.DList             as DList
-import qualified System.IO              as IO
+import qualified Control.Arrow                  as Arrow
+import qualified Control.Concurrent             as Concurrent
+import qualified Control.Monad                  as Monad
+import           Control.Monad.Trans.Writer.CPS (Writer, execWriter, runWriter, tell)
+import qualified Data.DList                     as DList
+import qualified System.IO                      as IO
 
 import           ACME.PreCure.Types
 
 
-data PreCureMonadBase x where
-  Speak :: [String] -> PreCureMonadBase ()
-
-
-type PreCureMonad = Skeleton PreCureMonadBase
+newtype PreCureMonad a =
+  PreCureMonad { runPreCureMonadD :: Writer (DList.DList String) a }
+  deriving (Functor, Applicative, Monad)
 
 
 newtype EpisodeConfig =
@@ -49,32 +47,26 @@ defaultEpisodeConfig =
 
 speak :: [String] -> PreCureMonad ()
 speak =
-  bone . Speak
+  PreCureMonad . tell . DList.fromList
 
 
 say :: String -> PreCureMonad ()
 say =
-  speak . (:[])
+  PreCureMonad . tell . DList.singleton
 
 
 composeEpisode :: PreCureMonad a -> [String]
 composeEpisode =
-  snd . runPreCureMonad
+  execPreCureMonad
 
 
 runPreCureMonad :: PreCureMonad a -> (a, [String])
 runPreCureMonad =
-    Arrow.second DList.toList . runPreCureMonadD
+  Arrow.second DList.toList . runWriter . runPreCureMonadD
 
-
-runPreCureMonadD :: PreCureMonad a -> (a, DList.DList String)
-runPreCureMonadD a =
-  case debone a of
-       Speak ss :>>= k ->
-         let (x, ss') = runPreCureMonadD $ k ()
-         in
-           (x, DList.fromList ss <> ss')
-       Return x -> (x, DList.empty)
+execPreCureMonad :: PreCureMonad a -> [String]
+execPreCureMonad =
+  DList.toList . execWriter . runPreCureMonadD
 
 
 printEpisode :: PreCureMonad a -> IO ()
@@ -84,7 +76,7 @@ printEpisode =
 
 hPrintEpisode :: IO.Handle -> PreCureMonad a -> IO ()
 hPrintEpisode =
-  flip hPrintEpisodeWith defaultEpisodeConfig
+  (`hPrintEpisodeWith` defaultEpisodeConfig)
 
 
 printEpisodeWith :: EpisodeConfig -> PreCureMonad a -> IO ()
