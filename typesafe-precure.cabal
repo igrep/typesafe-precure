@@ -41,6 +41,7 @@ library
                      , ACME.PreCure.Textbook.TropicalRouge
                      , ACME.PreCure.Textbook.DeliciousParty
                      , ACME.PreCure.Textbook.SoaringSky
+                     , ACME.PreCure.Textbook.Wonderful
 
                      , ACME.PreCure.Types
                      , ACME.PreCure.Monad
@@ -107,6 +108,8 @@ library
                      , ACME.PreCure.Textbook.DeliciousParty.Profiles
 
                      , ACME.PreCure.Textbook.SoaringSky.Profiles
+
+                     , ACME.PreCure.Textbook.Wonderful.Profiles
 
   build-depends:       base >= 4.7 && < 5
                      -- TODO: specify version

@@ -386,6 +386,26 @@
             "nameJa": "アウネーテ"
         },
         {
+            "id": "Komugi",
+            "nameEn": "Komugi Inukai",
+            "nameJa": "犬飼 こむぎ"
+        },
+        {
+            "id": "Iroha",
+            "nameEn": "Iroha Inukai",
+            "nameJa": "犬飼 いろは"
+        },
+        {
+            "id": "Yuki",
+            "nameEn": "Yuki Nekoyashiki",
+            "nameJa": "猫屋敷 ユキ"
+        },
+        {
+            "id": "Mayu",
+            "nameEn": "Mayu Nekoyashiki",
+            "nameJa": "猫屋敷 まゆ"
+        },
+        {
             "id": "Nozomi",
             "nameEn": "Nozomi Yumehara",
             "nameJa": "夢原 のぞみ"
@@ -3348,6 +3368,175 @@
         },
         {
             "purifiers": [
+                "CureWonderful"
+            ],
+            "specialItems": [
+                "FriendlyTact",
+                "KirarinPenguin"
+            ],
+            "speech": [
+                "フレンドリータクト！",
+                "ワン！ワン！ワンダフル！",
+                "ヘルプ！キラリンアニマル！",
+                "ペンギン！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureWonderful"
+            ],
+            "specialItems": [
+                "FriendlyTact",
+                "KirarinLion"
+            ],
+            "speech": [
+                "フレンドリータクト！",
+                "ワン！ワン！ワンダフル！",
+                "ヘルプ！キラリンアニマル！",
+                "ライオン！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureWonderful"
+            ],
+            "specialItems": [
+                "FriendlyTact",
+                "KirarinBear"
+            ],
+            "speech": [
+                "フレンドリータクト！",
+                "ワン！ワン！ワンダフル！",
+                "ヘルプ！キラリンアニマル！",
+                "ベアー！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureFriendy"
+            ],
+            "specialItems": [
+                "FriendlyTact",
+                "KirarinRabbit"
+            ],
+            "speech": [
+                "フレンドリータクト！",
+                "フレ！フレ！フレンディ！",
+                "ヘルプ！キラリンアニマル！",
+                "ウサギ！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureFriendy"
+            ],
+            "specialItems": [
+                "FriendlyTact",
+                "KirarinPenguin"
+            ],
+            "speech": [
+                "フレンドリータクト！",
+                "フレ！フレ！フレンディ！",
+                "ヘルプ！キラリンアニマル！",
+                "ペンギン！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureFriendy"
+            ],
+            "specialItems": [
+                "FriendlyTact",
+                "KirarinLion"
+            ],
+            "speech": [
+                "フレンドリータクト！",
+                "フレ！フレ！フレンディ！",
+                "ヘルプ！キラリンアニマル！",
+                "ライオン！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureFriendy"
+            ],
+            "specialItems": [
+                "FriendlyTact",
+                "KirarinFawn"
+            ],
+            "speech": [
+                "フレンドリータクト！",
+                "フレ！フレ！フレンディ！",
+                "ヘルプ！キラリンアニマル！",
+                "コジカ！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureNyammy"
+            ],
+            "specialItems": [
+                "AmityRibbonTambourine",
+                "KirarinFox"
+            ],
+            "speech": [
+                "アミティーリボンタンバリン！",
+                "ニャン ニャン ニャミー！",
+                "ヘルプ！キラリンアニマル！",
+                "キツネ！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureNyammy"
+            ],
+            "specialItems": [
+                "AmityRibbonTambourine",
+                "KirarinPanda"
+            ],
+            "speech": [
+                "アミティーリボンタンバリン！",
+                "ニャン ニャン ニャミー！",
+                "ヘルプ！キラリンアニマル！",
+                "パンダ！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureWonderful",
+                "CureFriendy"
+            ],
+            "specialItems": [
+                "FriendlyTact",
+                "FriendlyTact"
+            ],
+            "speech": [
+                "フレンドリータクト！",
+                "ワンダフルをきみに！",
+                "ワン！ワン！わ～ん！",
+                "ガルガルなこころ、とんでけ～！",
+                "プリキュア！フレンドリベラーレ！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureNyammy",
+                "CureLillian"
+            ],
+            "specialItems": [
+                "AmityRibbonTambourine",
+                "AmityRibbonTambourine"
+            ],
+            "speech": [
+                "アミティーリボンタンバリン！",
+                "ニャンダフルをあなたに！",
+                "ニャン！ドゥ！トロワ！",
+                "ガルガルなこころ、さようなら！",
+                "プリキュア！アミティールミエール！"
+            ]
+        },
+        {
+            "purifiers": [
                 "CureDream"
             ],
             "specialItems": [
@@ -4646,6 +4835,66 @@
             "id": "HeartKuruRingCureOasis",
             "nameEn": "Heart Kuru Ring Cure Oasis",
             "nameJa": "変身ハートクルリング キュアオアシス"
+        },
+        {
+            "id": "WonderfulPact",
+            "nameEn": "Wonderful Pact",
+            "nameJa": "ワンダフルパクト"
+        },
+        {
+            "id": "ShinyCatsPact",
+            "nameEn": "Shiny Cats Pact",
+            "nameJa": "シャイニーキャッツパクト"
+        },
+        {
+            "id": "FriendlyTact",
+            "nameEn": "Friendly Tact",
+            "nameJa": "フレンドリータクト"
+        },
+        {
+            "id": "AmityRibbonTambourine",
+            "nameEn": "Amity Ribbon Tambourine",
+            "nameJa": "アミティーリボンタンバリン"
+        },
+        {
+            "id": "KirarinRabbit",
+            "nameEn": "Kirarin Rabbit",
+            "nameJa": "キラリンウサギ"
+        },
+        {
+            "id": "KirarinPenguin",
+            "nameEn": "Kirarin Penguin",
+            "nameJa": "キラリンペンギン"
+        },
+        {
+            "id": "KirarinLion",
+            "nameEn": "Kirarin Lion",
+            "nameJa": "キラリンライオン"
+        },
+        {
+            "id": "KirarinBear",
+            "nameEn": "Kirarin Bear",
+            "nameJa": "キラリンベアー"
+        },
+        {
+            "id": "KirarinFawn",
+            "nameEn": "Kirarin Fawn",
+            "nameJa": "キラリンコジカ"
+        },
+        {
+            "id": "KirarinHamster",
+            "nameEn": "Kirarin Hamster",
+            "nameJa": "キラリンハムスター"
+        },
+        {
+            "id": "KirarinFox",
+            "nameEn": "Kirarin Fox",
+            "nameJa": "キラリンキツネ"
+        },
+        {
+            "id": "KirarinPanda",
+            "nameEn": "Kirarin Panda",
+            "nameJa": "キラリンパンダ"
         },
         {
             "id": "PinkyCatch",
@@ -9934,6 +10183,122 @@
         },
         {
             "specialItems": [
+                "WonderfulPact"
+            ],
+            "speech": [
+                "ワンダフルパクト！",
+                "プリキュア！マイ・エボリューション！",
+                "スリー！ツー！ワン！",
+                "みんな大好き素敵な世界！キュアワンダフル！一緒に遊ぼ♪"
+            ],
+            "transformees": [
+                "CureWonderful"
+            ],
+            "transformers": [
+                "Komugi"
+            ]
+        },
+        {
+            "specialItems": [
+                "WonderfulPact"
+            ],
+            "speech": [
+                "ワンダフルパクト！",
+                "プリキュア！マイ・エボリューション！",
+                "スリー！ツー！ワン！",
+                "みんなの笑顔で彩る世界！キュアフレンディ！あなたの声をきかせて。"
+            ],
+            "transformees": [
+                "CureFriendy"
+            ],
+            "transformers": [
+                "Iroha"
+            ]
+        },
+        {
+            "specialItems": [
+                "ShinyCatsPact"
+            ],
+            "speech": [
+                "シャイニーキャッツパクト！",
+                "プリキュア！マイ・エボリューション！",
+                "ほっぺにきらめき",
+                "リップはキュートに！",
+                "気高くかわいくきらめく世界！キュアニャミー！仕方ない、構ってあげる。"
+            ],
+            "transformees": [
+                "CureNyammy"
+            ],
+            "transformers": [
+                "Yuki"
+            ]
+        },
+        {
+            "specialItems": [
+                "ShinyCatsPact"
+            ],
+            "speech": [
+                "シャイニーキャッツパクト！",
+                "プリキュア！マイ・エボリューション！",
+                "目元にきらめき！",
+                "リップはキュートに！",
+                "結んで紡いでつながる世界！キュアリリアン！こわくない、こわくない。"
+            ],
+            "transformees": [
+                "CureLillian"
+            ],
+            "transformers": [
+                "Mayu"
+            ]
+        },
+        {
+            "specialItems": [
+                "WonderfulPact",
+                "WonderfulPact"
+            ],
+            "speech": [
+                "ワンダフルパクト！",
+                "プリキュア！マイ・エボリューション！",
+                "スリー！ツー！ワン！",
+                "みんな大好き素敵な世界！キュアワンダフル！一緒に遊ぼ♪",
+                "みんなの笑顔で彩る世界！キュアフレンディ！あなたの声をきかせて。",
+                "せーのっ！",
+                "わんだふるぷりきゅあ！"
+            ],
+            "transformees": [
+                "CureWonderful",
+                "CureFriendy"
+            ],
+            "transformers": [
+                "Komugi",
+                "Iroha"
+            ]
+        },
+        {
+            "specialItems": [
+                "ShinyCatsPact",
+                "ShinyCatsPact"
+            ],
+            "speech": [
+                "シャイニーキャッツパクト！",
+                "プリキュア！マイ・エボリューション！",
+                "目元にきらめき！",
+                "リップはキュートに！",
+                "気高くかわいくきらめく世界！キュアニャミー！仕方ない、構ってあげる。",
+                "結んで紡いでつながる世界！キュアリリアン！こわくない、こわくない。",
+                "ニャンダフルプリキュア！"
+            ],
+            "transformees": [
+                "CureLillian",
+                "CureNyammy"
+            ],
+            "transformers": [
+                "Yuki",
+                "Mayu"
+            ]
+        },
+        {
+            "specialItems": [
                 "PinkyCatch"
             ],
             "speech": [
@@ -10734,6 +11099,26 @@
             ],
             "variationEn": "Excellent Tropical Style",
             "variationJa": "エクセレン・トロピカルスタイル"
+        },
+        {
+            "nameEn": "Wonderful! Pretty Cure",
+            "nameJa": "わんだふるぷりきゅあ！",
+            "transformerIds": [
+                "CureWonderful",
+                "CureFriendy"
+            ],
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "nameEn": "Nyanderful! Pretty Cure",
+            "nameJa": "ニャンダフルプリキュア！",
+            "transformerIds": [
+                "CureNyammy",
+                "CureLillian"
+            ],
+            "variationEn": "",
+            "variationJa": ""
         },
         {
             "nameEn": "Yes! PreCure 5",
@@ -12025,6 +12410,38 @@
             "introducesHerselfAs": "乾いた心に！キュアオアシス！",
             "nameEn": "Cure Oasis",
             "nameJa": "キュアオアシス",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CureWonderful",
+            "introducesHerselfAs": "みんな大好き素敵な世界！キュアワンダフル！一緒に遊ぼ♪",
+            "nameEn": "Cure Wonderful",
+            "nameJa": "キュアワンダフル",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CureFriendy",
+            "introducesHerselfAs": "みんなの笑顔で彩る世界！キュアフレンディ！あなたの声をきかせて。",
+            "nameEn": "Cure Friendy",
+            "nameJa": "キュアフレンディ",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CureNyammy",
+            "introducesHerselfAs": "気高くかわいくきらめく世界！キュアニャミー！仕方ない、構ってあげる。",
+            "nameEn": "Cure Nyammy",
+            "nameJa": "キュアニャミー",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CureLillian",
+            "introducesHerselfAs": "結んで紡いでつながる世界！キュアリリアン！こわくない、こわくない。",
+            "nameEn": "Cure Lillian",
+            "nameJa": "キュアリリアン",
             "variationEn": "",
             "variationJa": ""
         },
