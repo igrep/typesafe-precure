@@ -1,3 +1,8 @@
+# 0.11.0.1
+
+- Add transformations and purifications from "Wonderful Pretty Cure!".
+- Use the transofrmers package for `PreCureMonad` instead of the monad-skelton package, which doesn't support the latest base.
+
 # 0.10.1.2
 
 - Add/correct the team transformations with Cure Majesty of "Soaring Sky! Pretty Cure". When Cure Majesty entered for the first time, her transformations is separated from others' transformations, but now they are merged. So it looks like that the merged transformation is more official.
