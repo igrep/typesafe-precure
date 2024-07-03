@@ -1,6 +1,6 @@
 cabal-version:        2.4
 name:                 typesafe-precure
-version:              0.10.1.2
+version:              0.11.0.1
 synopsis:             Type-safe transformations and purifications of PreCures (Japanese Battle Heroine)
 description:          See README.md for details.
 homepage:             https://github.com/igrep/typesafe-precure#readme
@@ -41,6 +41,7 @@ library
                      , ACME.PreCure.Textbook.TropicalRouge
                      , ACME.PreCure.Textbook.DeliciousParty
                      , ACME.PreCure.Textbook.SoaringSky
+                     , ACME.PreCure.Textbook.Wonderful
 
                      , ACME.PreCure.Types
                      , ACME.PreCure.Monad
@@ -108,18 +109,20 @@ library
 
                      , ACME.PreCure.Textbook.SoaringSky.Profiles
 
+                     , ACME.PreCure.Textbook.Wonderful.Profiles
+
   build-depends:       base >= 4.7 && < 5
                      -- TODO: specify version
                      , aeson
                      , aeson-pretty
                      , autoexporter
                      , bytestring
-                     , monad-skeleton
                      , dlist
                      , template-haskell
                      , text
                      , th-data-compat >= 0.1.1.0
                      , th-strict-compat
+                     , transformers
   build-tool-depends:  autoexporter:autoexporter
   default-language:    Haskell2010
 

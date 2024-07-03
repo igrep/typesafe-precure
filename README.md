@@ -9,7 +9,7 @@ Written in Haskell.
 ## Features
 
 - Collection of Japanese battle heroines "PreCure"  and their transformation and purification phrases.
-    - Currently, supports from the first season to "Soaring Sky! PreCure", including Cure Echo, Cure Mofurun, Cure Pekorin, Cure Infini, and Cure Oasis!
+    - Currently, supports from the first season to "Wonderfule Pretty Cure!", including Cure Echo, Cure Mofurun, Cure Pekorin, Cure Infini, and Cure Oasis!
 - Monadic actions to play the speech of their transformations and purifications.
 
 ## Characteristics
@@ -119,9 +119,7 @@ ghci> let scene = do
 ....>       purify scarletModeElegant (ScarletViolin :+: DressUpKeyPhoenix)
 ghci> :}
 ghci> :t scene
-scene
-  :: Control.Monad.Skeleton.Skeleton
-       ACME.PreCure.Monad.PreCureMonadBase ()
+scene :: ACME.PreCure.Monad.PreCureMonad ()
 ```
 
 #### Transform and Purify as a Pure Function
