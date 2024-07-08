@@ -1,3 +1,7 @@
+# Unreleased
+
+- Fix typo: Wonderfule -> Wonderful in the README.
+
 # 0.11.0.1
 
 - Add transformations and purifications from "Wonderful Pretty Cure!".
