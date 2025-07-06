@@ -119,6 +119,7 @@ library
                      , bytestring
                      , dlist
                      , template-haskell
+                     , safe
                      , text
                      , th-data-compat >= 0.1.1.0
                      , th-strict-compat
