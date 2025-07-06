@@ -42,6 +42,7 @@ library
                      , ACME.PreCure.Textbook.DeliciousParty
                      , ACME.PreCure.Textbook.SoaringSky
                      , ACME.PreCure.Textbook.Wonderful
+                     , ACME.PreCure.Textbook.YouAndIdol
 
                      , ACME.PreCure.Types
                      , ACME.PreCure.Monad
@@ -110,6 +111,8 @@ library
                      , ACME.PreCure.Textbook.SoaringSky.Profiles
 
                      , ACME.PreCure.Textbook.Wonderful.Profiles
+
+                     , ACME.PreCure.Textbook.YouAndIdol.Profiles
 
   build-depends:       base >= 4.7 && < 5
                      -- TODO: specify version

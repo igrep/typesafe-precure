@@ -1,3 +1,8 @@
+# 0.12.0.1
+
+- Add transformations and purifications from "You and Idol PreCure♪".
+- Add more purifications from "Wonderful Pretty Cure!".
+
 # 0.11.1.1
 
 - Add more transformations and purifications from "Wonderful Pretty Cure!".

@@ -434,6 +434,31 @@
             "id": "Kurumi",
             "nameEn": "Kurumi Mimino",
             "nameJa": "美々野 くるみ"
+        },
+        {
+            "id": "Uta",
+            "nameEn": "Uta Sakura",
+            "nameJa": "咲良 うた"
+        },
+        {
+            "id": "Nana",
+            "nameEn": "Nana Aokaze",
+            "nameJa": "蒼風 なな"
+        },
+        {
+            "id": "Kokoro",
+            "nameEn": "Kokoro Shigure",
+            "nameJa": "紫雨 こころ"
+        },
+        {
+            "id": "Purirun",
+            "nameEn": "Purirun",
+            "nameJa": "プリルン"
+        },
+        {
+            "id": "Meroron",
+            "nameEn": "Meroron",
+            "nameJa": "メロロン"
         }
     ],
     "nonItemPurifications": [
@@ -3443,6 +3468,21 @@
         },
         {
             "purifiers": [
+                "CureWonderful"
+            ],
+            "specialItems": [
+                "FriendlyTact",
+                "KirarinRabbit"
+            ],
+            "speech": [
+                "フレンドリータクト！",
+                "ワン！ワン！ワンダフル！",
+                "ヘルプ！キラリンアニマル！",
+                "ウサギ！"
+            ]
+        },
+        {
+            "purifiers": [
                 "CureFriendy"
             ],
             "specialItems": [
@@ -3728,6 +3768,21 @@
         },
         {
             "purifiers": [
+                "CureLillian"
+            ],
+            "specialItems": [
+                "AmityRibbonTambourine",
+                "KirarinPanda"
+            ],
+            "speech": [
+                "アミティーリボンタンバリン！",
+                "リンリン リリアン！",
+                "ヘルプ！キラリンアニマル！",
+                "パンダ！"
+            ]
+        },
+        {
+            "purifiers": [
                 "CureWonderful",
                 "CureFriendy"
             ],
@@ -3973,6 +4028,192 @@
                 "勇気をのせて！",
                 "プリキュア！レインボー・ローズ・エクスプロージョン！",
                 "行け！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureIdol"
+            ],
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureRibbonCureIdol"
+                    ],
+                    "i": "IdolHeartBrooch"
+                }
+            ],
+            "speech": [
+                "アイドルグータッチ！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureWink"
+            ],
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureRibbonCureWink"
+                    ],
+                    "i": "IdolHeartBrooch"
+                }
+            ],
+            "speech": [
+                "ウインクバリア！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureKyunKyun"
+            ],
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureRibbonCureKyunKyun"
+                    ],
+                    "i": "IdolHeartBrooch"
+                }
+            ],
+            "speech": [
+                "キュンキュンレーザー！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureIdol"
+            ],
+            "specialItems": [
+                "IdolHeartIncom"
+            ],
+            "speech": [
+                "クライマックスはわたし！",
+                "もり上がっていくよー！",
+                "キミのハートに とびっきり元気をあげるね",
+                "ゼッタイ！ (ゼッタイ！) アイドル！ (アイドル！)",
+                "ドキドキが止まらない！",
+                "急接近！笑顔のユニゾン 応えてほしいなっ サンキュー",
+                "最高のステージで キミと歌を咲かそう",
+                "プリキュア！アイドルスマイリング！",
+                "（キラキラッタ～）"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureWink"
+            ],
+            "specialItems": [
+                "IdolHeartIncom"
+            ],
+            "speech": [
+                "クライマックスはわたし！",
+                "聴いてください。",
+                "きらめきへ踏み出そう 受け取った勇気つないで",
+                "まばたきの数だけ 五線譜に焼きつけていく",
+                "出会えたキミへと奏でたい",
+                "いつまでも鳴り止まないメロディー",
+                "プリキュア！ウインククレッシェンド！",
+                "（キラキラッタ～）"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureKyunKyun"
+            ],
+            "specialItems": [
+                "IdolHeartIncom"
+            ],
+            "speech": [
+                "クライマックスはわたし！",
+                "準備はOKー!?",
+                "ねえキミも！",
+                "かわいーな (キュンキュン) かっこいーな (キュンキュン)",
+                "完全同意にアガるテンションコーレスプリーズ (イェイ☆)",
+                "とびきりキュンキュン響かせて踊ろっ (Let's dance！！)",
+                "もう1回 (キュンキュン) アンコール (キュンキュン)",
+                "完全ダイスキハイなステップがナンバーワン",
+                "もっと夢中になれるね",
+                "こころビート YES！！ キュンキュン♪",
+                "プリキュア！キュンキュンビート！",
+                "（キラキラッタ～）"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureIdol",
+                "CureWink",
+                "CureKyunKyun"
+            ],
+            "specialItems": [
+                "IdolHeartIncom",
+                "IdolHeartIncom",
+                "IdolHeartIncom"
+            ],
+            "speech": [
+                "ウー、レッツゴー！",
+                "Try Try Trio Dreams",
+                "Let's Sing Let's Swing Let's Dance Let's Bound",
+                "Let's Smile Let's Fly",
+                "ハートを上げてくよ！",
+                "Sing! 音符に夢乗せて キミ、あなたのもとへ For You",
+                "もっともっと 輝き合えるね みんな キラッキラン",
+                "瞳水晶(スクリーン)に いつだって 笑顔映し合おう Promise",
+                "キミがいるからパワー 生まれるよ、今日も",
+                "Try Try Trio Dreams",
+                "プリキュア！ハイエモーション！",
+                "（キラキラッタ～）"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureZukyoon"
+            ],
+            "specialItems": [
+                "HeartKirariLock"
+            ],
+            "speech": [
+                "ズキューンバズーカー！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureKiss"
+            ],
+            "specialItems": [
+                "HeartKirariLock"
+            ],
+            "speech": [
+                "キッスショック！"
+            ]
+        },
+        {
+            "purifiers": [
+                "CureZukyoon",
+                "CureKiss"
+            ],
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureRibbonCureZukyoon"
+                    ],
+                    "i": "KiraKiraShowTimeMic"
+                },
+                {
+                    "a": [
+                        "PreCureRibbonCureKiss"
+                    ],
+                    "i": "KiraKiraShowTimeMic"
+                }
+            ],
+            "speech": [
+                "ふたりの誓い、いま輝け！",
+                "取り戻したい 光の世界",
+                "その笑顔 勇気 涙 夢",
+                "希望の兆し",
+                "キミと明日を 願うチカラで",
+                "生まれる 私たちのハーモニー",
+                "響け",
+                "プリキュア！ズキューンキッスディスティニー！",
+                "（キラキラッタ～）"
             ]
         }
     ],
@@ -5231,6 +5472,51 @@
             "id": "MilkyMirror",
             "nameEn": "Milky Mirror",
             "nameJa": "ミルキィミラー"
+        },
+        {
+            "id": "IdolHeartBrooch",
+            "nameEn": "Idol Heart Brooch",
+            "nameJa": "アイドルハートブローチ"
+        },
+        {
+            "id": "PreCureRibbonCureIdol",
+            "nameEn": "PreCure Ribbon Cure Idol",
+            "nameJa": "プリキュアリボン（キュアアイドル）"
+        },
+        {
+            "id": "PreCureRibbonCureWink",
+            "nameEn": "PreCure Ribbon Cure Wink",
+            "nameJa": "プリキュアリボン（キュアウインク）"
+        },
+        {
+            "id": "PreCureRibbonCureKyunKyun",
+            "nameEn": "PreCure Ribbon Cure KyunKyun",
+            "nameJa": "プリキュアリボン（キュアキュンキュン）"
+        },
+        {
+            "id": "PreCureRibbonCureZukyoon",
+            "nameEn": "PreCure Ribbon Cure Zukyoon",
+            "nameJa": "プリキュアリボン（キュアズキューン）"
+        },
+        {
+            "id": "PreCureRibbonCureKiss",
+            "nameEn": "PreCure Ribbon Cure Kiss",
+            "nameJa": "プリキュアリボン（キュアキッス）"
+        },
+        {
+            "id": "IdolHeartIncom",
+            "nameEn": "Idol Heart Incom",
+            "nameJa": "アイドルハートインカム"
+        },
+        {
+            "id": "HeartKirariLock",
+            "nameEn": "Heart Kirari Lock",
+            "nameJa": "ハートブローチ"
+        },
+        {
+            "id": "KiraKiraShowTimeMic",
+            "nameEn": "Kira Kira Show Time Mic",
+            "nameJa": "キラキラショータイムマイク"
         }
     ],
     "transformations": [
@@ -10883,6 +11169,149 @@
                 "Karen",
                 "Kurumi"
             ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureRibbonCureIdol"
+                    ],
+                    "i": "IdolHeartBrooch"
+                }
+            ],
+            "speech": [
+                "プリキュア、ライトアップ！",
+                "キラキラ、ドレスチェンジ！ YEAH！",
+                "キミと～！ YEAH！",
+                "一緒に～！ YEAH！",
+                "キミと歌う、ハートのキラキラ！ 笑顔ニッコリ、キュアアイドル！"
+            ],
+            "transformees": [
+                "CureIdol"
+            ],
+            "transformers": [
+                "Uta"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureRibbonCureWink"
+                    ],
+                    "i": "IdolHeartBrooch"
+                }
+            ],
+            "speech": [
+                "プリキュア、ライトアップ！",
+                "キラキラ、ドレスチェンジ！ YEAH！",
+                "キミと～！ YEAH！",
+                "一緒に～！ YEAH！",
+                "キミと瞬く、ハートの勇気！ お目目パッチン、キュアウインク！"
+            ],
+            "transformees": [
+                "CureWink"
+            ],
+            "transformers": [
+                "Nana"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureRibbonCureKyunKyun"
+                    ],
+                    "i": "IdolHeartBrooch"
+                }
+            ],
+            "speech": [
+                "プリキュア、ライトアップ！",
+                "キラキラ、ドレスチェンジ！ YEAH！",
+                "キミと～！ YEAH！",
+                "一緒に～！ YEAH！",
+                "キミと踊る、ハートのリズム！ 心キュンキュン、キュアキュンキュン！"
+            ],
+            "transformees": [
+                "CureKyunKyun"
+            ],
+            "transformers": [
+                "Kokoro"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureRibbonCureIdol"
+                    ],
+                    "i": "IdolHeartBrooch"
+                },
+                {
+                    "a": [
+                        "PreCureRibbonCureWink"
+                    ],
+                    "i": "IdolHeartBrooch"
+                },
+                {
+                    "a": [
+                        "PreCureRibbonCureKyunKyun"
+                    ],
+                    "i": "IdolHeartBrooch"
+                }
+            ],
+            "speech": [
+                "プリキュア、ライトアップ！",
+                "キラキラ、ドレスチェンジ！ YEAH！",
+                "キミと～！ YEAH！",
+                "一緒に～！ YEAH！",
+                "キミと歌う、ハートのキラキラ！ 笑顔ニッコリ、キュアアイドル！",
+                "キミと瞬く、ハートの勇気！ お目目パッチン、キュアウインク！",
+                "キミと踊る、ハートのリズム！ 心キュンキュン、キュアキュンキュン！",
+                "ウィアー！キミとアイドルプリキュア！"
+            ],
+            "transformees": [
+                "CureIdol",
+                "CureWink",
+                "CureKyunKyun"
+            ],
+            "transformers": [
+                "Uta",
+                "Nana",
+                "Kokoro"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureRibbonCureZukyoon"
+                    ],
+                    "i": "KiraKiraShowTimeMic"
+                },
+                {
+                    "a": [
+                        "PreCureRibbonCureKiss"
+                    ],
+                    "i": "KiraKiraShowTimeMic"
+                }
+            ],
+            "speech": [
+                "プリキュア、ライトアップ！",
+                "キラキラ、ショータイム！ YEAH！",
+                "キミと～！ YEAH！",
+                "一緒に～！ YEAH！",
+                "ハートをプリっとロックオン！ キミとズッキュン、キュアズキューン！",
+                "ハートをメロっとひとりじめ！ キミと口づけ、キュアキッス！"
+            ],
+            "transformees": [
+                "CureZukyoon",
+                "CureKiss"
+            ],
+            "transformers": [
+                "Purirun",
+                "Meroron"
+            ]
         }
     ],
     "transformedGroups": [
@@ -11494,6 +11923,27 @@
                 "CureMint",
                 "CureAqua",
                 "MilkyRose"
+            ],
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "nameEn": "Idol PreCure",
+            "nameJa": "アイドルプリキュア",
+            "transformerIds": [
+                "CureIdol",
+                "CureWink",
+                "CureKyunKyun"
+            ],
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "nameEn": "Zukyoon Kiss",
+            "nameJa": "ズキューン・キッス",
+            "transformerIds": [
+                "CureZukyoon",
+                "CureKiss"
             ],
             "variationEn": "",
             "variationJa": ""
@@ -12873,6 +13323,46 @@
             "introducesHerselfAs": "青いバラは秘密のしるし！ ミルキィローズ！",
             "nameEn": "Milky Rose",
             "nameJa": "ミルキィローズ",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CureIdol",
+            "introducesHerselfAs": "キミと歌う、ハートのキラキラ！ 笑顔ニッコリ、キュアアイドル！",
+            "nameEn": "Cure Idol",
+            "nameJa": "キュアアイドル",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CureWink",
+            "introducesHerselfAs": "キミと瞬く、ハートの勇気！ お目目パッチン、キュアウインク！",
+            "nameEn": "Cure Wink",
+            "nameJa": "キュアウインク",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CureKyunKyun",
+            "introducesHerselfAs": "キミと踊る、ハートのリズム！ 心キュンキュン、キュアキュンキュン！",
+            "nameEn": "Cure KyunKyun",
+            "nameJa": "キュアキュンキュン",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CureZukyoon",
+            "introducesHerselfAs": "ハートをプリっとロックオン！ キミとズッキュン、キュアズキューン！",
+            "nameEn": "Cure Zukyoon",
+            "nameJa": "キュアズキューン",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CureKiss",
+            "introducesHerselfAs": "ハートをメロっとひとりじめ！ キミと口づけ、キュアキッス！",
+            "nameEn": "Cure Kiss",
+            "nameJa": "キュアキッス",
             "variationEn": "",
             "variationJa": ""
         }
