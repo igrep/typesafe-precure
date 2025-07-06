@@ -11,6 +11,7 @@ import qualified Data.ByteString.Lazy       as ByteString
 import           Data.Data                  (Data)
 import           Language.Haskell.TH        (Q, runIO, thisModule, tupE)
 import           Language.Haskell.TH.Syntax (Module)
+import           Safe                       (headNote)
 
 import           ACME.PreCure.Index.Lib
 import           ACME.PreCure.Index.Types
@@ -20,8 +21,9 @@ import           ACME.PreCure.Textbook      ()
 writeCureIndexJson :: ()
 writeCureIndexJson =
   $( do
+        let e = "Assertion failure: empty textbook root module."
         textbookRootMod <-
-          fmap (head . filter isTextbookMod) . loadImportedModules =<< thisModule :: Q Module
+          fmap (headNote e . filter isTextbookMod) . loadImportedModules =<< thisModule :: Q Module
         -- ^ ACME.PreCure.Textbook
 
         modsImportedByRoot <- loadImportedModules textbookRootMod :: Q [Module]

@@ -27,6 +27,7 @@ module ACME.PreCure.Index.Types
 import           Data.Aeson             (ToJSON, object, toJSON, (.=))
 import           Data.Data              (Data)
 import           Data.String            (IsString, fromString)
+import           Safe                   (headNote)
 
 import           ACME.PreCure.Index.Lib
 
@@ -39,7 +40,7 @@ data Girl =
 $(deriveToJsonWithoutTypeNamePrefix ''Girl)
 
 mkGirl :: String -> String -> Girl
-mkGirl ne = Girl (head $ words ne) ne
+mkGirl ne = Girl (headNote "Girl's name must be non-empty" $ words ne) ne
 
 
 typeNamify :: String -> String

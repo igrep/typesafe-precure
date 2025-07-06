@@ -365,8 +365,10 @@ groupMembers_Hugtto_MotherHeart :: IsString s => [s]
 groupMembers_Hugtto_MotherHeart =
   ["CureYell_MotherHeartStyle", "CureAnge_MotherHeartStyle", "CureEtoile_MotherHeartStyle", "CureMacherie_MotherHeartStyle", "CureAmour_MotherHeartStyle", "Hugtan_MotherHeartStyle"]
 
-miraiCrystalHeartKiratto = ["ミライクリスタル！", "ハートキラっと！"]
-miraiCrystal2HeartKiratto = head miraiCrystalHeartKiratto : miraiCrystalHeartKiratto
+miraiCrystal = "ミライクリスタル！" 
+
+miraiCrystalHeartKiratto = [miraiCrystal, "ハートキラっと！"]
+miraiCrystal2HeartKiratto = miraiCrystal : miraiCrystalHeartKiratto
 
 gyoo = "ぎゅ～！"
 
