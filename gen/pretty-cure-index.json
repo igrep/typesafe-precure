@@ -4168,7 +4168,7 @@
                 "CureZukyoon"
             ],
             "specialItems": [
-                "HeartKirariLock"
+                "HeartKirariLockShinyPink"
             ],
             "speech": [
                 "ズキューンバズーカー！"
@@ -4179,9 +4179,10 @@
                 "CureKiss"
             ],
             "specialItems": [
-                "HeartKirariLock"
+                "HeartKirariLockVividPink"
             ],
             "speech": [
+                "ちゅっ",
                 "キッスショック！"
             ]
         },
@@ -5509,9 +5510,14 @@
             "nameJa": "アイドルハートインカム"
         },
         {
-            "id": "HeartKirariLock",
-            "nameEn": "Heart Kirari Lock",
-            "nameJa": "ハートブローチ"
+            "id": "HeartKirariLockShinyPink",
+            "nameEn": "Heart Kirari Lock Shiny Pink",
+            "nameJa": "ハートキラリロック（シャイニーピンク）"
+        },
+        {
+            "id": "HeartKirariLockVividPink",
+            "nameEn": "Heart Kirari Lock Vivid Pink",
+            "nameJa": "ハートキラリロック（ビビッドピンク）"
         },
         {
             "id": "KiraKiraShowTimeMic",

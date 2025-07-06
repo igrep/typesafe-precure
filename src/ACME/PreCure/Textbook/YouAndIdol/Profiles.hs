@@ -66,7 +66,8 @@ specialItems =
   , mkSpecialItem "PreCure Ribbon Cure Kiss" "プリキュアリボン（キュアキッス）"
   , mkSpecialItem "Idol Heart Incom" "アイドルハートインカム"
 
-  , mkSpecialItem "Heart Kirari Lock" "ハートキラリロック"
+  , mkSpecialItem "Heart Kirari Lock Shiny Pink" "ハートキラリロック（シャイニーピンク）"
+  , mkSpecialItem "Heart Kirari Lock Vivid Pink" "ハートキラリロック（ビビッドピンク）"
   , mkSpecialItem "Kira Kira Show Time Mic" "キラキラショータイムマイク"
   ]
 
