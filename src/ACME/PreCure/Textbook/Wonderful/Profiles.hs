@@ -272,6 +272,14 @@ purifications =
     , helpKirarinAnimal
     , "スワン！"
     ]
+  , mkPurification
+    ["CureWonderful"]
+    ["FriendlyTact", "KirarinRabbit"]
+    [ friendlyTact
+    , wanWanWonderful
+    , helpKirarinAnimal
+    , "ウサギ！"
+    ]
 
   , mkPurification
     ["CureFriendy"]
@@ -426,6 +434,14 @@ purifications =
     , rinrinLillian
     , helpKirarinAnimal
     , "キツネ！"
+    ]
+  , mkPurification
+    ["CureLillian"]
+    ["AmityRibbonTambourine", "KirarinPanda"]
+    [ amityRibbonTambourine
+    , rinrinLillian
+    , helpKirarinAnimal
+    , "パンダ！"
     ]
 
   , mkPurification
