@@ -4216,6 +4216,29 @@
                 "プリキュア！ズキューンキッスディスティニー！",
                 "（キラキラッタ～）"
             ]
+        },
+        {
+            "purifiers": [
+                "CureIdol",
+                "CureWink",
+                "CureKyunKyun",
+                "CureZukyoon",
+                "CureKiss"
+            ],
+            "specialItems": [
+                "KirakkiranRibbonBaton"
+            ],
+            "speech": [
+                "感じて You and I キズナリボン",
+                "クライマックスはわたしたち！",
+                "かさなるオモイの強さを 歌にのせて",
+                "届けにきたよ Sing for you 照らしてみせる",
+                "あふれるオモイを残らず 伝えるんだ",
+                "どんな時でも You and I",
+                "わたしとキミを結ぶ キズナ・Sing-a・リボン",
+                "プリキュア！キラッキラン・フォー・ユー！",
+                "（キラキラッタ～）"
+            ]
         }
     ],
     "specialItems": [
@@ -5523,6 +5546,11 @@
             "id": "KiraKiraShowTimeMic",
             "nameEn": "Kira Kira Show Time Mic",
             "nameJa": "キラキラショータイムマイク"
+        },
+        {
+            "id": "KirakkiranRibbonBaton",
+            "nameEn": "Kirakkiran Ribbon Baton",
+            "nameJa": "キラッキランリボンバトン"
         }
     ],
     "transformations": [
@@ -11317,6 +11345,102 @@
             "transformers": [
                 "Purirun",
                 "Meroron"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureRibbonCureIdol"
+                    ],
+                    "i": "IdolHeartBrooch"
+                },
+                {
+                    "a": [
+                        "PreCureRibbonCureWink"
+                    ],
+                    "i": "IdolHeartBrooch"
+                },
+                {
+                    "a": [
+                        "PreCureRibbonCureKyunKyun"
+                    ],
+                    "i": "IdolHeartBrooch"
+                },
+                {
+                    "a": [
+                        "PreCureRibbonCureZukyoon"
+                    ],
+                    "i": "KiraKiraShowTimeMic"
+                },
+                {
+                    "a": [
+                        "PreCureRibbonCureKiss"
+                    ],
+                    "i": "KiraKiraShowTimeMic"
+                }
+            ],
+            "speech": [
+                "プリキュア、ライトアップ！",
+                "キラキラ、ドレスチェンジ！",
+                "キラキラ、ショータイム！",
+                "YEAH！",
+                "キミと～！ YEAH！",
+                "一緒に～！ YEAH！",
+                "キミと歌う、ハートのキラキラ！ 笑顔ニッコリ、キュアアイドル！",
+                "キミと瞬く、ハートの勇気！ お目目パッチン、キュアウインク！",
+                "キミと踊る、ハートのリズム！ 心キュンキュン、キュアキュンキュン！",
+                "ハートをプリっとロックオン！ キミとズッキュン、キュアズキューン！",
+                "ハートをメロっとひとりじめ！ キミと口づけ、キュアキッス！",
+                "ウィアー！キミとアイドルプリキュア！"
+            ],
+            "transformees": [
+                "CureIdol",
+                "CureWink",
+                "CureKyunKyun"
+            ],
+            "transformers": [
+                "Uta",
+                "Nana",
+                "Kokoro",
+                "Purirun",
+                "Meroron"
+            ]
+        },
+        {
+            "specialItems": [
+                {
+                    "a": [
+                        "PreCureRibbonCureKiss"
+                    ],
+                    "i": "KiraKiraShowTimeMic"
+                },
+                {
+                    "a": [
+                        "PreCureRibbonCureWink"
+                    ],
+                    "i": "IdolHeartBrooch"
+                }
+            ],
+            "speech": [
+                "プリキュア、ライトアップ！",
+                "キラキラ、ショータイム！ YEAH！",
+                "キミと～！ YEAH！",
+                "一緒に～！ YEAH！",
+                "ハートをプリっとロックオン！ キミとズッキュン、キュアズキューン！",
+                "プリキュア、ライトアップ！",
+                "キラキラ、ドレスチェンジ！ YEAH！",
+                "キミと～！ YEAH！",
+                "一緒に～！ YEAH！",
+                "キミと瞬く、ハートの勇気！ お目目パッチン、キュアウインク！"
+            ],
+            "transformees": [
+                "CureZukyoon",
+                "CureKiss"
+            ],
+            "transformers": [
+                "Meroron",
+                "Nana"
             ]
         }
     ],
