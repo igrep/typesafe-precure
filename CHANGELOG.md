@@ -1,4 +1,4 @@
-# 0.12.2.1
+# 0.12.1.1
 
 - Add more transformations and purifications from "You and Idol PreCure♪".
 
