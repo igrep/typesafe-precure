@@ -69,6 +69,8 @@ specialItems =
   , mkSpecialItem "Heart Kirari Lock Shiny Pink" "ハートキラリロック（シャイニーピンク）"
   , mkSpecialItem "Heart Kirari Lock Vivid Pink" "ハートキラリロック（ビビッドピンク）"
   , mkSpecialItem "Kira Kira Show Time Mic" "キラキラショータイムマイク"
+
+  , mkSpecialItem "Kirakkiran Ribbon Baton" "キラッキランリボンバトン"
   ]
 
 transformations :: [Transformation]
@@ -88,12 +90,7 @@ transformations =
     ["Nana"]
     [mkIA "IdolHeartBrooch" ["PreCureRibbonCureWink"]]
     ["CureWink"]
-    [ preCureLightUp
-    , kirakiraDressChangeYeah
-    , kimitoYeah
-    , isshoniYeah
-    , introducesHerselfAs_Wink
-    ]
+    winkTransformationSpeech
 
   , mkTransformation
     ["Kokoro"]
@@ -136,25 +133,80 @@ transformations =
     , introducesHerselfAs_Zukyoon
     , introducesHerselfAs_Kiss
     ]
+
+  , mkTransformation
+    ["Uta", "Nana", "Kokoro", "Purirun", "Meroron"]
+    [ mkIA "IdolHeartBrooch" ["PreCureRibbonCureIdol"]
+    , mkIA "IdolHeartBrooch" ["PreCureRibbonCureWink"]
+    , mkIA "IdolHeartBrooch" ["PreCureRibbonCureKyunKyun"]
+    , mkIA "KiraKiraShowTimeMic" ["PreCureRibbonCureZukyoon"]
+    , mkIA "KiraKiraShowTimeMic" ["PreCureRibbonCureKiss"]
+    ]
+    ["CureIdol", "CureWink", "CureKyunKyun"]
+    [ preCureLightUp
+    , kirakiraDressChange
+    , kirakiraShowTime
+    , yeah
+    , kimitoYeah
+    , isshoniYeah
+    , introducesHerselfAs_Idol
+    , introducesHerselfAs_Wink
+    , introducesHerselfAs_KyunKyun
+    , introducesHerselfAs_Zukyoon
+    , introducesHerselfAs_Kiss
+    , weAreYouAndIdolPreCure
+    ]
+
+  , mkTransformation
+    ["Meroron", "Nana"]
+    [ mkIA "KiraKiraShowTimeMic" ["PreCureRibbonCureKiss"]
+    , mkIA "IdolHeartBrooch" ["PreCureRibbonCureWink"]
+    ]
+    ["CureZukyoon", "CureKiss"]
+    ( [ preCureLightUp
+      , kirakiraShowTimeYeah
+      , kimitoYeah
+      , isshoniYeah
+      , introducesHerselfAs_Zukyoon
+      ] ++ winkTransformationSpeech
+    )
   ]
  where
   preCureLightUp :: String
   preCureLightUp = "プリキュア、ライトアップ！"
 
   kirakiraDressChangeYeah :: String
-  kirakiraDressChangeYeah = "キラキラ、ドレスチェンジ！ YEAH！"
+  kirakiraDressChangeYeah = kirakiraDressChange ++ " " ++ yeah
 
   kirakiraShowTimeYeah :: String
-  kirakiraShowTimeYeah = "キラキラ、ショータイム！ YEAH！"
+  kirakiraShowTimeYeah = kirakiraShowTime ++ " " ++ yeah
 
   kimitoYeah :: String
-  kimitoYeah = "キミと～！ YEAH！"
+  kimitoYeah = "キミと～！" ++ " " ++ yeah
 
   isshoniYeah :: String
-  isshoniYeah = "一緒に～！ YEAH！"
+  isshoniYeah = "一緒に～！" ++ " " ++ yeah
 
   weAreYouAndIdolPreCure :: String
   weAreYouAndIdolPreCure = "ウィアー！キミとアイドルプリキュア！"
+
+  kirakiraDressChange :: String
+  kirakiraDressChange = "キラキラ、ドレスチェンジ！"
+
+  kirakiraShowTime :: String
+  kirakiraShowTime = "キラキラ、ショータイム！"
+
+  yeah :: String
+  yeah = "YEAH！"
+
+  winkTransformationSpeech :: [String]
+  winkTransformationSpeech =
+    [ preCureLightUp
+    , kirakiraDressChangeYeah
+    , kimitoYeah
+    , isshoniYeah
+    , introducesHerselfAs_Wink
+    ]
 
 
 groupMembers :: IsString s => [s]
@@ -257,6 +309,20 @@ purifications =
     , "生まれる 私たちのハーモニー"
     , "響け"
     , "プリキュア！ズキューンキッスディスティニー！"
+    , kiraKiratta
+    ]
+
+  , mkPurification
+    ["CureIdol", "CureWink", "CureKyunKyun", "CureZukyoon", "CureKiss"]
+    ["KirakkiranRibbonBaton"]
+    [ "感じて You and I キズナリボン"
+    , "クライマックスはわたしたち！"
+    , "かさなるオモイの強さを 歌にのせて"
+    , "届けにきたよ Sing for you 照らしてみせる"
+    , "あふれるオモイを残らず 伝えるんだ"
+    , "どんな時でも You and I"
+    , "わたしとキミを結ぶ キズナ・Sing-a・リボン"
+    , "プリキュア！キラッキラン・フォー・ユー！"
     , kiraKiratta
     ]
   ]
