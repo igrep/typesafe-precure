@@ -459,6 +459,11 @@
             "id": "Meroron",
             "nameEn": "Meroron",
             "nameJa": "メロロン"
+        },
+        {
+            "id": "Kaito",
+            "nameEn": "Kaito",
+            "nameJa": "響 カイト"
         }
     ],
     "nonItemPurifications": [
@@ -4239,6 +4244,25 @@
                 "プリキュア！キラッキラン・フォー・ユー！",
                 "（キラキラッタ～）"
             ]
+        },
+        {
+            "purifiers": [
+                "CureIdol_IdolHeartRibbonStyle"
+            ],
+            "specialItems": [
+                "IdolHeartIncom"
+            ],
+            "speech": [
+                "クライマックスはわたし！",
+                "もり上がっていくよー！",
+                "キミのハートに とびっきり元気をあげるね",
+                "ゼッタイ！ (ゼッタイ！) アイドル！ (アイドル！)",
+                "ドキドキが止まらない！",
+                "急接近！笑顔のユニゾン 応えてほしいなっ サンキュー",
+                "最高のステージで キミと歌を咲かそう",
+                "プリキュア！アイドルスマイリング・エコー！",
+                "（キラキラッタ～）"
+            ]
         }
     ],
     "specialItems": [
@@ -5551,6 +5575,16 @@
             "id": "KirakkiranRibbonBaton",
             "nameEn": "Kirakkiran Ribbon Baton",
             "nameJa": "キラッキランリボンバトン"
+        },
+        {
+            "id": "IdolHeartRibbon",
+            "nameEn": "Idol Heart Ribbon",
+            "nameJa": "アイドルハートリボン"
+        },
+        {
+            "id": "WithToDeliverHisSongToKazuma",
+            "nameEn": "WithToDeliverHisSongToKazuma",
+            "nameJa": "カズマに歌を届けたいという気持ち"
         }
     ],
     "transformations": [
@@ -11442,6 +11476,37 @@
                 "Meroron",
                 "Nana"
             ]
+        },
+        {
+            "specialItems": [
+                "IdolHeartRibbon"
+            ],
+            "speech": [
+                "アイドルハートリボンスタイル！"
+            ],
+            "transformees": [
+                "CureIdol_IdolHeartRibbonStyle"
+            ],
+            "transformers": [
+                "CureIdol"
+            ]
+        },
+        {
+            "specialItems": [
+                "WithToDeliverHisSongToKazuma"
+            ],
+            "speech": [
+                "オレはお前にこの想いを、絶対に伝える！",
+                "今がその時だ！",
+                "カズマ！",
+                "キミと奏でる、ハートのキズナ！空の向こうへ、キュアコネクト！"
+            ],
+            "transformees": [
+                "CureConnect"
+            ],
+            "transformers": [
+                "Kaito"
+            ]
         }
     ],
     "transformedGroups": [
@@ -13493,6 +13558,22 @@
             "introducesHerselfAs": "ハートをメロっとひとりじめ！ キミと口づけ、キュアキッス！",
             "nameEn": "Cure Kiss",
             "nameJa": "キュアキッス",
+            "variationEn": "",
+            "variationJa": ""
+        },
+        {
+            "id": "CureIdol_IdolHeartRibbonStyle",
+            "introducesHerselfAs": "キミと歌う、ハートのキラキラ！ 笑顔ニッコリ、キュアアイドル！",
+            "nameEn": "Cure Idol",
+            "nameJa": "キュアアイドル",
+            "variationEn": "Idol Heart Ribbon Style",
+            "variationJa": "アイドルハートリボンスタイル"
+        },
+        {
+            "id": "CureConnect",
+            "introducesHerselfAs": "",
+            "nameEn": "Cure Connect",
+            "nameJa": "キュアコネクト",
             "variationEn": "",
             "variationJa": ""
         }

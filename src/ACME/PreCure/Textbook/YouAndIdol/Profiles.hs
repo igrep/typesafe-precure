@@ -14,6 +14,8 @@ girls =
   , mkGirl "Kokoro Shigure" "紫雨 こころ"
   , mkGirl "Purirun" "プリルン"
   , mkGirl "Meroron" "メロロン"
+
+  , mkGirl "Kaito" "響 カイト"
   ]
 
 transformees :: [Transformee]
@@ -48,6 +50,20 @@ transformees =
       "キュアキッス"
       ""
       introducesHerselfAs_Kiss
+
+  , mkTransformee
+      "Cure Idol"
+      "Idol Heart Ribbon Style"
+      "キュアアイドル"
+      variation_IdolHeartRibbonStyle
+      introducesHerselfAs_Idol
+
+  , mkTransformee
+      "Cure Connect"
+      ""
+      "キュアコネクト"
+      ""
+      "" -- introducesHerselfAs_Connect
   ]
 
 transformedGroups :: [TransformedGroup]
@@ -71,6 +87,10 @@ specialItems =
   , mkSpecialItem "Kira Kira Show Time Mic" "キラキラショータイムマイク"
 
   , mkSpecialItem "Kirakkiran Ribbon Baton" "キラッキランリボンバトン"
+
+  , mkSpecialItem "Idol Heart Ribbon" "アイドルハートリボン"
+
+  , mkSpecialItem "WithToDeliverHisSongToKazuma" "カズマに歌を届けたいという気持ち"
   ]
 
 transformations :: [Transformation]
@@ -170,6 +190,22 @@ transformations =
       , introducesHerselfAs_Zukyoon
       ] ++ winkTransformationSpeech
     )
+
+  , mkTransformation
+    ["CureIdol"]
+    ["IdolHeartRibbon"]
+    ["CureIdol_IdolHeartRibbonStyle"]
+    [variation_IdolHeartRibbonStyle ++ "！"]
+
+  , mkTransformation
+    ["Kaito"]
+    ["WithToDeliverHisSongToKazuma"]
+    ["CureConnect"]
+    [ "オレはお前にこの想いを、絶対に伝える！"
+    , "今がその時だ！"
+    , "カズマ！"
+    , introducesHerselfAs_Connect
+    ]
   ]
  where
   preCureLightUp :: String
@@ -231,20 +267,16 @@ purifications =
   , mkPurification
     ["CureIdol"]
     ["IdolHeartIncom"]
-    [ climaxHasWatashi
-    , "もり上がっていくよー！"
-    , "キミのハートに とびっきり元気をあげるね"
-    , "ゼッタイ！ (ゼッタイ！) アイドル！ (アイドル！)"
-    , "ドキドキが止まらない！"
-    , "急接近！笑顔のユニゾン 応えてほしいなっ サンキュー"
-    , "最高のステージで キミと歌を咲かそう"
-    , "プリキュア！アイドルスマイリング！"
-    , kiraKiratta
-    ]
+    ( [ climaxWaWatashi
+      , moriAgatteIkuyo
+      ]
+      ++ egaoNoYunizonChorus
+      ++ ["プリキュア！アイドルスマイリング！" , kiraKiratta]
+      )
   , mkPurification
     ["CureWink"]
     ["IdolHeartIncom"]
-    [ climaxHasWatashi
+    [ climaxWaWatashi
     , "聴いてください。"
     , "きらめきへ踏み出そう 受け取った勇気つないで"
     , "まばたきの数だけ 五線譜に焼きつけていく"
@@ -256,7 +288,7 @@ purifications =
   , mkPurification
     ["CureKyunKyun"]
     ["IdolHeartIncom"]
-    [ climaxHasWatashi
+    [ climaxWaWatashi
     , "準備はOKー!?"
     , "ねえキミも！"
     , "かわいーな (キュンキュン) かっこいーな (キュンキュン)"
@@ -325,12 +357,37 @@ purifications =
     , "プリキュア！キラッキラン・フォー・ユー！"
     , kiraKiratta
     ]
+
+  , mkPurification
+    ["CureIdol_IdolHeartRibbonStyle"]
+    ["IdolHeartIncom"]
+    ( [ climaxWaWatashi
+      , moriAgatteIkuyo
+      ]
+      ++ egaoNoYunizonChorus
+      ++ ["プリキュア！アイドルスマイリング・エコー！" , kiraKiratta]
+      )
   ]
  where
-  climaxHasWatashi :: String
-  climaxHasWatashi = "クライマックスはわたし！"
+  climaxWaWatashi :: String
+  climaxWaWatashi = "クライマックスはわたし！"
+  moriAgatteIkuyo :: String
+  moriAgatteIkuyo = "もり上がっていくよー！"
+  egaoNoYunizonChorus =
+    [ "キミのハートに とびっきり元気をあげるね"
+    , "ゼッタイ！ (ゼッタイ！) アイドル！ (アイドル！)"
+    , "ドキドキが止まらない！"
+    , "急接近！笑顔のユニゾン 応えてほしいなっ サンキュー"
+    , "最高のステージで キミと歌を咲かそう"
+    ]
+
   kiraKiratta :: String
   kiraKiratta = "（キラキラッタ～）"
+
+
+nonItemPurifications :: [NonItemPurification]
+nonItemPurifications =
+  [mkNonItemPurification ["CureConnect"] ["レジェンド・エコー！"]]
 
 
 introducesHerselfAs_Idol :: String
@@ -356,3 +413,11 @@ groupNameIdolPreCure = "アイドルプリキュア"
 
 groupNameZukyoonKiss :: String
 groupNameZukyoonKiss = "ズキューン・キッス"
+
+
+variation_IdolHeartRibbonStyle :: String
+variation_IdolHeartRibbonStyle = "アイドルハートリボンスタイル"
+
+
+introducesHerselfAs_Connect :: String
+introducesHerselfAs_Connect = "キミと奏でる、ハートのキズナ！空の向こうへ、キュアコネクト！"

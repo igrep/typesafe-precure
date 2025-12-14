@@ -1,3 +1,7 @@
+# 0.12.2.1
+
+- Add more transformations and purifications from "You and Idol PreCure♪" (Cure Connect and Cure Idol Idol Heart Ribbon Style".
+
 # 0.12.1.1
 
 - Add more transformations and purifications from "You and Idol PreCure♪".
